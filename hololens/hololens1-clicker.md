@@ -1,0 +1,102 @@
+---
+title: 使用 HoloLens 遥控器
+description: 本文介绍如何使用 HoloLens 遥控器，包括遥控器配对、充电和恢复。
+ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
+ms.date: 09/16/2019
+manager: jarrettr
+keywords: hololens
+ms.prod: hololens
+ms.sitesec: library
+author: v-miegge
+ms.author: v-miegge
+ms.topic: article
+ms.localizationpriority: high
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 13b86c049ba8bb6ed67be202609d27c8d47ffc53
+ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10828018"
+---
+# 使用 HoloLens （第一代）遥控器
+
+遥控器是专为 HoloLens （第一代）设计，提供了另一种与全息影像交互的方式。 它与 HoloLens（第一代）随附，放在单独的包装盒中。
+
+使用它代替手势来选择、滚动、移动和调整应用大小。
+
+## 遥控器硬件和配对
+
+HoloLens （第 1 代） 遥控器配有指环，易于抓握，还配有指示灯。
+
+![HoloLens 遥控器](images/use-hololens-clicker-1.png)
+
+### 遥控器指示灯
+
+下面是遥控器上指示灯的含义。
+
+- **闪烁白色**。 控制器处于配对模式。
+- **快速闪烁白色**。 配对成功。
+- **长亮白色**。 遥控器正在充电。
+- **闪烁琥珀色**。 电池电量不足。
+- **长亮琥珀色**。 遥控器出现错误，需要重启。 按下配对按钮时，单击并按住 15 秒。
+
+### 将遥控器与 HoloLens（第一代）配对
+
+1. 使用开花手势转到“**开始**”，然后选择“**设置**” > ”**设备**” 并验证蓝牙已开启。
+1. 在遥控器上，按住配对按钮，直到状态指示灯闪烁白色。
+1. 在配对屏幕上，选择“**遥控器**” > “**配对**”。
+
+### 给遥控器充电
+
+遥控器电量低时，电池指示灯将闪烁琥珀色。 将 Micro USB 电缆插入 USB 电源为设备充电。
+
+## 将遥控器与 HoloLens（第一代）配合使用
+
+### 按住遥控器
+
+若要戴上遥控器，将指环套在无名指或中指上，使 Micro USB 口朝向手腕。 将拇指放在凹槽中。
+
+![如何按住遥控器](images/use-hololens-clicker-2.png)
+
+### 遥控器手势
+
+遥控器手势是腕部旋转很小，不是用于 HoloLens 手势的较大运动。 即使遥控器位于[手势框](hololens1-basic-usage.md)之外，HoloLens 也会识别你的手势和点击，因此可以将遥控器保持在最舒适的位置。
+
+- **选择**。 若要选择全息影像、按钮或其他元素，请注视它，然后单击。
+
+- **单击并按住**。 单击并将拇指按在按钮上，可执行与点击和按住相同的操作，例如移动或调整全息影像的大小。
+
+- **滚动**。 在应用栏上，选择“**滚动工具**”。 单击并按住，然后向上，向下，向左或向右旋转遥控器。 要更快地滚动，请让手离滚动工具中心远一些。
+
+- **缩放**。 在应用栏上，选择“**缩放工具**”。 单击并按住，然后将遥控器向上旋转以放大，或向下旋转以缩小。
+
+> [!TIP]
+> 若要在使用 Microsoft Edge 时进行放大或缩小，请注视页面，然后双击。
+
+## 重启或恢复遥控器
+
+如果 HoloLens 遥控器没有响应或运行不正常，请尝试以下操作。
+
+### 重新遥控器
+
+使用笔尖按住配对按钮。 同时，单击并按住遥控器 15 秒。 如果遥控器已与 HoloLens 配对，它将在重新启动后保持配对状态。
+
+如果遥控器无法打开或重新启动，请尝试使用 HoloLens 充电器对其进行充电。 如果电池电量很低，白色指示灯则可能需要等待几分钟才能亮起。
+
+### 重新配对遥控器
+
+依次选择“**设置**”  >  “**设备**”，然后选择遥控器。 选择“**删除**”，等待几秒钟，然后再次配对遥控器。
+
+### 恢复遥控器
+
+如果重新启动并重新配对遥控器不能解决问题，则 Windows Device Recovery Tool 可以帮助你恢复遥控器。 恢复过程可能需要一些时间，并且会安装最新版本的遥控器软件。 若要使用该工具，需要一台运行 Windows 10 或更高版本的计算机，此计算机至少具有 4 GB 的可用存储空间。
+
+恢复遥控器：
+
+1. 在你的计算机上，下载并安装 [Windows Device Recovery Tool](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/)。
+1. 使用 HoloLens 随附的 Micro USB 电缆将遥控器连接到计算机。
+1. 运行 Windows Device Recovery Tool 并按照说明进行操作。
+
+如果该工具未自动检测到遥控器，请选择“**未检测到我的设备**”并按照说明将设备置于恢复模式。
