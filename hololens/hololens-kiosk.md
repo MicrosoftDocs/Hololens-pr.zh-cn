@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827985"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857996"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -99,7 +98,8 @@ ms.locfileid: "10827985"
 |日历 |windowscommunicationsapps \ _8wekyb3d8bbwe \！ windowslive。 |
 |相机 <sup> 1、2</sup> |HoloCamera \ _cw5n1h2txyewy \！HoloCamera |
 |Cortana <sup> 3</sup> |549981C3F5F10 \ _8wekyb3d8bbwe \！应用 |
-|设备选取器 |HoloDevicesFlow \ _cw5n1h2txyewy \！HoloDevicesFlow |
+|HoloLens 上的设备选取器（第1代） |HoloDevicesFlow \ _cw5n1h2txyewy \！HoloDevicesFlow |
+|HoloLens 2 上的设备选取器 |DevicesFlowHost \ _cw5n1h2txyewy \！DevicesFlowHost |
 |Dynamics 365 Guides |Dynamics365 _8wekyb3d8bbwe \！MicrosoftGuides |
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist \ _8wekyb3d8bbwe \！RemoteAssist |
 |反馈 &nbsp; 中心 |WindowsFeedbackHub \ _8wekyb3d8bbwe \！应用 |
@@ -110,7 +110,7 @@ ms.locfileid: "10827985"
 |电影和电视 |ZuneVideo \ _8wekyb3d8bbwe \！ZuneVideo |
 |OneDrive |microsoftskydrive \ _8wekyb3d8bbwe \！应用 |
 |照片 |_8wekyb3d8bbwe \ 照片。应用 |
-|设置 |HolographicSystemSettings \ _cw5n1h2txyewy \！应用 |
+|“设置” |HolographicSystemSettings \ _cw5n1h2txyewy \！应用 |
 |提示 |HoloLensTips \ _8wekyb3d8bbwe \！HoloLensTips |
 
 > <sup>1 </sup> 要启用照片或视频捕获，您必须将相机应用启用为展台应用。  
@@ -358,7 +358,7 @@ ms.locfileid: "10827985"
 
 #### <a id="start-layout-for-hololens"></a>HoloLens 的占位符开始布局
 
-如果使用[预配包](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)配置多应用展台，则该过程需要 "开始" 布局。 Windows 全息版中不支持 "开始布局自定义"。 因此，你必须使用占位符开始布局。
+如果使用[预配包](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)配置多应用展台，则该过程需要 "开始" 布局。 Windows 全息版中不支持 "开始布局自定义"。 因此，你必须使用占位符开始布局。
 
 > [!NOTE]  
 > 由于单应用展台在用户登录时启动展台应用，因此它不使用 "开始" 菜单，也不需要具有 "开始" 布局。
