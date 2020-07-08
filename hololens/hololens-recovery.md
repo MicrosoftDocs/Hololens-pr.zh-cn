@@ -14,17 +14,14 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 5da7f954454b5713823c5aa94742f9c9c0033ca2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2c7fa9b8c86900c89bbced1a10f3e9e2bc69bcd0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827664"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857760"
 ---
-# HoloLens 2 的重置和恢复
+# 重启、重置或恢复 HoloLens
 
 ## 对设备充电
 
@@ -60,7 +57,7 @@ ms.locfileid: "10827664"
 
 4. 将设备连接到主机，打开设备管理器（对于 Windows 10，请按“Windows”键****，然后按“X”**** 键，然后单击“设备管理器”），并确保设备正确枚举为 Microsoft HoloLens，如下图所示：
 
-![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLensRecovery.png)
+![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### 硬重置程序
 
