@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858006"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860602"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -28,7 +29,7 @@ ms.locfileid: "10858006"
 
 Windows 预览体验成员现在正在移至频道。 **快速**环将成为**开发频道**，**慢速**环将成为**Beta 通道**，并且 "**发布预览**" 环将成为 "**发布" 预览频道**。 映射如下所示：
 
-![Windows 预览体验计划频道 explination](images/WindowsInsiderChannels.png)
+![Windows 预览体验计划频道说明](images/WindowsInsiderChannels.png)
 
 有关详细信息，请执行以下操作： [Windows 博客条目](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -58,7 +59,6 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 1. 按照说明选择退出您的设备。
 
 
-
 ## 提供反馈和报告问题
 
 请使用 HoloLens 上[的 "反馈中心" 应用](hololens-feedback.md)提供反馈和报告问题。 使用 "反馈中心" 可确保包含所有必要的诊断信息，以帮助我们的工程师快速调试和解决问题。  必须以相同的方式报告与中文和日语版本的 HoloLens 有关的问题。
@@ -73,9 +73,10 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 ## Windows 预览体验计划发行说明
 
-如果你正在寻找一个以前在此处列出的功能，而你看不到此功能，则它将进入非预览体验计划内部版本，请确保阅读 "[发行说明](hololens-release-notes.md)"，以查看所有功能（通常可用）。 请确保[更新 HoloLens](hololens-update-hololens.md)以获取所有最新功能。  
+从我们的[Windows 全息版2020更新](hololens-release-notes.md)版本，我们的所有版本预览功能现已推出。 请确保[更新 HoloLens](hololens-update-hololens.md)以获取所有最新功能。
 
-我们将在将新功能发布到 Windows 预览体验计划内部版本时再次更新此页面。 
+我们将再次通过新功能再次更新此页面，因为我们将这些新功能发布给 Windows 预览体验成员内部版本。
+
 
 ### 自动目视位置支持
 
@@ -101,6 +102,6 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 若要使用带流量签名的 ffu 进行测试，首先必须在闪烁已签名的 ffu 之前，再将设备解锁。
 1. 在 PC 上
     1. 从以下计算机下载 ffu：[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. 从 Microsoft Store 安装 ARC （高级恢复助理）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. 从 Microsoft Store 安装 ARC （高级恢复助理）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. 在 HoloLens-航班解锁：打开**设置**  >  **更新 & 安全**  >  **Windows 预览体验计划**，然后注册，重新启动设备
-1. Flash FFU-现在，你可以使用 ARC 对已签名的 FFU 进行闪烁 
+1. Flash FFU-现在，你可以使用 ARC 对已签名的 FFU 进行闪烁
