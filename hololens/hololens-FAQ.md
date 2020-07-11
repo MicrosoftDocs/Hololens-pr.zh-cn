@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: cb9234556d0b5c654747e0f404d1d10d8a2cd539
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827857"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865571"
 ---
 # 有关 HoloLens 设备和全息影像的常见问题
 
@@ -281,7 +281,8 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 ## 有关保护 HoloLens 设备的问题
 
-请参阅[有关保护 HoloLens 设备的常见问题](hololens-faq-security.md)。
+请参阅[我们的 HoloLens 2 安全信息](security-overview.md)。
+对于 HoloLens 第一代设备，请查看[此常见问题](hololens1-faq-security.md)。
 
 [返回列表](#list)
 
