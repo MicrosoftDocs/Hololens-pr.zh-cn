@@ -16,12 +16,12 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ca4256fc38253f6f1618da73f804ab3d4c0e66df
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 977f6b86e545e834bc9f7d5060b55755243531ac
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827511"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865541"
 ---
 # Microsoft HoloLens
 
@@ -56,7 +56,7 @@ ms.locfileid: "10827511"
 | [HoloLens 更新管理](hololens-updates.md) | 使用移动设备管理（MDM）策略配置更新设置。 |
 | [HoloLens 用户管理](hololens-multiple-users.md) | 多个用户可通过使用 Azure Active Directory 帐户共享 HoloLens 设备。 |
 | [HoloLens 应用程序访问管理](hololens-kiosk.md) | 管理不同用户组的应用程序访问。  |
-| [回复和 HoloLens 问题疑难解答](https://support.microsoft.com/products/hololens) |  了解如何从 HoloLens 收集日志，恢复行为异常的设备或在必要时重置 HoloLens。 |
+| [回复和 HoloLens 问题疑难解答](hololens-recovery.md) |  了解如何重启有行为的设备，或在必要时重置 HoloLens 2。 |
 | [联系支持人员](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) | 为业务支持团队新建支持请求。 | 
 | [更多支持选项](https://support.microsoft.com/products/hololens) | 连接企业中适用于 HoloLens 的 Microsoft 支持资源。 |
 

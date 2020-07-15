@@ -3,7 +3,7 @@ title: HoloLens 2 硬件
 description: 概要介绍构成 Microsoft HoloLens 2（Microsoft 推出的运行 Windows 10 的完全不受束缚的全息计算机的最新演进版）的组件。
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 9/17/2019
-keywords: hololens
+keywords: Hololens
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b686801651710e6e8c4dcaaaa39e1c0dc4a76b4
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: e41dc6c9d12ee57bb306ebca7e2eeac0b3478014
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827972"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857720"
 ---
 # HoloLens 2 硬件
 
@@ -138,7 +138,9 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 ### 安全
 
-[产品安全性](https://support.microsoft.com/en-us/help/4023454/safety-information) 目视安全：HoloLens 2 已经过测试，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响保护要求。
+* [产品安全](https://support.microsoft.com/en-us/help/4023454/safety-information)
+* [产品安全警告和说明](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
+* 目测安全性：HoloLens 2 已经过测试，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响保护要求。
 
 ### 规章信息
 [HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)

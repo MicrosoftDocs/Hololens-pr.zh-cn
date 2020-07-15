@@ -1,5 +1,5 @@
 ---
-title: HoloLens 的环境注意事项
+title: HoloLens 环境注意事项
 description: 为眼睛和环境优化设备时使用 HoloLens 获取可能的最佳体验。 为了支持跟踪，许多不同的环境因素融合在了一起，但是作为一位混合现实开发人员，你可以记住一些因素来优化空间以获取更好的全息影像。
 keywords: 全息框, 视野, fov, 校准, 空间, 环境, 操作方法
 author: dorreneb
@@ -10,17 +10,14 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: d2bec32e118ee1c9307b56fad99b7e8859e2a94d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827681"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857850"
 ---
-# HoloLens 的环境注意事项
+# HoloLens 环境注意事项
 
 HoloLens 可将全息影像与“真实”世界融合在一起，并将全息影像放在周围环境中。 全息应用窗口“挂”在墙上，全息芭蕾舞演员在桌面上旋转，兔子的耳朵安放在不知情的好友头顶上。 使用沉浸式游戏或应用时，全息世界将扩展到周围的环境中，但你仍可以在空间中四处查看和移动。
 
