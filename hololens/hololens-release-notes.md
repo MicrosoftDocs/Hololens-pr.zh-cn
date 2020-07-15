@@ -15,18 +15,37 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 25a1bc21638090cc5d22bc4482299f3931641dea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827923"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881232"
 ---
 # HoloLens 2 发行说明
 
-为确保您的 HoloLens 设备具有高效的体验，我们将继续发布功能、bug 和安全更新。 在此页面中，您可以了解每月 HoloLens 的新增功能。 如果你想要下载最新的 HoloLens 2 FFU 以通过 "[高级恢复助理](hololens-recovery.md#clean-reflash-the-device)" 刷新你的设备，你可以从[此处](https://aka.ms/hololens2download)下载。 这将保持最新，并且将与最新的通用内部版本匹配。 
+为确保您的 HoloLens 设备具有高效的体验，我们将继续发布功能、bug 和安全更新。 在此页面中，您可以了解每月 HoloLens 的新增功能。 如果你想要下载最新的 HoloLens 2 FFU 以通过 "[高级恢复助理](hololens-recovery.md#clean-reflash-the-device)" 刷新你的设备，你可以从[此处](https://aka.ms/hololens2download)下载。 此处的 FFU 会实时更新，并将与最新的通用内部版本匹配。 
 
 HoloLens 模拟器发行说明可在[此处](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)找到。
+
+## Windows 全息版 2004-2020 年7月更新
+- 内部版本19041.1109
+
+更新中的改进和修复：
+
+- 开发人员可以选择是启用还是禁用需要安全连接的 Device Portal。
+- 操作系统更新后应用程序启动的可靠性改进。
+- 将默认收件箱亮度更改为100%。
+- 解决了 HoloLens 2 上的 Windows Device Portal 的 HTTPS 转发问题。
+
+## Windows 全息版 1903-2020 年7月更新
+- 内部版本18362.1071
+
+更新中的改进和修复：
+
+- 修复了一个问题，该问题可能会导致在失去和/或跟踪跟踪时，无法在 Unity 应用程序中消失全息图。
+- 修复了在某些设备上使用 Hololens 模拟器和硬件加速时，导致独占 Hololens 应用崩溃的问题。
+- 解决了 HoloLens 2 上的 Windows Device Portal 的 HTTPS 转发问题。
 
 ## Windows 全息版 2004-2020 更新
 - 内部版本19041.1106
@@ -167,7 +186,7 @@ FIDO2 安全密钥是基于 unphishable 标准的 passwordless 身份验证方�
 
 许多 Windows 应用现在支持深色模式和浅色模式，并且 HoloLens 2 客户可以为同时支持这两种应用的应用选择默认模式。 一旦更新，默认应用模式将为 "深色"，但可以轻松更改。 导航到 "系统 > 颜色" > 的 "设置"，找到 "选择默认应用模式"。 下面是一些支持深色模式的内置应用： 
 
-- 设置 
+- “设置” 
 - Microsoft Store 
 - 邮件 
 - 日历 
@@ -224,7 +243,7 @@ FIDO2 安全密钥是基于 unphishable 标准的 passwordless 身份验证方�
 导航到 "**系统 > 颜色" >** 的 **"设置"，找到 "选择默认应用模式"。**
 
 下面是一些支持深色模式的内置应用：
-- 设置
+- “设置”
 - Microsoft Store
 - 邮件
 - 日历
