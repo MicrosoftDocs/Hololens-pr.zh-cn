@@ -16,14 +16,14 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 837a019f110a58c490618d3d5c47e83e58231d18
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
+ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827661"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "10861157"
 ---
-# 重启、重置或恢复第 1 代 HoloLens
+# 重启、重置或恢复 HoloLens（第 1 代）
 
 如果你的 HoloLens 出现问题，你可能想要尝试重启、重置甚至通过设备恢复进行重刷。
 
@@ -123,7 +123,7 @@ HoloLens 需要重置的所有数据都将打包在一个完整刷写更新 (FFU
 
 1. 将设备与所有电源断开。
 1. 如果设备处于开启状态，请按住电源按钮，直到完全关闭。
-1. 按住上调音量**** 按钮，然后轻触电源**** 按钮。 
+1. 按住**上调音量**按钮，然后轻触**电源按钮**。 
 1. 此时设备应启动，然后仅显示中间的 LED 指示灯。
 1. 将设备连接至电脑。
 1. 启动 Windows Device Recovery Tool。
