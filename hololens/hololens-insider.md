@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860602"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882424"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -51,11 +51,13 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 若要验证 HoloLens 是否正在运行生产内部版本，请执行以下操作：
 
 1. 转到 "**设置" > "系统 >**"，然后找到内部版本号。
-1. [请参阅生产内部版本号的发行说明。](hololens-release-notes.md)
+
+1. [请参阅生产内部版本号的发行说明](hololens-release-notes.md)。
 
 若要退出预览体验计划内部版本，请执行以下操作：
 
 1. 在运行生产版本的 HoloLens 上，转到 "**设置" > 更新 Windows 预览体验计划 & 安全 >**，然后选择 "**停止预览体验成员版本**"。
+
 1. 按照说明选择退出您的设备。
 
 
@@ -73,10 +75,15 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 ## Windows 预览体验计划发行说明
 
-从我们的[Windows 全息版2020更新](hololens-release-notes.md)版本，我们的所有版本预览功能现已推出。 请确保[更新 HoloLens](hololens-update-hololens.md)以获取所有最新功能。
+如果你要查找的功能不再在此处列出，则它现在通常可用。 请查看[发行说明](hololens-release-notes.md)，了解哪些版本具有你非常兴奋的功能。 请确保[更新 HoloLens](hololens-update-hololens.md)以获取所有最新功能。
 
-我们将再次通过新功能再次更新此页面，因为我们将这些新功能发布给 Windows 预览体验成员内部版本。
+我们将再次通过新功能更新此页面，因为我们将其发布给 Windows 预览体验成员版本。
 
+| 功能                               | 描述                                                                                   | 在预览体验成员内部版本中可用 |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 自动目视位置支持             | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
+| 全局分配的访问权限                | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1346 +                 |
+| 在多应用展台中自动启动应用 | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
 
 ### 自动目视位置支持
 
@@ -96,12 +103,29 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 对于需要眼睛眼数据或非常精确的全息图位置的体验，我们建议 uncalibrated 用户从目视跟踪校准提示中运行目视跟踪校准，或者从 "开始" 菜单启动 "设置" 应用，然后选择 "**系统 > 校准" > 目视校准 > "运行目视校准**"。
 
 **已知问题**
-1.  我们正在调查 "目视跟踪器驱动程序" 在较高内存负载下运行时可能会崩溃的问题。 目视跟踪驱动程序主机进程应自动恢复。
+ - 我们正在调查 "目视跟踪器驱动程序" 在较高内存负载下运行时可能会崩溃的问题。 目视跟踪驱动程序主机进程应自动恢复。
+
+### 全局分配的访问-展台模式
+此新功能允许 IT 管理员为多个应用展台模式配置 HoloLens 2 设备，该模式适用于系统级别，与系统上的任何标识都没有相关性，并且适用于登录设备的每个人。 请在此仔细阅读此新增[功能。](hololens-global-assigned-access-kiosk.md)
+
+### 在多应用展台模式下自动启动应用程序 
+仅适用于多应用展台模式，并且只能将1个应用指定为使用 "分配的访问配置" 下方的突出显示属性自动启动。 
+
+应用程序将在用户登录时自动启动。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU 下载和快闪路线
 若要使用带流量签名的 ffu 进行测试，首先必须在闪烁已签名的 ffu 之前，再将设备解锁。
-1. 在 PC 上
-    1. 从以下计算机下载 ffu：[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. 在 PC 上：
+
+    1. 将 ffu 下载到电脑 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
+    
     1. 从 Microsoft Store 安装 ARC （高级恢复助理）：[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. 在 HoloLens-航班解锁：打开**设置**  >  **更新 & 安全**  >  **Windows 预览体验计划**，然后注册，重新启动设备
-1. Flash FFU-现在，你可以使用 ARC 对已签名的 FFU 进行闪烁
+    
+1. 在 HoloLens-航班解锁：打开**设置**  >  **更新 & 安全**  >  **Windows 预览体验计划**，然后注册，重新启动设备。
+
+1. Flash FFU-现在，你可以使用 ARC 对已签名的 FFU 进行闪烁。

@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827981"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881325"
 ---
 # HoloLens 已知问题
 
@@ -47,6 +47,14 @@ ms.locfileid: "10827981"
 - 混合现实捕获中的实时预览功能可能会显示几秒钟的延迟。
 - 在 "虚拟输入" 页面上，"虚拟手势" 部分下的 "手势" 和 "滚动" 控件不起作用。 使用它们将不起作用。 同一页面上的虚拟键盘工作正常。
 - 在 "设置" 中启用开发人员模式后，可能需要几秒钟才能启用设备门户。
+
+### OneDrive 相机上传
+
+适用于 HoloLens 的 OneDrive 应用不支持工作或学校帐户的自动照相机上载。
+
+办法
+- 如果你的企业可行，自动照相机上载在消费者 Microsoft 帐户上受支持。 除了你的工作或学校帐户外，你还可以登录到你的 Microsoft 帐户（OneDrive 应用支持双重登录）。 从 OneDrive 中的 Microsoft 帐户配置文件，你可以启用自动的后台相机滚动上载。
+- 如果您无法安全地使用消费者 Microsoft 帐户自动上载您的照片，则可以手动将照片从 OneDrive 应用上载到您的工作或学校帐户。 若要执行此操作，请确保在 OneDrive 应用中登录到你的工作或学校帐户。 选择该 **+** 按钮，然后选择 "**上传**"。 导航到 "**照片" > "照相机卷筒**"，查找要上载的照片或视频。 选择要上传的照片或视频，然后选择 "**打开**" 按钮。
 
 ## HoloLens 2 设备的已知问题
 
