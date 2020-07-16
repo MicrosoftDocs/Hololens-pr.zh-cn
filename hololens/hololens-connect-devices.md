@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d4c5441c1df198ae1c85be5d8f4fe38f10f0be4b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827687"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881242"
 ---
 # 连接到蓝牙和 USB-C 设备
 
@@ -29,6 +29,9 @@ HoloLens 2 支持以下类别的蓝牙设备：
 - 鼠标
 - 键盘
 - 蓝牙音频输出 (A2DP) 设备
+
+> [!NOTE]
+> 无法使用外置麦克风。 HoloLens 2 使用内置 [麦克风阵列](hololens2-hardware.md#audio-and-speech)。
 
 HoloLens（第 1 代）支持以下类别的蓝牙设备：
 
@@ -44,7 +47,9 @@ HoloLens（第 1 代）支持以下类别的蓝牙设备：
 1. 打开键盘或鼠标，使其能够被检测到。 若要了解如何使设备可被检测到，请在设备（或其文档）中查找相关信息或访问制造商的网站。
 
 1. 使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”****，然后选择“设置”****。
+
 1. 选择“设备”****，并确保已启用蓝牙。  
+
 1. 看到设备名称后，选择“配对”****，然后按照说明进行操作。
 
 ### HoloLens（第 1 代）：配对点击器
@@ -74,7 +79,7 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 - 组合 PD 集线器（USB A + PD 充电）
 
 > [!NOTE]
-> 一些具有 USB-C 连接的移动设备会将自身作为以太网适配器呈现给 HoloLens，因此可在网络共享配置中使用（从 Windows Holographic 2004 版本开始）。 不支持需要单独的驱动程序和/或通过安装的应用程序进行配置的 USB LTE 调制解调器
+> 一些具有 USB-C 连接的移动设备会将自身作为以太网适配器呈现给 HoloLens，因此可在网络共享配置中使用（从 Windows Holographic 2004 版本开始）。 不支持需要单独的驱动程序和/或通过安装的应用程序进行配置的 USB LTE 调制解调器。
 
 ## 连接到 Miracast
 
@@ -86,6 +91,7 @@ HoloLens 2 支持以下类别的 USB-C 设备：
    - 盯着“开始”**** 菜单说“连接”。  
 
 1. 在所显示设备的列表中，选择一个可用的设备。
+
 1. 完成配对，开始进行投影。
 
 ## 禁用蓝牙
@@ -93,4 +99,5 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 此程序将关闭蓝牙无线电收发器的 RF 组件，并禁用 Microsoft HoloLens 上的所有蓝牙功能。
 
 1. 使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”****，然后选择“设置”**** > “设备”****。
+
 1. 将“蓝牙”**** 的滑块开关移至“关闭”**** 位置。
