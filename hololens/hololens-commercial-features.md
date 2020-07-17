@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827825"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882982"
 ---
 # 商业功能
 
@@ -75,11 +75,11 @@ HoloLens（第一代）附带两个许可选项：开发人员许可证和商业
 
 ## 启用商业功能
 
-组织的 IT 管理员可以设置商业功能，如适用于企业的 Microsoft Store、展台模式和企业 WLAN 访问。 [Microsoft HoloLens](index.md) 文档提供了从适用于企业的 Microsoft Store 注册设备和安装应用的分步说明。
+组织的 IT 管理员可以设置商业功能，如适用于企业的 Microsoft Store、展台模式和企业 WLAN 访问。 [Microsoft HoloLens](index.yml) 文档提供了从适用于企业的 Microsoft Store 注册设备和安装应用的分步说明。
 
 ## 另请参阅
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [展台模式](hololens-kiosk.md)
 - [HoloLens 设备支持的云解决方案提供商](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [适用于企业的 Microsoft Store 和业务线应用](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
