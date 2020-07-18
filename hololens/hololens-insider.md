@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 6/29/2020
+ms.date: 7/17/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
+ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882424"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "10883365"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -84,6 +84,8 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 | 自动目视位置支持             | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
 | 全局分配的访问权限                | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1346 +                 |
 | 在多应用展台中自动启动应用 | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
+| Hololens 2 的新 power 策略     | 新支持的电源超时设置策略。                                          | 19041.1349 +                 |
+| 证书查看器                    | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
 
 ### 自动目视位置支持
 
@@ -117,6 +119,33 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+### Hololens 2 的新 power 策略
+这些新添加的策略允许管理员控制电源状态，如空闲超时。 若要阅读有关每个单独策略的详细信息，请单击该策略的链接。
+
+|     策略文档链接                |     注释                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  要在 Windows 配置设计器中使用的示例值，即100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     要在 Windows 配置设计器中使用的示例值，即100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置设计器中使用的示例值，即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### 证书查看器
+
+在 Windows 预览体验计划内部版本19041.1346 中，我们将在 HoloLens 2 设置应用中添加证书查看器。 此功能为验证设备上的证书提供了一种简单且易于用户理解的方法。 快速查找特定证书有选项可按名称、存储或到期日期进行排序。 用户也可以直接搜索证书。 使用新的证书查看器，管理员和用户现在可以改进审核、诊断和验证工具，以确保设备保持安全和合规。  若要查看有关单个证书的详细信息，请选择证书，然后单击 "信息"。
+
+> [!NOTE]
+> 我们正在处理后续 Windows 预览体验计划版本中解决的非美国语言本地化有已知限制。
+
+-   **审核：** 验证是否已正确部署证书或确认是否已正确删除证书的功能。 
+-   **诊断：** 出现问题时，验证设备上是否存在相应的证书可节省时间并帮助进行故障排除。 
+-   **验证：** 验证证书是否服务于预期用途且正常运行，可以节省大量时间，尤其是在商业环境中，在以较大比例部署证书之前。
+
+若要查看证书，请转到 "**设置" > 更新 & 安全 > 证书**。
+
+!["设置" 应用中的证书查看器](images/hololens-certificate-viewer.png)
 
 ## FFU 下载和快闪路线
 若要使用带流量签名的 ffu 进行测试，首先必须在闪烁已签名的 ffu 之前，再将设备解锁。
