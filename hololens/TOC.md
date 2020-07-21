@@ -47,7 +47,6 @@
 ### [硬件支持的安全性和运行时认证](security-hardware-backed-integrity.md)
 ### [加密和数据保护](security-encryption-data-protection.md)
 ### [网络安全性](security-network-security.md)
-### [无线和 Wi-Fi](security-wireless-wifi.md)
 ### [安全工程 ](security-engineering.md)
 ### HoloLens 第一代安全问题
 #### [常见的 HoloLens 第一代安全问题](hololens1-faq-security.md)
