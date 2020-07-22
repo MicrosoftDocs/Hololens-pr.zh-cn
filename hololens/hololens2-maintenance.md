@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6ce55630c6ec20b83ca24006acedbe5f949997
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
+ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827913"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888551"
 ---
 # HoloLens 2 清洁常见问题解答
 
@@ -74,7 +74,7 @@ ms.locfileid: "10827913"
 
 ## 是否可以使用 ultraviolet （UV）光清理设备？
 
-尚未在 HoloLens 2 上测试 irradiation 的 UV germicidal。
+UVC irradiance 使用 UVC LED，它以 0.5-0.6 mW/cm 2 的密度级别运行 <sup> ，不 </sup> 发出 ozone，可用于净化 HoloLens2。 请遵循制造商关于处理和曝光时间的规范。
 
 > [!CAUTION]  
 > 高级别的 UV A 和 UV-B 曝光可能会降低设备的显示质量，并损坏面板涂层。 对于 UV A 和 UV-B 辐射的曝光度由曝光的持续时间和强度顺序产生下列影响：
@@ -82,7 +82,7 @@ ms.locfileid: "10827913"
 > 1. Brow pad 和设备闭包将变为脱色。
 > 1. 在面板上和传感器窗口上，防反射（AR）涂层中将显示缺陷。
 > 1. 在面板的基本材料和传感器窗口中显示缺陷。
-> 1. SRG 性能会降低。
+> 1. 显示性能会降低。
 
 ## 后 pad 是否可替换？
 
