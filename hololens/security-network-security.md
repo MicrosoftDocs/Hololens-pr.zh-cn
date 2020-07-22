@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c88a9af7369a6a9d6fb115fb820c0a4da13eafdc
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 147401331cb6da732a6fe37e57964d61a10dce99
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865691"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883136"
 ---
 # 网络安全性
 
@@ -26,8 +26,6 @@ ms.locfileid: "10865691"
 过时的 NetBIOS（网络基本输入/输出系统）在过去的 LAN 方案中广泛使用，通常用于为计算机和共享文件夹中提供名称解析。 但随着时间推移，已证明 NetBIOS 容易受到多种攻击，其相关性的降低支持了其他更安全的协议取而代之。 为了消除此漏洞问题，HoloLens 2 已删除操作系统中与 NetBIOS 相关的代码。
 
 TLS（传输层安全性）协议正不断发展。 为跟上在此领域已经发现的各种安全漏洞，计算机产业已升级到更新和更有效的版本。 由于所有服务器部署都需时间来采用新 TLS 协议版本，因此可实施一种回退机制，允许不同默认协议版本上的客户端和服务器在过渡期仍能通信。
-
-但此类回退机制会增加安全风险。 理解这个问题，在 HoloLens 2 中，从 TLS 1.2 回退到 TLS 1.1 或 1.0 已被禁用，并且没有用户界面来启用它。 此外，在 TLS 握手过程中，客户机将请求 TLS 1.2，并且不允许服务器降级到较低版本。
 
 ## 安全连接性 
 
