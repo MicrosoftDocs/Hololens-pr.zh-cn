@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
-ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
+ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "10883365"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894059"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -31,47 +31,7 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 ![Windows 预览体验计划频道说明](images/WindowsInsiderChannels.png)
 
-有关详细信息，请执行以下操作： [Windows 博客条目](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
-
-## 开始接收 Insider 内部版本
-
-在 HoloLens 2 设备上，转到 "**设置**"  ->  **更新 & 安全**  ->  **Windows 预览体验计划**"，然后选择"**开始**"。 将用于注册的帐户链接到 Windows 预览体验成员。
-
-然后，选择 " **Windows 的活动开发**"，选择是要接收**开发渠道**还是**Beta 频道**内部版本，并查看计划条款。
-
-选择 "**确认"-> "立即重启**" 完成操作。 重新启动设备后，转到 "**设置"-> 更新 & 安全 > 检查更新**以获取最新版本。
-
-## 停止接收 Insider 内部版本
-
-如果您不想再收到 Windows 全息版的预览体验计划，则可以在 HoloLens 运行生产内部版本时选择退出，也可以使用高级恢复助理将[设备恢复到](hololens-recovery.md)非预览体验的 windows 全息版。
-
-> [!CAUTION]
-> 在手动重新安装新预览版后，从预览体验计划版本注册的用户将遇到蓝屏问题。 之后，他们必须手动恢复其设备。 有关如果你受到影响或不受影响的详细信息，请查看有关此[已知问题](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)的详细信息。
-
-若要验证 HoloLens 是否正在运行生产内部版本，请执行以下操作：
-
-1. 转到 "**设置" > "系统 >**"，然后找到内部版本号。
-
-1. [请参阅生产内部版本号的发行说明](hololens-release-notes.md)。
-
-若要退出预览体验计划内部版本，请执行以下操作：
-
-1. 在运行生产版本的 HoloLens 上，转到 "**设置" > 更新 Windows 预览体验计划 & 安全 >**，然后选择 "**停止预览体验成员版本**"。
-
-1. 按照说明选择退出您的设备。
-
-
-## 提供反馈和报告问题
-
-请使用 HoloLens 上[的 "反馈中心" 应用](hololens-feedback.md)提供反馈和报告问题。 使用 "反馈中心" 可确保包含所有必要的诊断信息，以帮助我们的工程师快速调试和解决问题。  必须以相同的方式报告与中文和日语版本的 HoloLens 有关的问题。
-
-> [!NOTE]
-> 请确保接受询问您是否希望 "反馈中心" 访问您的 "文档" 文件夹的提示（在出现提示时选择 **"是"** ）。
-
-## 适用于开发人员的备注
-
-欢迎和鼓励你尝试使用 HoloLens 的预览体验成员版本来开发应用程序。  请查看[HoloLens 开发人员文档](https://developer.microsoft.com/windows/mixed-reality/development)以开始使用。 这些相同的说明适用于 HoloLens 的预览体验计划版本。  你可以使用你已用于 HoloLens 开发的 Unity 和 Visual Studio 的相同版本。
-
+有关详细信息，请参阅 Windows 博客上的[Windows 预览体验成员频道简介](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)。
 
 ## Windows 预览体验计划发行说明
 
@@ -79,13 +39,16 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 我们将再次通过新功能更新此页面，因为我们将其发布给 Windows 预览体验成员版本。
 
-| 功能                               | 描述                                                                                   | 在预览体验成员内部版本中可用 |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| 自动目视位置支持             | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
-| 全局分配的访问权限                | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1346 +                 |
-| 在多应用展台中自动启动应用 | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
-| Hololens 2 的新 power 策略     | 新支持的电源超时设置策略。                                          | 19041.1349 +                 |
-| 证书查看器                    | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
+| 功能                                         | 描述                                                                                   | 在预览体验成员内部版本中可用 |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 自动目视位置支持                       | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
+| 全局分配的访问权限                          | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1346 +                 |
+| 在多应用展台中自动启动应用           | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
+| Hololens 2 的新 power 策略               | 新支持的电源超时设置策略。                                          | 19041.1349 +                 |
+| 证书查看器                              | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
+| 适用于 HoloLens 2 的新设备限制策略  | 新启用了 HoloLens 2 的设备管理策略。                              | 19041.1349 +                 |
+| 已启用 HoloLens 2 的设置页面可见性 | 用于选择在 "设置" 应用中显示哪些页面的策略。                                          | 19041.1349 +                 |
+| HoloLens 政策                               | 混合现实设备的新策略。                                                       | 19041.1349 +                 |
 
 ### 自动目视位置支持
 
@@ -147,6 +110,38 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 !["设置" 应用中的证书查看器](images/hololens-certificate-viewer.png)
 
+### 适用于 HoloLens 2 的新设备限制策略
+允许 HoloLens 2 设备的更多管理选项的新启用的策略。 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### 已启用 HoloLens 2 的设置页面可见性
+现已启用策略，允许 IT 管理员防止系统设置应用中的特定页面可见或易于访问，或者针对除指定的页面之外的所有页面执行此操作。 若要了解如何完全自定义此功能，请单击下面的链接。
+ 
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+ 
+![在 "设置" 应用中修改的活动小时的屏幕截图](images/hololens-page-visibility-list.jpg)
+
+### HoloLens 政策
+在版本 19041.1349 + 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、在混合现实捕获中禁用音频录制，可在收集诊断时进行设置。  
+
+|     新的 HoloLens 政策                   |     描述                                                                            |     注释                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     允许禁用亮度按钮，因此按住它不会更改亮度。    |     1是，0否（默认值）                                                |
+|     MixedReality\VolumeButtonDisabled     |     允许禁用音量按钮，因此按下不会更改音量。            |     1是，0否（默认值）                                                |
+|     MixedReality\MicrophoneDisabled       |     禁用麦克风，因此在 HoloLens 2 上不能录音。                   |     1是，0否（默认值）                                                |
+|     MixedReality\FallbackDiagnostics      |     控制可收集诊断日志的行为。                            |     0已禁用，1为设备所有者启用1，为所有人启用2（默认值） |
+|     MixedReality\HeadTrackingMode         |     保留以供将来使用。                                                               |                                                                          |
+
+## 开始接收 Insider 内部版本
+
+在 HoloLens 2 设备上，转到 "**设置**"  >  **更新 & 安全**  >  **Windows 预览体验计划**"，然后选择"**开始**"。 将用于注册的帐户链接到 Windows 预览体验成员。
+
+然后，选择 " **Windows 的活动开发**"，选择是要接收**开发渠道**还是**Beta 频道**内部版本，并查看计划条款。
+
+选择 "**确认" > "立即重启**" 完成。 重新启动设备后，转到 "**设置" > 更新 & 安全 > 检查更新**以获取最新版本。
+
 ## FFU 下载和快闪路线
 若要使用带流量签名的 ffu 进行测试，首先必须在闪烁已签名的 ffu 之前，再将设备解锁。
 1. 在 PC 上：
@@ -158,3 +153,33 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 1. 在 HoloLens-航班解锁：打开**设置**  >  **更新 & 安全**  >  **Windows 预览体验计划**，然后注册，重新启动设备。
 
 1. Flash FFU-现在，你可以使用 ARC 对已签名的 FFU 进行闪烁。
+
+## 提供反馈和报告问题
+
+请使用 HoloLens 上[的 "反馈中心" 应用](hololens-feedback.md)提供反馈和报告问题。 使用 "反馈中心" 可确保包含所有必要的诊断信息，以帮助我们的工程师快速调试和解决问题。  必须以相同的方式报告与中文和日语版本的 HoloLens 有关的问题。
+
+> [!NOTE]
+> 请确保接受询问您是否希望 "反馈中心" 访问您的 "文档" 文件夹的提示（在出现提示时选择 **"是"** ）。
+
+## 适用于开发人员的备注
+
+欢迎和鼓励你尝试使用 HoloLens 的预览体验成员版本来开发应用程序。  请查看[HoloLens 开发人员文档](https://developer.microsoft.com/windows/mixed-reality/development)以开始使用。 这些相同的说明适用于 HoloLens 的预览体验计划版本。  你可以使用你已用于 HoloLens 开发的 Unity 和 Visual Studio 的相同版本。
+
+## 停止接收 Insider 内部版本
+
+如果您不想再收到 Windows 全息版的预览体验计划，则可以在 HoloLens 运行生产内部版本时选择退出，也可以使用高级恢复助理将[设备恢复到](hololens-recovery.md)非预览体验的 windows 全息版。
+
+> [!CAUTION]
+> 在手动重新安装新预览版后，从预览体验计划版本注册的用户将遇到蓝屏问题。 之后，他们必须手动恢复其设备。 有关如果你受到影响或不受影响的详细信息，请查看有关此[已知问题](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)的详细信息。
+
+若要验证 HoloLens 是否正在运行生产内部版本，请执行以下操作：
+
+1. 转到 "**设置" > "系统 >**"，然后找到内部版本号。
+
+1. [请参阅生产内部版本号的发行说明](hololens-release-notes.md)。
+
+若要退出预览体验计划内部版本，请执行以下操作：
+
+1. 在运行生产版本的 HoloLens 上，转到 "**设置" > 更新 Windows 预览体验计划 & 安全 >**，然后选择 "**停止预览体验成员版本**"。
+
+1. 按照说明选择退出您的设备。
