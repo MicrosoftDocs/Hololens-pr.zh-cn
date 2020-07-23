@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e41dc6c9d12ee57bb306ebca7e2eeac0b3478014
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857720"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894048"
 ---
 # HoloLens 2 硬件
 
@@ -143,7 +143,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 * 目测安全性：HoloLens 2 已经过测试，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响保护要求。
 
 ### 规章信息
-[HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)
+[HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。
 
 ## 下一步
 

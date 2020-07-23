@@ -81,7 +81,7 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 > [!NOTE]
 > 一些具有 USB-C 连接的移动设备会将自身作为以太网适配器呈现给 HoloLens，因此可在网络共享配置中使用（从 Windows Holographic 2004 版本开始）。 不支持需要单独的驱动程序和/或通过安装的应用程序进行配置的 USB LTE 调制解调器。
 
-为了回应客户的反馈，我们已为通过 USB-C 直接绑定到 HoloLens 的蜂窝连接提供了有限的支持。  系留连接仅适用于支持通用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驱动程序实施且不需要任何其他驱动程序或应用程序安装的设备。  连接后，此类设备将在 HoloLens 2 网络设置用户界面中自动显示为新的以太网连接。 有关其是否支持通用 Microsoft RNDIS 驱动程序的更多详细信息，请咨询设备的制造商。
+为了回应客户的反馈，我们已通过 USB-C 为直接连接到 HoloLens 的蜂窝网络提供有限的支持。  连接的网络仅适用于支持通用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驱动程序实施的设备，且不需要安装任何其他驱动程序或应用程序。  连接后，此类设备将在 HoloLens 2 网络设置 UI 中自动显示为新的以太网连接。 请联系设备的制造商，咨询其是否支持通用 Microsoft RNDIS 驱动程序的更多详细信息。
 
 ## 连接到 Miracast
 
