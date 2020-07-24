@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
+ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894059"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "10894601"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -39,8 +39,8 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 我们将再次通过新功能更新此页面，因为我们将其发布给 Windows 预览体验成员版本。
 
-| 功能                                         | 描述                                                                                   | 在预览体验成员内部版本中可用 |
-|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+|                     功能                     |                                          描述                                          | 在预览体验成员内部版本中可用 |
+|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
 | 自动目视位置支持                       | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
 | 全局分配的访问权限                          | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1346 +                 |
 | 在多应用展台中自动启动应用           | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
@@ -49,6 +49,7 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 | 适用于 HoloLens 2 的新设备限制策略  | 新启用了 HoloLens 2 的设备管理策略。                              | 19041.1349 +                 |
 | 已启用 HoloLens 2 的设置页面可见性 | 用于选择在 "设置" 应用中显示哪些页面的策略。                                          | 19041.1349 +                 |
 | HoloLens 政策                               | 混合现实设备的新策略。                                                       | 19041.1349 +                 |
+| 更新策略                                 | 允许控制更新的新启用的策略。                                           | 19041.1352 +                 |
 
 ### 自动目视位置支持
 
@@ -133,6 +134,12 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 |     MixedReality\MicrophoneDisabled       |     禁用麦克风，因此在 HoloLens 2 上不能录音。                   |     1是，0否（默认值）                                                |
 |     MixedReality\FallbackDiagnostics      |     控制可收集诊断日志的行为。                            |     0已禁用，1为设备所有者启用1，为所有人启用2（默认值） |
 |     MixedReality\HeadTrackingMode         |     保留以供将来使用。                                                               |                                                                          |
+### 适用于 HoloLens 的新启用的更新策略
+现已在 HoloLens 2 设备上启用这些更新策略：
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ## 开始接收 Insider 内部版本
 
