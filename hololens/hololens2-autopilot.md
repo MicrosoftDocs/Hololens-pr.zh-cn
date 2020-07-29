@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 8f62c09fd569e6c5dbeb961ae023c6f3cefff879
-ms.sourcegitcommit: 72be5b64e90dde339323012997440dfaca182027
+ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10895786"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899104"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
@@ -68,7 +68,7 @@ ms.locfileid: "10895786"
 
 - 必须使用[Advanced Recovery Companion (ARC) ](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)手动安装最新操作系统（Windows 全息版 版本 2004（内部版本 19041.1103 或更高版本）。 可在[此处](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)找到说明。 
 - 设备必须在 Windows Autopilot 中注册。 有关如何注册设备的更多信息，请参阅 [4. 在 Windows Autopilot 中注册设备](#4-register-devices-in-windows-autopilot)。 
-- 在当前版本中，在打开 HoloLens 和启动 Autopilot 预配过程之前，需要将设备连接到 Internet。 使用“USB-C到以太网”适配器进行有线 Internet 连接，也可以使用“USB-C 到 Wifi”适配器进行无线 Internet 连接，将设备连接到以太网。 
+- 在当前版本中，在打开 HoloLens 和启动 Autopilot 预配过程之前，需要将设备连接到 Internet。 使用“适用于以太网的 USB-C”适配器将设备连接到以太网，以便连接到有线 Internet。 
 - 设备尚不是 Azure AD 的成员，并且未在 Intune （或其他 MDM 系统）中注册。 Autopilot 自部署过程完成这些步骤。 若要确保清理所有设备相关信息，请检查 Azure AD 和 Intune 门户中的“**设备**”页面。
 - 若要配置和管理 Autopilot 自部署模式配置文件，请确保你有权访问[Microsoft 终结点管理器管理中心](https://endpoint.microsoft.com)。
 

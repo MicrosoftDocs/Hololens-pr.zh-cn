@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861157"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899175"
 ---
 # 重启、重置或恢复 HoloLens（第 1 代）
 
@@ -91,7 +91,7 @@ ms.locfileid: "10861157"
 
 如果重置设备，则将擦除所有个人数据、应用和设置，包括 TPM 重置。 重置操作将仅安装最近安装的 Windows Holographic 版本，你必须重新执行所有初始化步骤（校准、连接到 Wi-Fi、创建用户帐户、下载应用等）。
 
-1. 启动“设置”应用，然后选择“更新”**** > “重置”****。
+1. 启动“设置”应用，然后选择 **“更新”** > **“恢复”**。
 1. 选择“重置设备”**** 选项，然后阅读确认消息。
 1. 如果你同意重置设备，则设备将重新启动并显示一组旋转的齿轮和一个进度栏。
 1. 等待约 30 分钟，直至该过程完成。
