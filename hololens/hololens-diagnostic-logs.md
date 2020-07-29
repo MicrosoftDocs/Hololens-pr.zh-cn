@@ -1,5 +1,5 @@
 ---
-title: 从 HoloLens 设备收集和使用诊断信息
+title: 收集和使用来自 HoloLens 设备的诊断信息
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -18,14 +18,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827973"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899165"
 ---
-# 从 HoloLens 设备收集和使用诊断信息
+# 收集和使用来自 HoloLens 设备的诊断信息
 
 HoloLens 用户和管理员可以从以下四种不同的方法中进行选择，以从 HoloLens 收集诊断信息：
 
@@ -43,6 +43,7 @@ HoloLens 用户和管理员可以从以下四种不同的方法中进行选择�
 |[反馈中心](#feedback-hub) |网络和 internet 连接<br /><br />反馈中心应用<br /><br />将文件上传到 Microsoft 云的权限 |Microsoft cloud<br /><br />HoloLens 设备（可选） |用户请求协助、同意使用条款以及上载数据<br /><br />Microsoft 员工查看数据（与使用条款一致） |云中的数据在由下一代隐私（NGP）定义的时间段内保留。 然后，将自动删除该数据。<br /><br />具有**设备所有者**或**管理员**权限的用户可以随时删除设备上的数据。 |
 |[设置疑难解答](#settings-troubleshooter) |“设置”应用 |HoloLens 设备<br /><br />已连接的计算机（可选） |用户存储数据，并且只有用户访问数据（除非用户特别与另一个用户共享数据）。 |数据将保留，直到用户删除它。 * |
 |[DiagnosticLog 云解决方案提供商](#diagnosticlog-csp) |网络连接<br /><br />支持 DiagnosticLog CSP 的 MDM 环境 |管理员配置存储位置 |在托管环境中，用户隐式内容对数据的管理员访问。<br /><br />管理员配置访问角色和权限。 | 管理员配置保留策略。 |
+|[离线诊断](#offline-diagnostics) |设备配置：<ul><li>已接通电源并已连接到计算机</li><li>电源和音量按钮正常工作</li></ul> |HoloLens 设备<br /><br />已连接计算机 |用户存储数据，并且只有用户访问数据（除非用户特别与另一个用户共享数据）。 |数据将保留，直到用户删除它。 | 
 
 
 -   最终用户负责与其他人共享日志。 这些文件主要用于联系客户服务和支持人员。  
@@ -116,4 +117,22 @@ IT 管理员使用 DiagnosticLog CSP 配置数据存储、保留和访问策略�
 - 诊断信息的保留期。
 - 控制诊断信息访问权限的权限。
 
+## 离线诊断
+如果设备不能通过 "反馈中心" 或 "设置疑难解答" 收集诊断，则可以手动收集诊断。 需要此功能的一种情况是设备无法连接到 Wi-fi。 诊断程序从设备收集故障转储和日志，帮助 Microsoft 支持工程师隔离问题。
+
+在通过 USB 电缆将设备连接到电脑后，在文件资源管理器中显示该设备时，此操作将起作用。 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+请按照以下步骤收集诊断：
+1.  将设备与 USB 电缆连接到电脑。
+2.  在电脑上的文件资源管理器中，导航到 **"这台电脑 \<hololens-device> \Internal 存储"**。
+3.  如果未显示 "**内部存储**" 文件夹，则表示设备正在等待用户登录。 您可以通过按住电源按钮10秒钟来登录或重启设备。
+4.  按下并立即释放 **+ "音量按下**" 按钮。
+5.  等待一分钟，让设备准备 zip 存档。
+6.  刷新文件资源管理器，并导航到 **"\Documents"** 文件夹。
+7.  复制诊断 ZIP 文件，并将其与 Microsoft 支持团队共享。
+
+请注意，某些诊断 ZIP 文件可能包含个人身份信息。
 
