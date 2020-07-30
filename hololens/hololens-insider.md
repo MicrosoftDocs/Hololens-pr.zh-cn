@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
-ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
+ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894601"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902308"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -39,17 +39,19 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 我们将再次通过新功能更新此页面，因为我们将其发布给 Windows 预览体验成员版本。
 
-|                     功能                     |                                          描述                                          | 在预览体验成员内部版本中可用 |
-|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| 自动目视位置支持                       | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
-| 全局分配的访问权限                          | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1346 +                 |
-| 在多应用展台中自动启动应用           | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
-| Hololens 2 的新 power 策略               | 新支持的电源超时设置策略。                                          | 19041.1349 +                 |
-| 证书查看器                              | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
-| 适用于 HoloLens 2 的新设备限制策略  | 新启用了 HoloLens 2 的设备管理策略。                              | 19041.1349 +                 |
-| 已启用 HoloLens 2 的设置页面可见性 | 用于选择在 "设置" 应用中显示哪些页面的策略。                                          | 19041.1349 +                 |
-| HoloLens 政策                               | 混合现实设备的新策略。                                                       | 19041.1349 +                 |
-| 更新策略                                 | 允许控制更新的新启用的策略。                                           | 19041.1352 +                 |
+| 功能                                              | 描述                                                                                   | 在预览体验成员内部版本中可用 |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 自动目视位置支持                            | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
+| 证书查看器                                   | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
+| HoloLens 政策                                    | 混合现实设备的新策略。                                                       | 19041.1349 +                 |
+| 缓存脱机展台的 AAD 组成员身份         | 针对展台模式允许使用 AAD 组成员身份缓存的天数的策略。     | 19041.1356 +                 |
+| 适用于 HoloLens 2 的新设备限制策略       | 新启用了 HoloLens 2 的设备管理策略。                              | 19041.1349 +                 |
+| HoloLens 2 的新 power 策略                    | 新支持的电源超时设置策略。                                          | 19041.1349 +                 |
+| 更新策略                                      | 允许控制更新的新启用的策略。                                           | 19041.1352 +                 |
+| 已启用 HoloLens 2 的设置页面可见性      | 用于选择在 "设置" 应用中显示哪些页面的策略。                                          | 19041.1349 +                 |
+| 全局分配的访问权限                               | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1356 +                 |
+| 在多应用展台中自动启动应用                | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
+| 故障处理的展台模式行为更改 | 现在已处理展台模式故障的更改。                                             | 19041.1356 +                 |
 
 ### 自动目视位置支持
 
@@ -71,31 +73,6 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 **已知问题**
  - 我们正在调查 "目视跟踪器驱动程序" 在较高内存负载下运行时可能会崩溃的问题。 目视跟踪驱动程序主机进程应自动恢复。
 
-### 全局分配的访问-展台模式
-此新功能允许 IT 管理员为多个应用展台模式配置 HoloLens 2 设备，该模式适用于系统级别，与系统上的任何标识都没有相关性，并且适用于登录设备的每个人。 请在此仔细阅读此新增[功能。](hololens-global-assigned-access-kiosk.md)
-
-### 在多应用展台模式下自动启动应用程序 
-仅适用于多应用展台模式，并且只能将1个应用指定为使用 "分配的访问配置" 下方的突出显示属性自动启动。 
-
-应用程序将在用户登录时自动启动。 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Hololens 2 的新 power 策略
-这些新添加的策略允许管理员控制电源状态，如空闲超时。 若要阅读有关每个单独策略的详细信息，请单击该策略的链接。
-
-|     策略文档链接                |     注释                                                                                                                                       |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  要在 Windows 配置设计器中使用的示例值，即100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     要在 Windows 配置设计器中使用的示例值，即100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置设计器中使用的示例值，即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
-
 ### 证书查看器
 
 在 Windows 预览体验计划内部版本19041.1346 中，我们将在 HoloLens 2 设置应用中添加证书查看器。 此功能为验证设备上的证书提供了一种简单且易于用户理解的方法。 快速查找特定证书有选项可按名称、存储或到期日期进行排序。 用户也可以直接搜索证书。 使用新的证书查看器，管理员和用户现在可以改进审核、诊断和验证工具，以确保设备保持安全和合规。  若要查看有关单个证书的详细信息，请选择证书，然后单击 "信息"。
@@ -111,11 +88,62 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 
 !["设置" 应用中的证书查看器](images/hololens-certificate-viewer.png)
 
+### HoloLens 政策
+在版本 19041.1349 + 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、禁用混合现实捕获中的音频录制、可收集诊断的设置以及 AAD 组成员身份缓存。  
+
+| 新的 HoloLens 政策                                | 描述                                                                               | 注释                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | 允许禁用亮度按钮，因此按住它不会更改亮度。       | 1是，0否（默认值）                                                |
+| MixedReality\VolumeButtonDisabled                  | 允许禁用音量按钮，因此按下不会更改音量。               | 1是，0否（默认值）                                                |
+| MixedReality\MicrophoneDisabled                    | 禁用麦克风，因此在 HoloLens 2 上不能录音。                      | 1是，0否（默认值）                                                |
+| MixedReality\FallbackDiagnostics                   | 控制可收集诊断日志的行为。                               | 0已禁用，1为设备所有者启用1，为所有人启用2（默认值） |
+| MixedReality\HeadTrackingMode                      | 保留以供将来使用。                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | 控制 AAD 组成员身份缓存用于面向 AAD 组的展台的天数。 | 请参阅下文。                                                           |
+
+### 缓存脱机展台的 AAD 组成员身份
+
+此策略控制允许将 AAD 组成员身份缓存用于分配用于登录用户的 AAD 组的分配访问配置的天数。 一旦将此策略值设置为大于0的值，否则将使用缓存。  
+
+AADGroupMembershipCacheValidityInDays 
+
+最小值-0 天  
+最大-60 天 
+
+正确使用此策略的步骤： 
+1. 为面向 AAD 组的展台创建设备配置文件，并将其分配到 HoloLens 设备。 
+1. 创建基于自定义 OMA URI 的设备配置，将此策略值设置为所需的天数（> 0），并将其分配到 HoloLens 设备。 
+1. 注册 HoloLens 设备并验证这两种配置均已应用到设备。 
+1. 允许 AAD 用户1登录当 internet 可用时，一旦用户登录和 AAD 组成员身份已成功确认，将创建缓存。 
+1. 现在，AAD 用户1可以将 HoloLens 脱机，并将其用于展台模式，前提是策略值允许 X 天。 
+1. 可以为任何其他 AAD 用户 N 重复执行步骤4和步骤5。此处的关键点是任何 AAD 用户必须使用 Internet 登录到设备，因此至少可以确定它们是对其进行目标展台配置的 AAD 组的成员。 
+ 
+> [!NOTE]
+> 在针对 AAD 用户执行步骤4之前，将在 "断开连接的" 环境中遇到以下所述的失败行为。 
+
 ### 适用于 HoloLens 2 的新设备限制策略
 允许 HoloLens 2 设备的更多管理选项的新启用的策略。 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Hololens 2 的新 power 策略
+这些新添加的策略允许管理员控制电源状态，如空闲超时。 若要阅读有关每个单独策略的详细信息，请单击该策略的链接。
+
+|     策略文档链接                |     注释                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  要在 Windows 配置设计器中使用的示例值，即100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     要在 Windows 配置设计器中使用的示例值，即100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     要在 Windows 配置设计器中使用的示例值，即   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     要在 Windows 配置设计器中使用的示例值，即  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### 适用于 HoloLens 的新启用的更新策略
+现已在 HoloLens 2 设备上启用这些更新策略：
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### 已启用 HoloLens 2 的设置页面可见性
 现已启用策略，允许 IT 管理员防止系统设置应用中的特定页面可见或易于访问，或者针对除指定的页面之外的所有页面执行此操作。 若要了解如何完全自定义此功能，请单击下面的链接。
@@ -124,22 +152,24 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
  
 ![在 "设置" 应用中修改的活动小时的屏幕截图](images/hololens-page-visibility-list.jpg)
 
-### HoloLens 政策
-在版本 19041.1349 + 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、在混合现实捕获中禁用音频录制，可在收集诊断时进行设置。  
+### 全局分配的访问-展台模式
+此新功能允许 IT 管理员为多个应用展台模式配置 HoloLens 2 设备，该模式适用于系统级别，与系统上的任何标识都没有相关性，并且适用于登录设备的每个人。 请在此仔细阅读此新增[功能。](hololens-global-assigned-access-kiosk.md)
 
-|     新的 HoloLens 政策                   |     描述                                                                            |     注释                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|     MixedReality\BrightnessButtonDisabled |     允许禁用亮度按钮，因此按住它不会更改亮度。    |     1是，0否（默认值）                                                |
-|     MixedReality\VolumeButtonDisabled     |     允许禁用音量按钮，因此按下不会更改音量。            |     1是，0否（默认值）                                                |
-|     MixedReality\MicrophoneDisabled       |     禁用麦克风，因此在 HoloLens 2 上不能录音。                   |     1是，0否（默认值）                                                |
-|     MixedReality\FallbackDiagnostics      |     控制可收集诊断日志的行为。                            |     0已禁用，1为设备所有者启用1，为所有人启用2（默认值） |
-|     MixedReality\HeadTrackingMode         |     保留以供将来使用。                                                               |                                                                          |
-### 适用于 HoloLens 的新启用的更新策略
-现已在 HoloLens 2 设备上启用这些更新策略：
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### 在多应用展台模式下自动启动应用程序 
+仅适用于多应用展台模式，并且只能将1个应用指定为使用 "分配的访问配置" 下方的突出显示属性自动启动。 
+
+应用程序将在用户登录时自动启动。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 故障处理的展台模式行为更改
+
+早于在应用展台模式时遇到故障，HoloLens 用于显示 "开始" 菜单中的所有应用程序。 从 Windows 预览体验成员内部版本开始，如果出现故障，"开始" 菜单中将不显示任何应用，如下所示： 
+
+!["展台" 模式的图像在失败时立即显示。](images/hololens-kiosk-failure-behavior.png )
 
 ## 开始接收 Insider 内部版本
 

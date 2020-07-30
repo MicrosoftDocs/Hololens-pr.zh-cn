@@ -13,11 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857740"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902287"
 ---
 # 疑难解答
 
@@ -45,13 +46,15 @@ ms.locfileid: "10857740"
 - 浏览和查看你的周围环境，以便 HoloLens 能够更完整地对其进行扫描。
 - 为眼睛校准您的 HoloLens。 转到 "**设置**  >  **系统**  >  **实用工具**"。 在“**校准**”下，选择“**打开校准**”。
 
-## HoloLens 不响应手势
+## HoloLens 未响应手动输入
 
-确保 HoloLens 可以看到你的手势。  将你的手指放在笔势帧中-当 HoloLens 可以看到你的手型时，光标将从一个点更改为一个圆圈。
+为确保 HoloLens 能够看到你的手，你需要将它们放在手势帧中。  混合现实主页提供的反馈可让你了解你的手何时被跟踪。  不同版本的 HoloLens 的反馈不同：
+- 在 HoloLens （第1代）上，注视光标从一个点更改为圆圈
+- 在 HoloLens 2 上，当你的手型接近盖板时，将显示一个指尖光标，当 slates 更远时，将显示一个手形射线
 
-了解有关在[HoloLens （第1代）](hololens1-basic-usage.md#use-hololens-with-your-hands)或[hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用笔势的详细信息。
+许多沉浸式应用都遵循类似于混合现实主页的输入模式。  了解有关在[HoloLens （第1代）](hololens1-basic-usage.md#use-hololens-with-your-hands)和[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用手动输入的详细信息。
 
-如果你的环境太暗，则 HoloLens 可能看不到你的手型，因此请确保有足够的光线。
+如果戴上手套，请注意，某些类型的手套不能与手动跟踪一起使用。  一个常见的示例是黑色橡胶手套，它趋向于吸收红外线，而不是由深度相机拾取。  如果你的工作涉及橡胶手套，我们建议尝试使用较浅的颜色，如蓝色或灰色。  另一个示例是大型 baggy 手套，它往往会遮盖你的手型形状。 我们建议使用符合窗体的手套以获得最佳效果。
 
 如果你的面板有指纹或涂抹，请使用 HoloLens 随附的 microfiber 清洁布来轻轻清理你的面板。
 
