@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827683"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903218"
 ---
 # 在 MDM 中注册 HoloLens
 
@@ -31,6 +31,21 @@ ms.locfileid: "10827683"
 ## 要求
 
  你的组织需要设置移动设备管理（MDM）才能管理 HoloLens 设备。 你的 MDM 提供程序可以是 Microsoft Intune 或使用 Microsoft MDM API 的第三方提供程序。
+ 
+## 不同的注册方式
+
+根据在 OOBE 或发布登录期间选择的标识类型，有不同的注册方法。 若要了解有关 HoloLens 的每种类型的标识的详细信息，请访问[此页面](hololens-identity.md)。
+
+- 如果 Identity 为 AAD，则在 OOBE 期间或**设置应用**  ->  **访问工作或学校**  ->  **连接**按钮时。
+    - 对于 AAD，仅当已为 AAD 配置注册 Url 时，才会自动 MDM 注册。
+- 如果身份为 AAD 且已预先向已分配了特定配置文件的 Intune MDM 服务器注册了设备，则在 OOBE 期间将自动进行 AAD 加入和注册。
+    - 也称为[19041.1103 + 内部版本](hololens-release-notes.md#windows-holographic-version-2004)中提供的[Autopilot 流](hololens2-autopilot.md)。
+- 如果身份为 MSA，则使用 "**设置应用**  ->  **访问工作或学校**  ->  **连接**" 按钮。
+    - 也称为 "添加工作帐户（AWA）流"。
+- 如果身份为本地用户，则使用 "**设置" 应用**  ->  访问 "仅在设备管理链接中使用**工作或学校**  ->  **注册**"。
+    - 也称为纯 MDM 注册流程。
+
+在设备注册到你的 MDM 服务器后，"设置" 应用将立即反映设备是否已注册到 "设备管理" 中。
 
 ## 在 MDM 中自动注册
 
@@ -38,16 +53,6 @@ ms.locfileid: "10827683"
 
 启用自动注册后，不需要其他手动注册。 当用户使用 Azure AD 帐户登录时，设备在完成首次运行体验后在 MDM 中注册。
 
-## 通过“设置”应用进行注册
-
- 当设备在首次运行体验期间未注册时，用户可以使用“设置”应用通过组织的 MDM 服务器手动注册设备。
-
-1. 转到**设置** > **帐户** > **工作访问**。
-1. 选择**注册到设备管理**，然后输入你的组织帐户。 你将被重定向到你的组织登录页。
-1. 成功对 MDM 服务器进行身份验证后，会显示成功的消息。
-
-你的设备现在已注册 MDM 服务器。 现在，“设置”应用将反映设备已在设备管理中注册。
-
 ## 从 Intune 取消 HoloLens
 
-你无法从 Intune 远程[取消注册](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens。 如果管理员使用 MDM 取消注册设备，则设备将从 Intune 仪表板中脱离。
+若要了解有关通过设备的详细信息，请访问[此页面](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment)。 
