@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902287"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915937"
 ---
 # 疑难解答
 
@@ -28,14 +28,14 @@ ms.locfileid: "10902287"
 
 如果您的 HoloLens 无法启动：
 
-- 如果电源按钮旁边的指示灯未亮起，或者只有一个指示灯闪烁，则您可能需要为[HoloLens 收费。](hololens-recovery.md#charging-the-device)
+- 如果电源按钮旁边的指示灯未亮起，或者只有一个指示灯闪烁，则您可能需要为[HoloLens 收费。](hololens-recovery.md#charge-the-device)
 - 如果在按下电源按钮时指示灯亮起，但在显示器上看不到任何内容，请[preform 设备的硬重置](hololens-recovery.md#hard-reset-procedure)。
 
 如果你的 HoloLens 已冻结或无响应：
 
 - 按 "电源" 按钮以关闭 HoloLens，直到所有五个指示灯关闭，或者如果指示灯无响应，则为15秒。 若要启动 HoloLens，请再次按下电源按钮。
 
-如果这些步骤不起作用，可以尝试[恢复 hololens 2 设备](hololens-recovery.md)或[hololens （第1代）设备。](hololens1-recovery.md)
+如果这些步骤不起作用，可以尝试[恢复 hololens 2 设备](hololens-recovery.md)或[hololens (第一代) 设备。](hololens1-recovery.md)
 
 ## 全息影像看起来不好
 
@@ -49,10 +49,10 @@ ms.locfileid: "10902287"
 ## HoloLens 未响应手动输入
 
 为确保 HoloLens 能够看到你的手，你需要将它们放在手势帧中。  混合现实主页提供的反馈可让你了解你的手何时被跟踪。  不同版本的 HoloLens 的反馈不同：
-- 在 HoloLens （第1代）上，注视光标从一个点更改为圆圈
+- 在 HoloLens (第一代) ，注视光标从一个点更改为圆圈
 - 在 HoloLens 2 上，当你的手型接近盖板时，将显示一个指尖光标，当 slates 更远时，将显示一个手形射线
 
-许多沉浸式应用都遵循类似于混合现实主页的输入模式。  了解有关在[HoloLens （第1代）](hololens1-basic-usage.md#use-hololens-with-your-hands)和[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用手动输入的详细信息。
+许多沉浸式应用都遵循类似于混合现实主页的输入模式。  了解有关在[HoloLens (第一代) ](hololens1-basic-usage.md#use-hololens-with-your-hands)和[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用手动输入的详细信息。
 
 如果戴上手套，请注意，某些类型的手套不能与手动跟踪一起使用。  一个常见的示例是黑色橡胶手套，它趋向于吸收红外线，而不是由深度相机拾取。  如果你的工作涉及橡胶手套，我们建议尝试使用较浅的颜色，如蓝色或灰色。  另一个示例是大型 baggy 手套，它往往会遮盖你的手型形状。 我们建议使用符合窗体的手套以获得最佳效果。
 

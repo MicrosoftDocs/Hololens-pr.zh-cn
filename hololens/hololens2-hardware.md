@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894048"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903327"
 ---
 # HoloLens 2 硬件
 
@@ -144,6 +144,23 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 ### 规章信息
 [HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。
+
+## 应用包维度
+
+|      测量               |      单位指标     |      英制单位     |
+|--------------------------------|-----------------------|-------------------------|
+|     设备长度                |     378.97mm          |     14.920 英寸       |
+|     设备宽度                 |     247.90mm          |     9.760 英寸        |
+|     设备深度                 |     163.07mm          |     6.420 英寸        |
+|     设备重量                |     2.878kg           |     6.344 lbs           |
+|     外部托运长度    |     446.00mm          |     17.559 英寸       |
+|     外部托运宽度     |     257.99mm          |     10.157 英寸       |
+|     外部托运深度     |     172.01mm          |     6.772 英寸        |
+|     外部托运重量    |     3.284kg           |     7.240 lbs           |
+
+注意：
+- 设备：出售黑色零售风格的盒子 HoloLens 2。
+- 外部托运：设备周围的保护性运输包装。
 
 ## 下一步
 
