@@ -1,6 +1,6 @@
 ---
 title: 重启、重置或恢复 HoloLens
-ms.reviewer: Both basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
 description: 如何使用 Advanced Recovery Companion 将映像刷写到 HoloLens 2。
 keywords: 操作方法, 重启, 重置, 恢复, 硬重置, 软重置, 电源周期, HoloLens, 关机, arc, advanced recovery companion
 ms.prod: hololens
@@ -14,134 +14,136 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 2c7fa9b8c86900c89bbced1a10f3e9e2bc69bcd0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857760"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915951"
 ---
-# 重启、重置或恢复 HoloLens
+# 重启、重置或恢复 HoloLens 2
 
-## 对设备充电
+## 给设备充电
 
-在开始任何故障排除程序之前，如果可能，请确保设备电量至少在 20% 到 40% 之间。
-
-请确保使用 HoloLens2 设备附带的充电器和 USB Type-C 电缆。 如果没有，请确保所用的充电器支持至少 15W 的功率。
+在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 请使用 HoloLens2 设备附带的充电器和 USB Type-C 电缆。 如果这些附件不可用，请确保可用的充电器支持至少 15 W 的功率。
 
 > [!NOTE]
-> 如有可能，请勿使用电脑通过 USB 对设备进行充电，因为这将导致充电非常慢。
+> 如果可能，请避免使用电脑通过 USB 给设备充电（速度很慢）。
 
-如果设备已正确启动且运行，有三种不同的方法可用来检查电池的电量。
+如果设备已正确启动且运行，有三种方法可以检查电池电量：
 
-1. 从 HoloLens 设备 UI 的主菜单。
-2. 使用靠近电源按钮的 LED（对于 40% 的电量，应该可看到至少两个稳定的 LED）。
-3. 在主机上，打开“文件资源管理器”窗口，然后在左侧的“此电脑”下查找 HoloLens 2 设备。
-    
-      a. 右键单击设备的名称，然后选择“属性”。 此时将出现一个对话框，显示你设备的电池电量。
+- 从 HoloLens 设备 UI 的主菜单。
+- 查看靠近电源按钮的 LED（对于 40% 的电量，应该可看到至少两个稳定的 LED）。
+- 在主机上，打开“文件资源管理器”，然后在左侧的“**此电脑**”下查找 HoloLens 2 设备。 右键单击设备并选择“**属性**”。 对话框将显示电池电量。
 
-![HoloLens 2 重置恢复](images/ResetRecovery2.png)
+   ![HoloLens 2 属性屏幕显示电池变化级别](images/ResetRecovery2.png)
 
-如果设备无法启动到启动菜单，请记下 LED 和主机上的和枚举情况，然后按照故障排除指南 (https://docs.microsoft.com/hololens/hololens-troubleshooting) 进行操作。 如果设备的状态不符合故障排除指南中列出的任何状态，请执行硬重置程序****，且不是将设备重新连接到主机，而是将其连接到电源。 至少等待一小时，让设备充电。
+如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后，按照[疑难解答指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)进行操作。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下执行*硬重置程序*。 等待至少一小时，让设备充电。
 
 ## 重置设备
 
-在某些情况下，客户可能需要在不使用 SW UI 的情况下手动重置设备。 
+在某些情况下，可能需要在不使用 SW UI 的情况下手动重置设备。
 
 ### 标准程序
-1. 拔出 Type-C 电缆，以断开设备与电源或主机的连接。
+1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
-2. 按住电源按钮**** 15 秒。 所有 LED 均应熄灭。
+2. 按住**电源**按钮 15 秒。 所有 LED 均应熄灭。
 
-3. 等待 2-3 秒，然后短按电源按钮****，电源按钮旁的 LED 将亮起，设备将开始启动。 
+3. 等待 2-3 秒，然后短按**电源**按钮。 电源按钮附近的指示灯将亮起，并且设备将开始启动。
 
-4. 将设备连接到主机，打开设备管理器（对于 Windows 10，请按“Windows”键****，然后按“X”**** 键，然后单击“设备管理器”），并确保设备正确枚举为 Microsoft HoloLens，如下图所示：
+4. 将设备连接到主机计算机，然后打开设备管理器。 （对于 Windows 10，请按“**Windows**”键，然后按“**X**”键，然后选择“**设备管理器**”），并确保设备正确枚举为 *Microsoft HoloLens*，如下图所示：
 
-![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### 硬重置程序
 
-如果标准重置程序不起作用，可使用硬重置程序。
+如果标准重置程序不起作用，可使用硬重置程序：
 
-1. 拔出 Type-C 电缆，以断开设备与电源或主机的连接。
+1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
-2. 按住下调音量按钮 + 电源按钮**** 15 秒钟。
+2. 按住 “**下调音量**” + “**电源**”按钮 15 秒。 设备将自动重启。
 
-3. 设备将自动重启。 
+4. 将设备连接到主机计算机。
+5. 打开设备管理器（对于 Windows 10，请按 “**Windows**” 键，然后按 “**X**” 键，然后选择“**设备管理器**”）。 确保设备正确枚举为 *Microsoft HoloLens*，如下图所示：
 
-4. 将设备连接到主机，打开设备管理器（对于 Windows 10，请按“Windows”键****，然后按“X”**** 键，然后单击“设备管理器”），并确保设备正确枚举为 Microsoft HoloLens，如下图所示。
-
-![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## 对设备进行干净重刷
 
-在特别情况下，可能需要对设备进行干净刷写。 对 HoloLens2 设备进行重刷的方法共有两种。 所有重刷程序都要求[从 Windows Store 安装 Advanced Recovery Companion 应用](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。 如果重置设备，则将擦除所有个人数据、应用和设置，包括 TPM 重置。
+在特别情况下，可能需要对 HoloLens 2 进行干净刷写。 对设备进行重刷的方法共有两种。 对于两种情况，都必须首先[从 Windows Store 安装 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
 
-Advanced Recovery Companion 目前已设置为下载 [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004) 的功能发布内部版本。若要下载最新的 HoloLens 2 FFU 以通过 Advanced Recovery Companion 来刷写设备，可从[此处](https://aka.ms/hololens2download)下载。 此处的 FFU 会实时更新，并将与最新的通用内部版本匹配。 
+>[!WARNING]
+>如果刷写设备，则将擦除所有个人数据、应用和设置，包括 TPM 重置。
 
-开始刷写程序之前，请确保已在 Windows 10 电脑上安装并运行该应用，并已准备好检测设备。
+默认情况下，Advanced Recovery Companion 当前设置为下载 [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004) 的功能版。 若要获取最新的 HoloLens 2 映像刷写工具（FFU）程序包以通过 Advanced Recovery Companion 重刷设备，请[在此处下载](https://aka.ms/hololens2download)。 此版本是最新的通用版本。
 
-![HoloLens 2 干净重刷](images/ARC1.png)
+开始刷写程序前，请确保已在 Windows 10 电脑上安装并运行该应用，并已准备好检测设备。
+
+![HoloLens 2 干净重刷屏幕截图](images/ARC1.png)
 
 ### 正常程序
 
-1. 在 HoloLens 设备运行期间，将其连接到你先前启动了 Advanced Recovery Companion 应用的 Windows 10 电脑。
+1. 在 HoloLens 设备运行期间，将其连接到你先前打开了 Advanced Recovery Companion 应用的 Windows 10 电脑。
+ 
+   系统将自动检测设备，Advanced Recovery Companion 应用的 UI 将开始更新进程：
 
-2. 系统将自动检测设备，Advanced Recovery Companion 应用的 UI 将更新为如下所示：
+   ![HoloLens 2 干净重刷初始屏幕](images/ARC2.png)
 
-![HoloLens 2 干净重刷](images/ARC2.png)
-
-3. 在 Advanced Recovery Companion 应用 UI 中选择 HoloLens2 设备，然后按照说明完成刷写。
+3. 在 Advanced Recovery Companion 应用 UI 中选择 HoloLens 2 设备，然后按照说明完成刷写。
 
 ### 手动程序
 
-如果设备未正确启动，可能需要将 HoloLens 2 设备置于恢复模式。
+如果 HoloLens 2 无法正常启动，可能需要将设备置于恢复模式：
 
-1. 拔出 Type-C 电缆，以断开设备与电源或主机的连接。 
+1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
-2. 按住电源按钮**** 15 秒。 所有 LED 均应熄灭。 
+2. 按住**电源**按钮 15 秒。 所有 LED 均应熄灭。
 
-3. 在按下上调音量按钮的同时****，按下并释放电源按钮**** 以启动设备。 请等待 15 秒钟，然后再释放上调音量按钮。 在设备上的 5 个 LED 中，只有中间的 LED 会亮起。
+3. 在按下**上调音量**按钮的同时，按下并释放**电源按钮**以启动设备。 请等待 15 秒钟，然后再释放**上调音量**按钮。 五个 LED 中只有中间的 LED 会亮起。
 
-4. 将设备连接到主机，打开设备管理器（对于 Windows 10，请按“Windows”键****，然后按“X”**** 键，然后单击“设备管理器”），并确保设备正确枚举为 Microsoft HoloLens，如下图所示。
+4. 将设备连接到主机电脑，然后打开设备管理器。 （对于 Windows 10，请按“**Windows**”键，然后按“**X**”键，然后选择“**设备管理器**”），并确保设备正确枚举为 Microsoft HoloLens，如下图所示：
 
-![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLensRecovery.png)
 
-5. 系统将自动检测设备，Advanced Recovery Companion 应用的 UI 将更新为如下所示：
+   系统将自动检测设备，Advanced Recovery Companion 应用的 UI 将开始更新进程：
 
-![HoloLens 2 干净重刷](images/ARC2.png)
+   ![HoloLens 2 干净重刷屏幕](images/ARC2.png)
 
 6. 在 Advanced Recovery Companion 应用 UI 中选择 HoloLens 2 设备，然后按照说明完成刷写。
 
 ## 在不使用应用商店的情况下下载 ARC
 
-如果 IT 环境阻止使用 Windows Store 应用或限制对该零售商店的访问，IT 管理员可通过其他“脱机”部署路径提供此应用。 
+如果 IT 环境阻止使用 Windows Store 应用或限制对该零售商店的访问，IT 管理员可通过“脱机”部署路径提供此应用。
 
-- 此流程也可用于其他应用，如步骤 2 所示。 本指南将重点介绍 Advanced Recovery Companion，对于其他脱机应用则可能需要稍作修改。  
+ >[!NOTE] 
+ > - IT 管理员也可以通过 System Center Configuration Manager (SCCM) 或 Intune 分发此应用。
+ > - 本指南重点介绍 Advanced Recovery Companion，但该过程也可用于其他“脱机”应用程序。
 
-可通过以下步骤启用此部署路径：
-1.  转到[适用于企业的 Microsoft Store](https://businessstore.microsoft.com) 网站并使用 Azure AD 标识登录。
-1.  转到“管理”–“设置”****，然后打开“购物体验”下的“显示脱机应用”********，详见 https://businessstore.microsoft.com/manage/settings/shop 
-1.  转到“为我的组购买”****，搜索 [Advanced Recovery Companion](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) 应用。
-1.  将“许可证类型”**** 框更改为“脱机”，然后单击“管理”****。
-1.  在“下载脱机使用的程序包”下，单击第二个蓝色“下载”**** 按钮。 确保文件扩展名为 .appxbundle。
-1.  在这个阶段，如果台式电脑可以访问 Internet，只需双击并安装。 
-1.  IT 管理员也可以通过 System Center Configuration Manager (SCCM) 或 Intune 分发此应用。
-1.  如果目标电脑没有 Internet 连接，则需要额外执行一些步骤： 
-    1.  选择未编码的许可证并单击“生成许可证”，然后在“所需框架”下单击“下载”。************ 
-    1.  无法访问 Internet 的电脑将需要使用 DISM 来应用具有依赖项的程序包和许可证。 在管理员命令提示符处，键入：
+请按照以下步骤启用部署路径：
+1. 转到[适用于企业的 Microsoft Store](https://businessstore.microsoft.com)，然后使用 Azure Active Directory 身份登录。
 
-      ```console
-      C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
-      ```
-> [!NOTE]
-> 此代码示例中的版本号可能与当前可用的版本不匹配。 你可能还选择了与给定示例不同的下载位置。 请确保根据需要进行更改。
+1. 转到“**管理 – 设置**”。 在“**购物体验**”下打开“**显示离线应用**”。 
+1. 转到“**为我的组购买**”，搜索 [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) 应用。
+1. 将“**许可证类型**”更改为“**脱机**”，然后选择“***管理***”。
+1. 在“**下载脱机使用的程序包**”下，单击第二个蓝色“**下载**”按钮。 确保文件扩展名为 *.appxbundle*。
+
+    - 在此阶段，如果台式机可以访问互联网，请双击程序包以安装该应用程序。
+
+
+    - 如果目标计算机没有 Internet 连接，请按照下列步骤操作： 
+       1. 选择解码的许可证，然后选择“**生成许可证**”。
+       2. 在“**所需框架**”下，选择“**下载**”。
+       3. 使用 DISM 将软件包与依赖项和许可证一起应用。 从管理员命令提示符运行以下命令：
+
+          ```console
+          C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
+          ```
+            > [!NOTE]
+            > 此代码示例中的版本号可能与当前可用的版本不匹配。 可能还选择了与给定示例不同的下载位置。 根据需要对命令进行任何更改。
 
 > [!TIP]
-> 在计划使用 Advanced Recovery Companion 来脱机安装 FFU 时，下载刷写映像可能会很有用，这里是 [HoloLens 2 的当前映像](https://aka.ms/hololens2download)。 
+> 计划使用 Advanced Recovery Companion 脱机安装 FFU 时，下载刷写映像可能会很有用。 [**下载 HoloLens 2 的最新映像**](https://aka.ms/hololens2download)。 
 
 其他资源：
-- https://docs.microsoft.com/microsoft-store/distribute-offline-apps 
-- https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options
-
-
+- [分配离线应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
+- [DISM 应用程序包（.appx 或 .appxbundle）服务命令行选项](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
