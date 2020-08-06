@@ -1,7 +1,7 @@
 ---
 title: 准备使用全新 HoloLens 2
 description: 本指南将指导你完成首次设置并提供硬件指导。
-keywords: hololens
+keywords: hololens,灯光,适应,舒适,部件
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b8803183382e3235c540c3bc175277ffdc7d04f2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
+ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827961"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905619"
 ---
 # 准备好使用你的 HoloLens 2
 
@@ -119,6 +119,8 @@ ms.locfileid: "10827961"
 ### 保持舒适
 
 通过 HoloLens 进行的前几次互动要简短，并且中间一定要休息。 如果觉得不舒服，请停下休息，感觉好些后再继续。 这可能包括暂时的恶心、晕车、头晕、迷失方向、头痛、疲劳、眼疲劳或干眼。
+
+参见[产品安全警告和说明](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)。
 
 > [!div class="nextstepaction"]
 > [启动和配置 HoloLens 2](hololens2-start.md)
