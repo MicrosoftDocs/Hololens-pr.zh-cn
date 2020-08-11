@@ -1,7 +1,7 @@
 ---
 title: 在 HoloLens 上查找和保存文件
 description: 使用 HoloLens 上的文件资源管理器查看和管理设备上的文件
-keywords: hololens
+keywords: 操作方法、文件选取器、文件、照片、视频、图片、OneDrive、存储、文件资源管理器、hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
 ms.author: mazeller
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 50a13e1634344bea66bb6b7ce90d9e3fc8c2a783
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: fb3287f0a074eddeac0c7ee2871e289b93eafcac
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827656"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919115"
 ---
 # 在 HoloLens 上查找、打开和保存文件
 
@@ -29,20 +29,20 @@ ms.locfileid: "10827656"
 
 - 使用文件资源管理器应用访问本地文件夹。
 - 在应用的存储中。
-- 在特殊文件夹中（如视频或音乐库）。
-- 使用包含应用和文件选取器（如 OneDrive）的存储服务。
-- 使用 MTP （媒体传输协议）支持，通过使用 USB 电缆连接到 HoloLens 的桌面电脑。
+- 在特殊文件夹 (例如视频或音乐库) 。
+- 使用包含应用和文件选取 (器的存储服务（如 OneDrive) ）。
+- 使用 MTP (媒体传输协议) 支持，使用通过 USB 电缆连接到 HoloLens 的桌面电脑。
 
 ## 使用文件资源管理器在 HoloLens 上查看文件
 
-> 适用于[hololens 的 Windows 10 四月 2018 Update （RS4）](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)的所有 hololens 2 设备和 HoloLens （第1代）。
+> 适用于所有 HoloLens 2 设备和 HoloLens (第一代) ，从[Windows 10 四月2018更新 (RS4) HoloLens](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)。
 
 使用 HoloLens 上的文件资源管理器查看和管理设备上的文件，包括3D 对象、文档和图片。 转到 "**开始**   >  **所有应用**"   >  **文件资源管理器**以开始使用。
 
 > [!TIP]
 > 如果文件资源管理器中未列出任何文件，请在顶部左窗格中选择 "**此设备**"。
 
-如果在文件资源管理器中看不到任何文件，则 "最近" 筛选器可能处于活动状态（时钟图标在左窗格中突出显示）。 若要解决此问题，请在左窗格（时钟图标下方）中选择 "**此设备**文档" 图标，或者打开菜单并选择 "**此设备**"。
+如果在文件资源管理器中看不到任何文件，则 "最近" 筛选器可能处于活动状态 (时钟图标在左窗格中突出显示) 。 若要解决此问题，请在左窗格中选择 "**此设备**文档" 图标 ("时钟" 图标下) "，或者打开该菜单，然后选择"**此设备**"。
 
 ## 查找和查看您的照片和视频
 
@@ -66,7 +66,7 @@ ms.locfileid: "10827656"
 
 ### 连接到电脑
 
-如果你的 HoloLens 运行的是[windows 10 四月2018更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)或更高版本，你可以使用 USB 电缆将 HoloLens 连接到 WINDOWS 10 电脑，方法是使用 MTP （媒体传输协议）浏览设备上的照片和视频。 如果你在设备上设置了 PIN 或密码，你将需要确保设备已解锁才能浏览文件。  
+如果你的 HoloLens 运行的是[windows 10 四月2018更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)或更高版本，你可以使用 USB 电缆将 HoloLens 连接到 WINDOWS 10 电脑，方法是使用 MTP (媒体传输协议) 浏览设备上的照片和视频。 如果你在设备上设置了 PIN 或密码，你将需要确保设备已解锁才能浏览文件。  
 
 如果你已启用[Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)，则可以使用它来浏览、检索和管理存储在你的设备上的照片和视频。
 
@@ -84,7 +84,7 @@ HoloLens 支持应用可请求访问权限的许多[已知文件夹](https://doc
 
 ## 在电脑上查看 HoloLens 文件
 
-与其他移动设备类似，使用 MTP （媒体传输协议）将 HoloLens 连接到桌面电脑，并在电脑上打开文件资源管理器以轻松传输。
+与其他移动设备类似，使用 MTP 将 HoloLens 连接到桌面电脑 (媒体传输协议) 并在电脑上打开文件资源管理器以轻松传输。
 
 若要在电脑上的文件资源管理器中查看 HoloLens 文件，请执行以下操作：
 
@@ -95,7 +95,7 @@ HoloLens 支持应用可请求访问权限的许多[已知文件夹](https://doc
 若要查看有关 HoloLens 的信息，请在电脑上的文件资源管理器中右键单击设备名称，然后选择 "**属性**"。
 
 > [!NOTE]
-> HoloLens （第1代）不支持连接到外部硬盘驱动器或 SD 卡。
+> HoloLens (第一代) 不支持连接到外部硬盘驱动器或 SD 卡。
 
 ## 同步到云
 
