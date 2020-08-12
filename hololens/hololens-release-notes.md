@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915948"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924254"
 ---
 # HoloLens 2 发行说明
 
@@ -28,6 +28,20 @@ ms.locfileid: "10915948"
 
 >[!NOTE]
 > 若要阅读 HoloLens 模拟器发行说明，请[访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
+
+## Windows 全息版 2004-2020 更新
+- 内部版本19041.1113
+
+更新中的改进和修复：
+
+- "设置" 应用将不再关注用户进入虹膜注册或目视跟踪校准体验。
+- 修复了在 OOBE 期间应用预配包的 bug，用于重命名设备并执行其他操作 (如连接到网络) 将无法在设备重启（由于重命名）后执行其他操作。
+- 已修改初始设备设置流的配色方案，以提高视觉质量。
+
+## Windows 全息版 1903-2020 更新
+- 内部版本18362.1074
+
+此每月质量更新不包含任何显著更改，我们鼓励你试用 Windows 全息版2004的最新版本。
 
 ## Windows 全息版 2004-2020 年7月更新
 - 内部版本19041.1109

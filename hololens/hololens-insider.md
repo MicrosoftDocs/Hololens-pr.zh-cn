@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919143"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924244"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -43,6 +43,7 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | 自动目视位置支持                            | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
 | 证书查看器                                   | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
+| Wi-fi 连接和使用 Autopilot                 | 从设备 Wi-fi 中使用 autopilot，而无需使用以太网适配器。                            | 19041.1364 +                 |
 | HoloLens 政策                                    | 混合现实设备的新策略。                                                       | 19041.1349 +                 |
 | 缓存脱机展台的 AAD 组成员身份         | 针对展台模式允许使用 AAD 组成员身份缓存的天数的策略。     | 19041.1356 +                 |
 | 适用于 HoloLens 2 的新设备限制策略       | 新启用了 HoloLens 2 的设备管理策略。                              | 19041.1349 +                 |
@@ -87,6 +88,9 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 若要查看证书，请转到 "**设置" > 更新 & 安全 > 证书**。
 
 !["设置" 应用中的证书查看器](images/hololens-certificate-viewer.png)
+
+### Wi-fi 连接和使用 Autopilot
+现在，在 OOBE 期间，一旦通过 Wifi 连接了 HoloLens 2，OOBE 将检查设备的 autopilot 配置文件。 如果找到一个，它将用于完成 AAD 联接和注册流的其余部分。 换句话说，不再需要使用以太网到 USB C 或 wifi 到 USB C 适配器，但如果在 OOBE 的开始，它们仍可继续正常工作。 了解有关[HoloLens 2 设备的 Autopilot 的](hololens2-autopilot.md)详细信息。
 
 ### HoloLens 政策
 在版本 19041.1349 + 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、禁用混合现实捕获中的音频录制、可收集诊断的设置以及 AAD 组成员身份缓存。  
