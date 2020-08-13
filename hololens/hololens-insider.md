@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
+ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924244"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926597"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -178,6 +178,13 @@ Windows 预览体验成员现在正在移至频道。 **快速**环将成为**�
 !["展台" 模式的图像在失败时立即显示。](images/hololens-kiosk-failure-behavior.png )
 
 ## 开始接收 Insider 内部版本
+
+> [!NOTE]
+> 如果您最近未进行更新，请重启设备以更新状态并获取最新版本。
+> - "重新启动设备" 语音命令的效果很好。 
+> - 您也可以选择 "设置/Windows 预览体验计划" 中的 "重新启动" 按钮。
+>
+> 我们在可能遇到的后端遇到错误，这将使你恢复进度。
 
 在 HoloLens 2 设备上，转到 "**设置**"  >  **更新 & 安全**  >  **Windows 预览体验计划**"，然后选择"**开始**"。 将用于注册的帐户链接到 Windows 预览体验成员。
 
