@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828006"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929838"
 ---
 # HoloLens 2 舒适佩戴常见问题
 
@@ -50,16 +50,11 @@ ms.locfileid: "10828006"
 
 ## 全息影像的图像颜色或亮度看起来不正确
 
-对于 HoloLens 2，请执行以下步骤，以确保屏幕能够呈现出最高的全息影像视觉质量：
-
-- **增加屏幕的亮度。** 当屏幕亮度最高时，全息影像的视觉效果最好。
-- **使面罩更靠近你的眼睛。** 将面罩向下旋转到距离眼睛最近的位置。
-- **向下移动面罩。** 请尝试向下移动前额上的额头垫，这样面罩就会下移，更加靠近你的鼻子。
-- **进行眼球校准。** 该屏幕使用 IPD 和眼球凝视来优化屏幕上的图像。 如果未进行眼球校准，则图像质量可能会变差。
+请参阅 HoloLens 2 [屏幕故障排除步骤](hololens2-display.md)。
 
 ## 设备在使用时向下滑动，或者我需要将头带调得非常紧才能使其保持固定
 
-顶部固定带有助于将 HoloLens 固定在头部，特别是在经常需要移动时。 使用固定带还可以稍微放松一点头带。 [如何使用](hololens2-setup.md#adjust-fit)。
+顶部固定带有助于将 HoloLens 固定在头部，特别是在经常需要移动时。 使用固定带还可以稍微放松一点头带。 [了解如何使用](hololens2-setup.md#adjust-fit)。
 
 你还可以试验头带的位置 &mdash; 根据头的大小和形状，可能需要向上或向下滑动以将其重新放置在前额上。
 
@@ -69,6 +64,6 @@ ms.locfileid: "10828006"
 
 ## 使用手势时，手臂会感到疲劳。 我可以做什么？
 
-使用手势时，无需将手臂从身体中伸出太远。 让手臂离身体更近，使其更舒适并减少疲劳。 你还可以使用手部射线与全息影像交互，无需举起手臂。[了解有关手势和手部射线的更多信息](hololens2-basic-usage.md#the-hand-tracking-frame)。
+使用手势时，无需将手臂伸得离身体很远。 让手臂离身体更近，使其更舒适并减少疲劳。 你还可以使用手部射线与全息影像交互，无需举起手臂。[了解有关手势和手部射线的更多信息](hololens2-basic-usage.md#the-hand-tracking-frame)。
 
 并且一定要试用[语音命令](hololens-cortana.md)。
