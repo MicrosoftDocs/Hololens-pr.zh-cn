@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857850"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927836"
 ---
 # HoloLens 环境注意事项
 
@@ -116,6 +116,9 @@ HoloLens 可以快速适应这些变化，但只有在该区域对设备清晰�
 若要访问“校准”应用，请转到**设置** > **系统** > **实用程序**。 选择**打开校准**，然后按照说明进行操作。
 
 如果其他人要使用你的 HoloLens，那么他们应该首先运行“校准”应用，这样设备才能为他们正确设置。
+
+### 温度和规章信息
+[HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。
 
 ## 另请参阅
 
