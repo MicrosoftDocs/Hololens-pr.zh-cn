@@ -7,6 +7,7 @@
 ### [准备好使用你的 HoloLens 2](hololens2-setup.md)
 ### [设置 HoloLens 2](hololens2-start.md)
 ### [HoloLens 2 舒适佩戴常见问题解答](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 屏幕](hololens2-display.md)
 ### [HoloLens 2 清洁常见问题解答](hololens2-maintenance.md)
 ### [HoloLens 2 的受支持语言](hololens2-language-support.md)
 ### [开始使用 HoloLens 2](hololens2-basic-usage.md)
