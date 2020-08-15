@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
+ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929869"
+ms.locfileid: "10930859"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -33,25 +33,25 @@ ms.locfileid: "10929869"
 
 我们将再次通过新功能更新此页面，因为我们将其发布给 Windows 预览体验成员版本。
 
-| 功能                                              | 描述                                                                                   | 在预览体验成员内部版本中可用 |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| 自动目视位置支持                            | 主动发现眼睛位置并支持准确的全息图定位。                       | 19041.1339 +                 |
-| 证书查看器                                   | 在 "设置" 应用中查看用户和设备证书。                                        | 19041.1346 +                 |
-| 安装和删除证书                      | 用户可以使用证书查看器安装和删除证书。                       | 19041.1361 +                 |
-| 从 USB 自动启动预配                    | OOBE Automaticly 检测 USB 驱动器上的预配程序包。                                 | 19041.1361 +                 |
-| 在 OOBE 中自动确认预配程序包           | 在 OOBE 中自动应用预配程序包。                                            | 19041.1361 +                 |
-| Wi-fi 连接和使用 Autopilot                 | 从设备 Wi-fi 中使用 autopilot，而无需使用以太网适配器。                            | 19041.1364 +                 |
-| HoloLens 政策                                    | 混合现实设备的新策略。                                                       | 19041.1349 +                 |
-| 缓存脱机展台的 AAD 组成员身份         | 针对展台模式允许使用 AAD 组成员身份缓存的天数的策略。     | 19041.1356 +                 |
-| 适用于 HoloLens 2 的新设备限制策略       | 新启用了 HoloLens 2 的设备管理策略。                              | 19041.1349 +                 |
-| HoloLens 2 的新 power 策略                    | 新支持的电源超时设置策略。                                          | 19041.1349 +                 |
-| 更新策略                                      | 允许控制更新的新启用的策略。                                           | 19041.1352 +                 |
-| 已启用 HoloLens 2 的设置页面可见性      | 用于选择在 "设置" 应用中显示哪些页面的策略。                                          | 19041.1349 +                 |
-| 全局分配的访问权限                               | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。  | 19041.1356 +                 |
-| 在多应用展台中自动启动应用                | 将应用程序设置为在登录到多应用展台模式时自动启动。 | 19041.1346 +                 |
-| 网亭的访问者自动登录                        | 允许在展台模式下使用自动登录访问者帐户。                        | 19041.1361 +                 |
-| 故障处理的展台模式行为更改 | 现在已处理展台模式故障的更改。                                             | 19041.1356 +                 |
-| 更新中的改进和修复                 | 更新中的其他修复程序。                                                               | 19041.1361 +                 |
+| 功能                                                | 描述                                                                                    | 在预览体验成员内部版本中可用 |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [自动目视位置支持](hololens-insider.md#auto-eye-position-support)                              | 主动发现眼睛位置并支持准确的全息图定位。                        | 19041.1339 +                 |
+| [证书查看器](hololens-insider.md#certificate-viewer)                                     | 在 "设置" 应用中查看用户和设备证书。                                         | 19041.1346 +                 |
+| [安装和删除证书](hololens-insider.md#install-and-remove-certificates)                        | 用户可以使用证书查看器安装和删除证书。                        | 19041.1361 +                 |
+| [来自 USB 的自动启动预配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 会自动检测 USB 驱动器上的预配程序包。                                | 19041.1361 +                 |
+| [在 OOBE 中自动确认预配程序包](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自动应用预配程序包。                                             | 19041.1361 +                 |
+| [将 Autopilot 与 Wlan 连接配合使用](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 从设备 Wi-fi 中使用 autopilot，而无需使用以太网适配器。                             | 19041.1364 +                 |
+| [全局分配的访问权限](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。 | 19041.1356 +                 |
+| [在多应用展台中自动启动应用](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 将应用程序设置为在登录到多应用展台模式时自动启动。     | 19041.1346 +                 |
+| [网亭的访问者自动登录](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 启用要用于展台模式的访问者帐户的自动登录。                         | 19041.1361 +                 |
+| [故障处理的展台模式行为更改](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 现在已处理展台模式故障的更改。                                              | 19041.1356 +                 |
+| [HoloLens 政策](hololens-insider.md#hololens-policies)                                      | 混合现实设备的新策略。                                                        | 19041.1349 +                 |
+| [缓存脱机展台的 AAD 组成员身份](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | 针对展台模式允许使用 AAD 组成员身份缓存的天数的策略。    | 19041.1356 +                 |
+| [适用于 HoloLens 2 的新设备限制策略](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | 新启用了 HoloLens 2 的设备管理策略。                               | 19041.1349 +                 |
+| [HoloLens 2 的新 power 策略](hololens-insider.md#new-power-policies-for-hololens-2)                      | 新支持的电源超时设置策略。                                           | 19041.1349 +                 |
+| [更新策略](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 允许控制更新的新启用的策略。                                            | 19041.1352 +                 |
+| [已启用 HoloLens 2 的设置页面可见性](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 用于选择在 "设置" 应用中显示哪些页面的策略。                                           | 19041.1349 +                 |
+| [更新中的改进和修复](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新中的其他修复程序。                                                                | 19041.1361 +                 |
 
 ### 自动目视位置支持
 
@@ -135,8 +135,39 @@ ms.locfileid: "10929869"
 
 你的设备现已配置，并将显示预配成功屏幕。
 
-### Wi-fi 连接和使用 Autopilot
+### 将 Autopilot 与 Wlan 连接配合使用
 现在，在 OOBE 期间，一旦通过 Wifi 连接了 HoloLens 2，OOBE 将检查设备的 autopilot 配置文件。 如果找到一个，它将用于完成 AAD 联接和注册流的其余部分。 换句话说，不再需要使用以太网到 USB C 或 wifi 到 USB C 适配器，但如果在 OOBE 的开始，它们仍可继续正常工作。 了解有关 [HoloLens 2 设备的 Autopilot 的](hololens2-autopilot.md)详细信息。
+
+### 全局分配的访问-展台模式
+此新功能允许 IT 管理员为多个应用展台模式配置 HoloLens 2 设备，该模式适用于系统级别，与系统上的任何标识都没有相关性，并且适用于登录设备的每个人。 请在此仔细阅读此新增[功能。](hololens-global-assigned-access-kiosk.md)
+
+### 在多应用展台模式下自动启动应用程序 
+仅适用于多应用展台模式，并且只能将1个应用指定为使用 "分配的访问配置" 下方的突出显示属性自动启动。 
+
+应用程序将在用户登录时自动启动。 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 网亭的访问者自动登录
+此新功能使访问者帐户的自动登录能够用于展台模式。 
+
+对于非 AAD 配置，要为访问者自动登录配置设备，请执行以下操作：
+1.  创建一个预配包：
+    1.  将 **运行时设置/AssignedAccess** 配置为允许访问者帐户。
+    1.  （可选）在 MDM 中注册设备 ** (运行时设置/工作区/注册) ** 以便以后可以对其进行管理。
+    1.  不创建本地帐户
+1.  [应用预配包](hololens-provisioning.md)。
+
+对于 AAD 配置，用户可以实现与今天类似的操作，而无需进行此更改。 为展台模式配置的 AAD 联接设备可以通过单击 "登录" 屏幕上的一个按钮点击来登录访问者帐户。 一旦登录到访问者帐户，设备将不会再次提示登录，直到从 "开始" 菜单明确注销访问者，否则设备将重新启动。
+
+### 故障处理的展台模式行为更改
+
+早于在应用展台模式时遇到故障，HoloLens 用于显示 "开始" 菜单中的所有应用程序。 从 Windows 预览体验成员内部版本开始，如果出现故障，"开始" 菜单中将不显示任何应用，如下所示： 
+
+!["展台" 模式的图像在失败时立即显示。](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens 政策
 在版本 19041.1349 + 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、禁用混合现实捕获中的音频录制、可收集诊断的设置以及 AAD 组成员身份缓存。  
@@ -204,37 +235,6 @@ ms.locfileid: "10929869"
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![在 "设置" 应用中修改的活动小时的屏幕截图](images/hololens-page-visibility-list.jpg)
-
-### 全局分配的访问-展台模式
-此新功能允许 IT 管理员为多个应用展台模式配置 HoloLens 2 设备，该模式适用于系统级别，与系统上的任何标识都没有相关性，并且适用于登录设备的每个人。 请在此仔细阅读此新增[功能。](hololens-global-assigned-access-kiosk.md)
-
-### 在多应用展台模式下自动启动应用程序 
-仅适用于多应用展台模式，并且只能将1个应用指定为使用 "分配的访问配置" 下方的突出显示属性自动启动。 
-
-应用程序将在用户登录时自动启动。 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### 网亭的访问者自动登录
-此新功能使访问者帐户的自动登录能够用于展台模式。 
-
-对于非 AAD 配置，要为访问者自动登录配置设备，请执行以下操作：
-1.  创建一个预配包：
-    1.  将 **运行时设置/AssignedAccess** 配置为允许访问者帐户。
-    1.  （可选）在 MDM 中注册设备 ** (运行时设置/工作区/注册) ** 以便以后可以对其进行管理。
-    1.  不创建本地帐户
-1.  [应用预配包](hololens-provisioning.md)。
-
-对于 AAD 配置，用户可以实现与今天类似的操作，而无需进行此更改。 为展台模式配置的 AAD 联接设备可以通过单击 "登录" 屏幕上的一个按钮点击来登录访问者帐户。 一旦登录到访问者帐户，设备将不会再次提示登录，直到从 "开始" 菜单明确注销访问者，否则设备将重新启动。
-
-### 故障处理的展台模式行为更改
-
-早于在应用展台模式时遇到故障，HoloLens 用于显示 "开始" 菜单中的所有应用程序。 从 Windows 预览体验成员内部版本开始，如果出现故障，"开始" 菜单中将不显示任何应用，如下所示： 
-
-!["展台" 模式的图像在失败时立即显示。](images/hololens-kiosk-failure-behavior.png )
 
 ### 更新中的改进和修复：
 - 已更新策略以禁用通过 MDM for AllowUsbConnection 对 USB 函数进行枚举的 NCM。

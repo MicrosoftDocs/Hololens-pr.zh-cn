@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 992b17160eb6ba6ca2f6c8b12e112b98ab154774
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 7cedf2af90744477c33736087c85a43168167707
+ms.sourcegitcommit: 6f2ec9ced776166f96eddcd601bef5de715703a5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827920"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "10931834"
 ---
 # 使用 HoloLens 映射物理空间
 
@@ -119,4 +119,4 @@ HoloLens 会存储 Wi-fi 的特征，有助于关联存储在已知空间 HoloLe
 
 ## 相关主题
 
-- [空间映射设计](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)
+- [空间映射设计](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
