@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 65403589fa3d612290fdd59a4843da27c12a956c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 1031eaeaf2767f8aa982d74bb282bc1fb086051b
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830146"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940212"
 ---
 # 为 HoloLens 配置网络
 
@@ -62,6 +62,9 @@ HoloLens 支持一组有限的从云断开的连接体验。
 1. 为保证 Remote Assist 的最佳性能，推荐的带宽为 1.5Mbps。 可在[此处](https://docs.microsoft.com/MicrosoftTeams/prepare-network)找到详细的网络要求和其他信息。
 **（请注意，即使你的网络速度无法至少达到 1.5Mbps，Remote Assist 也仍可以正常工作。 但是，质量可能会受到影响。）**
 1. 确保你的网络防火墙允许这些端口和 URL。 这将使 Microsoft Teams 能够正常工作。 可在[此处](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)找到最新列表。
+
+- 了解有关具体的[远程协助网络要求](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)的详细信息。 
+- 详细了解如何[为 Microsoft Team 准备组织的网络](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
 
 ### Guides 特定网络要求
 

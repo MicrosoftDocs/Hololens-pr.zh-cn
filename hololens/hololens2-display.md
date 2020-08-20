@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929893"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940202"
 ---
 # HoloLens 2
 
@@ -30,7 +30,7 @@ HoloLens 2屏幕是波导和光投影仪的结合。 用户佩戴头戴显示设
 * **增加屏幕的亮度。** 当屏幕亮度最高时，全息影像的视觉效果最好。
 * **使面罩更靠近你的眼睛。** 将面罩向下旋转到距离眼睛最近的位置。
 * **向下移动面罩。** 请尝试向下移动前额上的额头垫，这样面罩就会下移，更加靠近你的鼻子。
-* **进行眼球校准。** 屏幕使用你的瞳距(IPD)和眼睛注视来优化屏幕上的图像。 如果未进行眼球校准，则图像质量可能会变差。 若要运行 "目视校准"，请转到 **设置** ➔ **System** ➔ **Calibration** ➔ **运行目视校准**。
+* **进行眼球校准。** 屏幕使用你的瞳距(IPD)和眼睛注视来优化屏幕上的图像。 如果未进行眼球校准，则图像质量可能会变差。 若要运行目视校准，请转到“设置” > “系统” > “校准” > “运行目视校准”。****************
 
 ## 常见问题
 
@@ -79,14 +79,14 @@ HoloLens 2会根据用户眼球的位置积极修正图像的颜色。 [目视�
 ### 开发人员运用暗模式设计原则有什么可用指南？
 
 
-Microsoft 正在准备关于暗模式设计原则的开发人员指南。 这个指南短期内在 [开发人员文档](https://docs.microsoft.com/windows/mixed-reality/)中供开发人员使用。 建议总结：
+在避免白色背景的情况中，用户将获得最佳体验。 深色模式是应用在使用黑色或深色背景时所采用的设计原则。 系统设置默认为深色模式，且可通过转到“设置” > “系统” > “颜色”进行调整。************
 
-* 使用深色的 UI 背景
+建议开发人员遵循深色模式设计指南：
 
-* 使用半粗或粗字体
+* [HoloLens 显示器的开发人员设计指南](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [推荐的字号](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
 
-* 使用混合现实工具包的 HolographicBackplate 材料。
-
+如果全息影像需要白色背景，请保持全息影像的尺寸小于显示器的完整视野。 此尺寸允许用户将全息影像置于显示器中央。
 
 ### 如何清洁 HoloLens 2 屏幕？
 
