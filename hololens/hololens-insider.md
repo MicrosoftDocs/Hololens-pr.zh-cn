@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: e819dfb95a6735d0eae6287d97f5856856a33526
+ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956768"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963682"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -31,7 +31,7 @@ ms.locfileid: "10956768"
 
 下面是您可以在 Windows 预览体验计划内部版本中试用的即将推出的功能列表。
 
-| 功能                                                | 说明                                                                                    | 在预览体验成员内部版本中可用 |
+| 功能                                                | 描述                                                                                    | 在预览体验成员内部版本中可用 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自动目视位置支持](hololens-insider.md#auto-eye-position-support)                              | 主动发现眼睛位置并支持准确的全息图定位。                        | 19041.1339 +                 |
 | [证书管理器](hololens-insider.md#certificate-manager)                                     | 用户可以在 "设置" 应用中查看、安装和删除当前用户和本地计算机证书的证书。                                         | 19041.1361 +                 |
@@ -202,7 +202,7 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 ### HoloLens 政策
 在版本 19041.1349 + 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、禁用混合现实捕获中的音频录制、可收集诊断的设置以及 AAD 组成员身份缓存。  
 
-| 新的 HoloLens 政策                                | 说明                                                                               | 注释                                                                |
+| 新的 HoloLens 政策                                | 描述                                                                               | 注释                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | 允许禁用亮度按钮，因此按住它不会更改亮度。       | 1是，0否 (默认值)                                                 |
 | MixedReality\VolumeButtonDisabled                  | 允许禁用音量按钮，因此按下不会更改音量。               | 1是，0否 (默认值)                                                 |
@@ -261,8 +261,10 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 
 ### 已启用 HoloLens 2 的设置页面可见性
 现已启用策略，允许 IT 管理员防止系统设置应用中的特定页面可见或易于访问，或者针对除指定的页面之外的所有页面执行此操作。 若要了解如何完全自定义此功能，请单击下面的链接。
- 
+
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+若要了解在 HoloLens 2 上可以自定义的页面设置，请访问我们的 " [设置 uri" 页面](settings-uri-list.md)。 
  
 ![在 "设置" 应用中修改的活动小时的屏幕截图](images/hololens-page-visibility-list.jpg)
 
@@ -271,6 +273,7 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 - OOBE 中的更多屏幕现在处于深色模式。
 - 了解更多内容应联机了解最新的隐私声明。
 - 解决了用户无法通过预配程序包预配 VPN 配置文件的问题。
+- 解决了在将设备设置为 [单应用展台](hololens-kiosk.md)时，导致 HoloLens 设备无法在文件资源管理器中显示在媒体传输协议 (MTP) 的问题。 请注意，常规) 中的 MTP (和 USB 连接仍可使用 [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 策略禁用。
 
 ## 开始接收 Insider 内部版本
 
