@@ -11,70 +11,124 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 10588713cc7670fb8e7f9601b504e327c3462aed
-  ms.sourcegitcommit: 5e9c558ff1c9c12eb17a7343a7571f710993e386
+  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
+  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "10932115"
+  ms.lasthandoff: 08/28/2020
+  ms.locfileid: "10978629"
 landingContent:
-- title: 部署和管理
+- title: HoloLens 概述
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: HoloLens 2 硬件
+      url: hololens2-hardware.md
+    - text: HoloLens（第一代）硬件
+      url: hololens1-hardware.md
+    - text: 使用“开始”菜单和混合现实空间
+      url: holographic-home.md
+    - text: 查找、安装和卸载应用程序
+      url: holographic-store-apps.md
+    - text: 改善视觉质量和舒适度
+      url: hololens-calibration.md
+    - text: 如何更新 HoloLens
+      url: hololens-update-hololens.md
+- title: 准备
   linkLists:
   - linkListType: get-started
     links:
     - text: 在商业环境中部署 HoloLens
       url: hololens-requirements.md
-    - text: 应用管理：概述
-      url: app-deploy-overview.md
+    - text: 安全性概述
+      url: security-overview.md
+    - text: 许可证要求
+      url: hololens-licenses-requirements.md
+    - text: HoloLens 环境注意事项
+      url: hololens-environment-considerations.md
+    - text: 商业功能
+      url: hololens-commercial-features.md
+- title: 配置
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 管理 HoloLens 的用户标识和登录
+      url: hololens-identity.md
+    - text: 为 HoloLens 配置网络
+      url: hololens-commercial-infrastructure.md
+    - text: 将 HoloLens 连接到网络
+      url: hololens-network.md
+    - text: 管理 HoloLens 的连接终结点
+      url: hololens-offline.md
+    - text: 使用预配程序包配置 HoloLens
+      url: hololens-provisioning.md
     - text: 将 HoloLens 设置为 Kiosk
       url: hololens-kiosk.md
+- title: 部署
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 在 MDM 中注册 HoloLens
+      url: hololens-enroll-mdm.md
+    - text: 适用于 HoloLens 2 的 Windows Autopilot
+      url: hololens2-autopilot.md
+    - text: 应用程序管理概述
+      url: app-deploy-overview.md
+    - text: 适用于企业的 Microsoft Store
+      url: app-deploy-intune.md
+    - text: 适用于企业的 Microsoft Store
+      url: app-deploy-store-business.md
+    - text: 预配程序包
+      url: app-deploy-provisioning-package.md
+- title: 维护
+  linkLists:
+  - linkListType: how-to-guide
+    links:
     - text: 管理 HoloLens 更新
       url: hololens-updates.md
-- title: Dynamics 365
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Microsoft Dynamics 365 混合现实文档
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: 使用 HoloLens 上的远程协助
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-    - text: 使用 HoloLens 上的指南
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-    - text: 远程协助学习模块
-      url: https://docs.microsoft.com/en-us/learn/browse/?products=dynamics-remote-assist
-- title: 相关资源
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: 混合现实开发人员文档
-      url: https://developer.microsoft.com/windows/mixed-reality/development
-    - text: HoloLens 定价和选项
-      url: https://www.microsoft.com/hololens/buy
-- title: 排除故障
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 重启、重置或恢复 HoloLens 2
-      url: hololens-recovery.md
     - text: HoloLens 疑难解答
       url: hololens-troubleshooting.md
+    - text: 重启、重置或恢复 HoloLens 2
+      url: hololens-recovery.md
+    - text: 重启、重置或恢复 HoloLens（第 1 代）
+      url: hololens1-recovery.md
+    - text: HoloLens 已知问题
+      url: hololens-known-issues.md
     - text: 收集和使用来自 HoloLens 设备的诊断信息
       url: hololens-diagnostic-logs.md
-- title: 支持
+- title: 发行说明和反馈
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: HoloLens 2 发行说明
+      url: hololens-release-notes.md
+    - text: Microsoft HoloLens 内部预览版
+      url: hololens-insider.md
+    - text: 向我们提供反馈
+      url: hololens-feedback.md
+- title: 附加服务
   linkLists:
   - linkListType: reference
     links:
-    - text: HoloLens 2 发行说明
-      url: https://docs.microsoft.com/hololens/hololens-release-notes
-    - text: 联系支持人员
-      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
-- title: 混合现实
+    - text: Dynamics 365 Remote Assist 文档
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: 了解 Dynamics 365 Remote Assist
+      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+    - text: Dynamics 365 Guides
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 混合现实
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    - text: 云服务概述
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: 更多资源
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 混合现实入门
-      url: https://docs.microsoft.com/windows/mixed-reality/
+    - text: 什么是混合现实？
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
     - text: 开始设计和原型制作
       url: https://docs.microsoft.com/windows/mixed-reality/design
-    - text: 了解工具和体系结构
-      url: https://docs.microsoft.com/windows/mixed-reality/development
+    - text: 混合现实开发简介
+      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: 联系支持人员
+      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
