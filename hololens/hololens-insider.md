@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 7/17/2020
+ms.date: 8/21/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 843e0ecf393a922be80d4a0c9d9c8be84bd8c553
-ms.sourcegitcommit: 98d6c4e63636c5d8707011d0044014fbc4b84495
+ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
+ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "10965073"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985858"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -149,16 +149,27 @@ TenantLockdown 在 HoloLens 2 上将 Csp "RequireNetworkInOOBE" 节点设置为 
 
 #### 如何使用 Intune 设置此功能？ 
 1. 创建自定义 OMA URI 设备配置文件，并为 RequireNetworkInOOBE 节点指定 true，如下所示。
-OMA URI 值应为/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE ![ 设置租户通过 oma-uri 进行锁定](images/hololens-tenant-lockdown.png)
+OMA URI 值应为/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![通过 OMA-URI 设置租户锁定](images/hololens-tenant-lockdown.png)
+
 1. 创建组并将设备配置文件分配给该设备组。 
+
 1. 使在上一步中创建的组的 HoloLens 2 设备成员，并触发同步。  
 
 在 Intune 门户中验证设备配置已成功应用。 一旦此设备配置成功应用于 Hololens 2 设备，TenantLockdown 的效果将处于活动状态。
 
 #### 如何使用 Intune 在 HoloLens 2 上取消设置 TenantLockdown 的 RequireNetworkInOOBE？ 
 1. 从上面创建的设备配置先前已分配的设备组中删除 HoloLens 2。 
-1. 创建基于自定义 OMA URI 的设备配置文件，并为 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值应该是/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE ![ 屏幕截图，可通过 Intune 中的 OMA URI 将 RequireNetworkInOOBE 设置为 false](images/hololens-tenant-lockdown-false.png)
+
+1. 创建基于自定义 OMA URI 的设备配置文件，并为 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值应为/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+
+   > [!div class="mx-imgBorder"]
+   > ![通过 Intune 中的 OMA URI 将 RequireNetworkInOOBE 设置为 false 的屏幕截图](images/hololens-tenant-lockdown-false.png)
+
 1. 创建组并将设备配置文件分配给该设备组。 
+
 1. 使在上一步中创建的组的 HoloLens 2 设备成员，并触发同步。
 
 在 Intune 门户中验证设备配置已成功应用。 一旦此设备配置成功应用于 Hololens 2 设备，TenantLockdown 的效果将处于非活动状态。 
