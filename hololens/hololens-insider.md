@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
+ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985858"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10994425"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -38,7 +38,7 @@ ms.locfileid: "10985858"
 | [来自 USB 的自动启动预配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 会自动检测 USB 驱动器上的预配程序包。                                | 19041.1361 +                 |
 | [在 OOBE 中自动确认预配程序包](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自动应用预配程序包。                                             | 19041.1361 +                 |
 | [将 Autopilot 与 Wlan 连接配合使用](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 从设备 Wi-fi 中使用 autopilot，而无需使用以太网适配器。                             | 19041.1364 +                 |
-|[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 在应用租户注册和 policiy 后，无论何时重置或重新刷新设备，设备都只能在该租户中注册。 | 19041.1366 +|
+|[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 应用租户注册和应用策略后，设备在重置或重新刷新设备时，即可随时在该租户中注册。 | 19041.1366 +|
 | [全局分配的访问权限](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。 | 19041.1356 +                 |
 | [在多应用展台中自动启动应用](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 将应用程序设置为在登录到多应用展台模式时自动启动。     | 19041.1346 +                 |
 | [网亭的访问者自动登录](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 启用要用于展台模式的访问者帐户的自动登录。                         | 19041.1361 +                 |
