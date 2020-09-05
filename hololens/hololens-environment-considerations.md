@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927836"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993642"
 ---
 # HoloLens 环境注意事项
 
@@ -117,8 +117,17 @@ HoloLens 可以快速适应这些变化，但只有在该区域对设备清晰�
 
 如果其他人要使用你的 HoloLens，那么他们应该首先运行“校准”应用，这样设备才能为他们正确设置。
 
-### 温度和规章信息
-[HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。
+## 温度和规章信息
+
+[HoloLens 规章信息](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度范围、处置、无线电和电视干扰等信息。
+
+以下是使用设备时要遵循的一些准则：
+
+1. 在使用设备之前，请将设备存储在温度范围内（待机或关闭）的环境中一小时。
+1. 在温度范围内使用设备。
+1. 在室内使用设备。
+1. 在阴凉处使用设备；即使在室内也要避免直射窗户或天窗的阳光。
+1. 如果您遵循上述准则，但遇到意外的过热问题，请确保在提交[反馈](hololens-feedback.md)之前启用了完全遥测。
 
 ## 另请参阅
 
