@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915951"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996410"
 ---
 # 重启、重置或恢复 HoloLens 2
 
 ## 给设备充电
 
-在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 请使用 HoloLens2 设备附带的充电器和 USB Type-C 电缆。 如果这些附件不可用，请确保可用的充电器支持至少 15 W 的功率。
+在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 请使用 HoloLens 2 设备附带的充电器和 USB Type-C 电缆。 设备附带的电源和 USB-C 到 C 线缆是向 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。 如果这些附件不可用，请确保可用的充电器支持至少 15W 的功率。
 
 > [!NOTE]
 > 如果可能，请避免使用电脑通过 USB 给设备充电（速度很慢）。
@@ -34,15 +34,19 @@ ms.locfileid: "10915951"
 
 - 从 HoloLens 设备 UI 的主菜单。
 - 查看靠近电源按钮的 LED（对于 40% 的电量，应该可看到至少两个稳定的 LED）。
-- 在主机上，打开“文件资源管理器”，然后在左侧的“**此电脑**”下查找 HoloLens 2 设备。 右键单击设备并选择“**属性**”。 对话框将显示电池电量。
+    - 为设备充电时，电池指示灯将亮起，以指示当前的充电进度。  最后一盏灯将不停闪烁，表示正在充电。
+    - 当 HoloLens 处于打开状态时，电池指示灯以五个增量方式显示电池剩余电量。
+    - 当五盏灯中只有一盏亮起时，表示电池剩余电量低于 20%。
+    - 如果在电池剩余电量严重不足时你尝试打开设备，则一盏灯将会短暂闪烁，然后熄灭。
+- 在主机上，打开**文件资源管理器**，然后在左侧的**此电脑**下查找 HoloLens 2 设备。 右键单击设备并选择“**属性**”。 对话框将显示电池电量。
 
    ![HoloLens 2 属性屏幕显示电池变化级别](images/ResetRecovery2.png)
 
-如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后，按照[疑难解答指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)进行操作。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下执行*硬重置程序*。 等待至少一小时，让设备充电。
+如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后，按照[疑难解答指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)进行操作。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下预先执行[硬重置程序](hololens-recovery.md#hard-reset-procedure)。 等待至少一小时，让设备充电。
 
 ## 重置设备
 
-在某些情况下，可能需要在不使用 SW UI 的情况下手动重置设备。
+在某些情况下，可能需要在不使用软件 UI 的情况下手动重置设备。
 
 ### 标准程序
 1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
@@ -70,7 +74,14 @@ ms.locfileid: "10915951"
 
 ## 对设备进行干净重刷
 
-在特别情况下，可能需要对 HoloLens 2 进行干净刷写。 对设备进行重刷的方法共有两种。 对于两种情况，都必须首先[从 Windows Store 安装 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
+在特别情况下，可能需要对 HoloLens 2 进行干净刷写。 请注意，清理重刷预期不会引起以下问题：
+- [显示颜色一致性](hololens2-display.md)
+- 使用声音启动但无显示输出
+- [1-3-5-LED 图案](hololens2-setup.md#lights-to-indicate-problems)
+- [过热](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- 操作系统崩溃（不同于应用程序崩溃）
+
+对设备进行重刷的方法共有两种。 对于两种情况，都必须首先[从 Windows Store 安装 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
 
 >[!WARNING]
 >如果刷写设备，则将擦除所有个人数据、应用和设置，包括 TPM 重置。

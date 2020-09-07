@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905619"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996400"
 ---
 # 准备好使用你的 HoloLens 2
 
@@ -33,6 +33,8 @@ ms.locfileid: "10905619"
 - 当 HoloLens 处于打开状态时，电池指示灯以增量方式显示电池剩余电量。
 - 当五盏灯中只有一盏亮起时，表示电池剩余电量低于 20%。
 - 如果在电池剩余电量严重不足时你尝试打开设备，则一盏灯将会短暂闪烁，然后熄灭。
+
+如果需要详细信息，[可在此处阅读有关设备充电的完整详细信息](hololens-recovery.md#charge-the-device)。 
 
 ## 调整到合适
 
@@ -108,7 +110,7 @@ ms.locfileid: "10905619"
 | - | - | - |
 | 你按下电源按钮。 | 一盏灯闪烁五次，然后熄灭。 | HoloLens 电池电量严重不足。 为 HoloLens 充电。 |
 | 按下电源按钮。 | 所有五盏灯闪烁五次，然后熄灭。 |  HoloLens 无法正常启动，且处于错误状态。 [重新安装操作系统](hololens-recovery.md)以恢复设备。 |
-| 你按下电源按钮。 | 第一个、第三个和第五个灯一起连续闪烁。 |  HoloLens 可能存在硬件失败。 若要进行确认，请[重新安装操作系统](hololens-recovery.md)，然后再试一次。 重新安装操作系统后，如果灯仍然闪烁，请联系[支持人员](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)。 |
+| 你按下电源按钮。 | 第一个、第三个和第五个灯一起连续闪烁。 |  HoloLens 可能存在硬件失败。 联系[支持人员](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)。 |
 
 ## 安全和舒适
 
