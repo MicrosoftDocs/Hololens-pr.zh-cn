@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 发行说明
-description: 了解每个新的 HoloLens 版本中的更新。
+description: 了解每个新的 HoloLens 2 版本中的更新。
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,19 +15,38 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
-ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
+ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
+ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926325"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "10997213"
 ---
 # HoloLens 2 发行说明
 
-为确保您的 HoloLens 设备具有高效的体验，我们将继续发布功能、缺陷和安全更新。 在此页面上，您可以查看每月 HoloLens 的新增功能。 若要获取最新的 HoloLens 2 完整闪存更新 (FFU) [通过 "高级恢复助理" 将您的设备闪存](hololens-recovery.md#clean-reflash-the-device)，请[在此处下载](https://aka.ms/hololens2download)。 下载将保持最新状态，并提供最新的通用内部版本。
+为确保您的 HoloLens 设备具有高效的体验，我们将继续发布功能、缺陷和安全更新。 在此页面上，您可以查看每月 HoloLens 的新增功能。 若要获取最新的 HoloLens 2 完整闪存更新 (FFU) [通过 "高级恢复助理" 将您的设备闪存](hololens-recovery.md#clean-reflash-the-device)，请 [在此处下载](https://aka.ms/hololens2download)。 下载将保持最新状态，并提供最新的通用内部版本。
 
 >[!NOTE]
-> 若要阅读 HoloLens 模拟器发行说明，请[访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
+> 若要阅读 HoloLens 模拟器发行说明，请 [访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
+
+## Windows 全息版 2004-2020 更新
+- 内部版本19041.1117
+
+更新中的改进和修复：
+
+- 解决了阻止 Visual Studio 在 package.appxmanifest 中存在 SupportsMultipleInstances = "true" 时调试应用程序的问题。
+- 此版本包括 NCSI 代理检测修复，以解决通过网络代理进行的 Internet 检测失败。 NCSI 可以使用计算机代理和每个配置文件的代理进行 Internet 连接检测。 未来版本中的 NCSI 将支持每用户代理。
+- 在大多数 Windows Mixed Reality 设备上，当用户的 head 位于要进行转发的中性位置时，向前矢量平行于地面。 但是，较早版本的 HoloLens 2 将矢量调整为垂直于显示面板，而不是相对于理想方向向下倾斜几度。 较新版本的 HoloLens 2 已更正此情况，以确保各种形式因素的语义一致性。
+- 改善了右手跟踪的可靠性，这些可靠性将导致特定方案中的跟踪损失较少。
+- 此版本包含一个修补程序，可改进音频时间戳质量，这可能会导致视频捕获问题。
+
+## Windows 全息版 1903-2020 更新
+- 内部版本18362.1079
+
+更新中的改进和修复：
+
+- 在大多数 Windows Mixed Reality 设备上，当用户的 head 位于要进行转发的中性位置时，向前矢量平行于地面。 但是，较早版本的 HoloLens 2 将矢量调整为垂直于显示面板，而不是相对于理想方向向下倾斜几度。 较新版本的 HoloLens 2 已更正此情况，以确保各种形式因素的语义一致性。
+- 改善了右手跟踪的可靠性，这些可靠性将导致特定方案中的跟踪损失较少。
 
 ## Windows 全息版 2004-2020 更新
 - 内部版本19041.1113
@@ -74,7 +93,7 @@ ms.locfileid: "10926325"
   - 在 " *MRC 音频" 效果*中：
     - LoopbackGain (Windows Device Portal 中混合现实捕获页面上的当前 "应用音频收益" 值) 
     - MicrophoneGain (Windows Device Portal 中混合现实捕获页面上的当前 "Mic Audio 增益" 值) 
-- 修复了在混合现实捕获方案中提高音频质量的 bug。 尤其是，此修补程序应在显示 "**开始**" 菜单时消除录制中的音频 glitching。
+- 修复了在混合现实捕获方案中提高音频质量的 bug。 尤其是，此修补程序应在显示 " **开始** " 菜单时消除录制中的音频 glitching。
 - 改进了录制视频中的全息图稳定性。
 - 解决了在设备离开待机状态几天后混合现实捕获无法录制视频的问题。
 - 对于 Unity 应用程序，HolographicSpace 通常禁用 UserPresence API。 此行为可避免在面板翻转时导致某些应用暂停的问题，即使已启用 "在后台运行" 设置。 现已针对 Unity 版本2018.4.18 及更高版本和2019.3.4 及更高版本启用 API。
@@ -107,7 +126,7 @@ ms.locfileid: "10926325"
 ## Windows 全息版2004  
 - 内部版本-19041.1103
 
-适用于 HoloLens 2、 *Windows 全息版、版本 2004*的2020主要软件更新包括一种令人兴奋的新功能，例如对 Windows Autopilot、应用深色模式、USB 以太网支持 5G/LTE 热点的支持等。 若要更新到最新版本，请打开 "**设置**"   应用，转到 " **更新 & 安全**"，然后选择 " **检查更新**"   按钮。 
+适用于 HoloLens 2、 *Windows 全息版、版本 2004* 的2020主要软件更新包括一种令人兴奋的新功能，例如对 Windows Autopilot、应用深色模式、USB 以太网支持 5G/LTE 热点的支持等。 若要更新到最新版本，请打开 "**设置**"   应用，转到 " **更新 & 安全**"，然后选择 " **检查更新**"   按钮。 
 
 |             功能                              |          描述                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -134,7 +153,7 @@ ms.locfileid: "10926325"
 1. 预配设备。
 1. 向用户呈现登录屏幕。
 
-请通过适用于[HoloLens 2 评估指南的 Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot)了解详细信息。
+请通过适用于 [HoloLens 2 评估指南的 Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot)了解详细信息。
 
 *请与您的帐户管理员联系，立即加入 AutoPilot 预览版。 Autopilot 已准备好的设备即将开始发货。*
 
@@ -144,7 +163,7 @@ ms.locfileid: "10926325"
 
 FIDO2 安全密钥是一种基于标准的 "unphishable" passwordless 身份验证方法，可采用任何形式的外观。 FIDO 是一种用于 passwordless 身份验证的开放式标准。 它允许用户和组织无需用户名或密码即可登录到其资源。 而是使用内置的安全密钥或内置于设备的平台密钥。
 
-若要开始使用，请参阅[启用 passwordless 安全密钥登录](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)。
+若要开始使用，请参阅 [启用 passwordless 安全密钥登录](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)。
 
 ### 通过预配包改进了 MDM 注册
 
@@ -163,13 +182,13 @@ FIDO2 安全密钥是一种基于标准的 "unphishable" passwordless 身份验�
 
 ### 其他 Csp 和策略
 
-[配置服务提供程序 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN)是用于读取、设置、修改或删除设备上的配置设置的接口。 在此版本中，我们添加了对更多策略的支持，以增加管理员对已部署的 HoloLens 设备的控制。 有关 HoloLens 支持的 Csp 列表，请参阅[NETWORKQOSPOLICY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)。
+[配置服务提供程序 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN)是用于读取、设置、修改或删除设备上的配置设置的接口。 在此版本中，我们添加了对更多策略的支持，以增加管理员对已部署的 HoloLens 设备的控制。 有关 HoloLens 支持的 Csp 列表，请参阅 [NETWORKQOSPOLICY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)。
 
 此版本中的新增内容：
 
 **策略云解决方案提供商** 
 
-策略配置服务提供程序使企业能够在 Windows 设备上配置策略。 在此版本中，我们为 HoloLens 添加了新策略，这些策略将在此处列出。 若要了解详细信息，请参阅[HoloLens 2 支持的策略 csp](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2)。  
+策略配置服务提供程序使企业能够在 Windows 设备上配置策略。 在此版本中，我们为 HoloLens 添加了新策略，这些策略将在此处列出。 若要了解详细信息，请参阅 [HoloLens 2 支持的策略 csp](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2)。  
 
 - LetAppsAccessCamera_ForceAllowTheseApps  
 - LetAppsAccessCamera_ForceDenyTheseApps  
@@ -185,11 +204,11 @@ FIDO2 安全密钥是一种基于标准的 "unphishable" passwordless 身份验�
 
 **NetworkQoSPolicy 云解决方案提供商**
 
-NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略。 QoS 策略根据一组匹配的条件对网络流量执行一组操作。 若要了解详细信息，请参阅[NETWORKQOSPOLICY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)。
+NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略。 QoS 策略根据一组匹配的条件对网络流量执行一组操作。 若要了解详细信息，请参阅 [NETWORKQOSPOLICY CSP](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)。
 
 ### 已展开的 USB 以太网支持 5G/LTE tethered 设备
 
-已添加支持以启用某些移动宽带设备，如 5G/LTE 电话和 Wi-fi hotpots，它们通过 USB tethered 到 HoloLens 2。 这些设备现在在 "**网络设置**" 中显示为另一个以太网连接。 不支持需要外部驱动程序 (移动宽带设备。 ) 此功能支持在 Wi-fi 不可用且 Wi-fi tethering 没有足够的性能的情况下启用高带宽连接。 若要了解有关受支持的 USB 设备的详细信息，请参阅[连接到蓝牙和 USB-C 设备](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
+已添加支持以启用某些移动宽带设备，如 5G/LTE 电话和 Wi-fi hotpots，它们通过 USB tethered 到 HoloLens 2。 这些设备现在在 " **网络设置** " 中显示为另一个以太网连接。 不支持需要外部驱动程序 (移动宽带设备。 ) 此功能支持在 Wi-fi 不可用且 Wi-fi tethering 没有足够的性能的情况下启用高带宽连接。 若要了解有关受支持的 USB 设备的详细信息，请参阅 [连接到蓝牙和 USB-C 设备](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
 
 ### 手动跟踪改进
 
@@ -222,33 +241,33 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 ### 系统语音命令
 
-现在，你可以将语音命令与设备上的任何应用配合使用。 有关详细信息，请参阅[使用语音操作 HoloLens](https://docs.microsoft.com/hololens/hololens-cortana)。 另请参阅[HoloLens 2 支持的语言](https://docs.microsoft.com/hololens/hololens2-language-support)。  
+现在，你可以将语音命令与设备上的任何应用配合使用。 有关详细信息，请参阅 [使用语音操作 HoloLens](https://docs.microsoft.com/hololens/hololens-cortana)。 另请参阅 [HoloLens 2 支持的语言](https://docs.microsoft.com/hololens/hololens2-language-support)。  
 
 ### Cortana 更新
 
-已更新的应用与 Microsoft 365 集成以帮助你在设备上进行更多操作， (目前仅限美国英语) 。 在 HoloLens 2 上，Cortana 不再支持特定于设备的命令，如调整音量或重启。 新的系统语音命令现在支持这些选项。 在我们的[博客](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)中了解有关新的 Cortana 应用的详细信息。
+已更新的应用与 Microsoft 365 集成以帮助你在设备上进行更多操作， (目前仅限美国英语) 。 在 HoloLens 2 上，Cortana 不再支持特定于设备的命令，如调整音量或重启。 新的系统语音命令现在支持这些选项。 在我们的 [博客](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)中了解有关新的 Cortana 应用的详细信息。
 
 ### 质量改进和修复
 
 更新中也有改进和修复：  
 - 引入了活动的显示校准系统。 此功能可改善全息影像的稳定性和对齐方式。 当您的打印头并排移动时，它们将保留在原地。
-- 修复了用于 HoloLens 的 Wi-fi 流式处理定期中断的 bug。 如果应用程序指示它需要低延迟流，请通过调用[SetSocketMediaStreamingMode 函数](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)来实现修复。
+- 修复了用于 HoloLens 的 Wi-fi 流式处理定期中断的 bug。 如果应用程序指示它需要低延迟流，请通过调用 [SetSocketMediaStreamingMode 函数](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)来实现修复。
 - 修复了在研究模式下流式处理期间发生的设备挂起。
 - 修复了一个 bug，在某些情况下，在恢复会话时，在登录屏幕上无法显示正确的用户。
-- 修复了用户无法通过**设置**导出 MDM 日志的问题。
+- 修复了用户无法通过 **设置**导出 MDM 日志的问题。
 - 修复了立即关注全新设置的目视跟踪的问题，这可能比预期的要低。
 - 修复了目视跟踪子系统无法在特定条件下初始化或执行校准的问题。
 - 修复了提示校准已校准用户的问题。
 - 修复了在目视校准期间驱动程序崩溃的问题。
 - 修复了重复的电源按钮按下可能导致60秒系统超时和外壳崩溃的问题。
 - 改善了深度缓冲区的稳定性。
-- 在 "反馈中心" 添加了 "**共享**" 按钮，以便用户可以更轻松地共享反馈。
+- 在 "反馈中心" 添加了 " **共享** " 按钮，以便用户可以更轻松地共享反馈。
 - 修复了 RoboRaid wan't 正确安装的 bug。
 
 ### 已知问题
 
 - Zh-cn&platform 系统语言的问题阻止语音命令接受混合现实捕获或显示设备 IP 地址。
-- 问题要求你在启动设备后启动 Cortana 应用以使用 "你好 Cortana" 语音激活。 如果从18362版本更新，你可能还会看到以前版本的 Cortana 应用的第二个应用磁贴，在**开始**时不再有效。
+- 问题要求你在启动设备后启动 Cortana 应用以使用 "你好 Cortana" 语音激活。 如果从18362版本更新，你可能还会看到以前版本的 Cortana 应用的第二个应用磁贴，在 **开始**时不再有效。
 
 ## Windows 全息版 1903-五月2020更新 
 - 内部版本18362.1061
@@ -260,7 +279,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 **支持的应用的深色模式** 
 
-许多 Windows 应用均支持深色模式和浅色模式。 HoloLens 2 客户现在可以为支持两种配色方案的应用选择默认模式。 根据客户反馈，我们将默认应用模式设置为 "深色"，但你可以随时轻松地更改此设置：导航到 "**设置" > "系统 > 颜色**" 以找到 **"选择默认应用模式"。**
+许多 Windows 应用均支持深色模式和浅色模式。 HoloLens 2 客户现在可以为支持两种配色方案的应用选择默认模式。 根据客户反馈，我们将默认应用模式设置为 "深色"，但你可以随时轻松地更改此设置：导航到 " **设置" > "系统 > 颜色** " 以找到 **"选择默认应用模式"。**
 
 这些 "机箱中" 应用支持深色模式：
 - “设置”
@@ -277,7 +296,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 **更新中也有改进和修复：** 
 - 确保在混合现实捕获中包含外壳覆盖。
 - Unreal 开发人员现在可以使用 Device Portal 中的3D 视图页面来测试和调试其应用程序。
-- 在使用*HolographicDepthReprojectionMethod DepthReprojection*算法时，在混合现实捕获中改进了全息图稳定性。
+- 在使用 *HolographicDepthReprojectionMethod DepthReprojection* 算法时，在混合现实捕获中改进了全息图稳定性。
 - 修复了32位 ARM 应用上的 "WinRT IStreamSocketListener API 类未注册" 错误。
 
 ## Windows 全息版、版本 1903-2020 更新 
@@ -285,7 +304,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 更新中的改进和修复：
 
-- 在使用*HolographicDepthReprojectionMethod AutoPlanar*算法时，在混合现实捕获中改进了全息图稳定性。
+- 在使用 *HolographicDepthReprojectionMethod AutoPlanar* 算法时，在混合现实捕获中改进了全息图稳定性。
 - 已确保连接到 depth MF 示例的坐标系与公共文档一致。
 - 通过让客户通过 device portal 粘贴大量文本，提高了开发人员的工作效率。
 
@@ -321,7 +340,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 更新中的改进和修复：
 
-- 固定的功能：在初始设置中为 en-us 和 en-us**选择**语音命令。
+- 固定的功能：在初始设置中为 en-us 和 en-us **选择** 语音命令。
 - 改进了在最新的 Unity 和混合现实工具包中最远地放置的对象的视觉质量 (MRTK) 版本。
 - 修复了在启动时，全息应用程序在处于暂停状态时处于暂停状态的问题，直到打开 "开始" 菜单，然后关闭。
 - 适用于 HoloLens 2 和模拟器的 OpenXR 运行时一致性修复和改进。
