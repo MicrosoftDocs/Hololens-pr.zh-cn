@@ -72,6 +72,7 @@
 
 ## 策略
 ### [使用预配程序包配置 HoloLens](hololens-provisioning.md)
+### [使用 MDM 管理 HoloLens 设备](hololens-mdm-configure.md)
 ### [将 HoloLens 设置为 Kiosk](hololens-kiosk.md)
 # 部署
 ## 注册
