@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883146"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009520"
 ---
 # 将 HoloLens 连接到网络
 
@@ -29,6 +29,8 @@ ms.locfileid: "10883146"
 ## 首次连接
 
 首次使用 HoloLens 时，系统会指导你连接到 WLAN 网络。 如果在设置期间连接到 WLAN 时遇到问题，请确保你的网络是开放网络、受密码保护网络或者强制门户网络。 确保不需要使用证书就能连接网络。 完成设置后，你可以连接到其他类型的 WLAN 网络。
+
+在 HoloLens 2 设备上，用户也可以[使用 USB-C 以太网适配器](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)直接连接到 Wi-Fi，帮助协助设置设备。 设置好设备后，用户可以继续使用该适配器，或者可将设备从适配器断开，并且[在设置完毕后连接到 wi-fi](hololens-network.md#connecting-to-wi-fi-after-setup)。 
 
 ## 设置完成后连接到 WLAN
 
