@@ -1,23 +1,24 @@
 ---
 title: HoloLens 安全体系结构
 description: 安全体系结构
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 安全, hololens, hololens 2, hololens2 安全, 安全概述, 安全体系结构, 体系结构, hololens 2 体系结构
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8045f534926e0719bd2f8e448809b5a2965346c4
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: f8434ffe2442f270d6360018bea4b64064168d0c
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865679"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009550"
 ---
 # 安全概述和体系结构
 

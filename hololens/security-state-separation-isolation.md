@@ -1,23 +1,24 @@
 ---
 title: 状态分离和隔离
 description: 状态分离和隔离
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 安全, hololens, 状态分离, 状态分离和隔离, hololens 2, hololens2 安全, 安全概述, 安全体系结构, 体系结构, hololens 2 体系结构
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e92e2fcbc13ad5c9e5748b1d619e387ae9a4d147
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 702b713b7a930a2e4909dffaa895856d918d11c9
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865699"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009410"
 ---
 # 状态分离和隔离
 

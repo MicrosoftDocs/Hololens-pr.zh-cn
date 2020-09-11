@@ -1,23 +1,24 @@
 ---
 title: 安全工程
 description: 安全工程
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 安全, hololens, 工程
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 60b11e93ec68e7899403aeec17bba0da7f2ca391
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: cecc556841033ee394f36915f4cae8839dad08df
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865685"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009530"
 ---
 # 安全工程
 

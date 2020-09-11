@@ -1,23 +1,24 @@
 ---
 title: 硬件支持的完整性和运行时证明
-description: 限制 holoLens 的密码使用
-author: jbennett
+description: 硬件支持的完整性和运行时证明
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 安全性, hololens, 硬件支持的完整性, 运行时证明, UEFI, UEFI 安全启动, 安全启动, TPM, 威胁防护, Windows 反持久性保证, 代码完整性, 代码保护,
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d1a3fe02b64ce1566806119e5309fd262667b181
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865682"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009470"
 ---
 # 硬件支持的完整性和运行时证明
 

@@ -1,24 +1,25 @@
 ---
 title: 限制密码使用
 description: 限制 holoLens 的密码使用
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 安全性，hololens，限制密码使用，密码，hololens 密码，登录，正在登录，windows hello，hello，windows 帐户管理器，FIDO2 登录，FIDO 2，WEBAUTHN，本地帐户，hololens 安全
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 61330e77bc3aca5b0b21b58f18d087f7d5c06f3b
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865690"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009510"
 ---
 # 限制密码使用
 
