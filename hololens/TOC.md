@@ -66,6 +66,7 @@
 ## 网络和连接
 ### [为 HoloLens 配置网络](hololens-commercial-infrastructure.md)
 ### [将 HoloLens 连接到网络](hololens-network.md)
+### [为 HoloLens 2 准备证书和网络配置文件](hololens-certificates-network.md)
 ### [管理 HoloLens 的连接终结点](hololens-offline.md)
 ### [连接到蓝牙和 USB-C 设备](hololens-connect-devices.md)
 
