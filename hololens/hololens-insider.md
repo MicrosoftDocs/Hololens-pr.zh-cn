@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
-ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
+ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
+ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10994425"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016293"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -49,7 +49,9 @@ ms.locfileid: "10994425"
 | [HoloLens 2 的新 power 策略](hololens-insider.md#new-power-policies-for-hololens-2)                      | 新支持的电源超时设置策略。                                           | 19041.1349 +                 |
 | [更新策略](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 允许控制更新的新启用的策略。                                            | 19041.1352 +                 |
 | [已启用 HoloLens 2 的设置页面可见性](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 用于选择在 "设置" 应用中显示哪些页面的策略。                                           | 19041.1349 +                 |
+|  [研究模式](hololens-insider.md#research-mode) | 在 HoloLens 2 上使用研究模式 | 19041.1375 + |
 | [更新中的改进和修复](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新中的其他修复程序。                                                                | 19041.1361 +                 |
+
 
 ### 自动目视位置支持
 
@@ -278,6 +280,15 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 若要了解在 HoloLens 2 上可以自定义的页面设置，请访问我们的 " [设置 uri" 页面](settings-uri-list.md)。 
  
 ![在 "设置" 应用中修改的活动小时的屏幕截图](images/hololens-page-visibility-list.jpg)
+
+### 研究模式
+在研究模式下，HoloLens 2 成为计算机远景研究的 potent 工具。 与以前的版本相比，HoloLens 2 的研究模式具有以下优点：
+-   除了 HoloLens 中显示的传感器 (第一代) 研究模式中，我们现在提供 IMU 传感器访问，包括加速计、gyroscope 和磁力计。
+-   HoloLens 2 提供了可与研究模式结合使用的新功能。 尤其是，可以访问可提供更丰富的实验集的可表述的手动跟踪和目视跟踪 Api。
+
+研究人员现在可以选择在其 HoloLens 设备上启用研究模式，以访问所有外部面向的裸图像传感器流。 HoloLens 2 的研究模式还提供对加速计、gyroscope 和磁力计读数的访问。 为了保护用户的隐私，无法通过 "信息检索" 模式获取原始目视跟踪相机图像，但目视方向可通过现有 Api 使用。
+
+有关技术详细信息，请查看 [信息检索模式文档](https://docs.microsoft.com/windows/mixed-reality/research-mode) 。
 
 ### 更新中的改进和修复：
 - 已更新策略以禁用通过 MDM for AllowUsbConnection 对 USB 函数进行枚举的 NCM。
