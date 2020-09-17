@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929848"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016686"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -31,7 +31,9 @@ ms.locfileid: "10929848"
 本文提供有关特定于 HoloLens 设备的展台配置方面的信息。 有关不同类型的基于 Windows 的网亭以及如何配置它们的常规信息，请参阅 [在 Windows 桌面版上配置网亭和数字签名](https://docs.microsoft.com/windows/configuration/kiosk-methods)。  
 
 > [!IMPORTANT]  
-> 展台模式确定当用户登录到设备时，哪些应用可用。 但是，展台模式不是一种安全方法。 它不会阻止 "允许" 应用打开不允许的另一个应用。 为了阻止应用或进程打开，请使用 [Windows Defender 应用程序控件 (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 来创建相应的策略。  
+> 展台模式确定当用户登录到设备时，哪些应用可用。 但是，展台模式不是一种安全方法。 它不会阻止 "允许" 应用打开不允许的另一个应用。 为了阻止应用或进程打开，请使用 [Windows Defender 应用程序控件 (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 来创建相应的策略。
+>
+> 了解有关 Microsoft 服务的详细信息，以便为用户提供 HoloLens 2 使用的高级安全级别，请阅读有关 [状态分隔和隔离 Defender 保护](security-state-separation-isolation.md#defender-protections)的详细信息。 或了解如何 [使用 WDAC 和 Windows PowerShell 在 HoloLens 2 设备上使用 Microsoft Intune 允许或阻止应用](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)。
 
 你可以在单个应用或多个应用配置中使用展台模式，并且可以使用三个进程之一来设置和部署展台配置。
 
@@ -105,7 +107,7 @@ ms.locfileid: "10929848"
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist \ _8wekyb3d8bbwe \！RemoteAssist |
 |反馈 &nbsp; 中心 |WindowsFeedbackHub \ _8wekyb3d8bbwe \！应用 |
 |文件资源管理器 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|邮件 |windowscommunicationsapps_8wekyb3d8bbwe！ windowslive！ |
+|Mail |windowscommunicationsapps_8wekyb3d8bbwe！ windowslive！ |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |电影和电视 |ZuneVideo \ _8wekyb3d8bbwe \！ZuneVideo |

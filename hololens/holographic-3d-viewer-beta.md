@@ -1,6 +1,6 @@
 ---
-title: 使用 HoloLens（第 1 代）上的 3D 查看器
-description: 介绍 HoloLens（第 1 代）上的 3D 查看器支持的文件类型和功能，以及如何使用该应用和解决出现的问题。
+title: 使用 HoloLens（第 1 代）上的 3D 查看器 Beta 版
+description: 介绍 HoloLens（第 1 代）上的 3D 查看器 Beta 版支持的文件类型和功能，以及如何使用该应用和解决出现的问题。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,27 +13,30 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 47fe1fd5dc164c56ce22a09d7edf5bffdb60ea14
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f5481d6466459667deb99232fdd67c4491798cbe
+ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827877"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016283"
 ---
-# 使用 HoloLens（第 1 代）上的 3D 查看器
+# 使用 HoloLens（第 1 代）上的 3D 查看器 Beta 版
 
-3D 查看器可用于在 HoloLens（第 1 代）上查看 3D 模型。 你可以从 Microsoft Edge、OneDrive 和其他应用打开并查看支持的** .fbx 文件。
+3D 查看器 Beta 版可用于在 HoloLens（第 1 代）上查看 3D 模型。 你可以从 Microsoft Edge、OneDrive 和其他应用打开并查看支持的** .fbx 文件。
 
 >[!NOTE]
->本文适用于沉浸式 Unity 3D 查看器**** 应用，该应用支持 .fbx 文件且仅在 HoloLens（第 1 代）上提供。 HoloLens 2 上预装的 3D 查看器**** 应用支持在混合现实主页中打开自定义 .glb 3D 模型（有关详细信息，请参阅[资产需求概述](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview)。
+>本文适用于沉浸式 Unity **3D 查看器 Beta 版**应用，该应用支持 .fbx 文件且仅在 HoloLens（第 1 代）上提供。 HoloLens 2 上预装的 3D 查看器**** 应用支持在混合现实主页中打开自定义 .glb 3D 模型（有关详细信息，请参阅[资产需求概述](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview)。
 
-如果在 3D 查看器中打开 3D 模型时遇到问题，或 3D 模型的某些功能不受支持，请参阅[支持内容规范](#supported-content-specifications)。
+>[!IMPORTANT]
+>虽然 3D 查看器 Beta 版可能在 Microsoft Store 中仍可用于 HoloLens（第一代），但它不再处于活动开发阶段并且不再受支持。
 
-若要生成或优化 3D 模型以便通过 3D 查看器进行使用，请参阅[为 3D 查看器优化 3D 模型](#optimizing-3d-models-for-3d-viewer)。
+如果在 3D 查看器 Beta 版中打开 3D 模型时遇到问题，或 3D 模型的某些功能不受支持，请参阅下面的[支持内容规范](#supported-content-specifications)。
 
-在 HoloLens 上打开 3D 模型的方法有两种。 请参阅[在 HoloLens 上查看 FBX 文件](#viewing-fbx-files-on-hololens)，了解详细信息。
+若要生成或优化 3D 模型以便通过 3D 查看器 Beta 版进行使用，请参阅下面的[为 3D 查看器 Beta 版优化 3D 模型](#optimizing-3d-models-for-3d-viewer-beta)。
 
-如果阅读这些主题后仍有问题，请参阅[疑难解答](#troubleshooting)。
+在 HoloLens 上打开 3D 模型的方法有两种。 请参阅下面的[在 HoloLens 上查看 FBX 文件](#viewing-fbx-files-on-hololens)，了解详细信息。
+
+如果阅读这些主题后仍有问题，请参阅下面的[疑难解答](#troubleshooting)。
 
 ## 支持内容规范
 
@@ -91,14 +94,14 @@ ms.locfileid: "10827877"
 
 ### 文件和模型限制
 
-3D 查看器对文件大小以及可同时打开的模型、顶点和网格的数量有硬性限制：
+3D 查看器 Beta 版对文件大小以及可同时打开的模型、顶点和网格的数量有硬性限制：
 
 - 每个模型的最大文件大小为 500 MB
 - 顶点：所有打开的模型上共 600,000 个
 - 网格：所有打开的模型上共 1,600 个
 - 同一时间最多可打开 40 个模型
 
-## 为 3D 查看器优化 3D 模型
+## 为 3D 查看器 Beta 版优化 3D 模型
 
 ### 特殊注意事项
 
@@ -108,9 +111,9 @@ ms.locfileid: "10827877"
 
 ### 性能优化
 
-在创作内容时，请牢记性能，并在创作过程中在 HoloLens 上的 3D 查看器应用中进行验证，以获得最佳效果。 3D 查看器会实时呈现内容，性能则受 HoloLens 硬件功能的制约。  
+在创作内容时，请牢记性能，并在创作过程中在 HoloLens 上的 3D 查看器 Beta 版应用中进行验证，以获得最佳效果。 3D 查看器 Beta 版会实时呈现内容，性能则受 HoloLens 硬件功能的制约。  
 
-3D 模型中有许多可影响性能的变量。 如果有超过 150,000 个顶点或超过 400 个网格，3D 查看器会在加载时显示警告。 动画可能会对其他打开的模型的性能产生影响。 3D 查看器还对可同时打开的模型、顶点和网格的总数有硬性限制（请参阅[文件和模型限制](#file-and-model-limitations)）。  
+3D 模型中有许多可影响性能的变量。 如果有超过 150,000 个顶点或超过 400 个网格，3D 查看器 Beta 版会在加载时显示警告。 动画可能会对其他打开的模型的性能产生影响。 3D 查看器 Beta 版还对可同时打开的模型、顶点和网格的总数有硬性限制（请参阅[文件和模型限制](#file-and-model-limitations)）。  
 
 如果 3D 模型由于模型的复杂性而无法正常运行，请考虑：
 
@@ -118,17 +121,17 @@ ms.locfileid: "10827877"
 - 减少操纵式动画中的骨骼数
 - 避免自遮挡
 
-3D 查看器支持双面呈现，不过出于性能原因，默认情况下该功能处于关闭状态。 可通过“详细信息****”页面上的“双面”**** 按钮启用此功能。 为获得最佳性能，请避免需要在内容中进行双面呈现的情况。
+3D 查看器 Beta 版支持双面呈现，不过出于性能原因，默认情况下该功能处于关闭状态。 可通过“详细信息****”页面上的“双面”**** 按钮启用此功能。 为获得最佳性能，请避免需要在内容中进行双面呈现的情况。
 
 ### 验证 3D 模型
 
-在 HoloLens 的 3D 查看器中打开模型以对其进行验证。 选择“详细信息”**** 按钮以查看模型的特征和有关不受支持内容（如果存在）的警告。
+在 HoloLens 的 3D 查看器 Beta 版中打开模型以对其进行验证。 选择“详细信息”**** 按钮以查看模型的特征和有关不受支持内容（如果存在）的警告。
 
 ### 使用真实的维度呈现 3D 模型
 
-默认情况下，3D 查看器会以合适的尺寸和用户相对位置显示 3D 模型。 但是，如果使用真实的测量数据呈现 3D 模型很重要（例如，在评估房间中的家具模型时），则内容创建者可以在文件的元数据中设置一个标志，以防止应用程序和用户调整该模型的大小。
+默认情况下，3D 查看器 Beta 版会以合适的尺寸和用户相对位置显示 3D 模型。 但是，如果使用真实的测量数据呈现 3D 模型很重要（例如，在评估房间中的家具模型时），则内容创建者可以在文件的元数据中设置一个标志，以防止应用程序和用户调整该模型的大小。
 
-若要防止模型缩放，请向名为 Microsoft_DisableScale 的场景中的任何对象添加 Boolean 自定义属性，并将其设置为 true。 然后，3D 查看器会考虑存储到 FBX 文件中的 FbxSystemUnit 信息。 3D 查看器中的缩放比例为每 FBX 单位 1 米。
+若要防止模型缩放，请向名为 Microsoft_DisableScale 的场景中的任何对象添加 Boolean 自定义属性，并将其设置为 true。 然后，3D 查看器 Beta 版会考虑存储到 FBX 文件中的 FbxSystemUnit 信息。 3D 查看器 Beta 版中的缩放比例为每 FBX 单位 1 米。
 
 ## 在 HoloLens 上查看 FBX 文件
 
@@ -138,73 +141,71 @@ ms.locfileid: "10827877"
 
 1. 在 Microsoft Edge 中，导航到包含要查看的 FBX 文件的网页。
 1. 选择该文件，以进行下载。
-1. 下载完成后，选择 Microsoft Edge 中的“打开”**** 按钮以在 3D 查看器中打开该文件。
+1. 下载完成后，选择 Microsoft Edge 中的“**打开**”按钮以在 3D 查看器 Beta 版中打开该文件。
 
 以后可在 Microsoft Edge 中使用“下载”，再次访问和打开下载的文件。 若要保存 3D 模型并确保后续访问，请在电脑上下载相应文件并将其保存到你的 OneDrive 帐户。 然后便可在 HoloLens 上从 OneDrive 应用打开该文件。
 
 > [!NOTE]
-> 一些具有可下载 FBX 模型的网站会以压缩 ZIP 格式提供这些模型。 3D 查看器无法直接打开 ZIP 文件。 请改为使用电脑解压缩 FBX 文件，并将其保存到你的 OneDrive 帐户。 然后便可在 HoloLens 上从 OneDrive 应用打开该文件。
+> 一些具有可下载 FBX 模型的网站会以压缩 ZIP 格式提供这些模型。 3D 查看器 Beta 版无法直接打开 ZIP 文件。 请改为使用电脑解压缩 FBX 文件，并将其保存到你的 OneDrive 帐户。 然后便可在 HoloLens 上从 OneDrive 应用打开该文件。
 
 ### 从 OneDrive 打开 FBX 文件
 
 你可以在 HoloLens 上使用 OneDrive 应用从 OneDrive 打开 FBX 文件。 请确保已在 HoloLens 上使用 Microsoft Store 应用安装 OneDrive，并且已在电脑上将 FBX 文件上载到 OneDrive。
 
-上载到 OneDrive 中后，可通过以下两种方式在 HoloLens 上使用 3D 查看器打开 FBX 文件：
+上载到 OneDrive 中后，可通过以下两种方式在 HoloLens 上使用 3D 查看器 Beta 版打开 FBX 文件：
 
-- 在 HoloLens 上启动 OneDrive 并选择 FBX 文件，从而将其在 3D 查看器中打开。
-- 启动 3D 查看器，隔空敲击以显示工具栏，然后选择“打开文件”****。 OneDrive 将启动，允许你选择 FBX 文件。
+- 在 HoloLens 上启动 OneDrive 并选择 FBX 文件，从而将其在 3D 查看器 Beta 版中打开。
+- 启动 3D 查看器 Beta 版，隔空敲击以显示工具栏，然后选择“**打开文件**”。 OneDrive 将启动，允许你选择 FBX 文件。
 
 ## 疑难解答
 
 ### 我在打开 3D 模型时看到警告
 
-如果尝试打开的 3D 模型中包含 3D 查看器不支持的功能，或者模型太复杂，可能会影响性能，则将显示一条警告。 3D 查看器仍将加载 3D 模型，但性能或视觉保真度可能会受损。
+如果尝试打开的 3D 模型中包含 3D 查看器 Beta 版不支持的功能，或者模型太复杂，可能会影响性能，则将显示一条警告。 3D 查看器 Beta 版仍将加载 3D 模型，但性能或视觉保真度可能会受损。
 
-有关详细信息，请参阅[支持内容规范](#supported-content-specifications)和[为 3D 查看器优化 3D 模型](#optimizing-3d-models-for-3d-viewer)。
+有关详细信息，请参阅[支持内容规范](#supported-content-specifications)和[为 3D 查看器 Beta 版优化 3D 模型](#optimizing-3d-models-for-3d-viewer-beta)。
 
 ### 我看到警告，且 3D 模型未加载
 
-当 3D 查看器因复杂性或文件大小而无法加载 3D 模型，或者 FBX 文件损坏或无效时，你将看到一条错误消息。 或者，如果达到可同时打开的模型、顶点或网格总数的上限，则也会显示一条错误消息。  
+当 3D 查看器 Beta 版因复杂性或文件大小而无法加载 3D 模型，或者 FBX 文件损坏或无效时，你将看到一条错误消息。 或者，如果达到可同时打开的模型、顶点或网格总数的上限，则也会显示一条错误消息。  
 
 有关详细信息，请参阅[支持内容规范](#supported-content-specifications)和[文件和模型限制](#file-and-model-limitations)。
 
-如果你认为自己的模型符合支持内容规范，并且未超出文件或模型限制，可以将自己的 FBX 文件发送给 3D 查看器团队（邮件地址为 holoapps@microsoft.com）。 我们不能亲自回复，但获得未能正确加载的文件示例将有助于我们的团队在未来的应用版本中做出改进。
-
 ### 我的 3D 模型已加载，但未按预期方式显示
 
-如果 3D 模型在 3D 查看器中的显示效果与预期不符，请隔空敲击以显示工具栏，然后选择“详细信息”****。 3D 查看器不支持的文件部分将突出显示为警告。
+如果 3D 模型在 3D 查看器 Beta 版中的显示效果与预期不符，请隔空敲击以显示工具栏，然后选择“**详细信息**”。 3D 查看器 Beta 版不支持的文件部分将突出显示为警告。
 
 最常见的问题是纹理缺失，这可能是因为它们未嵌入 FBX 文件中。 在这种情况下，模型将显示为白色。 此问题可在创建过程中解决，方法是：在选中嵌入纹理选项的情况下从创建工具导出到 FBX。
 
-有关详细信息，请参阅[支持内容规范](#supported-content-specifications)和[为 3D 查看器优化 3D 模型](#optimizing-3d-models-for-3d-viewer)。
+有关详细信息，请参阅[支持内容规范](#supported-content-specifications)和[为 3D 查看器 Beta 版优化 3D 模型](#optimizing-3d-models-for-3d-viewer-beta)。
 
 ### 查看我的 3D 模型时出现性能下降
 
 在加载和查看 3D 模型时，性能可能会受到以下因素的影响：模型的复杂性、同时打开的模型数量或具有活动动画的模型数量。
 
-有关详细信息，请参阅[为 3D 查看器优化 3D 模型](#optimizing-3d-models-for-3d-viewer)和[文件和模型限制](#file-and-model-limitations)。
+有关详细信息，请参阅[为 3D 查看器 Beta 版优化 3D 模型](#optimizing-3d-models-for-3d-viewer-beta)和[文件和模型限制](#file-and-model-limitations)。
 
-### 当我在 HoloLens 上打开 FBX 文件时，该文件未在 3D 查看器中打开
+### 当我在 HoloLens 上打开 FBX 文件时，该文件未在 3D 查看器 Beta 版中打开
 
-3D 查看器会在安装后自动与 .fbx 文件扩展名相关联。
+3D 查看器 Beta 版会在安装后自动与 .fbx 文件扩展名相关联。
 
 如果你在尝试打开 FBX 文件时看到一个对话框，该对话框指引你访问 Microsoft Store，则表明 HoloLens 上目前没有与 .fbx 文件扩展名相关联的应用。
 
-请验证是否安装了 3D 查看器。 如果未安装，请在 HoloLens 上从 Microsoft Store 下载。
+请验证是否安装了 3D 查看器 Beta 版。 如果未安装，请在 HoloLens 上从 Microsoft Store 下载。
 
-如果已安装 3D 查看器，请启动 3D 查看器，然后再次尝试打开文件。 如果问题仍然存在，请卸载并重新安装 3D 查看器。 这将使 .fbx 文件扩展名与 3D 查看器重新关联。
+如果已安装 3D 查看器 Beta 版，请启动 3D 查看器 Beta 版，然后再次尝试打开文件。 如果问题仍然存在，请卸载并重新安装 3D 查看器 Beta 版。 这将使 .fbx 文件扩展名与 3D 查看器 Beta 版重新关联。
 
-如果尝试打开 FBX 文件时打开了 3D 查看器以外的其他应用，则该应用可能是在 3D 查看器之后安装的，并且已接管与 .fbx 文件扩展名的关联。 如果你更喜欢将 3D 查看器与 .fbx 文件扩展名相关联，请卸载并重新安装 3D 查看器。
+如果尝试打开 FBX 文件时打开了 3D 查看器 Beta 版以外的其他应用，则该应用可能是在 3D 查看器 Beta 版之后安装的，并且已接管与 .fbx 文件扩展名的关联。 如果你更喜欢将 3D 查看器 Beta 版与 .fbx 文件扩展名相关联，请卸载并重新安装 3D 查看器 Beta 版。
 
-### 3D 查看器中的“打开文件”按钮无法启动应用
+### 3D 查看器 Beta 版中的“打开文件”按钮无法启动应用
 
 “打开文件”**** 按钮将打开与 HoloLens 上的文件选取器功能相关联的应用。 如果已安装 OneDrive，“打开文件”**** 按钮将启动 OneDrive。 但是，如果 HoloLens 上当前没有安装与文件选取器功能相关联的应用，将转到 Microsoft Store。
 
-如果“打开文件”**** 按钮启动的是 OneDrive 之外的应用，则该应用可能是在 OneDrive 之后安装的，并且已接管与文件选取器功能的关联。 在 3D 查看器中选择“打开文件”**** 按钮时，如果你更喜欢启动 OneDrive，请卸载并重新安装 OneDrive。
+如果“打开文件”**** 按钮启动的是 OneDrive 之外的应用，则该应用可能是在 OneDrive 之后安装的，并且已接管与文件选取器功能的关联。 在 3D 查看器 Beta 版中选择“**打开文件**”按钮时，如果你更喜欢启动 OneDrive，请卸载并重新安装 OneDrive。
 
-如果“打开文件”**** 按钮未处于活动状态，则可能已达到同一时间可在 3D 查看器中打开的模型数量上限。 如果已在 3D 查看器中打开了 40 个模型，则需要关闭一些模型，然后才能打开其他模型。
+如果“**打开文件**”按钮未处于活动状态，则可能已达到同一时间可在 3D 查看器 Beta 版中打开的模型数量上限。 如果已在 3D 查看器 Beta 版中打开了 40 个模型，则需要关闭一些模型，然后才能打开其他模型。
 
 ## 其他资源
 
-- [支持论坛](http://forums.hololens.com/categories/3d-viewer-beta)
+- [支持论坛](http://forums.hololens.com/categories/3d-viewer-beta) - 仅用于存档目的。 此论坛不再有效。
 - [第三方通知](https://www.microsoft.com/{lang-locale}/legal/products)
