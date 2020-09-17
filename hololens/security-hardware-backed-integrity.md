@@ -5,20 +5,20 @@ author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
+ms.prod: hololens
 ms.topic: article
 keywords: 安全性, hololens, 硬件支持的完整性, 运行时证明, UEFI, UEFI 安全启动, 安全启动, TPM, 威胁防护, Windows 反持久性保证, 代码完整性, 代码保护,
-ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: befd2d892403b7b6c7050f48ba9beffb45b241fe
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009470"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016676"
 ---
 # <span data-ttu-id="5ac72-104">硬件支持的完整性和运行时证明</span><span class="sxs-lookup"><span data-stu-id="5ac72-104">Hardware-backed integrity and runtime attestation</span></span>
 
