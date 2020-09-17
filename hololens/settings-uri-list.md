@@ -3,7 +3,7 @@ title: 设置 URI
 description: HoloLens 支持的 URI 的列表，这些 URI 适用于 PageVisibilityList
 author: evmill
 ms.author: v-evmill
-ms.date: 8/1/2020
+ms.date: 09/16/2020
 ms.topic: article
 keywords: hololens, hololens 2, 分配的访问权限, 展台, 设置页面
 ms.prod: hololens
@@ -13,30 +13,60 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6b506b36915c8f34b90c455410db67e55a2cca09
-ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
+ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963708"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016696"
 ---
 # 设置 URI
 
-HoloLens 设备的其中一项易管理的功能是使用 [Settings/PageVisibilityList 策略](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)限制“设置”应用中显示的页面。 HoloLens 设备和 Windows 10 设备在“设置”应用中的页面选择方面有所不同。 在此页面上，你将只能找到 HoloLens 上已有的设置。 
+HoloLens 设备的其中一项易管理的功能是使用 [Settings/PageVisibilityList 策略](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)限制“设置”应用中显示的页面。 PageVisibilityList 是一项策略，它允许 IT 管理员阻止查看或访问“系统设置”应用中的特定页面，或者对除指定页面之外的所有页面执行此操作。 
 
-## 帐户
+> [!IMPORTANT]
+> 此功能目前仅适用于 [Windows 预览体验成员版本](hololens-insider.md)。 请确保目标设备安装有内部版本 19041.1349+。
+
+下面的示例阐释了仅允许访问 "关于" 和 "蓝牙" 页面的策略，该策略的 URI 为 "ms-settings： network/wifi" 和 "ms settings：蓝牙"。 以下示例说明了一个策略，该策略仅允许访问 about 和 bluetooth 页面，它们分别具有URI“ms-settings:network-wifi”和“ms-settings:bluetooth”：
+- showonly:network-wifi;network-proxy;bluetooth
+
+若要通过预配包进行设置： 
+1. 在 Windows 配置设计器中创建包时，导航到“**策略”>“设置”>“PageVisibilityList**”
+1. 输入字符串：**showonly:network-wifi;network-proxy;bluetooth**
+1. 导出预配包。
+1. 将该包应用于你的设备。 有关如何创建和应用预配包的完整详细信息，请访问[此页面](hololens-provisioning.md)。 
+
+可使用 OMA-URI 通过 Intune 执行此操作。
+1. 创建**自定义策略**。
+1. 设置 OMA-URI 时，请使用字符串：**./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
+1. 选择数据选取时，请选择：**字符串**
+1. 键入值时，请使用：**showonly:network-wifi;network-proxy;bluetooth**
+1. 请确保将自定义设备配置分配给设备所属的组。
+有关 Intune 组和设备配置的详细信息，请[在此处访问](hololens-mdm-configure.md)。
+
+无论选择哪种方法，你的设备现在都应接收更改，并且将向用户显示以下“设置”应用。 
+
+![在“设置”应用中修改的使用时段的屏幕截图](images/hololens-page-visibility-list.jpg)
+
+若要配置“设置”应用页面以显示或隐藏你自己选择的页面，请查看 HoloLens 上可用的“设置 URI”。 
+
+## 设置 URI
+
+HoloLens 设备和 Windows 10 设备在“设置”应用中的页面选择方面有所不同。 在此页面上，你将只能找到 HoloLens 上已有的设置。 
+
+### 帐户
 | 设置页面           | URI                                            |
 |-------------------------|------------------------------------------------|
 | 登录选项         | ms-settings:signinoptions                      |
 | Iris 注册       | ms-settings:signinoptions-launchirisenrollment |
 | 访问工作或学校帐户 | ms-settings:workplace                          |
 
-## 设备
+### 设备
 | 设置页面 | URI                          |
 |---------------|------------------------------|
 | 蓝牙     | ms-settings:bluetooth <br> ms-settings:connecteddevices |
 
-## 隐私
+### 隐私
 | 设置页面            | URI                                             |
 |--------------------------|-------------------------------------------------|
 | 帐户信息             | ms-settings:privacy-accountinfo                 |
@@ -63,14 +93,14 @@ HoloLens 设备的其中一项易管理的功能是使用 [Settings/PageVisibili
 | 语音激活       | ms-settings:privacy-voiceactivation             |
 | 相机                   | ms-settings:privacy-webcam                      |
 
-## 网络和 Internet
+### 网络和 Internet
 | 设置页面 | URI                              |
 |---------------|----------------------------------|
 | WLAN  | ms-settings:network-wifi<br>ms-settings:network-wifisettings<br>ms-settings:network-status<br>ms-settings:wifi-provisioning    |
 | VPN   | ms-settings:network-vpn          |
 | 代理 | ms-settings:network-proxy        |
 
-## 系统
+### 系统
 | 设置页面      | URI                                |
 |--------------------|------------------------------------|
 | 共享体验 | ms-settings:crossdevice            |
@@ -78,13 +108,13 @@ HoloLens 设备的其中一项易管理的功能是使用 [Settings/PageVisibili
 | 通知和操作  | ms-settings:notifications          |
 | 存储            | ms-settings:storagesense           |
 
-## 时间和语言
+### 时间和语言
 | 设置页面 | URI                                           |
 |---------------|-----------------------------------------------|
 | Region        | ms-settings:regionformatting                  |
 | 语言      | ms-settings:regionlanguage<br>ms-settings:regionlanguage-adddisplaylanguage<br>ms-settings:regionlanguage-setdisplaylanguage |
 
-## 更新和安全
+### 更新和安全
 | 设置页面                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Windows 预览体验计划               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
