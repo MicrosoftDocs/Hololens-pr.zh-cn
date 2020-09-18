@@ -71,10 +71,16 @@
 ### [连接到蓝牙和 USB-C 设备](hololens-connect-devices.md)
 
 
-## 策略
+## 设备管理
+### [配置 CSP 和设备管理概述](hololens-csp-policy-overview.md)
 ### [使用预配程序包配置 HoloLens](hololens-provisioning.md)
 ### [使用 MDM 管理 HoloLens 设备](hololens-mdm-configure.md)
+### [通用设备限制](hololens-common-device-restrictions.md)
 ### [将 HoloLens 设置为 Kiosk](hololens-kiosk.md)
+### [Windows Defender 应用程序控制 - WDAC](windows-defender-application-control-wdac.md)
+
+
+
 # 部署
 ## 注册
 ### [在 MDM 中注册 HoloLens](hololens-enroll-mdm.md)
