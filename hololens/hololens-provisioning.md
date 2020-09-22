@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
-ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
+ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10990913"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052641"
 ---
 # 使用预配包配置 HoloLens
 
@@ -210,4 +210,4 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
 可以通过 HoloLens 2 设备上的预配包来安装应用。 这使你可以使用一种易于重新使用的程序包来帮助你分发你的应用。 阅读 [通过预配程序包部署应用](app-deploy-provisioning-package.md)的完整说明。  
 
 > [!NOTE]
-> HoloLens (第一代) 不支持通过使用预配包 (**UniversalAppInstall**) 安装应用。
+> HoloLens (第一代) 具有有限的支持通过使用预配包 (**UniversalAppInstall**) 安装应用。 HoloLens (第一代) 设备仅支持在 OOBE 期间仅通过 PPKG 安装应用，而仅支持用户上下文安装。

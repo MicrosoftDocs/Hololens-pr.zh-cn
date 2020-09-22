@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027435"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052631"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -43,7 +43,6 @@ ms.locfileid: "11027435"
 |[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 应用租户注册和应用策略后，设备在重置或重新刷新设备时，即可随时在该租户中注册。 | 19041.1366 +|
 | [全局分配的访问权限](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。 | 19041.1356 +                 |
 | [在多应用展台中自动启动应用](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 将应用程序设置为在登录到多应用展台模式时自动启动。     | 19041.1346 +                 |
-| [网亭的访问者自动登录](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 启用要用于展台模式的访问者帐户的自动登录。                         | 19041.1361 +                 |
 | [故障处理的展台模式行为更改](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 现在已处理展台模式故障的更改。                                              | 19041.1356 +                 |
 | [HoloLens 政策](hololens-insider.md#hololens-policies)                                      | 混合现实设备的新策略。                                                        | 19041.1349 +                 |
 | [缓存脱机展台的 AAD 组成员身份](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | 针对展台模式允许使用 AAD 组成员身份缓存的天数的策略。    | 19041.1356 +                 |
@@ -212,18 +211,6 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 <AllowedApps>                     
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
-
-### 网亭的访问者自动登录
-此新功能使访问者帐户的自动登录能够用于展台模式。 
-
-对于非 AAD 配置，要为访问者自动登录配置设备，请执行以下操作：
-1.  创建一个预配包：
-    1.  将 **运行时设置/AssignedAccess** 配置为允许访问者帐户。
-    1.  （可选）在 MDM 中注册设备 ** (运行时设置/工作区/注册) ** 以便以后可以对其进行管理。
-    1.  不创建本地帐户
-1.  [应用预配包](hololens-provisioning.md)。
-
-对于 AAD 配置，用户可以实现与今天类似的操作，而无需进行此更改。 为展台模式配置的 AAD 联接设备可以通过单击 "登录" 屏幕上的一个按钮点击来登录访问者帐户。 一旦登录到访问者帐户，设备将不会再次提示登录，直到从 "开始" 菜单明确注销访问者，否则设备将重新启动。
 
 ### 故障处理的展台模式行为更改
 

@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009500"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052579"
 ---
 # 预配程序包
 
@@ -32,6 +32,9 @@ ms.locfileid: "11009500"
 
 > [!NOTE] 
 > 若要了解为 HoloLens 设备创建预配包的基础知识，请访问 [HoloLens 预配](https://docs.microsoft.com/hololens/hololens-provisioning)。 若要部署应用，必须首先从高级预配开始。 
+
+> [!NOTE] 
+> HoloLens (第一代) 具有有限的支持通过使用预配包 (**UniversalAppInstall**) 安装应用。 HoloLens (第一代) 设备仅支持在 OOBE 期间仅通过 PPKG 安装应用，而仅支持用户上下文安装。
 
 ## 安装
 
