@@ -1,9 +1,9 @@
 ---
 title: HoloLens（第一代）硬件
-description: 构成 Microsoft HoloLens （第1代）的组件概述，世界上第一个完全 untethered 的安装了 Windows 的全息计算机。
+description: 构成 Microsoft HoloLens 的组件概述 (第一代) ，世界上第一个完全 untethered 运行 Windows 的全息计算机。
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
-keywords: hololens
+keywords: Hololens
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
@@ -13,18 +13,18 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 1ef464e03bfc17d15e2b776768223b3889cdb4e9
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072779"
 ---
 # HoloLens（第一代）硬件
 
-![Microsoft HoloLens （第1代）](images/see-through-400px.jpg)
+![Microsoft HoloLens (第一代) ](images/see-through-400px.jpg)
 
-Microsoft HoloLens （第1代）是世界上第一个完全 untethered 的全息电脑。 HoloLens 通过全息体验重新定义个人计算，以通过新方式为您准备。 HoloLens 混合先进的光学器件和传感器，可将3D 全息图固定到世界各地。
+Microsoft HoloLens (第一代) 是世界上第一个完全 untethered 的全息电脑。 HoloLens 通过全息体验重新定义个人计算，以通过新方式为您准备。 HoloLens 混合先进的光学器件和传感器，可将3D 全息图固定到世界各地。
 
 ## HoloLens 组件
 
@@ -51,7 +51,7 @@ HoloLens 框包含以下项目：
 - **超细纤维布**。 使用布清洁 HoloLens 面板。
 
 >[!TIP]
->[遥控器](hololens1-clicker.md)随附于 HoloLens （第1代），位于单独的框中。
+>[遥控器](hololens1-clicker.md)随附于 HoloLens (第一代) ，位于单独的框中。
 
 ### 电源详细信息
 
@@ -71,14 +71,14 @@ HoloLens 框包含以下项目：
 | - | - |
 | 光学元件 | 透视全息镜头（波导） |
 | 全息分辨率 | 2种高清16:9 光引擎，总光线为2.3 米 |
-| 全息密度 | \ >2.5 k radiants （每 radian 的点数） |
+| 全息密度 | \ >2.5 k radiants (每 radian 的点数)  |
 | 基于目视的呈现 | 自动 pupillary 距离校准 |
 
 ### 传感器
 
 ![HoloLens 具有用于了解其环境和用户操作的传感器](images/sensor-bar-400px.jpg)
 
-- 1惯性度量单位（IMU）
+- 1个惯性度量单位 (IMU) 
 - 4了解摄像头的环境
 - 1个深度相机
 - 1 2MP 相片/HD 视频摄像头
@@ -111,7 +111,7 @@ HoloLens 框包含以下项目：
 ![适用于 Microsoft HoloLens 的主板](images/motherboard-400px.jpg)
 
 - 支持 TPM 2.0 的英特尔32位体系结构
-- 自定义的 Microsoft 全息处理单元（HPU 1.0）
+-  (HPU 1.0) 的自定义内置的 Microsoft 全息处理单元
 
 ### 内存
 
@@ -144,7 +144,7 @@ HoloLens 框包含以下项目：
 - 全息影像
 - Microsoft Edge
 - 照片
-- 设置
+- “设置”
 - Windows 反馈
 - 校准
 - 学习手势
@@ -154,6 +154,7 @@ HoloLens 框包含以下项目：
 ### 安全
 
 HoloLens 已测试并发现符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本影响保护要求。
+- [SAR 信息](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## 护理和清洁
 
@@ -168,4 +169,4 @@ HoloLens 已测试并发现符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本�
 ![显示如何清洗面罩的图像](images/hololens-cleaning-visor.png)
 
 > [!div class="nextstepaction"]
-> [设置和启动 HoloLens （第1代）](hololens1-setup.md)
+> [设置和启动 HoloLens (第一代) ](hololens1-setup.md)
