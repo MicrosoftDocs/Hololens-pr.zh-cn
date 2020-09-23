@@ -3,7 +3,7 @@ title: 全局分配的访问权限
 description: 全局分配的访问权限展台 OMA-URI 使用指南
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens, hololens 2, 分配的访问权限, 展台
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902297"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052621"
 ---
 # 全局分配的访问权限 – 展台
 
@@ -44,7 +44,7 @@ ms.locfileid: "10902297"
 
 2.  请按照[使用预配包设置单应用或多应用展台](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)中的步骤进行操作，特别是“预配 程序包，步骤 2 – 向预配包添加展台配置 XML 文件”一节并参考上一步中保存的 XML 文件。 
 
-## 我是否能够创建可全局应用至除 1 个 AAD 账户或 AAD 组之外的所有人的配置？ 
+## 我是否能够创建可全局适用于每个人和单独的配置，应用于 1 个 AAD 账户或 AAD 组？ 
 
 可以，请参阅下面的示例 XML blob。 如果未找到登录用户的特定用户，则全局分配的访问权限配置文件将应用于 Hololens，因此它是登录用户的默认展台模式配置。 下面是要使用的 XML blob 示例： 
 
