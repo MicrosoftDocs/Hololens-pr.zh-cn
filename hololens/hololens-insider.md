@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052631"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077689"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -35,8 +35,6 @@ ms.locfileid: "11052631"
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自动目视位置支持](hololens-insider.md#auto-eye-position-support)                              | 主动发现眼睛位置并支持准确的全息图定位。                        | 19041.1339 +                 |
 | [证书管理器](hololens-insider.md#certificate-manager)                                     | 用户可以在 "设置" 应用中查看、安装和删除当前用户和本地计算机证书的证书。                                         | 19041.1361 +                 |
-| [应用安装程序](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | 从 appx 文件安装应用的设备 UI。 | 19041.1377 + |
-| [从网页安装应用](hololens-insider.md#installing-apps-from-a-web-page) | 从浏览器中设置要下载和安装的应用。 | 19041.1366 + | 
 | [来自 USB 的自动启动预配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 会自动检测 USB 驱动器上的预配程序包。                                | 19041.1361 +                 |
 | [在 OOBE 中自动确认预配程序包](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自动应用预配程序包。                                             | 19041.1361 +                 |
 | [将 Autopilot 与 Wlan 连接配合使用](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 从设备 Wi-fi 中使用 autopilot，而无需使用以太网适配器。                             | 19041.1364 +                 |
@@ -108,22 +106,6 @@ ms.locfileid: "11052631"
 !["设置" 应用中的证书查看器](images/certificate-viewer-device.jpg)
 
 ![显示如何使用证书 UI 安装证书的图片](images/certificate-device-install.jpg)
-
-### 通过应用安装程序在 HoloLens 2 上安装应用
-现在，用户现在可以通过 Appx 捆绑安装应用，而无需启用开发人员模式或使用 Device Portal。 此体验对于在本地设备上安装应用或与其他不熟悉 HoloLens 上的其他应用安装方法的其他人共享应用很简单。
-
-这是分发完全生成的应用的简单方法。 无论你是希望使用 HoloLens 向另一位用户演示你的应用，还是希望按比例部署你的应用，此方法都适用于这两种情况。
-
-有关 [在 HoloLens 2 上安装应用](app-deploy-app-installer.md)的完整过程，请参阅应用安装程序。  
-
-![通过应用安装程序安装 MRTK 示例](images/hololens-app-installer-picture.jpg)
-
-### 从网页安装应用
-现在，Windows 预览体验成员内部版本 19041.1366 + 用户可以直接从 web 服务器安装应用。 
-
-现在，创建的 Appx 程序包可以在网页上托管。 与证书部署结合后，此应用分发方法对于应用部署非常有用。
-
-阅读有关[从网页中安装 HoloLens 2 上的应用](app-deploy-web-installer.md)的完整过程
 
 ### 来自 USB 的自动启动预配
 在此内部版本之前，用户必须在 OOBE 期间手动启动预配屏幕，以使用按钮组合。 现在，用户可以通过使用 USB 存储驱动器上的预配包跳过按钮组合。 
@@ -260,7 +242,10 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
+
+>[!NOTE]
+> 对 [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)而言，HoloLens 将仅支持/Vendor/MSFT/RemoteLock/Lock 配置。 不支持处理引脚（如 reset 和 recover）的配置。
 
 ### Hololens 2 的新 power 策略
 这些新添加的策略允许管理员控制电源状态，如空闲超时。 若要阅读有关每个单独策略的详细信息，请单击该策略的链接。
