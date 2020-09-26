@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072789"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080441"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -90,8 +90,10 @@ ms.locfileid: "11072789"
 
 如果你使用 (MDM) 系统或预配包来配置展台模式的移动设备管理，请使用 [AssignedAccess 配置服务提供程序 (CSP) ](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) 来指定应用程序。 CSP 使用 [应用程序用户模型 id (aumid) ](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 来标识应用程序。 下表列出了可在多应用展台中使用的一些内置应用程序的 Aumid。
 
-> [!CAUTION]
-> 您不能选择 "外壳" 应用作为展台应用。 此外，我们 **建议你不要选择 "** microsoft Edge"、"microsoft Store" 或 "文件资源管理器" 作为展台应用。  
+> [!IMPORTANT]
+> 展台模式确定当用户登录到设备时，哪些应用可用。 但是，展台模式不是一种安全方法。 它不会阻止 "允许" 应用打开不允许的另一个应用。 由于我们不限制此行为，因此仍可从 Edge、文件资源管理器和 Microsoft Store 应用启动应用。 如果你不想从展台启动特定应用，请使用 [Windows Defender 应用程序控件 (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 来创建相应的策略。 
+> 
+> 此外，混合现实主页无法设置为展台应用。
 
 <a id="aumids"></a>
 
