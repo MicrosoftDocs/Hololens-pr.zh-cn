@@ -39,6 +39,8 @@
 ## 计划 HoloLens 2 企业部署
 ### [在商业环境中部署 HoloLens](hololens-requirements.md)
 ### [常见基础结构部署方案](common-scenarios.md)
+## 常见方案
+### [脱机安全](hololens-common-scenarios-offline-secure.md)
 ## 安全性
 ### [安全性概述](security-overview.md)
 ### [体系结构](security-architecture.md)
