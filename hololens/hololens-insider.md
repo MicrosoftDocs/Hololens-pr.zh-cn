@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
-ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
+ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078380"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088606"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -33,7 +33,7 @@ ms.locfileid: "11078380"
 
 | 功能                                                | 描述                                                                                    | 在预览体验成员内部版本中可用 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [自动目视位置支持](hololens-insider.md#auto-eye-position-support)                              | 主动发现眼睛位置并支持准确的全息图定位。                        | 19041.1339 +                 |
+| [自动目视位置支持](hololens-insider.md#auto-eye-position-support)                              | 主动计算眼睛位置并支持准确的全息图定位。                        | 19041.1339 +                 |
 | [证书管理器](hololens-insider.md#certificate-manager)                                     | 用户可以在 "设置" 应用中查看、安装和删除当前用户和本地计算机证书的证书。                                         | 19041.1361 +                 |
 | [来自 USB 的自动启动预配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 会自动检测 USB 驱动器上的预配程序包。                                | 19041.1361 +                 |
 | [在 OOBE 中自动确认预配程序包](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自动应用预配程序包。                                             | 19041.1361 +                 |
@@ -68,9 +68,6 @@ ms.locfileid: "11078380"
  如果用户从一个不支持注视的应用程序切换到一个访问注视数据的应用程序，则将显示校准提示。 将不会更改为 "现成的体验" 流程。 
  
 对于需要眼睛眼数据或非常精确的全息图位置的体验，我们建议 uncalibrated 用户从目视跟踪校准提示中运行目视跟踪校准，或者从 "开始" 菜单启动 "设置" 应用，然后选择 " **系统 > 校准" > 目视校准 > "运行目视校准**"。
-
-**已知问题**
- - 我们正在调查 "目视跟踪器驱动程序" 在较高内存负载下运行时可能会崩溃的问题。 目视跟踪驱动程序主机进程应自动恢复。
 
 ### 证书管理器
 
