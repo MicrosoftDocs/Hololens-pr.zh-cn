@@ -87,6 +87,7 @@
 ## 注册
 ### [在 MDM 中注册 HoloLens](hololens-enroll-mdm.md)
 ### [适用于 HoloLens 2 的 Windows Autopilot](hololens2-autopilot.md) 
+### [注册 MAC 地址受限的 Wi-Fi 环境](mac-address-options.md)
 ## 应用程序
 ### [应用程序管理概述](app-deploy-overview.md)
 ### [Intune 和公司门户](app-deploy-intune.md)
