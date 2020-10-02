@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
+ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052621"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11093932"
 ---
 # 全局分配的访问权限 – 展台
 
@@ -32,7 +32,12 @@ ms.locfileid: "11052621"
 > [!NOTE]
 > 请注意标记有 "<!-" 的区域。 这些区域将要求你根据自己的偏好进行修改。 
 
-1.  按照以下方式创建自定义 OMA URI 设备配置文件，并将其应用到 HoloLens 设备组：![Intune 中的全局分配访问权限](images/global-assigned-access-omauri.png)
+1.  按照以下方式创建自定义 OMA URI 设备配置文件，并将其应用到 HoloLens 设备组： 
+
+    URI 值：.Device/Vendor/MSFT/AssignedAccess/Configuration
+   
+    > [!div class="mx-imgBorder"]
+    > ![Intune 中全局分配的访问权限 OMA URI](images/global-assigned-access-omauri.png)
 
 2.  对于数值，请更新并粘贴以下内容： 
 
@@ -49,7 +54,7 @@ ms.locfileid: "11052621"
 可以，请参阅下面的示例 XML blob。 如果未找到登录用户的特定用户，则全局分配的访问权限配置文件将应用于 Hololens，因此它是登录用户的默认展台模式配置。 下面是要使用的 XML blob 示例： 
 
 > [!NOTE]
-> 请注意标记有 "<!-" 的高亮区域，这些区域将要求你根据自己的偏好进行修改。 
+> 请注意标记有 `<!-` 的突出显示的区域。 这些区域将要求你根据自己的偏好进行修改。 
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
