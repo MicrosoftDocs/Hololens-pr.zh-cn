@@ -62,6 +62,13 @@
 ## [解锁 Windows Holographic for Business 功能](hololens1-upgrade-enterprise.md)
 
 # 配置
+## 设备管理
+### [配置 CSP 和设备管理概述](hololens-csp-policy-overview.md)
+### [使用预配程序包配置 HoloLens](hololens-provisioning.md)
+### [使用 MDM 管理 HoloLens 设备](hololens-mdm-configure.md)
+### [通用设备限制](hololens-common-device-restrictions.md)
+### [将 HoloLens 设置为 Kiosk](hololens-kiosk.md)
+### [Windows Defender 应用程序控制 - WDAC](windows-defender-application-control-wdac.md)
 ## 标识
 ### [管理 HoloLens 的用户标识和登录](hololens-identity.md)
 ### [与多人共享 HoloLens](hololens-multiple-users.md)
@@ -71,16 +78,6 @@
 ### [为 HoloLens 2 准备证书和网络配置文件](hololens-certificates-network.md)
 ### [管理 HoloLens 的连接终结点](hololens-offline.md)
 ### [连接到蓝牙和 USB-C 设备](hololens-connect-devices.md)
-
-
-## 设备管理
-### [配置 CSP 和设备管理概述](hololens-csp-policy-overview.md)
-### [使用预配程序包配置 HoloLens](hololens-provisioning.md)
-### [使用 MDM 管理 HoloLens 设备](hololens-mdm-configure.md)
-### [通用设备限制](hololens-common-device-restrictions.md)
-### [将 HoloLens 设置为 Kiosk](hololens-kiosk.md)
-### [Windows Defender 应用程序控制 - WDAC](windows-defender-application-control-wdac.md)
-
 
 
 # 部署

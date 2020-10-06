@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
-ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
+ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
+ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "11093932"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094970"
 ---
 # 全局分配的访问权限 – 展台
 
@@ -34,7 +34,7 @@ ms.locfileid: "11093932"
 
 1.  按照以下方式创建自定义 OMA URI 设备配置文件，并将其应用到 HoloLens 设备组： 
 
-    URI 值：.Device/Vendor/MSFT/AssignedAccess/Configuration
+    URI 值：./Device/Vendor/MSFT/AssignedAccess/Configuration
    
     > [!div class="mx-imgBorder"]
     > ![Intune 中全局分配的访问权限 OMA URI](images/global-assigned-access-omauri.png)
