@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016636"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102311"
 ---
 # 无管理操作系统
 
@@ -29,6 +29,8 @@ HoloLens 2 通过禁用对 Administrators 组的支持并将所有第三方 UWP 
   * Windows
 
 Windows 组件还可以通过系统 UWPs 利用 AppContainer 沙盒。 若要了解有关通用 Windows 平台 (UWP) 的详细信息，请参阅 [UWP 文档](https://docs.microsoft.com/windows/uwp/)。 此外，具有更大特权减少需求的 Windows 组件（例如浏览器内容页、分析程序）使用特权较少的 AppContainer (LPAC) 沙盒，该沙盒会切断对所有 AppContainer 可访问的资源集的访问。
+
+## 设备所有者
 
 最后，仅允许“设备所有者”执行特定设备范围的操作，例如将设备加入租户或用户管理。 此组由设备上的用户通过以下步骤之一填充：
   * 设备上的第一个用户始终被指定为所有者。 

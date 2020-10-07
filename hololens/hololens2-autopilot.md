@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899104"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102341"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
@@ -199,6 +199,9 @@ ms.locfileid: "10899104"
 ## 适用于 HoloLens 2 用户体验的 Windows Autopilot
 
 完成上述说明的步骤后，HoloLens 2 用户将通过以下体验来预配其 HoloLens 设备：  
+
+> [!NOTE]
+> 使用 Autopilot 将对[设备所有者](security-adminless-os.md#device-owner)产生影响。
 
 1. 如前所述，在当前版本中，在打开 HoloLens 和启动 Autopilot 预配过程之前，需要将设备连接到 Internet。 使用“USB-C到以太网”适配器进行有线 Internet 连接，也可以使用“USB-C 到 Wifi”适配器进行无线 Internet 连接，将设备连接到以太网。
    
