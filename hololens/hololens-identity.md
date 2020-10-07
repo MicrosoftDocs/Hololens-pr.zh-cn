@@ -1,11 +1,11 @@
 ---
-title: 管理 HoloLens 的用户标识和登录
-description: 管理 HoloLens 的用户标识、安全和登录。
-keywords: HoloLens， user， account， aad， adfs， microsoft account， msa， 凭据， 参考
+title: Manage user identity and sign-in for HoloLens
+description: Manage user identity, security, and sign-in for HoloLens.
+keywords: HoloLens, user, account, aad, adfs, microsoft account, msa, credentials, reference
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
-ms.date: 1/6/2020
+ms.date: 10/6/2020
 ms.prod: hololens
 ms.custom:
 - CI 111456
@@ -18,109 +18,109 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 17d55d8cd5540c9beaf4b7348688c362b079f5da
-ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
+ms.openlocfilehash: 5963e71bd6fdd084ca442995b02d99fc40da9d43
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "10955444"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102331"
 ---
-# 管理 HoloLens 的用户标识和登录
+# Manage user identity and sign-in for HoloLens
 
 > [!NOTE]
-> 本文是 IT 专业人员和技术人本的技术参考。 如果要查找 HoloLens 设置说明，请阅读"[设置 HoloLens (1st 生成) "](hololens1-start.md)或"设置[HoloLens 2"。](hololens2-start.md)
+> This article is a technical reference for IT Pros and tech enthusiasts. If you're looking for HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens 2](hololens2-start.md)".
 
-与其他 Windows 设备类似，HoloLens 始终在用户上下文下运行。 始终有一个用户标识。 HoloLens 在几乎与其他 Windows 10 设备相同的方式对身份进行处理。 本文是 HoloLens 上的标识的深入参考，并重点介绍 HoloLens 与其他 Windows 10 设备有什么不同。
+Like other Windows devices, HoloLens always operates under a user context. There is always a user identity. HoloLens treats identity in almost the same manner as other Windows 10 devices do. This article is a deep-dive reference for identity on HoloLens, and focuses on how HoloLens differs from other Windows 10 devices.
 
-HoloLens 支持多种类型的用户身份。 可以使用一个或多个用户帐户登录。 下面是 HoloLens 上的标识类型和身份验证选项概述：
+HoloLens supports several kinds of user identities. You can use one or more user accounts to sign in. Here's an overview of the identity types and authentication options on HoloLens:
 
-| 标识类型 | 每个设备的帐户数量 | 身份验证选项 |
+| Identity type | Accounts per device | Authentication options |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure Web 凭据提供程序</li><li>Azure 验证器应用</li><li>生物识 () 仅 &ndash; 适用于 HoloLens 2</li><li>&ndash;HoloLens 的可选 (可选 1) ，HoloLens 2 要求</li><li>密码</li></ul> |
-| [Microsoft 帐户 (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生物识 () 仅 &ndash; 适用于 HoloLens 2</li><li>&ndash;HoloLens 的可选 (可选 1) ，HoloLens 2 要求</li><li>密码</li></ul> |
-| [本地帐户](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | 密码 |
+| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure web credential provider</li><li>Azure Authenticator App</li><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
+| [Microsoft Account (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Biometric (Iris) &ndash; HoloLens 2 only</li><li>PIN &ndash; Optional for HoloLens (1st gen), required for HoloLens 2</li><li>Password</li></ul> |
+| [Local account](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 
-连接了 AAD 和 MSA 应用 (提供更多) 功能，因为它们可以使用 Azure 服务。  
+Cloud-connected accounts (AAD and MSA) offer more features because they can use Azure services.  
 
-## 设置用户
+## Setting up users
 
-设置新用户的最常见方法是在 HoloLens 外出体验期间 (OOBE) 。 在设置过程中，HoloLens 将提示用户使用他们想要在设备上使用的帐户登录。 此帐户可以是消费者的 Microsoft 帐户，也可以是已在 Azure 中配置的企业帐户。 请参阅设置[HoloLens (第一代、) ](hololens1-start.md) [HoloLens 2。](hololens2-start.md)
+The most common way to set up a new user is during the HoloLens out-of-box experience (OOBE). During setup, HoloLens prompts for a user to sign in by using the account that they want to use on the device. This account can be a consumer Microsoft account or an enterprise account that has been configured in Azure. See Setting up your [HoloLens (1st gen)](hololens1-start.md) or [HoloLens 2](hololens2-start.md).
 
-与其他设备上的 Windows 类似，在设置过程中登录将在设备上创建用户配置文件。 用户配置文件存储应用和数据。 相同帐户还使用 Windows 帐户管理器 API 为应用（如 Edge 或 Skype）提供单一登录。  
+Like Windows on other devices, signing in during setup creates a user profile on the device. The user profile stores apps and data. The same account also provides Single Sign-on for apps such as Edge or Skype by using the Windows Account Manager APIs.  
 
-如果你使用企业或组织帐户登录 HoloLens，HoloLens 将会注册组织的 IT 基础结构。 通过此注册，你的 IT 管理员可以为你的 HoloLens (时管理移动设备管理功能) ，以向你的 HoloLens 发送组策略。
+If you use an enterprise or organizational account to sign in to HoloLens, HoloLens enrolls in the organization's IT infrastructure. This enrollment allows your IT Admin to configure Mobile Device Management (MDM) to send group policies to your HoloLens.
 
-默认情况下，与其他 Windows 10 设备一样，当 HoloLens 重启或从机机状态恢复时必须重新登录。 你可以使用"设置"应用更改此行为，也可通过组策略控制该行为。
+By default, as for other Windows 10 devices, you'll have to sign in again when HoloLens restarts or resumes from standby. You can use the Settings app to change this behavior, or the behavior can be controlled by group policy.
 
-### 链接的帐户
+### Linked accounts
 
-在 Windows 桌面版中，你可以将其他 Web 帐户凭据链接到你的 HoloLens 帐户。 此类链接使你能够更轻松地在 (事件之间或在应用 (资源（如应用商店）内) 访问个人和工作资源。 将某个帐户连接到该设备后，您可以授予使用设备的权限，从而无需单独登录到每个应用。
+As in the Desktop version of Windows, you can link additional web account credentials to your HoloLens account. Such linking makes it easier to access resources across or within apps (such as the Store) or to combine access to personal and work resources. After you connect an account to the device, you can grant permission to use the device to apps so that you don't have to sign in to each app individually.
 
-链接帐户不会分隔设备上创建的用户数据，如图像或下载。  
+Linking accounts does not separate the user data created on the device, such as images or downloads.  
 
-### 仅设置多用户支持将 (AAD) 
+### Setting up multi-user support (AAD only)
 
-HoloLens 支持同一 AAD 租户中的多个用户。 若要使用此功能，你必须使用属于组织的帐户来设置设备。 随后，来自同一租户的其他用户可以从登录屏幕或通过单击"开始"面板上的用户磁贴登录到设备。 一次只能登录一个用户。 用户登录时，HoloLens 注销上一个用户。  
+HoloLens supports multiple users from the same AAD tenant. To use this feature, you must use an account that belongs to your organization to set up the device. Subsequently, other users from the same tenant can sign in to the device from the sign-in screen or by tapping the user tile on the Start panel. Only one user can be signed in at a time. When a user signs in, HoloLens signs out the previous user. The first user on the device is considered the device owner, except in the case of AAD Join, [learn more about device owners](security-adminless-os.md#device-owner).
 
-所有用户都可以使用设备上安装的应用。 但是，每个用户都有自己的应用数据和首选项。 从设备中删除应用会为所有用户删除该应用。  
+All users can use the apps installed on the device. However, each user has their own app data and preferences. Removing an app from the device removes it for all users.  
 
-使用 AAD 帐户设置的设备将不允许使用 Microsoft 帐户登录设备。 使用的所有后续帐户必须是来自与设备相同的租户的 AAD 帐户。 你可能仍 [可使用 Microsoft 帐户登录到在](hololens-identity.md#setting-up-multi-user-support-aad-only) Microsoft Store 开发 (Microsoft Store 开发人员) 。 若要从使用 AAD 帐户更改为登录设备，你 [必须刷新设备](hololens-recovery.md#clean-reflash-the-device)。
-
-> [!NOTE]
-> **HoloLens (1st 游戏) ** Windows 10 大会在 [2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 年 4 月更新中作为 [Windows Holographic for Business 的一般用户开始](hololens-upgrade-enterprise.md)更新。
-
-## 删除用户
-
-您可以通过转到"设置帐户"或"其他人"**从**  >  **设备**  >  **中删除用户**。 此操作还通过从设备中删除该用户的所有应用数据来回收空间。  
-
-## 在应用中使用单一登录
-
-作为应用开发人员，你可以利用 Windows 帐户管理器 API 利用在 HoloLens 上链接的 [身](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core)份，就像在其他 Windows 设备上一样。 GitHub 上提供这些 API 的某些代码示例 [：Web 帐户管理示例](https://go.microsoft.com/fwlink/p/?LinkId=620621)。
-
-任何可能发生的帐户中断（例如请求用户同意帐户信息、双因素身份验证等）必须在应用请求身份验证令牌时进行处理。
-
-如果你的应用需要以前未链接的特定帐户类型，你的应用可以请求系统提示用户添加一个。 此请求会触发帐户设置窗格，以作为应用的模式子元素启动。 对于 2D 应用，该窗口将在应用中心直接呈现。 对于 Unity 应用，这请求将使用户从你的全息应用中一次后面呈现子窗口。 有关自定义此窗格上的命令和操作的信息，请参阅 [WebAccountCommand 类](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)。
-
-## 企业和其他身份验证
-
-如果你的应用使用其他类型的身份验证（例如 NTLM、Basic 或 Kerberos），你可以使用 [Windows 凭据 UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) 来收集、处理和存储用户凭据。 收集这些凭据的用户体验与其他云驱动的帐户中断非常相似，且在你的 2D 应用的顶部显示为子应用或暂停某个 Unity 应用来显示 UI。
-
-## 弃用的 API
-
-为 HoloLens 进行开发的一种方法是 [：不完全支持 OnlineIDAuthenticator](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) API。 尽管此 API 在主要帐户处于良好状态时返回令牌，但中断（如本文所述的那些 UI）不会显示任何用户的 UI 且未能正确对帐户进行身份验证。
-
-## 常见问题
-
-### HoloLens 上是否支持使用 Windows Hello for Business (一代) ？
-
-HoloLens (支持使用 PIN 登录) Windows Hello for Business 用户 (1st) 。 允许在 HoloLens 上登录 Windows Hello for Business PIN 登录：
-
-1. 必须由 [MDM 管理](hololens-enroll-mdm.md)HoloLens 设备。
-1. 你必须为设备启用 Windows Hello for Business。  ([请参阅 Microsoft Intune 的](https://docs.microsoft.com/intune/windows-hello) 说明) 
-1. 在 HoloLens 上，用户可以使用 **"**  >  **设置登录**选项  >  **添加 PIN"** 设置 PIN 来设置 PIN。
+Devices set up with AAD accounts will not allow signing in to the device with a Microsoft Account. All subsequent accounts used must be AAD accounts from the same tenant as the device. You may still [sign in using a Microsoft Account to apps](hololens-identity.md#setting-up-multi-user-support-aad-only) that support it (such as the Microsoft Store). To change from using AAD accounts to Microsoft Accounts for signing in to the device, you must [reflash the device](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> 使用 Microsoft 帐户登录的用户也可以在"设置登录选项添加**Settings**  >  **PIN"中设置**  >  **PIN。** 此 PIN 与[Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)关联，而不是[Windows Hello for Business。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)
+> **HoloLens (1st gen)** began supporting multiple AAD users in the [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) as part of [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-### 如何在 HoloLens 2 上实现 Iris 生物识别身份验证？
+## Removing users
 
-HoloLens 2 支持 Iris 身份验证。 Iris 基于 Windows Hello 技术，支持同时使用 Azure Active Directory 和 Microsoft 帐户。 Iris 的实现方式与其他 Windows Hello 技术的实现方式相同，并可实现生物识别安全性，1/100K。
+You can remove a user from the device by going to **Settings** > **Accounts** > **Other people**. This action also reclaims space by removing all of that user's app data from the device.  
 
-可以在此处了解有关 Windows Hello 的生物识别要求和 [规范的详细信息](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)。 了解有关 [Windows Hello 和](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) [Windows Hello for Business 的详细信息](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
+## Using single sign-on within an app
 
-### 帐户类型如何影响登录行为？
+As an app developer, you can take advantage of linked identities on HoloLens by using the [Windows Account Manager APIs](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), just as you would on other Windows devices. Some code samples for these APIs are available on GitHub: [Web account management sample](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
-如果应用登录策略，则会始终遵循该策略。 如果不应用登录策略，则以下是每个帐户类型的默认行为：
+Any account interrupts that might occur, such as requesting user consent for account information, two-factor authentication, and so forth, must be handled when the app requests an authentication token.
 
-- **Azure AD：** 默认请求身份验证，设置完成，无法再请求身份验证。 **Settings**
-- **Microsoft 帐户**：有关锁定操作不同，可以自动解锁，但重新启动时仍需要登录身份验证。
-- **本地帐户**：始终以密码形式要求身份验证，而不是在"设置"中 **进行配置**
+If your app requires a specific account type that hasn't been linked previously, your app can ask the system to prompt the user to add one. This request triggers the account settings pane to launch as a modal child of your app. For 2D apps, this window renders directly over the center of your app. For Unity apps, this request briefly takes the user out of your holographic app to render the child window. For information about customizing the commands and actions on this pane, see [WebAccountCommand Class](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand).
+
+## Enterprise and other authentication
+
+If your app uses other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) to collect, process, and store the user's credentials. The user experience for collecting these credentials is very similar to other cloud-driven account interrupts, and appears as a child app on top of your 2D app or briefly suspends a Unity app to show the UI.
+
+## Deprecated APIs
+
+One way in which developing for HoloLens differs from developing for Desktop is that the [OnlineIDAuthenticator](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) API is not fully supported. Although the API returns a token if the primary account is in good-standing, interrupts such as those described in this article do not display any UI for the user and fail to correctly authenticate the account.
+
+## Frequently asked questions
+
+### Is Windows Hello for Business supported on HoloLens (1st Gen)?
+
+Windows Hello for Business (which supports using a PIN to sign in) is supported for HoloLens (1st Gen). To allow Windows Hello for Business PIN sign-in on HoloLens:
+
+1. The HoloLens device must be [managed by MDM](hololens-enroll-mdm.md).
+1. You must enable Windows Hello for Business for the device. ([See instructions for Microsoft Intune.](https://docs.microsoft.com/intune/windows-hello))
+1. On HoloLens, the user can then use **Settings** > **Sign-in Options** > **Add PIN** to set up a PIN.
 
 > [!NOTE]
-> 当前不支持非活动计时器，这意味着 **AllowIdleReturnWithoutPassword** 策略仅在设备进入 StandBy 时应被检查。
+> Users who sign in by using a Microsoft account can also set up a PIN in **Settings** > **Sign-in Options** > **Add PIN**. This PIN is associated with [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), rather than [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
 
-## 其他资源
+### How is Iris biometric authentication implemented on HoloLens 2?
 
-阅读有关 Windows 10 安全和标识文档上的用户身份保护 [和身份验证的详细信息](https://docs.microsoft.com/windows/security/identity-protection/)。
+HoloLens 2 supports Iris authentication. Iris is based on Windows Hello technology and is supported for use by both Azure Active Directory and Microsoft Accounts. Iris is implemented the same way as other Windows Hello technologies, and achieves biometrics security FAR of 1/100K.
 
-了解有关设置混合身份基础结构的详细信息，尽管 [Azure 混合身份文档](https://docs.microsoft.com/azure/active-directory/hybrid/)。
+You can learn more about biometric requirements and specifications for Windows Hello [here](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements). Learn more about [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) and [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+
+### How does the type of account affect sign-in behavior?
+
+If you apply policies for sign-in, the policy is always respected. If no policy for sign-in is applied, these are the default behaviors for each account type:
+
+- **Azure AD**: asks for authentication by default, and configurable by **Settings** to no longer ask for authentication.
+- **Microsoft account**: lock behavior is different allowing automatic unlock, however sign in authentication is still required on reboot.
+- **Local account**: always asks for authentication in the form of a password, not configurable in **Settings**
+
+> [!NOTE]
+> Inactivity timers are currently not supported, which means that the **AllowIdleReturnWithoutPassword** policy is only respected when the device goes into StandBy.
+
+## Additional resources
+
+Read much more about user identity protection and authentication on [the Windows 10 security and identity documentation](https://docs.microsoft.com/windows/security/identity-protection/).
+
+Learn more about setting up hybrid identity infrastructure thorough the [Azure Hybrid identity documentation](https://docs.microsoft.com/azure/active-directory/hybrid/).
