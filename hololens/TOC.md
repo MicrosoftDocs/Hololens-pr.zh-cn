@@ -3,6 +3,7 @@
 # 概述
 
 ## HoloLens 2 入门
+### [HoloLens 2 概述](hololens2-options.md)
 ### [HoloLens 2 硬件](hololens2-hardware.md)
 ### [准备好使用你的 HoloLens 2](hololens2-setup.md)
 ### [设置 HoloLens 2](hololens2-start.md)
