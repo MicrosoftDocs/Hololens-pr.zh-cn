@@ -11,17 +11,19 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 7afce81a15745b6ece3707972e6f8b5d82ba17ff
-  ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+  ms.openlocfilehash: 23cac991786c5540d7dadfcaae7ba2fe1d84dc64
+  ms.sourcegitcommit: 58812149a9795b46799845e89f98d4cfd72ded42
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/25/2020
-  ms.locfileid: "11078370"
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "11105393"
 landingContent:
 - title: HoloLens 概述
   linkLists:
   - linkListType: overview
     links:
+    - text: HoloLens 2 概述
+      url: hololens2-options.md
     - text: HoloLens 2 硬件
       url: hololens2-hardware.md
     - text: HoloLens（第一代）硬件
@@ -80,12 +82,10 @@ landingContent:
       url: app-deploy-store-business.md
     - text: 预配程序包
       url: app-deploy-provisioning-package.md
-- title: 维护
+- title: 维护和疑难解答指南
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 管理 HoloLens 更新
-      url: hololens-updates.md
     - text: HoloLens 疑难解答
       url: hololens-troubleshooting.md
     - text: 重启、重置或恢复 HoloLens 2
@@ -96,6 +96,8 @@ landingContent:
       url: hololens-known-issues.md
     - text: 收集和使用来自 HoloLens 设备的诊断信息
       url: hololens-diagnostic-logs.md
+    - text: 管理 HoloLens 更新
+      url: hololens-updates.md
 - title: 发行说明和反馈
   linkLists:
   - linkListType: whats-new
@@ -118,10 +120,6 @@ landingContent:
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 混合现实
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: 云服务概述
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-- title: 更多资源
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: 什么是混合现实？
@@ -130,5 +128,15 @@ landingContent:
       url: https://docs.microsoft.com/windows/mixed-reality/design
     - text: 混合现实开发简介
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: 云服务概述
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: 支持
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: 购买 HoloLens
+      url: https://www.microsoft.com/hololens/buy
+    - text: 社区支持
+      url: https://holodevelopersslack.azurewebsites.net/
     - text: 联系支持人员
       url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
