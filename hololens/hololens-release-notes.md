@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997213"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117767"
 ---
 # HoloLens 2 发行说明
 
@@ -28,6 +28,18 @@ ms.locfileid: "10997213"
 
 >[!NOTE]
 > 若要阅读 HoloLens 模拟器发行说明，请 [访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
+
+## Windows 全息版 2004-2020 更新
+- 内部版本19041.1124
+ 
+更新中的改进和修复：
+
+- 已删除导致运行时系统错误的不必要检查。
+
+## Windows 全息版 1903-2020 更新
+- 内部版本18362.1081
+
+此每月质量更新不包含任何显著更改，我们鼓励你试用 Windows 全息版2004的最新版本。
 
 ## Windows 全息版 2004-2020 更新
 - 内部版本19041.1117
@@ -97,7 +109,7 @@ ms.locfileid: "10997213"
 - 改进了录制视频中的全息图稳定性。
 - 解决了在设备离开待机状态几天后混合现实捕获无法录制视频的问题。
 - 对于 Unity 应用程序，HolographicSpace 通常禁用 UserPresence API。 此行为可避免在面板翻转时导致某些应用暂停的问题，即使已启用 "在后台运行" 设置。 现已针对 Unity 版本2018.4.18 及更高版本和2019.3.4 及更高版本启用 API。
-- 通过 Wi-fi 连接访问 Device Portal 时，web 浏览器可能会阻止访问，因为证书无效。 浏览器可能会报告诸如 "ERR_SSL_PROTOCOL_ERROR" 之类的错误，即使设备证书以前已受信任。 在这种情况下，你无法对 Device Portal 进行进度，因为没有用于忽略安全警告的选项。 此更新解决了此问题。 如果以前在电脑上下载并信任设备证书以删除浏览器安全警告，并且发生 SSL 错误，则必须下载新证书并信任该证书才能解决浏览器安全警告。
+- 通过 Wi-Fi 连接访问 Device Portal 时，web 浏览器可能会阻止访问，因为证书无效。 浏览器可能会报告诸如 "ERR_SSL_PROTOCOL_ERROR" 之类的错误，即使设备证书以前已受信任。 在这种情况下，你无法对 Device Portal 进行进度，因为没有用于忽略安全警告的选项。 此更新解决了此问题。 如果以前在电脑上下载并信任设备证书以删除浏览器安全警告，并且发生 SSL 错误，则必须下载新证书并信任该证书才能解决浏览器安全警告。
 - 已启用创建可使用 MSIX 程序包安装应用的运行时预配包的功能。
 - 在**设置**系统全息图中添加了一项设置  >  **System**  >  **Holograms** ，使用户可以在设备关闭时自动删除混合现实主页中的所有全息影像。
 - 修复了导致 hololens 应用更改像素格式的问题，这些应用会在 HoloLens 模拟器中呈现黑色。
@@ -208,7 +220,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 ### 已展开的 USB 以太网支持 5G/LTE tethered 设备
 
-已添加支持以启用某些移动宽带设备，如 5G/LTE 电话和 Wi-fi hotpots，它们通过 USB tethered 到 HoloLens 2。 这些设备现在在 " **网络设置** " 中显示为另一个以太网连接。 不支持需要外部驱动程序 (移动宽带设备。 ) 此功能支持在 Wi-fi 不可用且 Wi-fi tethering 没有足够的性能的情况下启用高带宽连接。 若要了解有关受支持的 USB 设备的详细信息，请参阅 [连接到蓝牙和 USB-C 设备](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
+已添加支持以启用某些移动宽带设备，如 5G/LTE 电话和 Wi-Fi hotpots，它们通过 USB tethered 到 HoloLens 2。 这些设备现在在 " **网络设置** " 中显示为另一个以太网连接。 不支持需要外部驱动程序的 (移动宽带设备。 ) 此功能可在 Wi-Fi 不可用时启用高带宽连接，并且 Wi-Fi 的 tethering 没有足够的性能。 若要了解有关受支持的 USB 设备的详细信息，请参阅 [连接到蓝牙和 USB-C 设备](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
 
 ### 手动跟踪改进
 
@@ -228,7 +240,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 - “设置” 
 - Microsoft Store 
-- 邮件 
+- Mail 
 - 日历 
 - 文件资源管理器 
 - 反馈中心 
@@ -245,13 +257,13 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 ### Cortana 更新
 
-已更新的应用与 Microsoft 365 集成以帮助你在设备上进行更多操作， (目前仅限美国英语) 。 在 HoloLens 2 上，Cortana 不再支持特定于设备的命令，如调整音量或重启。 新的系统语音命令现在支持这些选项。 在我们的 [博客](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)中了解有关新的 Cortana 应用的详细信息。
+已更新的应用与 Microsoft 365 集成以帮助你在设备上进行更多的操作 (当前仅 US-English) 。 在 HoloLens 2 上，Cortana 不再支持特定于设备的命令，如调整音量或重启。 新的系统语音命令现在支持这些选项。 在我们的 [博客](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)中了解有关新的 Cortana 应用的详细信息。
 
 ### 质量改进和修复
 
 更新中也有改进和修复：  
 - 引入了活动的显示校准系统。 此功能可改善全息影像的稳定性和对齐方式。 当您的打印头并排移动时，它们将保留在原地。
-- 修复了用于 HoloLens 的 Wi-fi 流式处理定期中断的 bug。 如果应用程序指示它需要低延迟流，请通过调用 [SetSocketMediaStreamingMode 函数](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)来实现修复。
+- 修复了 Wi-Fi 到 HoloLens 的数据流定期中断的 bug。 如果应用程序指示它需要低延迟流，请通过调用 [SetSocketMediaStreamingMode 函数](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)来实现修复。
 - 修复了在研究模式下流式处理期间发生的设备挂起。
 - 修复了一个 bug，在某些情况下，在恢复会话时，在登录屏幕上无法显示正确的用户。
 - 修复了用户无法通过 **设置**导出 MDM 日志的问题。
@@ -284,7 +296,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 这些 "机箱中" 应用支持深色模式：
 - “设置”
 - Microsoft Store
-- 邮件
+- Mail
 - 日历
 - 文件资源管理器
 - 反馈中心
