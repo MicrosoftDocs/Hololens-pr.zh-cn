@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
-ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
+ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
+ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11119942"
+ms.locfileid: "11120143"
 ---
 # 收集和使用来自 HoloLens 设备的诊断信息
 
@@ -124,8 +124,8 @@ IT 管理员使用 DiagnosticLog CSP 配置数据存储、保留和访问策略�
 
 > [!NOTE]
 > 仅当用户通过 OOBE 或 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 策略值设置为 "完全" 时，才会启用脱机诊断。在 Hololens) 上，"基本" 默认值为 " (基本"。 
->
-> 若要禁用脱机诊断，请转到 "**设置" 应用 > 隐私**"页面，然后选择" 在**诊断数据**中**基本**"。
+
+如果设备处于锁定状态，则不会显示日志。 若要禁用脱机诊断，请转到 "**设置" 应用 > 隐私**"页面，然后选择" 在**诊断数据**中**基本**"。 在 "离线诊断" 依赖 "遥测" 设置的版本中，它只会影响是否收集任何日志。 它不会影响收集的文件。
 
 观看此视频以了解详细信息。 
 
