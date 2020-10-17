@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 10/15/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
-ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
+ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
+ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088606"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119295"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -37,7 +37,7 @@ ms.locfileid: "11088606"
 | [证书管理器](hololens-insider.md#certificate-manager)                                     | 用户可以在 "设置" 应用中查看、安装和删除当前用户和本地计算机证书的证书。                                         | 19041.1361 +                 |
 | [来自 USB 的自动启动预配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 会自动检测 USB 驱动器上的预配程序包。                                | 19041.1361 +                 |
 | [在 OOBE 中自动确认预配程序包](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自动应用预配程序包。                                             | 19041.1361 +                 |
-| [将 Autopilot 与 Wlan 连接配合使用](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 从设备 Wi-fi 中使用 autopilot，而无需使用以太网适配器。                             | 19041.1364 +                 |
+| [将 Autopilot 与 Wi-Fi 连接结合使用](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 从设备 Wi-Fi 使用 autopilot，而无需使用以太网适配器。                             | 19041.1364 +                 |
 |[Tenantlockdown CSP 和 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 应用租户注册和应用策略后，设备在重置或重新刷新设备时，即可随时在该租户中注册。 | 19041.1366 +|
 | [全局分配的访问权限](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 配置适用于系统级别的多个应用展台模式的 HoloLens 2 设备。 | 19041.1356 +                 |
 | [在多应用展台中自动启动应用](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 将应用程序设置为在登录到多应用展台模式时自动启动。     | 19041.1346 +                 |
@@ -49,6 +49,7 @@ ms.locfileid: "11088606"
 | [更新策略](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 允许控制更新的新启用的策略。                                            | 19041.1352 +                 |
 | [已启用 HoloLens 2 的设置页面可见性](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 用于选择在 "设置" 应用中显示哪些页面的策略。                                           | 19041.1349 +                 |
 |  [研究模式](hololens-insider.md#research-mode) | 在 HoloLens 2 上使用研究模式 | 19041.1375 + |
+| [录制长度增加](hololens-insider.md#recording-length-increased) | MRC 录制不再超过5分钟。 | 19041.1387 + |
 | [更新中的改进和修复](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 更新中的其他修复程序。                                                                | 19041.1361 +                 |
 
 
@@ -131,7 +132,7 @@ ms.locfileid: "11088606"
 
 你的设备现已配置，并将显示预配成功屏幕。
 
-### 将 Autopilot 与 Wlan 连接配合使用
+### 将 Autopilot 与 Wi-Fi 连接结合使用
 现在，在 OOBE 期间，一旦通过 Wifi 连接了 HoloLens 2，OOBE 将检查设备的 autopilot 配置文件。 如果找到一个，它将用于完成 AAD 联接和注册流的其余部分。 换句话说，不再需要使用以太网到 USB C 或 wifi 到 USB C 适配器，但如果在 OOBE 的开始，它们仍可继续正常工作。 了解有关 [HoloLens 2 设备的 Autopilot 的](hololens2-autopilot.md)详细信息。
 
 ### Tenantlockdown CSP 和 Autopilot
@@ -283,6 +284,15 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 研究人员现在可以选择在其 HoloLens 设备上启用研究模式，以访问所有外部面向的裸图像传感器流。 HoloLens 2 的研究模式还提供对加速计、gyroscope 和磁力计读数的访问。 为了保护用户的隐私，无法通过 "信息检索" 模式获取原始目视跟踪相机图像，但目视方向可通过现有 Api 使用。
 
 有关技术详细信息，请查看 [信息检索模式文档](https://docs.microsoft.com/windows/mixed-reality/research-mode) 。
+
+### 录制长度增加
+由于客户反馈，我们增加了 [混合现实捕获](holographic-photos-and-videos.md)的录制长度。 默认情况下，混合现实捕获将不再限制为5分钟，而是将根据可用磁盘空间计算最大录制长度。 设备将根据可用磁盘空间达到总磁盘空间的80%，估计最大视频录制持续时间。
+
+> [!NOTE]
+> 如果出现以下情况之一，则 HoloLens 将使用默认视频录制长度 (5 分钟) ：
+> - 估计的最大录制持续时间小于默认的5分钟。
+> - 可用磁盘空间小于总磁盘空间的20%。
+
 
 ### 更新中的改进和修复：
 - 已更新策略以禁用通过 MDM for AllowUsbConnection 对 USB 函数进行枚举的 NCM。
