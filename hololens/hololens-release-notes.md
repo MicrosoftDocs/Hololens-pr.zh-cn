@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117767"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134421"
 ---
 # HoloLens 2 发行说明
 
@@ -155,7 +155,7 @@ ms.locfileid: "11117767"
 
 ### Windows Autopilot 支持
 
-用于 HoloLens 2 的 Windows Autopilot 允许设备销售渠道预注册 HoloLens 到你的 Intune 租户。 当设备到达时，它们准备就绪，可以作为你的租户下的共享设备进行自我部署。 若要利用自我部署，设备必须在安装过程的第一个屏幕中使用 USB-C-以太网或 USB--LTE 转换器连接到网络。
+用于 HoloLens 2 的 Windows Autopilot 允许设备销售渠道预注册 HoloLens 到你的 Intune 租户。 当设备到达时，它们准备就绪，可以作为你的租户下的共享设备进行自我部署。 若要充分利用自部署，设备必须在安装程序的第一个屏幕中使用 USB-以太网连接到网络。
 
 用户启动 Autopilot 自部署过程后，该过程将完成以下步骤：
 
