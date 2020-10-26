@@ -2,7 +2,7 @@
 title: HoloLens 2 硬件
 description: 概要介绍构成 Microsoft HoloLens 2（Microsoft 推出的运行 Windows 10 的完全不受束缚的全息计算机的最新演进版）的组件。
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 9/17/2019
+ms.date: 10/20/2020
 keywords: Hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072769"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134642"
 ---
 # HoloLens 2 硬件
 
@@ -170,6 +170,25 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 注意：
 - 设备：出售黑色零售风格的盒子 HoloLens 2。
 - 外部托运：设备周围的保护性运输包装。
+
+## 查找序列号
+
+HoloLens 2 设备的序列号打印在面罩下方。
+1. 提起设备的面罩。
+1. 观察额头垫附近。
+1. 可以在铰链附近找到序列号。 
+
+
+<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+
+也可以通过已连接的电脑找到序列号：
+
+1. 插上设备
+1. 导航到文件资源管理器中的“**此电脑**”
+1. 右键单击并选择 HoloLens 设备的“**属性**”
+1. 这将显示设备的系列号。 就如下面的屏幕截图所示。
+
+<img src="images/ResetRecovery2.png" width="400" height="600" />
 
 ## 下一步
 
