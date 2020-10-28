@@ -15,21 +15,23 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: f610de413c9990bd3f8bc4df63fa8c7ed821e32b
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: ab67962efdafe3f39097210d60589dc6db715837
+ms.sourcegitcommit: c870802ea75a9dd602319c59fedb124f80c19b71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077669"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11136167"
 ---
 # HoloLens 1 (gen) 发行说明
 
 ## HoloLens (第一代) 长期服务
 HoloLens (第一代) 已进入长期服务 (LTS) 状态。 将来的更新将重点介绍问题和安全修补程序，同时通过 Windows 10 全息版1809版本（即版本)  (发行版）维护功能奇偶校验。
 
+对于开发人员，这意味着 HoloLens (第一代) 应用将不支持 OpenXR API。  在 Unity 2019 LTS 中，这些耳机保持受支持，使用 WinRT API 后端通过 2022 mid 2019 LTS 的完整生命周期。
+
 ### Windows 10 全息版1809
 
-> **适用于：** Hololens (第一代) 
+> **适用于：** HoloLens (第一代) 
 
 | 功能 | 详细信息 |
 |---|---|
@@ -63,7 +65,7 @@ HoloLens (第一代) 已进入长期服务 (LTS) 状态。 将来的更新将重
 
 ### 适用于 Microsoft HoloLens 的 Windows 10 版本1803
 
-> **适用于：** Hololens (第一代) 
+> **适用于：** HoloLens (第一代) 
 
 Windows 10 版本1803是自 windows 全息版的 windows 10 版本1607版以来对 Windows 全息版的第一项功能更新。 此更新引入以下更改：
 
@@ -80,7 +82,7 @@ Windows 10 版本1803是自 windows 全息版的 windows 10 版本1607版以来�
 
 - 以前，使用 Azure Active Directory (Azure AD) 帐户登录到设备之后，你必须在 "**设置**" 中**添加工作访问权限**，才能访问企业资源。 现在，你使用 Azure AD 帐户登录，并且注册会自动发生。
 
-- 登录前，您可以选择密码字段下方的 "网络" 图标，选择要连接的其他 Wlan 网络。 您也可以连接到来宾网络，如宾馆、会议中心或企业。
+- 登录前，您可以选择密码字段下方的 "网络" 图标，选择要连接的其他 Wi-Fi 网络。 您也可以连接到来宾网络，如宾馆、会议中心或企业。
 
 - 现在，你可以使用 Azure AD 帐户轻松 [与多个用户共享 HoloLens](hololens-multiple-users.md) 。
 

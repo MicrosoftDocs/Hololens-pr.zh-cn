@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
-ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
+ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119295"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135553"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -35,6 +35,7 @@ ms.locfileid: "11119295"
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [自动目视位置支持](hololens-insider.md#auto-eye-position-support)                              | 主动计算眼睛位置并支持准确的全息图定位。                        | 19041.1339 +                 |
 | [证书管理器](hololens-insider.md#certificate-manager)                                     | 用户可以在 "设置" 应用中查看、安装和删除当前用户和本地计算机证书的证书。                                         | 19041.1361 +                 |
+| [应用安装程序](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | 从 appx 文件安装应用的设备 UI。 | 19041.1377 + |
 | [来自 USB 的自动启动预配](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE 会自动检测 USB 驱动器上的预配程序包。                                | 19041.1361 +                 |
 | [在 OOBE 中自动确认预配程序包](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | 在 OOBE 中自动应用预配程序包。                                             | 19041.1361 +                 |
 | [将 Autopilot 与 Wi-Fi 连接结合使用](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 从设备 Wi-Fi 使用 autopilot，而无需使用以太网适配器。                             | 19041.1364 +                 |
@@ -104,6 +105,26 @@ ms.locfileid: "11119295"
 !["设置" 应用中的证书查看器](images/certificate-viewer-device.jpg)
 
 ![显示如何使用证书 UI 安装证书的图片](images/certificate-device-install.jpg)
+
+### 通过应用安装程序在 HoloLens 2 上安装应用
+在我们的 Windows 预览体验计划版本中，我们将 **添加 (应用安装程序) 的新功能，让你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。  现在，你可以安装应用，而无需启用开发人员模式或使用 Device Portal。  只需通过 USB 或边缘) 将 (下载到你的设备，然后在文件资源管理器中导航到 Appx 捆绑系统，系统会提示你启动安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与使用 MDM 的 LOB 应用部署功能从 Microsoft Store 或旁加载安装的应用一样，应用需要使用 [签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 进行数字签名，并且 [用于签名的证书必须受](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) HoloLens 设备信任才能部署应用。 注意：通过使用 [Windows Defender 应用程序控件（WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)、阻止 Microsoft.DesktopAppInstaller_8wekyb3d8bbwe）禁用应用安装程序，你可以完全控制禁用应用安装的此新路径
+
+**应用程序安装说明。**
+
+1.  确保 HoloLens 2 设备已开机且已连接到你的电脑
+2.  确保已登录到 HoloLens 2 设备
+3.  在你的电脑上导航到你的自定义应用，并将 yourapp 复制到 yourdevicename\Internal Storage\Downloads。   完成文件复制后，您可以断开设备连接
+4.  从 HoloLens 2 设备打开 "开始" 菜单，选择 "所有应用"，然后启动 "文件资源管理器" 应用。
+5.  导航到 "下载" 文件夹。 你可能需要在应用的左侧面板上，选择 "此设备"，然后导航到 "下载"。
+6.  选择 yourapp 文件。
+7.  应用安装程序将启动。 选择 "安装" 按钮以安装你的应用。
+已安装的应用将在安装完成后自动启动。
+
+你可以在 [Windows 通用示例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 上找到示例应用来测试此流程。
+
+有关 [在 HoloLens 2 上安装应用](app-deploy-app-installer.md)的完整过程，请参阅应用安装程序。  
+
+![通过应用安装程序安装 MRTK 示例](images/hololens-app-installer-picture.jpg)
 
 ### 来自 USB 的自动启动预配
 在此内部版本之前，用户必须在 OOBE 期间手动启动预配屏幕，以使用按钮组合。 现在，用户可以通过使用 USB 存储驱动器上的预配包跳过按钮组合。 
