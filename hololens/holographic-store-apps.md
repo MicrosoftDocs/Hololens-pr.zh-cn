@@ -3,7 +3,7 @@ title: 查找、安装和卸载应用程序
 description: Microsoft Store 是 HoloLens 应用和游戏的来源。  了解有关查找、安装和卸载全息应用的详细信息。
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: hololens, Microsoft Store, uwp, 应用, 安装
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985830"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145633"
 ---
 # 查找、安装和卸载 Microsoft Store 中的应用程序
 
@@ -35,6 +35,15 @@ HoloLens 支持 Microsoft Store 中的许多现有应用程序，以及专为 Ho
 ## 查找应用
 
 从“开始”**** 菜单中打开 Microsoft Store。 然后浏览应用和游戏。 可以通过说出“搜索”来使用[语音命令](hololens-cortana.md)，在搜索窗口打开时请说“开始听写”，然后在收到提示后说你要查找的条款。
+
+> [!NOTE]
+> 2021 年 1 月 12 日，以下应用将在 HoloLens 设备上终止支持。 我们建议你在设备上使用以下链接来使用该应用的 Web 版本。
+
+| 应用        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## 安装应用
 
