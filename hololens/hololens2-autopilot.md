@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 6851249ab9ed79e7dcdea6afc853fee66fdddf19
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102341"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145653"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
@@ -62,12 +62,12 @@ ms.locfileid: "11102341"
 **查看 Windows Autopilo 自部署模式文章的“[要求](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)”部分。** 环境必须满足这些要求以及 Windows Autopilot 标准要求。 无需查看本文的“分步操作”和“验证”部分。 本文后面的过程提供了特定于 HoloLens 的相应步骤。 有关如何注册设备和配置配置文件的信息，请参见本文中的[ 4. 在 Windows Autopilot 中注册设备](#4-register-devices-in-windows-autopilot)和[6. 创建部署配置文件](#6-create-a-deployment-profile)。 这些部分提供了适用于 HoloLens 的特殊步骤。
 
 > [!IMPORTANT]  
-> 与其他 Windows Autopilot 计划不同，适用于 HoloLens 2 的 Windows Autopilot 需要特定的操作系统要求。 Autopilot 依赖于 HoloLens 设备上预安装的 Windows 全息版 版本 2004（内部版本 19041.1103 或更高版本）。 在 2020 年 8 月底之前交付的设备已预装了 Windows 全息版 版本 1903。 请联系分销商，了解向你派发可使用 Autopilot 的设备的时间。 如果想加入私人预览版，请查看下面的说明和要求。
+> 适用于 HoloLens 2 的 Windows Autopilot 有特定的操作系统要求。 Autopilot 依赖于 HoloLens 设备上预安装的 Windows 全息版的版本 2004（内部版本 19041.1103 或更高版本）。 在 2020 年 9 月底之前交付的设备已预装了 Windows 全息版（版本 1903）。 请联系分销商，了解向你派发可使用 Autopilot 的设备的时间。 如果想加入私人预览版，请查看下面的说明和要求。
 
 **如果你想尝试 Autopilot 预览版，请在启动 OOBE 和预配过程之前，确保 HoloLens 设备符合以下要求：**
 
-- 必须使用[Advanced Recovery Companion (ARC) ](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)手动安装最新操作系统（Windows 全息版 版本 2004（内部版本 19041.1103 或更高版本）。 可在[此处](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)找到说明。 
-- 设备必须在 Windows Autopilot 中注册。 有关如何注册设备的更多信息，请参阅 [4. 在 Windows Autopilot 中注册设备](#4-register-devices-in-windows-autopilot)。 
+- 确保设备安装了 Windows 全息版的版本 2004（内部版本 19041.1103 或更高版本）。 如果未预安装最新操作系统，则必须使用“[高级恢复配套（ARC）](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)”手动更新。 可在[此处](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)找到说明。 
+- 设备必须在 Windows Autopilot 中注册。 有关如何注册设备的更多信息，请参阅 [4. 在 Windows Autopilot 中注册设备](#4-register-devices-in-windows-autopilot)。 推荐的方法是让经销商或分销商为你注册设备。     
 - 在当前版本中，在打开 HoloLens 和启动 Autopilot 预配过程之前，需要将设备连接到 Internet。 使用“适用于以太网的 USB-C”适配器将设备连接到以太网，以便连接到有线 Internet。 
 - 设备尚不是 Azure AD 的成员，并且未在 Intune （或其他 MDM 系统）中注册。 Autopilot 自部署过程完成这些步骤。 若要确保清理所有设备相关信息，请检查 Azure AD 和 Intune 门户中的“**设备**”页面。
 - 若要配置和管理 Autopilot 自部署模式配置文件，请确保你有权访问[Microsoft 终结点管理器管理中心](https://endpoint.microsoft.com)。
@@ -75,9 +75,11 @@ ms.locfileid: "11102341"
 
 ### 2. 注册“适用于 HoloLens 2 的 Windows Autopilot”计划
 
-**若要加入计划，必须将租户注册到个人预览版计划来获取适用于 Autopilot 的 HoloLens 特定 Intune UI 控件。** 若要执行此操作，请转到 [适用于 HoloLens 专用预览版的 Windows Autopilot](https://aka.ms/APHoloLensTAP) 或使用以下 QR 码提交请求。  
+**若要参与该计划，必须将租户注册到“专用预览版计划”。 这将为 Autopilot 启用 HoloLens 特定 Intune （也称为 MEM） UI 控件。** 若要执行此操作，请转到 [适用于 HoloLens 专用预览版的 Windows Autopilot](https://aka.ms/APHoloLensTAP) 或使用以下 QR 码提交请求。  
 
 ![Autopilot QR 码](./images/hololens-ap-qrcode.png)  
+
+Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封电子邮件通知。 
 
 在此请求中，提供以下信息：
 
