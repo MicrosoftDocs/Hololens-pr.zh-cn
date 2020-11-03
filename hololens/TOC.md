@@ -12,6 +12,8 @@
 ### [HoloLens 2 清洁常见问题解答](hololens2-maintenance.md)
 ### [HoloLens 2 的受支持语言](hololens2-language-support.md)
 ### [开始使用 HoloLens 2](hololens2-basic-usage.md)
+### [HoloLens 开发版常见问题解答](hololens2-development-edition-faq.md)
+
 
 ## HoloLens（第一代）入门
 ### [HoloLens（第一代）硬件](hololens1-hardware.md)
@@ -108,6 +110,7 @@
 ## [Microsoft HoloLens 内部预览版](hololens-insider.md)
 ### [全局分配的访问权限](hololens-global-assigned-access-kiosk.md)
 ### [HoloLens 的页面设置 URI](settings-uri-list.md)
+### [应用安装程序](app-deploy-app-installer.md)
 
 ## [HoloLens（第 1 代）发行说明](hololens1-release-notes.md)
 # [向我们提供反馈](hololens-feedback.md)
