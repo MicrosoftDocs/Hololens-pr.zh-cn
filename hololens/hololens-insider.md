@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: d054628ec53fdc00560d628299058ce4c8d56185
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135553"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150953"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -107,17 +107,25 @@ ms.locfileid: "11135553"
 ![显示如何使用证书 UI 安装证书的图片](images/certificate-device-install.jpg)
 
 ### 通过应用安装程序在 HoloLens 2 上安装应用
-在我们的 Windows 预览体验计划版本中，我们将 **添加 (应用安装程序) 的新功能，让你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。  现在，你可以安装应用，而无需启用开发人员模式或使用 Device Portal。  只需通过 USB 或边缘) 将 (下载到你的设备，然后在文件资源管理器中导航到 Appx 捆绑系统，系统会提示你启动安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与使用 MDM 的 LOB 应用部署功能从 Microsoft Store 或旁加载安装的应用一样，应用需要使用 [签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 进行数字签名，并且 [用于签名的证书必须受](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) HoloLens 设备信任才能部署应用。 注意：通过使用 [Windows Defender 应用程序控件（WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)、阻止 Microsoft.DesktopAppInstaller_8wekyb3d8bbwe）禁用应用安装程序，你可以完全控制禁用应用安装的此新路径
+我们将在下一功能更新后立即发布应用安装程序功能。 我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+
+如果以下 **任何** 条件成立，设备将被视为 "托管"：
+- MDM 已 [注册](hololens-enroll-mdm.md)
+- 配置了 [预配包](hololens-provisioning.md)
+- 用户 [标识](hololens-identity.md) 为 AAD
+
+现在，你可以安装应用，而无需启用开发人员模式或使用 Device Portal。  只需通过 USB 或边缘) 将 (下载到你的设备，然后在文件资源管理器中导航到 Appx 捆绑系统，系统会提示你启动安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与使用 MDM 的 LOB 应用部署功能从 Microsoft Store 或旁加载安装的应用一样，应用需要使用 [签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 进行数字签名，并且 [用于签名的证书必须受](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) HoloLens 设备信任才能部署应用。
 
 **应用程序安装说明。**
 
+1.  确保你的设备不被视为托管设备
 1.  确保 HoloLens 2 设备已开机且已连接到你的电脑
-2.  确保已登录到 HoloLens 2 设备
-3.  在你的电脑上导航到你的自定义应用，并将 yourapp 复制到 yourdevicename\Internal Storage\Downloads。   完成文件复制后，您可以断开设备连接
-4.  从 HoloLens 2 设备打开 "开始" 菜单，选择 "所有应用"，然后启动 "文件资源管理器" 应用。
-5.  导航到 "下载" 文件夹。 你可能需要在应用的左侧面板上，选择 "此设备"，然后导航到 "下载"。
-6.  选择 yourapp 文件。
-7.  应用安装程序将启动。 选择 "安装" 按钮以安装你的应用。
+1.  确保已登录到 HoloLens 2 设备
+1.  在你的电脑上导航到你的自定义应用，并将 yourapp 复制到 yourdevicename\Internal Storage\Downloads。   完成文件复制后，您可以断开设备连接
+1.  从 HoloLens 2 设备打开 "开始" 菜单，选择 "所有应用"，然后启动 "文件资源管理器" 应用。
+1.  导航到 "下载" 文件夹。 你可能需要在应用的左侧面板上，选择 "此设备"，然后导航到 "下载"。
+1.  选择 yourapp 文件。
+1.  应用安装程序将启动。 选择 "安装" 按钮以安装你的应用。
 已安装的应用将在安装完成后自动启动。
 
 你可以在 [Windows 通用示例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 上找到示例应用来测试此流程。
