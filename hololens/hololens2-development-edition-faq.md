@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327e2411f497ff01723b42e9c2d00d26f8c89c7a
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 7d9568e6498c9b73fdee7110248a51253540a7eb
+ms.sourcegitcommit: ef25b0470ad789fbf41591be64d737ff7ea43d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146167"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11151114"
 ---
-# HoloLens 开发版常见问题
+# HoloLens 开发版常见问题解答
 
 ## 常规
 
@@ -40,6 +40,10 @@ HoloLens 2 开发版包括在 Azure 信用中使用 HoloLens 2、$500、3个月�
 ### 我如何在 Azure 信用、3个月的统一 Pro 试用和3个月的 Pixyz 插件试用中收到我的 $500？
 
 您的折扣信用点数或试用版访问将发送到在产品发运的2个工作日内购买的电子邮件。
+
+### 我是否可以 "将我的 HoloLens 2 (设备" 仅) 设备升级到 HoloLens 2 开发版本才能获取试用信用点数？
+
+否，我们不提供设备传输计划。 不能从任何版本转移到任何其他版本。 
 
 ### 什么是 Unity Pro？ 
 
@@ -61,13 +65,17 @@ HoloLens 2 开发版的融资将于2021年初推出。
 
 此设备适用于构建混合现实解决方案的开发人员。 我们限制每个客户交易的一个采购。 如果您的公司想要购买多个开发版设备，将需要单独的交易来代表公司购买 HoloLens 2 开发版设备。 
 
+### 是否可以向客户显示 HoloLens 2 开发版设备？ 
+
+是的，此设备旨在用于原型设计和测试混合现实解决方案。
+
 ### 在哪里可以购买 HoloLens 2 开发版？ 
 
 HoloLens 2 开发版仅在 Microsoft Store 上销售。  
 
 ### 我是否可以退还我的 HoloLens 2 开发版本？  
 
-否。
+所有销售均为最终版本，并且 HoloLens 2 开发版没有退款可用。
 
 ### 开发人员版本是否与 HoloLens 2 有不同的硬件要求？
 
