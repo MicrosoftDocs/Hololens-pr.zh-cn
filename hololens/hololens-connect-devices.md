@@ -13,14 +13,17 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
+ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881335"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11155388"
 ---
 # 连接到蓝牙和 USB-C 设备
+
+> [!NOTE]
+> 无法使用外置麦克风。 HoloLens 2 使用内置 [麦克风阵列](hololens2-hardware.md#audio-and-speech)。
 
 ## 配对蓝牙设备
 
@@ -29,9 +32,6 @@ HoloLens 2 支持以下类别的蓝牙设备：
 - 鼠标
 - 键盘
 - 蓝牙音频输出 (A2DP) 设备
-
-> [!NOTE]
-> 无法使用外置麦克风。 HoloLens 2 使用内置 [麦克风阵列](hololens2-hardware.md#audio-and-speech)。
 
 HoloLens（第 1 代）支持以下类别的蓝牙设备：
 

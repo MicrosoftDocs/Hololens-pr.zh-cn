@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/27/2020
+ms.date: 10/27/2020
 ms.custom:
 - CI 115262
 - CI 111456
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080441"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154183"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -41,6 +41,13 @@ ms.locfileid: "11080441"
 > 删除多应用配置将删除分配的访问功能所创建的用户锁定配置文件。 但是，它不会还原所有策略更改。 若要还原这些策略，必须将设备重置为出厂设置。
 
 ## 规划展台部署
+
+规划展台后，您需要能够回答以下问题。 下面是阅读本页面时需要考虑的一些决策以及这些问题的一些注意事项。
+1. **谁将使用你的展台，以及他们 [ (s 的帐户) ](hololens-identity.md) 将使用哪种类型？** 这是你可能已做出的决定，不应针对你的展台进行调整，但会影响稍后分配展台的方式。
+1. **您是否需要为每个用户/组提供不同的网亭，或者没有为某些展台启用该功能区？** 如果是这样，你将希望通过 XML 创建你的展台。 
+1. **您的展台中将有多少个应用？** 如果你有多个应用，你将需要多应用展台。 
+1. **您的展台) 的应用 (s？** 除了你自己的 Aumid，请使用下面的列表添加任何 In-Box 应用。
+1. **如何计划部署展台？** 如果你在 MDM 中注册设备，我们建议使用 MDM 部署你的展台。 如果未使用 MDM，则可以使用预配包进行部署。  
 
 ### 展台模式要求
 
@@ -62,7 +69,7 @@ ms.locfileid: "11080441"
 | &nbsp; |“开始”菜单 |"快速操作" 菜单 |摄像头和视频 |Miracast |Cortana |内置语音命令 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |单应用展台 |已禁用 |已禁用   |已禁用 |已禁用   |已禁用 |已启用 <sup> 1</sup> |
-|多应用展台 |启用 |已启用 <sup> 2</sup> |可用 <sup> 2</sup> |可用 <sup> 2</sup> |可用 <sup> 2，3</sup>  |已启用 <sup> 1</sup> |
+|多应用展台。 |启用 |已启用 <sup> 2</sup> |可用 <sup> 2</sup> |可用 <sup> 2</sup> |可用 <sup> 2，3</sup>  |已启用 <sup> 1</sup> |
 
 > <sup>1与 </sup> 禁用的功能相关的语音命令不起作用。  
 > <sup>2有关 </sup> 如何配置这些功能的详细信息，请参阅 [选择展台应用](#plan-kiosk-apps)。  
@@ -73,7 +80,7 @@ ms.locfileid: "11080441"
 | &nbsp; |支持的用户类型 | 自动登录 | 多个访问级别 |
 | --- | --- | --- | --- |
 |单应用展台 |托管服务帐户在 Azure Active Directory (AAD) 或本地帐户中 (MSA)  |是 |否 |
-|多应用展台 |AAD 帐户 |否 |是 |
+|多应用展台。 |AAD 帐户 |否 |是 |
 
 有关如何使用这些功能的示例，请参阅下表。
 
@@ -109,7 +116,7 @@ ms.locfileid: "11080441"
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist \ _8wekyb3d8bbwe \！RemoteAssist |
 |反馈 &nbsp; 中心 |WindowsFeedbackHub \ _8wekyb3d8bbwe \！应用 |
 |文件资源管理器 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |windowscommunicationsapps_8wekyb3d8bbwe！ windowslive！ |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe！ windowslive |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |电影和电视 |ZuneVideo \ _8wekyb3d8bbwe \！ZuneVideo |
@@ -126,71 +133,24 @@ ms.locfileid: "11080441"
 > <sup>3 </sup> 即使不将 Cortana 启用为展台应用，也会启用内置语音命令。 但是，与禁用的功能相关的命令不起作用。  
 > <sup>4 </sup> 不能直接启用 Miracast。 若要将 Miracast 启用为展台应用，请启用相机应用和设备选取器应用。
 
-### 规划用户和设备组
+### 为用户或组规划展台配置文件
 
-在 MDM 环境中，使用组管理设备配置和用户访问。 
+当创建 xml 文件或使用 Intune 的 UI 设置展台时，你需要考虑谁将是用户的展台。 展台配置可以限制为单个帐户或 Azure AD 组。 
 
-展台配置文件包括 " **用户登录类型** " 设置。 **用户登录类型** 标识用户 (或组，其中包含可以使用你添加的应用或应用的用户) 。 如果用户使用未包含在配置文件中的帐户登录，则该用户无法使用展台上的应用。  
+通常为用户或用户组启用展台。 但是，如果你计划编写自己的 XML 展台，你可能需要考虑全局分配的访问权限，在该访问中，将在设备级别应用展台（不考虑身份）。 如果你了解 [有关全局分配的 Access 网亭的详细信息，请参阅。](hololens-global-assigned-access-kiosk.md)
 
-> [!NOTE]  
-> 单应用展台的 **用户登录类型** 指定单个用户帐户。 这是在其下运行展台的用户上下文。 多应用展台的 **用户登录类型** 可以指定可以使用展台的一个或多个用户帐户或组。
+#### 如果要创建 XML 文件，请执行以下操作：
+-   你可以创建多个展台配置文件，并将每个配置文件分配给不同的用户/组。 例如，具有许多应用的 AAD 组的展台，以及具有多个应用展台且具有单一应用的访问者。
+-   您的展台配置将被称为 **配置文件 Id** ，并且具有 GUID。
+-   你将通过指定用户类型并对 **DefaultProfile Id**使用相同的 GUID，将该配置文件分配到 "配置" 部分。
+- 通过创建自定义 OMA URI 设备配置文件并将其应用到 HoloLens 设备组（使用 URI 值），可以创建 XML 文件，但仍通过 MDM 将其应用于设备。/Device/Vendor/MSFT/AssignedAccess/Configuration
 
-在将 kiosk 配置部署到设备之前，必须将 kiosk 配置配置文件 *分配* 给包含设备的组或可登录设备的用户。 此设置将产生如下所示的行为。
-
-- 如果设备是分配组的成员，则在任何用户首次登录设备时，展台配置将部署到设备。  
-- 如果设备不是分配组的成员，但属于该组成员的用户登录，则 kiosk 配置将在此时部署到设备。
-
-有关在 Intune 中分配配置文件的效果的完整讨论，请参阅 [在 Microsoft Intune 中分配用户和设备配置文件](https://docs.microsoft.com/intune/configuration/device-profile-assign)。
-
-> [!NOTE]  
-> 以下示例介绍了多应用网亭。 单应用网亭以类似的方式运行，但只有一个用户帐户才获得展台体验。
-
-**示例 1**
-
-为设备和用户使用单个组 (组 1) 。 一个设备和用户 A、B 和 C 是该组的成员。 配置展台配置文件的方式如下所示：  
-
-- **用户登录类型**：组1
-- **已分配的组**：组1
-
-无论哪个用户首先登录到设备 (并通过 "全新体验" 或 "OOBE) "，"展台配置" 都将部署到设备。 用户 A、B 和 C 均可登录到设备并获取 kiosk 体验。
-
-**示例 2**
-
-您向需要不同展台体验的两个不同供应商推出了设备。 两个供应商都有用户，您希望所有用户都可以从其自己的供应商和其他供应商处访问展台。 按如下方式配置组：
-
-- 设备组1：
-  - 设备 1 (供应商 1) 
-  - 设备 2 (供应商 1) 
-
-- 设备组2：
-  - 设备 3 (供应商 2) 
-  - 设备 4 (供应商 2) 
-
-- 用户组：
-  - 用户 A (供应商 1) 
-  - 用户 B (供应商 2) 
-
-创建两个具有以下设置的展台配置文件：
-
-- 展台档案1：
-   - **用户登录类型**：用户组
-   - **已分配的组**：设备组1
-
-- 展台档案2：
-   - **用户登录类型**：用户组
-   - **已分配的组**：设备组2
-
-这些配置将产生以下结果：
-
-- 当任何用户登录到设备1或设备2时，Intune 将展台配置文件1部署到该设备。
-- 当任何用户登录到设备3或设备4时，Intune 将展台配置文件2部署到该设备。
-- 用户 A 和用户 B 可以登录到四个设备中的任何一个。 如果他们登录到设备1或设备2，他们将看到供应商1的展台体验。 如果他们登录到设备3或设备4，他们将看到供应商2的展台体验。
-
-#### 配置文件冲突
-
-如果两个或更多展台配置文件的目标设备相同，则会发生冲突。 在 Intune 托管设备的情况下，Intune 不会应用任何冲突的配置文件。
-
-其他类型的配置文件和策略（如与展台配置文件无关的设备限制）不会与展台配置文件冲突。
+#### 如果你在 Intune 中创建展台。
+-   每个设备可能只会接收到一个展台配置文件，否则它将产生冲突并根本不接收任何展台配置。 
+    -   其他类型的配置文件和策略（如与展台配置文件无关的设备限制）不会与展台配置文件冲突。
+-   将为所有属于用户登录类型的用户启用展台，此操作将使用用户或 AAD 组进行设置。 
+-   设置展台配置后， **用户登录类型** (可以登录展台的用户) 并且选择了应用，则设备配置仍然必须分配到组。 分配的组 (s) 确定哪些设备将接收展台设备配置，但如果启用了展台，则不会与之交互。 
+    - 有关在 Intune 中分配配置文件的效果的完整讨论，请参阅 [在 Microsoft Intune 中分配用户和设备配置文件](https://docs.microsoft.com/intune/configuration/device-profile-assign)。
 
 ### 选择部署方法
 
@@ -216,7 +176,7 @@ ms.locfileid: "11080441"
 |使用 Azure Active Directory (AAD) 进行部署  | 不需要            | 不需要                   | 必需  |
 |自动部署      | 否            | 否                   | 是  |
 |部署速度            | 迅速       | 迅速                 | 慢速 |
-|按比例部署 | 不建议    | 不建议        | 推荐 |
+|按比例部署 | 不建议    | 推荐        | 推荐 |
 
 ## 使用 Microsoft Intune 或其他 MDM 设置单应用或多应用展台
 
@@ -252,7 +212,7 @@ ms.locfileid: "11080441"
 根据所需的展台类型，后续步骤会有所不同。 有关详细信息，请选择下列选项之一：  
 
 - [单应用展台](#mdmconfigsingle)
-- [多应用展台](#mdmconfigmulti)
+- [多应用展台。](#mdmconfigmulti)
 
 有关如何创建展台配置文件的详细信息，请参阅 [windows 10 和 Windows 全息版 For Business 设备设置，以使用 Intune 作为专用展台运行](https://docs.microsoft.com/intune/configuration/kiosk-settings)。
 
@@ -487,3 +447,19 @@ ms.locfileid: "11080441"
 
 观看如何使用预配包配置展台。  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+## 适用于 HoloLens 的 XML 展台代码示例
+
+### 面向 AAD 组的多个应用展台模式。 
+此展台为 AAD 组中的用户部署了一个展台，他们将启用一个展台，其中包含3个应用：设置、远程协助和反馈中心。 若要将此示例修改为立即使用，请确保更改下面突出显示的 GUID，以匹配您自己的 AAD 组。 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
+
+
+### 针对 AAD 帐户的多个应用展台模式。
+此展台为单个用户部署展台，他们将启用一个展台，其中包含3个应用： "设置"、"远程协助" 和 "反馈中心"。 若要将此示例修改为立即使用，请确保将下面突出显示的帐户更改为与您自己的 AAD 帐户相匹配。 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
+
