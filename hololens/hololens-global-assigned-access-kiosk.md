@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094970"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154193"
 ---
 # 全局分配的访问权限 – 展台
 
@@ -64,3 +64,14 @@ ms.locfileid: "11094970"
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## 其他的全局指定访问示例
+
+这是一个全局分配的访问展台，当任何用户登录时，都将拥有一个具有设置应用、反馈中心和边缘的多应用展台。
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+这是一个不包含设备所有者的全局分配的访问展台，当任何其他AAD用户登录时，都将拥有一个具有设置应用、反馈中心和边缘的多应用展台。 此展台还包含一个访问者帐户的辅助展台配置，任何人都可在锁屏上登录。 用户登录到访问者帐户时，将拥有一个仅有反馈中心应用的多应用应用程序。
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
