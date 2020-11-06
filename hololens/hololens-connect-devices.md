@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
-ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
+ms.openlocfilehash: 2f2de4d776a0fdb99555687a96719d111ffb6460
+ms.sourcegitcommit: 8bf8e9196c4ea89297f210b5c1d41b31f9edd407
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "11155388"
+ms.locfileid: "11156289"
 ---
 # 连接到蓝牙和 USB-C 设备
 
@@ -66,6 +66,14 @@ HoloLens（第 1 代）支持以下类别的蓝牙设备：
    
 1. 在配对屏幕上，选择“点击器****” > “配对****”。
 
+## 禁用蓝牙
+
+此程序将关闭蓝牙无线电收发器的 RF 组件，并禁用 Microsoft HoloLens 上的所有蓝牙功能。
+
+1. 使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”****，然后选择“设置”**** > “设备”****。
+
+1. 将“蓝牙”**** 的滑块开关移至“关闭”**** 位置。
+
 ## HoloLens 2：连接 USB-C 设备
 
 HoloLens 2 支持以下类别的 USB-C 设备：
@@ -95,11 +103,3 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 1. 在所显示设备的列表中，选择一个可用的设备。
 
 1. 完成配对，开始进行投影。
-
-## 禁用蓝牙
-
-此程序将关闭蓝牙无线电收发器的 RF 组件，并禁用 Microsoft HoloLens 上的所有蓝牙功能。
-
-1. 使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”****，然后选择“设置”**** > “设备”****。
-
-1. 将“蓝牙”**** 的滑块开关移至“关闭”**** 位置。
