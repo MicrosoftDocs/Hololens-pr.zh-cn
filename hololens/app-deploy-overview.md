@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 36d86e24cc10d6b8457cfb415528398a8d43aa27
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016646"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162867"
 ---
 # 应用管理：概述
 
@@ -65,7 +65,18 @@ Microsoft Store 向企业中的 IT 决策者和管理员提供查找、获取、
 [预配程序包](app-deploy-provisioning-package.md) 允许你安装自定义或业务线应用，从而允许 IT 专业人员和管理员通过 USB 将应用快速安装到本地设备 (s) 。 这可以在没有互联网连接和任何标识类型的情况下完成。
     
 通过预配程序包安装适用于： 
-*  (非公共) 应用的 Buisness 行
+*  (非公共) 应用的 Buisness/自行开发的行
 * 如果脱机安装程序可用，则公共应用 () 
 * 仅限 USB 盘面加载
 * 无自动更新 (需要通过预配程序包手动更新) 
+
+## 通过应用安装程序在 HoloLens 2 上安装应用
+使用 [应用安装程序](app-deploy-app-installer.md) 用户可以获得在本地设备上安装应用或与其他不熟悉 HoloLens 上的其他应用安装方法的其他人共享应用的体验。 无需启用开发人员模式或使用 Device Portal，即可执行此操作。 这是分发完全生成的应用的简单方法。 无论你是希望使用 HoloLens 向另一位用户演示你的应用，还是想要部署你的应用，此方法都很容易。
+
+通过应用安装程序安装适用于： 
+*  (非公共) 应用的 Buisness/自行开发的行
+* 仅限侧加载
+* 不需要开发人员模式或 Device portal
+* 便于最终用户安装
+
+

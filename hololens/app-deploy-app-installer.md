@@ -5,7 +5,7 @@ keywords: 应用程序管理、应用、hololens、应用安装程序
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150913"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162896"
 ---
 # 通过应用安装程序在 HoloLens 2 上安装应用
 
+
+我们将在 Windows 全息版20H2 更新后立即发布应用安装程序功能。 我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+
 > [!IMPORTANT]
-> 此功能目前仅在 Windows 预览体验计划内部版本19041.1377 中 avalible。 [了解有关如何在 Windows 预览体验计划内部版本中注册的详细信息](hololens-insider.md)。
+> 此功能目前仅适用于 Windows 预览体验成员版本。 [了解有关如何在 Windows 预览体验计划内部版本中注册的详细信息](hololens-insider.md)。
 
 在我们的 Windows 预览体验计划版本中，我们将 **添加 (应用安装程序) 的新功能，让你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
 
@@ -38,8 +41,7 @@ ms.locfileid: "11150913"
 ## 要求
 
 ### 对于您的设备： 
-> [!NOTE]
-> 此功能目前仅在 Windows 预览体验计划内部版本19041.1377 中 avalible。 [了解有关如何在 Windows 预览体验计划内部版本中注册的详细信息](hololens-insider.md)。
+当前在适用于 HoloLens 2 设备的 [Windows 预览体验成员内部版本](hololens-insider.md) 中 avalible。 请确保使用此方法的任何设备均 [已更新](hololens-update-hololens.md)。 
 
 ### 对于你的应用： 
 你的应用的解决方案配置必须是 " **主** " 或 " **发布** "，因为应用安装程序将使用应用商店中的依赖关系。 查看有关 [创建应用包](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)的详细信息。
@@ -53,7 +55,7 @@ ms.locfileid: "11150913"
 **选择证书部署方法。** 
 - [预配程序包](hololens-provisioning.md) 可应用于本地设备。
 - 可以使用 MDM [将证书应用于设备配置](https://docs.microsoft.com/mem/intune/protect/certificates-configure)。
-- 使用 "设备 [证书管理器](hololens-insider.md#certificate-manager)"。 
+- 使用 "设备 [证书管理器](certificate-manager.md)"。 
 
 ## 安装方法
 

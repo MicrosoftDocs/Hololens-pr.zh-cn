@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
-ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
+ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154183"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162968"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -445,8 +445,59 @@ ms.locfileid: "11154183"
 
 ## 详细信息
 
-观看如何使用预配包配置展台。  
+### 观看如何使用预配包配置展台。  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### 全局分配的访问-展台模式
+- 通过启用在系统级别应用展台模式的新展台方法，减少了展台的身份管理。
+
+此新功能允许 IT 管理员为多个应用展台模式配置 HoloLens 2 设备，该模式适用于系统级别，与系统上的任何标识都没有相关性，并且适用于登录设备的每个人。 请在此仔细阅读此新增[功能。](hololens-global-assigned-access-kiosk.md)
+
+### 在多应用展台模式下自动启动应用程序 
+- 通过自动应用启动的重点体验，进一步增加了为展台模式体验选择的 UI 和应用选择。
+
+仅适用于多应用展台模式，并且只能将1个应用指定为使用 "分配的访问配置" 下方的突出显示属性自动启动。 
+
+应用程序将在用户登录时自动启动。 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### 故障处理的展台模式行为更改
+- 通过在展台模式失败上消除可用应用，更安全地保护展台模式。 
+
+早于在应用展台模式时遇到故障，HoloLens 用于显示 "开始" 菜单中的所有应用程序。 现在在 Windows 全息版20H2 中，在出现故障的情况下，"开始" 菜单中不会显示任何应用，如下所示： 
+
+!["展台" 模式的图像在失败时立即显示。](images/hololens-kiosk-failure-behavior.png )
+
+### 缓存脱机展台的 AAD 组成员身份
+- 已启用与 AAD 组一起使用的离线用户，最多可达60天。
+
+此策略控制允许将 AAD 组成员身份缓存用于分配用于登录用户的 AAD 组的分配访问配置的天数。 一旦将此策略值设置为大于0的值，否则将使用缓存。  
+
+名称： AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+最小值-0 天  
+最大-60 天 
+
+正确使用此策略的步骤： 
+1. 为面向 AAD 组的展台创建设备配置文件，并将其分配到 HoloLens 设备 (s) 。 
+1. 创建基于自定义 OMA URI 的设备配置，将此策略值设置为所需的天数 ( # 0) ，并将其分配到 HoloLens 设备 (s) 。 
+    1. 应在/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays 中将 URI 值输入到 "OMA URI" 文本框中。
+    1. 值可以介于 min/max 允许之间。
+1. 注册 HoloLens 设备并验证这两种配置均已应用到设备。 
+1. 允许 AAD 用户1登录当 internet 可用时，一旦用户登录和 AAD 组成员身份已成功确认，将创建缓存。 
+1. 现在，AAD 用户1可以将 HoloLens 脱机，并将其用于展台模式，前提是策略值允许 X 天。 
+1. 可以为任何其他 AAD 用户 N 重复执行步骤4和步骤5。此处的关键点是任何 AAD 用户必须使用 Internet 登录到设备，因此至少可以确定它们是对其进行目标展台配置的 AAD 组的成员。 
+ 
+> [!NOTE]
+> 直到针对 AAD 用户执行步骤4时，才会在 "断开连接的" 环境中遇到故障行为。 
+
 
 ## 适用于 HoloLens 的 XML 展台代码示例
 

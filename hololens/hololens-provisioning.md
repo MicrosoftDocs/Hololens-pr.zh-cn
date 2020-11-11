@@ -10,18 +10,18 @@ ms.custom:
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 03/10/2020
+ms.date: 10/13/2020
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052641"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162991"
 ---
 # 使用预配包配置 HoloLens
 
@@ -46,7 +46,7 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
     > 这只应用于 HoloLens 第一代设备。 仅在预配包中包含 Windows 全息版的版本升级许可证或者 [设备已升级到 Windows 全息版企业](hololens1-upgrade-enterprise.md)版时，才会应用预配包中的设置。
 
 - 在 OOBE (配置 HoloLens 首次体验) 
-- 配置 Wlan 网络
+- 配置 Wi-Fi 网络
 - 在 Azure Active Directory 中注册设备，或创建本地帐户
 - 添加证书
 - 启用开发人员模式
@@ -88,12 +88,12 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
 ### 配置设置
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>通过浏览找到并选择要升级 HoloLens 版本的企业许可证文件。</br></br>您也可以切换 <strong> "是" </strong> 或 " <strong> 否" </strong> 以隐藏第一个体验的各个部分。</br></br>若要设置设备而无需连接到 Wi-fi 网络，请切换 <strong> "将 wi-fi 设置跳 </strong> 到 <strong> " </strong> 。</br></br>选择将使用设备的区域和时区。 </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>在此部分中，你可以输入设备应自动连接到的 Wi-fi 无线网络的详细信息。 若要执行此操作，请依次选择 " <strong> </strong> 打开"、"网络类型" (" <strong> 打开" </strong> 或 <strong> "wpa2-个人 </strong>) "，以及 (如果 <strong> WPA2-个人 </strong>) 无线网络的密码。</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>通过浏览找到并选择要升级 HoloLens 版本的企业许可证文件。</br></br>您也可以切换 <strong> "是" </strong> 或 " <strong> 否" </strong> 以隐藏第一个体验的各个部分。</br></br>若要设置设备而无需连接到 Wi-Fi 网络，请切换 <strong> 跳过 Wi-Fi 设置 </strong> 为 <strong> "打开" </strong> 。</br></br>选择将使用设备的区域和时区。 </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>在此部分中，你可以输入设备应自动连接到的 Wi-Fi 无线网络的详细信息。 若要执行此操作，请依次选择 " <strong> </strong> 打开"、"网络类型" (" <strong> 打开" </strong> 或 <strong> "wpa2-个人 </strong>) "，以及 (如果 <strong> WPA2-个人 </strong>) 无线网络的密码。</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>你可以在 Azure Active Directory 中注册设备，也可以在设备上创建本地帐户</br></br>使用 Windows 配置设计器向导配置 Azure AD 批量注册之前，请<a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">在贵组织中设置 Azure AD 加入</a>。 Azure AD 租户中的<strong>每个用户的最大设备数</strong>设置用于确定你在该向导中获取的批量令牌可使用的次数。 若要在 Azure AD 中注册设备，请选择该选项，并输入你要使用向导获取的批量令牌的友好名称。 设置令牌的到期日期（从获取该令牌之日算起最多 30 天）。 选择 " <strong> 获取批量令牌" </strong> 。 在 " <strong> 让&#39;s 登录" 窗口中 </strong> ，输入有权将设备加入 Azure AD 的帐户，然后输入密码。 选择 <strong> </strong> "接受" 以向 Windows 配置设计器提供必要的权限。 </br></br>若要创建本地帐户，请选择该选项，然后输入用户名和密码。 </br></br><strong>重要提示：</strong> <br /> (适用于 Windows 10 版本1607版本) 如果在预配包中创建本地帐户，则必须在 <strong> 每42天使用 "设置" 应用更改密码 </strong> 。 如果在此期限内未更改密码，帐户可能会被锁定而无法登录。  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>若要使用证书预配设备，请单击<strong>添加证书</strong>。 输入证书的名称，然后浏览到要使用的证书并将其选中。</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>切换 <strong> "是" </strong> 或 " <strong> 否" </strong> 以在 HoloLens 上启用开发人员模式。 <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">了解有关开发人员模式的详细信息。</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finish"/></br></br>不要设置密码来保护预配包。 如果预配包受密码保护，则预配 HoloLens 设备将失败。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>不要设置密码来保护预配包。 如果预配包受密码保护，则预配 HoloLens 设备将失败。</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 完成后，选择 " **创建**"。 这只需几秒钟的时间。 生成该包之后，其存储位置将在页面底部显示为超链接。
@@ -152,7 +152,13 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
 
 ## 在安装期间将预配包应用于 HoloLens
 
-在内部版本 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 或更高版本上使用 HoloLens 2 设备，可能会使用 USB 驱动器应用预配包。 只需将 ppkg 文件复制到 USB 驱动器的根目录。 仅当预配程序包位于 USB 驱动器的根中时，才会应用该程序包。 存在多个预配包，将按顺序应用。
+HoloLens 2 设备在 Windows 全息版、版本2004或内部版本 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 或更高版本中，可能使用 USB 驱动器应用预配包。 只需将 ppkg 文件复制到 USB 驱动器的根目录。 仅当预配程序包位于 USB 驱动器的根中时，才会应用该程序包。 存在多个预配包，将按顺序应用。
+
+在 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 或更高版本上安装 HoloLens 2 设备时，有更新的功能可帮助简化和简化此过程，使其自动执行。 请查看以下部分：
+
+- [来自 USB 的自动启动预配](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [在 OOBE 中自动确认预配程序包](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [自动预配，不使用 UI](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 1. 使用 USB 电缆将设备连接到电脑 (或用于 HoloLens 2 的 USB 驱动器（如上述) 所述），然后启动设备。 不要在 OOBE 的 **第一交互时刻的一** 页之前继续。   
     - 在 HoloLens (第一代) ，此页面包含一个蓝色框。 
@@ -172,6 +178,39 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
 
 > [!NOTE]
 > 如果在2016年8月之前购买了该设备，你需要使用 Microsoft 帐户登录到该设备，获取最新的操作系统更新，然后重置操作系统，以便应用预配包。
+
+### 来自 USB 的自动启动预配
+
+- 在 OOBE 期间使用具有预配程序包的 USB 驱动器时，自动化的流程允许较少的用户交互。
+
+在此版本之前，用户必须在 OOBE 期间手动启动预配屏幕，以使用按钮组合。 现在，用户可以通过使用 USB 存储驱动器上的预配包跳过按钮组合。 
+
+1. 在 OOBE 的第一个交互时刻插入带有预配包的 USB 驱动器
+1. 准备好预配设备后，将自动通过预配页面打开提示。 
+
+注意：如果在设备启动时插入了一个 USB 驱动器，则 OOBE 将枚举现有的 USB 存储设备，还会监视插入的其他设备。
+
+有关在 OOBE 期间应用预配程序包的详细信息，请继续阅读 [此处](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+
+### 在 OOBE 中自动确认预配程序包
+- 自动化流程允许较少的用户交互，当 "预配程序包" 页面显示时，它将自动应用列出的所有程序包。
+
+当预配主屏幕出现时，OOBE 将在10秒后自动开始应用所有预配程序包。 用户在验证所需的程序包后，仍可在此10秒内确认或取消。
+
+### 自动预配，不使用 UI
+- 合并了自动流程以减少设置的设备交互。 
+
+通过将预配的自动启动与 USB 设备中的自动启动和预配程序包的自动确认结合使用，用户可以自动预配 HoloLens 2 设备，而无需使用设备的 UI，甚至戴设备。 你可以继续对多台设备使用相同的 USB 驱动器和预配程序包。 这对于在同一区域同时部署多个设备很有用。 
+
+1. 使用[Windows 配置设计器](https://www.microsoft.com/store/productId/9NBLGGH4TX22)[创建预配包](hololens-provisioning.md)。 
+1. 将程序包复制到 USB 存储驱动器。
+1. 将[HoloLens 2 闪存](hololens-insider.md#ffu-download-and-flash-directions)到[19041.1361 或更高版本](https://aka.ms/hololens2previewdownload)。 
+1. 当 " [高级恢复" 助理](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 已完成闪烁时，您的设备将拔出 USB-C 电缆。 
+1. 将您的 USB 驱动器插入设备。
+1. 当 HoloLens 2 设备启动到 OOBE 时，它将自动检测 USB 驱动器上的预配包并启动预配页面。
+1. 10秒后，设备将自动应用预配包。 
+
+你的设备现已配置，并将显示预配成功屏幕。
 
 ## 安装后将预配包应用于 HoloLens
 

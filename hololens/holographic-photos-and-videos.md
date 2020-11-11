@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100267"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163112"
 ---
 # 创建混合现实照片和视频
 
@@ -155,8 +155,18 @@ HoloLens 为用户提供了与数字世界混合现实的体验。  混合现实
 ## 混合现实捕获的限制
 
 - 使用混合现实捕获时，HoloLens 的帧频将减半到 30 Hz。
-- 视频的最大长度为5分钟。
 - 如果照片/视频相机已由另一个应用程序、实时流处理或系统资源不足，可能会降低照片和视频的分辨率。
+
+### 最大录制长度
+
+在 Windows 全息版上录制的版本20H2 视频之前，在设备上录制的版本视频的最大长度限制为5分钟。
+
+由于客户反馈，我们增加了 [混合现实捕获](holographic-photos-and-videos.md)的录制长度。 默认情况下，混合现实捕获将不再限制为5分钟，而是将根据可用磁盘空间计算最大录制长度。 设备将根据可用磁盘空间达到总磁盘空间的80%，估计最大视频录制持续时间。
+
+> [!NOTE]
+> 如果出现以下情况之一，则 HoloLens 将使用默认视频录制长度 (5 分钟) ：
+> - 估计的最大录制持续时间小于默认的5分钟。
+> - 可用磁盘空间小于总磁盘空间的20%。
 
 ## 默认文件格式和分辨率
 

@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120143"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162942"
 ---
 # 收集和使用来自 HoloLens 设备的诊断信息
 
@@ -123,9 +123,17 @@ IT 管理员使用 DiagnosticLog CSP 配置数据存储、保留和访问策略�
 在通过 USB 电缆将设备连接到电脑后，在文件资源管理器中显示该设备时，此操作将起作用。 
 
 > [!NOTE]
-> 仅当用户通过 OOBE 或 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 策略值设置为 "完全" 时，才会启用脱机诊断。在 Hololens) 上，"基本" 默认值为 " (基本"。 
+> 离线诊断生成和管理的控制方式因操作系统版本而异。 以前它由遥测设置控制，但现在通过策略直接控制。 
 
-如果设备处于锁定状态，则不会显示日志。 若要禁用脱机诊断，请转到 "**设置" 应用 > 隐私**"页面，然后选择" 在**诊断数据**中**基本**"。 在 "离线诊断" 依赖 "遥测" 设置的版本中，它只会影响是否收集任何日志。 它不会影响收集的文件。
+[Windows 全息版之前的行为 Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2)：
+ - 仅当用户通过 OOBE 或 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 策略值设置为 "完全" 时，才会启用脱机诊断。在 HoloLens) 上，"基本" 默认值为 " (基本"。 
+- 若要禁用脱机诊断，请转到 "**设置" 应用 > 隐私**"页面，然后选择" 在**诊断数据**中**基本**"。 在 "离线诊断" 依赖 "遥测" 设置的版本中，它只会影响是否收集任何日志。 它不会影响收集的文件。
+- 如果设备处于锁定状态，则不会显示日志。
+
+在生成 [Windows 全息版、Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 和向上：
+- 启用回退诊断后，将由特定 MDM 策略控制，其中包含相应的设置 [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- 如果设备处于锁定状态，则不会显示日志。
+
 
 观看此视频以了解详细信息。 
 
