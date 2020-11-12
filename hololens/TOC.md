@@ -71,7 +71,9 @@
 ### [使用 MDM 管理 HoloLens 设备](hololens-mdm-configure.md)
 ### [通用设备限制](hololens-common-device-restrictions.md)
 ### [将 HoloLens 设置为 Kiosk](hololens-kiosk.md)
+### [全局分配的访问 - 网亭](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender 应用程序控制 - WDAC](windows-defender-application-control-wdac.md)
+### [适用于 HoloLens 的页面设置 CSP 和 URI](settings-uri-list.md)
 ## 标识
 ### [管理 HoloLens 的用户标识和登录](hololens-identity.md)
 ### [与多人共享 HoloLens](hololens-multiple-users.md)
@@ -81,7 +83,7 @@
 ### [为 HoloLens 2 准备证书和网络配置文件](hololens-certificates-network.md)
 ### [管理 HoloLens 的连接终结点](hololens-offline.md)
 ### [连接到蓝牙和 USB-C 设备](hololens-connect-devices.md)
-
+## [证书管理器](certificate-manager.md)
 
 # 部署
 ## 注册
@@ -107,10 +109,8 @@
 
 # HoloLens 发行说明
 ## [HoloLens 2 发行说明](hololens-release-notes.md)
-## [Microsoft HoloLens 内部预览版](hololens-insider.md)
-### [全局分配的访问权限](hololens-global-assigned-access-kiosk.md)
-### [HoloLens 的页面设置 URI](settings-uri-list.md)
+## [Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
 ### [应用安装程序](app-deploy-app-installer.md)
-
 ## [HoloLens（第 1 代）发行说明](hololens1-release-notes.md)
+
 # [向我们提供反馈](hololens-feedback.md)
