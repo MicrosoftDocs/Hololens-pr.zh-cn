@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015515"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162980"
 ---
 # 为 HoloLens 2 准备证书和网络配置文件
 
@@ -45,18 +45,20 @@ ms.locfileid: "11015515"
 1.  为每个根证书和中间证书创建一个配置文件（请参阅[创建受信任的证书配置文件](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)。）这些配置文件中的每个配置文件都必须具有包含 DD/MM/YYYY 格式的到期日期的描述。 **将不会部署无到期日期的证书配置文件。**
 1.  为每个 SCEP 或 PKCS 证书创建一个配置文件（请参阅[创建 SCEP 证书配置文件或创建 PKCS 证书配置文件](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)）。这些配置文件中的每个配置文件都必须具有包含 DD/MM/YYYY 格式的到期日期的描述。 **将不会部署无到期日期的证书配置文件。**
 
-> [!NOTE]
-> 由于 HoloLens 2 将多个设备视为一个共享设备，并且每个设备上有多个用户，因此建议尽可能部署设备证书（而不是用户证书）进行 Wi-Fi 身份验证
+    > [!NOTE]
+    > 由于 HoloLens 2 将多个设备视为一个共享设备，并且每个设备上有多个用户，因此建议尽可能部署设备证书（而不是用户证书）进行 Wi-Fi 身份验证
 
 3.  为每个公司 Wi-Fi 网络创建一个配置文件（请参阅 [Windows 10 和更高版本的设备的 Wi-Fi 设置](https://docs.microsoft.com/intune/wi-fi-settings-windows)）。 
-> [!NOTE]
-> 建议尽可能将 Wi-Fi 配置文件[分配](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)给设备组，而不是用户组。 
+    > [!NOTE]
+    > 建议尽可能将 Wi-Fi 配置文件[分配](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)给设备组，而不是用户组。 
 
-> [!TIP]
-> 此外，还可从公司网络上的 Windows 10 电脑导出有效的 Wi-Fi 配置文件。 此导出将创建包含所有当前设置的 XML 文件。 然后，将此文件导入到 Intune 中，并将其用作 HoloLens 2 设备的 Wi-Fi 配置文件。 请参阅[导出和导入 Windows 设备的 Wi-Fi 设置](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)。
+    > [!TIP]
+    > 此外，还可从公司网络上的 Windows 10 电脑导出有效的 Wi-Fi 配置文件。 此导出将创建包含所有当前设置的 XML 文件。 然后，将此文件导入到 Intune 中，并将其用作 HoloLens 2 设备的 Wi-Fi 配置文件。 请参阅[导出和导入 Windows 设备的 Wi-Fi 设置](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)。
 
 4.  为每个公司 VPN 创建一个配置文件（请参阅 [Windows 10 和 Windows Holographic 设备设置，使用 Intune 添加 VPN 连接](https://docs.microsoft.com/intune/vpn-settings-windows-10)）。
 
+## 证书疑难解答
 
+如果你需要验证是否正确部署了证书，请使用设备上的[证书管理器](certificate-manager.md)验证你的证书是否存在。  
 
 

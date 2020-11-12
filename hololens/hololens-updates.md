@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861905"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163133"
 ---
 # 管理 HoloLens 更新
 
@@ -76,6 +76,21 @@ Windows Holographic for Business 可使用[适用于企业的 Windows 更新](ht
   - 值的范围：0-23（其中 0 代表午夜，23 代表晚上 11 点）
   - 默认值：下午 3 点
 
+#### 配置使用时段
+从 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 开始，IT 管理员可以为 HoloLens 2 设备指定使用时段。
+
+使用时段可标识你希望设备正在使用中的时段。 更新后自动重启将在使用时段外发生。 指定的范围将从使用时段开始时间计算。 可以使用 MDM，如[使用 MDM 配置使用时段](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm)中所述。 MDM 使用“策略 CSP”中的 Update/ActiveHoursStart 和 Update/ActiveHoursEnd 以及 Update/ActiveHoursMaxRange 设置配置使用时段。
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - 此值设置结束时间。 从开始时间起最长为 12 小时。
+    -   支持的值为 0-23，其中 0 为中午 12 点，1 为凌晨 1 点，依此类推。
+    -   默认值为 17（下午 5 点）。
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - 此值设置从开始时间起的最长使用时段。
+    -   支持的值为 8-18。
+    -   默认值为 18（小时）。
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - 此值设置开始时间。 从结束时间起最长为 12 小时。
+    -   支持的值为 0-23，其中 0 为中午 12 点，1 为凌晨 1 点，依此类推。
+    -   默认值为 8（早上 8 点）。
+
 #### 只针对运行 Windows 10 1607 版本的设备
 
 可以使用以下更新策略配置设备从 Windows Server Update Services (WSUS) 而非 从 Windows 更新获取更新：
@@ -116,6 +131,15 @@ Windows Holographic for Business 可使用[适用于企业的 Windows 更新](ht
 | --- | --- | --- |
 |功能更新 |DeferFeatureUpdatesPeriodInDays |365 天 |
 |质量更新 |DeferQualityUpdatesPeriodInDays |30 天 |
+
+#### 通过设备暂停更新
+
+如果用户无权访问 MDM，则他们可以在包含内部版本 [Windows 全息版 2004](hololens-release-notes.md#windows-holographic-version-2004) 或更高版本的 HoloLens 2 设备上分别手动暂停更新长达 35 天。 用户可以通过导航至“**设置”->“更新和安全”->“高级选项**”并滚动至“**暂停更新**”，选择将暂停更新的结束日期，来实现此设置。 用户达到暂停限制后，设备将需要获取新的更新，因为它们可以再次暂停。 
+
+从 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 开始，可以为 HoloLens 2 设备管理此暂停更新功能。 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)。
+    - 0（默认值）– 已启用
+    - 1 – 已禁用
 
 #### HoloLens 支持的 Intune 更新管理功能
 

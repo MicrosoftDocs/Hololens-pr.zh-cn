@@ -3,7 +3,7 @@ title: 页面设置可见性
 description: 支持PageVisibilityList及指南的 HoloLens 的URI列表
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens, hololens 2, 分配的访问权限, 展台, 设置页面
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026935"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163143"
 ---
 # 页面设置可见性
 
 HoloLens 设备的其中一项易管理的功能是使用 [Settings/PageVisibilityList 策略](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)限制“设置”应用中显示的页面。 PageVisibilityList 是一项策略，它允许 IT 管理员阻止查看或访问“系统设置”应用中的特定页面，或者对除指定页面之外的所有页面执行此操作。 
 
-> [!IMPORTANT]
-> 此功能目前仅适用于 [Windows 预览体验成员版本](hololens-insider.md)。 请确保目标设备安装有内部版本 19041.1349+。
+> [!NOTE]
+> 此功能仅在适用于 HoloLens 2 设备的 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中可用。 请确保要使用此功能的设备已更新。
 
 下面的示例阐释了仅允许访问 "关于" 和 "蓝牙" 页面的策略，该策略的 URI 为 "ms-settings： network/wifi" 和 "ms settings：蓝牙"。 以下示例说明了一个策略，该策略仅允许访问 about 和 bluetooth 页面，它们分别具有URI“ms-settings:network-wifi”和“ms-settings:bluetooth”：
 - showonly:network-wifi;network-proxy;bluetooth

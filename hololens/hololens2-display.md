@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940202"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163010"
 ---
 # HoloLens 2
 
@@ -60,9 +60,9 @@ HoloLens 2是为人眼观看而设计的。 设备具有可适应用户眼睛的
 
 HoloLens 2会根据用户眼球的位置积极修正图像的颜色。 [目视校准](hololens-calibration.md) 提供两个重要的输入：（1）用户的 瞳孔间 距离（IPD），以及每个眼睛在注视的方向（2）。 如果不进行目视校准，系统会默认为标称的眼球位置，无需眼球运动。 是否积极校正可用色彩取决于用户自身的生理状况。 例如，与系统默认的IPD相同的用户将看到较少的色彩校正改进。 然而，IPD比系统默认值窄得多或宽得多的用户，则会看到屏幕图像更多的变化。
 
-请注意，在未来的操作系统更新中，将有一个新的功能[它启动自动检测眼睛的位置](hololens-insider.md#auto-eye-position-support) 。 用户现在可以报名参加 [预览体验](hololens-insider.md)试用这个功能。
+请注意，[Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中的一项新功能将开始[自动检测眼部位置](hololens-calibration.md#auto-eye-position-support)。 
 
-### HoloLens（第1代）和HoloLens 2的区别是什么？
+### HoloLens（第一代）和 HoloLens 2 之间的显示差异是什么？
 
 客户体验HoloLens 1后给Microsoft 提出的首要要求有（1）增加视场角，（2）提高亮度。 技术发展使Microsoft生产出的波导使视场角范围增加了一倍，生成的光投影机的显示亮度提高了三倍。 硬件上为屏幕的图像质量三重权衡设定了基线。(1) 视场角，(2) 亮度，(3) 色彩均匀性。 技术的不断提升，有助于促进所有领域共同发展，无一落后。 在这期间，现有的技术为这些权衡设定了可用的限制。
 
