@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163112"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165004"
 ---
 # 创建混合现实照片和视频
 
@@ -140,7 +140,7 @@ HoloLens 为用户提供了与数字世界混合现实的体验。  混合现实
 提示：
 - 如果您看不到任何文件，请确保您登录到 HoloLens 以允许访问您的数据。
 - 可以获取其他文件夹中的其他文件，例如 "文档" 文件夹中的 " [诊断" 文件](hololens-diagnostic-logs.md#offline-diagnostics) 。
-- 在电脑上的文件资源管理器中，你可以选择 "设备属性" 以查看 Windows 全息 OS 版本号 (固件版本) 和设备序列号和电池百分比。
+- 在电脑上的文件资源管理器中，你可以选择 "设备属性" 以查看 Windows 全息 OS 版本号 (固件版本) 、设备序列号和电池百分比。
 - 如果你的组织已使用 MDM 禁用 [Connectivity/AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) ，你将无法连接到你的设备。
 
 ## 分享您的混合现实照片和视频

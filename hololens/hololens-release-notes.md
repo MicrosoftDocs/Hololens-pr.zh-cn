@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163156"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165972"
 ---
 # HoloLens 2 发行说明
 
-为确保您的 HoloLens 设备具有高效的体验，我们将继续发布功能、缺陷和安全更新。 在此页面上，您可以查看每月 HoloLens 的新增功能。 若要获取最新的 HoloLens 2 完整闪存更新 (FFU) [通过 "高级恢复助理" 将您的设备闪存](hololens-recovery.md#clean-reflash-the-device)，请 [在此处下载](https://aka.ms/hololens2download)。 下载将保持最新状态，并提供最新的通用内部版本。
+为确保您的 HoloLens 设备具有高效的体验，我们将继续发布功能、缺陷和安全更新。 在此页面上，您可以查看每月 HoloLens 的新增功能。 若要获取最新的 HoloLens 2 更新，你可以 [检查更新并手动更新](hololens-update-hololens.md#check-for-updates-and-manually-update) 或获取完整的 Flash 更新 (FFU) [通过 "高级恢复助理" 将你的设备闪存](hololens-recovery.md#clean-reflash-the-device)，请 [在此处下载](https://aka.ms/hololens2download)。 下载将保持最新状态，并提供最新的通用内部版本。
 
 >[!NOTE]
 > 若要阅读 HoloLens 模拟器发行说明，请 [访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
@@ -40,7 +40,7 @@ Windows 全息版20H2 现已推出，并向 HoloLens 2 用户和 IT 专业人员
 
 | 功能                                              | 描述                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [自动目视位置支持](hololens-release-notes.md#auto-eye-position-support) | 主动计算眼睛位置，无需用户进行活动校准。   |
+| [自动眼部位置支持](hololens-release-notes.md#auto-eye-position-support) | 主动计算目视的位置，而无需用户通过目视跟踪校准。   |
 | [证书管理器](hololens-release-notes.md#certificate-manager)   | 允许从 "设置" 应用中安装和删除证书的更简单方法。     |
 | [来自 USB 的自动启动预配](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | 预配 USB 驱动器上的程序包会自动提示 OOBE 中的预配页面。                                                         |
 | [在 OOBE 中自动确认预配程序包](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 预配包将在 OOBE 期间从设置页面自动应用。                                                         |
@@ -60,24 +60,24 @@ Windows 全息版20H2 现已推出，并向 HoloLens 2 用户和 IT 专业人员
 | [录制长度增加](hololens-release-notes.md#recording-length-increased) | MRC 录制不再超过5分钟。 |
 | [更新中的改进和修复](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | 更新中的其他修复程序。   |
 
-### 自动目视位置支持
+### 自动眼部位置支持
 
-- 我们现在可通过自动眼位置支持，为全息图定位提供更高的精确度，以获得更高的观赏效果和改进的显示质量。 
+在 HoloLens 2 中，眼部位置可实现准确的全息影像定位、舒适的观看体验和改进的显示质量。 目视位置作为目视跟踪计算的一部分在内部进行计算。 但是，这要求每个用户都可以通过目视跟踪校准，即使体验可能不需要目视的注视输入也是如此。
 
-在 HoloLens 2 中，目视位置支持准确的全息图定位、舒适的查看体验和改进的显示质量。 眼位置将作为眼睛跟踪结果的一部分进行计算。 但是，这要求每个用户都可以通过目视跟踪校准，即使体验不需要目视的注视输入也是如此。
+**自动眼部位置 (AEP)** 使这些场景能够以无交互方式为用户眼部位置。 从用户戴上设备开始，“自动眼部位置”将自动在后台开始工作。 如果用户没有以前的目视跟踪校准，则在处理时间为 20-30 秒后，自动目视将开始向显示系统提供用户的目视位置。 用户数据不会保留在设备上，因此，如果用户取下并重新戴上设备，或者设备重新启动或从睡眠状态唤醒，则会重复此过程。
 
-** (AEP 的 "自动目视" 位置) ** 支持这些方案，使用无交互方式为用户计算眼睛位置。  自动目视位置在用户将设备置于设备上时自动从后台开始工作。 如果用户没有以前的目视跟踪校准，则在较小的处理时间后，自动目视的位置将开始向显示系统提供用户的目视位置。 此处理时间通常介于 20-60 秒之间。 用户数据不会保留在设备上，因此，如果用户关闭并重新放置设备或者设备重新启动或从睡眠中唤醒，则会重复此过程。  
+当未经校准的用户戴上设备时，“自动眼部位置”功能会改变一些系统行为。 在此上下文中，uncalibrated 用户是指尚未经历过设备上的目视跟踪校准过程的人员。
 
-当 uncalibrated 用户放在设备上时，有一些系统行为发生了自动目视定位功能。 Uncalibrated 用户指的是尚未经历过设备上的目视跟踪校准过程的人。
+| 活动应用程序 | 以前的行为 | 来自 Windows 全息版、版本20H2 更新的行为 |
+|:-------------------|:-----------------|:-----------------------------------|
+| 未启用凝视的应用或全息外壳 |"目视跟踪校准提示" 对话框随即显示。 | 不显示提示。 |
+| 已启用凝视的应用 | "目视跟踪校准提示" 对话框随即显示。 | 仅当应用程序访问眼睛注视流时，才会显示目视跟踪校准提示。 |
 
-|     活动应用程序                           |     旧行为                                   |     Windows 全息版20H2 的行为向前                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     不支持注视的应用程序或全息外壳    |     将显示目视跟踪校准提示。    |     不显示提示。                                                                                |
-|     注视 "已启用" 应用                             |     将显示目视跟踪校准提示。    |     仅当应用程序访问眼睛注视流时，才会显示目视跟踪校准提示。     |
+如果用户从未启用凝视的应用程序转换为访问凝视数据的应用程序，则会显示校准提示。 
 
- 如果用户从一个不支持注视的应用程序切换到一个访问注视数据的应用程序，则将显示校准提示。 将不会更改为 "现成的体验" 流程。 
- 
-对于需要眼睛眼数据或非常精确的全息图位置的体验，我们建议 uncalibrated 用户从目视跟踪校准提示中运行目视跟踪校准，或者从 "开始" 菜单启动 "设置" 应用，然后选择 " **系统 > 校准" > 目视校准 > "运行目视校准**"。
+当当前用户没有活动的目视跟踪校准时，所有其他系统行为将与此类似。 例如，将不会启用一次性开始手势。 初始设置的全新体验不会有任何变化。
+
+对于需要眼睛数据或非常精确的全息图位置的体验，我们建议 uncalibrated 用户运行目视跟踪校准。 可通过目视跟踪校准提示或从 "开始" 菜单启动 "设置" 应用，然后选择 " **系统 > 校准" > 目视校准 > "运行目视校准**"。
 
 此信息可以在以后与 [其他校准信息](hololens-calibration.md#auto-eye-position-support)一起找到。 
 
@@ -165,50 +165,50 @@ Windows 全息版20H2 现已推出，并向 HoloLens 2 用户和 IT 专业人员
 现在，在 OOBE 期间，一旦通过 Wifi 连接了 HoloLens 2，OOBE 将检查设备的 Autopilot 配置文件。 如果找到一个，它将用于完成 AAD 联接和注册流的其余部分。 换句话说，对 usb-C 或 Wi-Fi 到 USB-C 适配器的使用以太网不再是必需的，但是如果在 OOBE 开始时提供，它们仍可继续正常工作。 了解有关 [HoloLens 2 设备的 Autopilot 的](hololens2-autopilot.md)详细信息。
 
 ### Tenantlockdown CSP 和 Autopilot
-- 通过设备重置或 reflash 将设备锁定到租户，从而保留组织租户上的设备。 通过预配禁用帐户创建，进一步增强安全性。 
+- 将设备锁定到租户后，即使进行设备重置或重新刷新也可将设备保留在组织的租户上。 通过预配禁用帐户创建，进一步增强安全性。 
 
 HoloLens 2 设备现在支持 TenantLockdown for [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2)中的 CSP。 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 使 HoloLens 2 能够仅使用 Autopilot 与 MDM 注册绑定。 一旦 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 或 false (最初在 HoloLens 2 上设置) 值时，即使重新闪烁、操作系统更新等，该值仍将保留在设备上。 
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 允许仅使用 Autopilot 将 HoloLens 2 绑定到 MDM 注册。 在 HoloLens 2 上将 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 或 false（初始设置）值后，即使进行重新刷新、操作系统更新，该值仍将保留在设备上。 
 
-TenantLockdown 在 HoloLens 2 上将 Csp "RequireNetworkInOOBE" 节点设置为 true 时，OOBE 将无限期地等待 Autopilot 配置文件在网络连接后成功下载和应用。 
+在 HoloLens 2 上将 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 后， OOBE 将无限期等待 Autopilot 配置文件在网络连接后成功下载并应用。 
 
-TenantLockdown 在 HoloLens 2 上将 Csp "RequireNetworkInOOBE" 节点设置为 true 时，OOBE 中不允许以下操作： 
+在 HoloLens 2 上将 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 后，OOBE 中不允许执行以下操作： 
 - 使用运行时预配创建本地用户 
-- 通过运行时预配执行 AAD 联接操作 
-- 在 OOBE 体验中选择拥有设备的人员 
+- 通过运行时预配执行 AAD 加入操作 
+- 在 OOBE 体验中选择设备所有者 
 
-#### 如何使用 Intune 设置此功能？ 
-1. 创建自定义 OMA URI 设备配置文件，并为 RequireNetworkInOOBE 节点指定 true，如下所示。
-OMA URI 值应为/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+#### 如何使用 Intune 设置此选项？ 
+1. 创建自定义 OMA URI 设备配置配置文件，并为 RequireNetworkInOOBE 节点指定 true，如下所示。
+OMA-URI 值应为 ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
    > ![通过 OMA-URI 设置租户锁定](images/hololens-tenant-lockdown.png)
 
 1. 创建组并将设备配置文件分配给该设备组。 
 
-1. 使在上一步中创建的组的 HoloLens 2 设备成员，并触发同步。  
+1. 使 HoloLens 2 设备成为在上一步中创建的组的成员并触发同步。  
 
-在 Intune 门户中验证设备配置已成功应用。 一旦此设备配置成功应用于 Hololens 2 设备，TenantLockdown 的效果将处于活动状态。
+在 Intune 门户中验证设备配置是否已成功应用。 一旦此设备配置成功应用于 HoloLens 2 设备，TenantLockdown 的效果将处于活动状态。
 
 #### 如何使用 Intune 在 HoloLens 2 上取消设置 TenantLockdown 的 RequireNetworkInOOBE？ 
-1. 从上面创建的设备配置先前已分配的设备组中删除 HoloLens 2。 
+1. 从先前分配了上面创建的设备配置的设备组中删除 HoloLens 2。 
 
-1. 创建基于自定义 OMA URI 的设备配置文件，并为 RequireNetworkInOOBE 指定 false，如下所示。 OMA URI 值应为/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+1. 创建基于 OMA URI 的自定义设备配置配置文件，并为 RequireNetworkInOOBE 指定 false，如下所示。 OMA-URI 值应为 ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
    > ![通过 Intune 中的 OMA URI 将 RequireNetworkInOOBE 设置为 false 的屏幕截图](images/hololens-tenant-lockdown-false.png)
 
 1. 创建组并将设备配置文件分配给该设备组。 
 
-1. 使在上一步中创建的组的 HoloLens 2 设备成员，并触发同步。
+1. 使 HoloLens 2 设备成为在上一步中创建的组的成员并触发同步。
 
-在 Intune 门户中验证设备配置已成功应用。 一旦此设备配置成功应用于 Hololens 2 设备，TenantLockdown 的效果将处于非活动状态。 
+在 Intune 门户中验证设备配置是否已成功应用。 一旦此设备配置成功应用于 HoloLens 2 设备，TenantLockdown 的效果将处于非活动状态。 
 
-#### 如果 Autopilot 配置文件在 TenantLockdown 设置为 true 后未在 HoloLens 中取消分配，则在 OOBE 期间将会发生什么情况？ 
-OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对话框。 为了删除 TenantLockdown 的效果，必须首先使用 Autopilot 向设备注册其原始租户，并且必须取消设置，如前面步骤中所述，RequireNetworkInOOBE TenantLockdown CSP 引入的限制。 
+#### 如果在 TenantLockdown 设置为 true 后在 HoloLens 上取消分配 Autopilot 配置文件，则 OOBE 期间会发生什么情况？ 
+OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话框。 为了消除 TenantLockdown 的影响，必须首先仅使用 Autopilot 将设备注册到其原始租户，并且必须按照上一步中的说明取消设置 RequireNetworkInOOBE，然后才能删除 TenantLockdown CSP 引入的限制。 
 
-![设备中在设备上实施策略时的视图。](images/hololens-autopilot-lockdown.png)
+![在设备上实施策略时的设备内视图。](images/hololens-autopilot-lockdown.png)
 
 此信息现在还可以在 [TENANTLOCKDOWN CSP 和 Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)下的其余 Autopilot 中找到。
 
@@ -284,7 +284,7 @@ OOBE 将无限期地等待下载 Autopilot 配置文件，并将显示以下对�
 
 AllowAddProvisioningPackage 和 AllowRemoveProvisioningPackage 的这两个新策略将添加到我们的 [常见设备限制](hololens-common-device-restrictions.md)中。
 
-### Hololens 2 的新 power 策略
+### HoloLens 2 的新 power 策略
 - 当 HoloLens 休眠或通过电源策略锁定时的更多选项。 
 
 这些新添加的策略允许管理员控制电源状态，如空闲超时。 若要阅读有关每个单独策略的详细信息，请单击该策略的链接。

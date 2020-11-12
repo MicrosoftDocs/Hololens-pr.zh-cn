@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134670"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165014"
 ---
 # HoloLens（第一代）硬件
 
@@ -171,16 +171,16 @@ HoloLens 已测试并发现符合 ANSI Z 87.1、CSA Z 94.3 和 EN 166 的基本�
 ## 查找序列号
 
 在右侧镜头下方打印 HoloLens (第一代) 设备的序列号。
-1. 将设备放在您的前面，就像您打算磨损它一样。
+1. 将设备放在你的前面，就像你将在你的头部戴上电脑一样。 设备朝前和直立的方式。
 1. 当镜头仍然正面朝前时，将 deivce 倒置翻转，以便你看到底部。
 1. 右侧的镜头现在将位于左侧，打印在带区上的镜头下是序列号。 
 
-也可以通过连接的电脑找到序列号：
+也可以通过已连接的电脑找到序列号：
 
-1. 插入设备
-1. 在文件资源管理器中导航到**这台电脑**
-1. 右键单击并选择 HoloLens 设备的**属性**
-1. 这将显示设备的系列编号。 此屏幕截图如下所示。
+1. 插上设备
+1. 导航到文件资源管理器中的“**此电脑**”
+1. 右键单击并选择 HoloLens 设备的“**属性**”
+1. 这将显示设备的系列号。 如下面的屏幕截图所示。
 
 <img src="images/hl1-serial-number.png" width="400" height="600" />
 
