@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5f887d7321c391ea9d67833373b39b3c9feeaf2c
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
+ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163094"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "11168515"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
@@ -29,11 +29,16 @@ ms.locfileid: "11163094"
 用户启动 Autopilot 自部署进程时，该过程完成以下步骤：
 
 1. 将设备加入 Azure Active Directory (Azure AD)。
+
    > [!NOTE]  
    > 适用于 HoloLens 的 Autopilot 不支持加入 Active Directory 或混合加入 Azure AD。
+   
 1. 使用 Azure AD 在 Microsoft Intune （或其他 MDM 服务）中注册设备。
+
 1. 下载面向设备的策略、面向用户的应用、证书和网络配置文件。
+
 1. 预配设备。
+
 1. 向用户呈现登录屏幕。
 
 ## 适用于 HoloLens 2 的 Windows Autopilot 个人预览版
@@ -41,14 +46,22 @@ ms.locfileid: "11163094"
 请按照以下步骤设置私人预览版的环境：
 
 1. 请确保符合适用于 HoloLens 2 的 Windows Autopilot 的要求。
-1. 注册“适用于 HoloLens 2 的 Windows Autopilot”个人预览版计划
-1. 验证租户是否已启用 （已注册参加计划）
-1. 在 Windows Autopilot 中注册设备
-1. 创建设备组
-1. 创建部署配置文件
-1. 验证 ESP 配置
-1. 配置 HoloLens 设备的自定义配置文件（已知问题）
-1. 验证 HoloLens 设备的配置文件状态
+
+1. 注册 Windows Autopilot for HoloLens2 私人预览版计划。
+
+1. 验证租户是否已启用（已注册参加计划）。
+
+1. 在 Windows Autopilot 中注册你的设备。
+
+1. 创建设备组。
+
+1. 创建部署配置文件。
+
+1. 验证 ESP 配置。
+
+1. 配置 HoloLens 设备的自定义配置文件（已知问题）。
+
+1. 验证 HoloLens 设备的配置文件状态。
 
 
 ### 1. 请确保符合适用于 HoloLens 2 的 Windows Autopilot 的要求。
@@ -66,7 +79,9 @@ ms.locfileid: "11163094"
 
 每个 HoloLens OS 版本的 Autopilot 特定信息。
 - 若要使用 Autopilot，设备必须具有 [Windows 全息版 2004](hololens-release-notes.md#windows-holographic-version-2004) 或更新版本。
+
 - 为了通过 Wi-Fi 使用 Autopilot，设备必须具有 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 或更新版本。 但是，这些内部版本可能仍然使用以太网适配器。 
+
 - 在内部版本 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 上，已启用新的设备管理选项 [Tenantlockdown CSP 和 Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)。  
 
 如果你想要在你的设备上确认内部版本或更新它，请将其连接到 Windows 10 电脑并启动[高级恢复助理](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。 
@@ -74,10 +89,15 @@ ms.locfileid: "11163094"
 **如果你想尝试 Autopilot 预览版，请在启动 OOBE 和预配过程之前，确保 HoloLens 设备符合以下要求：**
 
 - 确保设备安装了 Windows 全息版的版本 2004（内部版本 19041.1103 或更高版本）。 如果未预安装最新操作系统，则必须使用“[高级恢复配套（ARC）](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)”手动更新。 可在[此处](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)找到说明。 
+
 - 设备必须在 Windows Autopilot 中注册。 有关如何注册设备的更多信息，请参阅 [4. 在 Windows Autopilot 中注册设备](#4-register-devices-in-windows-autopilot)。 推荐的方法是让经销商或分销商为你注册设备。  
+
 - 在 [Windows 全息版 2004](hololens-release-notes.md#windows-holographic-version-2004) 中，在打开 HoloLens 并启动 Autopilot 预配过程之前，需要将设备连接到 Internet。 使用“USB-C 到以太网”适配器将设备连接到以太网，实现有线 Internet 连接。
+
 - 在 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中，设备可能连接到 OOBE 中的 Wi-Fi 以检测 Autopilot。 
+
 - 设备尚不是 Azure AD 的成员，并且未在 Intune（或其他 MDM 系统）中注册。 Autopilot 自部署过程完成这些步骤。 若要确保清理所有设备相关信息，请检查 Azure AD 和 Intune 门户中的“**设备**”页面。
+
 - 若要配置和管理 Autopilot 自部署模式配置文件，请确保你有权访问[Microsoft 终结点管理器管理中心](https://endpoint.microsoft.com)。
 
 
@@ -101,17 +121,22 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
 提交请求后，若要验证是否为 Autopilot 计划启用了租户，请按照以下步骤进行操作：
 
 1. 登录 [Microsoft 终结点管理器管理中心](https://endpoint.microsoft.com)。
+
 1. 选择“**设备**” > “**Windows**” > “**Windows 注册**” > “**Windows Autopilot 部署配置文件**” > “**创建配置文件**”。  
    
    ![“创建配置文件”下拉列表包含一个 HoloLens 项。](./images/hololens-ap-enrollment-profiles.png)
-  你将看到包括 **HoloLens**的列表。 如果不存在此选项，请使用[反馈](hololens2-autopilot.md#feedback-for-autopilot)选项之一与我们联系。
+   
+   你将看到包括 **HoloLens**的列表。 如果不存在此选项，请使用[反馈](hololens2-autopilot.md#feedback-for-autopilot)选项之一与我们联系。
 
 ### 4. 在 Windows Autopilot 注册设备
 
 在准备阶段，有两种主要方式可将设备注册到 Windows Autopilot： 
 
-1. **下订单时，联系分销商或经销商以注册设备**或
-2. **检索硬件哈希（也称为硬件 ID）并手动注册设备。** 
+1. **在下订单时，联系分销商或经销商以注册设备**。
+
+   或者
+   
+2. **检索硬件哈希（也称为硬件 ID）并手动注册设备**。 
 
 有关设备注册的详细信息，请参阅 [将设备添加到 Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices) 文档。  
 
@@ -120,16 +145,22 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
 设备可以在 OOBE 过程中，或者稍后当设备所有者启动诊断日志收集过程（在以下过程中描述）时，将其硬件哈希记录在 CSV 文件中。 通常情况下，设备所有者是第一个登录到设备的用户。
 
 1. 启动 HoloLens 2 设备。
+
 1. 在设备上，同时按“电源”和“音量”按钮，然后松开。 设备收集诊断日志和硬件哈希，并将它们存储在一组 .zip 文件中。 
+
    1. 有关完整的详细信息和如何执行此操作的说明视频，请阅读有关[脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics)的信息。 
+   
 1. 使用 USB-C 电缆将设备连接到计算机。
+
 1. 在计算机上，打开“文件资源管理器”。 打开**此计算机 \\\<*HoloLens device name*>\\内部存储\\文档**，并定位至AutopilotDiagnostics.zip 文件。  
 
    > [!NOTE]  
    > .zip 文件可能不会立即可用。 如果该文件尚未准备好，可能会在“文档”文件夹中看到一个 HoloLensDiagnostics.temp文件。 若要更新文件列表，请刷新窗口。
 
 1. 提取 AutopilotDiagnostics.zip 文件的内容。
+
 1. 在提取的文件中，找到文件名前缀为 “DeviceHash” 的 CSV 文件。 将该文件复制到计算机上的驱动器上，以后可以访问它。  
+
    > [!IMPORTANT]  
    > CSV 文件中的数据应使用以下标题和行格式：
    > ```
@@ -143,6 +174,7 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
 1. 在“**添加 Windows Autopilot 设备**”中，选择 DeviceHash CSV 文件，选择“**打开**”，然后选择“**导入**”。  
    
    ![使用导入命令导入硬件哈希。](./images/hololens-ap-hash-import.png)
+   
 1. 完成导入后，选择“**设备**” > “**Windows**” > “**Windows 注册**” > “**设备**” > “**同步**”。此过程可能需要几分钟时间才能完成，具体取决于同步的设备数量。 若要查看已注册的设备，请选择“**刷新**”。  
    
    ![使用“同步”和“刷新”命令查看设备列表。](./images/hololens-ap-devices-sync.png)  
@@ -150,8 +182,11 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
 ### 5. 创建设备组
 
 1. 在Microsoft 终结点管理器管理中心中，选择“**组**” > “**新建组**”。
+
 1. 对于“**组类型**”，选择“**安全性**”，然后输入组名称和描述。
+
 1. 对于“**成员身份类型**”，选择“**已指派**” 或“**动态设备**”。
+
 1. 执行下列操作之一：  
    
    - 如果在上一步中为“**成员身份类型**”选择了“**已指派**”，请选择“**成员**”，然后将 Autopilot 设备添加到组中。 通过将设备序列号用作设备名称，列出尚未注册的 Autopilot 设备。
@@ -188,6 +223,7 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
    如果要排除任何组，请选择“**选择要排除的组**”，然后选择希望排除的组。
 
    ![将设备组分配到配置文件。](./images/hololens-ap-profile-assign-devicegroup.png)
+   
 1. 在“**审阅 + 创建**”页面上，查看设置，然后选择“**创建**”以创建配置文件。  
    
    ![审阅 + 创建](./images/hololens-ap-profile-summ.png)
@@ -196,24 +232,31 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
 
 注册状态页面（ESP）显示完整的设备配置过程的状态，此过程在 MDM 托管用户首次登录设备时运行。 请确保你的 ESP 配置类似于以下内容，并验证分配是否正确。  
 
-![EAP 配置](./images/hololens-ap-profile-settings.png)
+> [!div class="mx-imgBorder"]
+> ![EAP 配置](./images/hololens-ap-profile-settings.png)
 
 ### 8. 验证 HoloLens 设备的配置文件状态
 
 1. 在 Microsoft 终结点管理器管理中心中，选择“**设备**” > “**Windows**” > “**Windows 注册**” > “**设备**”。
+
 1. 验证是否列出了 HoloLens 设备，以及其配置文件的状态是否为“**已指派**”。  
+
    > [!NOTE]  
    > 可能需要几分钟时间，配置文件才会分配到设备。  
-   
-   ![设备和配置文件分配。](./images/hololens-ap-devices-assignments.png)
+
+   > [!div class="mx-imgBorder"]   
+   > ![设备和配置文件分配。](./images/hololens-ap-devices-assignments.png)
 
 ## 适用于 HoloLens 2 用户体验的 Windows Autopilot
 
 完成上述说明后，HoloLens 2 用户将通过以下体验来预配其 HoloLens 设备：  
 
 1. Autopilot 体验需要 Internet 访问。 请使用以下选项之一提供 Internet 访问：
+
     - 将你的设备连接到 OOBE 中的 Wi-Fi 网络，然后让它自动检测 Autopilot 体验。 这是你唯一需要与 OOBE 交互的时间，直到 Autopilot 体验自行完成。 请注意，默认情况下，HoloLens 2 会在检测到 Internet 后等待 10 秒钟以检测 Autopilot。 如果在 10 秒内未检测到 autopilot 配置文件，OOBE 将显示 EULA。 如果遇到这种情况，请重新启动你的设备，以便再次尝试检测 Autopilot。 另请注意，只有在设备上设置了 TenantLockdown 策略时，OOBE 才能无限期地等待 Autopilot。
+    
     - 使用“USB-C 到以太网”适配器将设备与以太网连接，以实现有线 Internet 连接，并使 HoloLens 2 自动完成 Autopilot 体验。
+    
     - 通过“USB-C 到 Wifi”适配器连接设备以实现无线 Internet 连接，并使 HoloLens 2 自动完成 Autopilot 体验。
 
        > [!NOTE]
@@ -226,18 +269,13 @@ Microsoft 每周将会测试一次租户。 测试完成后，你将收到一封
 
 1. 设备应自动启动 OOBE。 不要与 OOBE 交互。 放松一下！ 让 HoloLens 2 检测网络连接并允许自动完成 OOBE。 设备可能会在 OOBE 过程中重启。 OOBE 屏幕应类似于以下内容。
    
-   ![OOBE 步骤 1](./images/hololens-ap-uex-1.png)
-   ![OOBE 步骤 2](./images/hololens-ap-uex-2.png)
-   ![OOBE 步骤 3](./images/hololens-ap-uex-3.png)
-   ![OOBE 步骤 4](./images/hololens-ap-uex-4.png)
+   ![OOBE 步骤 1](./images/autopilot-welcome.jpg)
+   ![OOBE 步骤 2](./images/autopilot-step-complete.jpg)
+   ![OOBE 步骤3](./images/autopilot-device-setup.jpg)
 
 1. OOBE 结束时，可以使用用户名和密码登录到设备。
 
-   ![OOBE 步骤 5](./images/hololens-ap-uex-5.png)
-
-## 已知问题
-
-- 无法安装使用设备安全上下文的应用程序。
+   <br/><img src="./images/other-user.jpg" width="450" height="700" />
 
 ## Tenantlockdown CSP 和 Autopilot
 - 将设备锁定到租户后，即使进行设备重置或重新刷新也可将设备保留在组织的租户上。 通过预配禁用帐户创建，进一步增强安全性。 
@@ -264,7 +302,7 @@ OMA-URI 值应为 ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. 使 HoloLens 2 设备成为在上一步中创建的组的成员并触发同步。  
 
-在 Intune 门户中验证设备配置是否已成功应用。 此设备配置成功应用于 Hololens 2 设备后，TenantLockdown 的效果将处于活动状态。
+在 Intune 门户中验证设备配置是否已成功应用。 此设备配置成功应用于 HoloLens 2 设备后，TenantLockdown 的效果将处于活动状态。
 
 ### 如何使用 Intune 在 HoloLens 2 上取消设置 TenantLockdown 的 RequireNetworkInOOBE？ 
 1. 从先前分配了上面创建的设备配置的设备组中删除 HoloLens 2。 
@@ -278,20 +316,31 @@ OMA-URI 值应为 ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. 使 HoloLens 2 设备成为在上一步中创建的组的成员并触发同步。
 
-在 Intune 门户中验证设备配置是否已成功应用。 此设备配置成功应用于 Hololens 2 设备后，TenantLockdown 的效果将处于非活动状态。 
+在 Intune 门户中验证设备配置是否已成功应用。 此设备配置成功应用于 HoloLens 2 设备后，TenantLockdown 的效果将处于非活动状态。 
 
 ### 如果在 TenantLockdown 设置为 true 后在 HoloLens 上取消分配 Autopilot 配置文件，则 OOBE 期间会发生什么情况？ 
 OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话框。 为了消除 TenantLockdown 的影响，必须首先仅使用 Autopilot 将设备注册到其原始租户，并且必须按照上一步中的说明取消设置 RequireNetworkInOOBE，然后才能删除 TenantLockdown CSP 引入的限制。 
 
 ![在设备上实施策略时的设备内视图。](images/hololens-autopilot-lockdown.png)
 
+## 已知问题
+
+- 在 Intune 中配置的基于设备上下文的应用程序安装尚不起作用。
+- 在通过 Wi-Fi 设置自动驾驶仪时，可能会出现首次建立 Internet 连接时未下载自动驾驶仪配置文件的情况，并出示最终用户许可协议（EULA），使得用户可以选择继续进行非自动驾驶仪的设置体验。 若要重新尝试使用自动驾驶仪进行设置，请将设备置于睡眠状态再重新启动，或者重启设备，让其再次尝试。
+
+### 疑难解答
+
+以下文章可能是你了解更多信息和解决自动驾驶问题的有用资源，但请注意，这些文章是基于Windows 10 桌面版，并非所有信息都适用于 HoloLens：
+- [Windows Autopilot - 已知问题](https://docs.microsoft.com/mem/autopilot/known-issues)
+- [解决 Microsoft Intune 中的 Windows 设备注册问题](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot - 策略冲突](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+
 ## Autopilot 的反馈
 
 若要提供反馈或报告问题，请使用以下方法之一：
 
-- 使用反馈中心应用。 可以在已连接 HoloLens 的计算机上找到此应用。 在反馈中心中，选择“**企业管理**” > “**设备**”类别。  
-
-  提供反馈或报告问题时，请提供详细说明。 如果适用，则包括屏幕截图和日志。
-- 向 [hlappreview@microsoft.com](mailto:hlappreview@microsoft.com)发送电子邮件。 在“电子邮件主题”中，输入**\<*Tenant*>适用于 HoloLens 2 的 Autopilot 评估反馈**（其中 \<*Tenant*> 是 Intune 租户的名称）。
+- 使用反馈中心应用。 可以在已连接 HoloLens 的计算机上找到此应用。 在反馈中心中，选择“**企业管理**” > “**设备**”类别。 提供反馈或报告问题时，请提供详细说明。 如果适用，则包括屏幕截图和日志。
+- 如果在 Intune 中遇到设备注册过程中的问题，或者未分配自动驾驶配置文件，请在[https://aka.ms/apsupport](https://aka.ms/apsupport)上开具支持票证。
+- 如果在 Autopilot 体验期间在 HoloLens 设备上遇到问题，请使用[离线诊断日志](hololens-diagnostic-logs.md#offline-diagnostics)在[https://aka.ms/hlsupport](https://aka.ms/hlsupport)上开具支持票据。
 
   在邮件中提供详细说明。 但是，除非支持人员特别要求，否则请勿包括屏幕截图或日志之类的数据。 此类数据可能包括私人或个人身份信息（PII）。
