@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168515"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176894"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
@@ -325,8 +325,8 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 
 ## 已知问题
 
-- 在 Intune 中配置的基于设备上下文的应用程序安装尚不起作用。
-- 在通过 Wi-Fi 设置自动驾驶仪时，可能会出现首次建立 Internet 连接时未下载自动驾驶仪配置文件的情况，并出示最终用户许可协议（EULA），使得用户可以选择继续进行非自动驾驶仪的设置体验。 若要重新尝试使用自动驾驶仪进行设置，请将设备置于睡眠状态再重新启动，或者重启设备，让其再次尝试。
+- 在 Intune 中配置的基于设备上下文的应用程序安装尚不起作用。 [了解有关设备上下文和用户上下文安装的详细信息。](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   通过 Wi-Fi 设置 Autopilot 时，可能存在 Autopilot 配置文件在首次建立 Internet 连接时未下载的情况。 在此情况下，将显示最终用户许可协议 (EULA) ，并且用户可以选择继续非 Autopilot 的设置体验。 若要重新尝试使用自动驾驶仪进行设置，请将设备置于睡眠状态再重新启动，或者重启设备，让其再次尝试。
 
 ### 疑难解答
 
