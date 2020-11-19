@@ -12,7 +12,7 @@
 ### [HoloLens 2 清洁常见问题解答](hololens2-maintenance.md)
 ### [HoloLens 2 的受支持语言](hololens2-language-support.md)
 ### [开始使用 HoloLens 2](hololens2-basic-usage.md)
-### [HoloLens 开发版常见问题解答](hololens2-development-edition-faq.md)
+### [HoloLens 2 开发版常见问题](hololens2-development-edition-faq.md)
 
 
 ## HoloLens（第一代）入门
