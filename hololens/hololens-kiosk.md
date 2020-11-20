@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
+ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162968"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182003"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -53,7 +53,10 @@ ms.locfileid: "11162968"
 
 您可以将任何 HoloLens 2 设备配置为使用展台模式。
 
-若要将 HoloLens (第一代) 设备配置为使用展台模式，必须首先确保该设备运行的是 Windows 10 版本1803或更高版本。 如果你已使用 Windows 设备恢复工具将 HoloLens (第一代) 设备恢复为默认版本，或者如果已安装了最新的更新，则设备已准备好进行配置。
+> [!IMPORTANT]
+> 展台模式仅在设备具有 Windows 全息版企业版时可用。 所有 HoloLens 2 设备均附带 Windows 全息版，并且没有其他版本。 每个 HoloLens 2 设备都可以从盒中运行展台模式。
+>
+> HoloLens (第一代) 设备需要通过操作系统版本和操作系统版本进行升级。 下面是有关将 HoloLens (第一代) 更新到 [Windows 全息版 Windows](hololens1-upgrade-enterprise.md) 版本的详细信息。 若要更新 HoloLens (第一代) 设备以使用展台模式，必须首先确保该设备运行的是 Windows 10 版本1803或更高版本。 如果你已使用 Windows 设备恢复工具将 HoloLens (第一代) 设备恢复为默认版本，或者如果已安装了最新的更新，则设备已准备好进行配置。
 
 > [!IMPORTANT]  
 > 若要帮助保护在展台模式下运行的设备，请考虑添加关闭诸如 USB 连接等功能的设备管理策略。 此外，检查更新铃声设置以确保在工作时间内不会自动更新。
@@ -415,9 +418,6 @@ ms.locfileid: "11162968"
 ## 使用 Windows Device Portal 设置单应用展台
 
 若要使用 Windows Device Portal 设置展台模式，请按照下列步骤操作。
-
-> [!IMPORTANT]
-> 展台模式仅在设备安装了 [Windows 全息版企业](hololens1-upgrade-enterprise.md) 版时可用。
 
 1. [将 HoloLens 设备设置为使用 Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)。 Device Portal 是 HoloLens 上的 Web 服务器，你可以从电脑上的 Web 浏览器连接到它。
 
