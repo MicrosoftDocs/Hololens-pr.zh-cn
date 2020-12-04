@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
+ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915937"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195278"
 ---
 # 疑难解答
 
@@ -28,14 +28,14 @@ ms.locfileid: "10915937"
 
 如果您的 HoloLens 无法启动：
 
-- 如果电源按钮旁边的指示灯未亮起，或者只有一个指示灯闪烁，则您可能需要为[HoloLens 收费。](hololens-recovery.md#charge-the-device)
-- 如果在按下电源按钮时指示灯亮起，但在显示器上看不到任何内容，请[preform 设备的硬重置](hololens-recovery.md#hard-reset-procedure)。
+- 如果电源按钮旁边的指示灯未亮起，或者只有一个指示灯闪烁，则您可能需要为 [HoloLens 收费。](hololens-recovery.md#charge-the-device)
+- 如果在按下电源按钮时指示灯亮起，但在显示器上看不到任何内容，请 [preform 设备的硬重置](hololens-recovery.md#hard-reset-procedure)。
 
 如果你的 HoloLens 已冻结或无响应：
 
 - 按 "电源" 按钮以关闭 HoloLens，直到所有五个指示灯关闭，或者如果指示灯无响应，则为15秒。 若要启动 HoloLens，请再次按下电源按钮。
 
-如果这些步骤不起作用，可以尝试[恢复 hololens 2 设备](hololens-recovery.md)或[hololens (第一代) 设备。](hololens1-recovery.md)
+如果这些步骤不起作用，可以尝试 [恢复 hololens 2 设备](hololens-recovery.md) 或 [hololens (第一代) 设备。](hololens1-recovery.md)
 
 ## 全息影像看起来不好
 
@@ -45,6 +45,17 @@ ms.locfileid: "10915937"
 - 增加房间中的光线。
 - 浏览和查看你的周围环境，以便 HoloLens 能够更完整地对其进行扫描。
 - 为眼睛校准您的 HoloLens。 转到 "**设置**  >  **系统**  >  **实用工具**"。 在“**校准**”下，选择“**打开校准**”。
+ 
+### 报告全息图不稳定或未正确显示的问题
+ 
+1. 请记录和 [混合现实捕获](holographic-photos-and-videos.md#capture-a-mixed-reality-video) 问题的视频。 此视频稍后可通过 "反馈中心" 上传为附加的文件。  
+1. 通过 "**设置**" 应用的 "设置" 应用 > "**隐私**  ->  **诊断" & 反馈**和可选的 "**诊断" 数据**下，确保切换设置为 **"打开**"
+1. 通过更新到最新的 [Windows 全息操作系统、 (20H2 或更高版本的) ， ](hololens-release-notes.md#windows-holographic-version-20h2)获取最新的全息图缩放和稳定性修复。 更新后执行以下操作：
+    1. 通过 "**设置**" 应用删除所有全息影像->**系统**  ->  **全息影像**-> 然后选择 "**删除所有全息影像**" 并从新地图开始。
+    1. 通过戴上 HoloLens 并浏览房间并查看空间中的所有区域和表面来创建新的空间地图。 为2-3 分钟执行此操作。
+    1. 执行 IPD 校准。 转到 "**设置**  >  **系统**  >  **实用工具**"。 在“**校准**”下，选择“**打开校准**”。
+    1. 重新测试方案，并查看它是否仍然存在。
+1. 如果更新不能解决问题，请为 " [反馈中心" 问题](hololens-feedback.md)提供文件。 填写反馈后，您可以使用 " **共享** " 按钮创建一个易于共享的链接，该链接可以在联系支持人员时发送。
 
 ## HoloLens 未响应手动输入
 
@@ -52,7 +63,7 @@ ms.locfileid: "10915937"
 - 在 HoloLens (第一代) ，注视光标从一个点更改为圆圈
 - 在 HoloLens 2 上，当你的手型接近盖板时，将显示一个指尖光标，当 slates 更远时，将显示一个手形射线
 
-许多沉浸式应用都遵循类似于混合现实主页的输入模式。  了解有关在[HoloLens (第一代) ](hololens1-basic-usage.md#use-hololens-with-your-hands)和[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用手动输入的详细信息。
+许多沉浸式应用都遵循类似于混合现实主页的输入模式。  了解有关在 [HoloLens (第一代) ](hololens1-basic-usage.md#use-hololens-with-your-hands) 和 [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上使用手动输入的详细信息。
 
 如果戴上手套，请注意，某些类型的手套不能与手动跟踪一起使用。  一个常见的示例是黑色橡胶手套，它趋向于吸收红外线，而不是由深度相机拾取。  如果你的工作涉及橡胶手套，我们建议尝试使用较浅的颜色，如蓝色或灰色。  另一个示例是大型 baggy 手套，它往往会遮盖你的手型形状。 我们建议使用符合窗体的手套以获得最佳效果。
 
@@ -67,16 +78,16 @@ ms.locfileid: "10915937"
 如果 HoloLens 无法映射或加载你的空间，它将进入 "有限模式"，你将无法放置全息影像或查看你放置的全息影像。 你可以尝试以下操作：
 
 - 请确保你的环境中有足够的光线，以便 HoloLens 可以查看和映射空间。
-- 请确保您已连接到 Wi-fi 网络。 如果你未连接到 Wi-fi，则 HoloLens 无法识别和加载已知空间。
+- 请确保已连接到 Wi-Fi 网络。 如果你未连接到 Wi-fi，则 HoloLens 无法识别和加载已知空间。
 - 如果需要创建新的空间，请连接到 Wi-fi，然后重新启动 HoloLens。
 - 若要查看正确的空间是否处于活动状态，或者要手动加载空间，请转到 "**设置**  >  **系统**  >  **空间**"。
-- 如果加载了正确的空间，但仍遇到问题，则空间可能已损坏。 若要解决此问题，请选择空间，然后选择 "**删除**"。 删除空间后，HoloLens 将开始映射你的周围环境并创建新空间。
+- 如果加载了正确的空间，但仍遇到问题，则空间可能已损坏。 若要解决此问题，请选择空间，然后选择 " **删除**"。 删除空间后，HoloLens 将开始映射你的周围环境并创建新空间。
 
 ## 我的 HoloLens 无法分辨我正在输入的空间
 
 如果你的 HoloLens 无法识别和加载你自动加载的空间，请检查以下因素：
 
-- 请确保您已连接到 Wi-fi
+- 请确保您已连接到 Wi-Fi
 - 确保房间中有充足的光线
 - 请确保没有对周围环境进行任何重大更改。
 
@@ -89,12 +100,12 @@ ms.locfileid: "10915937"
 - 删除一些未使用的空间。 转到 "**设置**  >  **系统**  >  **空间**"，选择不再需要的空间，然后选择 "**删除**"。
 - 删除一些你放置的全息影像。
 - 从 "照片" 应用中删除一些图片和视频。
-- 从 HoloLens 中卸载某些应用。 在 "**所有应用**" 列表中，点击并按住要卸载的应用，然后选择 "**卸载**"。
+- 从 HoloLens 中卸载某些应用。 在 " **所有应用** " 列表中，点击并按住要卸载的应用，然后选择 " **卸载**"。
 
 ## 我的 HoloLens 无法创建新的空间
 
-最可能的问题是你的存储空间不足。 请尝试以前的一个[提示](#im-getting-a-low-disk-space-error)，释放一些磁盘空间。
+最可能的问题是你的存储空间不足。 请尝试以前的一个 [提示](#im-getting-a-low-disk-space-error) ，释放一些磁盘空间。
 
 ## HoloLens 模拟器无法正常工作
 
-有关 HoloLens 模拟器的信息位于我们的开发人员文档中。  阅读有关[对 HoloLens 模拟器进行故障排除的](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting)详细信息。
+有关 HoloLens 模拟器的信息位于我们的开发人员文档中。  阅读有关 [对 HoloLens 模拟器进行故障排除的](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting)详细信息。
