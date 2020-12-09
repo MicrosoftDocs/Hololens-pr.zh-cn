@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 23cac991786c5540d7dadfcaae7ba2fe1d84dc64
-  ms.sourcegitcommit: 58812149a9795b46799845e89f98d4cfd72ded42
+  ms.openlocfilehash: d985c89a3352f1fcd8967970a1211315403dca15
+  ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "11105393"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "11195605"
 landingContent:
 - title: HoloLens 概述
   linkLists:
@@ -36,6 +36,16 @@ landingContent:
       url: hololens-calibration.md
     - text: 如何更新 HoloLens
       url: hololens-update-hololens.md
+- title: 部署指南
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 常见部署方案
+      url: common-scenarios.md
+    - text: 使用 Remote Assist 云连接 HoloLens 2 规模部署
+      url: hololens2-cloud-connected-overview.md
+    - text: 脱机安全部署
+      url: hololens-common-scenarios-offline-secure.md
 - title: 准备
   linkLists:
   - linkListType: get-started

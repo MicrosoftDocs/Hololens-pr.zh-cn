@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162896"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201366"
 ---
 # 通过应用安装程序在 HoloLens 2 上安装应用
 
 
-我们将在 Windows 全息版20H2 更新后立即发布应用安装程序功能。 我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
 
-> [!IMPORTANT]
-> 此功能目前仅适用于 Windows 预览体验成员版本。 [了解有关如何在 Windows 预览体验计划内部版本中注册的详细信息](hololens-insider.md)。
+> [!NOTE]
+> 此功能在 [Windows 全息版 20H2-2020 更新](hololens-release-notes.md)中提供。 确保您的设备已 [更新](hololens-update-hololens.md) 为使用此功能。
 
-在我们的 Windows 预览体验计划版本中，我们将 **添加 (应用安装程序) 的新功能，让你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+我们已 **添加了 (应用安装程序) 的新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
 
 如果以下 **任何** 条件成立，设备将被视为 "托管"：
 - MDM 已 [注册](hololens-enroll-mdm.md)

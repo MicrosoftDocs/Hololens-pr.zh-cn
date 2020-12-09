@@ -1,5 +1,5 @@
 ---
-title: Microsoft HoloLens 内部预览版
+title: Microsoft HoloLens 的 Insider Preview
 description: 开始使用预览体验计划是很简单的，以便为 HoloLens 的下一个主要操作系统更新提供有价值的反馈。
 ms.prod: hololens
 ms.sitesec: library
@@ -16,46 +16,20 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb8ac3b6b74fd6998cde4d32df12dcbd84556597
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162952"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201336"
 ---
-# Microsoft HoloLens 内部预览版
+# Microsoft HoloLens 的 Insider Preview
 
 欢迎使用适用于 HoloLens 的最新预览体验计划预览版！ 这是一种非常简单的功能 [，可提供](hololens-insider.md#start-receiving-insider-builds) 针对 HoloLens 的下一个主要操作系统更新的宝贵反馈。
 
 ## Windows 预览体验计划发行说明
 
-### 通过应用安装程序在 HoloLens 2 上安装应用
-我们将在 Windows 全息版20H2 更新后立即发布应用安装程序功能。 我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
-
-如果以下 **任何** 条件成立，设备将被视为 "托管"：
-- MDM 已 [注册](hololens-enroll-mdm.md)
-- 配置了 [预配包](hololens-provisioning.md)
-- 用户 [标识](hololens-identity.md) 为 AAD
-
-现在，你可以安装应用，而无需启用开发人员模式或使用 Device Portal。  只需通过 USB 或边缘) 将 (下载到你的设备，然后在文件资源管理器中导航到 Appx 捆绑系统，系统会提示你启动安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与使用 MDM 的 LOB 应用部署功能从 Microsoft Store 或旁加载安装的应用一样，应用需要使用 [签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 进行数字签名，并且 [用于签名的证书必须受](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) HoloLens 设备信任才能部署应用。
-
-**应用程序安装说明。**
-
-1.  确保你的设备不被视为托管设备
-1.  确保 HoloLens 2 设备已开机且已连接到你的电脑
-1.  确保已登录到 HoloLens 2 设备
-1.  在你的电脑上导航到你的自定义应用，并将 yourapp 复制到 yourdevicename\Internal Storage\Downloads。   完成文件复制后，您可以断开设备连接
-1.  从 HoloLens 2 设备打开 "开始" 菜单，选择 "所有应用"，然后启动 "文件资源管理器" 应用。
-1.  导航到 "下载" 文件夹。 你可能需要在应用的左侧面板上，选择 "此设备"，然后导航到 "下载"。
-1.  选择 yourapp 文件。
-1.  应用安装程序将启动。 选择 "安装" 按钮以安装你的应用。
-已安装的应用将在安装完成后自动启动。
-
-你可以在 [Windows 通用示例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 上找到示例应用来测试此流程。
-
-有关 [在 HoloLens 2 上安装应用](app-deploy-app-installer.md)的完整过程，请参阅应用安装程序。  
-
-![通过应用安装程序安装 MRTK 示例](images/hololens-app-installer-picture.jpg)
+我们最近发布了所有 Windows 预览体验计划功能。 由于所有这些功能现在均可使用，我们建议你阅读我们的 [发行说明](hololens-release-notes.md) ，查看我们的所有最新功能。 继续在此处查看，了解我们何时开始外部测试版新的激动人心的功能来试用！
 
 ## 开始接收 Insider 内部版本
 

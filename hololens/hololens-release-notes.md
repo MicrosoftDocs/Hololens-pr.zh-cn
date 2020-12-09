@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176904"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201376"
 ---
 # HoloLens 2 发行说明
 
@@ -28,6 +28,52 @@ ms.locfileid: "11176904"
 
 >[!NOTE]
 > 若要阅读 HoloLens 模拟器发行说明，请 [访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
+
+
+## Windows 全息版 20H2-2020 年12月更新
+- 内部版本19041.1131
+
+### 通过应用安装程序在 HoloLens 2 上安装应用
+
+我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+
+如果以下 **任何** 条件成立，设备将被视为 "托管"：
+- MDM 已 [注册](hololens-enroll-mdm.md)
+- 配置了 [预配包](hololens-provisioning.md)
+- 用户 [标识](hololens-identity.md) 是 Azure AD
+
+现在，你可以安装应用，而无需启用开发人员模式或使用 Device Portal。  只需通过 USB 或边缘) 将 (下载到你的设备，然后在文件资源管理器中导航到 Appx 捆绑系统，系统会提示你启动安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与使用 MDM 的 LOB 应用部署功能从 Microsoft Store 或旁加载安装的应用一样，应用需要使用 [签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 进行数字签名，并且 [用于签名的证书必须受](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) HoloLens 设备信任才能部署应用。
+
+**应用程序安装说明。**
+
+1.  确保你的设备不被视为托管设备
+1.  确保 HoloLens 2 设备已开机且已连接到你的电脑
+1.  确保已登录到 HoloLens 2 设备
+1.  在你的电脑上导航到你的自定义应用，并将 yourapp 复制到 yourdevicename\Internal Storage\Downloads。   完成文件复制后，您可以断开设备连接
+1.  从 HoloLens 2 设备打开 "开始" 菜单，选择 "所有应用"，然后启动 "文件资源管理器" 应用。
+1.  导航到 "下载" 文件夹。 你可能需要在应用的左侧面板上，选择 "此设备"，然后导航到 "下载"。
+1.  选择 yourapp 文件。
+1.  应用安装程序将启动。 选择 "安装" 按钮以安装你的应用。
+已安装的应用将在安装完成后自动启动。
+
+你可以在 [Windows 通用示例 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 上找到示例应用来测试此流程。
+
+有关 [在 HoloLens 2 上安装应用](app-deploy-app-installer.md)的完整过程，请参阅应用安装程序。  
+
+![通过应用安装程序安装 MRTK 示例](images/hololens-app-installer-picture.jpg)
+
+### 更新中的改进和修复：
+
+- 现在，手动跟踪会在许多新情况下进行跟踪，这种情况以前可能会丢失。  在某些新情况下，只有 palm 位置会根据用户的实际情况继续更新，而另一个接头则基于上一个姿势推断。  此更改有助于提高 slapping、抛出、scooping 和鼓掌等移动中的跟踪一致性。  它还有助于在手形接近于曲面或保留对象的情况下使用。  如果正在推断手动接头，则 [每个 "联合精度](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) " 值将设置为 "近似值"，而不是 "高"。
+- 修复了 Azure AD 帐户的 PIN 重置会显示错误 "出现错误" 的问题。
+- 当从 "设置" 应用、"新建用户" 或 "通知 toast" 启动 ET、虹膜时，用户应看到较少的引导后 OOBE 崩溃。
+- 用户应具有来自 OOBE 的正确时区。
+
+## Windows 全息版 1903-2020 更新
+- 内部版本18362.1088
+
+此每月质量更新不包含任何显著的更改，我们鼓励你试用我们最新的 Windows 全息版 20H2-2020-12 月更新和在内部版本中添加的新应用安装程序功能。
+
 
 ## Windows 全息版20H2
 - 内部版本19041.1128
@@ -46,7 +92,7 @@ Windows 全息版20H2 现已推出，并向 HoloLens 2 用户和 IT 专业人员
 | [在 OOBE 中自动确认预配程序包](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 预配包将在 OOBE 期间从设置页面自动应用。                                                         |
 | [自动预配，不使用 UI](hololens-release-notes.md#automatic-provisioning-without-using-ui) | 如何将预配自动启动和自动确认结合在一起。 |
 | [将 Autopilot 与 Wi-Fi 连接结合使用](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | 从设备 Wi-Fi 使用 autopilot，而无需使用以太网适配器。 |
-| [Tenantlockdown CSP 和 Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | 应用租户注册和应用策略后，设备在重置或重新刷新设备时，即可随时在该租户中注册。 |
+| [Tenantlockdown 云解决方案提供商和 Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | 应用租户注册和应用策略后，设备在重置或重新刷新设备时，即可随时在该租户中注册。 |
 | [全局分配的访问权限](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | 适用于多个应用展台模式的新配置方法，可在系统级别应用展台，使其适用于所有。                  |
 | [在多应用展台中自动启动应用](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | 将应用程序设置为在登录到多应用展台模式时自动启动。                                                        |
 | [故障处理的展台模式行为更改](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 展台模式故障现在具有限制性的回退。                                                                                                |
@@ -169,7 +215,7 @@ Windows 全息版20H2 现已推出，并向 HoloLens 2 用户和 IT 专业人员
 
 HoloLens 2 设备现在支持 TenantLockdown for [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2)中的 CSP。 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 允许仅使用 Autopilot 将 HoloLens 2 绑定到 MDM 注册。 在 HoloLens 2 上将 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 或 false（初始设置）值后，即使进行重新刷新、操作系统更新，该值仍将保留在设备上。 
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP 允许仅使用 Autopilot 将 HoloLens 2 绑定到 MDM 注册。  在 HoloLens 2 上将 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 或 false（初始设置）值后，即使进行重新刷新、操作系统更新，该值仍将保留在设备上。 
 
 在 HoloLens 2 上将 TenantLockdown CSP 的 RequireNetworkInOOBE 节点设置为 true 后， OOBE 将无限期等待 Autopilot 配置文件在网络连接后成功下载并应用。 
 
@@ -493,7 +539,7 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新策略�
 
 用户启动 Autopilot 自部署过程后，该过程将完成以下步骤：
 
-1. 将设备加入 Azure Active Directory (Azure AD)。
+1. 将设备加入 Azure Active Directory （Azure AD）。
 1. 使用 Azure AD 在 Microsoft Intune （或其他 MDM 服务）中注册设备。
 1. 下载面向设备的策略、证书和网络配置文件。
 1. 预配设备。
@@ -572,7 +618,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 
 这些 "机箱中" 应用支持深色模式： 
 
-- “设置” 
+- 设置 
 - Microsoft Store 
 - Mail 
 - 日历 
@@ -628,7 +674,7 @@ NetworkQoSPolicy 配置服务提供程序创建网络服务质量 (QoS) 策略�
 许多 Windows 应用均支持深色模式和浅色模式。 HoloLens 2 客户现在可以为支持两种配色方案的应用选择默认模式。 根据客户反馈，我们将默认应用模式设置为 "深色"，但你可以随时轻松地更改此设置：导航到 " **设置" > "系统 > 颜色** " 以找到 **"选择默认应用模式"。**
 
 这些 "机箱中" 应用支持深色模式：
-- “设置”
+- 设置
 - Microsoft Store
 - Mail
 - 日历

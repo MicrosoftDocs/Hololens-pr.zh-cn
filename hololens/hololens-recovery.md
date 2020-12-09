@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996410"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195595"
 ---
 # 重启、重置或恢复 HoloLens 2
 
@@ -57,7 +57,7 @@ ms.locfileid: "10996410"
 
 4. 将设备连接到主机计算机，然后打开设备管理器。 （对于 Windows 10，请按“**Windows**”键，然后按“**X**”键，然后选择“**设备管理器**”），并确保设备正确枚举为 *Microsoft HoloLens*，如下图所示：
 
-   ![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 设备管理器](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### 硬重置程序
 
@@ -70,7 +70,7 @@ ms.locfileid: "10996410"
 4. 将设备连接到主机计算机。
 5. 打开设备管理器（对于 Windows 10，请按 “**Windows**” 键，然后按 “**X**” 键，然后选择“**设备管理器**”）。 确保设备正确枚举为 *Microsoft HoloLens*，如下图所示：
 
-   ![HoloLens 2 MicrosoftHoloLens恢复](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 设备管理器 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## 对设备进行干净重刷
 
@@ -81,12 +81,12 @@ ms.locfileid: "10996410"
 - [过热](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - 操作系统崩溃（不同于应用程序崩溃）
 
-对设备进行重刷的方法共有两种。 对于两种情况，都必须首先[从 Windows Store 安装 Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
+对设备进行重刷的方法共有两种。 对于这两种情况，必须首先 [从 Windows 应用商店安装高级恢复助手](https://www.microsoft.com/store/productId/9P74Z35SFRS8)。
 
 >[!WARNING]
 >如果刷写设备，则将擦除所有个人数据、应用和设置，包括 TPM 重置。
 
-默认情况下，Advanced Recovery Companion 当前设置为下载 [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004) 的功能版。 若要获取最新的 HoloLens 2 映像刷写工具（FFU）程序包以通过 Advanced Recovery Companion 重刷设备，请[在此处下载](https://aka.ms/hololens2download)。 此版本是最新的通用版本。
+默认情况下，“高级恢复助手”设置为下载最新的功能版本版本，请查看此处阅读[发行说明](hololens-release-notes.md#)以了解最新功能版本。 若要获取最新的 HoloLens 2 映像刷写工具 (FFU) 程序包以通过“高级恢复助手”重刷设备，[请点击这里下载最新的每月 HoloLens 2 图像](https://aka.ms/hololens2download)。 此版本是最新的通用版本。
 
 开始刷写程序前，请确保已在 Windows 10 电脑上安装并运行该应用，并已准备好检测设备。
 
@@ -134,8 +134,8 @@ ms.locfileid: "10996410"
 1. 转到[适用于企业的 Microsoft Store](https://businessstore.microsoft.com)，然后使用 Azure Active Directory 身份登录。
 
 1. 转到“**管理 – 设置**”。 在“**购物体验**”下打开“**显示离线应用**”。 
-1. 转到“**为我的组购买**”，搜索 [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8) 应用。
-1. 将“**许可证类型**”更改为“**脱机**”，然后选择“***管理***”。
+1. 转到“**为我的组购买**”，搜索 [**_高级恢复助手_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
+1. 将“_*许可证类型**”更改为“**_脱机_*”_，然后选择_*“管理”**。
 1. 在“**下载脱机使用的程序包**”下，单击第二个蓝色“**下载**”按钮。 确保文件扩展名为 *.appxbundle*。
 
     - 在此阶段，如果台式机可以访问互联网，请双击程序包以安装该应用程序。
