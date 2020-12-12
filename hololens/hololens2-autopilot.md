@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
-ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
+ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
+ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "11192442"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205764"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
@@ -93,13 +93,12 @@ ms.locfileid: "11192442"
 
 注册 HoloLens 设备有两种主要方法： 
 
-1. **当你下订单时，经销商可在合作伙伴中心注册设备。** 
- > [!NOTE]  
-   > 这是添加设备到 Autopilot 服务的推荐路径。 [了解详细信息](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)。  
+ - **当你下订单时，经销商可在合作伙伴中心注册设备。** 
 
-   或者
+   > [!NOTE]  
+   > 这是添加设备到 Autopilot 服务的推荐路径。 [了解详细信息](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration)。  
    
-2. **检索硬件哈希（也称为硬件 ID）并在 MEM 管理中心手动注册设备**。  
+ - **检索硬件哈希（也称为硬件 ID）并在 MEM 管理中心手动注册设备**。  
 
 **检索硬件哈希**
 
@@ -134,11 +133,13 @@ ms.locfileid: "11192442"
 
 1. 在“**添加 Windows Autopilot 设备**”中，选择 DeviceHash CSV 文件，选择“**打开**”，然后选择“**导入**”。  
    
-   ![使用导入命令导入硬件哈希。](./images/hololens-ap-hash-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![使用导入命令导入硬件哈希。](./images/hololens-ap-hash-import.png)
    
 1. 完成导入后，选择“**设备**” > “**Windows**” > “**Windows 注册**” > “**设备**” > “**同步**”。此过程可能需要几分钟时间才能完成，具体取决于同步的设备数量。 若要查看已注册的设备，请选择“**刷新**”。  
    
-   ![使用“同步”和“刷新”命令查看设备列表。](./images/hololens-ap-devices-sync.png)  
+   > [!div class="mx-imgBorder"]
+   > ![使用“同步”和“刷新”命令查看设备列表。](./images/hololens-ap-devices-sync.png)  
 
 ### 3. 创建设备组
 
@@ -168,7 +169,9 @@ ms.locfileid: "11192442"
 1. 输入配置文件名称和说明，然后选择“**下一步**”。  
    你将看到包括 **HoloLens**的列表。 如果不存在此选项，请使用[反馈](hololens2-autopilot.md#feedback-and-support-for-autopilot)选项之一与我们联系。
 
-   ![添加配置文件名称和说明](./images/hololens-ap-profile-name.png)
+   > [!div class="mx-imgBorder"]
+   > ![添加配置文件名称和说明](./images/hololens-ap-profile-name.png)
+   
 1. 在“**全新体验（OOBE）**”页面上，大多数设置都是预配置的，用于简化此评估的 OOBE。 另外可配置以下设置：  
 
    - **语言（区域）**：选择 OOBE 语言。 我们建议从[支持 HoloLens 2 的语言](hololens2-language-support.md)列表中选择一种语言。
@@ -177,7 +180,9 @@ ms.locfileid: "11192442"
      > [!NOTE]  
      > 如果使用设备名称模板，OOBE 进程将在应用设备名称之后和将设备加入 Azure AD 之前再次重新启动该设备。 重新启动后，新名称才会生效。  
 
-   ![配置 OOBE 设置](./images/hololens-ap-profile-oobe.png)
+   > [!div class="mx-imgBorder"]
+   > ![配置 OOBE 设置](./images/hololens-ap-profile-oobe.png)
+   
 1. 配置设置后，选择“**下一步**”。
 1. 在“**范围标记**”页面上，选择添加要应用于此配置文件的范围标记。 有关范围标记的详细信息，请参阅 [将基于角色的访问控制和范围标记用于分布式 IT](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md)。 完成后，选择“**下一步**”。
 1. 在“**分配 **”页面上，为“**分配至**”选择“**所选组**”。
@@ -186,11 +191,13 @@ ms.locfileid: "11192442"
   
    如果要排除任何组，请选择“**选择要排除的组**”，然后选择希望排除的组。
 
-   ![将设备组分配到配置文件。](./images/hololens-ap-profile-assign-devicegroup.png)
+   > [!div class="mx-imgBorder"]
+   > ![将设备组分配到配置文件。](./images/hololens-ap-profile-assign-devicegroup.png)
    
 1. 在“**审阅 + 创建**”页面上，查看设置，然后选择“**创建**”以创建配置文件。  
    
-   ![审阅 + 创建](./images/hololens-ap-profile-summ.png)
+   > [!div class="mx-imgBorder"]
+   > ![审阅 + 创建](./images/hololens-ap-profile-summ.png)
 
 ### 5. 验证 ESP 配置
 
