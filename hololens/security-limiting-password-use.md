@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009510"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252969"
 ---
 # 限制密码使用
 
@@ -52,7 +52,7 @@ HoloLens 2 在初始设备设置和用户登录期间为 Azure Active Directory 
 
 了解更多信息，请参阅以下信息图：
 
-  ![Winows Hello 登录](images/security-hello-sign-in.png)
+  ![Windows Hello 登录](images/security-hello-sign-in.png)
   
 在上图中，注意 nonce 代表 “number once”，是随机或半随机生成的数字。 设置 Windows Hello 生物或 PIN 凭据后，它永不会离开预配它的设备。 即使用户的 Windows Hello PIN 通过网络钓鱼等方式被盗，如果没有用户的实际设备[还是盗用无效](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password)。 
 
@@ -62,17 +62,17 @@ Iris 身份验证回退到 PIN。 若要在设备上设置新 PIN （强身份�
 
 ## 使用 Web 帐户管理器进行单一登录 
 
-单一登录（SSO）允许无密码用户使用用户的个人、工作或学校帐户登录设备。 用户通过 [Web 帐户管理器 API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041) 将自动获得所有应用和服务的 SSO 授权。
+单一登录（SSO）允许无密码用户使用用户的个人、工作或学校帐户登录设备。 用户通过 [Web 帐户管理器 API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true) 将自动获得所有应用和服务的 SSO 授权。
 
 通过一个应用程序添加了身份标识后，在用户同意的情况下，它可通过系统级集成对所有应用程序和服务可用。 这显著降低应用程序的登录负担，并为用户提供无缝的标识体验。
 
 了解更多 Web 帐户管理器 API 的信息，请参阅 [Web 帐户管理器 API 的实施](https://docs.microsoft.com/windows/uwp/security/web-account-manager)。
 
-  ![Winows Hello 登录](images/security-api-img.png)
+  ![安全性 API](images/security-api-img.png)
   
 对有特殊身份验证要求的应用程序套件，Web 帐户管理器（WAM）框架可扩展到自定义标识提供程序。 用户可从 Microsoft Store 下载打包为通用 Windows 平台（UWP）应用的自定义标识提供程序，以便在与该身份提供程序集成的其他应用程序上启用 SSO。 
 
-了解更多实施自定义 WAM 标识提供程序的信息，请参阅[自定义 WAM 标识提供程序 API 参考内容](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)。
+了解更多实施自定义 WAM 标识提供程序的信息，请参阅[自定义 WAM 标识提供程序 API 参考内容](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)。
 
 ## 使用 WebAuthn 登录 Windows Hello 和 FIDO2
 
@@ -83,7 +83,7 @@ HoloLens 2 可用无密码用户凭据（如 Windows Hello 或 FIDO2 安全参�
 
 至于 Windows Hello，当用户创建并注册 FIDO2 凭据时，设备（HoloLens 2 或 FIDO2 安全参数）将在设备上生成私钥和公钥。 私钥安全地存储在设备上，并仅在使用生物特征或 PIN 等 本地手势解锁后才能使用。 存储私钥后，公钥将被发送到云中的 Microsoft 帐户系统，并用相关的用户账户进行注册。
 
-使用 MSA 和 AAD 帐户登录后，系统会向 HoloLens 2 或 FIDO2 设备发送生成的号码或数据变量。 HoloLens 2 或设备使用私钥为标识签名。 已签名的标识和元数据被发送回 Microsoft 帐户系统，并使用公钥进行验证。
+使用 MSA 和 Azure AD 帐户登录后，系统会向 HoloLens 2 或 FIDO2 设备发送生成的号码或数据变量。 HoloLens 2 或设备使用私钥为标识签名。 已签名的标识和元数据被发送回 Microsoft 帐户系统，并使用公钥进行验证。
 
 Windows Hello 和 FIDO2 设备根据 HoloLens 设备，尤其是内置受信任的平台模块的安全区域，来实现凭据。 TPM 区域存储私钥，并需要生物特征或 PIN 才能解除锁定。 类似地，FIDO2 安全参数是一个具有内置安全区域的小型外部设备，用于存储私钥，并且需要生物特征或 PIN 来解锁。
 
@@ -91,7 +91,7 @@ Windows Hello 和 FIDO2 设备根据 HoloLens 设备，尤其是内置受信任�
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA 和 AAD 是第一批通过实施 WebAuthn 支持无密码身份验证的信赖方。 
+MSA 和 Azure AD 是第一批通过实施 WebAuthn 支持无密码身份验证的信赖方。 
 
 了解更多将 WebAuthn 与应用程序和/或 SDK 配合使用的信息，请参阅[使用 WebAuthn 在 Windows 10 上进行无密码身份验证](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis)。
 

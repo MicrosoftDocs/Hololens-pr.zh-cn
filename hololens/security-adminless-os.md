@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102311"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253079"
 ---
 # 无管理操作系统
 
@@ -34,9 +34,9 @@ Windows 组件还可以通过系统 UWPs 利用 AppContainer 沙盒。 若要了
 
 最后，仅允许“设备所有者”执行特定设备范围的操作，例如将设备加入租户或用户管理。 此组由设备上的用户通过以下步骤之一填充：
   * 设备上的第一个用户始终被指定为所有者。 
-    * 此规则的例外情况是，如果设备已加入 AAD，则执行加入的用户将成为设备所有者。 例如，如果设备是通过 Autopilot 加入 AAD 的，则此规则适用，在这种情况下，登录设备的第一个用户未加入 AAD，因此不会成为设备所有者。 若要了解有关谁将被设为加入 AAD 的设备的设备所有者的详细信息，请参阅[“分配本地管理员”文档](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)（但请将“本地管理员”视为“设备所有者”，因为 HoloLens 上不存在管理员）。
+    * 此规则的例外情况是，如果设备已加入 Azure AD，则执行加入的用户将成为设备所有者。 例如，如果设备是通过 Autopilot 加入Azure AD 的，则此规则适用，在这种情况下，登录设备的第一个用户未加入 Azure AD，因此不会成为设备所有者。 若要了解有关谁将被设为加入 Azure AD 的设备的设备所有者的详细信息，请参阅[“分配本地管理员”文档](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)（但请将“本地管理员”视为“设备所有者”，因为 HoloLens 上不存在管理员）。
   * 当设备上的另一个所有者从“设置 UX”将用户提升为所有者时。
-  * 如果设备所有者不再可用（例如离开公司）且设备已加入 AAD，则租户管理员可以在 Azure 门户中将设备所有者更改为新用户。
+  * 如果设备所有者不再可用（例如离开公司）且设备已加入 Azure AD，则租户管理员可以在 Azure 门户中将设备所有者更改为新用户。
 Azure AD 租户的全局管理员在设备上以所有者身份隐式登录，而无需执行上述任一步骤。 
 
 IT 管理员可以通过[隐私](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy)策略管理应用可访问的内容。 

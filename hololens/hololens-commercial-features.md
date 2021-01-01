@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
-ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10882982"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253169"
 ---
 # 商业功能
 
@@ -64,7 +64,7 @@ HoloLens（第一代）附带两个许可选项：开发人员许可证和商业
 |Microsoft Store（消费者） |消费者 |使用 MDM 进行筛选 |使用 MDM 进行筛选 |
 |[业务应用商店门户](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**安全和身份** | | | |
-|使用 Azure Active Directory (AAD) 帐户登录 |✔️ |✔️ |✔️ |
+|使用 Azure Active Directory (Azure AD) 账户登录 |✔️ |✔️ |✔️ |
 |使用 Microsoft 帐户 (MSA) 登录 |✔️ |✔️ |✔️ |
 |带 PIN 解锁密钥的下一代凭据 |✔️ |✔️ |✔️ |
 |[安全启动](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |

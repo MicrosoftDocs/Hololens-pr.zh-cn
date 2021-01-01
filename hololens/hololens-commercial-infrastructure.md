@@ -1,6 +1,6 @@
 ---
 title: HoloLens 基础结构指南
-description: ''
+description: HoloLens 设备的基础结构指南
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1031eaeaf2767f8aa982d74bb282bc1fb086051b
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: a67aaa5df4c74531b5bed88abaa266b00de5c406
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940212"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253159"
 ---
 # 为 HoloLens 配置网络
 
@@ -35,7 +35,7 @@ HoloLens 从核心看来是与 Azure 集成的 Windows 移动设备。  它最�
 
 关键的云服务包括：
 
-- Azure Active Directory (AAD)
+- Azure active directory (Azure AD) 
 - Windows 更新 (WU)
 
 商业客户需要通过企业移动性管理 (EMM) 或移动设备管理 (MDM) 基础结构来大规模管理 HoloLens 设备。  本指南使用 [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) 作为示例，但任何完全支持 Microsoft 策略的提供商都可支持 HoloLens。  询问你的移动设备管理提供商是否支持 HoloLens 2。
