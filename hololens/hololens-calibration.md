@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165036"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252525"
 ---
 # 改善视觉质量和舒适度
 
@@ -42,7 +42,7 @@ HoloLens 2 使用眼球跟踪技术来改善你观看虚拟环境以及与虚拟
 
 ![调整到眼部的校准提示。](./images/07-et-adjust-for-your-eyes.png)
 
-在此过程中，你需要注视一组目标（宝石）。 校准期间，你可以眨眼，但请尽量把注意力集中在宝石上，而不是盯着房间中的其他对象。  这使 HoloLens 可以获取你的眼球位置，从而向你呈现全息世界。
+在此过程中，你需要注视一组目标（宝石）。 校准期间，你可以眨眼，但请尽量把注意力集中在宝石上，而不是盯着房间中的其他对象。  通过专注于这些宝石，HoloLens 可以了解你的眼睛位置，以呈现全息世界。
 
 ![校准提示告诉用户保持头部静止不动并用眼睛跟随点。](./images/07-et-hold-head-still.png)
 
