@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 72b976560664c89b7ae3cd9270c57ead438679cd
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865571"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253119"
 ---
 # 有关 HoloLens 设备和全息影像的常见问题
 
@@ -256,7 +256,7 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 ### 是否可以使用 Active Directory 域服务 (AD DS) 来管理 HoloLens 用户帐户？
 
-否。 必须使用 Azure Active Directory (AAD) 来管理 HoloLens 设备的用户帐户。
+否。 你必须使用 Azure Active Directory (Azure AD) 管理 HoloLens 设备的用户帐户。
 
 ### HoloLens 是否支持自动数据采集系统 (ADCS) 自动注册？
 
@@ -271,7 +271,7 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 否。 但是，你可以使用以下方法之一来解决此问题：
 
 - 创建自定义应用，然后[启用展台模式](hololens-kiosk.md)。 自定义应用可以进行品牌宣传，并且可以其他其他应用（如远程协助）。  
-- 将 AAD 中的所有用户个人资料图片更改为贵公司徽标。 但是，并非所有方案都需要此操作。
+- 将 Azure AD 中所有用户配置文件图片更改为公司徽标。 但是，并非所有方案都需要此操作。
 
 ### HoloLens（第一代）和 HoloLens 2 提供哪些日志记录功能？
 
@@ -281,8 +281,8 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 ## 有关保护 HoloLens 设备的问题
 
-请参阅[我们的 HoloLens 2 安全信息](security-overview.md)。
-对于 HoloLens 第一代设备，请查看[此常见问题](hololens1-faq-security.md)。
+请参阅 [我们的 HoloLens 2 安全信息](security-overview.md)。
+对于 HoloLens 第一代设备，请查看 [此常见问题解答](hololens1-faq-security.md)。
 
 [返回列表](#list)
 

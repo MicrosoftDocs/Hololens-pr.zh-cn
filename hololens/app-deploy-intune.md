@@ -1,6 +1,6 @@
 ---
 title: Intune 和公司门户
-description: intune， 应用管理， 应用， 公司门户， 门户
+description: Intune， 应用管理， 应用， 公司门户， 门户
 keywords: intune， 应用管理， 应用， 公司门户， 门户， hololens
 author: evmill
 ms.author: v-evmill
@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
-ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
+ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247214"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252653"
 ---
 # Intune 和公司门户
 
@@ -32,28 +32,29 @@ ms.locfileid: "11247214"
 
 1. 将应用上传到业务线，或将自定义应用上传到 Intune 租户。 另请参阅： [企业应用管理](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management)。
 
-2. [将应用分配给组](https://docs.microsoft.com/mem/intune/apps/apps-deploy)。 根据你选择的分配类型，你可以自动传递应用，或者如果你选择一些应用，也可以轻松下拉应用。 
+2. [将应用分配给组](https://docs.microsoft.com/mem/intune/apps/apps-deploy)。 根据你选择的分配类型，如果你选择了应用，该应用可以自动交付或可供轻松下拉。
 
-> [!NOTE] 
+> [!NOTE]
 > 生成 appx 捆绑包时，请务必考虑包括要部署到 () 应用的体系结构。 HoloLens 2 为 ARM64，HoloLens (第一代) x86。 如果你计划使用混合设备环境，你可以将两者都包括在单个 appx 捆绑包中。
 
 ## 工作分配类型
 
-如果你希望你的应用在注册后自动安装在设备上，你应该选择该组 (必需) 。 ****
-如果你希望将应用下载到通过公司门户注册的设备，请选择"**可用于已注册的设备"。**
+若要在注册后在设备上自动安装你的应用，应选择该组 (必需) 。 ****
+若要将应用下载到通过公司门户注册的设备，请选择 **"可用于已注册的设备"。**
 
-
-## 最终用户体验
+## End-User体验
 
 在 Intune 上设置配置后，你已准备好让最终用户接收所选应用。
 
 按照以下步骤自动获取应用 () ：
-1. 向租户注册设备。 
-2. 设备完成注册后，你应该在设备上接收应用。 
-3. 如果未立即看到应用，请转到"设置帐户工作或**** 学校帐户信息"，然后向下滚动以查看有关已安装应用  >  ****  >  ****  >  **** 状态的信息。
+
+1. 向租户注册设备。
+2. 设备完成注册后，你应该在设备上接收应用。
+3. 如果未立即看到应用，请转到"设置帐户工作或**** 学校帐户信息"，然后向下滚动以查看有关已安装应用  >  ****  >  ****  >  ** 状态的信息。
 
 如何通过公司门户访问应用：
-1. 打开"**开始"菜单**并选择**Microsoft Store。** 
+
+1. 打开"**开始"菜单**并选择**Microsoft Store。**
 2. 搜索 **公司门户** 并下载应用。
 3. 登录到你的帐户。
 4. 选择要接收的应用并下载它。

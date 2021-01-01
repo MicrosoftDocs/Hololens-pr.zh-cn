@@ -1,7 +1,7 @@
 ---
-title: 如何通过 HoloLens 2 应用安装程序加载和安装应用
-description: 幻灯片加载并通过 UI 安装应用
-keywords: 应用程序管理、应用、hololens、应用安装程序
+title: 如何通过 HoloLens 2 应用安装程序旁加载和安装应用
+description: 通过 UI 加载和安装应用
+keywords: 应用管理， 应用， hololens， 应用安装程序
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
@@ -14,93 +14,102 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: e52cc2f031c284b619c61ffa04f259f76397faf5
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201366"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253089"
 ---
 # 通过应用安装程序在 HoloLens 2 上安装应用
 
-
-我们正在 ** (应用安装程序) 添加新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+我们将 **向应用安装程序 (** 新功能) ，以允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非托管 **设备，该功能将默认打开**。 为了防止企业中断，目前应用安装程序将不适用于 **托管设备** 。  
 
 > [!NOTE]
-> 此功能在 [Windows 全息版 20H2-2020 更新](hololens-release-notes.md)中提供。 确保您的设备已 [更新](hololens-update-hololens.md) 为使用此功能。
+> 此功能在 Windows 全息版版本 [20H2 – 2020 年 12 月更新中可用](hololens-release-notes.md)。 确保设备 [已更新](hololens-update-hololens.md) 为使用此功能。
 
-我们已 **添加了 (应用安装程序) 的新功能，使你能够在 HoloLens 2 设备上更流畅地安装应用程序** 。 默认情况下，此功能将 **在非托管设备上处于打开**状态。 为了防止企业中断，应用安装程序此时将不可 **用于托管设备** 。  
+我们已 **在应用安装程序 (新增** 功能) 允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非托管 **设备，该功能将默认打开**。 为了防止企业中断，应用安装程序目前对托管 **设备** 不可用。  
 
-如果以下 **任何** 条件成立，设备将被视为 "托管"：
-- MDM 已 [注册](hololens-enroll-mdm.md)
-- 配置了 [预配包](hololens-provisioning.md)
-- 用户 [标识](hololens-identity.md) 为 AAD
+如果以下任一项为真， **则设备** 将被视为"托管"设备：
 
-现在，你可以安装应用，而无需启用开发人员模式或使用 Device Portal。  只需通过 USB 或边缘) 将 (下载到你的设备，然后在文件资源管理器中导航到 Appx 捆绑系统，系统会提示你启动安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与使用 MDM 的 LOB 应用部署功能从 Microsoft Store 或旁加载安装的应用一样，应用需要使用 [签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 进行数字签名，并且 [用于签名的证书必须受](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) HoloLens 设备信任才能部署应用。   
+- MDM [已注册](hololens-enroll-mdm.md)
+- 使用预配 [包配置](hololens-provisioning.md)
+- 用户 [标识](hololens-identity.md) 为 Azure AD
+
+你现在无需启用开发人员模式或使用 Device Portal 即可安装应用。  将 (USB 或 Microsoft Edge) Appx 捆绑包下载到设备，并在文件资源管理器中导航到 Appx 捆绑包，以提示你开始安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与从 Microsoft Store 安装的应用或使用 MDM 的 LOB 应用部署功能旁加载的应用一样，需要使用签名[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)工具对应用进行[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)数字签名，并且用于签名的证书必须受 HoloLens 设备信任，然后才能部署应用。
 
 ## 要求
 
-### 对于您的设备： 
-当前在适用于 HoloLens 2 设备的 [Windows 预览体验成员内部版本](hololens-insider.md) 中 avalible。 请确保使用此方法的任何设备均 [已更新](hololens-update-hololens.md)。 
+### 对于你的设备：
+
+ 功能目前适用于 HoloLens 2 设备的 Windows Holographic 20H2 版本。 确保已更新使用此方法的任何 [设备](hololens-update-hololens.md)。
 
 ### 对于你的应用： 
-你的应用的解决方案配置必须是 " **主** " 或 " **发布** "，因为应用安装程序将使用应用商店中的依赖关系。 查看有关 [创建应用包](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)的详细信息。
+应用的解决方案配置必须是**主**版本或版本，因为应用**** 安装程序将使用应用商店中的依赖项。 查看有关创建 [应用包的更多内容](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)。
 
-通过此方法安装的应用必须经过数字签名。 您需要使用证书对应用进行签名。 你可以从 [MS 受信任 CA 列表](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)中获取证书，在这种情况下，你无需执行任何其他操作。 或者，你可以对自己的证书进行签名，但需要将证书推送到设备上。 
-- 如何[使用签名工具](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)对应用进行签名。
+通过此方法安装的应用必须进行数字签名。 你需要使用证书对应用进行签名。 可以从 MS 受信任 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)列表获取证书，在这种情况下，无需执行任何其他操作。 或者你可以对你自己的证书进行签名，但是该证书将需要推送到设备。
 
-**证书选项：** 
-- [MS 受信任的 CA 列表](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+- 如何使用签名 [工具对应用进行签名。](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
-**选择证书部署方法。** 
-- [预配程序包](hololens-provisioning.md) 可应用于本地设备。
-- 可以使用 MDM [将证书应用于设备配置](https://docs.microsoft.com/mem/intune/protect/certificates-configure)。
-- 使用 "设备 [证书管理器](certificate-manager.md)"。 
+**证书选项：**
+
+- [MS 受信任 CA 列表](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+
+**选取证书部署方法。**
+
+- [预配包](hololens-provisioning.md) 可应用于本地设备。
+- MDM 可用于应用 [具有设备配置的证书](https://docs.microsoft.com/mem/intune/protect/certificates-configure)。
+- 使用 on 设备 [证书管理器](certificate-manager.md)。
 
 ## 安装方法
 
-1.  确保您的设备不被视为托管设备。
-1.  确保 HoloLens 2 设备已开机且已登录。
-1.  在你的电脑上导航到你的自定义应用，并将 yourapp 复制到 yourdevicename\Internal Storage\Downloads。 
-    完成文件复制后，您可能会断开您的设备并在以后完成安装。
-1.  从 HoloLens 2 设备打开 " **开始" 菜单**，选择 " **所有应用** "，然后启动 " **文件资源管理器** " 应用。
-1.  导航到 "下载" 文件夹。 你可能需要在应用的左侧面板上，选择 " **此设备** "，然后导航到 "下载"。
-1.  选择 yourapp 文件。 
-1.  应用安装程序将启动。 选择 " **安装** " 按钮以安装你的应用。 
+1. 检查设备是否被视为托管设备。
+1. 检查 HoloLens 2 设备是否打开并登录。
+1. 在电脑上导航到自定义应用，将app.appxbundle 复制到 yourdevicename\Internal Storage\Downloads。
+    复制完文件后，可能会断开设备连接，稍后完成安装。
+1. 从 HoloLens 2 设备打开"开始" **菜单**，选择 **"所有应用** "并启动 **"文件资源管理器"** 应用。
+1. 导航到"下载"文件夹。 你可能需要在应用的左侧面板上先选择"此设备****"，然后导航到"下载"。
+1. 选择 yourapp.appxbundle 文件。
+1. 应用安装程序将启动。 选择 **"安装** "按钮以安装应用。
 
-已安装的应用将在安装完成后自动启动。 
+安装完成后，已安装的应用将自动启动。
 
 ![通过应用安装程序安装 MRTK 示例](images/hololens-app-installer-picture.jpg)
 
 ### 安装疑难解答
-如果你的应用无法安装，请检查以下内容：
--   你的应用是 "主" 或 "发布" 内部版本。
-- 你的设备已更新为可使用此功能的版本。 
--   您已 [连接到 internet](hololens-network.md)。
--   已正确配置 [Microsoft Store 的终结点](hololens-offline.md) 。  
+
+如果应用安装失败，请查看以下内容进行疑难解答：
+
+- 你的应用是主版本或发布版本。
+- 你的设备将更新为提供此功能的生成。
+- 你[已连接到 Internet。](hololens-network.md)
+- 正确 [配置了 Microsoft Store](hololens-offline.md) 终结点。  
 
 ## Web 安装程序
 
-用户可以直接从 web 服务器安装应用。 这会将应用安装程序与轻松下载和安装分发方法结合使用。 
+用户可以直接从 Web 服务器安装应用。 此流将应用安装程序与简单的下载和安装分发方法结合使用。
 
-### 如何设置 web 安装：
-1.  确保你的应用已正确配置为安装。
-1.  请按照以下 [步骤在网页上启用此操作](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)。 
+### 如何设置 Web 安装：
+
+1. 确保应用已正确配置为安装。
+1. 按照 [以下步骤从网页启用安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)。
 
 ### 最终用户体验：
-1. 用户使用之前选择的方法接收和安装设备证书。 
-1. 用户访问上述步骤中创建的 URL。
 
-该应用现在将安装到设备。 若要查找应用，请打开 " **开始" 菜单** ，然后选择 " **所有应用** " 按钮以查找你的应用。 
+1. 用户使用之前选择的方法接收证书并安装到设备。
+1. 用户访问通过上述步骤创建的 URL。
 
--   有关此安装方法的疑难解答帮助，请访问 [应用安装程序问题疑难解答](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)。 
+应用现在将安装到设备。 若要查找应用， **请打开"** 开始"菜单并选择"所有 **应用"** 按钮以查找你的应用。
+
+- 有关应用安装程序安装方法疑难解答的更多帮助，请访问 [疑难解答应用安装程序问题](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)。
 
 > [!NOTE]
-> 更新过程中不支持 UI。 因此，不支持 [此页面](https://docs.microsoft.com/windows/msix/app-installer/update-settings) 上的 ShowPrompt 选项和相关选项。
+> 不支持更新过程中 UI。 因此，此页上的 ShowPrompt [选项](https://docs.microsoft.com/windows/msix/app-installer/update-settings) 和相关选项不受支持。
 
 ## 示例应用
 
-如果你想要使用某些示例应用尝试此操作，请查看我们的一些可用示例：
+若要使用一些示例应用试用应用安装程序，请查看我们的一些可用示例：
+
 - [MRTK 示例中心](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [图](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
+- [Surfaces](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
 - [可用于测试的 UWP 示例应用](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)

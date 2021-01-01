@@ -1,7 +1,7 @@
 ---
-title: 部署指南–云连接的 HoloLens 2 和远程协助-概述
-description: 通过连接到云的网络注册 HoloLens 设备
-keywords: HoloLens、管理、云连接、远程协助、AAD、Azure AD、MDM、移动设备管理
+title: 部署指南 – 云连接的 HoloLens 2 和远程协助 - 概述
+description: 通过云连接网络注册 HoloLens 设备
+keywords: HoloLens， 管理， 云连接， 远程协助， AAD， Azure AD， MDM， 移动设备管理
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,67 +14,67 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ba3f826360f999a72e671166af7a19d19ce9c567
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196272"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253179"
 ---
-# 部署指南– Cloud 通过远程协助连接 HoloLens 2-概述
+# 部署指南 – 云连接的 HoloLens 2 和远程协助 – 概述
 
-本指南可帮助 IT 专业人员规划 Microsoft HoloLens 2 设备并将其部署到其组织，其整体目标是将这些设备云与你的组织连接到你的组织，使其具有可供使用的动态365远程协助。 请记住，这将用作你的组织在各种 HoloLens 2 使用案例中的概念证明部署的模型。
+本指南可帮助 IT 专业人员计划 Microsoft HoloLens 2 设备并部署到其组织，总体目标是使这些设备云连接到你的组织，并准备好使用 Dynamics 365 远程协助。 请记住，这将用作跨各种 HoloLens 2 用例向组织进行概念证明部署的模型。
 
-在本指南中，我们将介绍如何将设备注册到你的设备管理，根据需要应用许可证，并验证最终用户是否能够在设置设备时立即使用远程协助。 为此，我们将获得在设置和运行时需要的重要基础结构的重要部分–通过使用 HoloLens 2 的比例实现部署。
+在本指南中，我们将介绍如何将设备注册到设备管理中，根据需要应用许可证，并验证最终用户能否在设备设置时立即使用远程协助。 为此，我们将了解设置和运行所需的重要基础结构部分 ， 通过 HoloLens 2 大规模实现部署。
 
 ## 本指南中
 
-本指南具有在您的 HoloLens 设备上设置远程协助的特定目标。 我们将介绍实现该目标所需的 necessities。 为了保持重点关注此目标，需要预先选择某些准备和配置，以便针对此部署进行优化或减少需要配置的项目。 系统将通知你这些选项，并且可以根据你的业务需求自定义你的部署。
+本指南的特定目标是在 HoloLens 设备上在组织中设置远程协助。 我们将介绍实现该目标所需的措施。 为了继续关注此目标，将预先选择某些准备和配置，以便针对此部署进行优化或减少配置所需的项目。 将告知你这些选项，并可以根据您的业务需求自定义部署。
 
-这种设置类似于 [方案 a：部署到云连接设备](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)，这对于许多概念验证部署都是一个不错的选择，其中包括：
+这是类似于方案 [A：](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)部署到云连接设备的设置，这是许多概念证明部署的良好选项，其中包括：
 
-- Wi-Fi 网络通常完全开放于 Internet 和云服务
-- 具有 MDM 自动注册的 Azure AD 联接-MDM (Intune) 托管
-- 用户利用其自己的公司帐户登录 (AAD) 
-  - 每个设备支持的单个或多个用户
-- 不同级别的设备锁定配置基于特定使用情形（从完全打开到单应用展台）应用
+- Wi-Fi网络通常对 Internet 和云服务完全开放
+- Azure AD 加入 MDM 自动注册 - MDM (Intune) 托管
+- 用户使用自己的公司帐户登录 Azure AD (Azure AD) 
+  - 支持每个设备的一个或多个用户
+- 根据特定用例应用不同级别的设备锁定配置，从"完全打开"到"单个应用展台"
 
-![连接到云的方案](./images/cloud-connected-deployment-chart.png)
+![云连接方案](./images/cloud-connected-deployment-chart.png)
 
-本指南中不会应用任何其他设备限制或配置，但我们建议你在完成后研究这些选项。
+本指南中不会应用任何其他设备限制或配置，但我们鼓励你在完成后探索这些选项。
 
 ## 了解远程协助
 
-远程协助允许进行协作维护和修复、远程检查以及知识共享和培训。 通过连接不同角色和位置的人员，使用远程协助的技术人员可以与 Microsoft 团队中的远程协作者联系。 即使在同一位置&#39;t，他们也可以结合视频、屏幕截图和注释来实时解决问题。 远程协作者可以插入参考图像、图表和其他有用的信息技术人员&#39;的物理空间，以便他们可以在使用 HoloLens 和在 HoloLens 上运行时引用示意性的图表。
+远程协助支持协作维护和修复、远程检查以及知识共享和培训。 通过连接不同角色和位置的用户，使用远程协助的技术人员可以与 Microsoft Teams 上的远程协作者联系。 他们可以将视频、屏幕截图和注释组合在一起，以实时解决问题，即使它们&#39;位置不同。 远程协作者可以插入参考图像、示意图和其他有用的信息，技术人员&#39;物理空间，以便他们可以在 HoloLens 上进行工作向上和自由操作时参考示意图。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 在本指南中，你将：
 
-准备
+准备：
 
 > [!div class="checklist"]
-> - [了解 HoloLens 2 设备的基础结构基础知识。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [了解有关 AAD 的详细信息，如果您不是&#39;的，请设置一个。](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [了解身份管理以及如何最佳设置 AAD 帐户。](hololens2-cloud-connected-prepare.md#identity-management)
-> - [了解有关 MDM 的详细信息，如果&#39;t 已准备好，则使用 Intune 进行设置。](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [了解 HoloLens 2 设备的基础结构要素。](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+> - [了解有关 Azure AD 以及设置 Azure AD（如果尚未&#39;）的信息。](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [了解标识管理以及如何以最佳方式设置 Azure AD 帐户。](hololens2-cloud-connected-prepare.md#identity-management)
+> - [了解有关 MDM 的更多信息，如果尚未准备好，&#39;使用 Intune 进行设置。](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [了解远程协助的网络要求。](hololens2-cloud-connected-prepare.md#network)
-> - [可选： VPN 连接到组织资源](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
+> - [（可选）：用于连接到组织资源的 VPN](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
-对
+配置：
 
 > [!div class="checklist"]
 > - [如何创建用户和组。](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [如何在 AAD 中设置自动注册。](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
-> - [如何分配你的应用程序许可证。](hololens2-cloud-connected-configure.md#application-licenses)
+> - [如何在 Azure AD 中设置自动注册。](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [如何分配应用程序许可证。](hololens2-cloud-connected-configure.md#application-licenses)
 
-部署
+部署：
 
 > [!div class="checklist"]
 > - [设置 HoloLens 2 并验证注册。](hololens2-cloud-connected-deploy.md#enrollment-validation)
-> - [验证您是否可以进行远程协助呼叫。](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
+> - [验证你可以进行远程协助呼叫。](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
-着
+维护：
 
 > [!div class="checklist"]
 > - [如何使用 Microsoft Store 应用更新远程协助。](hololens2-cloud-connected-maintain.md#updates)
@@ -84,5 +84,5 @@ ms.locfileid: "11196272"
 ## 下一步
 
 > [!div class="nextstepaction"]
-> [云连接部署-准备](hololens2-cloud-connected-prepare.md)
+> [云连接部署 - 准备](hololens2-cloud-connected-prepare.md)
 
