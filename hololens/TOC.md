@@ -118,4 +118,6 @@
 ## [Microsoft HoloLens 内部预览版](hololens-insider.md)
 ## [HoloLens（第 1 代）发行说明](hololens1-release-notes.md)
 
-# [向我们提供反馈](hololens-feedback.md)
+# [向我们提供反馈]
+## [通过反馈中心向我们提供反馈](hololens-feedback.md)
+## [HoloLens 文档贡献指南](contributing.md)

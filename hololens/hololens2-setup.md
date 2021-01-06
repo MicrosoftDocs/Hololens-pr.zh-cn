@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996400"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253554"
 ---
 # 准备好使用你的 HoloLens 2
 
@@ -25,7 +25,7 @@ ms.locfileid: "10996400"
 
 ## 为 HoloLens 充电
 
-使用 USB-C 线缆（随附）将电源与充电端口相连。 将电源插入电源插座。 设备附带的电源和 USB-C 到 C 线缆是向 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。
+使用 USB-C 线缆（随附）将电源与充电端口相连。 将电源插入电源插座。 设备附带的电源和 USB-C 到 C 线缆是向 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。 借助提供的壁式充电器，HoloLens 2 设备可在待机状态下在 65 分钟内将电池充满电。
 
 充电率和速度可能因设备运行环境而异。
 

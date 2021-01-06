@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195595"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253578"
 ---
 # 重启、重置或恢复 HoloLens 2
 
 ## 给设备充电
 
-在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 请使用 HoloLens 2 设备附带的充电器和 USB Type-C 电缆。 设备附带的电源和 USB-C 到 C 线缆是向 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。 如果这些附件不可用，请确保可用的充电器支持至少 15W 的功率。
+在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 请使用 HoloLens 2 设备附带的充电器和 USB Type-C 电缆。 设备附带的电源和 USB-C 到 C 线缆是向 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。 借助提供的壁式充电器，HoloLens 2 设备可在待机状态下在 65 分钟内将电池充满电。 如果这些附件不可用，请确保可用的充电器支持至少 15W 的功率。
 
 > [!NOTE]
 > 如果可能，请避免使用电脑通过 USB 给设备充电（速度很慢）。
@@ -138,10 +138,10 @@ ms.locfileid: "11195595"
 1. 将“_*许可证类型**”更改为“**_脱机_*”_，然后选择_*“管理”**。
 1. 在“**下载脱机使用的程序包**”下，单击第二个蓝色“**下载**”按钮。 确保文件扩展名为 *.appxbundle*。
 
-    - 在此阶段，如果台式机可以访问互联网，请双击程序包以安装该应用程序。
+    - 在此阶段，如果台式机可以访问互联网，请双击程序包以安装该应用。
 
 
-    - 如果目标计算机没有 Internet 连接，请按照下列步骤操作： 
+    - 如果目标电脑没有 Internet 连接，请按照以下步骤操作： 
        1. 选择解码的许可证，然后选择“**生成许可证**”。
        2. 在“**所需框架**”下，选择“**下载**”。
        3. 使用 DISM 将软件包与依赖项和许可证一起应用。 从管理员命令提示符运行以下命令：
