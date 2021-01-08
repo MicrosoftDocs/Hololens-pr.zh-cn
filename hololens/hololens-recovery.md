@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253578"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254829"
 ---
 # 重启、重置或恢复 HoloLens 2
 
@@ -49,6 +49,7 @@ ms.locfileid: "11253578"
 在某些情况下，可能需要在不使用软件 UI 的情况下手动重置设备。
 
 ### 标准程序
+
 1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
 2. 按住**电源**按钮 15 秒。 所有 LED 均应熄灭。
@@ -88,7 +89,7 @@ ms.locfileid: "11253578"
 
 默认情况下，“高级恢复助手”设置为下载最新的功能版本版本，请查看此处阅读[发行说明](hololens-release-notes.md#)以了解最新功能版本。 若要获取最新的 HoloLens 2 映像刷写工具 (FFU) 程序包以通过“高级恢复助手”重刷设备，[请点击这里下载最新的每月 HoloLens 2 图像](https://aka.ms/hololens2download)。 此版本是最新的通用版本。
 
-开始刷写程序前，请确保已在 Windows 10 电脑上安装并运行该应用，并已准备好检测设备。
+开始刷写程序前，请确保已在 Windows 10 电脑上安装并运行该应用，并已准备好检测设备。 此外，请确保你的 HoloLens 的最低费用为40%。
 
 ![HoloLens 2 干净重刷屏幕截图](images/ARC1.png)
 
@@ -126,22 +127,21 @@ ms.locfileid: "11253578"
 
 如果 IT 环境阻止使用 Windows Store 应用或限制对该零售商店的访问，IT 管理员可通过“脱机”部署路径提供此应用。
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT 管理员也可以通过 System Center Configuration Manager (SCCM) 或 Intune 分发此应用。
  > - 本指南重点介绍 Advanced Recovery Companion，但该过程也可用于其他“脱机”应用程序。
 
 请按照以下步骤启用部署路径：
 1. 转到[适用于企业的 Microsoft Store](https://businessstore.microsoft.com)，然后使用 Azure Active Directory 身份登录。
 
-1. 转到“**管理 – 设置**”。 在“**购物体验**”下打开“**显示离线应用**”。 
+1. 转到“**管理 – 设置**”。 在“**购物体验**”下打开“**显示离线应用**”。
 1. 转到“**为我的组购买**”，搜索 [**_高级恢复助手_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
 1. 将“_*许可证类型**”更改为“**_脱机_*”_，然后选择_*“管理”**。
 1. 在“**下载脱机使用的程序包**”下，单击第二个蓝色“**下载**”按钮。 确保文件扩展名为 *.appxbundle*。
 
     - 在此阶段，如果台式机可以访问互联网，请双击程序包以安装该应用。
 
-
-    - 如果目标电脑没有 Internet 连接，请按照以下步骤操作： 
+    - 如果目标电脑没有 Internet 连接，请按照以下步骤操作：
        1. 选择解码的许可证，然后选择“**生成许可证**”。
        2. 在“**所需框架**”下，选择“**下载**”。
        3. 使用 DISM 将软件包与依赖项和许可证一起应用。 从管理员命令提示符运行以下命令：
@@ -153,7 +153,7 @@ ms.locfileid: "11253578"
             > 此代码示例中的版本号可能与当前可用的版本不匹配。 可能还选择了与给定示例不同的下载位置。 根据需要对命令进行任何更改。
 
 > [!TIP]
-> 计划使用 Advanced Recovery Companion 脱机安装 FFU 时，下载刷写映像可能会很有用。 [**下载 HoloLens 2 的最新映像**](https://aka.ms/hololens2download)。 
+> 计划使用 Advanced Recovery Companion 脱机安装 FFU 时，下载刷写映像可能会很有用。 [**下载 HoloLens 2 的最新映像**](https://aka.ms/hololens2download)。
 
 其他资源：
 - [分配离线应用](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
