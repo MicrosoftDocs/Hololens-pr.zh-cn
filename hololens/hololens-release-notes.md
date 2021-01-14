@@ -8,29 +8,43 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/10/2020
+ms.date: 1/12/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e1bdc6292dc016dde78c781db79505e2b64b0d6d
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 7c93f567921a634e5a75c274304819ec9e81b933
+ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253059"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269413"
 ---
 # HoloLens 2 发行说明
 
 为了确保你拥有使用 HoloLens 设备的高效体验，我们将继续发布功能、Bug 和安全更新。 在此页面上，你可以看到 HoloLens 每月的新增功能。 若要获取最新的 HoloLens 2 更新，你可以检查更新并[手动](hololens-update-hololens.md#check-for-updates-and-manually-update)更新或获取完整闪存更新 (FFU) 以通过高级恢复助手[](hololens-recovery.md#clean-reflash-the-device)快速刷新设备，请在此处[下载](https://aka.ms/hololens2download)。 下载保持最新，并提供最新发布版本。
 
+我们希望再次开始向 Windows 预览体验成员提供新功能。 我们将测试到开发人员频道获取最新更新。 随着我们向 Windows 预览体验成员版本添加更多功能和更新，我们将继续访问 [HoloLens](hololens-insider.md) 预览体验成员说明。 感到兴奋并准备好将这些更新融合到你的现实中。 
+
 >[!NOTE]
 > 若要阅读 HoloLens 模拟器发行说明， [请访问存档](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)。
 
+## Windows 全息版版本 20H2 - 2021 年 1 月更新
+- 内部版本 19041.1134
 
-## Windows Holographic，版本 20H2 – 2020 年 12 月更新
+更新中的改进和修复：
+
+- 在启动、恢复和用户切换期间，当设备上有许多用户时，性能得到改进。
+- 添加了对研究模式的 [arm32 支持](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode)。
+
+## Windows 全息版版本 1903 - 2021 年 1 月更新
+- 内部版本 18362.1091
+
+此每月质量更新不包含任何明显的更改，我们鼓励你试用 Windows 全息版版本 2004 的最新内部版本。
+
+## Windows 全息版版本 20H2 – 2020 年 12 月更新
 - 内部版本 19041.1131
 
 ### 通过应用安装程序在 HoloLens 2 上安装应用
@@ -42,7 +56,7 @@ ms.locfileid: "11253059"
 - 使用预配 [包配置](hololens-provisioning.md)
 - 用户 [标识](hololens-identity.md) 为 Azure AD
 
-你现在无需启用开发人员模式或使用 Device Portal 即可安装应用。  只需将 (USB 或 Edge) Appx 捆绑包下载到设备，并在文件资源管理器中导航到 Appx 捆绑包，以提示开始安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与从 Microsoft Store 安装的应用或使用 MDM 的 LOB 应用部署功能旁加载的应用一样，需要使用签名[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)工具对应用进行[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)数字签名，并且用于签名的证书必须受 HoloLens 设备信任，然后才能部署应用。
+你现在无需启用开发人员模式或使用 Device Portal 即可安装应用。  只需将 (USB 或 Edge) Appx 捆绑包下载到设备，并在文件资源管理器中导航到 Appx 捆绑包，以提示你开始安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与从 Microsoft Store 安装的应用或使用 MDM 的 LOB 应用部署功能旁加载的应用一样，需要使用签名[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)工具对应用进行[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)数字签名，并且用于签名的证书必须受 HoloLens 设备信任，然后才能部署应用。
 
 **应用程序安装说明。**
 
@@ -66,13 +80,13 @@ ms.locfileid: "11253059"
 
 - 手部跟踪现在在许多新情况下保持跟踪，这些新情况下手以前会丢失。  在一些新情况下，仅根据用户的手继续更新手部位置，而其他连接点根据上一个手型进行推断。  此更改有助于提高移动（如跳跃、抛出、跳跃和跳跃）的跟踪一致性。  它还有助于手靠近表面或持有对象的情况。  在推断手部连接时 [，每个联合](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 精度值将设置为"近似"，而不是"高"。
 - 修复了 Azure AD 帐户的 PIN 重置将显示错误"出现错误"的问题。
-- 在从设置应用、新用户或通知 Toast 启动 ET、Iris 时，用户应该可以看到更少的启动后 OOBE 崩溃。
+- 在从设置应用、新用户或通知 Toast 启动 ET、虹膜时，用户应看到更少的启动后 OOBE 崩溃。
 - 用户应具有来自 OOBE 的正确时区。
 
 ## Windows 全息版版本 1903 – 2020 年 12 月更新
 - 内部版本 18362.1088
 
-此每月质量更新不包含任何明显的更改，我们鼓励你试用我们最新的 Windows 全息版版本 20H2 – 2020 年 12 月更新和在内部版本中添加的新应用安装程序功能。
+此每月质量更新不包含任何明显的更改，我们鼓励你试用我们最新的 Windows 全息版版本 20H2 – 2020 年 12 月更新和内部版本中添加的新应用安装程序功能。
 
 
 ## Windows 全息版，版本 20H2
@@ -84,12 +98,12 @@ Windows Holographic 版本 20H2 现已发布，为 HoloLens 2 用户和 IT 专�
 
 ### Windows 全息版版本 20H2 中的新增功能  
 
-| 功能                                              | 说明                                                                                                                                     |
+| 功能                                              | 描述                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [自动眼部位置支持](hololens-release-notes.md#auto-eye-position-support) | 主动计算眼睛位置，无需用户进行目视跟踪校准。   |
 | [证书管理器](hololens-release-notes.md#certificate-manager)   | 允许使用更简单的新方法来安装和删除"设置"应用中的证书。     |
 | [从 USB 自动启动预配](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | USB 驱动器上的预配包会自动提示 OOBE 中的预配页面。                                                         |
-| [OOBE 中的自动确认预配包](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 预配包会在 OOBE 期间从预配页面自动应用。                                                         |
+| [在 OOBE 中自动确认预配包](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 预配包会在 OOBE 期间从预配页面自动应用。                                                         |
 | [无需使用 UI 即可自动预配](hololens-release-notes.md#automatic-provisioning-without-using-ui) | 如何将预配自动启动和自动确认组合在一起。 |
 | [将 Autopilot Wi-Fi连接](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | 从设备设备使用 autopilot Wi-Fi无需以太网适配器。 |
 | [Tenantlockdown 云解决方案提供商和 Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | 在租户注册和应用策略后，设备只能每次重置或重新闪烁时注册到该租户中。 |
@@ -131,7 +145,7 @@ Windows Holographic 版本 20H2 现已发布，为 HoloLens 2 用户和 IT 专�
 
 - 通过新的证书管理器改进了设备安全性和合规性的审核、诊断和验证工具。 此功能将使您能够在商业环境中大规模部署、排查和验证证书。
 
-在 Windows 全息版 20H2 中，我们将在 HoloLens 2 设置应用中添加证书管理器。 转到" **设置>更新&安全>证书**。 此功能提供在设备上查看、安装和删除证书的简单且用户友好的方式。 借助新的证书管理器，管理员和用户现在拥有改进的审核、诊断和验证工具，以确保设备保持安全与合规。 
+在 Windows 全息版 20H2 中，我们将在 HoloLens 2 设置应用中添加证书管理器。 转到" **设置>更新&安全>证书**。 此功能提供在设备上查看、安装和删除证书的简单且用户友好的方式。 借助新的证书管理器，管理员和用户现在具有改进的审核、诊断和验证工具，以确保设备保持安全与合规。 
 
 -   **审核：** 能够验证证书是否正确部署或确认证书已正确删除。 
 -   **诊断：** 出现问题时，验证设备上是否存在相应的证书可节省时间并帮助进行故障排除。 
@@ -173,7 +187,7 @@ Windows Holographic 版本 20H2 现已发布，为 HoloLens 2 用户和 IT 专�
 在此版本之前，用户在 OOBE 期间必须手动启动预配屏幕才能使用按钮组合进行预配。 现在，用户可以通过使用 USB 存储驱动器上的预配包跳过按钮组合。 
 
 1. 在 OOBE 的第一个可交互时刻使用预配包插入 USB 驱动器
-1. 设备准备好预配后，将自动打开包含预配页面的提示。 
+1. 设备准备好进行预配后，将自动打开包含预配页面的提示。 
 
 注意：如果在设备启动时 USB 驱动器被留有电源，则 OOBE 将枚举现有的 USB 存储设备，并观察插入的其他设备。
 
@@ -181,7 +195,7 @@ Windows Holographic 版本 20H2 现已发布，为 HoloLens 2 用户和 IT 专�
 
 稍后可在此处找到 [此信息。](hololens-provisioning.md#auto-launch-provisioning-from-usb)
 
-### OOBE 中的自动确认预配包
+### 在 OOBE 中自动确认预配包
 - 自动进程，允许更少的用户交互，当显示预配包页面时，它将自动应用列出的所有程序包。
 
 当设置主屏幕出现时，OOBE 将倒计时 10 秒，然后自动开始应用所有预配包。 在验证预期的程序包后，用户仍可在此 10 秒内确认或取消。
@@ -208,7 +222,7 @@ Windows Holographic 版本 20H2 现已发布，为 HoloLens 2 用户和 IT 专�
 ### 将 Autopilot Wi-Fi连接
 - 无需 USB-C 适配器，通过使 Autopilot 在连接的设备上运行，Wi-Fi硬件需求。
 
-现在，在 OOBE 期间，将 HoloLens 2 与 Wifi 连接后，OOBE 将检查设备的 Autopilot 配置文件。 如果找到一个，它将用于完成其余 AAD 加入和注册流。 换句话说，使用以太网到 USB-C 或 Wi-Fi USB-C 适配器已不是一项要求，但如果在 OOBE 开始时提供，它们将继续工作。 了解有关适用于 [HoloLens 2 设备的 Autopilot 的更多信息](hololens2-autopilot.md)。
+现在，在 OOBE 期间，将 HoloLens 2 与 Wifi 连接后，OOBE 将检查设备的 Autopilot 配置文件。 如果找到一个，它将用于完成其余 AAD 加入和注册流。 换句话说，使用以太网到 USB-C 或Wi-Fi USB-C 适配器已不是一项要求，但如果在 OOBE 开始时提供，它们将继续工作。 了解有关适用于 [HoloLens 2 设备的 Autopilot 的更多信息](hololens2-autopilot.md)。
 
 ### Tenantlockdown CSP 和 Autopilot
 - 将设备锁定到租户后，即使进行设备重置或重新刷新也可将设备保留在组织的租户上。 通过预配禁用帐户创建，进一步增强安全性。 
@@ -261,14 +275,14 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 ### 全局分配的访问权限 – 展台模式
 - 通过启用在系统级别应用展台模式的新展台方法，减少展台的标识管理。
 
-此新功能允许 IT 管理员为适用于系统级别的多个应用展台模式配置 HoloLens 2 设备，此模式与系统上的任何标识没有任何关联，并且适用于登录设备的每个人。 在此处详细阅读有关此新功能[。](hololens-global-assigned-access-kiosk.md)
+此新功能允许 IT 管理员为适用于系统级别的多个应用展台模式配置 HoloLens 2 设备，此模式与系统上的任何标识没有任何关联，并且适用于登录设备的每个人。 在此处详细阅读有关此[新功能。](hololens-global-assigned-access-kiosk.md)
 
 ### 在多应用展台模式下自动启动应用程序 
 - 自动应用启动的集中体验，进一步增加了为展台模式体验选择的 UI 和应用选择。
 
 仅适用于多应用展台模式，并且只能使用分配的访问权限配置中的以下突出显示属性将 1 个应用指定为自动启动。 
 
-当用户登录时，将自动启动应用程序。 
+当用户登录时，应用程序将自动启动。 
 
 ```xml
 <AllowedApps>                     
@@ -287,7 +301,7 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 
 已在 Windows 全息版 20H2 上为 HoloLens 2 设备创建了新的混合现实策略。 新的可控制设置包括：设置亮度、设置音量、在混合现实捕获中禁用音频录制、设置何时可以收集诊断以及 AAD 组成员身份缓存。  
 
-| 新 HoloLens 策略                                | 说明                                                                               | 注释                                                                |
+| 新 HoloLens 策略                                | 描述                                                                               | 注释                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | 允许禁用亮度按钮，以便按它不会更改亮度。       | 1 是，0 (默认值)                                                 |
 | MixedReality\VolumeButtonDisabled                  | 允许禁用音量按钮，以便按它不会更改音量。               | 1 是，0 (默认值)                                                 |
@@ -307,14 +321,14 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 最大值 - 60 天 
 
 正确使用此策略的步骤： 
-1. 为面向 Azure AD 组的展台创建设备配置文件，并将其分配给 HoloLens () 。 
+1. 创建面向 Azure AD 组的展台的设备配置文件，并将其分配给 HoloLens () 。 
 1. 创建基于 OMA URI 的自定义设备配置，该配置将此策略值设置为所需的天数 (> 0) 并将其分配给 HoloLens () 。 
     1. URI 值应在 OMA-URI 文本框中输入为 ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. 该值可以介于允许的最小值/最大值之间。
 1. 注册 HoloLens 设备并验证这两种配置是否适用于该设备。 
 1. 在 Internet 可用时允许 Azure AD 用户 1 登录，一旦成功确认用户登录和 Azure AD 组成员身份，将创建缓存。 
 1. 现在，Azure AD 用户 1 可以将 HoloLens 脱机并用于展台模式，只要策略值允许 X 天数。 
-1. 对于任何其他 Azure AD 用户 N，可以重复步骤 4 和 5。此处的关键点是任何 Azure AD 用户都必须使用 Internet 登录设备，以便我们至少能确定他们是展台配置所面向的 Azure AD 组的成员。 
+1. 对于任何其他 Azure AD 用户 N，可以重复步骤 4 和 5。此处的关键点是，任何 Azure AD 用户都必须使用 Internet 登录设备，以便我们可以至少一次确定他们是展台配置面向的 Azure AD 组的成员。 
  
 > [!NOTE]
 > 为 Azure AD 用户执行步骤 4 之前，将遇到"断开连接"环境中提及的失败行为。 
@@ -366,7 +380,7 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 ### HoloLens 2 的"已启用设置"页面可见性
 - "设置"应用中增加的 UI 控件，可能会混淆以显示有限的页面选择。
 
-现在，我们已启用一个策略，允许 IT 管理员阻止"系统设置"应用中的特定页面可见或可访问，或者对除指定页面以外的所有页面启用此策略。 若要了解如何完全自定义此功能，请单击以下链接。
+现在，我们已启用一个策略，允许 IT 管理员阻止"系统设置"应用中的特定页面可见或无法访问，或者对除指定页面以外的所有页面启用此策略。 若要了解如何完全自定义此功能，请单击以下链接。
 
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
 
@@ -388,10 +402,10 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 
 > [!NOTE]
 > 如果发生以下情况之一，HoloLens (5 分钟) 使用默认视频录制时长：
-> - 估计的最大录制持续时间小于默认的 5 分钟。
+> - 估计的最大录音持续时间小于默认的 5 分钟。
 > - 可用磁盘空间小于总磁盘空间的 20%。
 
-此信息可以再次在此处 [找到](holographic-photos-and-videos.md#maximum-recording-length)。 
+可以在此处再次找到 [此信息](holographic-photos-and-videos.md#maximum-recording-length)。 
 
 ### 更新中的改进和修复：
 - OOBE 中的更多屏幕现在为深色模式。
@@ -399,12 +413,12 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 - 解决了用户无法通过预配包预配 VPN 配置文件的问题。
 - 修复了 VPN 连接的代理配置问题。
 - 更新了策略，以禁用通过适用于 AllowUsbConnection 的 NCM 的 MDM 枚举 USB 函数。
-- 解决了当将 HoloLens 设备设置为单应用展台时，阻止 HoloLens 设备在文件资源管理器中显示媒体传输协议 (MTP) [的问题。](hololens-kiosk.md) 请注意， (UTP 连接和 USB) 仍可以使用 [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 策略禁用。
+- 解决了当将 HoloLens 设备设置为单应用展台时，阻止 HoloLens 设备在文件资源管理器中显示媒体传输协议 (MTP) [的问题。](hololens-kiosk.md) 请注意，MTP (UTP 连接通常) [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 策略禁用。
 - 修复了"开始"菜单中的图标在展台模式下正确缩放的问题。
 - 修复了由于 HTTP 缓存干扰面向 Azure AD 组的展台模式的问题。
 - 修复了用户在通过预配包启用开发人员模式后无法使用"配对"按钮的问题，除非他们禁用并重新启用开发人员模式。
 
-## Windows Holographic 版本 1903 - 2020 年 11 月更新
+## Windows 全息版版本 1903 - 2020 年 11 月更新
 - 内部版本 18362.1085
 
 此每月质量更新不包含任何明显的更改，我们鼓励你试用我们的最新功能版本 Windows Holographic 版本 20H2。
@@ -416,12 +430,12 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 
 - 删除了导致运行时系统错误的不必要检查。
 
-## Windows Holographic 版本 1903 - 2020 年 10 月更新
+## Windows 全息版版本 1903 - 2020 年 10 月更新
 - 内部版本 18362.1081
 
-此每月质量更新不包含任何明显的更改，我们鼓励你试用 Windows Holographic 版本 2004 的最新内部版本。
+此每月质量更新不包含任何明显的更改，我们鼓励你试用 Windows 全息版版本 2004 的最新内部版本。
 
-## Windows Holographic 版本 2004 - 2020 年 9 月更新
+## Windows 全息版版本 2004 - 2020 年 9 月更新
 - 内部版本 19041.1117
 
 更新中的改进和修复：
@@ -430,7 +444,7 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 - 此版本包括 NCSI 代理检测修补程序，用于解决通过网络代理的 Internet 检测失败的问题。 NCSI 可以使用计算机代理和每个配置文件代理进行 Internet 连接检测。 在未来版本中，NCSI 将支持每用户代理。
 - 在大多数 Windows Mixed Reality 设备上，当用户的头处于向前看的中性位置时，向前方向矢量与地平行。 但是，早期版本的 HoloLens 2 将矢量与显示面板垂直对齐，相对于理想方向向下倾斜几度。 较新版本的 HoloLens 2 已更正此错误，以确保不同外形因素的语义一致性。
 - 改进了手部跟踪稳定性，将减少特定方案中的跟踪损失。
-- 此版本包含一个修补程序，用于改进音频时间戳质量，这可能会导致视频捕获问题。
+- 此版本包含一个改进音频时间戳质量的修补程序，该修补程序可能导致视频捕获问题。
 
 ## Windows 全息版版本 1903 - 2020 年 9 月更新
 - 内部版本 18362.1079
@@ -445,14 +459,14 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 
 更新中的改进和修复：
 
-- 设置应用将不再关注用户进入虹膜注册或目视跟踪校准体验。
+- 设置应用将不再关注用户进入 Iris 注册或目视跟踪校准体验。
 - 修复了在 OOBE 期间应用预配包以重命名设备并执行其他操作（例如 (连接到网络) ）在设备重启后因重命名而无法执行其他操作的问题。
 - 修改的初始设备设置流的配色方案，以提高视觉质量。
 
-## Windows Holographic 版本 1903 - 2020 年 8 月更新
+## Windows 全息版版本 1903 - 2020 年 8 月更新
 - 内部版本 18362.1074
 
-此每月质量更新不包含任何明显的更改，我们鼓励你试用 Windows Holographic 版本 2004 的最新内部版本。
+此每月质量更新不包含任何明显的更改，我们鼓励你试用 Windows 全息版版本 2004 的最新内部版本。
 
 ## Windows Holographic 版本 2004 - 2020 年 7 月更新
 - 内部版本 19041.1109
@@ -470,7 +484,7 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 更新中的改进和修复：
 
 - 修复了在丢失或重新获得跟踪时可能导致全息影像在 Unity 应用程序中消失的问题。
-- 修复了导致独占 HoloLens 应用在将 HoloLens 仿真器用于某些设备上硬件加速时崩溃回 Shell 的问题。
+- 修复了导致独占 HoloLens 应用在某些设备上将 HoloLens 仿真器与硬件加速一同使用时崩溃回 Shell 的问题。
 - 解决了有关 HoloLens 2 上 Windows Device Portal 的 HTTPS 转发的问题。
 
 ## Windows Holographic 版本 2004 - 2020 年 6 月更新
@@ -485,13 +499,13 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
   - 在 *MRC 音频效果上*：
     - LoopbackGain (Windows Device Portal) 的"混合现实捕获"页面上的当前"应用音频增益") 
     - MicrophoneGain (Windows Device Portal) 的"混合现实捕获"页面上的当前"麦克风音频增益") 
-- 修复了在混合现实捕获方案中提高音频质量的 Bug。 具体而言，此修复应消除在显示"开始"菜单时录制 **中的** 音频故障。
+- 修复了在混合现实捕获方案中提高音频质量的 Bug。 具体而言，此修补程序应该消除在显示"开始"菜单时录制 **中的** 音频故障。
 - 改进了录制的视频中的全息影像稳定性。
 - 解决了在设备处于待机状态多天后，混合现实捕获无法录制视频的问题。
 - HolographicSpace.UserPresence API 通常对 Unity 应用程序禁用。 此行为可以避免导致某些应用在翻转面罩时暂停的问题，即使启用了"在后台运行"设置。 现在为 Unity 版本 2018.4.18 及更高版本以及 2019.3.4 及更高版本启用 API。
 - 通过连接连接访问 Device Portal Wi-Fi，Web 浏览器可能会由于证书无效而阻止访问。 即使之前信任设备证书，浏览器也可能报告"ERR_SSL_PROTOCOL_ERROR"等错误。 在这种情况下，你无法前进到 Device Portal，因为无法忽略安全警告。 此更新解决了问题。 如果之前在电脑上下载并信任设备证书以删除浏览器安全警告，并且发生 SSL 错误，必须下载并信任新证书以解决浏览器安全警告。
 - 启用创建运行时预配包的能力，该预配包可以使用 MSIX 包安装应用。
-- 在"设置系统**** 全息影像"中添加了一个设置，允许用户在设备关闭时自动删除  >  ****  >  **** 混合现实家庭的所有全息影像。
+- 在设置**** 系统全息影像中添加了一个设置，允许用户在设备关闭时自动删除  >  ****  >  **** 混合现实家庭的所有全息影像。
 - 修复了导致 HoloLens 应用更改其像素格式以在 HoloLens 仿真器中呈现黑色的问题。
 - 修复了在 Iris 登录期间导致崩溃的 Bug。
 - 修复了有关现有应用的重复存储下载的问题。
@@ -520,7 +534,7 @@ DisplayOffTimeoutOnBattery 和 DisplayOffTimeoutPluggedIn 的这两个新设置�
 
 HoloLens 2 版本 *2004 的 2020* 年 5 月主要软件更新包括一系列令人兴奋的新功能，如 Windows Autopilot 支持、应用深色模式、5G/LTE 热点的 USB 以太网支持等。 若要更新到最新版本，请打开"设置****"应用，转到   "&"，然后选择"检查 **** **更新"**   按钮。 
 
-|             功能                              |          说明                                                                                              |
+|             功能                              |          描述                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |       Windows Autopilot                          |          使用 Windows AutoPilot 预配置并无缝设置用于生产的新设备                 |
 |       FIDO 2 支持                             |          支持 FIDO2 安全密钥以支持对共享设备进行快速而安全的身份验证            |
@@ -565,7 +579,7 @@ FIDO2 安全密钥是基于标准的无密码身份验证方法，可以采用�
 
 1. 将最新版本的 Windows 配置设计器从 Windows 应用商店下载到电脑。
 1. 选择 **"预配 HoloLens 设备**  >  **预配 HoloLens 2 设备"。**
-2. 生成配置文件。 然后将创建的所有文件复制到 USB-C 存储设备。
+2. 生成配置文件。 然后，将创建的所有文件复制到 USB-C 存储设备。
 3. 将 USB-C 设备插入任何重新闪烁的 HoloLens。 然后按**音量降低**  +  **电源**按钮以应用预配包。
 
 ### 业务线应用程序安装状态
@@ -600,7 +614,7 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 
 ### 扩展了对 5G/LTE Tethered 设备的 USB 以太网支持
 
-添加了支持以启用某些移动宽带设备，例如 5G/LTE 电话和 Wi-Fi 热点，因为它们通过 USB 连接到 HoloLens 2。 这些设备现在在网络设置 **中显示为** 另一个以太网连接。  (不支持需要外部驱动程序的移动宽带设备。) 此功能在 Wi-Fi 不可用且 Wi-Fi tethering 性能不足时启用高带宽连接。 若要了解有关受支持的 USB 设备，请参阅"连接到 [Bluetooth 和 USB-C 设备](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
+添加了支持以启用某些移动宽带设备，例如 5G/LTE 电话和 Wi-Fi 热点，因为它们通过 USB 连接到 HoloLens 2。 这些设备现在在网络设置 **中显示为** 另一个以太网连接。  (不支持需要外部驱动程序的移动宽带设备。) 此功能可在 Wi-Fi 不可用且 Wi-Fi tethering 性能不足时启用高带宽连接。 若要了解有关受支持的 USB 设备，请参阅"连接到 [Bluetooth 和 USB-C 设备](https://docs.microsoft.com/hololens/hololens-connect-devices)。  
 
 ### 手部跟踪改进
 
@@ -608,8 +622,8 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 
 - **指向式式稳定性：** 现在，当手指被手指遮挡时，系统可以抵御手指的弯曲。 此更改提高了你按下按钮、键入、滚动内容等时的准确性！ 
 - **减少了意外的点击量：** 我们改进了对空点击手势的检测。 现在，在几种常见方案中（例如，将手放在一侧时）意外激活更少。
-- **用户交换机可靠性：** 共享设备时，系统现在更新手型的速度更快、更可靠。
-- **减少手盗：** 我们改进了对传感器视图多于两只手的情况的处理。 如果多个人紧密协作，则跟踪手从用户"跳"到场景中其他人手的可能性现在要低得多。
+- **用户交换机可靠性：** 共享设备时，系统现在更新手型的速度更快且更可靠。
+- **减少手盗窃：** 我们改进了对传感器视图多于两只手的情况的处理。 如果多个人紧密协作，则跟踪手从用户"跳"到场景中其他人手的可能性现在要低得多。
 - **系统可靠性：** 修复了导致手部跟踪在设备负载较高时停止工作的问题。
 
 ### 深色模式
@@ -637,7 +651,7 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 
 ### Cortana 更新
 
-更新后的应用与 Microsoft 365 集成，可帮助你完成当前仅 (设备US-English完成) 。 在 HoloLens 2 上，Cortana 不再支持某些特定于设备的命令，如调整音量或重启。 这些选项现在受新的系统语音命令支持。 在我们的博客中了解有关新 Cortana 应用[的内容。](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)
+更新后的应用与 Microsoft 365 集成，可帮助你完成当前仅在 (设备US-English完成) 。 在 HoloLens 2 上，Cortana 不再支持某些特定于设备的命令，如调整音量或重启。 这些选项现在受新的系统语音命令支持。 在我们的博客中了解有关新 Cortana 应用[的内容。](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)
 
 ### 质量改进和修复
 
@@ -647,7 +661,7 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 - 修复了在信息研究模式下流式处理期间发生的设备挂起。
 - 修复了在某些情况下，在恢复会话时不会在登录屏幕上显示正确用户的问题。
 - 修复了用户无法通过"设置"导出 MDM **日志的问题**。
-- 修复了以下问题：在开箱即用设置后，目视跟踪的准确性可能低于预期。
+- 修复了以下问题：立即执行开箱即用设置的目视跟踪的准确性可能低于预期。
 - 修复了目视跟踪子系统在特定条件下初始化或校准失败的问题。
 - 修复了针对已校准的用户提示进行目视校准的问题。
 - 修复了驱动程序在目视校准期间崩溃的问题。
@@ -687,11 +701,11 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 
 **更新中的改进和修复也：** 
 - 确保外壳覆盖包含在混合现实捕获中。
-- 现在，非真实的开发人员可以使用 Device Portal 中的"3D 视图"页测试和调试其应用程序。
+- 现在，非真实的开发人员可以使用 Device Portal 中的"3D 视图"页面测试和调试其应用程序。
 - 使用 *HolographicDepthReprojectionMethod DepthReprojection* 算法时，改进了混合现实捕获中的全息影像稳定性。
 - 修复了 32 位应用上的"未注册 WinRT IStreamSocketListener API 类ARM错误。
 
-## Windows Holographic 版本 1903 - 2020 年 3 月更新 
+## Windows 全息版版本 1903 - 2020 年 3 月更新 
 - 内部版本 18362.1056
 
 更新中的改进和修复：
@@ -708,7 +722,7 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 - 暂时禁用了适用于 Unity 应用程序的 HolographicSpace.UserPresence API。 此更改可以避免导致某些应用在翻转面罩时暂停的问题，即使启用了"在后台运行"设置。
 - 修复了由手部跟踪导致的随机 HUP 崩溃，其中用户注意到 UI 冻结，然后在几秒钟后返回到 Shell。
 - 改进了手部跟踪，以便当你用食指弯曲时，该手指的上半部分不太可能意外损坏。
-- 改进了头跟踪、空间映射和其他运行时的可靠性。
+- 改进了头部跟踪、空间映射和其他运行时的可靠性。
 
 ## Windows 全息版版本 1903 - 2020 年 1 月更新 
 - 内部版本 18362.1043
@@ -722,7 +736,7 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 
 更新中的改进和修复：
 
-- 引入了 LSR (最后阶段) 修复。 改进了全息影像的视觉呈现，通过更精确地计算其深度，使其更加稳定且清晰。 如果应用没有正确设置全息影像深度，此症状将在此更新后更加明显。
+- 引入了 LSR (最后阶段) 修复。 改进了全息影像的视觉呈现，通过更精确地计算其深度，使其更加稳定且清晰。 如果应用无法正确设置全息影像深度，此症状将在此更新后更加明显。
 - 修复了独占应用和独占应用之间的导航稳定性。
 - 解决了混合现实捕获在设备处于待机状态数天后无法录制视频的问题。
 - 改进了全息影像稳定性。
@@ -732,7 +746,7 @@ NetworkQoSPolicy 配置服务提供商通过 QoS 策略创建 (服务质量) 。
 
 更新中的改进和修复：
 
-- 修复了在初始**** 设置 en-CA 和 en-AU 期间选择语音命令的功能。
+- 修复了在初始 **设置** en-CA 和 en-AU 期间选择语音命令的功能。
 - 改进了置于最新 Unity 和混合现实版 MRTK 版本Toolkit (对象) 质量。
-- 修复了在打开然后关闭"开始"菜单之前，全息应用程序在启动时卡在暂停状态的问题。
+- 修复了在启动时全息应用程序在打开并关闭"开始"菜单之前暂停状态的问题。
 - HoloLens 2 和模拟器的 OpenXR 运行时一致性修补程序和改进。
