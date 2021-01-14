@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: d985c89a3352f1fcd8967970a1211315403dca15
-  ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+  ms.openlocfilehash: 94adcd87aacdb1c7ca40a0142f5c5d5641505b2b
+  ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "11195605"
+  ms.lasthandoff: 01/13/2021
+  ms.locfileid: "11268048"
 landingContent:
 - title: HoloLens 概述
   linkLists:
@@ -44,6 +44,8 @@ landingContent:
       url: common-scenarios.md
     - text: 使用 Remote Assist 云连接 HoloLens 2 规模部署
       url: hololens2-cloud-connected-overview.md
+    - text: 外部客户端部署指南
+      url: hololens2-deployment-guide.md
     - text: 脱机安全部署
       url: hololens-common-scenarios-offline-secure.md
 - title: 准备
@@ -118,7 +120,7 @@ landingContent:
       url: hololens-insider.md
     - text: 向我们提供反馈
       url: hololens-feedback.md
-- title: 附加服务
+- title: 更多服务
   linkLists:
   - linkListType: reference
     links:
