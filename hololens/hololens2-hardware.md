@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270717"
+ms.locfileid: "11271161"
 ---
 # <span data-ttu-id="6a891-104">HoloLens 2 硬件</span><span class="sxs-lookup"><span data-stu-id="6a891-104">HoloLens 2 hardware</span></span>
 
-![HoloLens 2 侧视图](images/hololens2-exploded-medium.png)
+![HoloLens 2 侧视图](images/hololens2-breakdown.png)
 
 <span data-ttu-id="6a891-106">Microsoft HoloLens 2 是完全不受束缚的全息计算机。</span><span class="sxs-lookup"><span data-stu-id="6a891-106">Microsoft HoloLens 2 is an untethered holographic computer.</span></span>  <span data-ttu-id="6a891-107">它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。</span><span class="sxs-lookup"><span data-stu-id="6a891-107">It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.</span></span>
 
@@ -69,7 +69,7 @@ ms.locfileid: "11270717"
 | <span data-ttu-id="6a891-154">惯性测量单元 (IMU)</span><span class="sxs-lookup"><span data-stu-id="6a891-154">Inertial measurement unit (IMU)</span></span> | <span data-ttu-id="6a891-155">加速计、陀螺仪、磁力仪</span><span class="sxs-lookup"><span data-stu-id="6a891-155">Accelerometer, gyroscope, magnetometer</span></span> |
 | <span data-ttu-id="6a891-156">相机</span><span class="sxs-lookup"><span data-stu-id="6a891-156">Camera</span></span> | <span data-ttu-id="6a891-157">8-MP 静止图像、1080p30 视频</span><span class="sxs-lookup"><span data-stu-id="6a891-157">8-MP stills, 1080p30 video</span></span> |
 
-![HoloLens 2 传感器](images/hl2-sensors.png)
+![HoloLens 2 传感器](images/hololens2-front-view.png)
 
 > [!NOTE]
 > <span data-ttu-id="6a891-159">不要遮盖图片中提到的任何传感器。</span><span class="sxs-lookup"><span data-stu-id="6a891-159">Do no cover any of the sensors that are called out in the picture.</span></span> <span data-ttu-id="6a891-160">头部跟踪摄像机的视野很宽，除了遮盖摄像机外，摄像机周围不要有任何东西。</span><span class="sxs-lookup"><span data-stu-id="6a891-160">The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.</span></span>
