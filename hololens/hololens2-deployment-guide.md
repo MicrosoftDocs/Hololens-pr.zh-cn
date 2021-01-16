@@ -13,20 +13,28 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
-ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
+ms.openlocfilehash: 7658ace4879fef401accabb95ca22e307e5f80a8
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "11267998"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271656"
 ---
 # 使用远程协助将 HoloLens 2 部署到外部客户端
 
-本文档可帮助 IT 专业人员规划并部署 HoloLens 2 设备，侧重于远程协助。 [了解有关远程协助的更多信息](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
+本指南可帮助具有以下目标的 IT 专业人员在组织中部署 Microsoft HoloLens 2 设备：
+
+1. 云连接 HoloLens 2 设备
+1. 将 HoloLens 2 设备贷款给外部客户端以使用
+1. 安全已贷款设备
+
+本指南将提供适用于大多数 HoloLens 2 部署方案的一般[HoloLens 2](#general-deployment-recommendations-and-instructions)部署建议，[](#common-concerns)以及客户在部署远程协助以用于外部用途时常见的问题。
 
 ## 方案说明
 
 出于本文档的目的，Contoso 公司希望将 HoloLens 2 设备发运给外部客户端的工厂，以便短期或长期使用。 当客户端需要协助服务时，客户端将使用 Contoso 公司提供的凭据登录到 HoloLens 2 设备，并使用远程协助联系 Contoso 公司专家。
+
+在此处了解有关远程协助 [的更多信息](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)。
 
 ### 此方案的要求
 
@@ -69,7 +77,7 @@ ms.locfileid: "11267998"
 
 ### 如何限制应用
 
-[展台模式](https://docs.microsoft.com/hololens/hololens-kiosk) 和/或 [WDAC (Windows Defender应用程序 ](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)) 限制应用程序的选项。
+[展台模式](https://docs.microsoft.com/hololens/hololens-kiosk) 和/或 [WDAC (Windows Defender应用程序 ](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)) 是限制应用程序的选项。
 
 ### 如何管理密码
 
@@ -112,7 +120,7 @@ ms.locfileid: "11267998"
 1. 使用 [WDAC](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) 允许或黑色 HoloLens 2 设备上应用。
 1. 将远程协助更新到最新版本，作为设置的一部分。 有两个选项可进行此操作：
     1. 这可以通过访问 Windows Microsoft **Store --> Remote Assist --> 应用完成**。
-    1. 另一个方法是让 HoloLens 2 在一夜之间保持插入状态以自动更新。
+    1. 使用 [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) CSP 启用自动更新，并保留设备插入以接收更新。
 1. [禁用除网络](https://docs.microsoft.com/hololens/settings-uri-list) 设置以外的所有设置页面，以允许用户连接到客户端站点中的来宾网络。
 1. [管理 HoloLens 更新](https://docs.microsoft.com/hololens/hololens-updates)
     1. 控制 [操作系统更新或](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) 允许自由流动的选项。

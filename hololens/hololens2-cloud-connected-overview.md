@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253179"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271667"
 ---
 # 部署指南 – 云连接的 HoloLens 2 和远程协助 – 概述
 
@@ -31,15 +31,15 @@ ms.locfileid: "11253179"
 
 本指南的特定目标是在 HoloLens 设备上在组织中设置远程协助。 我们将介绍实现该目标所需的措施。 为了继续关注此目标，将预先选择某些准备和配置，以便针对此部署进行优化或减少配置所需的项目。 将告知你这些选项，并可以根据您的业务需求自定义部署。
 
-这是类似于方案 [A：](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)部署到云连接设备的设置，这是许多概念证明部署的良好选项，其中包括：
+这是类似于方案 [A：](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)部署到云连接设备的设置，这是许多概念证明部署的良好选择，其中包括：
 
 - Wi-Fi网络通常对 Internet 和云服务完全开放
-- Azure AD 加入 MDM 自动注册 - MDM (Intune) 托管
+- 通过 MDM 自动注册加入 Azure AD - MDM (Intune) 托管
 - 用户使用自己的公司帐户登录 Azure AD (Azure AD) 
   - 支持每个设备的一个或多个用户
 - 根据特定用例应用不同级别的设备锁定配置，从"完全打开"到"单个应用展台"
 
-![云连接方案](./images/cloud-connected-deployment-chart.png)
+![云连接方案](./images/cloud-connected-guide-diagram.png)
 
 本指南中不会应用任何其他设备限制或配置，但我们鼓励你在完成后探索这些选项。
 

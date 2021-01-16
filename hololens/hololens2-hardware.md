@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270717"
+ms.locfileid: "11271161"
 ---
 # HoloLens 2 硬件
 
-![HoloLens 2 侧视图](images/hololens2-exploded-medium.png)
+![HoloLens 2 侧视图](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。
 
@@ -69,7 +69,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | 惯性测量单元 (IMU) | 加速计、陀螺仪、磁力仪 |
 | 相机 | 8-MP 静止图像、1080p30 视频 |
 
-![HoloLens 2 传感器](images/hl2-sensors.png)
+![HoloLens 2 传感器](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 不要遮盖图片中提到的任何传感器。 头部跟踪摄像机的视野很宽，除了遮盖摄像机外，摄像机周围不要有任何东西。

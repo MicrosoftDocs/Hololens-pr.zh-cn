@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
-ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
+ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269477"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271693"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -29,7 +29,7 @@ ms.locfileid: "11269477"
 
 ## Windows 预览体验成员发行说明
 
-我们希望再次开始向 Windows 预览体验成员提供新功能。 我们将测试到开发人员频道获取最新更新。 我们将继续更新此页面，因为我们向 Windows 预览体验成员版本添加更多功能和更新。  感到兴奋并准备好将这些更新融合到现实中。 
+我们希望再次开始向 Windows 预览体验成员提供新功能。 我们将测试到开发人员频道获取最新更新。 我们将继续更新此页面，因为我们向 Windows 预览体验成员版本添加更多功能和更新。  感到兴奋并准备好将这些更新融合到现实中。
 
 | 功能名称                                              | 简短说明                                                                      | 在内部版本可用 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -38,12 +38,16 @@ ms.locfileid: "11269477"
 | [默认应用选取器](#default-app-picker)                 | 选择应针对每个文件或链接类型启动的应用                                      | 20279.1006 |
 | [Office Web 应用](#office-web-app)                         | Office Web 应用的快捷方式现在列在"所有应用"中                                   | 20279.1006 |
 | [轻扫以键入](#swipe-to-type)                           | 使用手指尖在全息键盘上"轻扫"字词                        | 20279.1006 |
+| [USB-C 外部麦克风支持](#usb-c-external-microphone-support) | 将 USB-C 麦克风用于应用和/或远程协助。| 20279.1006 |
+| [展台模式下新应用的新 AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新设置和边缘应用的 AUMID | 20279.1006 |
+| [改进的展台模式故障帮助](#kiosk-mode-behavior-changes-for-handling-of-failures) | 展台模式在空的"开始"菜单之前查找全局分配的访问权限。 | 20279.1006 |
+| [配置回退诊断](#configuring-fallback-diagnostics-via-settings-app) | 在"设置"应用中设置回退诊断行为 | 20279.1006 |
 
 ### 引入新的 Microsoft Edge
 
 ![旧 Microsoft Edge 徽标到新 Microsoft Edge 徽标的动画](images/new-edge.gif)
 
-新的 Microsoft Edge [采用 Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) 开放源代码项目，为客户创建更好的兼容性，减少 Web 开发人员的 Web 碎片。 
+新的 Microsoft Edge [采用 Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) 开放源代码项目，为客户创建更好的兼容性，减少 Web 开发人员的 Web 碎片。
 
 通过此预览体验成员预览版，HoloLens 2 客户首次可以使用新的 Microsoft Edge！ 虽然新 Microsoft Edge 最终将替换 HoloLens 2 上的旧版 Microsoft Edge，但预览体验成员目前可以使用这两种浏览器。 Please share feedback and bugs with our team via the **Send Feedback** feature in the new Microsoft Edge or via [Feedback Hub.](hololens-feedback.md)
 
@@ -51,23 +55,24 @@ ms.locfileid: "11269477"
 
 #### 启动新的 Microsoft Edge
 
-预览体验成员可以使用两个版本的 Microsoft Edge：新的 Microsoft Edge 新 Microsoft Edge 图标 (由蓝绿色旋转图标) 表示，旧 Microsoft Edge (由白色 ![ "e"图标) 表示。 ](images/new_edge_logo.png) 新的 Microsoft Edge 固定到"开始"菜单，将在激活 Web 链接时自动启动。 如果你想要还原为使用旧版 Microsoft Edge 作为默认 Web 浏览器，请参阅下面的说明 [重置默认应用](#default-app-picker)。
+预览体验成员可以使用两个版本的 Microsoft Edge：新的 Microsoft Edge 新 Microsoft Edge 图标 (由蓝绿色旋转图标) 表示，旧 Microsoft Edge (由白色 ![ ](images/new_edge_logo.png) "e"图标) 表示。 新的 Microsoft Edge 固定到"开始"菜单，将在激活 Web 链接时自动启动。 如果你想要还原为使用旧版 Microsoft Edge 作为默认 Web 浏览器，请参阅下面的说明 [重置默认应用](#default-app-picker)。
 
 > [!NOTE]
 > 当你首次在 HoloLens 2 上启动新的 Microsoft Edge 时，你的设置和数据将导入旧版 Microsoft Edge。 如果在启动新的 Microsoft Edge 后继续使用旧版 Microsoft Edge，则新数据将不会从旧版 Microsoft Edge 同步到新的 Microsoft Edge。
 
 #### 配置新 Microsoft Edge 的策略设置
 
-新版 Microsoft Edge 在 HoloLens 2 上为 IT 专业人员提供了一组比以前适用于旧版 Microsoft Edge 的更为广泛的浏览器策略。 
+新的 Microsoft Edge 为 IT 管理员提供 HoloLens 2 上的一组比以前适用于旧版 Microsoft Edge 的更为广泛的浏览器策略。
 
 下面是一些有用的资源，用于了解有关管理新 Microsoft Edge 的策略设置更多信息：
+
 - [使用 Microsoft Intune 配置 Microsoft Edge 策略设置](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [Microsoft Edge 旧版到 Microsoft Edge 策略映射](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
 - [Google Chrome 到 Microsoft Edge 策略映射](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - [完整的 Microsoft Edge 企业版文档](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> 由于新的 Microsoft Edge 支持大量浏览器策略，因此团队无法保证每个新策略都适用于 HoloLens 2。 但是，我们已经测试并确认 HoloLens 2 上以前支持的每个旧 Microsoft Edge 策略的新 Microsoft Edge 等效项可以正常工作。 请参阅 [Microsoft Edge 旧版到 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 策略映射，查找与 HoloLens 2 一起使用的每个旧版 Microsoft Edge 浏览器策略的新 Microsoft Edge 等效项。
+> 由于新的 Microsoft Edge 支持大量浏览器策略，团队无法保证每个新策略都适用于 HoloLens 2。 但是，我们已测试并确认 HoloLens 2 上以前支持的每个旧 Microsoft Edge 策略的新 Microsoft Edge 等效项可正常工作。 请参阅 [Microsoft Edge 旧版到 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 策略映射，查找与 HoloLens 2 一起使用的每个旧版 Microsoft Edge 浏览器策略的新 Microsoft Edge 等效项。
 >
 > 我们了解至少有两个新的 Microsoft Edge 策略将 *不能* 与 HoloLens 2 一起使用：
 > - EnterpriseModeSiteList
@@ -92,8 +97,10 @@ ms.locfileid: "11269477"
 **即将推出方案和功能：**
 - WebXR 和 360 Viewer 扩展
 - 在环境中跨多个窗口浏览时，内容还原以更正窗口
-- 具有同时音频流的多个窗口的空间声音
 - 通过浏览器通过视频、混合现实捕获或屏幕共享功能加入 Microsoft Teams (通过音频加入通话效果) 
+
+**不应工作的方案和功能：**
+- 具有同时音频流的多个窗口的空间声音
 - "查看它，说出它"
 - 打印
 
@@ -134,7 +141,7 @@ ms.locfileid: "11269477"
 
 ### 默认应用选取器
 
-激活超链接或打开具有多个支持超链接的已安装应用的文件类型时，你将看到一个新窗口打开，提示你选择应处理文件或链接类型的已安装应用。 在此窗口中，还可以选择让所选应用处理文件或链接类型"一次"或"始终"。 
+激活超链接或打开具有多个支持超链接的已安装应用的文件类型时，你将看到一个新窗口打开，提示你选择应处理文件或链接类型的已安装应用。 在此窗口中，还可以选择让所选应用处理文件或链接类型"一次"或"始终"。
 
 ![应用选取器窗口](images/default-app-picker.png)
 
@@ -146,9 +153,72 @@ Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中�
 
 ### 轻扫以键入
 
-一些客户发现通过轻扫要键入的单词的形状，在虚拟键盘上"键入"速度更快，我们正在预览全息键盘的此功能。 通过通过全息键盘的平面传递手指的尖角，轻扫该单词的形状，然后从键盘平面撤消手指的尖角，可以一次轻扫一个单词。 通过从键盘删除单词之间的手指，无需按空格键，即可轻扫后续字词。 如果你看到手指在键盘上的移动后看到轻扫轨迹，你将知道该功能正在工作。
+一些客户发现通过轻扫要键入的单词的形状，在虚拟键盘上"键入"速度更快，我们正在预览全息键盘的此功能。 通过通过全息键盘的平面传递手指的尖角，轻扫该单词的形状，然后从键盘平面撤消手指的尖角，可以一次轻扫一个单词。 通过从键盘删除单词之间的手指，无需按空格键，即可轻扫后续单词。 如果你看到手指在键盘上移动后看到轻扫轨迹，你将知道该功能正在工作。
 
 请注意，此功能可能很难使用和掌握，因为全息键盘的性质，与移动电话显示屏不同，你无法抵御手指 (因此) 。 我们正在评估此功能以公开发布，因此您的反馈非常重要;无论你发现此功能有用还是有反馈反馈，请通过反馈中心 [告诉我们](hololens-feedback.md)。
+
+### USB-C 外部麦克风支持
+
+> [!IMPORTANT]
+> 插入 USB **麦克风不会自动将其设置为输入设备**。 在插入一组 USB-C 耳机时，用户将观察到耳机的音频将自动重定向到耳机，但 HoloLens 操作系统会将内部麦克风阵列设置为高于任何其他输入设备的优先级。 **若要使用 USB-C 麦克风，请按照以下步骤操作。**
+
+用户现在可以使用"声音设置"面板选择 USB-C **连接的外部** 麦克风。 这允许用户在录制和应用使用自己的已连接麦克风，但使用 USB。 USB-C 麦克风易于启用和使用。
+
+打开"**设置"** 应用，然后选择 **"系统**  ->  **声音"。**
+
+![声音设置](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> 若要将外部麦克风与 **远程协助**一同使用，用户需要单击"管理声音设备"超链接。
+>
+> 然后使用下拉列表将外部麦克风设置为"默认" **或** " **通信默认值"。** 选择 **"** 默认值"意味着外部麦克风将无处不在使用。
+>
+> 选择 **"** 通信默认值"意味着外部麦克风将用于远程协助和其他通信应用，但 HoloLens 麦克风阵列可能仍用于其他任务。
+
+![管理声音设备](images/usbc-mic-2.png)
+
+<br>
+
+![设置麦克风默认值](images/usbc-mic-3.jpg)
+
+#### 麦克风Bluetooth如何？
+
+遗憾的是Bluetooth HoloLens 2 上目前仍不支持麦克风。
+
+#### USB-C 麦克风疑难解答
+
+请注意，某些 USB-C 麦克风错误地将自己报告为 *麦克风和扬声器* 。 这是麦克风而不是 HoloLens 的问题。 将其中一个麦克风插入 HoloLens 时，可能会丢失声音。 幸运的是，有一个简单的解决方法。  
+
+在 **"设置**系统声音"中，将内置扬声器 (模拟功能音频) 设置为  ->  ****  ->  ******默认设备**。 **** HoloLens 应记住此设置，即使麦克风稍后被删除并重新连接。
+
+![USB-C 麦克风疑难解答](images/usbc-mic-4.png)
+
+### 在展台模式下使用新的"设置"和"边缘"应用
+
+在展 [台中加入](hololens-kiosk.md)应用时，IT 管理员通常会将应用添加到展台，但使用应用用户模型 ID (AUMID) 。 由于"设置"应用和 Microsoft Edge 应用都被视为新应用，并且与为这些应用使用 AUMID 的较旧应用展台需要更新以使用新的 AUMID 不同。
+
+修改展台以包含新应用时，我们建议在新的 AUMID 中添加并保留旧 AUMID。 这将在用户更新操作系统时创建一个简单的转换，并且不需要接收新策略来继续像预期一样使用展台。
+
+| 应用                    | AUMID                                                  |
+|------------------------|--------------------------------------------------------|
+| 旧设置应用       | HolographicSystemSettings_cw5n1h2txyewy！应用            |
+| "新建设置"应用       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy！应用 |
+| 旧 Microsoft Edge 应用 | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| 新的 Microsoft Edge 应用 | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe！MSEDGE    |
+
+### 用于处理故障的展台模式行为更改
+
+在较旧的内部版本，如果设备具有展台配置（即全局分配的访问权限和 AAD 组成员身份的组合）。如果确定 AAD 组成员身份失败，用户将看到"开始"菜单中未显示[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)任何内容。
+
+从 Windows 预览体验成员版本开始，展台体验将回退到全局展台配置 (如果存在，) AAD 组展台模式期间发生故障的情况。
+
+### 通过"设置"应用配置回退诊断
+
+现在，在"设置"应用中，用户可以配置 [回退诊断的行为](hololens-diagnostic-logs.md)。 在"设置"应用中，**导航到**"隐私疑  ->  **难**解答"页以配置此设置。
+
+> [!NOTE]
+> 如果为设备配置了 MDM 策略，用户将不能覆盖该行为。  
+
 
 
 
@@ -165,7 +235,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中�
 
 在 HoloLens 2 设备上 **，转到&** Windows 预览  >  ****  >  **体验计划**"设置更新"，然后选择 **"开始使用"。** 链接你用于注册为 Windows 预览体验成员的帐户。
 
-Windows 预览体验成员现在迁移到频道。 快速**圈**将变为**开发人员频道**，慢圈将成为**** **Beta**渠道，而发布预览圈将成为******发布预览频道**。 该映射如下所示：
+Windows 预览体验成员现在迁移到频道。 快速**圈**将成为**开发人员频道**，慢圈将成为******Beta**渠道，并且发布**预览圈将成为****发布预览频道**。 该映射如下所示：
 
 ![Windows 预览体验成员频道说明](images/WindowsInsiderChannels.png)
 
@@ -176,7 +246,7 @@ Windows 预览体验成员现在迁移到频道。 快速**圈**将变为**开�
 选择 **">立即重启** 以完成。 重启设备后，转到"设置>更新& **安全>检查** 更新，获取最新内部版本。
 
 ## FFU 下载和快速方向
-若要使用已签名的 Ffu 进行测试，首先需要先对设备进行解锁，然后才能闪烁已进行测试的已签名 ffu。
+若要使用已签名的 Ffu 进行测试，首先需要先对设备进行飞行解锁，然后才能闪烁该已签名的 Ffu。
 1. 在电脑上：
 
     1. 从 下载 ffu 到你的电脑 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
@@ -196,20 +266,20 @@ Windows 预览体验成员现在迁移到频道。 快速**圈**将变为**开�
 
 ## 开发人员注意事项
 
-欢迎并鼓励你尝试使用 HoloLens 预览体验成员版本开发应用程序。  请查看 [HoloLens 开发人员文档](https://developer.microsoft.com/windows/mixed-reality/development) 开始。 这些相同的说明与 HoloLens 的预览体验成员版本一致。  可以使用与 HoloLens Visual Studio相同的 Unity 版本和版本。
+欢迎并鼓励你尝试使用 HoloLens 预览体验成员版本开发应用程序。  请查看 [HoloLens 开发人员文档](https://developer.microsoft.com/windows/mixed-reality/development) 以开始。 这些相同的说明与 HoloLens 的预览体验成员版本一致。  可以使用与 HoloLens Visual Studio相同的 Unity 版本和版本。
 
-## 停止接收预览体验成员版本
+## 停止接收预览体验成员内部版本
 
 如果你不再希望接收 Windows 全息版的预览体验成员版本，你可以选择在 HoloLens 运行生产版本时退出，或者可以使用高级恢复助手[](hololens-recovery.md)将设备恢复到非预览体验成员版本的 Windows 全息版。
 
 > [!CAUTION]
-> 存在一个已知问题，即手动重新安装全新预览版后从 Insider Preview 版本取消注册的用户将遇到蓝屏。 之后，他们必须手动恢复其设备。 有关你是否受到影响的完整详细信息，请查看有关此已知 [问题的详细信息](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
+> 存在一个已知问题，即手动重新安装新的预览版本后从 Insider Preview 版本取消注册的用户将遇到蓝屏。 之后，他们必须手动恢复其设备。 有关你是否受到影响的完整详细信息，请查看有关此已知 [问题的详细信息](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)。
 
 若要验证 HoloLens 是否正在运行生产内部版本：
 
 1. 转到" **系统>设置>"，** 并查找内部版本编号。
 
-1. [请参阅生产内部版本号发行说明](hololens-release-notes.md)。
+1. [有关生产内部版本号，请参阅发行说明](hololens-release-notes.md)。
 
 若要选择退出预览体验成员版本：
 
