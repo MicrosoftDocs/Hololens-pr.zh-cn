@@ -14,21 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e52cc2f031c284b619c61ffa04f259f76397faf5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253089"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280651"
 ---
 # 通过应用安装程序在 HoloLens 2 上安装应用
-
-我们将 **向应用安装程序 (** 新功能) ，以允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非托管 **设备，该功能将默认打开**。 为了防止企业中断，目前应用安装程序将不适用于 **托管设备** 。  
 
 > [!NOTE]
 > 此功能在 Windows 全息版版本 [20H2 – 2020 年 12 月更新中可用](hololens-release-notes.md)。 确保设备 [已更新](hololens-update-hololens.md) 为使用此功能。
 
-我们已 **在应用安装程序 (新增** 功能) 允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非托管 **设备，该功能将默认打开**。 为了防止企业中断，应用安装程序目前对托管 **设备** 不可用。  
+我们已 **在应用安装程序 (新增** 功能) 允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非 **托管设备，该功能将默认打开**。 为了防止企业中断，应用安装程序目前对托管 **设备** 不可用。  
 
 如果以下任一项为真， **则设备** 将被视为"托管"设备：
 
@@ -36,7 +34,7 @@ ms.locfileid: "11253089"
 - 使用预配 [包配置](hololens-provisioning.md)
 - 用户 [标识](hololens-identity.md) 为 Azure AD
 
-你现在无需启用开发人员模式或使用 Device Portal 即可安装应用。  将 (USB 或 Microsoft Edge) Appx 捆绑包下载到设备，并在文件资源管理器中导航到 Appx 捆绑包，以提示你开始安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与从 Microsoft Store 安装的应用或使用 MDM 的 LOB 应用部署功能旁加载的应用一样，需要使用签名[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)工具对应用进行[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)数字签名，并且用于签名的证书必须受 HoloLens 设备信任，然后才能部署应用。
+你现在无需启用开发人员模式或使用 Device Portal 即可安装应用。  将 (USB 或 Microsoft Edge) Appx 捆绑包下载到设备，并在文件资源管理器中导航到 Appx 捆绑包，以提示开始安装。  或者， [从网页启动安装](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)。  与从 Microsoft Store 安装的应用或使用 MDM 的 LOB 应用部署功能旁加载的应用一样，需要使用签名[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)工具对应用进行[](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)数字签名，并且用于签名的证书必须受 HoloLens 设备信任，然后才能部署应用。
 
 ## 要求
 
@@ -47,7 +45,7 @@ ms.locfileid: "11253089"
 ### 对于你的应用： 
 应用的解决方案配置必须是**主**版本或版本，因为应用**** 安装程序将使用应用商店中的依赖项。 查看有关创建 [应用包的更多内容](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)。
 
-通过此方法安装的应用必须进行数字签名。 你需要使用证书对应用进行签名。 可以从 MS 受信任 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)列表获取证书，在这种情况下，无需执行任何其他操作。 或者你可以对你自己的证书进行签名，但是该证书将需要推送到设备。
+通过此方法安装的应用必须进行数字签名。 你需要使用证书对应用进行签名。 可以从 MS 受信任 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)列表获取证书，在这种情况下，无需执行任何额外操作。 或者你可以对你自己的证书进行签名，但是该证书将需要推送到设备。
 
 - 如何使用签名 [工具对应用进行签名。](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
