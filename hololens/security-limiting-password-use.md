@@ -1,6 +1,6 @@
 ---
 title: 限制密码使用
-description: 限制 holoLens 的密码使用
+description: 限制 HoloLens 的密码使用
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252969"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280661"
 ---
 # 限制密码使用
 
@@ -97,7 +97,7 @@ MSA 和 Azure AD 是第一批通过实施 WebAuthn 支持无密码身份验证�
 
 ## 本地帐户
 
-可为脱机模式部署配置一个本地帐户。 本地帐户在默认情况下为未启用状态，必须在设备预配时进行配置。 他们必须通过使用密码登录，且不支持备用身份验证方式（比如 [Windows Hello 企业版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)或 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)）。 
+可为脱机模式部署配置一个本地帐户。 本地帐户在默认情况下为未启用状态，必须在设备预配时进行配置。 他们必须通过使用密码登录，并且不支持备用身份验证方式（如 [Windows Hello 企业版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)或 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)）。 
 
 了解更多关于 HoloLens 用户帐户，请参阅 [HoloLens 身份标识](https://docs.microsoft.com/hololens/hololens-identity)。 
 
