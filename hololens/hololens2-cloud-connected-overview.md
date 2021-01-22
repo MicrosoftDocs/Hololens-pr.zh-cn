@@ -1,6 +1,6 @@
 ---
-title: 部署指南 – 云连接的 HoloLens 2 和远程协助 - 概述
-description: 通过云连接网络注册 HoloLens 设备
+title: 云连接的 HoloLens 2 和远程协助概述
+description: 了解如何使用 Dynamics 365 远程协助通过云连接网络注册 HoloLens 2 设备。
 keywords: HoloLens， 管理， 云连接， 远程协助， AAD， Azure AD， MDM， 移动设备管理
 author: evmill
 ms.author: v-evmill
@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271667"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283073"
 ---
 # 部署指南 – 云连接的 HoloLens 2 和远程协助 – 概述
 
 本指南可帮助 IT 专业人员计划 Microsoft HoloLens 2 设备并部署到其组织，总体目标是使这些设备云连接到你的组织，并准备好使用 Dynamics 365 远程协助。 请记住，这将用作跨各种 HoloLens 2 用例向组织进行概念证明部署的模型。
 
-在本指南中，我们将介绍如何将设备注册到设备管理中，根据需要应用许可证，并验证最终用户能否在设备设置时立即使用远程协助。 为此，我们将了解设置和运行所需的重要基础结构部分 ， 通过 HoloLens 2 大规模实现部署。
+在指南中，我们将介绍如何将设备注册到设备管理中，根据需要应用许可证，并验证最终用户能否在设备设置时立即使用远程协助。 为此，我们将了解设置和运行所需的重要基础结构部分 ， 通过 HoloLens 2 大规模实现部署。
 
 ## 本指南中
 

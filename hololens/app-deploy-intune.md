@@ -1,6 +1,6 @@
 ---
 title: Intune 和公司门户
-description: Intune， 应用管理， 应用， 公司门户， 门户
+description: 了解如何使用 Intune、移动设备管理和公司门户设置、分配和创建舒适用户体验。
 keywords: intune， 应用管理， 应用， 公司门户， 门户， hololens
 author: evmill
 ms.author: v-evmill
@@ -17,16 +17,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: f91f97b6cddf678b20d0bdb3f381e01809b10f3f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252653"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283713"
 ---
 # Intune 和公司门户
 
-借助移动设备管理 (MDM) ，可以通过 [Microsoft Endpoint Manager (Intune) ](https://docs.microsoft.com/intune/windows-holographic-for-business) 使用自己的自定义应用将其直接部署到 HoloLens 设备。 Microsoft Intune 是一项基于云的服务，专注于移动设备管理 (MDM) 和 MAM (移动应用程序) 。 Intune 包含在 Microsoft 企业移动性 + 安全性 [ (EMS) 套件中，](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)使用户能够在保持组织数据受保护的同时提高工作效率。 若要了解有关 Intune 的更多信息，请阅读[什么是 Intune。](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
+借助移动设备管理 (MDM) ，可以通过 [Microsoft Endpoint Manager (Intune) ](https://docs.microsoft.com/intune/windows-holographic-for-business) 使用自己的自定义应用将其直接部署到 HoloLens 设备。 Microsoft Intune 是一项基于云的服务，专注于移动设备管理 (MDM) 和 MAM (移动应用程序) 。 Intune 包含在 Microsoft 企业移动性 + 安全性 ([EMS) 套件中，](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)使用户能够在保持组织数据受保护的同时提高工作效率。 若要了解有关 Intune 的更多信息，请阅读[什么是 Intune。](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
 
 ## 安装
 
@@ -39,7 +39,7 @@ ms.locfileid: "11252653"
 
 ## 工作分配类型
 
-若要在注册后在设备上自动安装你的应用，应选择该组 (必需) 。 ****
+若要在注册后在设备上自动安装你的应用，你应该选择该组 (必需) 。 ****
 若要将应用下载到通过公司门户注册的设备，请选择 **"可用于已注册的设备"。**
 
 ## End-User体验

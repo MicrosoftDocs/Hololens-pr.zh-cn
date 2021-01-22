@@ -1,6 +1,6 @@
 ---
 title: 部署指南 – 使用远程协助大规模部署云连接的 HoloLens 2 - 配置
-description: 如何设置配置以通过云连接网络注册 HoloLens 设备
+description: 了解如何设置配置以通过云连接网络通过远程协助大规模注册 HoloLens 设备。
 keywords: HoloLens， 管理， 云连接， 远程协助， AAD， Azure AD， MDM， 移动设备管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 042a29fe436b21ca37a2fcd7921fc53d6a9686d5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 00cc3f9df1fefafc9c4c084ff642364ae3ccb85c
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253039"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283883"
 ---
 # 配置 - 云连接指南
 
@@ -40,7 +40,7 @@ Azure 和 Intune 通过该扩展使用用户和组来帮助分配配置和许可
 
 ## HoloLens 2 上的自动注册
 
-若要获得流畅而无缝的体验，可以设置 Azure Active Directory Join (AADJ) 和自动注册到适用于 HoloLens 2 设备的 Intune。 这将允许用户在 OOBE 期间输入其组织登录凭据，并自动向 Azure AD 注册设备并注册到 MDM 中。
+若要获得流畅而无缝的体验，可以设置 Azure Active Directory Join (AADJ) 和自动注册到适用于 HoloLens 2 设备的 Intune。 这将允许用户在 OOBE 期间输入其组织登录凭据，并自动向 Azure AD 注册设备并注册到 MDM。
 
 通过使用 [Microsoft Endpoint Manager，](https://endpoint.microsoft.com/#home)我们可以选择服务并导航几个页面，直到选择"获取高级试用版"。 你可能会注意到有 Azure Active Directory Premium 1 和 2，对于自动注册 P1 就足够了。 我们可以选择 Intune 并选择用户范围进行自动注册，然后选择之前创建的组。
 

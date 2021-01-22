@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 开发版常见问题
-description: 有关 HoloLens 2 开发版常见问题的常见问题解答。
+description: 随时了解有关 HoloLens 2 开发版混合现实设备的最常见问题。
 keywords: Hololens 2 购买选项， HoloLens 选项， Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252783"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283853"
 ---
 # HoloLens 2 开发版常见问题
 
-## 常规
+## 一般问题
 
 ### HoloLens 2 开发版有什么作用？
 
@@ -31,7 +31,7 @@ HoloLens 2 开发版包括 HoloLens 2、Azure 信用额度为 500 美元、3 个
 
 ### HoloLens 2 和 HoloLens 2 开发版之间有什么区别？
 
-你只能将 HoloLens 2 开发版用于内部构建和测试企业应用程序，以与生产设置中的 HoloLens 2 (商业) 连接使用。 作为购买开发版的一部分，Microsoft 可能会自行决定提供在结帐过程中确定的某些权利，例如，在有限时段内兑换某些折扣信用或试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+你只能将 HoloLens 2 开发版用于内部构建和测试企业应用程序，以在生产设置中与 HoloLens 2 (商业) 一起使用。 作为购买 Development Edition 的一部分，Microsoft 可能会自行决定提供在签出过程中确定的某些权利，例如，在有限时段内兑换某些折扣信用或试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
 ### 可以使用任何版本的 HoloLens 2 进行开发吗？
 
@@ -47,7 +47,7 @@ HoloLens 2 开发版包括 HoloLens 2、Azure 信用额度为 500 美元、3 个
 
 ### 什么是 Unity Pro？
 
-Unity Pro 是小型/中型电影公司实时 3D 平台。 它专为混合使用技术和非技术技能的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
+Unity Pro 是一款适用于中小型电影公司/公司的实时 3D 平台。 它专为混合使用技术和非技术技能的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
 
 ### 什么是 Pixyz 插件？
 
@@ -71,7 +71,7 @@ HoloLens 2 Development Edition 的财务服务将于 2021 年初提供。
 
 ### 在哪里可以购买 HoloLens 2 开发版？ 
 
-HoloLens 2 Development Edition 专门在 Microsoft Store 上出售。  
+HoloLens 2 开发版专门在 Microsoft Store 上出售。  
 
 ### 我能否返回 HoloLens 2 开发版？  
 
@@ -85,7 +85,7 @@ HoloLens 2 Development Edition 专门在 Microsoft Store 上出售。
 
 MRTK-Unity是 Microsoft 推动的项目，提供一组组件和功能，用于加速 Unity 中的跨平台 MR 应用开发。 [了解详细信息](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
-### 如何在我的 HoloLens 2 Toolkit版本上使用混合现实版 - Unreal UXT 进行开发？
+### 如何使用混合现实Toolkit - Unreal UXT 在 HoloLens 2 开发版上进行开发？
 
 MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受支持。 组件插件包括用于输入模拟的常用 UX 功能的代码、蓝图和示例资产、手部交互主角、按下按钮组件、操作器组件和关注行为组件。 [了解详细信息](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
 
@@ -138,7 +138,7 @@ MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受�
 
 ### 如何联系 Unity 支持人员？
 
-若要获取有关你的 Unity ID、帐户、组织 (和订阅) 的 (帮助) ，请访问support.unity3d.com。
+若要获取有关 Unity ID、帐户、组织 (和订阅) 的 (帮助) ，请访问support.unity3d.com。
 
 ## Pixyz
 
@@ -157,7 +157,7 @@ MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受�
 3. 单击&#39;兑换产品代码&#39;
 4. 输入产品代码，然后单击&#39;兑换产品代码&#39;
 
-访问 HoloLens 2 Development Edition 文档 [以了解更多信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+请访问 HoloLens 2 Development Edition 文档 [了解更多信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
 ### 如何联系 Pixyz 支持人员？
 
@@ -170,7 +170,7 @@ MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受�
 
 ### 如何兑换 $500 Azure 信用额度？
 
-若要兑换 500 美元 Azure 信用额度，请兑换 Azure Pass 促销代码并激活订阅。 [了解详细信息](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+若要兑换 500 美元 Azure 信用额度，请兑换你的 Azure Pass 促销代码并激活你的订阅。 [了解详细信息](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 查看 Azure Pass [订阅协议](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) 并提供 [详细信息](https://azure.microsoft.com/en-us/offers/azure-pass/)。
 

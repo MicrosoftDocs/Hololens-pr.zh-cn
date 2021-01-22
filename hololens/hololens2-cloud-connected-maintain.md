@@ -1,6 +1,6 @@
 ---
 title: 部署指南 – 使用远程协助大规模部署云连接的 HoloLens 2 - 维护
-description: 通过云连接网络维护 HoloLens 设备的提示
+description: 随时了解有关通过云连接网络维护和支持 HoloLens 设备的提示。
 keywords: HoloLens， 管理， 云连接， 远程协助， AAD， Azure AD， MDM， 移动设备管理
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: bc34c4e41c5a6cee8f3f9a0a97407ee38d419bbc
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252693"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283893"
 ---
 # 维护 - 云连接指南
 
@@ -42,7 +42,7 @@ Microsoft 设计适用于企业的 Windows 更新以为 IT 管理员提供更多
 
 ## 开发计划
 
-在设备成功注册后，你现在已准备好将业务线应用部署到 (LOB 应用) 设备。 这些是专为组织构建的自定义&#39;需求。
+在成功注册设备后，你现在准备好将业务线应用部署到 (LOB 应用) 设备。 这些是专为组织构建的自定义&#39;需求。
 
 如果你已有业务线应用，&#39;通过 [MDM 部署应用](https://docs.microsoft.com/hololens/app-deploy-intune)。 如果你&#39;其他方法，请查看 [HoloLens 2](https://docs.microsoft.com/hololens/app-deploy-overview) 的应用程序部署概述，以了解有关将 LOB 应用部署到设备的更多方法。
 
