@@ -1,6 +1,6 @@
 ---
 title: Windows Defender 应用程序控制 - WDAC
-description: 概述什么是 WDAC 以及如何用于管理 HoloLens 设备。
+description: 概述应用程序Windows Defender控件是什么，以及如何使用它管理 HoloLens 混合现实设备。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d337f9856eaeac433524d7bb8b60e9a24e264b80
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252643"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284133"
 ---
 # Windows Defender 应用程序控制 - WDAC
 
@@ -76,7 +76,7 @@ Get-AppxPackage -name *edge*
 如果应用不在此列表上，则用户可以使用 Device Portal（连接到已安装希望阻止的应用的 HoloLens 2）来确定 PackageRelativeID，然后从该门户获取 PackageFamilyName。
 
 1. 在 HoloLens 2 设备上安装应用。 
-1. 打开"设置>更新&安全 ->，然后启用开发人员**模式****，然后启用 Device Portal。** 
+1. Open Settings -> Updates & Security -> For developers， and enable **Developer mode** and then **Device portal.** 
     1. 更多详细信息说明在此处阅读有关 [设置和使用设备门户的详细信息](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
 1. 连接 Device Portal 后，导航到 **"视图**"和"**应用"。** 
 1. 在"已安装的应用"面板中，使用下拉列表选择已安装的应用。 

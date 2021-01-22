@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
-ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
+ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253812"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283654"
 ---
 # 为 HoloLens 文档做贡献
 
@@ -42,7 +42,7 @@ HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风�
 - 将 [恢复代码保存在](https://github.com/settings/auth/recovery-codes) 安全的位置。
 - 更新 [公共配置文件设置](https://github.com/settings/profile)。
    - 设置你的姓名，并考虑将*公用电子邮件*设置为 *"不显示我的电子邮件地址"。*
-   - 我们建议您上传个人资料图片，因为缩略图显示在你参与的文档页面上。
+   - 建议上传个人资料图片，因为缩略图显示在你参与的文档页面上。
 - 如果计划使用命令行，请考虑为 Windows 设置 [Git 凭据管理器](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)。 这样，你每次进行贡献时就不需要输入密码。
 
 发布系统与 GitHub 关联，因此这些步骤非常重要。 使用 GitHub 别名将你列为每篇文章的作者或参与者。
@@ -61,7 +61,7 @@ HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风�
 
 4. 更新每篇文章顶部的元数据：
 
-   * **title：** Page title that appears in the browser tab when the article is being viewed. 页面标题用于 SEO 和索引编制，因此除非有必要，否则不要更改标题 (尽管文档在公开更新之前) 。
+   * **title**： 查看文章时显示在浏览器选项卡中的页面标题。 页面标题用于 SEO 和索引编制，因此除非有必要，否则不要更改标题 (尽管这不太关键，然后再将文档公开) 。
    * **description：** Write a brief description of the article's content， which boosts SEO and discovery.
    * **author**： If you're the primary owner of the page， add your GitHub alias here.
    * **ms.author：** 如果你是页面的主要所有者，请在此处添加 Microsoft 别名 (无需 @microsoft.com，只需别名) 。
@@ -152,11 +152,11 @@ HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风�
 
 由于样式表docs.microsoft.com，即使尝试内联 CSS，它们也不会具有边框或自定义样式。 它看起来会在短时间内工作，但最终平台会从表中去除样式设置。 因此请提前规划并保持表格简单。 [下面是一个使 Markdown 表变得简单的网站](https://www.tablesgenerator.com/markdown_tables)。
 
-如果您使用的是 Visual Studio Code (，Visual Studio Code 的 [Docs Markdown](https://docs.microsoft.com/teamblog/docs-extension) [Extension ](#using-visual-studio-code) 还便于生成) 文档。
+如果您 [使用的是 Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) (，Visual Studio [Code ](#using-visual-studio-code) 文档扩展还便于生成) 文档。
 
 ### 添加图像
 
-你需要将图像上载到存储库的"mixed-reality-docs/images"文件夹，然后在文章中适当地引用它们。 图像将自动以全尺寸显示，这意味着大图像将填满文章的整个宽度。 我们建议在上传图像之前对图像进行预大小调整。 虽然建议的宽度介于 600 和 700 像素之间，但如果是一个密集屏幕截图或屏幕截图的一小部分，应分别向上或向下调整大小。
+你需要将图像上载到存储库的"mixed-reality-docs/images"文件夹，然后在文章中适当地引用它们。 图像将自动以全尺寸显示，这意味着大图像将填满文章的整个宽度。 我们建议在上传图像之前对图像进行预大小调整。 虽然建议的宽度介于 600 和 700 像素之间，但如果它是一个密集屏幕截图或屏幕截图的一小部分，应分别向上或向下调整大小。
 
 >[!IMPORTANT]
 >在合并之前，只能将图像上载到分叉存储库。 因此，如果您计划向文章添加图像，您需要首先使用 [Visual Studio 代码](#using-visual-studio-code) 将图像添加到分叉的"images"文件夹中，或确保已完成 Web 浏览器中的下列操作：
@@ -175,9 +175,9 @@ HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风�
 >[!NOTE]
 >预览更改review.docs.microsoft.com仅适用于 Microsoft 员工
 
-Microsoft 员工：一旦你的贡献合并到"主"分支中，就可以在内容公开之前查看内容 https://review.docs.microsoft.com/hololens?branch=master 。 使用左侧列中的目录查找文章。
+Microsoft 员工：一旦你的贡献合并到"主"分支，你可以先查看内容，然后再在它 https://review.docs.microsoft.com/hololens?branch=master 公开。 使用左侧列中的目录查找文章。
 
-## 在浏览器中编辑与使用桌面客户端编辑
+## 在浏览器中编辑与使用桌面客户端进行编辑
 
 在浏览器中编辑是进行快速更改的最简单方法，但存在一些缺点：
 
@@ -185,7 +185,7 @@ Microsoft 员工：一旦你的贡献合并到"主"分支中，就可以在内�
 - 如果必须手动键入文章的文件名， (其他文章的任何智能链接) 。
 - 上载和引用图像可能很麻烦。
 
-如果不愿意处理这些问题，请使用桌面客户端（如Visual Studio [代码](https://code.visualstudio.com/) ）在参与时 [提供几个有用的](#useful-extensions) 扩展。
+如果不愿意处理这些问题，请使用桌面客户端（如Visual Studio [代码](https://code.visualstudio.com/) ，提供 [一些有用的](#useful-extensions) 扩展。
 
 ## 使用Visual Studio代码
 
@@ -233,6 +233,8 @@ Microsoft 员工：一旦你的贡献合并到"主"分支中，就可以在内�
       ![在资源管理器中选择"全部保存"](images/explorer-save.png)
       
    3. **在出现提示** 时，提交源 **控件 (写入** 提交消息) 。
+   
+      ![在源代码管理中选择"全部提交"](images/source-control-commit.png)
       
    4. 选择 **同步按钮** ，将更改同步回 GitHub (分支中的源) 。
       
