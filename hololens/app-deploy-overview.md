@@ -1,6 +1,6 @@
 ---
 title: 概述 - 应用管理
-description: 应用， 管理， 应用管理
+description: 开始使用移动设备管理、适用于企业 Microsoft Store 和预配包的混合现实应用管理概述。
 keywords: HoloLens， 用户， 帐户， 应用， 应用程序管理，
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2ca0b05b6ed61ddce327a44fedbbcf280b33a106
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252663"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283703"
 ---
 # 应用管理：概述
 
@@ -35,7 +35,7 @@ MDM 解决方案使 IT 决策者和管理员可以专用地自动安装 (推送)
 移动设备管理 (MDM) 适用于：
 
 * MDM 已部署 + 公司门户
-* 非公共 (业务线) 应用程序
+* 业务线 (非公共) 应用
 * 通过公司门户手动安装可用应用程序
 * 管理员推送 MDM 策略
 * 通过 MDM 自动更新
@@ -76,7 +76,7 @@ Microsoft Store 为企业的 IT 决策者和管理员提供查找、获取、管
 
 ## 通过应用安装程序在 HoloLens 2 上安装应用
 
-使用 [应用](app-deploy-app-installer.md) 安装程序，用户可以拥有一种简单易用的体验：在本地设备上安装应用，或与不熟悉 HoloLens 上其他应用安装方法的其他人共享应用。 无需启用开发人员模式或使用 Device Portal 即可完成此操作。 这是分发完全生成应用的简单方法。 无论你只是希望使用 HoloLens 将应用演示给其他用户，还是想要部署你的应用，此方法都很容易实现。
+使用 [应用](app-deploy-app-installer.md) 安装程序，用户可以拥有一种简单易用的体验：在本地设备上安装应用，或与不熟悉 HoloLens 上其他应用安装方法的其他人共享应用。 无需启用开发人员模式或使用 Device Portal 即可完成此操作。 这是分发完全生成应用的简单方法。 无论你是希望将应用演示给使用 HoloLens 的其他用户，还是想要部署你的应用，此方法都很容易实现。
 
 通过应用安装程序安装适用于：
 
