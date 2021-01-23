@@ -1,7 +1,6 @@
 ---
 title: 商业功能
-description: Microsoft HoloLens Commercial Suite 具有使企业能够更轻松地管理 HoloLens 设备的功能。 默认情况下，HoloLens 2 设备配备有商业功能。
-keywords: HoloLens, 商业, 功能, mdm, 移动设备管理, 展台模式
+description: 了解使企业能够更轻松地管理 HoloLens 设备的 Microsoft HoloLens Commercial Suite 功能。
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -18,12 +17,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+keywords: HoloLens, 商业, 功能, MDM, 移动设备管理, 展台模式
+ms.openlocfilehash: 5aef764b1d7937832e162ab219131d8c3d768e68
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253169"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283443"
 ---
 # 商业功能
 

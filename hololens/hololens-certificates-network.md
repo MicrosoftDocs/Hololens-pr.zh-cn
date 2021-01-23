@@ -1,6 +1,6 @@
 ---
 title: 为 HoloLens 2 准备证书和网络配置文件
-description: 如何在 HoloLens 2 设备上针对网络配置和使用证书
+description: 了解如何在 HoloLens 2 混合现实设备上对网络的证书进行配置、使用、部署和疑难解答。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 1bfac948b493c2e55207e45042d6b022c1818969
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162980"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283433"
 ---
 # 为 HoloLens 2 准备证书和网络配置文件
 
