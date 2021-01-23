@@ -1,6 +1,6 @@
 ---
 title: 重启、重置或恢复 HoloLens
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: 如何使用 Advanced Recovery Companion 将映像刷写到 HoloLens 2。
 keywords: 操作方法, 重启, 重置, 恢复, 硬重置, 软重置, 电源周期, HoloLens, 关机, arc, advanced recovery companion
 ms.prod: hololens
@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
-ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
+ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "11254829"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284083"
 ---
 # <span data-ttu-id="f192e-104">重启、重置或恢复 HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="f192e-104">Restart, reset, or recover HoloLens 2</span></span>
 
