@@ -1,6 +1,6 @@
 ---
 title: 设置 HoloLens（第一代）
-description: 本指南将指导你完成首次设置。  你需要 WLAN 网络和 Microsoft (MSA) 或 Azure Active Directory (Azure AD) 帐户。
+description: 了解如何使用 Microsoft (MSA) 或 Azure Active Directory (AAD) 帐户首次通过 Wi-Fi 网络设置 HoloLens（第一代）。
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903228"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283923"
 ---
 # 设置 HoloLens（第一代）
 
@@ -24,7 +24,7 @@ ms.locfileid: "10903228"
 
 在下一部分中，你将了解如何使用 HoloLens 以及与全息影像互动。 要跳转到那篇文章，请参阅[HoloLens（第一代）入门](hololens1-basic-usage.md)。
 
-## 开始之前
+## 准备工作
 
 开始之前，必须做好以下准备：
 
@@ -71,7 +71,7 @@ HoloLens（第一代）根据瞳孔（IPD 或[瞳孔间距](https://en.wikipedia
 
 *第二步中的 IPD 手指对齐屏幕*
 
-祝贺你！ 设置完成，你可以开始使用 HoloLens 了。
+恭喜你！ 设置完成，你可以开始使用 HoloLens 了。
 
 ## 后续步骤
 

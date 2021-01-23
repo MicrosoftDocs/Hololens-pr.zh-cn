@@ -1,9 +1,9 @@
 ---
 title: 设置 HoloLens 2
-description: 本指南将指导你完成首次设置。  你需要 WLAN 网络和一个 Microsoft (MSA) 或 Azure Active Directory 帐户。
+description: 了解如何使用 Microsoft (MSA) 或 Azure Active Directory (AAD) 帐户首次通过 Wi-Fi 网络设置 HoloLens 2。
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 9/17/2019
-keywords: hololens
+keywords: Hololens
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903238"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283873"
 ---
 # 设置 HoloLens 2
 

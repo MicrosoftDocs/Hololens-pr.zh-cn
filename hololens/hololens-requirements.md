@@ -1,6 +1,6 @@
 ---
 title: 在商业环境中设置 HoloLens
-description: 了解有关在企业环境中部署和管理 HoloLens 有关详细信息。
+description: 了解有关在企业环境中部署和管理 HoloLens（包括基础结构、azure Active directory 和移动设备管理）中有关详细信息。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 9458a6fd02cf96dd265580cb099e39fa221d4206
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253209"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284043"
 ---
 # HoloLens 2 企业版部署和管理
 
@@ -30,7 +30,7 @@ HoloLens 2 在 Windows 10 全息版上运行，可为组织提供可靠、灵活
 
 ### 基础结构要素
 
-对于企业企业部署方案中的 HoloLens 2，需要某些基础结构服务来支持整套功能。 HoloLens 2 在部署和管理 [时](https://www.microsoft.com/itshowcase/managing-windows-10-devices-with-microsoft-intune) 考虑现代移动设备管理。 使用 Azure AD 加入 + MDM 作为在不断增加的移动员工中实现此目标的主要方式。 以下主题简要概述了在 HoloLens 2 的部署规划中应考虑的每个基础结构组件。
+对于企业企业部署方案中的 HoloLens 2，需要某些基础结构服务来支持整套功能。 HoloLens 2 是在部署和管理 [时](https://www.microsoft.com/itshowcase/managing-windows-10-devices-with-microsoft-intune) 考虑现代移动设备管理而构建的。 使用 Azure AD 加入 + MDM 作为在不断增加的移动员工中实现此目标的主要方式。 以下主题简要概述了在 HoloLens 2 的部署规划中应考虑的每个基础结构组件。
 
 ### Azure Active Directory
 Azure AD 是一项基于云的目录服务，可提供标识和访问管理。 可以将其与现有的本地目录集成以创建混合标识解决方案。 使用 Microsoft Office 365 或 Intune 的组织已在使用 Azure AD，Azure AD 具有三个版本：免费版、高级 P1 版和高级 P2 (请参阅 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions/)) 。 所有版本都支持 Azure AD 设备注册，但需要高级 P1 才能启用 MDM 自动注册。 HoloLens 2 需要 Azure Active Directory 联接才能启用大多数企业级特性和功能。
@@ -45,27 +45,27 @@ HoloLens 2 专为在企业环境中由移动设备管理 (MDM) 系统进行管�
 > HoloLens 2 不支持传统的本地电脑管理系统，如 System Center Configuration Manager。
 
 ### 适用于企业的 Windows 更新
-Microsoft 设计适用于企业的 Windows 更新以为 IT 管理员提供更多以 Windows 更新为中心的管理功能，例如对一组设备部署更新的功能，以及为安装更新而定义维护窗口的功能。 有关管理 HoloLens 2 更新的详细信息，请参阅 [此处](https://docs.microsoft.com/hololens/hololens-updates)。
+Microsoft 设计适用于企业的 Windows 更新以为 IT 管理员提供更多以 Windows 更新为中心的管理功能，例如对一组设备部署更新的功能，以及为安装更新而定义维护窗口的功能。 有关管理 [HoloLens](https://docs.microsoft.com/hololens/hololens-updates) 2 更新的详细信息，请参阅 HoloLens 更新文档。
 
 ### 证书
-如果你的环境需要 Corp 证书Wi-Fi网络身份验证或访问其他资源，HoloLens 2 支持通过 MDM 部署证书。 可能需要一些 MDM 基础结构配置才能将证书部署到 HoloLens 2。 了解如何为 [HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network)准备证书和网络配置文件。 Intune 详细信息可在此处 [找到](https://docs.microsoft.com/mem/intune/protect/certificates-configure)。
+如果你的环境需要 Corp 证书Wi-Fi网络身份验证或访问其他资源，HoloLens 2 支持通过 MDM 部署证书。 可能需要一些 MDM 基础结构配置才能将证书部署到 HoloLens 2。 了解如何为 [HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network)准备证书和网络配置文件。 如果你使用的是 Intune，请查看认证 [配置](https://docs.microsoft.com/mem/intune/protect/certificates-configure) 详细信息。
 
 ## 配置
 
 MDM 管理员可以在 MDM 系统中注册的任何公司设备上定义和实施策略设置。 根据部署方案，使用的配置设置将有所不同。 在 Windows 10 中， (CSP) 是一个接口，用于读取、设置、修改或删除设备的配置设置。 这些设置将映射到注册表项或文件。 有关适用于 HoloLens 2 的 Windows 10 设备管理 CSP 有关详细信息，请参阅 [HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)设备中支持的 AP 的完整列表。
 
-HoloLens 2 还支持通过自定义预配包设置一组有限的云解决方案提供商配置。 预配包通常用于非 MDM 托管设备，并且需要手动应用到每台设备。 有关生成自定义预配包的更多信息，请参阅 [此处](https://docs.microsoft.com/hololens/hololens-provisioning)。
+HoloLens 2 还支持通过自定义预配包设置一组有限的云解决方案提供商配置。 预配包通常用于非 MDM 托管设备，并且需要手动应用到每台设备。 有关生成自定义预配包的详细信息，请参阅 [HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning) 预配文档。
 
 > [!NOTE]
-> HoloLens 2 支持 [Windows Autopilot，](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)从而提供用于管理企业 Windows 10 设备配置的简单易用过程。
+> HoloLens 2 支持 [Windows Autopilot，](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)提供用于管理企业 Windows 10 设备配置的简单简单过程。
 
 ### 身份管理
 
-员工只能使用一个帐户初始化设备，&#39;必须控制首先启用的帐户。 所选帐户将确定由谁来控制设备，并影响管理功能。 HoloLens 2 支持 3 种帐户类型：本地用户帐户、个人 Microsoft 帐户和 Azure Active Directory 帐户。 强烈建议将 Azure Active Directory 用于企业标识管理解决方案，因为它将在 HoloLens 2 设备上启用全部功能。 有关 HoloLens 2 上的标识的更多详细信息，可在此处 [找到](https://docs.microsoft.com/hololens/hololens-identity)。
+员工只能使用一个帐户初始化设备，&#39;必须控制首先启用的帐户。 所选帐户将确定由谁来控制设备，并影响管理功能。 HoloLens 2 支持 3 种帐户类型：本地用户帐户、个人 Microsoft 帐户和 Azure Active Directory 帐户。 强烈建议将 Azure Active Directory 用于企业标识管理解决方案，因为它将在 HoloLens 2 设备上启用全部功能。 查看 [HoloLens 标识](https://docs.microsoft.com/hololens/hololens-identity) ，了解有关 HoloLens 2 的标识的更多详细信息。
 
 ### 网络和连接
 
-由于 HoloLens 2 是云第一设备，因此网络访问联机资源是提供完整功能所需的。 如果要部署与公司 Intranet 网络连接的 HoloLens 2 设备，可能需要更新代理/防火墙规则以允许访问 HoloLens 2 云服务。 可在此处找到 HoloLens 2 操作系统所需的常见终结点 [列表](https://docs.microsoft.com/hololens/hololens-offline)。 应用程序或其他云服务可能需要访问其他终结点才能成功在 HoloLens 2 上运行。
+由于 HoloLens 2 是云第一设备，因此网络访问联机资源是提供完整功能所需的。 如果要部署与公司 Intranet 网络连接的 HoloLens 2 设备，可能需要更新代理/防火墙规则以允许访问 HoloLens 2 云服务。 有关详细信息，请参阅 [HoloLens 2](https://docs.microsoft.com/hololens/hololens-offline)操作系统的常见终结点列表。 应用程序或其他云服务可能需要访问其他终结点才能成功在 HoloLens 2 上运行。
 
 需要其他终结点访问的一些常见 HoloLens 2 服务如下所示：
 
@@ -79,7 +79,7 @@ HoloLens 2 还支持通过自定义预配包设置一组有限的云解决方案
 
 ### 安全审查
 
-大多数企业 IT 部门都需要评估和审查要部署到企业企业网络的新设备。 如果你的组织需要 HoloLens 2 的安全审查，你可以在此处找到更多详细信息，以帮助获取 [安全批准](https://docs.microsoft.com/hololens/security-overview)。
+大多数企业 IT 部门都需要评估和审查要部署到企业企业网络的新设备。 如果你的组织需要 HoloLens 2 的安全审查，你可以找到更多详细信息来帮助 [获取安全批准](https://docs.microsoft.com/hololens/security-overview)。
 
 ### 通用 HoloLens 2 设备设置
 
@@ -88,7 +88,7 @@ HoloLens 2 还支持通过自定义预配包设置一组有限的云解决方案
 | 设备设置 | 简要说明。                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
 | [硬件限制](hololens-requirements.md#hardware-restrictions)               | 硬件限制会降低连接性，并有助于数据保护。                        |
-| [WLAN 配置文件](hololens-requirements.md#wi-fi-profiles)               | 配置Wi-Fi配置文件，无需用户干预或交互。                              |
+| [WLAN 配置文件](hololens-requirements.md#wi-fi-profiles)               | 配置Wi-Fi配置文件，而无需用户干预或交互。                              |
 | [证书](hololens-requirements.md#certificates-1)               | 提供帐户和/Wi-Fi Web 内容的身份验证、VPN 加密和 SSL 加密。 |
 | [代理](hololens-requirements.md#proxy)              | 管理内部流量。                                                                        |
 |  [VPN](hololens-requirements.md#vpn)              | 控制对公司 Intranet 上应用和资源的访问。                               |
@@ -96,7 +96,7 @@ HoloLens 2 还支持通过自定义预配包设置一组有限的云解决方案
 
 #### 硬件限制
 
-HoloLens 2 使用一项技术，其中包括热门硬件功能，如相机、麦克风、扬声器、USB 接口、Bluetooth接口和 WLAN。 可使用硬件限制控制这些功能的可用性。
+HoloLens 2 使用一线技术，其中包括常用硬件功能，如相机、麦克风、扬声器、USB 接口、Bluetooth接口和 WLAN。 可使用硬件限制控制这些功能的可用性。
 
 下面列出了 HoloLens 2 支持配置硬件限制的最常用的 MDM 设置。 其中某些硬件限制提供连接性，并有助于数据保护。
 
@@ -108,7 +108,7 @@ HoloLens 2 使用一项技术，其中包括热门硬件功能，如相机、麦
 
 #### WLAN 配置文件
 
-大多数企业 WLAN 网络需要证书和其他复杂信息来限制和保护用户访问。 此高级Wi-Fi信息对于典型用户来说很难配置，但 MDM 系统可以完全配置这些Wi-Fi配置文件，而无需用户干预。 在 MDM 系统中，你可以创建多个 WLAN 配置文件。
+大多数企业 WLAN 网络需要证书和其他复杂信息来限制和保护用户访问。 此高级Wi-Fi用户很难配置，但 MDM 系统可以完全配置这些Wi-Fi配置文件，而无需用户干预。 在 MDM 系统中，你可以创建多个 WLAN 配置文件。
 
 有关 Windows 10 Wi-Fi设置的详细信息，请参阅 [企业配置文件 WiFi 设置](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)。
 
@@ -134,13 +134,13 @@ HoloLens 2 使用一项技术，其中包括热门硬件功能，如相机、麦
 
 你可以将 HoloLens 2 设备配置为在展台模式下运行，以用作固定用途的设备（也称为展台）。 展台模式限制 (或) 设备上可用的应用程序。 展台模式是一项便捷功能，可用于将 HoloLens 2 设备专用于业务应用，或在应用演示中使用 HoloLens 2 设备。
 
-有关在展台模式下配置 HoloLens 2 的更多详细信息，请参阅"将[HoloLens 设置为展](https://docs.microsoft.com/hololens/hololens-kiosk)台"
+有关在展台模式下配置 HoloLens 2 的更多详细信息，请参阅将 [HoloLens 设置为展台](https://docs.microsoft.com/hololens/hololens-kiosk)
 
 ## 部署
 
 ### MDM 设备注册
 
-对于企业部署，建议仅通过 Azure [](https://docs.microsoft.com/hololens/hololens-enroll-mdm) AD 加入和 Azure AD+MDM (注册将设备注册到 MDM) 。 这需要 Azure AD Premium，并支持自动注册多个 MDM 提供程序（包括 Intune）。
+对于企业部署，建议仅通过 Azure [](https://docs.microsoft.com/hololens/hololens-enroll-mdm) AD 加入和 Azure AD+MDM (将设备注册为公司设备) 。 这需要 Azure AD Premium，并支持自动注册多个 MDM 提供程序（包括 Intune）。
 
 了解有关自部署注册方法 [Autopilot 的更多信息](https://docs.microsoft.com/hololens/hololens2-autopilot)。
 
@@ -150,7 +150,7 @@ HoloLens 2 使用一项技术，其中包括热门硬件功能，如相机、麦
 
 通过 Windows 10，能够使用适用于 Windows 应用的通用 Windows 平台 (UWP) 开发可跨多台设备无缝工作的应用。
 
-有多种方法将应用程序部署到 HoloLens 2 设备。 可通过 MDM、适用于企业 Microsoft Store 直接部署应用，或通过预配包旁加载应用。 有关 [应用部署的更多详细信息，请参阅此处](https://docs.microsoft.com/hololens/app-deploy-overview)。
+有多种方法将应用程序部署到 HoloLens 2 设备。 可通过 MDM、适用于企业 Microsoft Store 直接部署应用，或通过预配包旁加载应用。 有关详细信息， [请查看应用](https://docs.microsoft.com/hololens/app-deploy-overview) 部署文档。
 
 > [!NOTE]
 > HoloLens 2 仅支持运行 UWP ARM64 应用。

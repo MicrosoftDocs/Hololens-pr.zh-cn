@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker 加密
-description: 启用 Bitlocker 设备加密以保护 HoloLens 上存储的文件
+description: 了解如何启用 Bitlocker 设备加密来保护 HoloLens 混合现实设备上存储的文件。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,28 +11,28 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 5ab35f0804c6a906cb0bb262211e8ae5ab017459
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865656"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284023"
 ---
-# HoloLens (第一代) BitLocker 加密
+# HoloLens（第 1 代）BitLocker 加密
 
-HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，但 BitLocker 始终在 HoloLens 2 上启用。
+HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 进行设备加密，但是，BitLocker 始终在 HoloLens 2 上启用。
 
-本文将帮助你在 HoloLens (第一代) 上启用和管理 BitLocker。
+本文将帮助你在 HoloLens 第一代 (上启用和管理 BitLocker) 。
 
-在 HoloLens (第一代) 你可以手动启用 BitLocker 设备加密，也可以使用 "移动设备管理" (MDM) 启用 BitLocker 设备加密。 按照以下说明启用[BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)以保护存储在 HoloLens 上的文件和信息。 设备加密使用 AES-CBC 128 加密方法帮助保护数据，该方法等效于 BitLocker 配置服务提供程序 (CSP) 中的[EncryptionMethodByDriveType 方法 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 。 具有正确的加密密钥 (（如密码) ）的人员可以解密或执行数据恢复。
+在 HoloLens (第一代) 可以手动启用 BitLocker 设备加密，或者使用 MDM (移动设备) 。 按照以下说明启用 [BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) ，以保护 HoloLens 上存储的文件和信息。 设备加密使用 AES-CBC 128 加密方法帮助保护你的数据，该方法等效于 BitLocker 配置服务提供程序 (CSP) 中的[EncryptionMethodByDriveType 方法 3。](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 具有正确加密密钥（如密码 (）的人员) 解密它或执行数据恢复。
 
 ## 使用 MDM 启用设备加密
 
-你可以使用你的移动设备管理 (MDM) 提供程序应用需要设备加密的策略。 要使用的策略是策略 CSP 中的[Security/RequireDeviceEncryption 设置](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption)。
+可以使用移动设备管理 (MDM) 应用需要设备加密的策略。 使用的策略是策略 CSP 中的 [Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 设置。
 
-[请参阅使用 Microsoft Intune 启用设备加密的说明。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[请参阅有关使用 Microsoft Intune 启用设备加密的说明。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
-有关其他 MDM 工具，请参阅 MDM 提供程序文档中的说明。 如果你的 MDM 提供程序需要设备加密的自定义 URI，请使用以下配置：
+有关其他 MDM 工具，请参阅 MDM 提供程序文档中的说明。 如果你的 MDM 提供程序需要用于设备加密的自定义 URI，请使用以下配置：
 
 - **名称**：你选择的名称
 - **描述**：可选
@@ -51,7 +51,7 @@ HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，
 
     ![“要求设备加密”设置配置为“是”](images/device-encryption.png)
 
-1. 查找购买商业版套件时提供的 XML 许可证文件。
+1. 查找购买商业套件时提供的 XML 许可证文件。
 
 1. 浏览并选择购买 Commercial 套件时提供的 XML 许可证文件。
     > [!NOTE]
@@ -59,10 +59,10 @@ HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，
 
 1. 在**文件**菜单上，单击**保存**。 
 
-1. 阅读说明项目文件可能包含敏感信息的警告，然后单击 **"确定"**。
+1. 阅读说明项目文件可能包含敏感信息的警告，然后单击"**确定"。**
 
     > [!IMPORTANT]
-    > 生成预配包时，你可能会在项目文件和预配包 ( 中) 文件中包含敏感信息。 尽管你可以选择加密 .ppkg 文件，但项目文件不会加密。 应将项目文件存储在安全的位置，并在不再需要项目文件时将其删除。
+    > 生成预配包时，可能会将敏感信息包括在项目文件和预配包 (.ppkg) 文件中。 尽管你可以选择加密 .ppkg 文件，但项目文件不会加密。 您应将项目文件存储在安全的位置，并删除不再需要的项目文件。
 
 1. 在**导出**菜单中，单击**预配包**。
 1. 将**所有者**更改为**IT 管理员**，这会将此预配包的优先级设置为高于应用于此设备的来自其他来源的预配包，然后选择**下一步**。
@@ -97,6 +97,6 @@ HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，
 
 加密在 HoloLens 上无提示。 若要验证设备加密状态：
 
-- 在 HoloLens 上，转到**设置** > **系统** > **关于**。 如果设备已加密，则**启用** **BitLocker** 。 
+- 在 HoloLens 上，转到**设置** > **系统** > **关于**。 如果设备**已加密**，则启用**BitLocker。** 
 
-    ![显示已启用 BitLocker 的 "关于" 屏幕](images/about-encryption.png)
+    ![显示已启用 BitLocker 的"关于"屏幕](images/about-encryption.png)

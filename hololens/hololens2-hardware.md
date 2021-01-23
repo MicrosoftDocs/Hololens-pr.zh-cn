@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 硬件
-description: 概要介绍构成 Microsoft HoloLens 2（Microsoft 推出的运行 Windows 10 的完全不受束缚的全息计算机的最新演进版）的组件。
+description: 了解构成 Microsoft HoloLens 2（运行 Windows 10 的不受束缚的全息 Microsoft 计算机的最新演进版）的组件。
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: Hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
-ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
+ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271161"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283033"
 ---
 # HoloLens 2 硬件
 

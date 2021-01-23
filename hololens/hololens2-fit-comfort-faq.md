@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 舒适佩戴常见问题解答
-description: 有关如何佩戴 HoloLens 2 的常见问题解答。
+description: 随时了解有关如何在混合现实体验中适应 HoloLens 2 并保持舒适的常见问题解答。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929838"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283833"
 ---
 # HoloLens 2 舒适佩戴常见问题
 
