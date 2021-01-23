@@ -1,6 +1,6 @@
 ---
 title: 将 HoloLens 设置为 Kiosk
-description: 使用展台配置锁定 HoloLens 上的应用。
+description: 了解如何设置和使用展台配置来锁定 HoloLens 设备上的应用。
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 245de50fcaaf1235cce02cd1b6cae921b64f2851
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253029"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283983"
 ---
 # 将 HoloLens 设置为 Kiosk
 
@@ -101,7 +101,7 @@ ms.locfileid: "11253029"
 如果使用移动设备管理 (MDM) 系统或预配包配置展台模式，请使用 [AssignedAccess ](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) 配置服务提供程序 (CSP) 来指定应用程序。 CSP 使用 [应用程序用户模型 ID (AUMID) ](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 标识应用程序。 下表列出了可在多应用展台中使用的一些 In-box 应用程序的 AUMID。
 
 > [!IMPORTANT]
-> 展台模式确定当用户登录设备时可用的应用。 但是，展台模式不是一种安全方法。 它不会阻止"允许"应用打开不允许的另一个应用。 因为我们不限制此行为，所以应用仍可从 Edge、文件资源管理器和 Microsoft Store 应用启动。 如果不希望从展台启动特定应用，请使用 [WDAC](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) Windows Defender CSP (应用程序控制) 创建相应的策略。 
+> 展台模式确定当用户登录设备时可用的应用。 但是，展台模式不是一种安全方法。 它不会阻止"允许"应用打开不允许的另一个应用。 因为我们不限制此行为，所以应用仍可从 Edge、文件资源管理器和 Microsoft Store 应用启动。 如果不希望从展台启动特定应用，请使用 [WDAC](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) Windows Defender CSP 中的 (应用程序) 策略。 
 > 
 > 此外，混合现实主页无法设置为网亭应用。
 
@@ -128,8 +128,8 @@ ms.locfileid: "11253029"
 |“设置” |HolographicSystemSettings\_cw5n1h2txyewy\！应用 |
 |提示 |Microsoft.HoloLensTips\_8wekyb3d8bbwe\！HoloLensTips |
 
-> <sup>1 </sup> 若要启用照片或视频捕获，你必须将相机应用启用为展台应用。  
-> <sup>2 </sup> 当你启用相机应用时，请注意以下条件：
+> <sup>1 </sup> 若要启用照片或视频捕获，必须启用相机应用作为展台应用。  
+> <sup>2 </sup> 启用相机应用时，请注意以下条件：
 > - "快速操作"菜单包括"照片和视频"按钮。  
 > - 你还应启用可与图片 (或检索图片) 例如照片、邮件或 OneDrive 应用。  
 >  
@@ -140,7 +140,7 @@ ms.locfileid: "11253029"
 
 创建 xml 文件或使用 Intune 的 UI 设置展台时，需要考虑谁将成为展台的用户。 展台配置可以限制为单个帐户或 Azure AD 组。 
 
-通常为用户或用户组启用展台。 但是，如果你计划编写自己的 XML 展台，则你可能要考虑全局分配的访问权限，其中展台在设备级别应用，而不考虑标识。 如果吸引你阅读 [有关全局分配的访问权限展台的更多内容。](hololens-global-assigned-access-kiosk.md)
+通常为用户或用户组启用展台。 但是，如果你计划编写自己的 XML 展台，则你可能要考虑全局分配的访问权限，其中展台在设备级别应用，而不考虑标识。 如果吸引你阅读 [有关全局分配的访问权限展台的更多信息。](hololens-global-assigned-access-kiosk.md)
 
 #### 如果要创建 XML 文件：
 -   许多用户创建多个展台配置文件，并将每个配置文件分配给不同的用户/组。 例如，Azure AD 组的展台（具有多个应用）和具有多个应用展台且应用单数的访问者。
@@ -152,7 +152,7 @@ ms.locfileid: "11253029"
 -   每台设备只能接收一个展台配置文件，否则将产生冲突，并没有任何展台配置。 
     -   其他类型的配置文件和策略（如与展台配置文件不相关的设备限制）不会与展台配置文件冲突。
 -   将为属于用户登录类型的所有用户启用展台，这将使用用户或 Azure AD 组进行设置。 
--   在设置展台配置和用户登录 **类型 (选择** 可以登录到展台) 且应用的用户，仍必须将设备配置分配给组。 已分配 (组) 确定哪些设备接收网亭设备配置，但是，如果展台已启用，则不与之交互。 
+-   在设置展台配置和用户登录 **类型 (** 用户可以登录到展台) 并且选择了应用后，仍必须将设备配置分配给组。 已分配 (组) 确定哪些设备接收网亭设备配置，但是，如果展台已启用，则不与之交互。 
     - 有关在 Intune 中分配配置文件的效果的完全讨论，请参阅在 [Microsoft Intune 中分配用户和设备配置文件](https://docs.microsoft.com/intune/configuration/device-profile-assign)。
 
 ### 选择部署方法
@@ -199,7 +199,7 @@ ms.locfileid: "11253029"
 
 你可以将 MDM 系统配置为在用户首次登录时自动注册 HoloLens 设备，或让用户手动注册设备。 设备还必须加入 Azure AD 域，并分配到相应的组。
 
-若要详细了解如何注册设备，请参阅在 WINDOWS 设备的 MDM 和 Intune 注册方法中注册[HoloLens。](hololens-enroll-mdm.md) [](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods)
+若要详细了解如何注册设备，请参阅在 MDM 和[Windows 设备的 Intune](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods)注册方法中注册[HoloLens。](hololens-enroll-mdm.md)
 
 ### <a id="mdmprofile"></a>MDM，步骤 2 &ndash; 创建展台配置文件
 
@@ -241,7 +241,7 @@ ms.locfileid: "11253029"
 - 若要了解如何在 Intune 中配置展台配置文件，请参阅如何使用 [Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)配置展台模式。
 - 有关 Intune 中多应用展台的可用设置详细信息，请参阅 [多应用展台](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
 - 对于其他 MDM 服务，请参阅提供商文档中的说明。 如果你需要使用自定义 XML 配置在 MDM 服务中设置展台，请创建 [一个定义](#ppkioskconfig)展台配置的 XML 文件。 如果使用 XML 文件，请确保包含"开始 ["屏幕布局](#start-layout-for-hololens)。  
-- 可以选择将自定义"开始"屏幕布局与 Intune 或其他 MDM 服务一同使用。 有关详细信息，请参阅[MDM 的"开始"屏幕布局 (Intune 和其他) 。 ](#start-layout-file-for-mdm-intune-and-others)
+- 可以选择将自定义"开始"屏幕布局与 Intune 或其他 MDM 服务一同使用。 有关详细信息，请参阅[Mdm 的"开始"屏幕布局文件 (Intune 和其他) 。 ](#start-layout-file-for-mdm-intune-and-others)
 
 1. 选择 **"S 模式设备否"中的目标 Windows 10。**  >  ****  
    >[!NOTE]  
@@ -267,12 +267,12 @@ ms.locfileid: "11253029"
 在 OOBE 期间，请按照以下步骤操作：
 
 1. 使用你在展台配置文件中指定的帐户登录。
-1. 注册设备。 确保设备已添加到分配了展台配置文件的组。
+1. 注册设备。 确保设备已添加到展台配置文件分配到的组中。
 1. 等待 OOBE 完成、应用商店应用下载和安装以及应用策略。 然后重新启动设备。
 
 下次登录设备时，展台应用应自动启动。
 
-如果此时看不到展台配置，请检查 [分配状态](https://docs.microsoft.com/intune/configuration/device-profile-monitor)。
+如果此时看不到展台配置， [请检查分配状态](https://docs.microsoft.com/intune/configuration/device-profile-monitor)。
 
 ### <a id="mdmmultideploy"></a>MDM，步骤 5 (部署多应用) &ndash; 部署多应用展台
 
@@ -291,7 +291,7 @@ ms.locfileid: "11253029"
 
 下次使用属于用户登录类型的帐户登录设备时，展台应用应自动启动****。
 
-如果此时看不到展台配置，请检查 [分配状态](https://docs.microsoft.com/intune/configuration/device-profile-monitor)。
+如果此时看不到展台配置， [请检查分配状态](https://docs.microsoft.com/intune/configuration/device-profile-monitor)。
 
 ## 使用预配包设置单应用或多应用展台
 
@@ -358,7 +358,7 @@ ms.locfileid: "11253029"
 
 #### <a id="start-layout-file-for-mdm-intune-and-others"></a>适用于 Intune 和其他托管 (MDM 的占位符"开始"屏幕布局) 
 
-将以下示例另存为 XML 文件。 在 Microsoft Intune 应用中配置多应用展台时，或在提供展台配置文件 (另一个 MDM 服务中配置展台时，可以使用) 。
+将以下示例另存为 XML 文件。 在 Microsoft Intune 应用中配置多应用展台时 (或在提供展台配置文件服务的另一个 MDM 服务中配置) 。
 
 > [!NOTE]
 > 如果你必须使用自定义设置和完整的 XML 配置在 MDM 服务中设置展台，请使用预配包的"开始" [屏幕布局说明](#start-layout-for-hololens)。
@@ -392,10 +392,10 @@ ms.locfileid: "11253029"
 
 1. **可选**。  (如果你想要在设备的初始设置后应用预配包，并且展台设备上已有管理员用户，请跳过此步骤。) **选择运行时**设置帐户用户，然后创建用户帐户。 &gt; **** &gt; **** 提供用户名和密码，然后选择 **"用户组**  >  **管理员"。**  
   
-     使用此帐户，可以查看设置状态和日志。  
+     通过使用此帐户，可以查看设置状态和日志。  
 1. **可选**。  (如果展台设备上已有非管理员帐户，请跳过此步骤。) **选择运行时**设置帐户用户，然后创建本地 &gt; **** &gt; **** 用户帐户。 确保用户名与在配置 XML 中指定的帐户相同。 选择**UserGroup**  >  **标准用户**。
 1. 选择 **"文件**  >  **保存"。**
-1. 选择 **"**  >  **导出预配包"，** 然后选择"**所有者**  >  **IT 管理员"。** 这设置此预配包的优先级高于从其他源应用到此设备的预配包。
+1. 选择 **"**  >  **导出预配包**"，然后选择"**所有者**  >  **IT 管理员"。** 这设置此预配包的优先级高于从其他源应用到此设备的预配包。
 1. 选择**下一步** 。
 1. 在 **"预配包安全** "页上，选择一个安全选项。
    > [!IMPORTANT]  
@@ -405,7 +405,7 @@ ms.locfileid: "11253029"
    > 不要选择 **"启用程序包加密"。** 在 HoloLens 设备上，此设置会导致预配失败。
 1. 选择**下一步** 。
 1. 指定您希望预配包在生成时转到的输出位置。 默认情况下，Windows 配置设计器使用项目文件夹作为输出位置。 如果要更改输出位置，请选择"浏览 **"。** 完成后，选择"下一**步"。**
-1. 选择 **"生成** "开始生成程序包。 无需花费太长时间即可生成预配包。 生成页显示项目信息，进度栏指示生成状态。
+1. 选择 **"** 生成"开始生成程序包。 无需花费太长时间即可生成预配包。 生成页显示项目信息，进度栏指示生成状态。
 
 ### <a id="ppapply"></a>预配包，步骤 3 &ndash; 将预配包应用到 HoloLens
 
@@ -438,7 +438,7 @@ ms.locfileid: "11253029"
 1. 选择 **"启用展台模式**"，选择要在设备启动时运行的应用，然后选择"保存 **"。**
 
     ![展台模式](images/kiosk.png)
-1. 重新启动 HoloLens。 如果你仍然打开 Device Portal 页面，可以选择 **页面顶部的"** 重新启动"。
+1. 重新启动 HoloLens。 如果你仍然打开 Device Portal 页面，可以选择 **页面顶部的"** 重启"。
 
 > [!NOTE]
 > Kiosk Mode can be set via Device Portal's REST API by doing a POST to /api/holographic/kioskmode/settings with one required query string parameter ("kioskModeEnabled" with a value of "true" or "false") and one optional parameter ("startupApp" with a value of a package name) . 请记住，Device Portal 仅面向开发人员，不应在非开发人员设备上启用。 REST API 在将来的更新/版本中可能会更改。
@@ -452,14 +452,14 @@ ms.locfileid: "11253029"
 ### 全局分配的访问权限 – 展台模式
 - 通过启用在系统级别应用展台模式的新展台方法，减少展台的标识管理。
 
-此新功能允许 IT 管理员为适用于系统级别的多个应用展台模式配置 HoloLens 2 设备，此模式与系统上的任何标识没有任何关联，并且适用于登录设备的每个人。 在此处详细阅读有关此[新功能。](hololens-global-assigned-access-kiosk.md)
+此新功能允许 IT 管理员为适用于系统级别的多个应用展台模式配置 HoloLens 2 设备，此模式与系统上的任何标识没有任何关联，并且适用于登录设备的每个人。 有关此新功能的更多详细信息，请参阅 [HoloLens](hololens-global-assigned-access-kiosk.md) 全局分配的访问权限展台文档。
 
 ### 在多应用展台模式下自动启动应用程序 
 - 自动应用启动的集中体验，进一步增加了为展台模式体验选择的 UI 和应用选择。
 
 仅适用于多应用展台模式，并且只能使用分配的访问权限配置中的以下突出显示属性将 1 个应用指定为自动启动。 
 
-当用户登录时，将自动启动应用程序。 
+当用户登录时，应用程序将自动启动。 
 
 ```xml
 <AllowedApps>                     
@@ -476,9 +476,9 @@ ms.locfileid: "11253029"
 ![展台模式在出现故障时的外观的图像。](images/hololens-kiosk-failure-behavior.png )
 
 ### 为脱机展台缓存 Azure AD 组成员身份
-- 已启用脱机展台，可与 Azure AD 组一起使用，最多 60 天。
+- 启用的脱机展台，可与 Azure AD 组一起使用，最多 60 天。
 
-此策略控制允许 Azure AD 组成员身份缓存用于面向已登录用户的 Azure AD 组的分配的访问权限配置天数。 一旦此策略值设置为大于 0 的值，则不使用缓存。  
+此策略控制允许 Azure AD 组成员身份缓存用于面向已登录用户的 Azure AD 组的分配的访问权限配置天数。 一旦此策略值设置为大于 0 的值，则否则使用缓存。  
 
 名称：AADGroupMembershipCacheValidityInDays URI 值：./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -487,16 +487,16 @@ ms.locfileid: "11253029"
 
 正确使用此策略的步骤： 
 1. 创建面向 Azure AD 组的展台的设备配置文件，并将其分配给 HoloLens () 。 
-1. 创建基于 OMA URI 的自定义设备配置，该配置将此策略值设置为所需天数 (> 0) 并将其分配给 HoloLens 设备 () 。 
+1. 创建基于 OMA URI 的自定义设备配置，该配置将此策略值设置为所需的天数 (> 0) 并将其分配给 HoloLens () 。 
     1. URI 值应在 OMA-URI 文本框中输入为 ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. 该值可以介于允许的最小值/最大值之间。
 1. 注册 HoloLens 设备并验证这两种配置是否适用于该设备。 
 1. 在 Internet 可用时允许 Azure AD 用户 1 登录，一旦成功确认用户登录和 Azure AD 组成员身份，将创建缓存。 
 1. 现在，Azure AD 用户 1 可以将 HoloLens 脱机并用于展台模式，只要策略值允许 X 天数。 
-1. 对于任何其他 Azure AD 用户 N，可以重复步骤 4 和 5。此处的关键点是任何 Azure AD 用户都必须使用 Internet 登录设备，以便我们至少能确定他们是展台配置所面向的 Azure AD 组的成员。 
+1. 对于任何其他 Azure AD 用户 N，可以重复步骤 4 和 5。此处的关键点是，任何 Azure AD 用户都必须使用 Internet 登录设备，以便我们可以至少一次确定他们是展台配置面向的 Azure AD 组的成员。 
  
 > [!NOTE]
-> 为 Azure AD 用户执行步骤 4 之前，将遇到"断开连接"环境中提及的失败行为。 
+> 在针对 Azure AD 用户执行步骤 4 之前，用户将遇到"断开连接"环境中提及的失败行为。 
 
 
 ## 适用于 HoloLens 的 XML 展台代码示例

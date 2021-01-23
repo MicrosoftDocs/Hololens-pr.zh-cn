@@ -1,24 +1,24 @@
 ---
-title: HoloLens 安全概述
-description: 安全性概述
+title: HoloLens 安全性概述
+description: HoloLens 混合现实设备的安全性概述入门。
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
-keywords: 安全, hololens, hololens 2, hololens2 安全, 安全概述
+keywords: 安全性、hololens、hololens 2、hololens2 安全性、安全性概述
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd626d404831cdfb39acd5a2d8a4f6507a5c694b
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009440"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284143"
 ---
 # 安全性概述
 

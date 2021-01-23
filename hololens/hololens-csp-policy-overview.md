@@ -1,6 +1,6 @@
 ---
 title: 配置 CSP 和设备管理概述
-description: 如何配置 CSP、策略和设备管理。
+description: 了解如何使用移动设备管理和预配包配置 CSP、策略和设备管理。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,16 +13,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6da29506035525b1b1b5141a04603f63de1ef24
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252773"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283243"
 ---
 # 配置 CSP 和设备管理概述
 
-IT 管理员可以在 HoloLens 2 上定义和实施策略设置。 你使用的配置设置将基于部署方案而异，公司设备将为 IT 提供最广泛的控制权。 在 Windows 10 中， (CSP) 是一个接口，用于读取、设置、修改或删除设备的配置设置。 这些设置将映射到注册表项或文件。 一些配置服务提供程序支持 WAP 格式，一些支持 SyncML，一些支持两者。
+IT 管理员可以在 HoloLens 2 上定义和实施策略设置。 你使用的配置设置将基于部署方案而异，公司设备将为 IT 提供最广泛的控制权。 在 Windows 10 中，配置服务提供程序 (CSP) 是一个在设备上读取、设置、修改或删除配置设置的接口。 这些设置将映射到注册表项或文件。 一些配置服务提供程序支持 WAP 格式，一些支持 SyncML，一些支持两者。
 
 有关 Windows 10 全息设备管理 CSP 详细信息，请参阅 [HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)设备中支持的 AP 的完整列表。
 IT 管理员还可以在设备上管理策略 CSP，查看 [HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2)支持的策略 CSP 的完整列表。

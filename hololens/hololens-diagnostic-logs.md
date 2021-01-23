@@ -1,6 +1,6 @@
 ---
 title: 收集和使用来自 HoloLens 设备的诊断信息
-description: 收集和使用来自 HoloLens 设备的诊断信息
+description: 了解如何收集、使用和保留 HoloLens 设备的诊断信息。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/15/2020
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 206a31476820e8722b1b72fbd501345a089379b1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253149"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283223"
 ---
 # 收集和使用来自 HoloLens 设备的诊断信息
 
@@ -43,7 +43,7 @@ HoloLens 用户和管理员可以从四种不同方法中选择从 HoloLens 收�
 |[反馈中心](#feedback-hub) |网络和 Internet 连接<br /><br />反馈中心应用<br /><br />将文件上传到 Microsoft 云的权限 |Microsoft 云<br /><br />HoloLens 设备 (可选)  |用户请求帮助、同意使用条款并上载数据<br /><br />Microsoft 员工根据使用条款查看数据 |云中的数据将保留由 NGP 组织下一代隐私 (定义的) 。 然后，数据将自动删除。<br /><br />拥有设备所有者或管理员权限的用户随时都可以删除**设备上的数据。** **** |
 |[设置疑难解答程序](#settings-troubleshooter) |“设置”应用 |HoloLens 设备<br /><br />连接的计算机 (可选)  |用户存储数据，只有用户访问数据 (除非用户专门与其他用户共享数据) 。 |数据将一直保留，直到用户将其删除。 |
 |[DiagnosticLog 云解决方案提供商](#diagnosticlog-csp) |网络连接<br /><br />支持 DiagnosticLog CSP 的 MDM 环境 |管理员配置存储位置 |在托管环境中，用户隐式同意管理员访问数据。<br /><br />管理员配置访问角色和权限。 | 管理员配置保留策略。 |
-|[脱机诊断](#offline-diagnostics) |设备配置：<ul><li>已打开并连接到计算机</li><li>电源和音量按钮运行</li></ul> |HoloLens 设备<br /><br />已连接计算机 |用户存储数据，只有用户访问数据 (除非用户专门与其他用户共享数据) 。 |数据将一直保留，直到用户将其删除。 | 
+|[脱机诊断](#offline-diagnostics) |设备配置：<ul><li>已打开并连接到计算机</li><li>电源和音量按钮正常工作</li></ul> |HoloLens 设备<br /><br />已连接计算机 |用户存储数据，只有用户访问数据 (除非用户专门与其他用户共享数据) 。 |数据将一直保留，直到用户将其删除。 | 
 
 
 -   最终用户负责与他人负责共享日志。 这些文件在联系客户服务和支持人员时主要用于。  
@@ -53,7 +53,7 @@ HoloLens 用户和管理员可以从四种不同方法中选择从 HoloLens 收�
 HoloLens 用户可以使用 Microsoft 反馈中心桌面应用向 Microsoft 支持人员发送诊断信息。 有关详细信息和完整说明，请参阅["提供反馈"。](hololens-feedback.md)  
 
 > [!NOTE]  
-> **商业或企业用户：** 如果你使用反馈中心应用报告与 MDM、预配或其他任何设备管理方面相关的问题，请更改应用类别为**企业管理**  >  **设备类别**。
+> **商业或企业用户：** 如果你使用反馈中心应用报告与 MDM、预配或其他任何设备管理方面相关的问题，请更改应用类别为 **"企业管理**  >  **设备"类别**。
 
 ### 必备条件
 
@@ -62,7 +62,7 @@ HoloLens 用户可以使用 Microsoft 反馈中心桌面应用向 Microsoft 支�
 
 ### 数据位置、访问和保留
 
-通过同意反馈中心的使用条款，用户明确同意按照该协议 (存储和使用) 。
+通过同意反馈中心的使用条款，用户明确同意按照该协议 (存储和使用数据) 。
 
 反馈中心为用户提供了两个存储诊断信息的位置：
 
@@ -70,7 +70,7 @@ HoloLens 用户可以使用 Microsoft 反馈中心桌面应用向 Microsoft 支�
    > [!NOTE]  
    > 这些要求适用于所有反馈中心类别的数据。
 
-- **HoloLens 设备**。 在反馈中心中提交报告时，用户可以选择"保存提供反馈时创建的诊断和**附件的本地副本"。** 如果用户选择此选项，反馈中心将存储 HoloLens 设备上诊断信息的副本。 用户或使用此帐户 (HoloLens 帐户的任何人仍可以访问此信息) 。 若要删除此信息， **用户必须具有设备** 所有者 **或设备的** 管理员权限。 具有相应权限的用户可以登录到反馈中心，选择"设置视图"诊断****  >  **日志**并删除信息。
+- **HoloLens 设备**。 在反馈中心中提交报告时，用户可以选择"保存提供反馈时创建的诊断和**附件的本地副本"。** 如果用户选择此选项，反馈中心将存储 HoloLens 设备上诊断信息的副本。 用户或使用此帐户 (HoloLens 帐户的任何人仍可以访问此信息) 。 若要删除此信息， **用户必须对设备** 拥有设备所有者 **或** 管理员权限。 具有相应权限的用户可以登录到反馈中心，选择"设置视图"诊断****  >  **日志**并删除信息。
 
 ## 设置疑难解答程序
 
@@ -100,7 +100,7 @@ HoloLens 用户可以使用设备的"设置"应用解决问题并收集诊断信
 
 ## DiagnosticLog 云解决方案提供商
 
-在移动设备管理 (MDM) 环境中，IT 管理员可以使用 [DiagnosticLog ](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) 配置服务提供程序 (CSP) 在已注册的 HoloLens 设备上配置诊断设置。 IT 管理员可以将这些设置配置为从注册的设备收集日志。
+在移动设备管理 (MDM) 环境中，IT 管理员可以使用 [DiagnosticLog ](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) 配置服务提供程序 (CSP) 在已注册的 HoloLens 设备上配置诊断设置。 IT 管理员可以将这些设置配置为从已注册的设备收集日志。
 
 ### 必备条件
 
@@ -130,7 +130,7 @@ Windows 全息版[之前的行为，verison 20H2：](hololens-release-notes.md#w
 - 若要禁用脱机诊断，请转到"设置应用>**隐私**"页，然后选择**诊断数据****中的"基本"。** 在脱机诊断依赖于遥测设置内部版本上，它仅影响是否收集任何日志。 它不会影响收集的文件。
 - 如果设备已锁定，将不会显示日志。
 
-在版本 [Windows 全息版、verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 及前向版本上：
+在版本 [Windows Holographic、verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 及前向版本上：
 - 启用回退诊断时，由具有相应[设置 MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)的特定 MDM 策略控制
 - 如果设备已锁定，将不会显示日志。
 

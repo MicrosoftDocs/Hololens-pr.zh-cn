@@ -1,6 +1,6 @@
 ---
 title: 管理 HoloLens 的用户标识和登录
-description: 管理 HoloLens 的用户标识、安全性和登录。
+description: 了解如何管理 HoloLens 设备的用户标识、多用户支持、安全性、企业身份验证和登录。
 keywords: HoloLens， 用户， 帐户， AAD， Azure AD， adfs， microsoft 帐户， msa， 凭据， 参考
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: d9b7bebd9fd326def4ddfc2982bfecb09cb14186
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253219"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283273"
 ---
 # 管理 HoloLens 的用户标识和登录
 
@@ -36,14 +36,14 @@ HoloLens 支持多种类型的用户标识。 可以使用一个或多个用户�
 
 | 标识类型 | 每个设备的帐户 | 身份验证选项 |
 | --- | --- | --- |
-| [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure Web 凭据提供程序</li><li>Azure Authenticator 应用</li><li>&ndash;HoloLens 2 (1) 虹膜生物 <sup> 识别</sup> </li><li>适用于 &ndash; HoloLens 第一代 (的 PIN) ，HoloLens 2 需要</li><li>密码</li></ul> |
-| [Microsoft 帐户 (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>仅 (&ndash; HoloLens 2) 虹膜生物识别</li><li>适用于 &ndash; HoloLens 第一代 (的 PIN) ，HoloLens 2 需要</li><li>密码</li></ul> |
+| [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Azure Web 凭据提供程序</li><li>Azure Authenticator 应用</li><li>&ndash;HoloLens 2 (1) 虹膜生物 <sup> 识别</sup> </li><li>适用于 &ndash; HoloLens (第一代) 的 PIN（HoloLens 2 需要）</li><li>密码</li></ul> |
+| [Microsoft 帐户 (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>仅 (&ndash; HoloLens 2) 虹膜生物识别</li><li>适用于 &ndash; HoloLens (第一代) 的 PIN（HoloLens 2 需要）</li><li>密码</li></ul> |
 | [本地帐户](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | 密码 |
 
 Azure AD 和 MSA (云连接) 提供了更多功能，因为它们可以使用 Azure 服务。  
 
 > [!NOTE]
-> 1 - HoloLens 2 设备可支持最多 64 个 Azure AD 帐户，但其中只有 10 个帐户可以注册 Iris 身份验证。 这与 Windows Hello 企业的其他生物识别身份验证选项一致。 [在此处阅读更多信息。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 1 - HoloLens 2 设备可支持最多 64 个 Azure AD 帐户，但其中只有 10 个帐户可以注册 Iris 身份验证。 这与 Windows [Hello 企业的其他生物识别身份验证选项一致](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)。
 
 ## 设置用户
 
@@ -51,13 +51,13 @@ Azure AD 和 MSA (云连接) 提供了更多功能，因为它们可以使用 Az
 
 与其他设备上 Windows 一样，在设置期间登录会创建设备的用户配置文件。 用户配置文件存储应用和数据。 同一帐户还使用 Windows 帐户管理器 API 为边缘或 Skype 等应用提供单一登录。  
 
-如果使用企业或组织帐户登录到 HoloLens，HoloLens 将注册组织的 IT 基础结构。 此注册允许 IT 管理员将移动设备管理 (MDM) 将组策略发送到 HoloLens。
+如果使用企业或组织帐户登录 HoloLens，HoloLens 将注册组织的 IT 基础结构。 此注册允许 IT 管理员将移动设备管理 (MDM) 将组策略发送到 HoloLens。
 
 默认情况下，与其他 Windows 10 设备一样，当 HoloLens 重新启动或从待机状态恢复时，你必须重新登录。 可以使用"设置"应用更改此行为，也可以由组策略控制此行为。
 
 ### 链接帐户
 
-与在桌面版 Windows 中一样，你可以将其他 Web 帐户凭据链接到 HoloLens 帐户。 通过此类链接，可以更轻松地跨应用或访问应用 (如应用商店) 或合并对个人和工作资源的访问。 将帐户连接到设备后，你可以授予将设备用于应用的权限，以便你不必单独登录到每个应用。
+与在桌面版 Windows 中一样，你可以将其他 Web 帐户凭据链接到 HoloLens 帐户。 通过此类链接，可以更轻松地跨应用或访问应用 (如应用商店) 或合并对个人和工作资源的访问权限。 将帐户连接到设备后，你可以授予将设备用于应用的权限，以便你不必单独登录到每个应用。
 
 链接帐户不会分隔在设备上创建的用户数据，例如图像或下载。  
 
@@ -103,13 +103,13 @@ HoloLens 第一代 (支持使用 PIN 登录) 的 Windows Hello 企业 (企业) �
 1. 在 HoloLens 上，用户随后**** 可以使用"设置登录选项添加  >  ****  >  **PIN"** 来设置 PIN。
 
 > [!NOTE]
-> 使用 Microsoft 帐户登录的用户还可以在"设置登录选项添加****  >  **PIN"中设置**  >  **PIN。** 此 PIN 与 [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)相关联，而不是 [Windows Hello 企业应用](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
+> 使用 Microsoft 帐户登录的用户还可以在"设置登录选项添加****  >  **PIN"中设置**  >  **PIN。** 此 PIN 与[Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)相关联，而不是[Windows Hello 企业应用。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)
 
 ### 如何在 HoloLens 2 上实现虹膜生物识别身份验证？
 
 HoloLens 2 支持虹膜身份验证。 Iris 基于 Windows Hello 技术，支持 Azure Active Directory 和 Microsoft 帐户使用。 Iris 的实现方式与其他 Windows Hello 技术相同，并实现 1/100K 的生物识别安全。
 
-你可以在此处了解有关 Windows Hello 生物识别要求和规范 [的更多信息](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)。 了解有关 [Windows Hello 和](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) Windows Hello [企业企业版本有关详细信息](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
+有关详细信息， [请参阅 Windows Hello 的生物](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) 识别要求和规范。 了解有关 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 和 Windows [Hello 企业企业版本有关详细信息](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)。 
 
 ### 帐户类型如何影响登录行为？
 
