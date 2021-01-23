@@ -1,6 +1,6 @@
 ---
 title: 适用于 HoloLens 2 的 Windows Autopilot
-description: 如何在 HoloLens 2 设备上设置 Autopilot。
+description: 了解如何在 HoloLens 2 设备上对 Autopilot 进行设置、配置和疑难解答。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020
@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 98f35c52091a2d477a2f0852f66ad706498ad026
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 23cb3612a633f6747c770d9fd52b137561492426
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253588"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284033"
 ---
 # 适用于 HoloLens 2 的 Windows Autopilot
 
-从 Windows 全息版 2004 版本开始，HoloLens 2 支持 Windows Autopilot [自部署模式](https://docs.microsoft.com/mem/autopilot/self-deploying)。 管理员可在 Microsoft 终结点管理器中配置（OOBE）的全新体验，并允许终端用户在几乎未有交互的情况中为业务使用准备设备。 这减少了库存管理的开销、设备准备的成本以及员工在设置体验期间的支持电话。 若要了解更多有关 Windows Autopilot 的详细信息，请单击 [此处](https://docs.microsoft.com/mem/autopilot/windows-autopilot)。
+从 Windows 全息版 2004 版本开始，HoloLens 2 支持 Windows Autopilot [自部署模式](https://docs.microsoft.com/mem/autopilot/self-deploying)。 管理员可在 Microsoft 终结点管理器中配置（OOBE）的全新体验，并允许终端用户在几乎未有交互的情况中为业务使用准备设备。 这减少了库存管理的开销、设备准备的成本以及员工在设置体验期间的支持电话。 有关详细信息，请参阅 [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) 文档。
 
-与 Surface 设备一样，建议客户使用其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider) (经销商或分销商) ，以通过合作伙伴中心将设备注册到 Autopilot 服务中。 [此处](https://docs.microsoft.com/mem/autopilot/add-devices)概述了设备注册的其他方法，尽管利用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
+与 Surface 设备一样，建议客户使用其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider) (经销商或分销商) ，以通过合作伙伴中心将设备注册到 Autopilot 服务中。 [添加设备](https://docs.microsoft.com/mem/autopilot/add-devices)文档中概述了设备注册的其他方法，尽管利用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
 
 > [!NOTE]
 > 截至11/20/2020，Microsoft 终结点管理器中 HoloLens 的 Autopilot 配置正在到 **公共预览版**。 客户无需再注册私人预览，所有租户都可在 MEM 管理中心中设置 Autopilot。
@@ -73,7 +73,7 @@ ms.locfileid: "11253588"
 
 #### 查看 HoloLens 操作系统要求：
 
-- 设备必须使用 [Windows 全息版，2004 版本](hololens-release-notes.md#windows-holographic-version-2004) （内部版本 19041.1103）或更高版本。 若要确认设备上的内部版本或重新刷新到最新操作系统，可使用 [高级恢复配套（ARC）](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)。 可在 [此处](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device) 找到说明。 请注意，在 2020 年 9 月底之前交付的设备已预安装了 Windows 全息 1903 版本。 请与经销商联系，以确保 Autopilot 的设备已向你发送。
+- 设备必须使用 [Windows 全息版，2004 版本](hololens-release-notes.md#windows-holographic-version-2004) （内部版本 19041.1103）或更高版本。 若要确认设备上的内部版本或重新刷机到最新操作系统，请使用[高级恢复助手 (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 以及我们的[设备重新刷机说明](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)。 请注意，在 2020 年 9 月底之前交付的设备已预安装了 Windows 全息 1903 版本。 请与经销商联系，以确保 Autopilot 的设备已向你发送。
 
 - Windows 全息 2004 版本仅支持通过以太网连接的 Autopilot。 **在开启 HoloLens 之前**，请确保使用 “USB-C转以太网” 适配器已连接到以太网。 设备启动后，无需用户交互。 如果计划将 Autopilot 推广到许多 HoloLens 设备上，我们建议对适配器基础设施进行规划。 我们不推荐使用 USB 集线器，因为它们通常需要安装额外的第三方驱动程序，而 HoloLens 不支持这些驱动程序。
 

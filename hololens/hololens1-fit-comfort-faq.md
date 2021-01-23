@@ -1,6 +1,6 @@
 ---
 title: HoloLens（第 1 代）舒适佩戴常见问题
-description: 有关如何佩戴 HoloLens（第一代）的常见问题解答。
+description: 随时获得有关如何适应 HoloLens（第 1 代）混合现实设备常见问题的答案。
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: d21d4485919b8e3230e61fc0e158a6635d4e2c37
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 8205675213faefd1b0907627c427c572d52a37c6
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827679"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283993"
 ---
 # HoloLens（第 1 代）舒适佩戴常见问题
 

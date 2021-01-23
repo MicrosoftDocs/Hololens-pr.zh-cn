@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/13/2021
+ms.date: 1/21/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
+ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283193"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297655"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -55,7 +55,7 @@ ms.locfileid: "11283193"
 
 #### 启动新的 Microsoft Edge
 
-预览体验成员可以使用两个版本的 Microsoft Edge：新的 Microsoft Edge 新 Microsoft Edge 图标 (由蓝绿色旋转图标) 表示，旧 Microsoft Edge (由白色 ![ ](images/new_edge_logo.png) "e"图标) 表示。 新的 Microsoft Edge 已固定到"开始"菜单，并且会在激活 Web 链接时自动启动。 如果你想要还原为使用旧版 Microsoft Edge 作为默认 Web 浏览器，请参阅下面的说明 [重置默认应用](#default-app-picker)。
+预览体验成员可以使用两个版本的 Microsoft Edge：新的 Microsoft Edge 新 Microsoft Edge 图标 (由蓝绿色旋转图标) 表示，旧 Microsoft Edge (由白色 ![ ](images/new_edge_logo.png) "e"图标) 表示。 新的 Microsoft Edge 固定到"开始"菜单，将在激活 Web 链接时自动启动。 如果你想要还原为使用旧版 Microsoft Edge 作为默认 Web 浏览器，请参阅下面的说明 [重置默认应用](#default-app-picker)。
 
 > [!NOTE]
 > 当你首次在 HoloLens 2 上启动新的 Microsoft Edge 时，你的设置和数据将导入旧版 Microsoft Edge。 如果在启动新的 Microsoft Edge 后继续使用旧版 Microsoft Edge，则新数据将不会从旧版 Microsoft Edge 同步到新的 Microsoft Edge。
@@ -72,7 +72,7 @@ ms.locfileid: "11283193"
 - [完整的 Microsoft Edge 企业版文档](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> 由于新的 Microsoft Edge 支持大量浏览器策略，团队无法保证每个新策略都适用于 HoloLens 2。 但是，我们已经测试并确认 HoloLens 2 上以前支持的每个旧 Microsoft Edge 策略的新 Microsoft Edge 等效项可以正常工作。 请参阅 [Microsoft Edge 旧版到 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 策略映射，查找与 HoloLens 2 一起使用的每个旧版 Microsoft Edge 浏览器策略的新 Microsoft Edge 等效项。
+> 由于新的 Microsoft Edge 支持大量浏览器策略，因此团队无法保证每个新策略都适用于 HoloLens 2。 但是，我们已经测试并确认 HoloLens 2 上以前支持的每个旧 Microsoft Edge 策略的新 Microsoft Edge 等效项可以正常工作。 请参阅 [Microsoft Edge 旧版到 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 策略映射，查找与 HoloLens 2 一起使用的每个旧版 Microsoft Edge 浏览器策略的新 Microsoft Edge 等效项。
 >
 > 我们了解至少有两个新的 Microsoft Edge 策略 *将不能* 与 HoloLens 2 一起使用：
 > - EnterpriseModeSiteList
@@ -88,7 +88,7 @@ ms.locfileid: "11283193"
 - 大多数浏览器功能 (收藏夹、历史记录等) 应正常工作
 - 深色模式
 - 将 Web 应用安装到设备
-- 安装扩展 (请告诉我们，如果你使用的任何扩展在 HoloLens 2) 
+- 安装扩展 (请告知我们，如果你使用的任何扩展在 HoloLens 2) 
 - 查看和标记 PDF
 - 单个浏览器窗口中的空间声音
 - 浏览器的自动和手动更新
@@ -99,7 +99,7 @@ ms.locfileid: "11283193"
 - 在环境中跨多个窗口浏览时，内容还原以更正窗口
 - 通过浏览器通过视频、混合现实捕获或屏幕共享功能加入 Microsoft Teams (通过音频加入通话效果) 
 
-**无法工作的方案和功能：**
+**不应工作的方案和功能：**
 - 具有同时音频流的多个窗口的空间声音
 - "查看它，说出它"
 - 打印
@@ -114,6 +114,24 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 
 访问 [Microsoft Edge 预览体验成员主页](https://www.microsoftedgeinsider.com) ，详细了解 Edge 预览体验成员社区。 若要了解有关不同边缘预览体验成员频道和入门信息，请访问 Edge [预览体验成员下载页面](https://www.microsoftedgeinsider.com/download)。
 
+有两种方法可用于将 Microsoft Edge 预览体验成员频道安装到 HoloLens 2：
+
+**直接安装在设备上 (当前仅适用于非托管设备) **
+  1. 在 HoloLens 2 上，访问 [Edge 预览体验成员下载页面](https://www.microsoftedgeinsider.com/download)
+  1. 选择要安装的边缘预览体验成员频道的"下载 **HoloLens 2"** 按钮
+  1. 使用"文件资源管理器"命令从 Edge 下载队列或设备的"下载"文件夹 (下载的 .msix) 
+  1. [应用安装程序](app-deploy-app-installer.md) 将启动
+  1. 选择 **"安装"** 按钮
+  1. 成功安装后，你将在"开始"菜单的"所有应用"列表中发现 Microsoft Edge **** Beta、Dev 或 Canary 作为单独的条目
+
+**通过具有 Windows Device Portal [ (电脑进行](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) 安装需要在 HoloLens 2 设备上启用开发人员) **
+  1. 在电脑上，访问 [Edge 预览体验成员下载页面](https://www.microsoftedgeinsider.com/download)
+  1. 选择要 **安装** 的边缘预览体验成员频道的"下载 Windows 10"按钮旁边的下拉箭头按钮
+  1. 在**下拉菜单中选择 HoloLens 2**
+  1. 将 .msix 文件保存到电脑文件夹的"下载 (或其他文件夹，你可以轻松找到) 
+  1. 使用 [电脑上的 Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) 在 HoloLens 2 上安装下载的 .msix 文件
+  1. 成功安装后，你将在"开始"菜单的"所有应用"列表中发现 Microsoft Edge **** Beta、Dev 或 Canary 作为单独的条目
+
 > [!NOTE]
 > 在此适用于 HoloLens 2 的 Windows 预览体验成员预览体验期间，你设备上 Microsoft Edge 的版本可能高于某些 (或 Microsoft Edge 预览体验成员) 中提供的版本。 这是为了确保专门针对 HoloLens 2 上的 Web 浏览器的新功能和修补程序尽快进入我们的 Windows 预览体验成员。 在公开发布下一个 Windows 更新后，Microsoft Edge 预览体验成员频道版本将超过 HoloLens 2 上的 Microsoft Edge 版本，并保持领先。
 
@@ -122,7 +140,7 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 在此版本中，我们将引入新版本的"设置"应用。 新的"设置"应用在以下方面包括 HoloLens 2 的新功能和扩展设置：声音、Power & 睡眠、网络 & Internet、应用、帐户、轻松使用等。
 
 > [!NOTE]
-> 由于新的"设置"应用不同于旧式"设置"应用，因此更新时将删除之前围绕环境放置的任何"设置"窗口。
+> 由于新的"设置"应用不同于旧式"设置"应用，因此更新时将删除之前围绕你的环境放置的任何"设置"窗口。
 
 !["新建设置"应用主页](images/new-settings-app.png)
 
@@ -135,11 +153,11 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 - 系统>电池：手动启用节电模式或设置节电模式自动打开的电池阈值
 - USB >设备：默认情况下可以禁用 USB 连接
 - Internet &网络：
-  - USB-C 以太网适配器现在将显示在 Internet &中
+  - USB-C 以太网适配器现在将显示在网络和 Internet &中
   - USB-C 以太网适配器设置现已可用，包括其 IP 地址
   - 现在可以在 HoloLens 2 上启用飞行模式
 - 应用：你可以重置用于文件和链接类型的默认应用。 有关详细信息 [，请参阅](#default-app-picker) 默认应用选取器。
-- 其他用户>帐户：设备所有者可以添加用户、将标准用户升级到设备所有者、将设备所有者降级为标准用户以及删除用户。
+- 其他用户>的帐户：设备所有者可以添加用户、将标准用户升级到设备所有者、将设备所有者降级为标准用户以及删除用户。
 - 轻松使用：更改文本大小和一些视觉效果
 
 **已知问题**
@@ -180,7 +198,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中�
 > [!IMPORTANT]
 > 若要将外部麦克风与 **远程协助**一同使用，用户需要单击"管理声音设备"超链接。
 >
-> 然后使用下拉列表将外部麦克风设置为"默认" **或** " **通信默认值"。** 选择 **"** 默认值"意味着外部麦克风将无处不在使用。
+> 然后使用下拉列表将外部麦克风设置为"默认" **或** " **通信默认值"。** 选择 **"** 默认值"意味着外部麦克风将无处不在。
 >
 > 选择 **"** 通信默认值"意味着外部麦克风将用于远程协助和其他通信应用，但 HoloLens 麦克风阵列可能仍用于其他任务。
 
@@ -196,7 +214,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中�
 
 #### USB-C 麦克风疑难解答
 
-请注意，某些 USB-C 麦克风错误地将自己报告为 *麦克风和扬声器* 。 这是麦克风的问题，而不是 HoloLens 的问题。 将其中一个麦克风插入 HoloLens 时，声音可能会丢失。 幸运的是，有一个简单的解决方法。  
+请注意，某些 USB-C 麦克风错误地将自己报告为 *麦克风和扬声器* 。 这是麦克风而不是 HoloLens 的问题。 将其中一个麦克风插入 HoloLens 时，声音可能会丢失。 幸运的是，有一个简单的解决方法。  
 
 在 **"设置**系统声音"中，将内置扬声器 (模拟功能音频) 设置为  ->  ****  ->  ******默认设备**。 **** HoloLens 应记住此设置，即使麦克风稍后被删除并重新连接。
 
@@ -254,6 +272,17 @@ Windows 预览体验成员现在迁移到频道。 快速**圈**将变为**开�
 
 选择 **">立即重启** 以完成。 重启设备后，转到"设置>更新& **安全>检查** 更新，获取最新内部版本。
 
+### 更新错误 0x80070490 处理
+如果在 Dev 或 Beta 渠道上更新时遇到更新错误 0x80070490，请尝试以下短期方法。 它涉及移动预览体验成员频道、选取更新，然后将预览体验成员频道移回。
+
+#### 第一阶段 - 版本预览
+1.  设置，更新&安全，Windows 预览体验计划，选择 **版本预览频道**。
+2.  设置， &安全性， Windows 更新， **检查更新**。 更新后，继续第二阶段。
+
+#### 第二阶段 - 开发人员频道
+1. 设置，更新&安全，Windows 预览体验计划，选择 **开发人员频道**。
+2. 设置， &安全性， Windows 更新， **检查更新**。
+
 ## FFU 下载和快速方向
 若要使用已签名的 Ffu 进行测试，首先需要先对设备进行解锁，然后才能闪烁已进行测试的已签名 ffu。
 1. 在电脑上：
@@ -262,7 +291,7 @@ Windows 预览体验成员现在迁移到频道。 快速**圈**将变为**开�
     
     1. 从 Microsoft store (ARC) 高级恢复配套设备： [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
-1. 在 HoloLens - Flight Unlock： Open **Settings**  >  **Update & Security**Windows Insider  >  **Program** then sign up， reboot device.
+1. On HoloLens - Flight Unlock： Open **Settings**  >  **Update & Security**Windows Insider  >  **Program** then sign up， reboot device.
 
 1. Flash FFU - 现在可以使用 ARC 对已进行飞行的 FFU 进行闪烁。
 
@@ -275,9 +304,9 @@ Windows 预览体验成员现在迁移到频道。 快速**圈**将变为**开�
 
 ## 开发人员注意事项
 
-欢迎并鼓励你尝试使用 HoloLens 预览体验成员版本开发应用程序。  请查看 [HoloLens 开发人员文档](https://developer.microsoft.com/windows/mixed-reality/development) 开始。 这些相同的说明与 HoloLens 的预览体验成员版本一致。  可以使用与 HoloLens Visual Studio相同的 Unity 版本和版本。
+欢迎并鼓励你尝试使用 HoloLens 预览体验成员版本开发应用程序。  请查看 [HoloLens 开发人员文档](https://developer.microsoft.com/windows/mixed-reality/development) 以开始。 这些相同的说明与 HoloLens 的预览体验成员版本一致。  可以使用与 HoloLens Visual Studio相同的 Unity 版本和版本。
 
-## 停止接收预览体验成员内部版本
+## 停止接收预览体验成员版本
 
 如果你不再希望接收 Windows 全息版的预览体验成员版本，你可以选择在 HoloLens 运行生产版本时退出，或者可以使用高级恢复助手[](hololens-recovery.md)将设备恢复到非预览体验成员版本的 Windows 全息版。
 

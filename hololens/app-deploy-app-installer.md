@@ -1,6 +1,6 @@
 ---
 title: 如何通过 HoloLens 2 应用安装程序旁加载和安装应用
-description: 通过 UI 加载和安装应用
+description: 了解如何使用应用安装程序安装和排查应用问题，以及如何通过 UI 旁加载和安装应用。
 keywords: 应用管理， 应用， hololens， 应用安装程序
 author: evmill
 ms.author: v-evmill
@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
-ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
+ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
+ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "11280651"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "11297287"
 ---
 # 通过应用安装程序在 HoloLens 2 上安装应用
 
 > [!NOTE]
 > 此功能在 Windows 全息版版本 [20H2 – 2020 年 12 月更新中可用](hololens-release-notes.md)。 确保设备 [已更新](hololens-update-hololens.md) 为使用此功能。
 
-我们已 **在应用安装程序 (新增** 功能) 允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非 **托管设备，该功能将默认打开**。 为了防止企业中断，应用安装程序目前对托管 **设备** 不可用。  
+我们已 **在应用安装程序 (新增) ，** 允许你在 HoloLens 2 设备上更加无缝地安装应用程序。 对于非 **托管设备，该功能将默认打开**。 为了防止企业中断，应用安装程序目前对托管 **设备** 不可用。  
 
 如果以下任一项为真， **则设备** 将被视为"托管"设备：
 
@@ -40,9 +40,10 @@ ms.locfileid: "11280651"
 
 ### 对于你的设备：
 
- 功能目前适用于 HoloLens 2 设备的 Windows Holographic 20H2 版本。 确保已更新使用此方法的任何 [设备](hololens-update-hololens.md)。
+此功能目前适用于 HoloLens 2 设备的 Windows Holographic 20H2 版本。 确保已更新使用此方法的任何 [设备](hololens-update-hololens.md)。
 
-### 对于你的应用： 
+### 对于你的应用：
+
 应用的解决方案配置必须是**主**版本或版本，因为应用**** 安装程序将使用应用商店中的依赖项。 查看有关创建 [应用包的更多内容](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)。
 
 通过此方法安装的应用必须进行数字签名。 你需要使用证书对应用进行签名。 可以从 MS 受信任 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)列表获取证书，在这种情况下，无需执行任何额外操作。 或者你可以对你自己的证书进行签名，但是该证书将需要推送到设备。
@@ -94,7 +95,7 @@ ms.locfileid: "11280651"
 
 ### 最终用户体验：
 
-1. 用户使用之前选择的方法接收证书并安装到设备。
+1. 用户使用上述方法接收证书，并安装到设备。
 1. 用户访问通过上述步骤创建的 URL。
 
 应用现在将安装到设备。 若要查找应用， **请打开"** 开始"菜单并选择"所有 **应用"** 按钮以查找你的应用。
