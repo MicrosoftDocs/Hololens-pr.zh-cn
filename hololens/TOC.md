@@ -13,9 +13,10 @@
 ### [HoloLens 2 的受支持语言](hololens2-language-support.md)
 ### [开始使用 HoloLens 2](hololens2-basic-usage.md)
 ### [HoloLens 2 开发版常见问题](hololens2-development-edition-faq.md)
+### [管理 HoloLens 2 的自定义应用](hololens2-holographic-custom-apps.md)
 
 
-## HoloLens（第一代）入门
+## HoloLens（第 1 代）入门
 ### [HoloLens（第一代）硬件](hololens1-hardware.md)
 ### [准备好使用你的 HoloLens（第一代）](hololens1-setup.md)
 ### [设置 HoloLens（第一代）](hololens1-start.md)
@@ -24,6 +25,8 @@
 ### [开始使用 HoloLens（第一代）](hololens1-basic-usage.md)
 ### [使用 HoloLens （第一代）遥控器](hololens1-clicker.md)
 ### [使用 HoloLens (第 1 代) 上的 3D 查看器](holographic-3d-viewer-beta.md)
+### [管理 HoloLens 的自定义应用](holographic-custom-apps.md)
+
 
 ## 导航 Windows Holographic 界面
 ### [使用“开始”菜单和混合现实空间](holographic-home.md)
@@ -32,7 +35,6 @@
 ### [创建混合现实照片和视频](holographic-photos-and-videos.md)
 ## 全息应用程序
 ### [查找、安装和卸载应用程序](holographic-store-apps.md)
-### [管理 HoloLens 的自定义应用](holographic-custom-apps.md)
 ## 全息影像光学和空间布局
 ### [改善视觉质量和舒适度](hololens-calibration.md)
 ### [使用 HoloLens 映射物理空间](hololens-spaces.md) 
