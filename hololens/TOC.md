@@ -114,7 +114,7 @@
 ### [常见问题](hololens-faq.md)
 ### [HoloLens 已知问题](hololens-known-issues.md)
 ### [收集和使用来自 HoloLens 设备的诊断信息](hololens-diagnostic-logs.md)
-### [获取支持](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [获取技术支持](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # HoloLens 发行说明
 ## [HoloLens 2 发行说明](hololens-release-notes.md)
