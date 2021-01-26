@@ -1,6 +1,6 @@
 ---
 title: 部署指南 – 通过远程协助大规模部署云连接的 HoloLens 2 - 部署
-description: 如何通过云连接网络验证 HoloLens 设备的注册和远程协助
+description: 了解如何通过云连接网络验证 HoloLens 设备的注册和远程协助。
 keywords: HoloLens， 管理， 云连接， 远程协助， AAD， Azure AD， MDM， 移动设备管理
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b38f4a76ee088d4f892c86de07d8f5a10d2a3bf
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 4183bde30673f5147683e16b4d625f73b063c529
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253189"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282933"
 ---
 # 部署 - 云连接指南
 
-现在，你已配置所有内容，你应该已准备好分发设备。 不过，现在应该先验证设置。 首先应验证 Azure AD 加入和 MDM 注册过程，然后验证可以拨打远程协助呼叫。
+现在，你已配置所有内容，你应该已准备好分发设备。 不过，现在应该先验证设置。 首先应验证 Azure AD 加入和 MDM 注册过程，然后验证能否进行远程协助呼叫。
 
 ## 注册验证
 
@@ -33,8 +33,8 @@ ms.locfileid: "11253189"
 
 1. 设备进入 OOBE 后，&#39;开始交互并遵循提示。 
 1. 当系统询问谁拥有此**HoloLens**时，关键提示将是？ 选择 **我的工作或学校拥有它** ，然后输入你的 Azure AD 帐户凭据。
-1. 注册成功后，&#39;提示你设置 PIN。 此 PIN 对于此用户对于此设备是唯一的。 系统还会提示你进行虹膜扫描、语音数据和遥测设置，最后，&#39;了解如何打开"开始"菜单并完成 OOBE。
-1. 进入混合现实主页后，使用刚学习的"开始"手势 **打开"** 开始"菜单。
+1. 注册成功后，&#39;提示你设置 PIN。 对于此用户，此 PIN 对于此设备是唯一的。 系统还会提示你进行虹膜扫描、语音数据和遥测设置，最后，&#39;了解如何打开"开始"菜单并完成 OOBE。
+1. 进入混合现实主页后，使用刚学习的"开始"手势 **打开"开始** "菜单。
 1. 选择" **设置"** 应用，然后选择 **"系统"。** 你将看到的第&#39;一条信息是设备名称，对于 HoloLens 2 设备，它将是 &quot; HOLOLENS，后跟 &quot; 一个六个字符字符串。
 1. 记下此名称。
 
@@ -48,7 +48,7 @@ ms.locfileid: "11253189"
 
 ![Azure Active Directory - 设备](./images/aad-enrollment.png)
 
-接下来，&#39;登录 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com/#home)。 登录并选择**设备**，然后选择 **"所有设备"。** 你可以在此处搜索 HoloLens&#39;名称。 你应该能够看到你的 HoloLens 列在 Intune 上。
+接下来&#39;登录 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com/#home)。 登录并选择**设备**，然后选择 **"所有设备"。** 你可以在此处搜索 HoloLens&#39;名称。 你应该能够看到你的 HoloLens 列在 Intune 上。
 
 ![Intune - 设备](./images/endpoint-all-devices-enrolled.png)
 
