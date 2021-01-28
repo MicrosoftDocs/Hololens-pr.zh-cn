@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: afbcfd0762bea9e7a6bc217d5e4a2910eaab7359
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
+ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283343"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11302266"
 ---
 # 连接到蓝牙和 USB-C 设备
 
@@ -61,9 +61,9 @@ HoloLens（第 1 代）支持以下类别的蓝牙设备：
 1. 使用笔尖长按点击器配对按钮，直到点击器状态灯呈白色闪烁。 请确保按住该按钮直至指示灯开始闪烁。  
 
    配对按钮在点击器的底部，指环旁边。
-   
+
    ![配对按钮在指环旁边](images/use-hololens-clicker-1.png)
-   
+
 1. 在配对屏幕上，选择“点击器****” > “配对****”。
 
 ## 禁用蓝牙
@@ -90,6 +90,15 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 > 一些具有 USB-C 连接的移动设备会将自身作为以太网适配器呈现给 HoloLens，因此可在网络共享配置中使用（从 Windows Holographic 2004 版本开始）。 不支持需要单独的驱动程序和/或通过安装的应用程序进行配置的 USB LTE 调制解调器。
 
 为了回应客户的反馈，我们已通过 USB-C 为直接连接到 HoloLens 的蜂窝网络提供有限的支持。  连接的网络仅适用于支持通用 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驱动程序实施的设备，且不需要安装任何其他驱动程序或应用程序。  连接后，此类设备将在 HoloLens 2 网络设置 UI 中自动显示为新的以太网连接。 请联系设备的制造商，咨询其是否支持通用 Microsoft RNDIS 驱动程序的更多详细信息。
+
+### USB-C集线器
+
+某些用户可能需要一次连接多个设备。 对于想要预览体验成员功能和与其他已连接设备一起 [使用 USB-C 麦克风](hololens-insider.md#usb-c-external-microphone-support) 的用户，USB-C 集线器可能满足其需求。 Microsoft 尚未测试这些设备，我们也不能推荐任何特定品牌。
+
+**USB-C 集线器和已连接设备的要求：**
+
+- 连接的设备不得要求安装驱动程序。
+- 所有已连接设备的总功耗必须低于 4.5 瓦。
 
 ## 连接到 Miracast
 
