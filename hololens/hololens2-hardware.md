@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283033"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304965"
 ---
 # HoloLens 2 硬件
 
@@ -29,10 +29,12 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 - **面罩**。 包含 HoloLens 传感器和显示器。 你可以在佩戴 HoloLens 时向上旋转面罩。
 - **头带**。 要佩戴 HoloLens，请使用调节轮展开头带。 戴上 HoloLens 后，向右旋转调节轮，将头带收紧，直到调节到一个舒适的长度。
-- **亮度按钮**。 戴上 HoloLens 时，亮度按钮位于设备左侧。
-- **音量按钮**。 戴上 HoloLens 时，音量按钮位于设备右侧。
+- **亮度按钮**。 戴上 HoloLens 时，亮度按钮位于面罩的左侧。
+- **音量按钮**。 戴上 HoloLens 时，音量按钮位于面罩的右侧。
+- **电源按钮**。 戴上 HoloLens 时，电源按钮位于后外罩的右侧。
+- **USB-C 端口**。 戴上 HoloLens 时，USB-C 端口位于后外罩右侧的电源按钮下方。
 
-## 在框中
+## 包装箱内包含：
 
 - **额头垫**。 你可以根据需要取下和更换额头垫。
 - **顶部固定带**。 如果在走动时佩戴 HoloLens，请使用顶部固定带帮助固定设备。 长时间佩戴 HoloLens 时，顶部固定带可能会使设备佩戴更舒适。
