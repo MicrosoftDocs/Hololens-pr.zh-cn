@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
+ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283853"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "11306651"
 ---
 # HoloLens 2 开发版常见问题
 
@@ -31,13 +31,13 @@ HoloLens 2 开发版包括 HoloLens 2、Azure 信用额度为 500 美元、3 个
 
 ### HoloLens 2 和 HoloLens 2 开发版之间有什么区别？
 
-你只能将 HoloLens 2 开发版用于内部构建和测试企业应用程序，以在生产设置中与 HoloLens 2 (商业) 一起使用。 作为购买 Development Edition 的一部分，Microsoft 可能会自行决定提供在签出过程中确定的某些权利，例如，在有限时段内兑换某些折扣信用或试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+你只能使用 HoloLens 2 开发版生成和测试内部企业应用程序，以在生产设置中 (HoloLens 2 商业) 应用程序。 作为购买开发版的一部分，Microsoft 可能会自行决定提供在签出过程中确定的某些权利。 这些权利包括在有限时段内兑换某些折扣信用或试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options.md#learn-about-the-development-edition)
 
 ### 可以使用任何版本的 HoloLens 2 进行开发吗？
 
 是。 任何版本的 HoloLens 2 都可用于开发应用。
 
-### 如何以及将会收到 500 美元 Azure 信用额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版？
+### 如何以及如何接收 Azure 信用额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版中的 500 美元？
 
 你的折扣信用或试用访问权限将在产品发货后 2 个工作日发送给购买时所使用的电子邮件。
 
@@ -47,7 +47,7 @@ HoloLens 2 开发版包括 HoloLens 2、Azure 信用额度为 500 美元、3 个
 
 ### 什么是 Unity Pro？
 
-Unity Pro 是一款适用于中小型电影公司/公司的实时 3D 平台。 它专为混合使用技术和非技术技能的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
+Unity Pro 是小型/中型电影公司实时 3D 平台。 它专为混合使用技术和非技术技能的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
 
 ### 什么是 Pixyz 插件？
 
@@ -117,7 +117,7 @@ MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受�
 
 ### 我的 Unity 试用版包含哪些内容？
 
-使用三个日历月 Unity Pro 试用版，&#39;使用 Unity 解决方案的完整解决方案，让专业人员能够创建、运营和盈利。 相关的 Unity Pro 试用版没有兑换截止时间。
+使用三个日历月 Unity Pro 试用版，&#39;专业人员创建、运营和盈利的 Unity 解决方案的完整解决方案。 相关的 Unity Pro 试用版没有兑换截止时间。
 
 此产品/服务适用于新用户，不适用于已建立的 Unity Pro 订阅。 Unity Pro 试用版可能受将在兑换时提供的其他条款限制。 查看[适用的 &amp; 条款条件和](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
 
@@ -130,7 +130,7 @@ MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受�
 3. 选择&#39;兑换产品代码&#39;
 4. 输入产品代码，然后选择&#39;兑换产品代码&#39;
 
-访问 HoloLens 2 Development Edition 文档 [以了解更多信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+请访问 HoloLens 2 Development Edition 文档 [了解更多信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
 ### 我能否使用除 PRO 许可证外的其他 Unity 版本生成应用程序？
 
@@ -138,13 +138,13 @@ MRTK-Unreal发布的第一个 UX 工具组件，当前仅在 HoloLens 2 上受�
 
 ### 如何联系 Unity 支持人员？
 
-若要获取有关 Unity ID、帐户、组织 (和订阅) 的 (帮助) ，请访问support.unity3d.com。
+若要获取有关你的 Unity ID、帐户、组织 (和订阅) 的 (帮助) ，请访问support.unity3d.com。
 
 ## Pixyz
 
 ### 我的 Pixyz 插件试用版包含哪些内容？
 
-三日历月 Pixyz 插件试用版，允许访问 Pixyz 以创建具有完美已转售网格、有限多边形计数和自动 UV 的现成资源。 相关的 Pixyz 插件试用版没有要兑换的截止时间。
+三日历月 Pixyz 插件试用版，允许访问 Pixyz 以创建具有完美已分配网格、有限多边形计数和自动 UV 的现成资源。 相关的 Pixyz 插件试用版没有要兑换的截止时间。
 
 此产品/服务适用于新用户，不会堆叠到已建立的 Pixyz 订阅。 Pixyz 插件可能受将在兑换时做出的其他条款限制。 查看[适用的 &amp; 条款条件和](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
 
