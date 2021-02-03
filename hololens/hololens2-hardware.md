@@ -12,192 +12,193 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
-ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
+ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
+ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304965"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11306920"
 ---
-# <span data-ttu-id="c9830-104">HoloLens 2 硬件</span><span class="sxs-lookup"><span data-stu-id="c9830-104">HoloLens 2 hardware</span></span>
+# <span data-ttu-id="0d258-104">HoloLens 2 硬件</span><span class="sxs-lookup"><span data-stu-id="0d258-104">HoloLens 2 hardware</span></span>
 
 ![HoloLens 2 侧视图](images/hololens2-breakdown.png)
 
-<span data-ttu-id="c9830-106">Microsoft HoloLens 2 是完全不受束缚的全息计算机。</span><span class="sxs-lookup"><span data-stu-id="c9830-106">Microsoft HoloLens 2 is an untethered holographic computer.</span></span>  <span data-ttu-id="c9830-107">它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。</span><span class="sxs-lookup"><span data-stu-id="c9830-107">It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.</span></span>
+<span data-ttu-id="0d258-106">Microsoft HoloLens 2 是完全不受束缚的全息计算机。</span><span class="sxs-lookup"><span data-stu-id="0d258-106">Microsoft HoloLens 2 is an untethered holographic computer.</span></span>  <span data-ttu-id="0d258-107">它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。</span><span class="sxs-lookup"><span data-stu-id="0d258-107">It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.</span></span>
 
-## <span data-ttu-id="c9830-108">HoloLens 组件</span><span class="sxs-lookup"><span data-stu-id="c9830-108">HoloLens components</span></span>
+## <span data-ttu-id="0d258-108">HoloLens 组件</span><span class="sxs-lookup"><span data-stu-id="0d258-108">HoloLens components</span></span>
 
-- <span data-ttu-id="c9830-109">**面罩**。</span><span class="sxs-lookup"><span data-stu-id="c9830-109">**Visor**.</span></span> <span data-ttu-id="c9830-110">包含 HoloLens 传感器和显示器。</span><span class="sxs-lookup"><span data-stu-id="c9830-110">Contains the HoloLens sensors and displays.</span></span> <span data-ttu-id="c9830-111">你可以在佩戴 HoloLens 时向上旋转面罩。</span><span class="sxs-lookup"><span data-stu-id="c9830-111">You can rotate the visor up while wearing the HoloLens.</span></span>
-- <span data-ttu-id="c9830-112">**头带**。</span><span class="sxs-lookup"><span data-stu-id="c9830-112">**Headband**.</span></span> <span data-ttu-id="c9830-113">要佩戴 HoloLens，请使用调节轮展开头带。</span><span class="sxs-lookup"><span data-stu-id="c9830-113">To put the HoloLens on, use the adjustment wheel to expand the headband.</span></span> <span data-ttu-id="c9830-114">戴上 HoloLens 后，向右旋转调节轮，将头带收紧，直到调节到一个舒适的长度。</span><span class="sxs-lookup"><span data-stu-id="c9830-114">With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.</span></span>
-- <span data-ttu-id="c9830-115">**亮度按钮**。</span><span class="sxs-lookup"><span data-stu-id="c9830-115">**Brightness buttons**.</span></span> <span data-ttu-id="c9830-116">戴上 HoloLens 时，亮度按钮位于面罩的左侧。</span><span class="sxs-lookup"><span data-stu-id="c9830-116">When wearing the HoloLens, the brightness buttons are on the left side of the visor.</span></span>
-- <span data-ttu-id="c9830-117">**音量按钮**。</span><span class="sxs-lookup"><span data-stu-id="c9830-117">**Volume buttons**.</span></span> <span data-ttu-id="c9830-118">戴上 HoloLens 时，音量按钮位于面罩的右侧。</span><span class="sxs-lookup"><span data-stu-id="c9830-118">When wearing the HoloLens, the volume buttons are on the right side of the visor.</span></span>
-- <span data-ttu-id="c9830-119">**电源按钮**。</span><span class="sxs-lookup"><span data-stu-id="c9830-119">**Power button**.</span></span> <span data-ttu-id="c9830-120">戴上 HoloLens 时，电源按钮位于后外罩的右侧。</span><span class="sxs-lookup"><span data-stu-id="c9830-120">When wearing the HoloLens, the power button is located on the right side of the rear outer cover.</span></span>
-- <span data-ttu-id="c9830-121">**USB-C 端口**。</span><span class="sxs-lookup"><span data-stu-id="c9830-121">**USB-C port**.</span></span> <span data-ttu-id="c9830-122">戴上 HoloLens 时，USB-C 端口位于后外罩右侧的电源按钮下方。</span><span class="sxs-lookup"><span data-stu-id="c9830-122">When wearing the HoloLens, the USB-C port is located on the right side of the rear outer cover below the Power button.</span></span>
+- <span data-ttu-id="0d258-109">**面罩**。</span><span class="sxs-lookup"><span data-stu-id="0d258-109">**Visor**.</span></span> <span data-ttu-id="0d258-110">包含 HoloLens 传感器和显示器。</span><span class="sxs-lookup"><span data-stu-id="0d258-110">Contains the HoloLens sensors and displays.</span></span> <span data-ttu-id="0d258-111">你可以在佩戴 HoloLens 时向上旋转面罩。</span><span class="sxs-lookup"><span data-stu-id="0d258-111">You can rotate the visor up while wearing the HoloLens.</span></span>
+- <span data-ttu-id="0d258-112">**头带**。</span><span class="sxs-lookup"><span data-stu-id="0d258-112">**Headband**.</span></span> <span data-ttu-id="0d258-113">要佩戴 HoloLens，请使用调节轮展开头带。</span><span class="sxs-lookup"><span data-stu-id="0d258-113">To put the HoloLens on, use the adjustment wheel to expand the headband.</span></span> <span data-ttu-id="0d258-114">戴上 HoloLens 后，向右旋转调节轮，将头带收紧，直到调节到一个舒适的长度。</span><span class="sxs-lookup"><span data-stu-id="0d258-114">With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.</span></span>
+- <span data-ttu-id="0d258-115">**亮度按钮**。</span><span class="sxs-lookup"><span data-stu-id="0d258-115">**Brightness buttons**.</span></span> <span data-ttu-id="0d258-116">戴上 HoloLens 时，亮度按钮位于面罩的左侧。</span><span class="sxs-lookup"><span data-stu-id="0d258-116">When wearing the HoloLens, the brightness buttons are on the left side of the visor.</span></span>
+- <span data-ttu-id="0d258-117">**音量按钮**。</span><span class="sxs-lookup"><span data-stu-id="0d258-117">**Volume buttons**.</span></span> <span data-ttu-id="0d258-118">戴上 HoloLens 时，音量按钮位于面罩的右侧。</span><span class="sxs-lookup"><span data-stu-id="0d258-118">When wearing the HoloLens, the volume buttons are on the right side of the visor.</span></span>
+- <span data-ttu-id="0d258-119">**电源按钮**。</span><span class="sxs-lookup"><span data-stu-id="0d258-119">**Power button**.</span></span> <span data-ttu-id="0d258-120">戴上 HoloLens 时，电源按钮位于后外罩的右侧。</span><span class="sxs-lookup"><span data-stu-id="0d258-120">When wearing the HoloLens, the power button is located on the right side of the rear outer cover.</span></span>
+- <span data-ttu-id="0d258-121">**USB-C 端口**。</span><span class="sxs-lookup"><span data-stu-id="0d258-121">**USB-C port**.</span></span> <span data-ttu-id="0d258-122">戴上 HoloLens 时，USB-C 端口位于后外罩右侧的电源按钮下方。</span><span class="sxs-lookup"><span data-stu-id="0d258-122">When wearing the HoloLens, the USB-C port is located on the right side of the rear outer cover below the Power button.</span></span>
 
-## <span data-ttu-id="c9830-123">包装箱内包含：</span><span class="sxs-lookup"><span data-stu-id="c9830-123">In the box</span></span>
+## <span data-ttu-id="0d258-123">包装箱内包含：</span><span class="sxs-lookup"><span data-stu-id="0d258-123">In the box</span></span>
 
-- <span data-ttu-id="c9830-124">**额头垫**。</span><span class="sxs-lookup"><span data-stu-id="c9830-124">**Brow pad**.</span></span> <span data-ttu-id="c9830-125">你可以根据需要取下和更换额头垫。</span><span class="sxs-lookup"><span data-stu-id="c9830-125">You can remove and replace the brow pad, as needed.</span></span>
-- <span data-ttu-id="c9830-126">**顶部固定带**。</span><span class="sxs-lookup"><span data-stu-id="c9830-126">**Overhead strap**.</span></span> <span data-ttu-id="c9830-127">如果在走动时佩戴 HoloLens，请使用顶部固定带帮助固定设备。</span><span class="sxs-lookup"><span data-stu-id="c9830-127">When you're wearing the HoloLens while moving around, use the overhead strap to help keep the device in place.</span></span> <span data-ttu-id="c9830-128">长时间佩戴 HoloLens 时，顶部固定带可能会使设备佩戴更舒适。</span><span class="sxs-lookup"><span data-stu-id="c9830-128">When wearing the HoloLens for extended periods, the overhead strap may make the device more comfortable to wear.</span></span>
-- <span data-ttu-id="c9830-129">**USB-C 电缆**。</span><span class="sxs-lookup"><span data-stu-id="c9830-129">**USB-C cable**.</span></span> <span data-ttu-id="c9830-130">使用 USB-C 电缆将 HoloLens 连接到电源进行充电，或者将 HoloLens 连接到计算机。</span><span class="sxs-lookup"><span data-stu-id="c9830-130">Use the USB-C cable to connect your HoloLens to the power supply for charging, or to connect your HoloLens to your computer.</span></span>
-- <span data-ttu-id="c9830-131">**电源**。</span><span class="sxs-lookup"><span data-stu-id="c9830-131">**Power supply**.</span></span> <span data-ttu-id="c9830-132">插入电源插座。</span><span class="sxs-lookup"><span data-stu-id="c9830-132">Plugs into a power outlet.</span></span>
-- <span data-ttu-id="c9830-133">**超细纤维布**。</span><span class="sxs-lookup"><span data-stu-id="c9830-133">**Microfiber cloth**.</span></span> <span data-ttu-id="c9830-134">用于清洁 HoloLens 面罩。</span><span class="sxs-lookup"><span data-stu-id="c9830-134">Use to clean your HoloLens visor.</span></span>
+- <span data-ttu-id="0d258-124">**额头垫**。</span><span class="sxs-lookup"><span data-stu-id="0d258-124">**Brow pad**.</span></span> <span data-ttu-id="0d258-125">你可以根据需要取下和更换额头垫。</span><span class="sxs-lookup"><span data-stu-id="0d258-125">You can remove and replace the brow pad, as needed.</span></span>
+- <span data-ttu-id="0d258-126">**顶部固定带**。</span><span class="sxs-lookup"><span data-stu-id="0d258-126">**Overhead strap**.</span></span> <span data-ttu-id="0d258-127">如果在走动时佩戴 HoloLens，请使用顶部固定带帮助固定设备。</span><span class="sxs-lookup"><span data-stu-id="0d258-127">When you're wearing the HoloLens while moving around, use the overhead strap to help keep the device in place.</span></span> <span data-ttu-id="0d258-128">长时间佩戴 HoloLens 时，顶部固定带可能会使设备佩戴更舒适。</span><span class="sxs-lookup"><span data-stu-id="0d258-128">When wearing the HoloLens for extended periods, the overhead strap may make the device more comfortable to wear.</span></span>
+- <span data-ttu-id="0d258-129">**USB-C 电缆**。</span><span class="sxs-lookup"><span data-stu-id="0d258-129">**USB-C cable**.</span></span> <span data-ttu-id="0d258-130">使用 USB-C 电缆将 HoloLens 连接到电源进行充电，或者将 HoloLens 连接到计算机。</span><span class="sxs-lookup"><span data-stu-id="0d258-130">Use the USB-C cable to connect your HoloLens to the power supply for charging, or to connect your HoloLens to your computer.</span></span>
+- <span data-ttu-id="0d258-131">**电源**。</span><span class="sxs-lookup"><span data-stu-id="0d258-131">**Power supply**.</span></span> <span data-ttu-id="0d258-132">插入电源插座。</span><span class="sxs-lookup"><span data-stu-id="0d258-132">Plugs into a power outlet.</span></span>
+- <span data-ttu-id="0d258-133">**超细纤维布**。</span><span class="sxs-lookup"><span data-stu-id="0d258-133">**Microfiber cloth**.</span></span> <span data-ttu-id="0d258-134">用于清洁 HoloLens 面罩。</span><span class="sxs-lookup"><span data-stu-id="0d258-134">Use to clean your HoloLens visor.</span></span>
 
-### <span data-ttu-id="c9830-135">电源详细信息</span><span class="sxs-lookup"><span data-stu-id="c9830-135">Power Supply details</span></span>
+### <span data-ttu-id="0d258-135">电源详细信息</span><span class="sxs-lookup"><span data-stu-id="0d258-135">Power Supply details</span></span>
 
-<span data-ttu-id="c9830-136">设备附带的电源和 USB 线缆是支持的最佳充电装置。</span><span class="sxs-lookup"><span data-stu-id="c9830-136">The power supply and the USB cable that come with the device are the best supported mechanism for charging.</span></span> <span data-ttu-id="c9830-137">电源是一个 18W 充电器。</span><span class="sxs-lookup"><span data-stu-id="c9830-137">The power supply is an 18W charger.</span></span>  <span data-ttu-id="c9830-138">它可以在 2A 条件下提供 9V 电压。</span><span class="sxs-lookup"><span data-stu-id="c9830-138">It's supplies 9V at 2A.</span></span>
+<span data-ttu-id="0d258-136">设备附带的电源和 USB 线缆是支持的最佳充电装置。</span><span class="sxs-lookup"><span data-stu-id="0d258-136">The power supply and the USB cable that come with the device are the best supported mechanism for charging.</span></span> <span data-ttu-id="0d258-137">电源是一个 18W 充电器。</span><span class="sxs-lookup"><span data-stu-id="0d258-137">The power supply is an 18W charger.</span></span>  <span data-ttu-id="0d258-138">它可以在 2A 条件下提供 9V 电压。</span><span class="sxs-lookup"><span data-stu-id="0d258-138">It's supplies 9V at 2A.</span></span>
 
-<span data-ttu-id="c9830-139">充电率和速度可能因设备运行环境而异。</span><span class="sxs-lookup"><span data-stu-id="c9830-139">Charging rate and speed may vary depending on the environment in which the device is running.</span></span>
+<span data-ttu-id="0d258-139">充电率和速度可能因设备运行环境而异。</span><span class="sxs-lookup"><span data-stu-id="0d258-139">Charging rate and speed may vary depending on the environment in which the device is running.</span></span>
 
-<span data-ttu-id="c9830-140">为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。</span><span class="sxs-lookup"><span data-stu-id="c9830-140">In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.</span></span>
+<span data-ttu-id="0d258-140">为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。</span><span class="sxs-lookup"><span data-stu-id="0d258-140">In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.</span></span>
 
-## <span data-ttu-id="c9830-141">设备规格</span><span class="sxs-lookup"><span data-stu-id="c9830-141">Device specifications</span></span>
+## <span data-ttu-id="0d258-141">设备规格</span><span class="sxs-lookup"><span data-stu-id="0d258-141">Device specifications</span></span>
 
-### <span data-ttu-id="c9830-142">显示</span><span class="sxs-lookup"><span data-stu-id="c9830-142">Display</span></span>
-
-|   |   |
-| - | - |
-| <span data-ttu-id="c9830-143">光学元件</span><span class="sxs-lookup"><span data-stu-id="c9830-143">Optics</span></span> | <span data-ttu-id="c9830-144">透视全息镜头（波导）</span><span class="sxs-lookup"><span data-stu-id="c9830-144">See-through holographic lenses (waveguides)</span></span> |
-| <span data-ttu-id="c9830-145">全息分辨率</span><span class="sxs-lookup"><span data-stu-id="c9830-145">Holographic resolution</span></span> | <span data-ttu-id="c9830-146">2k 3:2 光引擎</span><span class="sxs-lookup"><span data-stu-id="c9830-146">2k 3:2 light engines</span></span> |
-| <span data-ttu-id="c9830-147">全息密度</span><span class="sxs-lookup"><span data-stu-id="c9830-147">Holographic density</span></span> | <span data-ttu-id="c9830-148">>2.5k 弧度（每弧度光点）</span><span class="sxs-lookup"><span data-stu-id="c9830-148">>2.5k radiants (light points per radian)</span></span> |
-| <span data-ttu-id="c9830-149">基于目视的呈现</span><span class="sxs-lookup"><span data-stu-id="c9830-149">Eye-based rendering</span></span> | <span data-ttu-id="c9830-150">针对 3D 眼睛位置的显示优化</span><span class="sxs-lookup"><span data-stu-id="c9830-150">Display optimization for 3D eye position</span></span> |
-
-### <span data-ttu-id="c9830-151">传感器</span><span class="sxs-lookup"><span data-stu-id="c9830-151">Sensors</span></span>
+### <span data-ttu-id="0d258-142">显示</span><span class="sxs-lookup"><span data-stu-id="0d258-142">Display</span></span>
 
 |   |   |
 | - | - |
-| <span data-ttu-id="c9830-152">头部跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-152">Head tracking</span></span> | <span data-ttu-id="c9830-153">4 个可见光相机</span><span class="sxs-lookup"><span data-stu-id="c9830-153">4 visible light cameras</span></span> |
-| <span data-ttu-id="c9830-154">眼球跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-154">Eye tracking</span></span> | <span data-ttu-id="c9830-155">2 个红外 (IR) 相机</span><span class="sxs-lookup"><span data-stu-id="c9830-155">2 Infrared (IR) cameras</span></span> |
-| <span data-ttu-id="c9830-156">深度</span><span class="sxs-lookup"><span data-stu-id="c9830-156">Depth</span></span> | <span data-ttu-id="c9830-157">1-MP 飞行时间深度传感器</span><span class="sxs-lookup"><span data-stu-id="c9830-157">1-MP Time-of-Flight depth sensor</span></span> |
-| <span data-ttu-id="c9830-158">惯性测量单元 (IMU)</span><span class="sxs-lookup"><span data-stu-id="c9830-158">Inertial measurement unit (IMU)</span></span> | <span data-ttu-id="c9830-159">加速计、陀螺仪、磁力仪</span><span class="sxs-lookup"><span data-stu-id="c9830-159">Accelerometer, gyroscope, magnetometer</span></span> |
-| <span data-ttu-id="c9830-160">相机</span><span class="sxs-lookup"><span data-stu-id="c9830-160">Camera</span></span> | <span data-ttu-id="c9830-161">8-MP 静止图像、1080p30 视频</span><span class="sxs-lookup"><span data-stu-id="c9830-161">8-MP stills, 1080p30 video</span></span> |
+| <span data-ttu-id="0d258-143">光学元件</span><span class="sxs-lookup"><span data-stu-id="0d258-143">Optics</span></span> | <span data-ttu-id="0d258-144">透视全息镜头（波导）</span><span class="sxs-lookup"><span data-stu-id="0d258-144">See-through holographic lenses (waveguides)</span></span> |
+| <span data-ttu-id="0d258-145">全息分辨率</span><span class="sxs-lookup"><span data-stu-id="0d258-145">Holographic resolution</span></span> | <span data-ttu-id="0d258-146">2k 3:2 光引擎</span><span class="sxs-lookup"><span data-stu-id="0d258-146">2k 3:2 light engines</span></span> |
+| <span data-ttu-id="0d258-147">全息密度</span><span class="sxs-lookup"><span data-stu-id="0d258-147">Holographic density</span></span> | <span data-ttu-id="0d258-148">>2.5k 弧度（每弧度光点）</span><span class="sxs-lookup"><span data-stu-id="0d258-148">>2.5k radiants (light points per radian)</span></span> |
+| <span data-ttu-id="0d258-149">基于目视的呈现</span><span class="sxs-lookup"><span data-stu-id="0d258-149">Eye-based rendering</span></span> | <span data-ttu-id="0d258-150">针对 3D 眼睛位置的显示优化</span><span class="sxs-lookup"><span data-stu-id="0d258-150">Display optimization for 3D eye position</span></span> |
+
+### <span data-ttu-id="0d258-151">传感器</span><span class="sxs-lookup"><span data-stu-id="0d258-151">Sensors</span></span>
+
+|   |   |
+| - | - |
+| <span data-ttu-id="0d258-152">头部跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-152">Head tracking</span></span> | <span data-ttu-id="0d258-153">4 个可见光相机</span><span class="sxs-lookup"><span data-stu-id="0d258-153">4 visible light cameras</span></span> |
+| <span data-ttu-id="0d258-154">眼球跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-154">Eye tracking</span></span> | <span data-ttu-id="0d258-155">2 个红外 (IR) 相机</span><span class="sxs-lookup"><span data-stu-id="0d258-155">2 Infrared (IR) cameras</span></span> |
+| <span data-ttu-id="0d258-156">深度</span><span class="sxs-lookup"><span data-stu-id="0d258-156">Depth</span></span> | <span data-ttu-id="0d258-157">1-MP 飞行时间深度传感器</span><span class="sxs-lookup"><span data-stu-id="0d258-157">1-MP Time-of-Flight depth sensor</span></span> |
+| <span data-ttu-id="0d258-158">惯性测量单元 (IMU)</span><span class="sxs-lookup"><span data-stu-id="0d258-158">Inertial measurement unit (IMU)</span></span> | <span data-ttu-id="0d258-159">加速计、陀螺仪、磁力仪</span><span class="sxs-lookup"><span data-stu-id="0d258-159">Accelerometer, gyroscope, magnetometer</span></span> |
+| <span data-ttu-id="0d258-160">相机</span><span class="sxs-lookup"><span data-stu-id="0d258-160">Camera</span></span> | <span data-ttu-id="0d258-161">8-MP 静止图像、1080p30 视频</span><span class="sxs-lookup"><span data-stu-id="0d258-161">8-MP stills, 1080p30 video</span></span> |
 
 ![HoloLens 2 传感器](images/hololens2-front-view.png)
 
 > [!NOTE]
-> <span data-ttu-id="c9830-163">不要遮盖图片中提到的任何传感器。</span><span class="sxs-lookup"><span data-stu-id="c9830-163">Do no cover any of the sensors that are called out in the picture.</span></span> <span data-ttu-id="c9830-164">头部跟踪摄像机的视野很宽，除了遮盖摄像机外，摄像机周围不要有任何东西。</span><span class="sxs-lookup"><span data-stu-id="c9830-164">The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.</span></span>
+> <span data-ttu-id="0d258-163">不要遮盖图片中提到的任何传感器。</span><span class="sxs-lookup"><span data-stu-id="0d258-163">Do no cover any of the sensors that are called out in the picture.</span></span> <span data-ttu-id="0d258-164">头部跟踪摄像机的视野很宽，除了遮盖摄像机外，摄像机周围不要有任何东西。</span><span class="sxs-lookup"><span data-stu-id="0d258-164">The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.</span></span>
 
-### <span data-ttu-id="c9830-165">音频和语音</span><span class="sxs-lookup"><span data-stu-id="c9830-165">Audio and speech</span></span>
-
-|   |   |
-| - | - |
-| <span data-ttu-id="c9830-166">麦克风阵列</span><span class="sxs-lookup"><span data-stu-id="c9830-166">Microphone array</span></span> | <span data-ttu-id="c9830-167">5 通道</span><span class="sxs-lookup"><span data-stu-id="c9830-167">5 channels</span></span> |
-| <span data-ttu-id="c9830-168">扬声器</span><span class="sxs-lookup"><span data-stu-id="c9830-168">Speakers</span></span> | <span data-ttu-id="c9830-169">内置空间音效</span><span class="sxs-lookup"><span data-stu-id="c9830-169">Built-in spatial sound</span></span> |
-
-### <span data-ttu-id="c9830-170">计算和连接性</span><span class="sxs-lookup"><span data-stu-id="c9830-170">Compute and connectivity</span></span>
+### <span data-ttu-id="0d258-165">音频和语音</span><span class="sxs-lookup"><span data-stu-id="0d258-165">Audio and speech</span></span>
 
 |   |   |
 | - | - |
-| <span data-ttu-id="c9830-171">片上系统</span><span class="sxs-lookup"><span data-stu-id="c9830-171">System on chip</span></span> | <span data-ttu-id="c9830-172">Qualcomm Snapdragon 850 计算平台[详细信息](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform)</span><span class="sxs-lookup"><span data-stu-id="c9830-172">Qualcomm Snapdragon 850 Compute Platform [details](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform)</span></span> |
-| <span data-ttu-id="c9830-173">全息处理单元</span><span class="sxs-lookup"><span data-stu-id="c9830-173">Holographic processing unit</span></span> | <span data-ttu-id="c9830-174">第二代自定义构建的全息处理单元</span><span class="sxs-lookup"><span data-stu-id="c9830-174">Second-generation custom-built holographic processing unit</span></span> |
-| <span data-ttu-id="c9830-175">内存</span><span class="sxs-lookup"><span data-stu-id="c9830-175">Memory</span></span> | <span data-ttu-id="c9830-176">4-GB LPDDR4x 系统 DRAM</span><span class="sxs-lookup"><span data-stu-id="c9830-176">4-GB LPDDR4x system DRAM</span></span> |
-| <span data-ttu-id="c9830-177">存储</span><span class="sxs-lookup"><span data-stu-id="c9830-177">Storage</span></span> | <span data-ttu-id="c9830-178">64-GB UFS 2.1</span><span class="sxs-lookup"><span data-stu-id="c9830-178">64-GB UFS 2.1</span></span> |
-| <span data-ttu-id="c9830-179">WLAN</span><span class="sxs-lookup"><span data-stu-id="c9830-179">WiFi</span></span> | <span data-ttu-id="c9830-180">802.11ac 2x2</span><span class="sxs-lookup"><span data-stu-id="c9830-180">802.11ac 2x2</span></span> |
-| <span data-ttu-id="c9830-181">蓝牙</span><span class="sxs-lookup"><span data-stu-id="c9830-181">Bluetooth</span></span> | <span data-ttu-id="c9830-182">5.0</span><span class="sxs-lookup"><span data-stu-id="c9830-182">5.0</span></span> |
-| <span data-ttu-id="c9830-183">USB</span><span class="sxs-lookup"><span data-stu-id="c9830-183">USB</span></span> | <span data-ttu-id="c9830-184">USB Type-C</span><span class="sxs-lookup"><span data-stu-id="c9830-184">USB Type-C</span></span> |
+| <span data-ttu-id="0d258-166">麦克风阵列</span><span class="sxs-lookup"><span data-stu-id="0d258-166">Microphone array</span></span> | <span data-ttu-id="0d258-167">5 通道</span><span class="sxs-lookup"><span data-stu-id="0d258-167">5 channels</span></span> |
+| <span data-ttu-id="0d258-168">扬声器</span><span class="sxs-lookup"><span data-stu-id="0d258-168">Speakers</span></span> | <span data-ttu-id="0d258-169">内置空间音效</span><span class="sxs-lookup"><span data-stu-id="0d258-169">Built-in spatial sound</span></span> |
 
-### <span data-ttu-id="c9830-185">电源</span><span class="sxs-lookup"><span data-stu-id="c9830-185">Power</span></span>
+### <span data-ttu-id="0d258-170">计算和连接性</span><span class="sxs-lookup"><span data-stu-id="0d258-170">Compute and connectivity</span></span>
 
 |   |   |
 | - | - |
-| <span data-ttu-id="c9830-186">电池使用时间</span><span class="sxs-lookup"><span data-stu-id="c9830-186">Battery Life</span></span> | <span data-ttu-id="c9830-187">2-3 小时的有效使用时间。</span><span class="sxs-lookup"><span data-stu-id="c9830-187">2-3 hours of active use.</span></span> <span data-ttu-id="c9830-188">待机时间最长可达 2 周。</span><span class="sxs-lookup"><span data-stu-id="c9830-188">Up to 2 weeks of standby time.</span></span> |
-| <span data-ttu-id="c9830-189">电池技术</span><span class="sxs-lookup"><span data-stu-id="c9830-189">Battery technology</span></span> | [<span data-ttu-id="c9830-190">锂电池</span><span class="sxs-lookup"><span data-stu-id="c9830-190">Lithium batteries</span></span>](https://www.microsoft.com/download/details.aspx?id=43388) |
-| <span data-ttu-id="c9830-191">充电行为</span><span class="sxs-lookup"><span data-stu-id="c9830-191">Charging behavior</span></span> | <span data-ttu-id="c9830-192">充电时全部功能可用</span><span class="sxs-lookup"><span data-stu-id="c9830-192">Fully functional when charging</span></span> |
-| <span data-ttu-id="c9830-193">冷却类型</span><span class="sxs-lookup"><span data-stu-id="c9830-193">Cooling type</span></span> | <span data-ttu-id="c9830-194">被动冷却（无风扇）</span><span class="sxs-lookup"><span data-stu-id="c9830-194">Passively cooled (no fans)</span></span> |
-| <span data-ttu-id="c9830-195">功耗</span><span class="sxs-lookup"><span data-stu-id="c9830-195">Power draw</span></span> | <span data-ttu-id="c9830-196">为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。</span><span class="sxs-lookup"><span data-stu-id="c9830-196">In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.</span></span> |
+| <span data-ttu-id="0d258-171">片上系统</span><span class="sxs-lookup"><span data-stu-id="0d258-171">System on chip</span></span> | <span data-ttu-id="0d258-172">Qualcomm Snapdragon 850 计算平台[详细信息](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform)</span><span class="sxs-lookup"><span data-stu-id="0d258-172">Qualcomm Snapdragon 850 Compute Platform [details](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform)</span></span> |
+| <span data-ttu-id="0d258-173">全息处理单元</span><span class="sxs-lookup"><span data-stu-id="0d258-173">Holographic processing unit</span></span> | <span data-ttu-id="0d258-174">第二代自定义构建的全息处理单元</span><span class="sxs-lookup"><span data-stu-id="0d258-174">Second-generation custom-built holographic processing unit</span></span> |
+| <span data-ttu-id="0d258-175">内存</span><span class="sxs-lookup"><span data-stu-id="0d258-175">Memory</span></span> | <span data-ttu-id="0d258-176">4-GB LPDDR4x 系统 DRAM</span><span class="sxs-lookup"><span data-stu-id="0d258-176">4-GB LPDDR4x system DRAM</span></span> |
+| <span data-ttu-id="0d258-177">存储</span><span class="sxs-lookup"><span data-stu-id="0d258-177">Storage</span></span> | <span data-ttu-id="0d258-178">64-GB UFS 2.1</span><span class="sxs-lookup"><span data-stu-id="0d258-178">64-GB UFS 2.1</span></span> |
+| <span data-ttu-id="0d258-179">WLAN</span><span class="sxs-lookup"><span data-stu-id="0d258-179">WiFi</span></span> | <span data-ttu-id="0d258-180">802.11ac 2x2</span><span class="sxs-lookup"><span data-stu-id="0d258-180">802.11ac 2x2</span></span> |
+| <span data-ttu-id="0d258-181">蓝牙</span><span class="sxs-lookup"><span data-stu-id="0d258-181">Bluetooth</span></span> | <span data-ttu-id="0d258-182">5.0</span><span class="sxs-lookup"><span data-stu-id="0d258-182">5.0</span></span> |
+| <span data-ttu-id="0d258-183">USB</span><span class="sxs-lookup"><span data-stu-id="0d258-183">USB</span></span> | <span data-ttu-id="0d258-184">USB Type-C</span><span class="sxs-lookup"><span data-stu-id="0d258-184">USB Type-C</span></span> |
 
-### <span data-ttu-id="c9830-197">适应</span><span class="sxs-lookup"><span data-stu-id="c9830-197">Fit</span></span>
-
-|   |   |
-| - | - |
-| <span data-ttu-id="c9830-198">大小调整</span><span class="sxs-lookup"><span data-stu-id="c9830-198">Sizing</span></span> | <span data-ttu-id="c9830-199">具有可调带的单个大小。</span><span class="sxs-lookup"><span data-stu-id="c9830-199">Single size with adjustable band.</span></span>  <span data-ttu-id="c9830-200">适合眼镜</span><span class="sxs-lookup"><span data-stu-id="c9830-200">Fits over eyeglasses</span></span> |
-| <span data-ttu-id="c9830-201">粗细</span><span class="sxs-lookup"><span data-stu-id="c9830-201">Weight</span></span> | <span data-ttu-id="c9830-202">566 克</span><span class="sxs-lookup"><span data-stu-id="c9830-202">566 grams</span></span> |
-
-## <span data-ttu-id="c9830-203">设备功能</span><span class="sxs-lookup"><span data-stu-id="c9830-203">Device capabilities</span></span>
-
-### <span data-ttu-id="c9830-204">人类理解</span><span class="sxs-lookup"><span data-stu-id="c9830-204">Human understanding</span></span>
+### <span data-ttu-id="0d258-185">电源</span><span class="sxs-lookup"><span data-stu-id="0d258-185">Power</span></span>
 
 |   |   |
 | - | - |
-| <span data-ttu-id="c9830-205">手部跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-205">Hand tracking</span></span> | <span data-ttu-id="c9830-206">双手全关节模型，直接操作</span><span class="sxs-lookup"><span data-stu-id="c9830-206">Two-handed fully articulated model, direct manipulation</span></span> |
-| <span data-ttu-id="c9830-207">眼球跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-207">Eye tracking</span></span> | <span data-ttu-id="c9830-208">实时跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-208">Real-time tracking</span></span> |
-| <span data-ttu-id="c9830-209">语音</span><span class="sxs-lookup"><span data-stu-id="c9830-209">Voice</span></span> | <span data-ttu-id="c9830-210">基于设备的命令和控制；具有 Internet 连接的 Cortana 自然语言</span><span class="sxs-lookup"><span data-stu-id="c9830-210">Command and control on-device; Cortana natural language with internet connectivity</span></span> |
+| <span data-ttu-id="0d258-186">电池使用时间</span><span class="sxs-lookup"><span data-stu-id="0d258-186">Battery Life</span></span> | <span data-ttu-id="0d258-187">2-3 小时的有效使用时间。</span><span class="sxs-lookup"><span data-stu-id="0d258-187">2-3 hours of active use.</span></span> <span data-ttu-id="0d258-188">待机时间最长可达 2 周。</span><span class="sxs-lookup"><span data-stu-id="0d258-188">Up to 2 weeks of standby time.</span></span> |
+| <span data-ttu-id="0d258-189">电池技术</span><span class="sxs-lookup"><span data-stu-id="0d258-189">Battery technology</span></span> | [<span data-ttu-id="0d258-190">锂电池</span><span class="sxs-lookup"><span data-stu-id="0d258-190">Lithium batteries</span></span>](https://www.microsoft.com/download/details.aspx?id=43388) |
+| <span data-ttu-id="0d258-191">充电行为</span><span class="sxs-lookup"><span data-stu-id="0d258-191">Charging behavior</span></span> | <span data-ttu-id="0d258-192">充电时全部功能可用</span><span class="sxs-lookup"><span data-stu-id="0d258-192">Fully functional when charging</span></span> |
+| <span data-ttu-id="0d258-193">冷却类型</span><span class="sxs-lookup"><span data-stu-id="0d258-193">Cooling type</span></span> | <span data-ttu-id="0d258-194">被动冷却（无风扇）</span><span class="sxs-lookup"><span data-stu-id="0d258-194">Passively cooled (no fans)</span></span> |
+| <span data-ttu-id="0d258-195">功耗</span><span class="sxs-lookup"><span data-stu-id="0d258-195">Power draw</span></span> | <span data-ttu-id="0d258-196">为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。</span><span class="sxs-lookup"><span data-stu-id="0d258-196">In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.</span></span> |
 
-### <span data-ttu-id="c9830-211">环境理解</span><span class="sxs-lookup"><span data-stu-id="c9830-211">Environment understanding</span></span>
+### <span data-ttu-id="0d258-197">适应</span><span class="sxs-lookup"><span data-stu-id="0d258-197">Fit</span></span>
 
 |   |   |
 | - | - |
-| <span data-ttu-id="c9830-212">六自由度 (6DoF) 跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-212">Six Degrees of Freedom (6DoF) tracking</span></span> | <span data-ttu-id="c9830-213">世界范围的位置跟踪</span><span class="sxs-lookup"><span data-stu-id="c9830-213">World-scale positional tracking</span></span> |
-| <span data-ttu-id="c9830-214">空间映射</span><span class="sxs-lookup"><span data-stu-id="c9830-214">Spatial mapping</span></span> | <span data-ttu-id="c9830-215">实时环境网格</span><span class="sxs-lookup"><span data-stu-id="c9830-215">Real-time environment mesh</span></span> |
-| <span data-ttu-id="c9830-216">混合现实捕获</span><span class="sxs-lookup"><span data-stu-id="c9830-216">Mixed reality capture</span></span> | <span data-ttu-id="c9830-217">混合全息影像和物理环境照片与视频</span><span class="sxs-lookup"><span data-stu-id="c9830-217">Mixed hologram and physical environment photos and videos</span></span> |
+| <span data-ttu-id="0d258-198">大小调整</span><span class="sxs-lookup"><span data-stu-id="0d258-198">Sizing</span></span> | <span data-ttu-id="0d258-199">具有可调带的单个大小。</span><span class="sxs-lookup"><span data-stu-id="0d258-199">Single size with adjustable band.</span></span>  <span data-ttu-id="0d258-200">适合眼镜</span><span class="sxs-lookup"><span data-stu-id="0d258-200">Fits over eyeglasses</span></span> |
+| <span data-ttu-id="0d258-201">粗细</span><span class="sxs-lookup"><span data-stu-id="0d258-201">Weight</span></span> | <span data-ttu-id="0d258-202">566 克</span><span class="sxs-lookup"><span data-stu-id="0d258-202">566 grams</span></span> |
 
-## <span data-ttu-id="c9830-218">预安装的软件</span><span class="sxs-lookup"><span data-stu-id="c9830-218">Pre-installed software</span></span>
+## <span data-ttu-id="0d258-203">设备功能</span><span class="sxs-lookup"><span data-stu-id="0d258-203">Device capabilities</span></span>
 
-- <span data-ttu-id="c9830-219">Windows 全息版操作系统</span><span class="sxs-lookup"><span data-stu-id="c9830-219">Windows Holographic Operating System</span></span>
-- <span data-ttu-id="c9830-220">3D 查看器</span><span class="sxs-lookup"><span data-stu-id="c9830-220">3D Viewer</span></span>
-- <span data-ttu-id="c9830-221">日历</span><span class="sxs-lookup"><span data-stu-id="c9830-221">Calendar</span></span>
-- <span data-ttu-id="c9830-222">Cortana</span><span class="sxs-lookup"><span data-stu-id="c9830-222">Cortana</span></span>
-- <span data-ttu-id="c9830-223">Dynamics 365 Guides</span><span class="sxs-lookup"><span data-stu-id="c9830-223">Dynamics 365 Guides</span></span>
-- <span data-ttu-id="c9830-224">Dynamics 365 Remote Assist</span><span class="sxs-lookup"><span data-stu-id="c9830-224">Dynamics 365 Remote Assist</span></span>
-- <span data-ttu-id="c9830-225">反馈中心</span><span class="sxs-lookup"><span data-stu-id="c9830-225">Feedback Hub</span></span>
-- <span data-ttu-id="c9830-226">文件资源管理器</span><span class="sxs-lookup"><span data-stu-id="c9830-226">File Explorer</span></span>
-- <span data-ttu-id="c9830-227">Mail</span><span class="sxs-lookup"><span data-stu-id="c9830-227">Mail</span></span>
-- <span data-ttu-id="c9830-228">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="c9830-228">Microsoft Edge</span></span>
-- <span data-ttu-id="c9830-229">Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="c9830-229">Microsoft Store</span></span>
-- <span data-ttu-id="c9830-230">电影和电视</span><span class="sxs-lookup"><span data-stu-id="c9830-230">Movies & TV</span></span>
-- <span data-ttu-id="c9830-231">OneDrive</span><span class="sxs-lookup"><span data-stu-id="c9830-231">OneDrive</span></span>
-- <span data-ttu-id="c9830-232">照片</span><span class="sxs-lookup"><span data-stu-id="c9830-232">Photos</span></span>
-- <span data-ttu-id="c9830-233">“设置”</span><span class="sxs-lookup"><span data-stu-id="c9830-233">Settings</span></span>
-- <span data-ttu-id="c9830-234">提示</span><span class="sxs-lookup"><span data-stu-id="c9830-234">Tips</span></span>
+### <span data-ttu-id="0d258-204">人类理解</span><span class="sxs-lookup"><span data-stu-id="0d258-204">Human understanding</span></span>
 
-## <span data-ttu-id="c9830-235">设备认证</span><span class="sxs-lookup"><span data-stu-id="c9830-235">Device certifications</span></span>
+|   |   |
+| - | - |
+| <span data-ttu-id="0d258-205">手部跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-205">Hand tracking</span></span> | <span data-ttu-id="0d258-206">双手全关节模型，直接操作</span><span class="sxs-lookup"><span data-stu-id="0d258-206">Two-handed fully articulated model, direct manipulation</span></span> |
+| <span data-ttu-id="0d258-207">眼球跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-207">Eye tracking</span></span> | <span data-ttu-id="0d258-208">实时跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-208">Real-time tracking</span></span> |
+| <span data-ttu-id="0d258-209">语音</span><span class="sxs-lookup"><span data-stu-id="0d258-209">Voice</span></span> | <span data-ttu-id="0d258-210">基于设备的命令和控制；具有 Internet 连接的 Cortana 自然语言</span><span class="sxs-lookup"><span data-stu-id="0d258-210">Command and control on-device; Cortana natural language with internet connectivity</span></span> |
 
-### <span data-ttu-id="c9830-236">安全</span><span class="sxs-lookup"><span data-stu-id="c9830-236">Safety</span></span>
+### <span data-ttu-id="0d258-211">环境理解</span><span class="sxs-lookup"><span data-stu-id="0d258-211">Environment understanding</span></span>
 
-* [<span data-ttu-id="c9830-237">产品安全</span><span class="sxs-lookup"><span data-stu-id="c9830-237">Product Safety</span></span>](https://support.microsoft.com/en-us/help/4023454/safety-information)
-* [<span data-ttu-id="c9830-238">产品安全警告和说明</span><span class="sxs-lookup"><span data-stu-id="c9830-238">Product Safety Warnings and Instructions</span></span>](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* <span data-ttu-id="c9830-239">目测安全性：HoloLens 2 已经过测试，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响保护要求。</span><span class="sxs-lookup"><span data-stu-id="c9830-239">Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.</span></span>
-* [<span data-ttu-id="c9830-240">SAR 信息</span><span class="sxs-lookup"><span data-stu-id="c9830-240">SAR Information</span></span>](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
+|   |   |
+| - | - |
+| <span data-ttu-id="0d258-212">六自由度 (6DoF) 跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-212">Six Degrees of Freedom (6DoF) tracking</span></span> | <span data-ttu-id="0d258-213">世界范围的位置跟踪</span><span class="sxs-lookup"><span data-stu-id="0d258-213">World-scale positional tracking</span></span> |
+| <span data-ttu-id="0d258-214">空间映射</span><span class="sxs-lookup"><span data-stu-id="0d258-214">Spatial mapping</span></span> | <span data-ttu-id="0d258-215">实时环境网格</span><span class="sxs-lookup"><span data-stu-id="0d258-215">Real-time environment mesh</span></span> |
+| <span data-ttu-id="0d258-216">混合现实捕获</span><span class="sxs-lookup"><span data-stu-id="0d258-216">Mixed reality capture</span></span> | <span data-ttu-id="0d258-217">混合全息影像和物理环境照片与视频</span><span class="sxs-lookup"><span data-stu-id="0d258-217">Mixed hologram and physical environment photos and videos</span></span> |
 
-### <span data-ttu-id="c9830-241">规章信息</span><span class="sxs-lookup"><span data-stu-id="c9830-241">Regulatory information</span></span>
-<span data-ttu-id="c9830-242">[HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。</span><span class="sxs-lookup"><span data-stu-id="c9830-242">[HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.</span></span>
+## <span data-ttu-id="0d258-218">预安装的软件</span><span class="sxs-lookup"><span data-stu-id="0d258-218">Pre-installed software</span></span>
 
-## <span data-ttu-id="c9830-243">应用包维度</span><span class="sxs-lookup"><span data-stu-id="c9830-243">Package Dimensions</span></span>
+|   |   |
+| - | - |
+| <span data-ttu-id="0d258-219">Windows 全息版操作系统</span><span class="sxs-lookup"><span data-stu-id="0d258-219">Windows Holographic Operating System</span></span> | <span data-ttu-id="0d258-220">借助 Windows Holographic，Windows 10 用户可以通过 HoloLens 2 在混合现实环境中使用其部分应用和游戏。</span><span class="sxs-lookup"><span data-stu-id="0d258-220">With Windows Holographic, Windows 10 users will be able to use some of their apps and games in a mixed reality environment via the HoloLens 2.</span></span>
+| <span data-ttu-id="0d258-221">3D 查看器</span><span class="sxs-lookup"><span data-stu-id="0d258-221">3D Viewer</span></span> | <span data-ttu-id="0d258-222">通过 [3D 查看器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)，你可以轻松实时查看 3D 模型和动画。</span><span class="sxs-lookup"><span data-stu-id="0d258-222">[3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) lets you easily view 3D models and animations in real-time.</span></span>|
+| <span data-ttu-id="0d258-223">Cortana</span><span class="sxs-lookup"><span data-stu-id="0d258-223">Cortana</span></span> | <span data-ttu-id="0d258-224">[Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)是个人生产力助手，可帮助你随时了解重要事项，并节省查找所需信息的时间。</span><span class="sxs-lookup"><span data-stu-id="0d258-224">[Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab), your personal productivity assistant, helps you stay on top of what matters and save time finding what you need.</span></span>  |
+| <span data-ttu-id="0d258-225">Dynamics 365 指南</span><span class="sxs-lookup"><span data-stu-id="0d258-225">Dynamics 365 Guides</span></span> |  <span data-ttu-id="0d258-226">[Dynamics 365 指南](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 可帮助员工更快地学习关于 Hololens 设备的新技能。</span><span class="sxs-lookup"><span data-stu-id="0d258-226">[Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) will help employees learn new skills faster on HoloLens devices.</span></span> |
+| <span data-ttu-id="0d258-227">Dynamics 365 远程协助</span><span class="sxs-lookup"><span data-stu-id="0d258-227">Dynamics 365 Remote Assist</span></span> | <span data-ttu-id="0d258-228">[Microsoft Dynamics 365 远程协助](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 使技术人员能够使用 Microsoft Teams 或 Dynamics 365 远程协助与远程协作者协作并解决问题。</span><span class="sxs-lookup"><span data-stu-id="0d258-228">[Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) empowers technicians to collaborate and solve problems with remote collaborators using Microsoft Teams or Dynamics 365 Remote Assist.</span></span>  |
+| <span data-ttu-id="0d258-229">反馈中心</span><span class="sxs-lookup"><span data-stu-id="0d258-229">Feedback Hub</span></span> | <span data-ttu-id="0d258-230">通过 [反馈中心](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)，可以通过共享建议或问题来提供有关 Windows 和应用的反馈。</span><span class="sxs-lookup"><span data-stu-id="0d258-230">[Feedback Hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) lets you provide feedback about Windows and apps by sharing your suggestions or problems.</span></span>  |
+| <span data-ttu-id="0d258-231">文件资源管理器</span><span class="sxs-lookup"><span data-stu-id="0d258-231">File Explorer</span></span> | <span data-ttu-id="0d258-232">文件资源管理器提供用于访问文件系统的图形用户界面。</span><span class="sxs-lookup"><span data-stu-id="0d258-232">File Explorer provides a graphical user interface for accessing the file systems.</span></span> |
+| <span data-ttu-id="0d258-233">邮件和日历</span><span class="sxs-lookup"><span data-stu-id="0d258-233">Mail and Calendar</span></span> | <span data-ttu-id="0d258-234">[邮件和日历](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 应用可帮助你随时了解电子邮件、管理日程安排并与联系人保持联系。</span><span class="sxs-lookup"><span data-stu-id="0d258-234">The [Mail and Calendar](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) apps help you stay up to date on your email, manage your schedule and stay in touch with your contacts.</span></span> |  
+| <span data-ttu-id="0d258-235">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="0d258-235">Microsoft Edge</span></span> | <span data-ttu-id="0d258-236">Microsoft Edge 为你提供世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。</span><span class="sxs-lookup"><span data-stu-id="0d258-236">Microsoft Edge gives you world-class performance with more privacy, more productivity, and more value while you browse.</span></span> |
+| <span data-ttu-id="0d258-237">Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="0d258-237">Microsoft Store</span></span> | <span data-ttu-id="0d258-238">[Microsoft Store](https://www.microsoft.com) 是配合 HoloLens 使用的应用和游戏的首选来源。</span><span class="sxs-lookup"><span data-stu-id="0d258-238">The [Microsoft Store](https://www.microsoft.com) is your go-to source for apps and games that work with HoloLens.</span></span>|
+| <span data-ttu-id="0d258-239">电影和电视</span><span class="sxs-lookup"><span data-stu-id="0d258-239">Movies & TV</span></span> | <span data-ttu-id="0d258-240">[电影和电视](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) 在一个简单、快速、美观的应用中提供最新的娱乐内容。</span><span class="sxs-lookup"><span data-stu-id="0d258-240">[Movies & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) brings you the latest entertainment in one simple, fast, and elegant app.</span></span> |
+| <span data-ttu-id="0d258-241">OneDrive</span><span class="sxs-lookup"><span data-stu-id="0d258-241">OneDrive</span></span> | <span data-ttu-id="0d258-242">[OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) 使你能够在任何地点从所有设备访问和编辑文件。</span><span class="sxs-lookup"><span data-stu-id="0d258-242">[OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) lets you access and edit your files from all your devices anywhere.</span></span>  |
+| <span data-ttu-id="0d258-243">照片</span><span class="sxs-lookup"><span data-stu-id="0d258-243">Photos</span></span>| <span data-ttu-id="0d258-244">[照片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) 允许你查看和编辑照片和视频、制作电影和创建相册。</span><span class="sxs-lookup"><span data-stu-id="0d258-244">[Photos](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) lets you view and edit your photos and videos, make movies and create albums.</span></span>  |
+| <span data-ttu-id="0d258-245">设置</span><span class="sxs-lookup"><span data-stu-id="0d258-245">Settings</span></span> | <span data-ttu-id="0d258-246">设置应用是自定义 Windows Holographic 详细工作的位置。</span><span class="sxs-lookup"><span data-stu-id="0d258-246">The Settings app is the place where you customize how Windows Holographic works in detail.</span></span>  |
+| <span data-ttu-id="0d258-247">提示</span><span class="sxs-lookup"><span data-stu-id="0d258-247">Tips</span></span> | <span data-ttu-id="0d258-248">使用 [提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)，你以了解在 Windows Holographic 中可以执行的既令人惊叹又少为人知的一些操作。</span><span class="sxs-lookup"><span data-stu-id="0d258-248">[Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) lets you master surprising and lesser-known things you can do in Windows Holographic.</span></span> |
 
-|      <span data-ttu-id="c9830-244">测量</span><span class="sxs-lookup"><span data-stu-id="c9830-244">Measurement</span></span>               |      <span data-ttu-id="c9830-245">单位指标</span><span class="sxs-lookup"><span data-stu-id="c9830-245">Units metric</span></span>     |      <span data-ttu-id="c9830-246">英制单位</span><span class="sxs-lookup"><span data-stu-id="c9830-246">Units imperial</span></span>     |
+## <span data-ttu-id="0d258-249">设备认证</span><span class="sxs-lookup"><span data-stu-id="0d258-249">Device certifications</span></span>
+
+### <span data-ttu-id="0d258-250">安全</span><span class="sxs-lookup"><span data-stu-id="0d258-250">Safety</span></span>
+
+* [<span data-ttu-id="0d258-251">产品安全</span><span class="sxs-lookup"><span data-stu-id="0d258-251">Product Safety</span></span>](https://support.microsoft.com/en-us/help/4023454/safety-information)
+* [<span data-ttu-id="0d258-252">产品安全警告和说明</span><span class="sxs-lookup"><span data-stu-id="0d258-252">Product Safety Warnings and Instructions</span></span>](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
+* <span data-ttu-id="0d258-253">目测安全性：HoloLens 2 已经过测试，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响保护要求。</span><span class="sxs-lookup"><span data-stu-id="0d258-253">Eye safety: HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.</span></span>
+* [<span data-ttu-id="0d258-254">SAR 信息</span><span class="sxs-lookup"><span data-stu-id="0d258-254">SAR Information</span></span>](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
+
+### <span data-ttu-id="0d258-255">规章信息</span><span class="sxs-lookup"><span data-stu-id="0d258-255">Regulatory information</span></span>
+<span data-ttu-id="0d258-256">[HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。</span><span class="sxs-lookup"><span data-stu-id="0d258-256">[HoloLens Regulatory](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): Includes information on temperature, disposal, radio and TV interference, and more.</span></span>
+
+## <span data-ttu-id="0d258-257">应用包维度</span><span class="sxs-lookup"><span data-stu-id="0d258-257">Package Dimensions</span></span>
+
+|      <span data-ttu-id="0d258-258">测量</span><span class="sxs-lookup"><span data-stu-id="0d258-258">Measurement</span></span>               |      <span data-ttu-id="0d258-259">单位指标</span><span class="sxs-lookup"><span data-stu-id="0d258-259">Units metric</span></span>     |      <span data-ttu-id="0d258-260">英制单位</span><span class="sxs-lookup"><span data-stu-id="0d258-260">Units imperial</span></span>     |
 |--------------------------------|-----------------------|-------------------------|
-|     <span data-ttu-id="c9830-247">设备长度</span><span class="sxs-lookup"><span data-stu-id="c9830-247">Unit Length</span></span>                |     <span data-ttu-id="c9830-248">378.97mm</span><span class="sxs-lookup"><span data-stu-id="c9830-248">378.97mm</span></span>          |     <span data-ttu-id="c9830-249">14.920 英寸</span><span class="sxs-lookup"><span data-stu-id="c9830-249">14.920 inches</span></span>       |
-|     <span data-ttu-id="c9830-250">设备宽度</span><span class="sxs-lookup"><span data-stu-id="c9830-250">Unit Width</span></span>                 |     <span data-ttu-id="c9830-251">247.90mm</span><span class="sxs-lookup"><span data-stu-id="c9830-251">247.90mm</span></span>          |     <span data-ttu-id="c9830-252">9.760 英寸</span><span class="sxs-lookup"><span data-stu-id="c9830-252">9.760 inches</span></span>        |
-|     <span data-ttu-id="c9830-253">设备深度</span><span class="sxs-lookup"><span data-stu-id="c9830-253">Unit Depth</span></span>                 |     <span data-ttu-id="c9830-254">163.07mm</span><span class="sxs-lookup"><span data-stu-id="c9830-254">163.07mm</span></span>          |     <span data-ttu-id="c9830-255">6.420 英寸</span><span class="sxs-lookup"><span data-stu-id="c9830-255">6.420 inches</span></span>        |
-|     <span data-ttu-id="c9830-256">设备重量</span><span class="sxs-lookup"><span data-stu-id="c9830-256">Unit Weight</span></span>                |     <span data-ttu-id="c9830-257">2.878kg</span><span class="sxs-lookup"><span data-stu-id="c9830-257">2.878kg</span></span>           |     <span data-ttu-id="c9830-258">6.344 lbs</span><span class="sxs-lookup"><span data-stu-id="c9830-258">6.344 lbs</span></span>           |
-|     <span data-ttu-id="c9830-259">外部托运长度</span><span class="sxs-lookup"><span data-stu-id="c9830-259">Exterior Shipper Length</span></span>    |     <span data-ttu-id="c9830-260">446.00mm</span><span class="sxs-lookup"><span data-stu-id="c9830-260">446.00mm</span></span>          |     <span data-ttu-id="c9830-261">17.559 英寸</span><span class="sxs-lookup"><span data-stu-id="c9830-261">17.559 inches</span></span>       |
-|     <span data-ttu-id="c9830-262">外部托运宽度</span><span class="sxs-lookup"><span data-stu-id="c9830-262">Exterior Shipper Width</span></span>     |     <span data-ttu-id="c9830-263">257.99mm</span><span class="sxs-lookup"><span data-stu-id="c9830-263">257.99mm</span></span>          |     <span data-ttu-id="c9830-264">10.157 英寸</span><span class="sxs-lookup"><span data-stu-id="c9830-264">10.157 inches</span></span>       |
-|     <span data-ttu-id="c9830-265">外部托运深度</span><span class="sxs-lookup"><span data-stu-id="c9830-265">Exterior Shipper Depth</span></span>     |     <span data-ttu-id="c9830-266">172.01mm</span><span class="sxs-lookup"><span data-stu-id="c9830-266">172.01mm</span></span>          |     <span data-ttu-id="c9830-267">6.772 英寸</span><span class="sxs-lookup"><span data-stu-id="c9830-267">6.772 inches</span></span>        |
-|     <span data-ttu-id="c9830-268">外部托运重量</span><span class="sxs-lookup"><span data-stu-id="c9830-268">Exterior Shipper Weight</span></span>    |     <span data-ttu-id="c9830-269">3.284kg</span><span class="sxs-lookup"><span data-stu-id="c9830-269">3.284kg</span></span>           |     <span data-ttu-id="c9830-270">7.240 lbs</span><span class="sxs-lookup"><span data-stu-id="c9830-270">7.240 lbs</span></span>           |
+|     <span data-ttu-id="0d258-261">设备长度</span><span class="sxs-lookup"><span data-stu-id="0d258-261">Unit Length</span></span>                |     <span data-ttu-id="0d258-262">378.97mm</span><span class="sxs-lookup"><span data-stu-id="0d258-262">378.97mm</span></span>          |     <span data-ttu-id="0d258-263">14.920 英寸</span><span class="sxs-lookup"><span data-stu-id="0d258-263">14.920 inches</span></span>       |
+|     <span data-ttu-id="0d258-264">设备宽度</span><span class="sxs-lookup"><span data-stu-id="0d258-264">Unit Width</span></span>                 |     <span data-ttu-id="0d258-265">247.90mm</span><span class="sxs-lookup"><span data-stu-id="0d258-265">247.90mm</span></span>          |     <span data-ttu-id="0d258-266">9.760 英寸</span><span class="sxs-lookup"><span data-stu-id="0d258-266">9.760 inches</span></span>        |
+|     <span data-ttu-id="0d258-267">设备深度</span><span class="sxs-lookup"><span data-stu-id="0d258-267">Unit Depth</span></span>                 |     <span data-ttu-id="0d258-268">163.07mm</span><span class="sxs-lookup"><span data-stu-id="0d258-268">163.07mm</span></span>          |     <span data-ttu-id="0d258-269">6.420 英寸</span><span class="sxs-lookup"><span data-stu-id="0d258-269">6.420 inches</span></span>        |
+|     <span data-ttu-id="0d258-270">设备重量</span><span class="sxs-lookup"><span data-stu-id="0d258-270">Unit Weight</span></span>                |     <span data-ttu-id="0d258-271">2.878kg</span><span class="sxs-lookup"><span data-stu-id="0d258-271">2.878kg</span></span>           |     <span data-ttu-id="0d258-272">6.344 lbs</span><span class="sxs-lookup"><span data-stu-id="0d258-272">6.344 lbs</span></span>           |
+|     <span data-ttu-id="0d258-273">外部托运长度</span><span class="sxs-lookup"><span data-stu-id="0d258-273">Exterior Shipper Length</span></span>    |     <span data-ttu-id="0d258-274">446.00mm</span><span class="sxs-lookup"><span data-stu-id="0d258-274">446.00mm</span></span>          |     <span data-ttu-id="0d258-275">17.559 英寸</span><span class="sxs-lookup"><span data-stu-id="0d258-275">17.559 inches</span></span>       |
+|     <span data-ttu-id="0d258-276">外部托运宽度</span><span class="sxs-lookup"><span data-stu-id="0d258-276">Exterior Shipper Width</span></span>     |     <span data-ttu-id="0d258-277">257.99mm</span><span class="sxs-lookup"><span data-stu-id="0d258-277">257.99mm</span></span>          |     <span data-ttu-id="0d258-278">10.157 英寸</span><span class="sxs-lookup"><span data-stu-id="0d258-278">10.157 inches</span></span>       |
+|     <span data-ttu-id="0d258-279">外部托运深度</span><span class="sxs-lookup"><span data-stu-id="0d258-279">Exterior Shipper Depth</span></span>     |     <span data-ttu-id="0d258-280">172.01mm</span><span class="sxs-lookup"><span data-stu-id="0d258-280">172.01mm</span></span>          |     <span data-ttu-id="0d258-281">6.772 英寸</span><span class="sxs-lookup"><span data-stu-id="0d258-281">6.772 inches</span></span>        |
+|     <span data-ttu-id="0d258-282">外部托运重量</span><span class="sxs-lookup"><span data-stu-id="0d258-282">Exterior Shipper Weight</span></span>    |     <span data-ttu-id="0d258-283">3.284kg</span><span class="sxs-lookup"><span data-stu-id="0d258-283">3.284kg</span></span>           |     <span data-ttu-id="0d258-284">7.240 lbs</span><span class="sxs-lookup"><span data-stu-id="0d258-284">7.240 lbs</span></span>           |
 
-<span data-ttu-id="c9830-271">注意：</span><span class="sxs-lookup"><span data-stu-id="c9830-271">Notes:</span></span>
-- <span data-ttu-id="c9830-272">设备：出售黑色零售风格的盒子 HoloLens 2。</span><span class="sxs-lookup"><span data-stu-id="c9830-272">Unit: The black, retail-style box HoloLens 2 is sold in.</span></span>
-- <span data-ttu-id="c9830-273">外部托运：设备周围的保护性运输包装。</span><span class="sxs-lookup"><span data-stu-id="c9830-273">Exterior Shipper: The protective shipping packaging around Unit.</span></span>
+> [!NOTE]
+> - <span data-ttu-id="0d258-285">单元：销售时装有 Hololens 2 的黑色零售型包装盒。</span><span class="sxs-lookup"><span data-stu-id="0d258-285">Unit: The black, retail-style box HoloLens 2 is sold in.</span></span>
+> - <span data-ttu-id="0d258-286">外部托运：设备周围的保护性运输包装。</span><span class="sxs-lookup"><span data-stu-id="0d258-286">Exterior Shipper: The protective shipping packaging around Unit.</span></span>
 
-## <span data-ttu-id="c9830-274">查找序列号</span><span class="sxs-lookup"><span data-stu-id="c9830-274">Finding the Serial number</span></span>
+## <span data-ttu-id="0d258-287">查找序列号</span><span class="sxs-lookup"><span data-stu-id="0d258-287">Finding the Serial number</span></span>
 
-<span data-ttu-id="c9830-275">HoloLens 2 设备的序列号打印在面罩下方。</span><span class="sxs-lookup"><span data-stu-id="c9830-275">The serial number for HoloLens 2 devices is printed underneath the visor.</span></span>
-1. <span data-ttu-id="c9830-276">提起设备面罩。</span><span class="sxs-lookup"><span data-stu-id="c9830-276">Lift the visor of the device up.</span></span>
-1. <span data-ttu-id="c9830-277">观察额头垫附近。</span><span class="sxs-lookup"><span data-stu-id="c9830-277">Look near the the brow pad.</span></span>
-1. <span data-ttu-id="c9830-278">可以在铰链附近找到序列号。</span><span class="sxs-lookup"><span data-stu-id="c9830-278">You can find the serial number located close to the hinge.</span></span> 
+<span data-ttu-id="0d258-288">HoloLens 2 设备的序列号打印在面罩下方。</span><span class="sxs-lookup"><span data-stu-id="0d258-288">The serial number for HoloLens 2 devices is printed underneath the visor.</span></span>
+1. <span data-ttu-id="0d258-289">提起设备面罩。</span><span class="sxs-lookup"><span data-stu-id="0d258-289">Lift the visor of the device up.</span></span>
+1. <span data-ttu-id="0d258-290">观察额头垫附近。</span><span class="sxs-lookup"><span data-stu-id="0d258-290">Look near the the brow pad.</span></span>
+1. <span data-ttu-id="0d258-291">可以在铰链附近找到序列号。</span><span class="sxs-lookup"><span data-stu-id="0d258-291">You can find the serial number located close to the hinge.</span></span> 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
-<span data-ttu-id="c9830-279">也可以通过已连接的电脑找到序列号：</span><span class="sxs-lookup"><span data-stu-id="c9830-279">The serial number can also be found via a connected PC:</span></span>
+<span data-ttu-id="0d258-292">也可以通过已连接的电脑找到序列号：</span><span class="sxs-lookup"><span data-stu-id="0d258-292">The serial number can also be found via a connected PC:</span></span>
 
-1. <span data-ttu-id="c9830-280">插上设备</span><span class="sxs-lookup"><span data-stu-id="c9830-280">Plug in the device</span></span>
-1. <span data-ttu-id="c9830-281">导航到文件资源管理器中的“**此电脑**”</span><span class="sxs-lookup"><span data-stu-id="c9830-281">Navigate to **This PC** in file explorer</span></span>
-1. <span data-ttu-id="c9830-282">右键单击并选择 HoloLens 设备的“**属性**”</span><span class="sxs-lookup"><span data-stu-id="c9830-282">Right Click and select **Properties** of the HoloLens device</span></span>
-1. <span data-ttu-id="c9830-283">这将显示设备的系列号。</span><span class="sxs-lookup"><span data-stu-id="c9830-283">This will display the series number of the device.</span></span> <span data-ttu-id="c9830-284">如下面的屏幕截图所示。</span><span class="sxs-lookup"><span data-stu-id="c9830-284">Like this screenshot below.</span></span>
+1. <span data-ttu-id="0d258-293">插上设备</span><span class="sxs-lookup"><span data-stu-id="0d258-293">Plug in the device</span></span>
+1. <span data-ttu-id="0d258-294">导航到文件资源管理器中的“**此电脑**”</span><span class="sxs-lookup"><span data-stu-id="0d258-294">Navigate to **This PC** in file explorer</span></span>
+1. <span data-ttu-id="0d258-295">右键单击并选择 HoloLens 设备的“**属性**”</span><span class="sxs-lookup"><span data-stu-id="0d258-295">Right Click and select **Properties** of the HoloLens device</span></span>
+1. <span data-ttu-id="0d258-296">这将显示设备的序列号，如下面的屏幕截图所示。</span><span class="sxs-lookup"><span data-stu-id="0d258-296">This will display the series number of the device, as shown in the screenshot below.</span></span>
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## <span data-ttu-id="c9830-285">下一步</span><span class="sxs-lookup"><span data-stu-id="c9830-285">Next step</span></span>
+## <span data-ttu-id="0d258-297">下一步</span><span class="sxs-lookup"><span data-stu-id="0d258-297">Next step</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="c9830-286">设置和启动 HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="c9830-286">Set up and start your HoloLens 2</span></span>](hololens2-setup.md)
+> [<span data-ttu-id="0d258-298">设置和启动 HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="0d258-298">Set up and start your HoloLens 2</span></span>](hololens2-setup.md)
