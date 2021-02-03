@@ -12,8 +12,9 @@
 ### [HoloLens 2 清洁常见问题解答](hololens2-maintenance.md)
 ### [HoloLens 2 的受支持语言](hololens2-language-support.md)
 ### [开始使用 HoloLens 2](hololens2-basic-usage.md)
-### [HoloLens 2 开发版常见问题](hololens2-development-edition-faq.md)
-### [管理 HoloLens 2 的自定义应用](hololens2-holographic-custom-apps.md)
+### [HoloLens 2 开发版常见问题解答](hololens2-development-edition-faq.md)
+### [HoloLens 2 工业版常见问题解答](hololens2-industrial-edition-faq.md)
+
 
 
 ## HoloLens（第 1 代）入门
@@ -35,6 +36,7 @@
 ### [创建混合现实照片和视频](holographic-photos-and-videos.md)
 ## 全息应用程序
 ### [查找、安装和卸载应用程序](holographic-store-apps.md)
+### [管理 HoloLens 2 的自定义应用](hololens2-holographic-custom-apps.md)
 ## 全息影像光学和空间布局
 ### [改善视觉质量和舒适度](hololens-calibration.md)
 ### [使用 HoloLens 映射物理空间](hololens-spaces.md) 

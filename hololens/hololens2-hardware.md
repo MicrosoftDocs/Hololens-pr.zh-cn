@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
-ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
+ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
+ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304965"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11306920"
 ---
 # HoloLens 2 硬件
 
@@ -132,22 +132,23 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 ## 预安装的软件
 
-- Windows 全息版操作系统
-- 3D 查看器
-- 日历
-- Cortana
-- Dynamics 365 Guides
-- Dynamics 365 Remote Assist
-- 反馈中心
-- 文件资源管理器
-- Mail
-- Microsoft Edge
-- Microsoft Store
-- 电影和电视
-- OneDrive
-- 照片
-- “设置”
-- 提示
+|   |   |
+| - | - |
+| Windows 全息版操作系统 | 借助 Windows Holographic，Windows 10 用户可以通过 HoloLens 2 在混合现实环境中使用其部分应用和游戏。
+| 3D 查看器 | 通过 [3D 查看器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)，你可以轻松实时查看 3D 模型和动画。|
+| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)是个人生产力助手，可帮助你随时了解重要事项，并节省查找所需信息的时间。  |
+| Dynamics 365 指南 |  [Dynamics 365 指南](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 可帮助员工更快地学习关于 Hololens 设备的新技能。 |
+| Dynamics 365 远程协助 | [Microsoft Dynamics 365 远程协助](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 使技术人员能够使用 Microsoft Teams 或 Dynamics 365 远程协助与远程协作者协作并解决问题。  |
+| 反馈中心 | 通过 [反馈中心](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)，可以通过共享建议或问题来提供有关 Windows 和应用的反馈。  |
+| 文件资源管理器 | 文件资源管理器提供用于访问文件系统的图形用户界面。 |
+| 邮件和日历 | [邮件和日历](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 应用可帮助你随时了解电子邮件、管理日程安排并与联系人保持联系。 |  
+| Microsoft Edge | Microsoft Edge 为你提供世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 |
+| Microsoft Store | [Microsoft Store](https://www.microsoft.com) 是配合 HoloLens 使用的应用和游戏的首选来源。|
+| 电影和电视 | [电影和电视](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) 在一个简单、快速、美观的应用中提供最新的娱乐内容。 |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) 使你能够在任何地点从所有设备访问和编辑文件。  |
+| 照片| [照片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) 允许你查看和编辑照片和视频、制作电影和创建相册。  |
+| 设置 | 设置应用是自定义 Windows Holographic 详细工作的位置。  |
+| 提示 | 使用 [提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)，你以了解在 Windows Holographic 中可以执行的既令人惊叹又少为人知的一些操作。 |
 
 ## 设备认证
 
@@ -174,9 +175,9 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 |     外部托运深度     |     172.01mm          |     6.772 英寸        |
 |     外部托运重量    |     3.284kg           |     7.240 lbs           |
 
-注意：
-- 设备：出售黑色零售风格的盒子 HoloLens 2。
-- 外部托运：设备周围的保护性运输包装。
+> [!NOTE]
+> - 单元：销售时装有 Hololens 2 的黑色零售型包装盒。
+> - 外部托运：设备周围的保护性运输包装。
 
 ## 查找序列号
 
@@ -186,16 +187,16 @@ HoloLens 2 设备的序列号打印在面罩下方。
 1. 可以在铰链附近找到序列号。 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 也可以通过已连接的电脑找到序列号：
 
 1. 插上设备
 1. 导航到文件资源管理器中的“**此电脑**”
 1. 右键单击并选择 HoloLens 设备的“**属性**”
-1. 这将显示设备的系列号。 如下面的屏幕截图所示。
+1. 这将显示设备的序列号，如下面的屏幕截图所示。
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## 下一步
 
