@@ -1,6 +1,6 @@
 ---
 title: 许可证要求
-description: 保持你所需的移动设备管理、HoloLens 和远程协助的所有许可要求和指南在最新状态。
+description: 及时了解你所需的移动设备管理、HoloLens 和远程协助的所有许可要求和指南。
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -26,8 +26,8 @@ ms.locfileid: "11283963"
 ## 移动设备管理 (MDM) 许可证指南
 
 如果计划管理 HoloLens 设备，则需要 Azure AD 和 MDM。 Active Director (AD) 不能用于管理 HoloLens 设备。
-如果你计划使用 Intune 以外的 MDM，则需要 [Azure Active Directory 许可证](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)。
-如果你计划将 Intune 用作 MDM，请阅读包含 Intune 许可证的[套件列表](https://docs.microsoft.com/intune/fundamentals/licenses)。 **请注意，大部分套件都包含 Azure AD。**
+如果计划使用 Intune 以外的 MDM，则需要 [Azure Active Directory 许可证](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)。
+如果计划将 Intune 用作 MDM，请阅读包含 Intune 许可证的[套件列表](https://docs.microsoft.com/intune/fundamentals/licenses)。 **请注意，大部分套件都包含 Azure AD。**
 
 ## 确定应用场景和产品所需的许可证
 
@@ -42,7 +42,7 @@ ms.locfileid: "11283963"
 
 ### Remote Assist 许可证要求
 
-确保你拥有所需的许可证和设备，你可以在[要求](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)文档中查看。
+确保已拥有所需的许可证和设备，你可以查看[要求](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)文档。
 
 1. [Remote Assist 许可证](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
     1. 或者，尝试[远程协助试用版](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
