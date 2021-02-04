@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a7a9fe510c699571dc2e307f5def8c730097815
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
+ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306683"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11311741"
 ---
 # HoloLens 2 - 工业版常见问题解答
 
-![在洁净室中使用的工业版](./images/industrial-edition.jpg)
+![在洁净室中使用的工业版](./images/industrial-sku-with-remote-assist.png)
 
 ## HoloLens 2 工业版优势
 

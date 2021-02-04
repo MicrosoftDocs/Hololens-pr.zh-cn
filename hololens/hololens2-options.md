@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d4275d8fe71e469eee3f8c63576794e6ea5adf3c
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306671"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312647"
 ---
 # HoloLens 2 概述
 
@@ -106,7 +106,7 @@ HoloLens 2 工业版已通过使用新的材料与认证得到了增强，并进
 
 除了升级设备以外，HoloLens 2 工业版还提供 2 年质保和快速更换计划。
 
-查看 [HoloLens 2 工业版常见问题解答](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md)。
+查看 [HoloLens 2 工业版常见问题解答](hololens2-industrial-edition-faq.md)。
 
 #### 清理和处理 HoloLens 2
 HoloLens 2 工业版可使用 “70%” 异丙醇水溶液清理设备的硬质表面，包括面罩、额头板和头带。 有关详细信息，请参阅 [HoloLens 2 清理常见问题解答](https://docs.microsoft.com/hololens/hololens2-maintenance)。 

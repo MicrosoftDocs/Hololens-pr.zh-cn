@@ -14,18 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283073"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312628"
 ---
-# 部署指南 – 云连接的 HoloLens 2 和远程协助 – 概述
+# 部署指南 – 云连接的具有远程协助功能的 HoloLens 2 – 概述
 
 本指南可帮助 IT 专业人员计划 Microsoft HoloLens 2 设备并部署到其组织，总体目标是使这些设备云连接到你的组织，并准备好使用 Dynamics 365 远程协助。 请记住，这将用作跨各种 HoloLens 2 用例向组织进行概念证明部署的模型。
 
 在指南中，我们将介绍如何将设备注册到设备管理中，根据需要应用许可证，并验证最终用户能否在设备设置时立即使用远程协助。 为此，我们将了解设置和运行所需的重要基础结构部分 ， 通过 HoloLens 2 大规模实现部署。
+
+![云连接的横幅](./images/cloud-connected-hololens-large.png)
 
 ## 本指南中
 
