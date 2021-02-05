@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
+ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283083"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313791"
 ---
 # HoloLens 2 清洁常见问题解答
 
@@ -28,6 +28,10 @@ ms.locfileid: "11283083"
 > Microsoft 无法确定任何给定的防感染产品在反冠病毒（如 COVID-19）中的有效性。 请参阅本地公共健康机构有关如何保持安全，防止潜在感染的指南。  
 
 ## HoloLens 2 设备的一般清理说明是什么？
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+## HoloLens 2 设备的一般清理说明是什么？
+<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **清理设备**
 
@@ -60,11 +64,11 @@ ms.locfileid: "11283083"
 
 ## 我可以使用水来清理设备吗？
 
-是。 您可以使用"70%"的异水解决方案来清理设备的硬表面，包括面罩。 使用混和的青色和水来淡淡水，然后彻底擦除设备表面
+可以。 您可以使用"70%"的异水解决方案来清理设备的硬表面，包括面罩。 使用混和的青色和水来淡淡水，然后彻底擦除设备表面
 
 ## 额头板是否可替换？
 
-是。 额头垫依靠磁性连接到设备。 若要分离它，请将其从头带中拉开。 要将其更换掉，请将其重新插回原位。
+可以。 额头垫依靠磁性连接到设备。 若要分离它，请将其从头带中拉开。 要将其更换掉，请将其重新插回原位。
 
 ![取下或更换额头垫](images/hololens2-remove-browpad.png)
 
