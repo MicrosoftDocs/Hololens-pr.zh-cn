@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
+ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312647"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313549"
 ---
 # HoloLens 2 概述
 
@@ -66,7 +66,7 @@ HoloLens 是一种混合现实设备，*受全息影像支持*，并提供可增
 
 ### **HoloLens 2（仅限设备）**
 #### 了解 HoloLens 2
-在商业环境中使用 HoloLens 2 设备对于你的企业或组织来说可能是一个强大的工具。 也可将任何 HoloLens 2 用作开发人员来创建混合现实应用。 
+在商业环境中使用 HoloLens 2 设备对于你的企业或组织来说可能是一个强大的工具。 任何 HoloLens 2 也可以被开发者用来创建混合现实应用。 
 
 <br>
 
@@ -131,7 +131,7 @@ HoloLens 2 开发版包括 HoloLens 2、500 美元的 Azure 额度、试用期�
 |---|---|
 |  [Unity](https://unity.com/) | 实时 3D 开发平台。   |
 |  [适用于 Unity 的 Pixyz 插件](https://www.pixyz-software.com/plugin/) | 连接工程 &amp; CAD 世界与开发世界的桥梁。   |
-| [用于 Azure 服务的 500 美元 Azure 额度](https://azure.microsoft.com/resources/) | HoloLens 2 开发版中包含的 Azure 额度可快速在 Azure 上开始生成和测试混合现实应用程序。 |
+| [用于 Azure 服务的 500 美元 Azure 额度](https://azure.microsoft.com/resources/) | HoloLens 2 开发版中包含的 Azure 额度可快速开始在 Azure 上生成和测试混合现实应用程序。 |
 
 #### 兑换你的额度
 
