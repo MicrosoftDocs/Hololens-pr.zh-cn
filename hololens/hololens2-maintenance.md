@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
-ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
+ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313791"
+ms.locfileid: "11313993"
 ---
 # HoloLens 2 清洁常见问题解答
 
@@ -30,7 +30,7 @@ ms.locfileid: "11313791"
 ## HoloLens 2 设备的一般清理说明是什么？
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
-## HoloLens 2 设备的一般清理说明是什么？
+
 <!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
 
 **清理设备**
