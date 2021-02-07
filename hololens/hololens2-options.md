@@ -4,7 +4,7 @@ description: 了解每个 HoloLens 2 设备版本在哪些方面相同或不同�
 keywords: HoloLens 2 购买选项、HoloLens 选项、开发版
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314260"
 ---
 # HoloLens 2 概述
 
@@ -106,6 +106,8 @@ HoloLens 2 工业版已通过使用新的材料与认证得到了增强，并进
 
 除了升级设备以外，HoloLens 2 工业版还提供 2 年质保和快速更换计划。
 
+![在洁净室中使用的工业版](./images/ie-small-pic.png)
+
 查看 [HoloLens 2 工业版常见问题解答](hololens2-industrial-edition-faq.md)。
 
 #### 清理和处理 HoloLens 2
@@ -115,6 +117,8 @@ HoloLens 2 工业版可使用 “70%” 异丙醇水溶液清理设备的硬质�
 
 #### 了解 Trimble XR10
 基于 HoloLens 2 的 Trimble XR10 是使用 Microsoft HoloLens 自定义计划创建的第一台设备，并将最新的空间计算技术集成到认证解决方案中，配合硬顶帽保护工作者安全。
+
+![Trimble SKU](./images/trimble-ed.png)
 
 查看有关 [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2) 的更多信息。
 
@@ -132,6 +136,8 @@ HoloLens 2 开发版包括 HoloLens 2、500 美元的 Azure 额度、试用期�
 |  [Unity](https://unity.com/) | 实时 3D 开发平台。   |
 |  [适用于 Unity 的 Pixyz 插件](https://www.pixyz-software.com/plugin/) | 连接工程 &amp; CAD 世界与开发世界的桥梁。   |
 | [用于 Azure 服务的 500 美元 Azure 额度](https://azure.microsoft.com/resources/) | HoloLens 2 开发版中包含的 Azure 额度可快速开始在 Azure 上生成和测试混合现实应用程序。 |
+
+![HoloLens 2 开发版](./images/hololens-2-dev-ed.png)
 
 #### 兑换你的额度
 
