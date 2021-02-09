@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bc46ffd4c980ae14f010a3b45533f8081845c946
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
+ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11313993"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319276"
 ---
 # HoloLens 2 清洁常见问题解答
 
@@ -37,9 +37,6 @@ ms.locfileid: "11313993"
 
 1. 使用干净的无细细微fiber 来擦除设备表面，以清除任何水灰。
 1. 使用医疗"70%"是opropyl 酸水，然后使用柔化的光珠来淡淡地擦除设备表面。
-
-   ![显示如何清洗面罩的图像](images/hololens-cleaning-visor.png)
-
 1. 让设备完全干。
 
 **清理额头板**
@@ -64,11 +61,11 @@ ms.locfileid: "11313993"
 
 ## 我可以使用水来清理设备吗？
 
-可以。 您可以使用"70%"的异水解决方案来清理设备的硬表面，包括面罩。 使用混和的青色和水来淡淡水，然后彻底擦除设备表面
+是。 您可以使用"70%"的异水解决方案来清理设备的硬表面，包括面罩。 使用混和的青色和水来淡淡水，然后彻底擦除设备表面
 
 ## 额头板是否可替换？
 
-可以。 额头垫依靠磁性连接到设备。 若要分离它，请将其从头带中拉开。 要将其更换掉，请将其重新插回原位。
+是。 额头垫依靠磁性连接到设备。 若要分离它，请将其从头带中拉开。 要将其更换掉，请将其重新插回原位。
 
 ![取下或更换额头垫](images/hololens2-remove-browpad.png)
 
