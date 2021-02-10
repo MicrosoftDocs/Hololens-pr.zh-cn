@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11314003"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324795"
 ---
 # Microsoft HoloLens 内部预览版
 
@@ -48,6 +48,9 @@ ms.locfileid: "11314003"
 | [展台模式下新应用的新 AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新设置和边缘应用的 AUMID | 20279.1006 |
 | [改进的展台模式故障帮助](#kiosk-mode-behavior-changes-for-handling-of-failures) | 展台模式在空的"开始"菜单之前查找全局分配的访问权限。 | 20279.1006 |
 | [配置回退诊断](#configuring-fallback-diagnostics-via-settings-app) | 在"设置"应用中设置回退诊断行为 | 20279.1006 |
+| [与附近设备共享内容](#share-things-with-nearby-devices) | 将 HoloLens 中的文件或 URL 共享到电脑 | 20279.1006 |
+| [新的操作系统更新疑难解答程序](#new-os-update-troubleshooter) | 操作系统更新的设置中的新疑难解答 | 20279.1006 |
+| [更新中的改进和修复](#improvements-and-fixes-in-the-update) | 更新中的其他修补程序。 | 20279.1006 |
 
 ### 引入新的 Microsoft Edge
 
@@ -304,6 +307,20 @@ Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中�
 
 > [!NOTE]
 > 如果为设备配置了 MDM 策略，用户将不能覆盖该行为。  
+
+### 与附近设备共享内容
+
+与 Windows 10 设备（包括运行 HoloLens 预览体验成员版本 20279.1006+的其他 HoloLens 2 设备）附近共享内容。 你可以尝试在"**设置系统**共享体验"中试用，以将文件或  ->  ****  ->  **** URL 从 HoloLens 共享到电脑。 有关更多详细信息，请阅读有关如何在 [Windows 10 中与附近设备共享内容的详细信息](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)。
+
+可通过 [Connectivity/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices)管理此功能。
+
+### 新的操作系统更新疑难解答程序
+
+除了"设置"应用中的上一个疑难解答程序外，还添加了新的疑难解答程序，并添加了新的操作系统更新设置应用。 导航到 **"设置**  ->  **更新 &amp; 安全性**  ->  ****  ->  **疑难解答"Windows 更新**，然后选择"**开始"。** 这允许你在通过操作系统更新重现问题的同时收集跟踪，以更好地帮助 IT 或支持进行疑难解答。
+
+### 更新中的改进和修复：
+
+- [脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics) 还将包含序列号和操作系统版本的其他设备信息。
 
 
 

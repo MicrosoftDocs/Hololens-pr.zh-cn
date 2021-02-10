@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
-ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
+ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319276"
+ms.locfileid: "11324776"
 ---
 # HoloLens 2 清洁常见问题解答
 
 > [!IMPORTANT]  
 > Microsoft 无法确定任何给定的防感染产品在反冠病毒（如 COVID-19）中的有效性。 请参阅本地公共健康机构有关如何保持安全，防止潜在感染的指南。  
 
-## HoloLens 2 设备的一般清理说明是什么？
+## HoloLens 2 使用和注意
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -36,8 +36,12 @@ ms.locfileid: "11319276"
 **清理设备**
 
 1. 使用干净的无细细微fiber 来擦除设备表面，以清除任何水灰。
-1. 使用医疗"70%"是opropyl 酸水，然后使用柔化的光珠来淡淡地擦除设备表面。
-1. 让设备完全干。
+
+   ![从额头板按住时清理](images/hl2-cleaning.png)
+
+2. 使用医疗"70%"是opropyl 酸水，然后使用柔化的光珠来淡淡地擦除设备表面。
+
+3. 让设备完全干。
 
 **清理额头板**
 
@@ -54,7 +58,7 @@ ms.locfileid: "11319276"
 
 ## 我可以使用清除擦除来清理设备吗？
 
-是，如果擦除不包含任何内容。 可以使用非清除擦除来擦除 [HoloLens 表面](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)。  
+是，如果擦除不包含任何内容。 可以使用非清除擦除来擦除 [HoloLens 表面](#hololens-2-use-and-care)。  
 
 > [!CAUTION]  
 > 避免使用包含木马的清除擦除来清理 HoloLens 表面。 当其他内容不可用时，在关键情况下使用除纸擦除是可以接受的。 但是，百度可能损坏 HoloLens 面罩或其他表面。
