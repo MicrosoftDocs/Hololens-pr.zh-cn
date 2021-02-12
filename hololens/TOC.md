@@ -64,9 +64,10 @@
 ### [加密和数据保护](security-encryption-data-protection.md)
 ### [网络安全性](security-network-security.md)
 ### [安全工程 ](security-engineering.md)
-### HoloLens 第一代安全问题
+### HoloLens 第一代安全问题 
 #### [常见的 HoloLens 第一代安全问题](hololens1-faq-security.md)
 #### [HoloLens（第 1 代）BitLocker 加密](hololens1-encryption.md)
+### [HoloLens 2 隐私声明](hololens2-compliance.md)
 ## [许可证要求](hololens-licenses-requirements.md)
 ## 环境
 ### [HoloLens 环境注意事项](hololens-environment-considerations.md)
