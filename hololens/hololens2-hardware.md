@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
-ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
+ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11306920"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328106"
 ---
 # HoloLens 2 硬件
 
@@ -29,8 +29,8 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 - **面罩**。 包含 HoloLens 传感器和显示器。 你可以在佩戴 HoloLens 时向上旋转面罩。
 - **头带**。 要佩戴 HoloLens，请使用调节轮展开头带。 戴上 HoloLens 后，向右旋转调节轮，将头带收紧，直到调节到一个舒适的长度。
-- **亮度按钮**。 戴上 HoloLens 时，亮度按钮位于面罩的左侧。
-- **音量按钮**。 戴上 HoloLens 时，音量按钮位于面罩的右侧。
+- **亮度按钮**。 当带着 HoloLens 时，亮度按钮位于太阳穴附近遮阳板的左侧。
+- **音量按钮**。 当带着 HoloLens 时，音量按钮位于太阳穴附近遮阳板的右侧。
 - **电源按钮**。 戴上 HoloLens 时，电源按钮位于后外罩的右侧。
 - **USB-C 端口**。 戴上 HoloLens 时，USB-C 端口位于后外罩右侧的电源按钮下方。
 
@@ -166,14 +166,14 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 |      测量               |      单位指标     |      英制单位     |
 |--------------------------------|-----------------------|-------------------------|
-|     设备长度                |     378.97mm          |     14.920 英寸       |
-|     设备宽度                 |     247.90mm          |     9.760 英寸        |
-|     设备深度                 |     163.07mm          |     6.420 英寸        |
-|     设备重量                |     2.878kg           |     6.344 lbs           |
-|     外部托运长度    |     446.00mm          |     17.559 英寸       |
-|     外部托运宽度     |     257.99mm          |     10.157 英寸       |
-|     外部托运深度     |     172.01mm          |     6.772 英寸        |
-|     外部托运重量    |     3.284kg           |     7.240 lbs           |
+|     设备长度                |     378.97 mm          |     14.920 英寸       |
+|     设备宽度                 |     247.90 mm          |     9.760 英寸        |
+|     设备深度                 |     163.07 mm          |     6.420 英寸        |
+|     设备重量                |     2.878 kg           |     6.344 lbs           |
+|     外部托运长度    |     446.00 mm          |     17.559 英寸       |
+|     外部托运宽度     |     257.99 mm          |     10.157 英寸       |
+|     外部托运深度     |     172.01 mm          |     6.772 英寸        |
+|     外部托运重量    |     3.284 kg           |     7.240 lbs           |
 
 > [!NOTE]
 > - 单元：销售时装有 Hololens 2 的黑色零售型包装盒。
@@ -182,10 +182,10 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 ## 查找序列号
 
 HoloLens 2 设备的序列号打印在面罩下方。
+
 1. 提起设备面罩。
 1. 观察额头垫附近。
-1. 可以在铰链附近找到序列号。 
-
+1. 可以在铰链附近找到序列号。
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
