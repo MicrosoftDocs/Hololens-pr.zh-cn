@@ -81,7 +81,7 @@ HoloLens 2 上的高值可更改状态位于操作系统数据安全位置上，
 ## Defender 保护
 HoloLens 2 使用 Microsoft 服务为用户提供更高级别的安全性：
 
-* [Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 由操作系统自动在 Windows Holographic 上启用，可防止 Edge 上的网络钓鱼和恶意软件以及潜在的恶意文件下载。 无法由用户关闭，但可通过策略禁用。
+* [Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 由操作系统自动在 Windows Holographic 上启用，可防止 Microsoft Edge 上的网络钓鱼和恶意软件以及潜在的恶意文件下载。 无法由用户关闭，但可通过策略禁用。
 
 * [Defender 防火墙](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)会阻止未经授权的网络流量流向和来自你的设备。 默认情况下，它处于启用状态，且不能由客户通过本地操作或策略进行配置。 
 
