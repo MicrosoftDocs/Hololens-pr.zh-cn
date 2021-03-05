@@ -12,18 +12,18 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 6cb646ec1104952b5ecfe42391c24465fd074771
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163010"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385601"
 ---
-# HoloLens 2
+# <a name="hololens-2-display"></a>HoloLens 2
 
 HoloLens 2屏幕是波导和光投影仪的结合。 用户佩戴头戴显示设备时，通过波导（面板内的隐形眼镜）进行观看。 光投影仪在眉心上方的外壳内。 HoloLens 2 使用激光照亮屏幕。
 
-## 疑难解答
+## <a name="troubleshooting"></a>疑难解答
 
 对于 HoloLens 2，请执行以下步骤，以确保屏幕能够呈现出最高的全息影像视觉质量：
 
@@ -32,15 +32,15 @@ HoloLens 2屏幕是波导和光投影仪的结合。 用户佩戴头戴显示设
 * **向下移动面罩。** 请尝试向下移动前额上的额头垫，这样面罩就会下移，更加靠近你的鼻子。
 * **进行眼球校准。** 屏幕使用你的瞳距(IPD)和眼睛注视来优化屏幕上的图像。 如果未进行眼球校准，则图像质量可能会变差。 若要运行目视校准，请转到“设置” > “系统” > “校准” > “运行目视校准”。****************
 
-## 常见问题
+## <a name="faq"></a>常见问题
 
-### 屏幕下角偶尔闪现的图案是什么？
+### <a name="what-are-the-patterns-that-occasionally-flash-in-the-bottom-corners-of-the-display"></a>屏幕下角偶尔闪现的图案是什么？
 
 你的HoloLens 2会偶尔在屏幕的左下角和右下角显示不同的图案。 例子如下所示（动态 Gif）。 该图案是HoloLens 2设备正常操作的一部分，用于校准屏幕以获得最佳体验。
 
 ![Biphase 图案](./images/DAT-Biphase-Fiducial.gif) ![GEO图案](./images/DAT-GEO-Fiducial.gif)
 
-### 为什么我的HoloLens 2屏幕无法准确拍摄照片？
+### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>为什么我的HoloLens 2屏幕无法准确拍摄照片？
 
 HoloLens 2是为人眼观看而设计的。 设备具有可适应用户眼睛的活动颜色校正系统。 与人眼相比，摄像头看到的环境是不同的，下面是一些可能会影响摄像头捕捉到的东西和用户看到的东西之间不一致的因素。
 
@@ -56,27 +56,27 @@ HoloLens 2是为人眼观看而设计的。 设备具有可适应用户眼睛的
 
 都说专门的工业相机还是可以从HoloLens 2上捕捉到有代表性的图像。 遗憾的是，智能手机、数码相机和专业相机无法捕捉到与用户在HoloLens 2上看到的一致的图像。
 
-### 眼球校准对屏幕图像质量有什么影响？
+### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>眼球校准对屏幕图像质量有什么影响？
 
 HoloLens 2会根据用户眼球的位置积极修正图像的颜色。 [目视校准](hololens-calibration.md) 提供两个重要的输入：（1）用户的 瞳孔间 距离（IPD），以及每个眼睛在注视的方向（2）。 如果不进行目视校准，系统会默认为标称的眼球位置，无需眼球运动。 是否积极校正可用色彩取决于用户自身的生理状况。 例如，与系统默认的IPD相同的用户将看到较少的色彩校正改进。 然而，IPD比系统默认值窄得多或宽得多的用户，则会看到屏幕图像更多的变化。
 
 请注意，[Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中的一项新功能将开始[自动检测眼部位置](hololens-calibration.md#auto-eye-position-support)。 
 
-### HoloLens（第一代）和 HoloLens 2 之间的显示差异是什么？
+### <a name="what-are-the-display-differences-between-hololens-1st-gen-and-hololens-2"></a>HoloLens（第一代）和 HoloLens 2 之间的显示差异是什么？
 
 客户体验HoloLens 1后给Microsoft 提出的首要要求有（1）增加视场角，（2）提高亮度。 技术发展使Microsoft生产出的波导使视场角范围增加了一倍，生成的光投影机的显示亮度提高了三倍。 硬件上为屏幕的图像质量三重权衡设定了基线。(1) 视场角，(2) 亮度，(3) 色彩均匀性。 技术的不断提升，有助于促进所有领域共同发展，无一落后。 在这期间，现有的技术为这些权衡设定了可用的限制。
 
-### 将会有哪些改进提高HoloLens 2的图像质量？
+### <a name="what-improvements-are-coming-that-will-improve-hololens-2-image-quality"></a>将会有哪些改进提高HoloLens 2的图像质量？
 
 尽管我们正在进行很多研究以提高图像质量，但接下来的更新包含的是以下领域：
 
 * **自动目视位置。** 这个功能将使目视校准程序在后台运行。 用户将不再需要运行目视校准来启动主动色彩校正。 它会自动运行。
 * **色彩校准改进。** 这次更新的侧重点是较深色的颜色值（例如，深灰色）。 现在，颜色变暗时色调选取红色。 当整个屏幕变暗时也会发生这个问题--整个显示屏都会呈现红色。 这个问题是由这些更深的颜色在红色频道中活动过多造成的。 我们已经对这些较暗颜色的激光照明曲线进行了表征，并在致力于为用户提供校准程序。 其结果是，在整个亮度色谱中色彩精确度将更高。 它不会改变全亮度情景下白色背景的外观。 我们继续建议在应用程序中使用黑暗色调设计模式。
-* **阅读模式。** 应用开发人员可以通过权衡屏幕视野来实现更高的角度分辨率。 应用开发者可以覆盖投影矩阵，使内容在绘图解析中渲染。 这一功能可减少30%的视场角，并提高相应的角度分辨率。 目前正在努力将这个功能引入混合现实工具包。 当可用时，阅读模式将在任何HoloLens 2操作系统上运行--而不依赖于操作系统的更新。
+* **阅读模式。** 应用开发人员可以通过权衡屏幕视野来实现更高的角度分辨率。 应用开发者可以覆盖投影矩阵，使内容在绘图解析中渲染。 这一功能可减小 30% 的视界，并提高相应的角度分辨率。 目前正在努力将这个功能引入 [混合现实工具包](https://github.com/Microsoft/MixedRealityToolkit-Unity)。 当可用时，阅读模式将在任何 HoloLens 2 操作系统上运行，而不依赖于操作系统的更新。
 
 操作系统实现自动更新。 你还可以通过内部预览计划测试软件改进的早期版本。
 
-### 开发人员运用暗模式设计原则有什么可用指南？
+### <a name="what-guidance-is-available-for-developers-to-apply-dark-mode-design-principles"></a>开发人员运用暗模式设计原则有什么可用指南？
 
 
 在避免白色背景的情况中，用户将获得最佳体验。 深色模式是应用在使用黑色或深色背景时所采用的设计原则。 系统设置默认为深色模式，且可通过转到“设置” > “系统” > “颜色”进行调整。************
@@ -88,6 +88,6 @@ HoloLens 2会根据用户眼球的位置积极修正图像的颜色。 [目视�
 
 如果全息影像需要白色背景，请保持全息影像的尺寸小于显示器的完整视野。 此尺寸允许用户将全息影像置于显示器中央。
 
-### 如何清洁 HoloLens 2 屏幕？
+### <a name="how-do-you-clean-a-hololens-2-display"></a>如何清洁 HoloLens 2 屏幕？
 
 使用微纤维布轻轻擦拭遮光罩。 如果要对遮光板进行消毒，请使用 70% 的异丙醇轻轻浸湿布，再擦拭遮光板。 请阅在[HoloLens 2 清洁常见问题](hololens2-maintenance.md)查看完整指导。
