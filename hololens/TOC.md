@@ -41,6 +41,7 @@
 ### [改善视觉质量和舒适度](hololens-calibration.md)
 ### [使用 HoloLens 映射物理空间](hololens-spaces.md) 
 ## [如何更新 HoloLens](hololens-update-hololens.md)
+## [Microsoft Mesh（预览版）](/mesh/overview)
 
 # 准备
 ## [在商业环境中部署 HoloLens](hololens-requirements.md)
@@ -94,6 +95,7 @@
 ### [为 HoloLens 2 准备证书和网络配置文件](hololens-certificates-network.md)
 ### [管理 HoloLens 的连接终结点](hololens-offline.md)
 ### [连接到蓝牙和 USB-C 设备](hololens-connect-devices.md)
+### [连接到手机网络和 5G](hololens-cellular.md)
 ## [证书管理器](certificate-manager.md)
 
 # 部署
