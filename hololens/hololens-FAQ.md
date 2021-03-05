@@ -18,14 +18,14 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 72b976560664c89b7ae3cd9270c57ead438679cd
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253119"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388773"
 ---
-# 有关 HoloLens 设备和全息影像的常见问题
+# <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>有关 HoloLens 设备和全息影像的常见问题
 
 本文回答了有关如何使用 HoloLens 的一些问题，包括如何放置全息影像、如何使用空间等。
 
@@ -58,7 +58,7 @@ ms.locfileid: "11253119"
 - [如何删除所有空间？](#how-do-i-delete-all-spaces)
 - [我在 HoloLens 2 模拟器中找不到或无法使用键盘进行键入](#i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator)
 
-## 我的全息影像看起来不正常或四处移动
+## <a name="my-holograms-dont-look-right-or-are-moving-around"></a>我的全息影像看起来不正常或四处移动
 
 如果你的全息影像看起来不正常（例如抖动或晃动，或者你在其上方看到黑色斑点），请尝试以下修复方法之一：
 
@@ -71,7 +71,7 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 我看到一条消息，显示“正在查找你的空间”
+## <a name="i-see-a-message-that-says-finding-your-space"></a>我看到一条消息，显示“正在查找你的空间”
 
 当 HoloLens 正在记忆或加载空间时，你可能会看到一条简短消息，显示“正在查找你的空间”。 如果此消息显示超过几秒钟，你将在“开始”菜单下看到另一条消息，显示“仍在查找你的空间”。
 
@@ -86,7 +86,7 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 我在自己的空间中看不到所期望的全息影像
+## <a name="im-not-seeing-the-holograms-that-i-expect-to-see-in-my-space"></a>我在自己的空间中看不到所期望的全息影像
 
 如果你看不到放置的全息影像，或者你看到的全息投影未达到预期效果，请尝试以下一种或多种修复方法：
 
@@ -98,7 +98,7 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 我无法将全息影像放置在所需的位置
+## <a name="i-cant-place-holograms-where-i-want-to"></a>我无法将全息影像放置在所需的位置
 
 如果你在放置全息影像时遇到问题，请尝试以下操作：
 
@@ -109,7 +109,7 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 全息影像消失或被其他全息影像或物体遮挡
+## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>全息影像消失或被其他全息影像或物体遮挡
 
 如果你离全息影像太近，它会暂时消失&mdash;若要恢复全息影像，只需远离它即可。 此外，如果已将多个全息影像放置在一起，则某些全息影像可能会消失。 尝试删除一些全息影像。
 
@@ -121,7 +121,7 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 我看到位于墙壁另一面的全息影像
+## <a name="i-can-see-holograms-that-are-on-the-other-side-of-a-wall"></a>我看到位于墙壁另一面的全息影像
 
 如果你离墙壁很近，或者 HoloLens 尚未扫描墙壁，则可能会看到隔壁房间的全息影像。 若要扫描墙壁，请站在离墙壁 1 到 3 米的地方，然后注视。
 
@@ -129,7 +129,7 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 将全息影像放置在墙壁上时，全息影像好像是浮动的
+## <a name="when-i-place-a-hologram-on-a-wall-the-hologram-seems-to-float"></a>将全息影像放置在墙壁上时，全息影像好像是浮动的
 
 放置在墙壁上的全息影像通常看起来距离墙壁一英寸左右。 如果看起来更远，请尝试以下一种或多种修复方法：
 
@@ -139,13 +139,13 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## 尝试移动应用时，它们似乎离我太近了
+## <a name="apps-appear-too-close-to-me-when-im-trying-to-move-them"></a>尝试移动应用时，它们似乎离我太近了
 
 请尝试四处走动并查看你放置应用的区域，以便 HoloLens 从不同角度扫描该区域。 [清洁设备面板](hololens1-hardware.md#care-and-cleaning)可能有用。
 
 [返回列表](#list)
 
-## 我收到磁盘空间不足的错误
+## <a name="im-getting-a-low-disk-space-error"></a>我收到磁盘空间不足的错误
 
 请执行下列一项或多项操作以释放一些存储空间：
 
@@ -155,23 +155,23 @@ ms.locfileid: "11253119"
 
 [返回列表](#list)
 
-## HoloLens 未响应我的手势
+## <a name="hololens-doesnt-respond-to-my-gestures"></a>HoloLens 未响应我的手势
 
 若要确保 HoloLens 可以看到你的手势，请将手放在手势框中。 手势框在你的两边延伸了几英尺。 当保持在你身前大约 18 英寸的位置（你不必精确到此距离）时，HoloLens 可以更好地看到你的手。 如果 HoloLens 可以看到你的手，光标将从圆点变为圆环。 了解有关[在 HoloLens 2 中使用手势](hololens2-basic-usage.md)或[在 HoloLens（第一代）中使用手势](hololens1-basic-usage.md)的详细信息。
 
 [返回列表](#list)
 
-## HoloLens 未响应我的语音
+## <a name="hololens-doesnt-respond-to-my-voice"></a>HoloLens 未响应我的语音
 
 HoloLens（第一代）和 HoloLens 2 具有内置语音识别功能，并且还支持 Cortana（联机语音识别）。
 
-### 内置语音命令无法正常工作
+### <a name="built-in-voice-commands-do-not-work"></a>内置语音命令无法正常工作
 
 在 HoloLens（第一代）上，无法配置内置语音识别。 它始终处于开启状态。 在 HoloLens 2 上，你可以选择是否在设备设置过程中打开语音识别和 Cortana。
 
 如果 HoloLens 2 未对你的语音作出响应，请确保语音识别处于开启状态。 转到“**开始**” > “**设置**” > “**隐私**” > “**语音**”并打开“**语音识别**”。
 
-### Cortana 或听写无法正常工作
+### <a name="cortana-or-dictation-doesnt-work"></a>Cortana 或听写无法正常工作
 
 如果 Cortana 或听写未对你的语音作出响应，请确保联机语音识别处于开启状态。 转到“**开始**” > “**设置**” > “**隐私**” > “**语音**”，并验证“**联机语音识别**”设置。 
 
@@ -184,7 +184,7 @@ HoloLens（第一代）和 HoloLens 2 具有内置语音识别功能，并且还
 
 [返回列表](#list)
 
-## 我在配对或使用蓝牙设备时遇到问题
+## <a name="im-having-problems-pairing-or-using-a-bluetooth-device"></a>我在配对或使用蓝牙设备时遇到问题
 
 如果在[配对蓝牙设备](hololens-connect-devices.md)时遇到问题，请尝试以下操作：
 
@@ -194,7 +194,7 @@ HoloLens（第一代）和 HoloLens 2 具有内置语音识别功能，并且还
 
 [返回列表](#list)
 
-## HoloLens 设置列出了可用的设备，但该设备无法正常工作
+## <a name="hololens-settings-lists-devices-as-available-but-the-devices-dont-work"></a>HoloLens 设置列出了可用的设备，但该设备无法正常工作
 
 HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器和耳机）在 HoloLens 设置中可能会显示为可用，但它们不受支持。
 
@@ -208,11 +208,11 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 [返回列表](#list)
 
-## 我在使用 HoloLens 遥控器时遇到问题
+## <a name="im-having-problems-using-the-hololens-clicker"></a>我在使用 HoloLens 遥控器时遇到问题
 
 可使用[遥控器](hololens1-clicker.md)选择、滚动、移动和调整全息影像。 单个应用可能支持其他遥控器手势。
 
-如果你在使用遥控器时遇到问题，请确保它已充电并与 HoloLens 配对。 如果电池电量低，指示灯将呈琥珀色闪烁。 若要验证遥控器是否已配对，请转到“**设置**” > “**设备**”，然后查看它是否显示在那里。 有关详细信息，请参阅[配对遥控器](hololens-connect-devices.md#hololens-1st-gen-pair-the-clicker)。
+如果你在使用遥控器时遇到问题，请确保它已充电并与 HoloLens 配对。 如果电池电量低，指示灯将呈琥珀色闪烁。 若要验证遥控器是否已配对，请转到“**设置**” > “**设备**”，然后查看它是否显示在那里。 有关详细信息，请参阅[配对遥控器](hololens1-clicker.md)。
 
 如果遥控器已充电并且已配对，但仍有问题，请按住主按钮和配对按钮 15 秒钟以将其重置。 然后再次将遥控器与 HoloLens 配对。
 
@@ -220,7 +220,7 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 [返回列表](#list)
 
-## 我无法连接到 Wi-Fi
+## <a name="i-cant-connect-to-wi-fi"></a>我无法连接到 Wi-Fi
 
 如果无法将 HoloLens 连接到 Wi-fi 网络，请尝试以下操作：
 
@@ -231,13 +231,13 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 [返回列表](#list)
 
-## 我的 HoloLens 未正常运行、没有响应或无法启动
+## <a name="my-hololens-isnt-running-well-is-unresponsive-or-wont-start"></a>我的 HoloLens 未正常运行、没有响应或无法启动
 
 如果设备未正常运行，请参阅[重启、重置或恢复 HoloLens](hololens-recovery.md)。
 
 [返回列表](#list)
 
-## 我无法登录到 HoloLens 设备，因为该设备以前是为其他人设置的
+## <a name="i-cant-sign-in-to-a-hololens-device-because-it-was-previously-set-up-for-someone-else"></a>我无法登录到 HoloLens 设备，因为该设备以前是为其他人设置的
 
 如果你的设备以前是为其他人（客户或前员工）设置的，而你没有解锁设备的密码，则可以执行以下操作之一：
 
@@ -248,51 +248,51 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 [返回列表](#list)
 
-## 有关管理 HoloLens 设备的问题
+## <a name="questions-about-managing-hololens-devices"></a>有关管理 HoloLens 设备的问题
 
-### 是否可以使用 System Center Configuration Manager (SCCM) 来管理 HoloLens 设备？
+### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>是否可以使用 System Center Configuration Manager (SCCM) 来管理 HoloLens 设备？
 
 否。 必须使用 MDM 系统来管理 HoloLens 设备。
 
-### 是否可以使用 Active Directory 域服务 (AD DS) 来管理 HoloLens 用户帐户？
+### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>是否可以使用 Active Directory 域服务 (AD DS) 来管理 HoloLens 用户帐户？
 
 否。 你必须使用 Azure Active Directory (Azure AD) 管理 HoloLens 设备的用户帐户。
 
-### HoloLens 是否支持自动数据采集系统 (ADCS) 自动注册？
+### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>HoloLens 是否支持自动数据采集系统 (ADCS) 自动注册？
 
 否。
 
-### HoloLens 是否可以参与集成的 Windows 身份验证？
+### <a name="can-hololens-participate-in-integrated-windows-authentication"></a>HoloLens 是否可以参与集成的 Windows 身份验证？
 
 否。
 
-### HoloLens 是否支持品牌宣传？
+### <a name="does-hololens-support-branding"></a>HoloLens 是否支持品牌宣传？
 
 否。 但是，你可以使用以下方法之一来解决此问题：
 
 - 创建自定义应用，然后[启用展台模式](hololens-kiosk.md)。 自定义应用可以进行品牌宣传，并且可以其他其他应用（如远程协助）。  
 - 将 Azure AD 中所有用户配置文件图片更改为公司徽标。 但是，并非所有方案都需要此操作。
 
-### HoloLens（第一代）和 HoloLens 2 提供哪些日志记录功能？
+### <a name="what-logging-capabilities-do-hololens-1st-gen-and-hololens-2-offer"></a>HoloLens（第一代）和 HoloLens 2 提供哪些日志记录功能？
 
 日志记录仅限于在开发或故障排除方案中捕获的跟踪，或由设备发送到 Microsoft 服务器的遥测。
 
 [返回列表](#list)
 
-## 有关保护 HoloLens 设备的问题
+## <a name="questions-about-securing-hololens-devices"></a>有关保护 HoloLens 设备的问题
 
 请参阅 [我们的 HoloLens 2 安全信息](security-overview.md)。
 对于 HoloLens 第一代设备，请查看 [此常见问题解答](hololens1-faq-security.md)。
 
 [返回列表](#list)
 
-## 如何删除所有空间？
+## <a name="how-do-i-delete-all-spaces"></a>如何删除所有空间？
 
 *即将推出*
 
 [返回列表](#list)
 
-## 我在 HoloLens 2 模拟器中找不到或无法使用键盘进行键入
+## <a name="i-cannot-find-or-use-the-keyboard-to-type-in-the-hololens-2-emulator"></a>我在 HoloLens 2 模拟器中找不到或无法使用键盘进行键入
 
 *即将推出*
 
