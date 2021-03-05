@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 31c2c9ed7b2a35c759a0e1d86b89a2f0ab75d965
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283873"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385611"
 ---
-# 设置 HoloLens 2
+# <a name="set-up-your-hololens-2"></a>设置 HoloLens 2
 
 第一次打开 HoloLens 时，你需要设置设备、使用用户帐户登录以及根据眼睛校准 HoloLens。  此部分介绍 HoloLens 2 的初始设置体验。
 
 在下一部分中，你将了解如何使用 HoloLens 以及与全息影像互动。 要跳转到那篇文章，请参阅[HoloLens 2 入门](hololens2-basic-usage.md)。
 
-## 准备工作
+## <a name="before-you-start"></a>准备工作
 
 开始之前，必须做好以下准备：
 
@@ -37,7 +37,7 @@ ms.locfileid: "11283873"
 
 HoloLens 附带有**可选的舒适配件**，可帮助你获得最为舒适的体验。 [更多舒适佩戴信息](hololens2-setup.md#adjust-fit)。
 
-## 设置 Windows
+## <a name="set-up-windows"></a>设置 Windows
 
 首次启动 HoloLens 2 时，第一项任务是设置 Windows 全息版。  启动 HoloLens 时，你会听到音乐并看到 Windows 徽标。
 
@@ -91,7 +91,10 @@ HoloLens 2 将引导你完成以下步骤：
 
 恭喜你！  设置已完成，你现在可以使用 HoloLens 了！
 
-## 后续步骤
+## <a name="next-steps"></a>后续步骤
+
+1. 立即开始与混合事实交互，并在 HoloLens 上导航 Windows 10 - 查看 **Tips** 应用，以获取手势交互的实际教程。 使用开始手势转到“开始”或说出“转到开始”，然后选择“使用技巧”。 
+1. 单击下方以继续阅读关于开始使用 HoloLens 2 的内容。
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 入门](hololens2-basic-usage.md)
