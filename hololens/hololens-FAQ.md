@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388773"
+ms.locfileid: "11393856"
 ---
 # <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>有关 HoloLens 设备和全息影像的常见问题
 
 本文回答了有关如何使用 HoloLens 的一些问题，包括如何放置全息影像、如何使用空间等。
 
-无论何时遇到问题，都请确保 HoloLens [已充满电](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)。 请尝试[重启它](hololens-restart-recover.md)以查看是否修复了问题。 请使用反馈应用向我们发送有关该问题的信息。 可在[“**开始**”菜单上找到反馈应用](holographic-home.md)。
+只要遇到问题，请确保 HoloLens [已充电](https://support.microsoft.com/help/12627/hololens-charge-your-hololens)。 请尝试[重启它](hololens-restart-recover.md)以查看是否修复了问题。 请使用反馈应用向我们发送有关该问题的信息。 可在[“**开始**”菜单上找到反馈应用](holographic-home.md)。
 
-有关如何佩戴 HoloLens 的提示，请参阅 [HoloLens（第 1 代）舒适佩戴常见问题](hololens1-fit-comfort-faq.md)。
+有关如何佩戴 HoloLens 的提示，请参阅 [HoloLens (第一代) 舒适佩戴常见问题](hololens1-fit-comfort-faq.md)。
 
 本文将解决以下问题：
 <a id="list"></a>
@@ -210,7 +210,7 @@ HoloLens 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器�
 
 ## <a name="im-having-problems-using-the-hololens-clicker"></a>我在使用 HoloLens 遥控器时遇到问题
 
-可使用[遥控器](hololens1-clicker.md)选择、滚动、移动和调整全息影像。 单个应用可能支持其他遥控器手势。
+可使用[遥控器](hololens1-clicker.md)选择、滚动、移动和调整全息影像。 个别应用可能支持其他单击器手势。
 
 如果你在使用遥控器时遇到问题，请确保它已充电并与 HoloLens 配对。 如果电池电量低，指示灯将呈琥珀色闪烁。 若要验证遥控器是否已配对，请转到“**设置**” > “**设备**”，然后查看它是否显示在那里。 有关详细信息，请参阅[配对遥控器](hololens1-clicker.md)。
 

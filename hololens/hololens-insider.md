@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388783"
+ms.locfileid: "11393876"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 内部预览版
 
@@ -29,16 +29,16 @@ ms.locfileid: "11388783"
 
 ## <a name="windows-insider-release-notes"></a>Windows 预览体验成员发行说明
 
-我们很高兴再次开始向 Windows 预览体验成员提供新功能。 新内部版本将测试到开发人员频道获取最新更新。 我们将继续更新此页面，因为我们向 Windows 预览体验成员版本添加更多功能和更新。  感到很高兴，并准备好将这些更新融合到你的现实中。
+我们很高兴再次开始向 Windows 预览体验成员提供新功能。 新内部版本将测试到开发人员频道获取最新更新。 我们将继续更新此页面，因为我们向 Windows 预览体验成员版本添加更多功能和更新。  获得快感，并准备好将这些更新融合到你的现实中。
 
 此功能更新包含两个目标访问群体的功能。 最终用户可在设备上使用的功能，以及 IT 管理员可配置的新设备管理选项。 下面的功能表将指定能够使用每个新功能的受众。 如果你是 IT 管理员，请查看我们的 IT 管理员 [- 更新清单](#it-admin---update-checklist)
 
 > [!IMPORTANT]
-> 如果你之前在展台中使用的是"设置"应用或 Microsoft Edge 应用，则我们将这些应用替换为使用不同的应用 ID 的新应用。 我们强烈建议你在下面的展台模式下阅读新[应用的新 AUMID。](#use-the-new-settings-and-edge-apps-in-kiosk-modes) 这将确保你继续在展台中拥有"设置"应用，或包括新的 Microsoft Edge 应用。
+> 如果你之前在展台中使用的是"设置"应用或 Microsoft Edge 应用，则我们将这些应用替换为使用不同的应用 ID 的新应用。 我们强烈建议你在下面的展台模式下阅读新应用[的新 AUMID。](#use-the-new-settings-and-edge-apps-in-kiosk-modes) 这将确保你继续在展台中拥有"设置"应用，或包括新的 Microsoft Edge 应用。
 
 <br>
 
-| 功能名称                                              | 简短说明                                                                      | 目标访问群体 | 在内部版本可用 |
+| 功能名称                                              | 简短说明                                                                      | 目标访问群体 | 在内部版本内可用 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|------|
 | [新版 Microsoft Edge](#introducing-the-new-microsoft-edge) | 新的基于 Chromium 的 Microsoft Edge 现在可用于 HoloLens 2                         | 最终用户 | 20279.1006 |
 | [WebXR 和 360 Viewer](#webxr-and-360-viewer)             | 尝试沉浸式 Web 体验和 360 视频播放                                           | 最终用户 | 20289.1000 |
@@ -54,7 +54,7 @@ ms.locfileid: "11388783"
 | [展台的访问者自动登录](#visitor-auto-logon-for-kiosks)                          | 启用要用于展台模式的访问者帐户的自动登录。                         | IT 管理员 | 20279.1006                 |
 | [展台模式下新应用的新 AUMID](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | 新设置和边缘应用的 AUMID | IT 管理员 | 20279.1006 |
 | [改进的展台模式故障帮助](#kiosk-mode-behavior-changes-for-handling-of-failures) | 展台模式在空的"开始"菜单之前查找全局分配的访问权限。 | IT 管理员 | 20279.1006 |
-| [页面设置可见性的新 SettingsURIs](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 设置/PageVisibilityList 策略的 20+ 新 SettingsURIs | IT 管理员 | 20289.1000 |
+| [页面设置可见性的新 SettingsURIs](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | 20+ 设置/PageVisibilityList 策略的新 SettingsURIs | IT 管理员 | 20289.1000 |
 | [配置回退诊断](#configuring-fallback-diagnostics-via-settings-app) | 在"设置"应用中设置回退诊断行为 | IT 管理员 | 20279.1006 |
 | [与附近设备共享内容](#share-things-with-nearby-devices) | 将文件或 URL 从 HoloLens 共享到电脑 | 全部 | 20279.1006 |
 | [新的操作系统更新疑难解答程序](#new-os-update-troubleshooter) | 操作系统更新的设置中的新疑难解答 | IT 管理员 | 20279.1006 |
@@ -69,13 +69,13 @@ ms.locfileid: "11388783"
 
 [**展台模式下新应用的新 AUMID**](#use-the-new-settings-and-edge-apps-in-kiosk-modes)
 
-如果你之前在展台中使用的是"设置"应用或 Microsoft Edge 应用，则我们将这些应用替换为使用不同的应用 ID 的新应用。 我们强烈建议你在下面的展台模式下阅读新[应用的新 AUMID。](#use-the-new-settings-and-edge-apps-in-kiosk-modes) 这将确保你继续在展台中拥有"设置"应用，或包括新的 Microsoft Edge 应用。
+如果你之前在展台中使用的是"设置"应用或 Microsoft Edge 应用，则我们将这些应用替换为使用不同的应用 ID 的新应用。 我们强烈建议你在下面的展台模式下阅读新应用[的新 AUMID。](#use-the-new-settings-and-edge-apps-in-kiosk-modes) 这将确保你继续在展台中拥有"设置"应用，或包括新的 Microsoft Edge 应用。
 
 现在可以完成这些更改，并部署到所有设备，并允许在更新时更平稳地过渡。
 
 [**展台的访问者自动登录**](#visitor-auto-logon-for-kiosks)
 
-访问者现在可以自动登录到展台。 默认情况下，此行为处于打开状态，但可以管理和禁用。
+访问者现在可以自动登录展台。 默认情况下，此行为处于打开状态，但可以管理和禁用。
 
 [**改进的展台模式故障帮助**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
@@ -85,11 +85,11 @@ ms.locfileid: "11388783"
 
 [**页面设置可见性的新 SettingsURIs**](hololens-insider.md#new-settingsuris-for-page-settings-visibility)
 
-如果当前使用的是页面设置 [可见性](settings-uri-list.md) ，则你可能希望对已允许或阻止的现有 URI 进行调整。
+如果当前正在使用页面设置 [可见性](settings-uri-list.md) ，则你可能希望对已允许或阻止的现有 URI 进行调整。
 
 #### <a name="updates-for-your-wdac-policy"></a>WDAC 策略的更新
 
-如果之前曾通过 WDAC 阻止 Microsoft Edge，则希望更新 WDAC 策略。 请查看 [以下内容并使用](#using-wdac-to-block-new-microsoft-edge) 提供的示例代码。
+如果之前通过 WDAC 阻止 Microsoft Edge，则希望更新 WDAC 策略。 请查看 [以下内容并使用](#using-wdac-to-block-new-microsoft-edge) 提供的示例代码。
 
 #### <a name="newly-configurable-items"></a>新可配置的项目
 
@@ -144,7 +144,7 @@ ms.locfileid: "11388783"
 
 由于新的 Microsoft Edge 是本机 Win32 应用，具有新的 UWP 适配器层，允许它在仅 UWP 设备（如 HoloLens 2）上运行，因此某些功能可能不会立即可用。 我们将支持未来几个月的新方案和功能，因此请查看此空间了解最新信息。
 
-**预期可工作的方案和功能：**
+**预计能正常工作的方案和功能：**
 - 首次运行体验、登录配置文件和同步
 - 网站应按预期呈现和行为
 - 大多数浏览器功能 (收藏夹、历史记录等) 应正常工作
@@ -163,7 +163,7 @@ ms.locfileid: "11388783"
 - "查看它，说出它"
 - 打印
 
-**热门浏览器问题：**
+**热门的浏览器问题：**
 - 重置设备将删除新的 Microsoft Edge
 - 全息键盘中的放大镜预览显示不正确的内容
 - 滚动有时可能会不流畅
@@ -181,7 +181,7 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 **直接安装在设备上 (当前仅适用于非托管设备) **
   1. 在 HoloLens 2 上，访问 [Edge 预览体验成员下载页面](https://www.microsoftedgeinsider.com/download)。
   1. 选择要安装的边缘预览体验成员频道的"下载 **HoloLens 2"** 按钮。
-  1. 使用"文件资源管理器" (从边缘下载队列或设备的"下载"文件夹中启动下载的 .msix) 。
+  1. 使用"文件资源管理器" (从边缘下载队列或设备的"下载"文件夹启动下载的 .msix) 。
   1. [应用安装程序](app-deploy-app-installer.md) 将启动。
   1. 选择 **"安装"** 按钮。
   1. 成功安装后，你将在"开始"菜单的"所有应用"列表中发现 Microsoft Edge Beta、Dev 或 Canary 作为单独的条目。 ****
@@ -195,7 +195,7 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
   1. 成功安装后，你将在"开始"菜单的"所有应用"列表中发现 Microsoft Edge Beta、Dev 或 Canary 作为单独的条目。 ****
 
 > [!NOTE]
-> 在此适用于 HoloLens 2 的 Windows 预览体验成员预览版期间，你设备上 Microsoft Edge 的版本可能高于某些 (或所有) Microsoft Edge 预览体验成员频道中提供的版本。 这是为了确保专门面向 HoloLens 2 上的 Web 浏览器的新功能和修补程序尽快进入我们的 Windows 预览体验成员。 在公开发布下一个 Windows 更新后，Microsoft Edge 预览体验成员频道版本将超过 HoloLens 2 上的 Microsoft Edge 版本，并保持领先。
+> 在此适用于 HoloLens 2 的 Windows 预览体验成员预览版期间，你设备上 Microsoft Edge 的版本可能高于某些 (或 Microsoft Edge 预览体验成员) 中提供的版本。 这是为了确保专门面向 HoloLens 2 上的 Web 浏览器的新功能和修补程序尽快进入我们的 Windows 预览体验成员。 在公开发布下一个 Windows 更新后，Microsoft Edge 预览体验成员频道版本将超过 HoloLens 2 上的 Microsoft Edge 版本，并保持领先。
 
 #### <a name="using-wdac-to-block-new-microsoft-edge"></a>使用 WDAC 阻止新的 Microsoft Edge
 
@@ -209,12 +209,12 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 
 新的 Microsoft Edge 包括对 WebXR 的支持，WebXR 是用于创建沉浸式 Web 体验的新标准， (WebVR) 。 许多沉浸式 Web 体验在设计时都考虑到了 (将你的视野替换为虚拟环境) ，但 HoloLens 2 也支持这些体验。 WebXR 标准还支持使用物理环境的增强和混合现实沉浸式 Web 体验。 随着开发人员在 WebXR 上花费更多时间，我们预计新的增强和混合现实沉浸式体验将到达 HoloLens 2 客户试用！
 
-360 查看器扩展基于 WebXR 构建，并自动与 HoloLens 2 上的新 Microsoft Edge 一起安装。 此 Web 扩展让你能够沉浸于 360 度视频中。 YouTube 提供最多 360 个视频选择，因此我们建议您从该视频开始。
+360 Viewer 扩展基于 WebXR 构建，并自动与 HoloLens 2 上的新 Microsoft Edge 一起安装。 此 Web 扩展让你能够沉浸于 360 度视频中。 YouTube 提供最多 360 个视频选择，因此我们建议您从该视频开始。
 
 #### <a name="how-to-use-webxr"></a>如何使用 WebXR
 
-1. 导航到具有 WebXR 支持的网站。
-1. 选择网站上 **"输入VR"** 按钮。 此按钮的位置和视觉表示形式可能因网站而异，但外观可能类似于：
+1. 导航到支持 WebXR 的网站。
+1. 选择网站上 **"输入VR"** 按钮。 此按钮的位置和视觉表示形式可能因网站而异，但它可能类似于：
 
     ![输入"VR"按钮示例](images/75px-enter-vr.png)
 
@@ -241,14 +241,14 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>热门 WebXR 和 360 Viewer 已知问题
 - 在 WebXR 体验中，当你倾斜头或四处移动时，全息影像可能会移动或倾斜。
 - 根据 WebXR 体验的复杂性，帧速率可能会下降或不一样。
-- WebXR 中尚不提供手接点。
+- WebXR 中尚不提供手部连接。
 - 退出 WebXR 或 360 查看器体验时，混合现实家庭中的全息影像可能需要 30 秒或更多时间重新出现。
 - 来自 YouTube 网站（而非 YouTube）的 360 个视频可能无法如期工作。
 - 如果 360 个视频未进入沉浸式 (或混合现实耳机按钮未) ，请尝试刷新页面。
 - 标题在 HoloLens 2 上的 360 查看器中尚不可见。
 - 暂停 360 查看器中的视频会阻止视频 (但正确选择播放按钮可恢复) 。
 - 360 Viewer 中的"下一个视频"按钮当前不起作用。
-- 可以在沉浸式"电影"模式下播放 2D 视频，但帧速率将小于 30 fps。
+- 可以在沉浸式"theater"模式下播放 2D 视频，但帧速率将小于 30 fps。
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>提供有关 WebXR 和 360 查看器的反馈
 
@@ -256,7 +256,7 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 
 ### <a name="new-settings-app"></a>"新建设置"应用
 
-在此版本中，我们将引入新版本的"设置"应用。 新的"设置"应用包括以下领域的 HoloLens 2 新功能和扩展设置：声音、Power & 睡眠、网络 & Internet、应用、帐户、轻松使用等。
+在此版本中，我们将引入新版本的"设置"应用。 新的"设置"应用包括 HoloLens 2 的新功能和扩展设置，包括以下方面：声音、Power & 睡眠、网络 & Internet、应用、帐户、轻松使用等。
 
 > [!NOTE]
 > 由于新的"设置"应用不同于旧式"设置"应用，因此更新时将删除之前放置在环境周围的任何"设置"窗口。
@@ -269,8 +269,8 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
   - 输入和输出音频设备：独立选择输入和输出音频设备 (例如，通过 Bluetooth 耳机收听音频或使用 USB-C 麦克风进行音频输入) 。
     > [!NOTE]
     > Bluetooth HoloLens 2 不支持麦克风。
-  - 应用量：独立调整每个应用的音量。 请参阅 [每个应用音量控件](#per-app-volume-control)。
-- 系统>电源&睡眠：选择设备在一段时间不活动后应何时进入睡眠状态。
+  - 应用量：独立调整每个应用的音量。 请参阅 [每个应用音量控制](#per-app-volume-control)。
+- 系统>电源&睡眠：选择设备在一段时间处于非活动状态后应何时进入睡眠状态。
 - 系统>：手动启用节电模式或设置节电模式自动打开的电池阈值。
 - USB >设备：默认情况下可以禁用 USB 连接。
 - Internet &网络：
@@ -283,9 +283,9 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 
 **已知问题**
 - 之前放置的"设置"窗口将被删除 (请参阅上述) 。
-- 以太网页面显示一个虚拟以太网设备 ("UsbNcm") ， (调查) 。 此虚拟以太网设备还将显示在设备设置的"网络"页上，但可在调查 (时) 。
-- 你无法再使用"设置"应用重命名设备 (IT 管理员可以使用预配包或 MDM 重命名设备) 。
-- 新 Microsoft Edge 的电池使用情况可能不准确，因为其性质是 UWP 适配器层支持的 Win32 桌面应用程序， (预计) 。
+- 你无法再使用"设置"应用重命名设备。 IT 管理员可以使用 [适用于 HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) 设备名称模板的 Windows Autopilot 或 MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 节点重命名设备。
+- 以太网页面显示一个 ("UsbNcm") 的虚拟以太网设备。
+- 新 Microsoft Edge 的电池使用情况可能不准确，因为其性质是 UWP 适配器层支持的 Win32 桌面应用程序 (预计) 。
 
 ### <a name="display-color-calibration"></a>显示颜色校准
 
@@ -329,7 +329,7 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 
 - 在"设置"页上，告知您上次更改颜色配置文件时间的状态字符串将过期，直到重新加载该"设置"页 
     - 解决方法：选择另一个"设置"页，然后重新选择"校准"页。
-- 如果你的 HoloLens 2 在运行显示颜色校准时进入睡眠状态，它稍后将恢复进入混合现实主页，并且你的显示亮度级别仍将变暗。
+- 如果你的 HoloLens 2 在运行显示颜色校准时进入睡眠状态，它稍后将恢复到混合现实空间，并且你的屏幕亮度级别仍将变暗。
 - 你可能需要尝试按设备左侧的亮度按钮上/下几次，然后才能按预期工作。
 - 并非所有市场都完成本地化
 
@@ -343,7 +343,7 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 
 ### <a name="per-app-volume-control"></a>每个应用音量控制
 
-现在，在此 Windows 预览体验成员版本中，用户可以手动调整每个应用的音量级别。 这允许用户更好地关注所需的应用，或更好地听到使用多个应用时的声音。 例如，需要关闭一个应用的数量，同时呼叫另一个人在另一个应用中进行远程协助。
+现在，在此 Windows 预览体验成员版本中，用户可以手动调整每个应用的音量级别。 这允许用户更好地关注所需的应用，或更好地听到使用多个应用时的声音。 例如需要关闭一个应用的数量，同时呼叫另一个人在另一个应用中进行远程协助。
 
 若要设置单个应用的音量，请**导航到"** 设置系统声音"，并在"高级声音选项"下选择  ->  ****  ->  ******应用音量和设备首选项**。
 
@@ -358,7 +358,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 
 ### <a name="swipe-to-type"></a>轻扫以键入
 
-一些客户发现，通过轻扫要键入的单词的形状，在虚拟键盘上"键入"速度更快，我们正在预览全息键盘的此功能。 通过通过全息键盘的平面传递手指的尖角，轻扫该单词的形状，然后从键盘平面上撤消手指的提示，可以一次轻扫一个单词。 通过从键盘中删除手指，无需按空格键，即可轻扫后续字词。 如果你在键盘上看到手指移动后有轻扫轨迹，你将知道该功能正在工作。
+一些客户发现，通过轻扫要键入的单词的形状，在虚拟键盘上"键入"速度更快，我们正在预览全息键盘的此功能。 通过通过全息键盘的平面传递手指的尖角，轻扫该单词的形状，然后从键盘的平面撤消手指的提示，可以一次轻扫一个单词。 通过从键盘中删除手指，无需按空格键，即可轻扫后续字词。 如果你在键盘上看到手指移动后有轻扫轨迹，你将知道该功能正在工作。
 
 请注意，此功能可能很难使用和掌握，因为全息键盘的性质，与移动电话显示器 (无法抵御手指) 。 我们正在评估此功能以公开发布，因此您的反馈非常重要;无论你发现此功能有用还是有反馈反馈，请通过反馈中心 [告诉我们](hololens-feedback.md)。
 
@@ -386,7 +386,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 
 #### <a name="update-indicator"></a>更新指示器
 
-当更新可用时，省略号图标将打开以指示重新启动将安装更新。 菜单选项也会更改以反映更新状态。<br/><br/>
+当更新可用时，省略号图标将打开以指示重新启动将安装更新 菜单选项也会更改以反映更新状态。<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
@@ -416,7 +416,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 ![声音设置](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
-> 若要将外部麦克风与 **远程协助**一同使用，用户需要单击"管理声音设备"超链接。
+> 若要将外部麦克风与 **远程协助一同使用**，用户需要单击"管理声音设备"超链接。
 >
 > 然后使用下拉列表将外部麦克风设置为"默认" **或** " **通信默认值"。** 选择 **"** 默认值"意味着外部麦克风将在任何位置使用。
 >
@@ -430,11 +430,11 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 
 #### <a name="what-about-bluetooth-microphone-support"></a>麦克风Bluetooth如何？
 
-遗憾的是Bluetooth HoloLens 2 上目前仍不支持麦克风。
+遗憾的是Bluetooth HoloLens 2 上当前仍不支持麦克风。
 
 #### <a name="troubleshooting-usb-c-microphones"></a>USB-C 麦克风疑难解答
 
-请注意，某些 USB-C 麦克风错误地将自己报告为 *麦克风和扬声器* 。 这是麦克风的问题，而不是 HoloLens 的问题。 将其中一个麦克风插入 HoloLens 时，可能会丢失声音。 幸运的是，有一个简单的解决方法。  
+请注意，某些 USB-C 麦克风错误地将自己报告为麦克风*和扬声器。* 这是麦克风的问题，而不是 HoloLens 的问题。 将其中一个麦克风插入 HoloLens 时，可能会丢失声音。 幸运的是，有一个简单的解决方法。  
 
 在 **"设置**  ->  **系统**  ->  **声音******"中，将内置扬声器 (**模拟功能**音频驱动程序) 默认设备。 HoloLens 应记住此设置，即使稍后删除了麦克风并重新连接麦克风。
 
@@ -452,7 +452,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
     1. 不创建本地帐户
 1. [应用预配包](hololens-provisioning.md)。
 
-对于 AAD 配置，用户现在可以实现与此类似的功能，而无需进行此更改。 为展台模式配置的已加入 AAD 的设备可以通过从登录屏幕点击单个按钮来登录访问者帐户。 登录到访问者帐户后，设备不会提示再次登录，直到从"开始"菜单显式注销访问者或重新启动设备。
+对于 AAD 配置，用户现在可以实现与此类似的功能，而无需进行此更改。 为展台模式配置的已加入 AAD 的设备可以通过从登录屏幕点击单个按钮来登录访问者帐户。 登录到访问者帐户后，设备不会提示再次登录，直到访问者从"开始"菜单显式注销或重新启动设备。
 
 访问者自动登录可以通过自定义 [OMA-URI](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10) 策略进行管理：
 
@@ -479,20 +479,20 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 
 在较旧的内部版本中，如果设备具有展台配置，即全局分配的访问权限和 AAD 组成员身份的组合，如果确定 AAD 组成员身份失败，用户将看到"开始"菜单中未[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)显示任何内容。
 
-从 Windows 预览体验成员版本开始，如果 AAD 组展台模式 (失败) ，展台体验将回退到全局展台配置。
+从 Windows 预览体验成员版本开始，如果 AAD 组展台模式 (出现故障) ，展台体验将回退到全局展台配置。
 
 ### <a name="new-settingsuris-for-page-settings-visibility"></a>页面设置可见性的新 SettingsURIs
 
-在 [Windows 全息版版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中，我们添加了 ["设置/PageVisibilityList"](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) 策略，以限制在"设置"应用中看到的页面。 PageVisibilityList 是一项策略，它允许 IT 管理员阻止查看或访问“系统设置”应用中的特定页面，或者对除指定页面之外的所有页面执行此操作。
+在 [Windows 全息版版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 中，我们添加了 ["设置/PageVisibilityList"](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) 策略，以限制"设置"应用中显示的页面。 PageVisibilityList 是一项策略，它允许 IT 管理员阻止查看或访问“系统设置”应用中的特定页面，或者对除指定页面之外的所有页面执行此操作。
 
 如果你访问 [页面设置可见性](settings-uri-list.md)，你可以找到使用此 CSP 的说明和以前版本中提供的 URI 列表。
 
-在 Windows 预览体验成员内部版本，我们正在扩展可用设置 URI 的列表，IT 管理员可以管理该列表。 其中一些 URI 用于新"设置"应用中的新可用区域。 如果使用的是"设置/PageVisibilityList"策略，请查看以下列表并根据需要调整允许或阻止的页面。
+在 Windows 预览体验成员版本上，我们正在扩展可用设置 URI 的列表，IT 管理员可以管理该列表。 其中一些 URI 用于新"设置"应用中的新可用区域。 如果使用"设置/PageVisibilityList"策略，请查看以下列表并根据需要调整允许或阻止的页面。
 
 > [!NOTE]
 > **已弃用：ms-settings：network-proxy**
 >
-> 在这些较新的内部版本中，一个设置页已弃用。 旧的 **"& Internet**  >  **代理**"页不再作为全局设置提供。 新的每连接代理设置位于**Internet**  >  **Wi-Fi**&或 Internet 以太网&  >  ********  >  ****  >  **下**。
+> 在这些较新的内部版本中，一个设置页已弃用。 旧的 **"& Internet**  >  **代理**"页不再作为全局设置提供。 新的每连接代理设置位于 **"Internet**  >  **Wi-Fi**&"或"Internet 以太网&  >  ********  >  ****  >  **下**。
 
 <br>
 
@@ -569,11 +569,11 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 - 在此预览版中，HoloLens 支持仅限于操作系统更新。
 - Windows Holographic for Business 仅支持从 Microsoft 连接的缓存终结点下载 HTTP [下载模式和下载](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache);目前 HoloLens 设备不支持对等下载模式和组分配。
 - HoloLens 不支持 Windows Server Update Services 终结点的部署或传递优化。
-- 疑难解答将需要在连接缓存服务器上进行诊断，或通过"设置更新"或"安全疑难解答 Windows 更新"收集**** HoloLens  >  **&**  >   ****  >   **上的跟踪**。
+- 疑难解答需要连接缓存服务器上进行诊断，或通过"设置更新和安全疑难解答 Windows 更新"& HoloLens****  >  **上**收集  >   ****  >   **跟踪**。
 
 ### <a name="improvements-and-fixes-in-the-update"></a>更新中的改进和修复：
 
-- [脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics) 还将包含序列号和操作系统版本的其他设备信息。
+- [脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics) 还将包括序列号和操作系统版本的其他设备信息。
 
 
 
@@ -591,7 +591,7 @@ Office Web 应用已添加到"开始"菜单中的"所有应用"列表中。 此 
 
 在 HoloLens 2 设备上 **，转到"** 设置更新&  >  ****  >  **安全 Windows 预览体验计划**，然后选择 **"开始使用"。** 链接你用于注册为 Windows 预览体验成员的帐户。
 
-Windows 预览体验成员现在将迁移到频道。 快**圈**将成为开发人员**频道**，慢圈将成为******Beta**渠道，并且发布**预览圈将成为****版本预览频道**。 该映射如下所示：
+Windows 预览体验成员现在迁移到频道。 快**圈**将成为开发人员**频道****，慢圈**将成为**Beta**渠道，并且发布**预览圈将成为****版本预览频道**。 该映射如下所示：
 
 ![Windows 预览体验成员频道说明](images/WindowsInsiderChannels.png)
 
@@ -599,7 +599,7 @@ Windows 预览体验成员现在将迁移到频道。 快**圈**将成为开发�
 
 然后，选择 **"Windows 的活动**开发"，选择是希望接收开发人员频道**** 还是**Beta 渠道**版本，并查看计划条款。
 
-选择 **">立即重启** 以完成。 重启设备后，转到"设置>更新& **安全>检查** 更新，获取最新内部版本。
+选择 **">立即重启** "以完成。 重启设备后，转到"设置>更新& **安全>检查** 更新，获取最新内部版本。
 
 ### <a name="update-error-0x80070490-work-around"></a>在0x80070490更新错误
 如果在开发人员或 Beta 渠道0x80070490更新时遇到更新错误，请尝试以下短期方法。 这包括移动预览体验成员频道、选取更新，然后将预览体验成员频道移回。
