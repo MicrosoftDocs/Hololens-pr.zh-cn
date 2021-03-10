@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5613c69bda8bbf70722a050ac5ce4ebeab95d332
-ms.sourcegitcommit: 771e53feefbcc6bce18577515ad7d3f6a7f33840
+ms.openlocfilehash: 4042cce40bea2c3d52d6ffc5d2908f6fde7cf222
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "11399380"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400672"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中注册 HoloLens
 
@@ -34,12 +34,15 @@ ms.locfileid: "11399380"
  
 ## <a name="different-ways-to-enroll"></a>注册的不同方法
 
-根据在 OOBE 或登录后选择的标识类型，存在不同的注册方法。 若要了解有关 HoloLens 上每种类型的标识的信息，请访问 [此页面](hololens-identity.md)。
+根据在 OOBE [或登录](hololens-identity.md) 后选择的标识类型，存在不同的注册方法。
 
 - 如果 Identity 为 Azure AD，则 OOBE 或"设置应用访问工作"****  ->  **或"学校连接"按钮**  ->  **期间**。
-    - 对于 Azure AD，只有当 Azure AD 已配置注册 URL 时，才进行自动 MDM 注册。
-- 如果 Identity 为 Azure AD，并且设备已在 Intune MDM 服务器中预先注册并分配了特定配置文件，则 Azure AD-Join 和注册将在 OOBE 期间自动发生。
+    - 对于 Azure AD，只有当 Azure AD 已配置注册 URL 时，才进行自动 [MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 注册。 
+     
+- 如果 Identity 为 Azure AD，并且设备已在 Intune MDM 服务器中预先注册并分配了特定配置文件，则 Azure AD-Join 和自动 [MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 注册将在 OOBE 期间进行。
     - 也称为 [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+ 版本](hololens-release-notes.md#windows-holographic-version-2004)。
+    
+
 - 如果 Identity 为 MSA，则使用"设置**应用**  ->  **访问工作"或"学校**  ->  **连接"** 按钮。
     - 也称为"添加工作帐户 (AWA) 流。
 - 如果 Identity 为本地用户，**则仅在设备**管理链接中使用"设置应用访问工作  ->  ****  ->  **"或"学校注册**"。
@@ -49,7 +52,7 @@ ms.locfileid: "11399380"
 
 ## <a name="auto-enrollment-in-mdm"></a>在 MDM 中自动注册
 
-如果你的组织使用 Azure Active Directory (Azure AD) 和接受 Azure AD 令牌进行身份验证的 MDM 解决方案 (目前仅在 Microsoft Intune 和 AirWatch) 中受支持，则 IT 管理员可以将 Azure AD 配置为在用户使用其 Azure AD 帐户登录后自动允许 MDM 注册。 [了解如何配置 Azure AD 注册。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+如果你的组织拥有 [Azure Premium](https://azure.microsoft.com/overview/)订阅，则使用 Azure Active Directory (Azure AD) 和 MDM 解决方案，该解决方案目前接受 Azure AD 令牌进行身份验证 (，仅在 Microsoft Intune 和 AirWatch) 中受支持，IT 管理员可以将 Azure AD 配置为在用户使用其 Azure AD 帐户登录后自动允许 MDM 注册。 [了解如何配置 Azure AD 注册。](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 启用自动注册后，不需要其他手动注册。 当用户使用 Azure AD 帐户登录时，设备在完成首次运行体验后在 MDM 中注册。
 
@@ -57,4 +60,4 @@ ms.locfileid: "11399380"
 
 ## <a name="unenroll-hololens-from-intune"></a>从 Intune 注销 HoloLens
 
-尽管 HoloLens 2 是 Windows 10 设备，但无法简单地从 Intune 注销。 如果你希望从 Azure AD 中取消加入 HoloLens 或重新加入其他 Azure AD 租户，则必须重置 [/重新调整](https://docs.microsoft.com/hololens/hololens-recovery#reset-the-device) 设备。
+尽管 HoloLens 2 是 Windows 10 设备，但它不能只是从 Intune 注销。 如果你希望从 Azure AD 中取消加入 HoloLens 或重新加入其他 Azure AD 租户，则必须重置 [/重新调整](https://docs.microsoft.com/hololens/hololens-recovery#reset-the-device) 设备。
