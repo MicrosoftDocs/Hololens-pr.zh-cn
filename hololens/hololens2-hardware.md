@@ -12,37 +12,36 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
-ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
+ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "11328106"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400692"
 ---
-# HoloLens 2 硬件
+# <a name="hololens-2-hardware"></a>HoloLens 2 硬件
 
 ![HoloLens 2 侧视图](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。
 
-## HoloLens 组件
+## <a name="hololens-components"></a>HoloLens 组件
 
 - **面罩**。 包含 HoloLens 传感器和显示器。 你可以在佩戴 HoloLens 时向上旋转面罩。
-- **头带**。 要佩戴 HoloLens，请使用调节轮展开头带。 戴上 HoloLens 后，向右旋转调节轮，将头带收紧，直到调节到一个舒适的长度。
+- **头带**。 若要放在 HoloLens 上，请使用调整盘展开头带。 戴上 HoloLens 后，向右旋转调节轮，将头带收紧，直到调节到一个舒适的长度。
 - **亮度按钮**。 当带着 HoloLens 时，亮度按钮位于太阳穴附近遮阳板的左侧。
 - **音量按钮**。 当带着 HoloLens 时，音量按钮位于太阳穴附近遮阳板的右侧。
 - **电源按钮**。 戴上 HoloLens 时，电源按钮位于后外罩的右侧。
 - **USB-C 端口**。 戴上 HoloLens 时，USB-C 端口位于后外罩右侧的电源按钮下方。
 
-## 包装箱内包含：
+## <a name="in-the-box"></a>包装箱内包含：
 
-- **额头垫**。 你可以根据需要取下和更换额头垫。
-- **顶部固定带**。 如果在走动时佩戴 HoloLens，请使用顶部固定带帮助固定设备。 长时间佩戴 HoloLens 时，顶部固定带可能会使设备佩戴更舒适。
-- **USB-C 电缆**。 使用 USB-C 电缆将 HoloLens 连接到电源进行充电，或者将 HoloLens 连接到计算机。
-- **电源**。 插入电源插座。
+- **[额头板](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**。 你可以根据需要取下和更换额头垫。
+- **[顶部固定带](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**。 如果在走动时佩戴 HoloLens，请使用顶部固定带帮助固定设备。 长时间佩戴 HoloLens 时，顶部固定带可能会使设备佩戴更舒适。
+- **[USB-C 适配器和电缆](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**。 电源插入电源出口。 使用 USB-C 电缆将 HoloLens 连接到电源进行充电，或者将 HoloLens 连接到计算机。
 - **超细纤维布**。 用于清洁 HoloLens 面罩。
 
-### 电源详细信息
+### <a name="power-supply-details"></a>电源详细信息
 
 设备附带的电源和 USB 线缆是支持的最佳充电装置。 电源是一个 18W 充电器。  它可以在 2A 条件下提供 9V 电压。
 
@@ -50,9 +49,9 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。
 
-## 设备规格
+## <a name="device-specifications"></a>设备规格
 
-### 显示
+### <a name="display"></a>显示器
 
 |   |   |
 | - | - |
@@ -61,7 +60,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | 全息密度 | >2.5k 弧度（每弧度光点） |
 | 基于目视的呈现 | 针对 3D 眼睛位置的显示优化 |
 
-### 传感器
+### <a name="sensors"></a>传感器
 
 |   |   |
 | - | - |
@@ -76,14 +75,14 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 > [!NOTE]
 > 不要遮盖图片中提到的任何传感器。 头部跟踪摄像机的视野很宽，除了遮盖摄像机外，摄像机周围不要有任何东西。
 
-### 音频和语音
+### <a name="audio-and-speech"></a>音频和语音
 
 |   |   |
 | - | - |
 | 麦克风阵列 | 5 通道 |
 | 扬声器 | 内置空间音效 |
 
-### 计算和连接性
+### <a name="compute-and-connectivity"></a>计算和连接性
 
 |   |   |
 | - | - |
@@ -95,26 +94,26 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | 蓝牙 | 5.0 |
 | USB | USB Type-C |
 
-### 电源
+### <a name="power"></a>电源
 
 |   |   |
 | - | - |
-| 电池使用时间 | 2-3 小时的有效使用时间。 待机时间最长可达 2 周。 |
+| 电池使用时间 | 2-3 小时的有效使用时间。 最多两周待机时间。 |
 | 电池技术 | [锂电池](https://www.microsoft.com/download/details.aspx?id=43388) |
 | 充电行为 | 充电时全部功能可用 |
 | 冷却类型 | 被动冷却（无风扇） |
 | 功耗 | 为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。 |
 
-### 适应
+### <a name="fit"></a>适应
 
 |   |   |
 | - | - |
 | 大小调整 | 具有可调带的单个大小。  适合眼镜 |
 | 粗细 | 566 克 |
 
-## 设备功能
+## <a name="device-capabilities"></a>设备功能
 
-### 人类理解
+### <a name="human-understanding"></a>人类理解
 
 |   |   |
 | - | - |
@@ -122,7 +121,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | 眼球跟踪 | 实时跟踪 |
 | 语音 | 基于设备的命令和控制；具有 Internet 连接的 Cortana 自然语言 |
 
-### 环境理解
+### <a name="environment-understanding"></a>环境理解
 
 |   |   |
 | - | - |
@@ -130,7 +129,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | 空间映射 | 实时环境网格 |
 | 混合现实捕获 | 混合全息影像和物理环境照片与视频 |
 
-## 预安装的软件
+## <a name="pre-installed-software"></a>预安装的软件
 
 |   |   |
 | - | - |
@@ -141,7 +140,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | Dynamics 365 远程协助 | [Microsoft Dynamics 365 远程协助](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 使技术人员能够使用 Microsoft Teams 或 Dynamics 365 远程协助与远程协作者协作并解决问题。  |
 | 反馈中心 | 通过 [反馈中心](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)，可以通过共享建议或问题来提供有关 Windows 和应用的反馈。  |
 | 文件资源管理器 | 文件资源管理器提供用于访问文件系统的图形用户界面。 |
-| 邮件和日历 | [邮件和日历](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 应用可帮助你随时了解电子邮件、管理日程安排并与联系人保持联系。 |  
+| 邮件和日历 | 利用 [邮件和日历](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 应用，助你了解最新的电子邮件信息、管理计划，并与您的联系人保持联系。 |  
 | Microsoft Edge | Microsoft Edge 为你提供世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 |
 | Microsoft Store | [Microsoft Store](https://www.microsoft.com) 是配合 HoloLens 使用的应用和游戏的首选来源。|
 | 电影和电视 | [电影和电视](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) 在一个简单、快速、美观的应用中提供最新的娱乐内容。 |
@@ -150,19 +149,27 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 | 设置 | 设置应用是自定义 Windows Holographic 详细工作的位置。  |
 | 提示 | 使用 [提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)，你以了解在 Windows Holographic 中可以执行的既令人惊叹又少为人知的一些操作。 |
 
-## 设备认证
+## <a name="device-certifications"></a>设备认证
 
-### 安全
+### <a name="safety"></a>安全
 
 * [产品安全](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [产品安全警告和说明](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
 * 目测安全性：HoloLens 2 已经过测试，符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响保护要求。
 * [SAR 信息](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
-### 规章信息
+### <a name="regulatory-information"></a>规章信息
 [HoloLens 规章](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)：包含有关温度、处置、无线电和电视干扰等信息。
 
-## 应用包维度
+## <a name="warranty-information"></a>担保信息
+
+Microsoft HoloLens 2 附带标准有限 [担保](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)。 
+
+购买受 [Microsoft Store 使用条款和促销条款的遵守](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)。 
+
+通过购买 HoloLens 2，即表示你同意 [软件许可协议](https://www.microsoft.com/Useterms/)。
+
+## <a name="package-dimensions"></a>包装尺寸
 
 |      测量               |      单位指标     |      英制单位     |
 |--------------------------------|-----------------------|-------------------------|
@@ -179,7 +186,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 > - 单元：销售时装有 Hololens 2 的黑色零售型包装盒。
 > - 外部托运：设备周围的保护性运输包装。
 
-## 查找序列号
+## <a name="finding-the-serial-number"></a>查找序列号
 
 HoloLens 2 设备的序列号打印在面罩下方。
 
@@ -198,7 +205,7 @@ HoloLens 2 设备的序列号打印在面罩下方。
 
 <img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
-## 下一步
+## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
 > [设置和启动 HoloLens 2](hololens2-setup.md)
