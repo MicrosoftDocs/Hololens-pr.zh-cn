@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: b5b9568bab5afebe4ac3e9d57645c18837c71cb6
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284083"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408422"
 ---
-# 重启、重置或恢复 HoloLens 2
+# <a name="restart-reset-or-recover-hololens-2"></a>重启、重置或恢复 HoloLens 2
 
-## 给设备充电
+## <a name="charge-the-device"></a>给设备充电
 
-在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 请使用 HoloLens 2 设备附带的充电器和 USB Type-C 电缆。 设备附带的电源和 USB-C 到 C 线缆是向 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。 借助提供的壁式充电器，HoloLens 2 设备可在待机状态下在 65 分钟内将电池充满电。 如果这些附件不可用，请确保可用的充电器支持至少 15W 的功率。
+在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%。 使用 HoloLens 2 设备附带的 [充电器和 USB Type-C 电缆](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1)。 设备附带的电源和 USB-C 到 C 电缆是为 HoloLens 2 充电的最佳方式。 充电器提供 18W 的电力（9V，2A）。 借助提供的壁式充电器，HoloLens 2 设备可在待机状态下在 65 分钟内将电池充满电。 如果这些附件不可用，请确保可用的充电器支持至少 15W 的功率。
 
 > [!NOTE]
 > 如果可能，请避免使用电脑通过 USB 给设备充电（速度很慢）。
@@ -44,11 +44,11 @@ ms.locfileid: "11284083"
 
 如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后，按照[疑难解答指南](https://docs.microsoft.com/hololens/hololens-troubleshooting)进行操作。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下预先执行[硬重置程序](hololens-recovery.md#hard-reset-procedure)。 等待至少一小时，让设备充电。
 
-## 重置设备
+## <a name="reset-the-device"></a>重置设备
 
 在某些情况下，可能需要在不使用软件 UI 的情况下手动重置设备。
 
-### 标准程序
+### <a name="standard-procedure"></a>标准程序
 
 1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
@@ -60,7 +60,7 @@ ms.locfileid: "11284083"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 设备管理器](images/MicrosoftHoloLens_DeviceManager.png)
 
-### 硬重置程序
+### <a name="hard-reset-procedure"></a>硬重置程序
 
 如果标准重置程序不起作用，可使用硬重置程序：
 
@@ -73,7 +73,7 @@ ms.locfileid: "11284083"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 设备管理器 2](images/MicrosoftHoloLens_DeviceManager.png)
 
-## 对设备进行干净重刷
+## <a name="clean-reflash-the-device"></a>对设备进行干净重刷
 
 在特别情况下，可能需要对 HoloLens 2 进行干净刷写。 请注意，清理重刷预期不会引起以下问题：
 - [显示颜色一致性](hololens2-display.md)
@@ -93,7 +93,7 @@ ms.locfileid: "11284083"
 
 ![HoloLens 2 干净重刷屏幕截图](images/ARC1.png)
 
-### 正常程序
+### <a name="normal-procedure"></a>正常程序
 
 1. 在 HoloLens 设备运行期间，将其连接到你先前打开了 Advanced Recovery Companion 应用的 Windows 10 电脑。
  
@@ -103,7 +103,7 @@ ms.locfileid: "11284083"
 
 3. 在 Advanced Recovery Companion 应用 UI 中选择 HoloLens 2 设备，然后按照说明完成刷写。
 
-### 手动程序
+### <a name="manual-procedure"></a>手动程序
 
 如果 HoloLens 2 无法正常启动，可能需要将设备置于恢复模式：
 
@@ -123,7 +123,7 @@ ms.locfileid: "11284083"
 
 6. 在 Advanced Recovery Companion 应用 UI 中选择 HoloLens 2 设备，然后按照说明完成刷写。
 
-## 在不使用应用商店的情况下下载 ARC
+## <a name="download-arc-without-using-the-app-store"></a>在不使用应用商店的情况下下载 ARC
 
 如果 IT 环境阻止使用 Windows Store 应用或限制对该零售商店的访问，IT 管理员可通过“脱机”部署路径提供此应用。
 
@@ -135,9 +135,9 @@ ms.locfileid: "11284083"
 1. 转到[适用于企业的 Microsoft Store](https://businessstore.microsoft.com)，然后使用 Azure Active Directory 身份登录。
 
 1. 转到“**管理 – 设置**”。 在“**购物体验**”下打开“**显示离线应用**”。
-1. 转到“**为我的组购买**”，搜索 [**_高级恢复助手_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)。
-1. 将“_*许可证类型**”更改为“**_脱机_*”_，然后选择_*“管理”**。
-1. 在“**下载脱机使用的程序包**”下，单击第二个蓝色“**下载**”按钮。 确保文件扩展名为 *.appxbundle*。
+1. 转到“**为我的组购买**”，搜索[**_Advanced Recovery Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)应用。
+1. 将“**许可证类型**”更改为“**_脱机_*”_，然后选择_“* 管理**”。
+1. 在“**下载脱机使用的程序包**”下，选择第二个蓝色“**下载**”按钮。 确保文件扩展名为 *.appxbundle*。
 
     - 在此阶段，如果台式机可以访问互联网，请双击程序包以安装该应用。
 
