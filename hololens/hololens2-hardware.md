@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: e48e596f46aaad1b2fc79abd0fe60bd2f44bab6d
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400692"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408412"
 ---
 # <a name="hololens-2-hardware"></a>HoloLens 2 硬件
 
 ![HoloLens 2 侧视图](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。
+Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进由 HoloLens（第一代）开启的全息计算功能，通过搭配更多用于在混合现实中协作的选项，提供更舒适的沉浸式体验。 使用 HoloLens 2 需要用户帐户。
 
 ## <a name="hololens-components"></a>HoloLens 组件
 
@@ -165,9 +165,12 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 Microsoft HoloLens 2 附带标准有限 [担保](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)。 
 
-购买受 [Microsoft Store 使用条款和促销条款的遵守](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)。 
 
-通过购买 HoloLens 2，即表示你同意 [软件许可协议](https://www.microsoft.com/Useterms/)。
+购买需遵守 [Microsoft Store 使用条款和促销条款](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)。 恕不退换。 恕不退款。
+
+购买 HoloLens 2 即表示你同意 [软件许可协议](https://www.microsoft.com/Useterms/)。
+
+不适合 13 岁以下儿童使用。
 
 ## <a name="package-dimensions"></a>包装尺寸
 
