@@ -17,21 +17,21 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 003f757715ca71d459a55e6375260f3bffec7860
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283823"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11438998"
 ---
-# HoloLens 2 的受支持语言
+# <a name="supported-languages-for-hololens-2"></a>HoloLens 2 的受支持语言
 
-HoloLens 2 本地化为以下语言。 本地化功能包括语音命令和听写、键盘布局以及应用中的 OCR 识别。
+HoloLens 2 已本地化为以下语言。 本地化功能包括语音命令和听写、键盘布局和应用中的 OCR 识别。
 
 - 简体中文 (中文) 
 - 英语（澳大利亚）
 - 英语（加拿大）
-- 英国 (英国) 
+- 英语 (英国) 
 - 英语（美国）
 - 法语（加拿大）
 - 法语（法国）
@@ -46,23 +46,23 @@ HoloLens 2 还支持以下语言。 但是，此支持不包括语音命令或�
 - 荷兰语（荷兰）
 - 朝鲜语(韩国)
 
-HoloLens 2 的一些功能使用 Windows 显示语言。 Windows 显示语言会影响 Windows 和支持本地化的应用的以下设置：
+HoloLens 2 的一些功能使用 Windows 显示语言。 Windows 显示语言影响 Windows 和支持本地化的应用的以下设置：
 
 - 用户界面文本语言。
 - 语音语言。
 - 屏幕键盘的默认布局。
 
-## 更改语言或键盘布局
+## <a name="change-the-language-or-keyboard-layout"></a>更改语言或键盘布局
 
-设置过程为特定区域与语言配置 HoloLens。 可以使用"设置"的"时间和语言& **更改** 此 **配置**。
+设置过程会为 HoloLens 配置特定区域与语言。 可以使用"设置"的"时间和语言&**更改****此配置**。
 
 > [!NOTE]  
 > 你的语音和听写语言依赖于 (，并且与 Windows) 语言相同。
 
-### 更改 Windows 显示语言
+### <a name="to-change-the-windows-display-language"></a>更改 Windows 显示语言
 
-1. 打开"**开始**"菜单，然后选择"**设置**  >  **时间和语言**  >  **"。**
-2. 选择 **Windows 显示语言**，然后选择一种语言。  
+1. 打开"**开始"** 菜单，**然后选择"设置**  >  **时间和语言**  >  **"。**
+2. 选择 **"Windows 显示语言**"，然后选择一种语言。  
 
 如果要查找的支持语言不在菜单中，请按照以下步骤操作：  
 
@@ -70,13 +70,13 @@ HoloLens 2 的一些功能使用 Windows 显示语言。 Windows 显示语言会
 2. 找到并添加语言。
 3. 再次 **选择 Windows 显示语言** 菜单，然后选择在上一步中添加的语言。
 
-### 更改键盘布局
+### <a name="to-change-the-keyboard-layout"></a>更改键盘布局
 
-若要添加或删除键盘布局，请打开"开始****"菜单，然后选择"设置**** 时间&  >  **语言**  >  **键盘**。
+若要添加或删除键盘布局，请打开"开始****"菜单，然后选择"设置**** 时间&  >  **语言**  >  **键盘"。**
 
-如果你的 HoloLens 具有多个键盘布局，请使用 **布局** 键在它们之间切换。 布局 **键** 位于屏幕键盘的右下角。
+如果你的 HoloLens 具有多个键盘布局，请使用 **Layout** 键在它们之间切换。 布局 **键** 位于屏幕键盘的右下角。
 
 > [!NOTE]  
-> 屏幕键盘可以使用输入法编辑器 (输入) 输入中文等语言的字符。 但是，HoloLens 不支持使用 IME Bluetooth外部键盘。
+> 屏幕键盘可以使用输入法编辑器 (输入) 输入日语等语言字符。 但是，HoloLens 不支持Bluetooth输入法的外部键盘。
 >  
-> 将 IME 与屏幕键盘一同使用时，可以继续使用 Bluetooth 键盘键入英语。 若要在键盘之间切换，请按 tilde 字符按钮 **~** () 。
+> 将 IME 与屏幕键盘一同使用时，可以继续使用Bluetooth键盘键入英语。 若要在键盘之间切换，请按 tilde 字符按钮 **~** () 。

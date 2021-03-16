@@ -12,18 +12,18 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283913"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439038"
 ---
-# 重启、重置或恢复 HoloLens（第 1 代）
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>重启、重置或恢复 HoloLens（第 1 代）
 
 如果你的 HoloLens 出现问题，你可能想尝试重新启动或重置，甚至通过使用设备恢复来刷新设备。 本文将按顺序指导你完成建议的恢复步骤。
 
@@ -32,9 +32,9 @@ ms.locfileid: "11283913"
 > [!NOTE]
 > 本文重点介绍 HoloLens 设备和软件。 如果全息影像不正确，请参阅 **[HoloLens 环境注意事项](hololens-environment-considerations.md)**，了解有关改进全息质量因素的信息。
 
-## “重新启动”
+## <a name="restart"></a>“重新启动”
 
-### 使用 Cortana 执行安全重启
+### <a name="do-a-safe-restart-by-using-cortana"></a>使用 Cortana 执行安全重启
 
 重新启动 HoloLens 的最安全方法是使用 Cortana，这通常是在遇到 HoloLens 问题时首先要尝试的方法。
 
@@ -48,7 +48,7 @@ ms.locfileid: "11283913"
 2. 说“你好小娜，请重启”。
 3. Cortana 会回复并提示您确认。 提问后等待播放声音，然后说“是”。 设备将启动。
 
-### 使用“电源”按钮执行安全重启
+### <a name="use-the-power-button-to-do-a-safe-restart"></a>使用“电源”按钮执行安全重启
 
 如果仍然无法重启设备，可尝试使用**电源**按钮进行重启：
 
@@ -59,14 +59,14 @@ ms.locfileid: "11283913"
 1. 等待 1 分钟以完成关闭。 即使屏幕关闭后，关机也可能仍在进行中。
 2. 通过按住**电源**按钮 1 秒钟，重新打开设备。
 
-### 使用 Windows 设备门户执行安全重启
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>使用 Windows 设备门户执行安全重启
 
 > [!NOTE]
 > 为此，必须将 HoloLens 配置为开发人员设备。 阅读有关 [Windows 设备门户](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)的详细信息。
 
 如果以上程序不起作用，可尝试使用 [Windows 设备门户](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)来重新启动设备。 在右上角，可查找重启或关闭设备的选项。
 
-### 执行不安全强制重启
+### <a name="do-an-unsafe-forced-restart"></a>执行不安全强制重启
 
 如果以前的方法没有重新启动 HoloLens，请强制重新启动。 此方法等同于取下并重新安装电池。 这很危险，因为它可能会使您的设备处于损坏状态。 如果发生这种情况，则必须刷写 HoloLens。  
 
@@ -80,7 +80,7 @@ ms.locfileid: "11283913"
 1. 按住**电源**按钮 1 秒。
 1. 如果仍有问题，请按住**电源**按钮 4 秒钟，直至所有电池指示灯熄灭，且屏幕停止显示全息影像。 等待 1 分钟，然后再次按下**电源**按钮以打开设备。
 
-## 重置为出厂设置
+## <a name="reset-to-factory-settings"></a>重置为出厂设置
 
 > [!NOTE]
 > 电池电量至少达到 40% 才能进行重置。
@@ -95,7 +95,7 @@ ms.locfileid: "11283913"
 1. 确认重置。 设备将重新启动并显示一组旋转的齿轮和一个进度栏。
 1. 等待约 30 分钟，直至该过程完成。 完成时，设备将重启进入开箱即用体验。
 
-## 重新安装操作系统
+## <a name="reinstall-the-operating-system"></a>重新安装操作系统
 
 如果设备在重启和重置后仍然存在问题，可在计算机上使用恢复工具重装 HoloLens 的操作系统和固件。  
 
@@ -107,7 +107,7 @@ HoloLens 重置所需的数据封装在映像刷写工具（FFU）中，它与 .
 
 若要使用此工具，需要使用运行 Windows 10 或更高版本的计算机，其中至少有 4 GB 的可用存储空间。 不能在虚拟机上运行此工具。
 
-### 恢复 HoloLens
+### <a name="recover-your-hololens"></a>恢复 HoloLens
 
 1. 在你的计算机上，下载并安装 [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq)。
 1. 通过使用 HoloLens 随附的 Micro USB 电缆将 HoloLens（第 1 代）连接到计算机。
@@ -115,7 +115,7 @@ HoloLens 重置所需的数据封装在映像刷写工具（FFU）中，它与 .
 
 如果未自动检测到 HoloLens（第一代），请选择“**未检测到我的设备**”。 然后按照说明将设备置于恢复模式。
 
-### 手动刷写模式
+### <a name="manual-flashing-mode"></a>手动刷写模式
 
 如果未检测到设备，请按照以下步骤将其置于闪烁模式：
 

@@ -6,24 +6,24 @@ ms.sitesec: library
 author: JesseMcCulloch
 ms.author: jemccull
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 8/12/2019
 ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 0361af22fa6d84f636b841f6a311edcdace5a937
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 30912fda53d5d8b9ea5e60f29eeb93ea29cca2d2
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283163"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439078"
 ---
-# 准备好使用你的 HoloLens（第一代）
+# <a name="get-your-hololens-1st-gen-ready-to-use"></a>准备好使用你的 HoloLens（第一代）
 
 按照本文的指示首次设置 HoloLens（第一代）。
 
-## 给 HoloLens（第一代）充电
+## <a name="charge-your-hololens-1st-gen"></a>给 HoloLens（第一代）充电
 
 若要为 HoloLens 充电，请使用随附的微型 USB 电缆将电源连接到充电端口。 然后，将电源插入电源插座。 当设备充电时，电池指示灯会以波形点亮。
 
@@ -38,7 +38,7 @@ ms.locfileid: "11283163"
 
 充电率和充电速度可能因设备运行环境而异。
 
-## 调整到合适
+## <a name="adjust-fit"></a>调整到合适
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
@@ -50,7 +50,7 @@ ms.locfileid: "11283163"
 |4. 拿住设备的设备臂，将其戴到头上。 确保头带位于前额顶部，然后拧紧调节轮。|![第四步，戴上设备并调整头带](./images/FitGuideStep4.png)|
 |5. 向后滑动面罩，然后检查设备的位置是否合适。 头带应该位于前额顶部，刚好在发际线下方，扬声器位于耳朵上方。 透镜应位于眼睛的中心。|![第五步，向后滑动面罩并检查是否合适](./images/FitGuideSetep5.png)|
 
-## 打开 HoloLens
+## <a name="turn-on-your-hololens"></a>打开 HoloLens
 
 使用电源按钮打开和关闭 HoloLens，或将其置于待机模式。
 
@@ -63,25 +63,25 @@ ms.locfileid: "11283163"
 > [!TIP]
 > 若要重启 HoloLens，请说“你好小娜，重新启动设备”。
 
-### 将 HoloLens 置于待机状态
+### <a name="put-hololens-in-standby"></a>将 HoloLens 置于待机状态
 
 若要在 HoloLens 打开时将其置于待机状态，请按电源按钮一次。 电池指示灯闪烁。 若要将其从待机状态唤醒，请再次按电源按钮。
 
 处于非活动状态 3 分钟后，HoloLens 将自动进入待机状态。 当设备处于待机状态 4 小时后，将自动关闭，或在电池电量下降 10% 后自动关闭。
 
-### 关闭 HoloLens
+### <a name="shut-down-hololens"></a>关闭 HoloLens
 
 若要关闭 HoloLens，请按住电源按钮 4 秒钟。 电池指示灯逐一熄灭，设备关闭。
 
 当电池电量下降到百分之一时，即使已接通电源，HoloLens 也会自动关闭。 将电池充电到 3% 后，便能够再次打开 HoloLens。
 
-## 调整音量和亮度
+## <a name="adjust-volume-and-brightness"></a>调整音量和亮度
 
 “亮度”和“音量”按钮位于设备臂顶部&mdash;右侧为音量，左侧为亮度。
 
 ![显示 HoloLens 按钮的图像](./images/hololens-buttons.jpg)
 
-## HoloLens 指示灯
+## <a name="hololens-indicator-lights"></a>HoloLens 指示灯
 
 ![显示 HoloLens 指示灯的图像](./images/hololens-lights.png)
 
@@ -97,13 +97,13 @@ ms.locfileid: "11283163"
 |全部亮起，然后一个灯短暂闪烁，然后全部关闭。 |电池电量严重不足。 HoloLens 需要充电。 |
 |全部滚动，然后一个灯闪烁，然后全部滚动。 |电池电量严重不足。 HoloLens 正在充电。 |
 
-## 安全和舒适
+## <a name="safety-and-comfort"></a>安全和舒适
 
-### 在安全环境中使用
+### <a name="use-in-safe-surroundings"></a>在安全环境中使用
 
 在没有障碍物和绊倒危险的安全空间中使用 HoloLens。 如果你需要视野清晰且全神贯注，例如当你驾驶车辆或从事其他可能有危险的活动时，请不要使用它。
 
-### 保持舒适
+### <a name="stay-comfortable"></a>保持舒适
 
 通过 HoloLens 进行的前几次互动要简短，并且中间一定要休息。 如果觉得不舒服，请停下休息，感觉好些后再继续。 这可能包括暂时的恶心、晕车、头晕、迷失方向、头痛、疲劳、眼疲劳或干眼。
 
