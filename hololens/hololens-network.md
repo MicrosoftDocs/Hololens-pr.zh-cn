@@ -10,51 +10,55 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 6d11ae0907aa82df71d7c86bb37996dcce71d845
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f1968afe7d450425776bac24532f2d84c4dc3c62
+ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283973"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442585"
 ---
-# 将 HoloLens 连接到网络
+# <a name="connect-hololens-to-a-network"></a>将 HoloLens 连接到网络
 
-要想在 HoloLens 上进行更多操作，则必须连接到网络。 本指南将帮助你：
+要想在 HoloLens 上进行更多操作，则必须连接到网络。 HoloLens 包含支持 802.11ac 的 2x2 Wi-Fi 无线电，将其连接到网络类似于将 Windows 10 台式机或移动设备连接到 Wi-Fi 网络。 本指南将帮助你：
 
 - 使用 WLAN 或以太网通过 USB-C（仅适用于 HoloLens 2）连接到网络
 - 禁用并重新启用 WLAN
 
 了解[脱机使用 HoloLens](hololens-offline.md)的更多信息。
 
-## 首次连接
+## <a name="connecting-for-the-first-time"></a>首次连接
 
-首次使用 HoloLens 时，系统会指导你连接到 WLAN 网络。 如果在设置期间连接到 WLAN 时遇到问题，请确保你的网络是开放网络、受密码保护网络或者强制门户网络。 确保不需要使用证书就能连接网络。 完成设置后，你可以连接到其他类型的 WLAN 网络。
+首次使用 HoloLens 时，系统会指导你连接到 WLAN 网络。 如果在设置期间连接到 WLAN 时遇到问题，请确保你的网络是开放网络、受密码保护网络或者强制门户网络。 另外确认网络不需要使用证书进行连接。 完成设置后，你可以连接到其他类型的 WLAN 网络。
 
-在 HoloLens 2 设备上，用户也可以[使用 USB-C 以太网适配器](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)直接连接到 Wi-Fi，帮助协助设置设备。 设置好设备后，用户可以继续使用该适配器，或者可将设备从适配器断开，并且[在设置完毕后连接到 wi-fi](hololens-network.md#connecting-to-wi-fi-after-setup)。 
+在 HoloLens 2 设备上，用户也可以[使用 USB-C 以太网适配器](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)直接连接到 Wi-Fi，帮助协助设置设备。 设置好设备后，用户可以继续使用该适配器，或者可将设备从适配器断开，并且[在设置完毕后连接到 Wi-Fi](hololens-network.md#connecting-to-wi-fi-after-setup)。 
 
-## 设置完成后连接到 WLAN
+## <a name="connecting-to-wi-fi-after-setup"></a>设置完成后连接到 WLAN
 
 1. 执行**开始手势**并选择**设置**。 “设置”应用将自动放置在你面前。
 1. 选择**网络和 Internet** > **WLAN**。 确保 WLAN 已打开。 如果未看到你的网络，请向下滚动列表。
 1. 选择一个网络，然后选择**连接**。
 1. 如果系统提示你输入网络密码，请键入密码，然后选择**下一步**。
 
-HoloLens 包含一个支持 802.11ac 的 2x2 WLAN 无线电收发器。 将 HoloLens 连接到 WLAN 网络的过程类似于将 Windows 10 桌面或移动设备连接到 WLAN 网络。
+![HoloLens WLAN 设置](./images/hololens-2-wifi-settings.jpg)
 
-![HoloLens WLAN 设置](./images/wifi-hololens-600px.jpg)
-
-你还可以通过检查**开始**菜单中的 WLAN 状态来确认是否连接到 WLAN 网络：
+如果要确认已连接至 Wi-Fi 网络，请在**开始**菜单中检查 Wi-Fi 状态：
 
 1. 打开**开始**菜单。
 1. 查看**开始**菜单左上方的 WLAN 状态。 那里将显示 WLAN 状态和已连接网络的 SSID。
 
-## Wi-Fi 连接故障排除
+> [!TIP]
+> 如果 Wi-Fi 不可用，还可以 [连接到手机网络和 5G 网络](https://docs.microsoft.com/hololens/hololens-cellular)。
+
+> [!IMPORTANT]
+> 根据设计，用户无法微调 HoloLens 2 Wi-Fi 漫游行为 - 刷新 **Wi-Fi**列表的唯一方法就是将 Wi-Fi 切换为关闭和打开。 此操作可以防止出现许多问题，例如一旦设备超出范围，设备仍可以“卡在” AP上。
+
+## <a name="troubleshooting-your-connection-to-wi-fi"></a>Wi-Fi 连接故障排除
 
 如果连接到 Wi-fi 时遇到问题，请参阅“[无法连接到 Wi-fi](./hololens-faq.md#i-cant-connect-to-wi-fi)”。
 
 在设备上登录到企业或组织账户时，如果策略由 IT 管理员配置，也可能应用移动设备管理（MDM）策略。
 
-## 将 HoloLens 连接到企业 Wi-Fi 网络
+## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>将 HoloLens 连接到企业 Wi-Fi 网络
 
 企业 Wi-Fi 配置文件使用可扩展的身份验证协议 (EAP) 对 Wi-Fi 连接进行身份验证。 HoloLens 企业 Wi-Fi 配置文件可以通过使用 [Windows 配置设计器](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)创建的 MDM 或预配程序包进行配置。
 
@@ -129,7 +133,7 @@ HoloLens 包含一个支持 802.11ac 的 2x2 WLAN 无线电收发器。 将 Holo
 - WLANv1Profile 架构：[[MS-GPWL]：无线 LAN 配置文件 V1 架构 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS 架构：[[MS-GPWL]：MICROSOFT EAP TLS 架构 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-### EAP 疑难解答
+### <a name="eap-troubleshooting"></a>EAP 疑难解答
 
 1. 仔细检查 Wi-Fi 配置文件具有适当的设置：
    1. EAP 类型配置正确，常见 EAP 类型：EAP-TLS (13)、EAP-TTLS (21) 和 PEAP (25)。
@@ -142,10 +146,10 @@ HoloLens 包含一个支持 802.11ac 的 2x2 WLAN 无线电收发器。 将 Holo
 1. 如果企业配置文件是通过 Wi-Fi 预配程序包预配的，请考虑在 Windows 10 电脑上应用预配程序包。 如果在 Windows 10 电脑上也失败，请按照 [Windows 客户端 802.1X 身份验证疑难解答指南](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)进行操作。
 1. 通过[反馈中心](https://docs.microsoft.com/hololens/hololens-feedback)向我们发送反馈。
 
-### 其他资源：
+### <a name="additional-resources"></a>其他资源：
 - [从 Windows 设备导出 Wi-Fi 设置](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
-## VPN
+## <a name="vpn"></a>VPN
 VPN 连接可以帮助提供更安全的连接，并可访问公司网络和 Internet。 HoloLens 2 支持内置 VPN 客户端和通用 Windows 平台 (UWP) VPN 插件。 
 
 支持的内置 VPN 协议：
@@ -159,7 +163,7 @@ VPN 连接可以帮助提供更安全的连接，并可访问公司网络和 Int
 
 参阅[这些指南](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)，了解有关[如何配置 VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn) 的详细信息。  
 
-### VPN（通过 UI）
+### <a name="vpn-via-ui"></a>VPN（通过 UI）
 
 VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导航到“**网络和 Internet”->“VPN**”来手动启用。
 1. 选择 VPN 提供商。
@@ -172,7 +176,7 @@ VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导
 
 ![HoloLens VPN 设置](./images/vpn-settings-ui.jpg)
 
-### 通过预配程序包进行 VPN 设置
+### <a name="vpn-set-via-provisioning-package"></a>通过预配程序包进行 VPN 设置
 
 > [!TIP] 
 > 在我们的 Windows 全息版 20H2 中，我们修复了 VPN 连接的代理配置问题。 如果你打算使用此流程，请考虑将设备升级到此内部版本。
@@ -191,7 +195,7 @@ VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导
 1. 在 HoloLens 上，通过打开“开始”菜单并选择“**设置**” -> “**帐户**” -> “**访问工作单位或学校**” -> “**添加或删除预配程序包**”-> 选择你的 VPN 程序包，来应用 VPN .ppkg。
 
 
-### 通过 Intune 设置 VPN
+### <a name="setting-up-vpn-via-intune"></a>通过 Intune 设置 VPN
 只需按照 Intune 文档开始。 按照这些步骤操作时，请记住 HoloLens 设备支持的内置 VPN 协议。 
 
 [创建 VPN 配置文件以连接到 Intune 中的 VPN 服务器](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)。
@@ -200,7 +204,7 @@ VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导
 
 完成后，请记得[分配配置文件](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)。
 
-### 通过第三方 MDM 解决方案的 VPN
+### <a name="vpn-via-3rd-party-mdm-solutions"></a>通过第三方 MDM 解决方案的 VPN
 第三方 VPN 连接示例：
 ```xml
 <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
@@ -290,9 +294,9 @@ VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导
         </Item>
       </Add>
 ```
-## 在 HoloLens（第一代）上禁用 WLAN
+## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>在 HoloLens（第一代）上禁用 WLAN
 
-### 在 HoloLens 上使用“设置”应用
+### <a name="using-the-settings-app-on-hololens"></a>在 HoloLens 上使用“设置”应用
 
 1. 打开**开始**菜单。
 1. 从**开始**菜单或**开始**菜单右侧的**所有应用**列表中选择**设置**。 **设置**应用将自动放置在你面前。
@@ -304,9 +308,9 @@ VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导
 
 1. 将滑块开关移至**打开**位置，打开 WLAN 无线电收发器，并在 Microsoft HoloLens 上恢复 WLAN 功能。 选定的 WLAN 无线电收发器状态（**打开**或**关闭**）将在重启后保持原状态。
 
-## 识别你的 HoloLens 在 WLAN 网络上的 IP 地址
+## <a name="identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network"></a>识别你的 HoloLens 在 WLAN 网络上的 IP 地址
 
-### 通过使用“设置”应用
+### <a name="by-using-the-settings-app"></a>通过使用“设置”应用
 
 1. 打开**开始**菜单。
 1. 从**开始**菜单或**开始**菜单右侧的**所有应用**列表中选择**设置**。 **设置**应用将自动放置在你面前。
@@ -317,11 +321,11 @@ VPN 默认情况下未启用，但可以通过打开“**设置**”应用并导
 
    IP 地址出现在 **IPv4 地址**旁边。
 
-### 通过使用语音命令
+### <a name="by-using-voice-commands"></a>通过使用语音命令
 
 根据设备版本，可使用内置语音命令或 Cortana 来显示你的 IP 地址。 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 之后的版本，请说“我的 IP 地址是什么？” 然后它会显示。 对于较早的版本或 HoloLens (第一代)，请说“你好小娜，我的 IP 地址是什么？” Cortana 便会显示并读出你的 IP 地址。
 
-### 通过使用 Windows 设备门户
+### <a name="by-using-windows-device-portal"></a>通过使用 Windows 设备门户
 
 1. 在电脑上的 Web 浏览器中，打开[设备门户](/windows/mixed-reality/using-the-windows-device-portal.md#networking)。
 1. 导航到**网络**部分。  
