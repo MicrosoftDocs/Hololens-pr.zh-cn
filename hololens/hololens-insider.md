@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 3/4/2021
+ms.date: 04/01/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
-ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
+ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
+ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470060"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474837"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 内部预览版
 
@@ -167,12 +167,15 @@ ms.locfileid: "11470060"
 - "看到它，说它"
 - 打印
 
-**热门已知浏览器问题：**
-- 重置设备将删除新的 Microsoft Edge
-- 全息键盘中的放大镜预览显示不正确的内容
-- 滚动有时可能会不流畅
+**浏览器已知问题：**
+- Wi-Fi代理配置（即面向单个用户连接的Wi-Fi策略）当前不能与新的 Microsoft Edge 一起使用。 We're actively working to unblock this issue before public release of the OS update.
+- 已针对新的 Microsoft Edge 禁用全息键盘中的放大镜预览。 我们希望在放大正常工作后，在未来更新中重新启用此功能。
+- 日语键盘上的两个字符不能像新版 Microsoft Edge 中的预期一样工作。 This issue has been root caused and should be fixed soon.
 - Microsoft Store 应用中的 Web 链接可能无法启动浏览器
-- 如果之前从不同的浏览器窗口播放过音频，则可能会从错误的浏览器窗口播放音频
+- 如果您打开了另一个浏览器窗口并处于活动状态，则可能会从错误的浏览器窗口播放音频。 可以通过关闭其他不该播放音频的活动窗口来解决此问题。
+- 在"关注我"模式下从浏览器[](hololens2-basic-usage.md#follow-me-stop-following)窗口播放音频时，如果禁用"关注我"模式，音频将继续播放。 可以通过在禁用"关注我"模式之前停止音频播放，或者使用 **X** 按钮关闭窗口来解决此问题。
+- 与活动的 Microsoft Edge 窗口交互可能会导致其他 2D 应用窗口意外变为非活动状态。 可以通过再次与窗口交互来重新激活这些窗口。
+- 从另一个应用或某些类型的文档（如 PDF）打开 Web 链接可能会导致在浏览器 (中打开第二个空白选项卡，此外，还可能会导致使用 Web 链接或文件链接) 的内容创建的新选项卡。 可以通过关闭其他空白选项卡来解决此问题。
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge 预览体验成员频道
 
@@ -249,16 +252,14 @@ Microsoft Edge 团队向 Edge 预览体验成员社区提供三个预览频道�
 1. [空敲](hololens2-basic-usage.md#select-using-air-tap) 以打开播放控件。 使用 [手部](hololens2-basic-usage.md#select-using-air-tap) 光线和空敲击播放/暂停、跳过前进/后退、打开/关闭描述文字或停止体验 (退出沉浸式视图) 。 在几秒钟的不活动状态后，播放控件将消失。
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>热门 WebXR 和 360 Viewer 已知问题
-- 在 WebXR 体验中，当你倾斜头部或四处移动时，全息影像可能会移动或倾斜。
 - 根据 WebXR 体验的复杂性，帧速率可能会下降或断断续续。
-- WebXR 中尚不可用手部连接。
+- 默认情况下，不支持 WebXR 中的手部连接。 开发人员可以通过打开 `edge://flags` "WebXR 手输入"来启用支持。
 - 退出 WebXR 或 360 查看器体验时，混合现实主页中的全息影像可能需要 30 秒或更多时间重新出现。
 - YouTube 外的其他网站的 360 个视频可能无法正常工作。
-- 如果 360 个视频未进入沉浸式 (或混合现实头戴显示设备按钮未) ，请尝试刷新页面。
-- 标题在 HoloLens 2 上的 360 查看器中尚不可见。
+- 当前在 HoloLens 2 上的 360 查看器中禁用了标题。 我们计划在将来的更新中启用此功能。
 - 在 360 查看器中暂停视频会阻止视频呈现 (但选择播放按钮会正确恢复) 。
 - 360 Viewer 中的"下一个视频"按钮当前不起作用。
-- 可以在沉浸式"theater"模式下播放 2D 视频，但帧速率将小于 30 fps。
+- 可以在沉浸式"theater"模式下播放 2D 视频，但帧速率可能小于 30 fps。
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>在 WebXR 和 360 查看器上提供反馈
 
@@ -337,11 +338,8 @@ Please share feedback and bugs with our team via the **Send Feedback** feature i
 
 #### <a name="top-display-color-calibration-known-issues"></a>顶部显示颜色校准已知问题
 
-- 在"设置"页上，在重新加载"设置"页之前，告知您上次更改颜色配置文件时间的状态字符串将过期。 
+- 在"设置"页上，在重新加载该"设置"页之前，告知您上次更改颜色配置文件时间的状态字符串将过期。
     - 解决方法：选择另一个"设置"页，然后重新选择"校准"页。
-- 如果 HoloLens 2 在运行显示颜色校准时进入睡眠状态，它稍后将恢复为混合现实空间，并且你的屏幕亮度级别仍将变暗。
-- 你可能需要尝试按设备左侧的亮度按钮向上/向下几次，然后它们才能按预期工作。
-- 并非所有市场都完成本地化
 
 ### <a name="default-app-picker"></a>默认应用选取器
 
@@ -360,6 +358,9 @@ Please share feedback and bugs with our team via the **Send Feedback** feature i
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### <a name="office-web-app"></a>Office Web 应用
+
+>[!NOTE]
+>从 Windows 预览体验成员版本 20325.1000 开始，Office Web 应用将不再预安装 (并且不会为即将发布的操作系统更新公开版本预安装。 若要安装 Office Web 应用，请访问地址栏中的"应用可用"或" https://www.office.com **安装 Office"** 按钮。 **** 选择 **"安装** "以确认。
 
 Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中。 此 Web 应用还可以固定到"开始"或卸载。 由于这是一个 Web 应用，其功能与通过访问 体验完全匹配 https://www.office.com 。 只有当 HoloLens 2 具有活动的 Internet 连接时，Office Web 应用功能才可用。
 
@@ -585,9 +586,15 @@ Office Web 应用已添加到"开始"菜单中的"所有应用程序"列表中�
 
 - [脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics) 还将包含序列号和操作系统版本的其他设备信息。
 
+### <a name="known-issues-and-work-around"></a>已知问题和解决问题
 
+#### <a name="pairing-hololens-to-pc"></a>将 HoloLens 与电脑配对
 
+在 Windows 预览体验成员版本 20325.1000 之前，当用户在 Windows 全息版 [20H2](hololens-release-notes.md#windows-holographic-version-20h2) 或 [Windows 全息版版本 2004](hololens-release-notes.md#windows-holographic-version-2004) 上设置了配对凭据并更新到 Windows 预览体验成员版本时，他们之前设置的用于将 HoloLens 与电脑配对以用于部署和调试应用（如通过 Visual Studio）的凭据将不再有效。 Windows 预览体验成员版本 20325.1000 修复了此问题，无需执行任何其他操作来恢复使用设备门户。
 
+使用预览体验[](#ffu-download-and-flash-directions)成员版本刷过其设备的用户现在需要将设备 (重新放大为 20325.1000+ 或 GA 版本) ，以便将设备与电脑配对。
+
+未注册 Windows 预览体验成员并且将在功能更新发布时进行更新的用户不会受到影响。
 
 
 ## <a name="start-receiving-insider-builds"></a>开始接收预览体验成员版本
