@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406768"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470060"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 内部预览版
 
@@ -79,7 +79,7 @@ ms.locfileid: "11406768"
 
 [**改进的展台模式故障帮助**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-此更新现在可使设备受到展台模式的更多控制，从而允许设备回退到不同类型的展台，然后再呈现一个空展台。 虽然这不可管理，但如果使用展台的方式可能适用于你的配置，这可能要通知支持部门。
+如果登录 AAD 用户的 AAD 组成员身份未成功确定，则全局展台配置用于"开始"菜单 (如果存在) 则向用户显示空的"开始"菜单。 尽管空的"开始"菜单不是你可以直接设置的配置，但如果使用展台，则新的处理方法可能会通知支持部门，因为这可能适用于你的配置，或者你可能希望对分配的访问权限配置进行新的调整。
 
 #### <a name="updates-to-page-settings-visibility"></a>页面设置可见性更新
 
@@ -109,7 +109,7 @@ ms.locfileid: "11406768"
 - [新的操作系统更新疑难解答程序](#new-os-update-troubleshooter)
   - 收集与操作系统更新相关的日志
 
-### <a name="introducing-the-new-microsoft-edge"></a>引入新的 Microsoft Edge
+### <a name="introducing-the-new-microsoft-edge"></a>推出新的 Microsoft Edge
 
 ![新 Microsoft Edge 徽标的旧 Microsoft Edge 徽标动画](images/new-edge.gif)
 
