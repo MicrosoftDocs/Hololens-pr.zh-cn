@@ -1,84 +1,84 @@
 ---
 title: 参与说明
-description: 了解如何使用 GitHub 风格 Markdown 为 docs.microsoft.com 平台上的 HoloLens 文档做贡献。
+description: 了解如何使用 GitHub-风格 Markdown 在 docs.microsoft.com 平台上参与 HoloLens 文档。
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283654"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308328"
 ---
-# 为 HoloLens 文档做贡献
+# <a name="contributing-to-the-hololens-documentation"></a>针对 HoloLens 文档
 
-欢迎使用 [HoloLens 文档](https://github.com/MicrosoftDocs/Hololens)！ 在此存储库创建或编辑的任何文章 **都将对公众可见。** 
+欢迎使用 [HoloLens 文档](https://github.com/MicrosoftDocs/Hololens)！ 在此存储库中创建或编辑的任何项目 **都将对公共可见。** 
 
-HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风格 Markdown 与 Markdig 功能一起使用。 在此存储库编辑的内容格式化为样式化页面，显示在 https://docs.microsoft.com/hololens 。 
+HoloLens 文档显示在 docs.microsoft.com 平台上，该平台使用带有 Markdig 功能的 GitHub 风格 Markdown。 在此存储库中编辑的内容将格式化为显示在中的样式页面 https://docs.microsoft.com/hololens 。 
 
-此页面介绍有关提供 Markdown 基础知识和链接的基本步骤和指南。 感谢您的贡献！
+此页介绍了用于贡献和链接到 Markdown 基础知识的基本步骤和指导原则。 感谢你的参与！
 
-## 可用 repos
+## <a name="available-repos"></a>可用存储库
 
 | 存储库名称 | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| 混合现实 | [MicrosoftDocs/mixed-reality](https://docs.microsoft.com/windows/mixed-reality) |
-| VR Enthusiasts 指南 | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| 混合现实 | [MicrosoftDocs/mixed-现实](https://docs.microsoft.com/windows/mixed-reality) |
+| VR 爱好者指南 | [MicrosoftDocs/混合-现实/发烧-指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
-## 准备工作
+## <a name="before-you-start"></a>开始之前
 
-如果还没有帐户，则需要创建 [GitHub 帐户](https://github.com/join)。
+如果还没有，则需要 [创建一个 GitHub 帐户](https://github.com/join)。
 
 >[!NOTE]
->如果你是 Microsoft 员工，将 GitHub 帐户链接到 Microsoft 开放源代码门户 [上的 Microsoft 别名](https://repos.opensource.microsoft.com/)。 加入 **"Microsoft"和****"MicrosoftDocs"** 组织。
+>如果你是 Microsoft 员工，请将你的 GitHub 帐户链接到 [Microsoft 开源门户](https://repos.opensource.microsoft.com/)上的 microsoft 别名。 加入 **"Microsoft"** 和 **"MicrosoftDocs"** 组织。
 
-设置 GitHub 帐户时，我们还建议采取以下安全预防措施：
-- 为 [GitHub 帐户创建强密码](https://github.com/settings/admin)。
-- 启用 [双重身份验证](https://github.com/settings/two_factor_authentication/configure)。
-- 将 [恢复代码保存在](https://github.com/settings/auth/recovery-codes) 安全的位置。
-- 更新 [公共配置文件设置](https://github.com/settings/profile)。
-   - 设置你的姓名，并考虑将*公用电子邮件*设置为 *"不显示我的电子邮件地址"。*
-   - 建议上传个人资料图片，因为缩略图显示在你参与的文档页面上。
-- 如果计划使用命令行，请考虑为 Windows 设置 [Git 凭据管理器](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)。 这样，你每次进行贡献时就不需要输入密码。
+设置 GitHub 帐户时，我们还建议采用以下安全预防措施：
+- [为 GitHub 帐户创建强密码](https://github.com/settings/admin)。
+- 启用 [双因素身份验证](https://github.com/settings/two_factor_authentication/configure)。
+- 将 [恢复代码](https://github.com/settings/auth/recovery-codes) 保存在安全的位置。
+- 更新 [公用配置文件设置](https://github.com/settings/profile)。
+   - 设置你的名称，并考虑将你的 *公用电子邮件* 设置为 *不显示我的电子邮件地址*。
+   - 建议你上载个人资料图片，因为你所涉及的文档页面上会显示缩略图。
+- 如果计划使用命令行，请考虑设置 [适用于 Windows 的 Git 凭据管理器](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)。 这样，每次发布时都无需输入密码。
 
-发布系统与 GitHub 关联，因此这些步骤非常重要。 使用 GitHub 别名将你列为每篇文章的作者或参与者。
+发布系统与 GitHub 相关联，因此这些步骤非常重要。 将使用 GitHub 别名作为每个项目的作者或参与者列出。
 
-## 编辑现有文章
+## <a name="editing-an-existing-article"></a>编辑现有项目
 
-使用以下工作流在 Web 浏览器中通过** GitHub 更新现有文章：
+使用以下工作流，在 web 浏览器中通过 GitHub 对 *现有文章* 进行更新：
 
-1. 导航到想要在"mixed-reality-docs"文件夹中编辑的文章。
+1. 导航到要在 "混合现实-文档" 文件夹中编辑的项目。
 
-2. 选择右上角 (铅笔) 图标的编辑按钮，该图标将自动将可释放的分支从"master"分支中分叉。
+2. 选择右上方的 "编辑" 按钮 (铅笔图标) ，它将自动从 "master" 分支中派生出可释放分支。
 
-   ![编辑文章。](images/editpage.png)
+   ![编辑项目。](images/editpage.png)
    
-3. 根据 ["Markdown](#markdown-basics)基础知识"编辑文章的内容。
+3. 根据 ["Markdown 基础知识"](#markdown-basics)编辑项目内容。
 
-4. 更新每篇文章顶部的元数据：
+4. 更新每个项目顶部的元数据：
 
-   * **title**： 查看文章时显示在浏览器选项卡中的页面标题。 页面标题用于 SEO 和索引编制，因此除非有必要，否则不要更改标题 (尽管这不太关键，然后再将文档公开) 。
-   * **description：** Write a brief description of the article's content， which boosts SEO and discovery.
-   * **author**： If you're the primary owner of the page， add your GitHub alias here.
-   * **ms.author：** 如果你是页面的主要所有者，请在此处添加 Microsoft 别名 (无需 @microsoft.com，只需别名) 。
-   * **ms.date：** Update the date if you're adding major content to the page， but not for fixes like clarification， formatting， grammar， or spelling.
-   * **关键字：** 关键字有助于 SEO (搜索引擎优化) 。 添加关键字，用逗号和空格分隔，这些关键字特定于您的文章，但列表中最后一个关键字后面没有标点符号。 无需添加适用于所有文章的全局关键字，因为这些关键字在其他地方进行管理。 
+   * **标题**：查看项目时浏览器选项卡中显示的页面标题。 页面标题用于 SEO 和编制索引，因此，除非必要，否则请不要更改标题，因为这在文档公开) 之前不太重要 (。
+   * **说明**：编写文章内容的简短描述，这会提高 SEO 和发现。
+   * **作者**：如果你是页面的主要所有者，请在此处添加你的 GitHub 别名。
+   * **女士**：如果你是页面的主要所有者，请在此处添加你的 Microsoft 别名 (你不需要 @microsoft.com ，只是别名) 。
+   * " **ms**"：如果向页面中添加主要内容，则更新日期，但不将其用于修补，如说明、格式、语法或拼写。
+   * **关键字**： SEO 中的关键字帮助 (搜索引擎优化) 。 添加特定于您的项目的关键字，并用逗号和空格分隔，但列表中最后一个关键字之后没有标点。 无需添加适用于所有项目的全局关键字，因为在其他位置托管这些项目。 
    
-5. 完成文章编辑后，向下滚动并选择"建议**文件更改"。**
+5. 完成文章编辑后，向下滚动并选择 " **建议文件更改**"。
 
-6. 下一页上，选择 **"创建拉取请求** "，将自动创建的分支合并到"主控"中。
+6. 在下一页上，选择 " **创建拉取请求** " 将自动创建的分支合并到 "master"。
 
-7. 对要编辑的下一篇文章重复上述步骤。
+7. 对于要编辑的下一篇文章，请重复上述步骤。
 
-## 重命名或删除现有文章
+## <a name="renaming-or-deleting-an-existing-article"></a>重命名或删除现有项目
 
-如果更改将重命名或删除现有文章，请务必添加重定向。 这样，任何具有指向现有文章的链接的人最终仍将在正确的位置。 重定向由存储库根.openpublishing.redirection.js上的文件管理。
+如果更改将重命名或删除现有项目，请确保添加一个重定向。 这样一来，具有现有文章的链接的任何人仍将在正确的位置结束。 重定向由存储库根目录中的文件 .openpublishing.redirection.js管理。
 
-若要添加指向.openpublishing.redirection.js的重定向，请向数组添加 `redirections` 一个条目：
+若要将重定向添加到中的 .openpublishing.redirection.js，请将条目添加到 `redirections` 数组中：
 
 ```json
 {
@@ -90,32 +90,32 @@ HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风�
         },
 ```
 
-- `source_path`它是要删除的旧文章的相对存储库路径。 请确保路径以 `mixed-reality-docs` . `.md`
+- `source_path`是要删除的旧项目的相对存储库路径。 请确保路径以开头 `mixed-reality-docs` ，并以结尾 `.md` 。
 
-- 它是 `redirect_url` 从旧文章到新文章的相对公用 URL。 确保此 URL **不包含** 或 ，因为它引用的是公用 `mixed-reality-docs` `.md` URL，而不是存储库路径。 允许链接到新文章中使用 `#section` 的部分。 如有必要，您还可以在此处使用指向另一个站点的绝对路径。
+- `redirect_url`是从旧文章到新文章的相对公共 URL。 请确保此 URL **不** 包含 `mixed-reality-docs` 或 `.md` ，因为它引用的是公共 URL，而不是存储库路径。 允许使用链接到新项目中的部分 `#section` 。 如果需要，还可以在此处使用其他站点的绝对路径。
 
-- `redirect_document_id` 指示是否要保留上一个文件的文档 ID。 默认值为 `false` 。 `true`如果要保留重定向文章中 `ms.documentid` 的属性值，请使用。 如果保留文档 ID，则页面视图和排名等数据将传输到目标文章。 如果重定向主要是重命名，而不是指向仅涵盖部分相同内容的不同文章的指针，请执行此操作。
+- `redirect_document_id` 指示是否要保留以前文件中的文档 ID。 默认为 `false`。 `true`如果要保留 `ms.documentid` 重定向的项目中的属性值，请使用。 如果保留文档 ID，数据（如页面视图和分级）将传输到目标文章。 如果重定向主要用于重命名，而不是指向仅涵盖一些相同内容的不同项目的指针，则执行此操作。
 
-如果添加重定向，请务必同时删除旧文件。
+如果添加重定向，请确保同时删除旧文件。
 
-## 创建新文章
+## <a name="creating-a-new-article"></a>创建新项目
 
-使用以下工作流在 *Web* 浏览器中通过 GitHub 在文档存储库中创建新文章：
+使用以下工作流在 web 浏览器中通过 GitHub 在文档存储库中 *创建新项目* ：
 
-1. 使用右上方的"分叉"按钮 (MicrosoftDocs/mixed-reality"master"分支分支****) 。
+1. 使用右上方) 中的 " **分叉** " 按钮，创建 MicrosoftDocs/mixed reality "master" 分支 (分叉。
 
-   ![分支主分支。](images/forkbranch.png)
+   ![将主分支分叉。](images/forkbranch.png)
    
-2. 在"mixed-reality-docs"文件夹中，选择右上方 **的** "创建新文件"。
+2. 在 "混合现实文档" 文件夹中，选择右上方的 " **新建文件** "。
 
-3. 为文章创建页面名称 (使用连字符而不是空格，并且不使用标点符号或撇号) 并追加".md"
+3. 为项目创建页面名称， (使用连字符而不是空格，并且不要使用标点或撇号) 并追加 "md"
 
-   ![命名新页面。](images/newpagetitle.png)
+   ![命名新页。](images/newpagetitle.png)
    
    >[!IMPORTANT]
-   >请确保从"mixed-reality-docs"文件夹中创建新文章。 可以通过检查新文件名行中的"/mixed-reality-docs/"来确认这一点。
+   >请确保在 "mixed reality-文档" 文件夹中创建新项目。 可以通过在 "新文件名" 行中检查 "/mixed-reality-docs/" 来确认这一点。
 
-4. 在新建页面顶部，添加以下元数据块：
+4. 在新页的顶部，添加以下元数据块：
 
    ```md
    ---
@@ -129,128 +129,128 @@ HoloLens 文档显示在 Docs.microsoft.com 平台上，该平台将 GitHub 风�
    ---
    ```
 
-5. 按照上述部分中的说明填写相关的 [元数据字段](#editing-an-existing-article)。
+5. 按照 [以上部分](#editing-an-existing-article)中的说明填写相关的元数据字段。
 
-6. 使用 [Markdown 基础知识编写文章内容](#markdown-basics)。
+6. 使用 [Markdown 基础知识](#markdown-basics)编写文章内容。
 
-7. 在 `## See also` 文章底部添加一个包含指向其他相关文章的链接的部分。
+7. 在 `## See also` 文章底部添加一个部分，其中包含指向其他相关文章的链接。
 
-8. 完成后，选择 **"提交新文件"。**
+8. 完成后，选择 " **提交新文件**"。
 
-9. 选择 **"新建** 拉取请求"，将分叉的"主"分支合并到 MicrosoftDocs/混合现实"主 (确保箭头以正确的方式指向) 。
+9. 选择 " **新建拉取请求** "，并将分支的 "master" 分支合并到 MicrosoftDocs/mixed reality "master" (确保箭头指向正确的) 方法。
 
-   ![创建从分叉到 MicrosoftDocs/mixed-reality 的拉取请求](images/pr-to-master.png)
+   ![创建从分叉到 MicrosoftDocs/混合现实的拉取请求](images/pr-to-master.png)
 
-## Markdown 基础知识
+## <a name="markdown-basics"></a>Markdown 基础知识
 
-以下资源将帮助您了解如何使用 Markdown 语言编辑文档：
+以下资源将帮助你了解如何使用 Markdown 语言编辑文档：
 
-- [Markdown 基础知识](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [用于编写 Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Markdown 基本信息](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+- [用于编写 docs.microsoft.com 的 Markdown 的其他资源](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
-### 添加表
+### <a name="adding-tables"></a>添加表
 
-由于样式表docs.microsoft.com，即使尝试内联 CSS，它们也不会具有边框或自定义样式。 它看起来会在短时间内工作，但最终平台会从表中去除样式设置。 因此请提前规划并保持表格简单。 [下面是一个使 Markdown 表变得简单的网站](https://www.tablesgenerator.com/markdown_tables)。
+由于 docs.microsoft.com 样式表的方式，它们没有边框或自定义样式，即使您尝试使用内联 CSS 也是如此。 它看起来可以正常工作，但最终平台会去除表的样式。 因此请提前规划并使表保持简单。 [下面是使 Markdown 表变得简单的站点](https://www.tablesgenerator.com/markdown_tables)。
 
-如果您 [使用的是 Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) (，Visual Studio [Code ](#using-visual-studio-code) 文档扩展还便于生成) 文档。
+如果你使用[Visual Studio Code (请参阅) 下面](#using-visual-studio-code)的 "Markdown" 文档中的 "[文档" Visual Studio Code 扩展](https://docs.microsoft.com/teamblog/docs-extension)，以编辑该文档。
 
-### 添加图像
+### <a name="adding-images"></a>添加图像
 
-你需要将图像上载到存储库的"mixed-reality-docs/images"文件夹，然后在文章中适当地引用它们。 图像将自动以全尺寸显示，这意味着大图像将填满文章的整个宽度。 我们建议在上传图像之前对图像进行预大小调整。 虽然建议的宽度介于 600 和 700 像素之间，但如果它是一个密集屏幕截图或屏幕截图的一小部分，应分别向上或向下调整大小。
+需要将映像上传到存储库中的 "混合现实文档/映像" 文件夹，并在文章中对它们进行相应的引用。 图像将自动以全尺寸显示，这意味着大型图像将填充整个文章的宽度。 建议在上传映像之前对其进行预先调整大小。 建议宽度介于600到700像素之间，不过，如果它是密集屏幕截图或屏幕截图的小部分，则应调整大小。
 
 >[!IMPORTANT]
->在合并之前，只能将图像上载到分叉存储库。 因此，如果您计划向文章添加图像，您需要首先使用 [Visual Studio 代码](#using-visual-studio-code) 将图像添加到分叉的"images"文件夹中，或确保已完成 Web 浏览器中的下列操作：
+>在合并前，只能将图像上传到分叉存储库。 因此，如果你计划将图像添加到项目中，则需要先 [使用 Visual Studio Code](#using-visual-studio-code) 将图像添加到分叉的 "images" 文件夹，或者确保已在 web 浏览器中完成以下操作：
 >
->1. 分叉 MicrosoftDocs/混合现实存储库。
->2. 在分叉中编辑了文章。
->3. 将文章中引用的图像上载到分叉中的"mixed-reality-docs/images"文件夹。
->4. 创建了一 **个拉取** 请求，用于将分叉合并到 MicrosoftDocs/mixed-reality"master"分支中。
+>1. 分叉 MicrosoftDocs/mixed reality 存储库。
+>2. 已编辑分叉中的项目。
+>3. 将你在项目中引用的映像上传到你的分支中的 "混合现实文档/映像" 文件夹。
+>4. 创建了用于将分叉合并到 MicrosoftDocs/mixed reality "master" 分支的 **拉取请求** 。
 >
->若要了解如何设置自己的分叉存储库，请按照创建新 [文章的说明操作](#creating-a-new-article)。
+>若要了解如何设置自己的分叉存储库，请按照 [创建新文章](#creating-a-new-article)的说明进行操作。
 
-## 预览你的工作
+## <a name="previewing-your-work"></a>预览工作
 
-通过 Web 浏览器在 GitHub 中编辑时，可以选择**** 页面顶部附近的"预览"选项卡，在提交之前预览你的工作。 
+通过 web 浏览器在 GitHub 中进行编辑时，可以选择页面顶部附近的 " **预览** " 选项卡来预览你的工作，然后再提交。 
 
 >[!NOTE]
->预览更改review.docs.microsoft.com仅适用于 Microsoft 员工
+>review.docs.microsoft.com 上预览所做的更改仅适用于 Microsoft 员工
 
-Microsoft 员工：一旦你的贡献合并到"主"分支，你可以先查看内容，然后再在它 https://review.docs.microsoft.com/hololens?branch=master 公开。 使用左侧列中的目录查找文章。
+Microsoft 员工：将你的贡献合并到 "master" 分支后，你可以在内容公开之前查看内容 https://review.docs.microsoft.com/hololens?branch=master 。 使用左栏中的目录查找文章。
 
-## 在浏览器中编辑与使用桌面客户端进行编辑
+## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>在浏览器中编辑与使用桌面客户端进行编辑
 
-在浏览器中编辑是进行快速更改的最简单方法，但存在一些缺点：
+在浏览器中进行编辑是进行快速更改的最简单方法，但有几个缺点：
 
-- 你无法进行拼写检查。
-- 如果必须手动键入文章的文件名， (其他文章的任何智能链接) 。
-- 上载和引用图像可能很麻烦。
+- 不会进行拼写检查。
+- 您不会获得任何智能链接到其他文章 (您必须手动键入文章的文件名) 。
+- 这可能是上传和引用图像的麻烦。
 
-如果不愿意处理这些问题，请使用桌面客户端（如Visual Studio [代码](https://code.visualstudio.com/) ，提供 [一些有用的](#useful-extensions) 扩展。
+如果你不想处理这些问题，请使用类似于 [Visual Studio Code](https://code.visualstudio.com/) 的桌面客户端，并在参与时使用几个 [有用的扩展](#useful-extensions) 。
 
-## 使用Visual Studio代码
+## <a name="using-visual-studio-code"></a>使用 Visual Studio Code
 
-出于 [上述原因，](#editing-in-the-browser-vs-editing-with-a-desktop-client)你可能更喜欢使用桌面客户端来编辑文档，而不是 Web 浏览器。 我们建议使用Visual Studio [代码](https://code.visualstudio.com/)。
+出于 [上面](#editing-in-the-browser-vs-editing-with-a-desktop-client)列出的原因，您可能更倾向于使用桌面客户端编辑文档而不是 web 浏览器。 建议使用 [Visual Studio Code](https://code.visualstudio.com/)。
 
-### 安装
+### <a name="setup"></a>设置
 
-按照以下步骤配置Visual Studio代码以用于此存储库：
+请按照以下步骤配置 Visual Studio Code 以使用此存储库：
 
-1. 在 Web 浏览器中：
-    1. 为[电脑安装 Git。](https://git-scm.com/downloads)
-    2. 安装 [Visual Studio代码](https://code.visualstudio.com/)。
-    3. [Fork MicrosoftDocs/mixed-reality（](#creating-a-new-article) 如果尚未创建）。
-    4. 在分叉中，选择 **"克隆"或下载** 并复制 URL。
-2. 使用代码创建分叉的本地Visual Studio克隆：
-    1. 从"**视图"** 菜单中，选择 **"命令调色板"。**
-    2. 键入"Git： Clone"。
-    3. 粘贴您复制的 URL。
-    4. 选择在电脑上保存克隆位置。
-    5. 在 **弹出窗口中选择** "打开存储库"。
+1. 在 web 浏览器中：
+    1. 安装 [适用于你的电脑的 Git](https://git-scm.com/downloads)。
+    2. 安装 [Visual Studio Code](https://code.visualstudio.com/)。
+    3. [分叉 MicrosoftDocs/混合现实（](#creating-a-new-article) 如果尚未这样做）。
+    4. 在分支中，选择 " **克隆" 或 "下载** 并复制 URL"。
+2. 在 Visual Studio Code 中创建分叉的本地复本：
+    1. 从 " **视图** " 菜单中选择 " **命令面板**"。
+    2. 键入 "Git： Clone"。
+    3. 粘贴复制的 URL。
+    4. 选择要在电脑上保存克隆的位置。
+    5. 在弹出窗口中选择 " **打开** 存储库"。
 
-### 编辑文档
+### <a name="editing-documentation"></a>编辑文档
 
-使用以下工作流对包含以下代码的文档Visual Studio代码：
+使用以下工作流，通过 Visual Studio Code 对文档进行更改：
 
 >[!NOTE]
->以上有关编辑[和创建](#editing-an-existing-article)文章的所有[](#creating-a-new-article)指南以及编辑[Markdown](#markdown-basics)的基础知识也适用于使用 Visual Studio Code。
+>在使用 Visual Studio Code 时，所有有关 [编辑](#editing-an-existing-article) 和 [创建](#creating-a-new-article) 文章的指南以及 [编辑 Markdown 的基础知识](#markdown-basics)也适用。
 
-1. 使用官方存储库确保克隆的分叉是最新的。
+1. 请确保你的克隆分叉与官方存储库保持最新。
 
-   1. 在 Web 浏览器中，创建拉取请求，将 MicrosoftDocs/mixed-reality"master"中其他参与者的最新更改同步到分叉 (确保箭头指向正确的方向) 。
+   1. 在 web 浏览器中，创建一个拉取请求，将 MicrosoftDocs/mixed reality "master" 中其他参与者的最近更改同步到分叉 (确保箭头指向) 正确的方式。
       
-      ![将更改从 MicrosoftDocs/mixed-reality 同步到分叉](images/sync-repos.png)
+      ![将更改从 MicrosoftDocs/混合事实同步到你的分支](images/sync-repos.png)
       
-   2. 在Visual Studio代码中，选择同步按钮以将最新更新的分叉同步到本地克隆。
+   2. 在 Visual Studio Code 中，选择 "同步" 按钮，将最新更新的分支同步到本地克隆。
       
-      ![单击同步按钮图像](images/sync-clone.png)
+      ![单击 "同步" 按钮图像](images/sync-clone.png)
       
-2. 使用代码创建或编辑克隆的Visual Studio文章。
+2. 使用 Visual Studio Code 在克隆的存储库中创建或编辑项目。
 
-   1. 编辑一个或多个文章 (图像添加到"images"文件夹（如有必要) ）。
+   1. 编辑一个或多个项目 (如有必要，将图像添加到 "images" 文件夹) 。
    
-   2. **在** 资源管理器中 **保存更改**。
+   2. 在 **资源管理器** 中 **保存** 更改。
       
-      ![在资源管理器中选择"全部保存"](images/explorer-save.png)
+      ![在资源管理器中选择 "全部保存"](images/explorer-save.png)
       
-   3. **在出现提示** 时，提交源 **控件 (写入** 提交消息) 。
+   3. ) 提示时，提交 **源代码管理** 中的 **所有** 更改 (写入提交消息。
    
-      ![在源代码管理中选择"全部提交"](images/source-control-commit.png)
+      ![在源代码管理中选择 "全部提交"](images/source-control-commit.png)
       
-   4. 选择 **同步按钮** ，将更改同步回 GitHub (分支中的源) 。
+   4. 选择 " **同步** " 按钮，将所做的更改同步回 GitHub 上的源 (分叉) 上。
       
-      ![单击同步按钮](images/sync-back.png)
+      ![单击 "同步" 按钮](images/sync-back.png)
       
-3. 在 Web 浏览器中，创建拉取请求，将分叉中的新更改同步回 MicrosoftDocs/混合现实"主 (确保箭头以正确的方式) 。
+3. 在 web 浏览器中，创建一个拉取请求，将分支中的新更改同步回 MicrosoftDocs/mixed reality "master" (确保箭头指向) 正确的方式。
 
-   ![创建从分叉到 MicrosoftDocs/mixed-reality 的拉取请求](images/pr-to-master.png)
+   ![创建从分叉到 MicrosoftDocs/混合现实的拉取请求](images/pr-to-master.png)
 
-### 有用的扩展
+### <a name="useful-extensions"></a>有用的扩展
 
-以下Visual Studio代码扩展在编辑文档时很有用：
+编辑文档时，以下 Visual Studio Code 扩展很有用：
 
-- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **Alt+M** to bring up a menu of docs authoring options like：
-   - 搜索和引用已上传的图像。
-   - 添加格式，如列表、表和文档特定的调用，如 `>[!NOTE]` 。
-   - 搜索和引用内部链接和书签 (链接到页面中特定) 。
-   - 将突出显示格式错误 (将鼠标悬停在错误上方，以了解) 。
-- [代码拼写检查](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) 器 - 拼写错误的单词将带下划线;右键单击拼写错误的单词以将其更改或保存到词典。
+- [用于 Visual Studio Code 的文档 Markdown 扩展](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) -使用 **Alt + M** 显示文档创作选项的菜单，如下所示：
+   - 搜索和引用已上传的映像。
+   - 添加格式（如列表、表和文档） `>[!NOTE]` 。
+   - 搜索和引用内部链接和书签 (指向) 页面内特定部分的链接。
+   - 突出显示格式错误 (将鼠标悬停在错误上以了解详细) 。
+- [代码拼写检查器](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) -将为拼写错误的单词加下划线。右键单击拼写错误的单词以对其进行更改或将其保存到字典中。

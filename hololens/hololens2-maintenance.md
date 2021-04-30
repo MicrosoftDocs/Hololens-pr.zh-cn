@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2 清洁常见问题解答
-description: 获取有关清理和维护 HoloLens 2 设备的所有常见问题解答。
+title: HoloLens 2 清理常见问题
+description: 获取有关清理和维护 HoloLens 2 设备的所有常见问题的最新答案。
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -16,18 +16,18 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: a110f711d402432e727be6f342156e7dee733157
-ms.sourcegitcommit: 23ee06b659d7a51f3000d386c8f67cbf212d5aa4
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327376"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108308380"
 ---
-# HoloLens 2 清洁常见问题解答
+# <a name="hololens-2-cleaning-faq"></a>HoloLens 2 清理常见问题
 
 > [!IMPORTANT]  
-> Microsoft 无法确定任何给定的防感染产品在反冠流（如 COVID-19）中的有效性。 请参阅本地公共健康机构有关如何防止潜在感染的指南。  
+> Microsoft 不能确定任何特定 disinfectant 产品在反击 pathogens （例如 COVID-19）的有效性。 请参阅本地公共健康证书颁发机构指南，了解如何抵御潜在的感染。  
 
-## HoloLens 2 使用和注意
+## <a name="hololens-2-use-and-care"></a>HoloLens 2 使用和小心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwEFP]
 
@@ -35,60 +35,60 @@ ms.locfileid: "11327376"
 
 **清理设备**
 
-1. 使用干净的无细微细纸擦除设备表面，以清除任何水灰。
+1. 使用干燥且不起毛的 microfiber 软布消除灰尘，以轻轻擦拭设备表面。
 
-   ![从额头板按住时清理](images/hl2-cleaning.png)
+   ![在按住眉头 pad 的同时进行清理](images/hl2-cleaning.png)
 
-2. 使用医疗"70%"的青色，轻微地照亮了青色，然后使用柔和的青色擦除设备表面。
+2. 使用医学 "70%" isopropyl 喝酒轻轻 moisten 布，然后使用 moistened 布轻轻擦拭设备表面。
 
-3. 让设备完全干。
+3. 让设备完全干燥。
 
-**清理额头板**
+**清理眉头 pad**
 
-1. 使用水以及一块水、一块水，将一块水浸在一起，然后使用干毛来擦除额头垫。
-1. 让额头板完全干。
+1. 使用水和轻度、antibiotic 的 soap 来 moisten 一抹布，然后使用 moistened 布擦拭眉头垫。
+1. 让眉头完全填充。
 
-## 我可以使用任何镜头清理器来清理 HoloLens 面罩吗？
+## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>能否使用任何镜头清洗器来清洁 HoloLens 面板？
 
-否。 镜头清理器可以与面罩上的面罩一起工作。 若要清理面罩，请按照以下步骤操作：  
+不是。 可以将镜头清除 abrasive 到面板上的 coatings。 若要清理面板，请执行以下步骤：  
 
-1. 使用干净的无细纸微细纸擦除面罩，以清除任何脏物。
-1. 使用医疗"70%"的青色，轻柔地照亮一片青色，然后擦除面罩。
-1. 让面罩完全干。
+1. 使用干燥的不起毛的 microfiber 抹布消除所有灰尘，以轻轻擦拭面板。
+1. 使用医学 "70%" isopropyl 喝酒，轻轻 moisten 布，然后轻轻擦拭面板。
+1. 完全让面板晾干。
 
-## 我可以使用消除擦除来清理设备吗？
+## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>是否可以使用 disinfecting 擦除来清洗设备？
 
-是，如果擦除不包含任何内容。 可以使用非百万次清除擦除来擦除 [HoloLens 表面](#hololens-2-use-and-care)。  
-
-> [!CAUTION]  
-> 避免使用包含百分之百的清除擦除来清理 HoloLens 表面。 在紧急情况下，当没有其他可用内容时，使用水刷擦除是可以接受的。 但是，青色可能会损坏 HoloLens 面罩或其他表面。
-
-## 我可以使用水来清理设备吗？
-
-是。 可以使用"70%"的异物水来清理设备的硬表面，包括面罩。 使用混和的青青水来淡淡的青色，然后擦除设备表面
-
-## 额头板是否可替换？
-
-是。 额头垫依靠磁性连接到设备。 若要分离它，请将其从头带中拉开。 要将其更换掉，请将其重新插回原位。
-
-![取下或更换额头垫](images/hololens2-remove-browpad.png)
-
-## 如何清理额头垫？
-
-若要清理额头垫，请使用通过水以及一块细细的花布来清理它。 在再次使用之前，让额头板完全干。
-
-## 我能否使用 (UV) 来对设备进行照明？
-
-使用 UVC LED 的 UVC irrance，其强度级别为 0.5-0.6mW/cm 2，在 265nm 下运行，并且不会发出云，可用于对 <sup> </sup> HoloLens2 进行安全处理。 请按照制造商有关处理和曝光时间的要求操作。
+如果擦除不包含 bleach，则为 "是"。 您可以使用非 bleach disinfecting 擦除来 [轻轻擦除 HoloLens 表面](#hololens-2-use-and-care)。  
 
 > [!CAUTION]  
-> 高级别的 UV-A 和 UV-B 曝光可能会降低设备的显示质量并损坏面罩。 过度接触 UV-A 和 UV-B 云具有下列效果，按曝光持续时间和强度顺序排序：
+> 避免使用包含 bleach 的 disinfecting 擦除来清洁 HoloLens 面。 在关键情况下，如果没有任何其他功能可用，则可以使用 bleach 擦除。 但是，bleach 可能会损坏 HoloLens 面板或其他表面。
+
+## <a name="can-i-use-alcohol-to-clean-the-device"></a>是否可以使用喝酒来清洗设备？
+
+是的。 您可以使用 "70%" isopropyl 的解决方案来清洗设备的硬表面，包括面板。 通过混合使用 isopropyl 喝酒和水，然后轻轻擦拭设备表面，轻轻 moisten 布
+
+## <a name="is-the-brow-pad-replaceable"></a>眉头 pad 是否可替换？
+
+是的。 眉头 pad 连接到设备。 若要将其分离，请从 headband 中取出。 若要替换它，请将其重新对齐到位。
+
+![删除或替换眉头 pad](images/hololens2-remove-browpad.png)
+
+## <a name="how-can-i-clean-the-brow-pad"></a>如何清理眉头 pad？
+
+若要清洗眉头 pad，请使用一种 moistened 的软软 antibiotic soap 来擦除。 再次使用眉头之前，让它完全填充。
+
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>是否可以使用 ultraviolet (UV) 轻型来净化设备？
+
+UVC irradiance 使用 UVC LED，它在以 0.5-0.6 mW/cm<sup>2</sup>的强度级别运行，而不发出臭氧，可用于净化 HoloLens2。 请遵照制造商对处理和公开时间的规格。
+
+> [!CAUTION]  
+> 高级别 UV 和 UV-B 曝光会降低设备的显示质量并损坏面板涂层。 随着曝光度和曝光度的推移，通过曝光度和 UV-B 辐射具有以下效果：
 >  
-> 1. 额头板和设备关闭变为无色。
-> 1. 缺陷出现在面罩和传感器 (防反射) AR 中。
-> 1. 缺陷出现在面罩的基本材料以及传感器窗口上。
-> 1. 显示性能会降低。
+> 1. 眉头 pad 和设备闭包会出现脱色。
+> 1. Bug 显示在面板上的抗锯齿 (AR) 涂层上，以及传感器窗口。
+> 1. 在面板和传感器窗口的基本材料中将出现缺陷。
+> 1. 显示性能下降。
 
-## 后置板是否可替换？
+## <a name="is-the-rear-pad-replaceable"></a>后板是否可更换？
 
-否。
+不是。
