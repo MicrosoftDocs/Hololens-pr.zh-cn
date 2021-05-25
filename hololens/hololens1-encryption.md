@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker 加密
-description: 了解如何启用 Bitlocker 设备加密来保护你的 HoloLens 混合现实设备上存储的文件。
+description: 了解如何启用 BitLocker 设备加密来保护 HoloLens 混合现实设备上存储的文件。
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,47 +11,49 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308160"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397278"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (第一代) BitLocker 加密
 
-HoloLens (第一代) 和 HoloLens 2 均支持使用 BitLocker 的设备加密，但是，BitLocker 在 HoloLens 2 上始终处于启用状态。
+HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 进行设备加密，但 BitLocker 始终在 HoloLens 2。
 
-本文将帮助你在 HoloLens (第一代) 上启用和管理 BitLocker。
+本文将帮助你在 HoloLens 上启用和管理 BitLocker (第一代) 。
 
-在 HoloLens (第一代) 上，你可以手动启用 BitLocker 设备加密或使用移动设备管理 (MDM) 。 按照这些说明操作，启用 [BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) 以保护在 HoloLens 上存储的文件和信息。 设备加密可使用 AES-CBC 128 加密方法帮助保护数据，该方法等效于 BitLocker 配置服务提供程序 (CSP) 中的 [EncryptionMethodByDriveType 方法 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 。 使用正确的加密密钥的人员 (例如密码) 可以将其解密或执行数据恢复。
+在 HoloLens (第一代) 可以手动启用 BitLocker 设备加密，或者使用 MDM (移动设备) 。 按照这些说明启用 [BitLocker 设备加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) ，以保护存储在 HoloLens 上的文件和信息。 设备加密有助于使用 AES-CBC 128 加密方法保护数据，该方法等效于 BitLocker 配置服务提供程序 (CSP) 中的[EncryptionMethodByDriveType 方法 3。](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 具有正确的加密密钥（例如 (密码）的人员) 解密或执行数据恢复。
 
 ## <a name="enable-device-encryption-using-mdm"></a>使用 MDM 启用设备加密
 
-你可以使用 (MDM) 提供程序的移动设备管理来应用需要设备加密的策略。 要使用的策略是策略 CSP 中的 [Security/RequireDeviceEncryption 设置](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 。
+可以使用 Mobile 设备管理 (MDM) 应用需要设备加密的策略。 使用的策略是策略 CSP [中的 Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 设置。
 
-[有关使用 Microsoft Intune 启用设备加密的说明，请参阅。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[请参阅有关使用证书启用设备加密Microsoft Intune。](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
-有关其他 MDM 工具，请参阅 MDM 提供程序文档中的说明。 如果 MDM 提供程序需要用于设备加密的自定义 URI，请使用以下配置：
+有关其他 MDM 工具，请参阅 MDM 提供程序文档中的说明。 如果 MDM 提供程序需要自定义 URI 进行设备加密，请使用以下配置：
 
 - **名称**：你选择的名称
 - **说明**：可选
-- **OMA-URI**： `./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
-- **数据类型**：整数
+- **OMA-URI：**`./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
+- **数据类型：integer**
 - **值**：`1`
 
 ## <a name="enable-device-encryption-using-a-provisioning-package"></a>使用预配程序包启用设备加密
 
 预配程序包是由 Windows 配置设计器工具创建的文件，可将指定的配置应用于设备。 
 
-### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>创建用于升级 Windows 全息版并启用加密的预配包
+### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>创建一个预配包，用于升级 Windows Holographic 版本并启用加密
 
 1. [为 HoloLens 创建预配包。](hololens-provisioning.md)
-1. 请参阅 **运行时设置**  >  **策略**  >  **安全性**，然后选择 **RequireDeviceEncryption**。
+1. 转到"**运行时设置**  >  **策略**  >  **安全性"，** 然后选择 **"RequireDeviceEncryption"。**
 
     ![“要求设备加密”设置配置为“是”](images/device-encryption.png)
 
-1. 找到购买商用套件时提供的 XML 许可证文件。
+1. 查找购买商业套件时提供的 XML 许可证文件。
 
 1. 浏览并选择购买 Commercial 套件时提供的 XML 许可证文件。
     > [!NOTE]
@@ -76,7 +78,7 @@ HoloLens (第一代) 和 HoloLens 2 均支持使用 BitLocker 的设备加密，
 
     或者，你还可以单击“浏览”更改默认输出位置。
 
-1. 单击“下一步”。
+1. 单击“下一步”  。
 1. 单击“构建”开始构建程序包。 项目信息会显示在构建页面中，并且进度栏会指示构建状态。
 1. 构建完成后，单击 **完成**。
 
