@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f8dcc8619715871db0aaba306dd19d252d73ac47
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: fbef357053900f6495cb59f52cba8669f0d0a3db
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397828"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924411"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的用户标识和登录
 
@@ -36,28 +36,30 @@ HoloLens 支持多种用户标识。 可以使用一个或多个用户帐户登�
 
 | 标识类型 | 每个设备的帐户数 | 身份验证选项 |
 | --- | --- | --- |
-| [Azure Active Directory (](https://docs.microsoft.com/azure/active-directory/) 需要Azure AD Premium)  | 64 | <ul><li>Azure Web 凭据提供程序</li><li>Azure Authenticator 应用</li><li>生物 (Iris) HoloLens 2 &ndash; <sup>1</sup> </li><li>适用于 &ndash; HoloLens (第一代) 的 PIN 可选，HoloLens 2</li><li>密码</li></ul> |
-| [Microsoft 帐户 (MSA) ](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>生物识别 (Iris) &ndash; 仅 HoloLens 2</li><li>为 hololens &ndash; (第一代) 固定可选，为 hololens 2 所需</li><li>密码</li></ul> |
+| [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Azure Web 凭据提供程序</li><li>Azure Authenticator 应用</li><li>生物 (Iris) HoloLens 2 &ndash; <sup>2</sup> </li><li>适用于 &ndash; HoloLens (第一代) 的 PIN 可选，HoloLens 2</li><li>密码</li></ul> |
+| [Microsoft 帐户 (MSA) ](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>仅 (生物) HoloLens 2 &ndash; Iris</li><li>适用于 &ndash; HoloLens (第一代) 的 PIN 可选，HoloLens 2</li><li>密码</li></ul> |
 | [本地帐户](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | 密码 |
 
-与云连接的帐户 (Azure AD 和 MSA) 提供更多功能，因为它们可以使用 Azure 服务。  
+云连接帐户 (Azure AD MSA) 提供了更多功能，因为它们可以使用 Azure 服务。  
+> [!IMPORTANT]
+> 1 - Azure AD Premium登录设备时不需要密码。 但是，对于基于云的低接触部署的其他功能（如自动注册和 Autopilot）需要它。
 
 > [!NOTE]
-> 1-虽然 HoloLens 2 设备最多可以支持 64 Azure AD 帐户，但只有10个帐户才能注册 Iris Authentication。 这与 [适用于 Windows Hello 企业版的其他生物识别身份验证选项](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)一致。
+> 2 - 尽管HoloLens 2设备最多支持 64 Azure AD帐户，但其中只有 10 个帐户可以注册 Iris 身份验证。 这符合其他生物[识别身份验证选项Windows Hello 企业版。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## <a name="setting-up-users"></a>设置用户
 
-设置新用户的最常见方法是在 (OOBE) 的 HoloLens 全新体验。 在安装过程中，HoloLens 会提示用户使用他们要在设备上使用的帐户登录。 此帐户可以是使用者 Microsoft 帐户或已在 Azure 中配置的企业帐户。 请参阅设置 [hololens (第一代) ](hololens1-start.md) 或 [HoloLens 2](hololens2-start.md)。
+设置新用户的最常见方式是在 OOBE (HoloLens 全新体验) 。 在安装过程中，HoloLens 会提示用户使用他们在设备上使用的帐户登录。 此帐户可以是使用者帐户Microsoft 帐户 Azure 中配置的企业帐户。 请参阅设置[HoloLens (第一代](hololens1-start.md)) 或[HoloLens 2。](hololens2-start.md)
 
-与其他设备上的 Windows 一样，在安装过程中登录会在设备上创建用户配置文件。 用户配置文件存储应用程序和数据。 同一帐户还通过使用 Windows 帐户管理器 Api 为应用（如 Edge 或 Skype）提供单一登录。  
+与其他设备上 Windows 一样，在安装过程中登录会创建一个用户配置文件。 用户配置文件存储应用和数据。 同一帐户还通过使用 Windows 帐户管理器 API 为应用（例如 Edge 或 Microsoft Store）提供单一登录。  
 
-如果使用企业帐户或组织帐户登录到 HoloLens，则 HoloLens 会在组织的 IT 基础结构中注册。 此注册可让你的 IT 管理员配置移动设备管理 (MDM) 将组策略发送到 HoloLens。
+如果使用企业或组织帐户登录到 HoloLens，HoloLens 将注册组织的 IT 基础结构。 此注册允许 IT 管理员配置 Mobile 设备管理 (MDM) 将组策略发送到 HoloLens。
 
-默认情况下，对于其他 Windows 10 设备，你必须在 HoloLens 重新启动或从待机状态恢复时再次登录。 您可以使用 "设置" 应用程序来更改此行为，也可以通过组策略控制该行为。
+默认情况下，与其他 Windows 10一样，当 HoloLens 重新启动或从待机状态恢复时，必须再次登录。 可以使用"设置"应用更改此行为，也可以按组策略控制该行为。
 
 ### <a name="linked-accounts"></a>关联的帐户
 
-与 Windows 的桌面版本一样，你可以将其他 web 帐户凭据链接到你的 HoloLens 帐户。 此类链接使你可以更轻松地跨应用程序或应用程序内访问资源 (例如存储) 或合并对个人资源和工作资源的访问。 将帐户连接到设备后，可以授予将设备用于应用的权限，以便不必单独登录到每个应用。
+与 Windows 桌面版一样，可以将其他 Web 帐户凭据链接到 HoloLens 帐户。 通过此类链接，可以更轻松地跨应用或内部访问 (例如 Store) 或合并对个人和工作资源的访问。 将帐户连接到设备后，可以授予将设备用于应用的权限，以便不必单独登录到每个应用。
 
 链接帐户不会将设备上创建的用户数据（例如映像或下载）分开。  
 
@@ -74,29 +76,29 @@ HoloLens 支持来自同一租户的多个Azure AD用户。 若要使用此功�
 
 ### <a name="multiple-users-listed-on-sign-in-screen"></a>登录屏幕上列出的多个用户
 
-以前，"登录"屏幕只显示最近登录的用户，以及"其他用户"入口点。 我们已收到客户反馈，如果多个用户已登录到设备，这是不够的。 它们仍需要重新键入其用户名等。
+以前，"登录"屏幕只显示最近登录的用户，以及"其他用户"入口点。 我们已收到客户反馈，如果多个用户已登录到设备，这是不够的。 他们仍然需要重新键入其用户名等。
 
-[Windows 全息版 21H1](hololens-release-notes.md#windows-holographic-version-21h1)中引入的其他用户，选择位于 "PIN 输入" 字段右侧的 **其他用户** 时，"登录" 屏幕将显示多个以前登录到设备的用户。 这允许用户选择其用户配置文件，然后使用他们的 Windows Hello 凭据进行登录。 还可以通过 " **添加帐户** " 按钮将新用户添加到该设备。
+在[Windows Holographic 版本 21H1](hololens-release-notes.md#windows-holographic-version-21h1)中引入，在选择"PIN 输入"字段右侧"其他用户"时，"登录"屏幕将显示以前已登录到设备的多个用户。 这允许用户选择其用户配置文件，然后使用其凭据Windows Hello登录。 还可通过"添加帐户"按钮从此"其他用户"页将新 **用户添加到** 设备。
 
-在 "其他用户" 菜单中，"其他用户" 按钮将显示最后一个登录到设备的用户。 选择此按钮可返回到此用户的登录屏幕。
+在"其他用户"菜单中，"其他用户"按钮将显示最后一个登录到设备的用户。 选择此按钮可返回到此用户的"登录"屏幕。
 
-![登录屏幕默认值](./images/multiusers1.jpg)
+![默认登录屏幕](./images/multiusers1.jpg)
 
 <br>
 
-![其他用户登录屏幕](./images/multiusers2.jpg)
+![其他用户的登录屏幕](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>删除用户
 
-可以通过转到 "**设置**" "  >    >  **其他人**"，从设备中删除用户。 此操作还会通过从设备中删除该用户的所有应用数据来收回空间。  
+可以通过访问"设置帐户""其他人"从 **设备**  >    >  **中删除用户**。 此操作还会通过从设备中删除该用户的所有应用数据来回收空间。  
 
 ## <a name="using-single-sign-on-within-an-app"></a>在应用中使用单一登录
 
-作为应用开发人员，你可以通过使用 [Windows 帐户管理器 api](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core)来利用 HoloLens 上的链接标识，就像在其他 Windows 设备上一样。 GitHub： [Web 帐户管理示例](https://go.microsoft.com/fwlink/p/?LinkId=620621)中提供了这些 api 的一些代码示例。
+应用开发人员可以使用 Windows 帐户管理器 [API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core)利用 HoloLens 上的链接标识，就像在其他 Windows 设备上一样。 GitHub 上提供了这些 API 的一些代码示例 [：Web 帐户管理示例](https://go.microsoft.com/fwlink/p/?LinkId=620621)。
 
-当应用请求身份验证令牌时，必须处理可能发生的任何帐户中断，如请求用户同意帐户信息、双因素身份验证等。
+当应用请求身份验证令牌时，必须处理可能会发生的任何帐户中断，例如请求用户同意帐户信息、双重身份验证等。
 
-如果你的应用程序需要以前未链接的特定帐户类型，你的应用程序可以要求系统提示用户添加一个。 此请求触发 "帐户设置" 窗格以启动应用的模式子。 对于2D 应用程序，此窗口直接在应用的中心进行呈现。 对于 Unity 应用，此请求会短暂使用户退出全息应用以呈现子窗口。 有关自定义此窗格上的命令和操作的信息，请参阅 [WebAccountCommand 类](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)。
+如果应用需要之前未链接的特定帐户类型，则应用可以要求系统提示用户添加一个帐户类型。 此请求触发帐户设置窗格，以作为应用的模式子级启动。 对于 2D 应用，此窗口直接在应用中心呈现。 对于 Unity 应用，此请求会暂时将用户从全息应用退出，以呈现子窗口。 有关自定义此窗格上的命令和操作的信息，请参阅 [WebAccountCommand 类](https://docs.microsoft.com/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)。
 
 ## <a name="enterprise-and-other-authentication"></a>企业和其他身份验证
 
@@ -123,21 +125,21 @@ Windows Hello 企业版 (支持使用 PIN 登录) HoloLens (第一代) 。 若�
 
 HoloLens 2 Iris 身份验证。 Iris 基于Windows Hello技术，并且支持由 Azure Active Directory 和 Microsoft 帐户使用。 Iris 的实现方式与其他技术Windows Hello相同，并实现 1/100K 生物识别安全。
 
-有关详细信息 [，请参阅](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) Windows Hello生物识别要求和规范。 了解有关 [Windows hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 和 [Windows hello 企业版的](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)详细信息。 
+有关详细信息 [，请参阅](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) Windows Hello生物识别要求和规范。 详细了解[Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)和[Windows Hello 企业版。](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) 
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>帐户类型如何影响登录行为？
 
-如果应用登录策略，则会始终遵循该策略。 如果没有应用登录策略，则每个帐户类型的默认行为如下：
+如果应用登录策略，则会始终遵循该策略。 如果未应用登录策略，则每个帐户类型的默认行为为：
 
-- **Azure AD**：默认情况下要求身份验证，并且由 **设置** 配置为不再要求身份验证。
-- **Microsoft 帐户**：锁定行为与允许自动解锁有所不同，但重新启动时仍然需要登录身份验证。
-- **本地帐户**：始终以密码形式请求身份验证，在 "**设置**" 中不可配置
+- **Azure AD：** 默认要求进行身份验证，并且"设置"可配置为不再要求进行身份验证。
+- **Microsoft 帐户：** 锁定行为不同，允许自动解锁，但在重新启动时仍然需要登录身份验证。
+- **本地帐户**：始终以密码的形式要求进行身份验证，在"设置"中不可 **配置**
 
 > [!NOTE]
-> 当前不支持非活动计时器，这意味着仅当设备进入待机状态时才考虑 **AllowIdleReturnWithoutPassword** 策略。
+> 当前不支持非活动计时器，这意味着只有在设备进入 StandBy 时，才遵守 **AllowIdleReturnWithoutPassword** 策略。
 
 ## <a name="additional-resources"></a>其他资源
 
-有关详细信息，请参阅 [Windows 10 安全和标识文档中的](https://docs.microsoft.com/windows/security/identity-protection/)用户标识保护和身份验证。
+有关用户标识保护和身份验证的更多内容，请参阅Windows 10 [和标识文档](https://docs.microsoft.com/windows/security/identity-protection/)。
 
-详细了解如何设置混合标识基础结构全面了解 [Azure 混合标识文档](https://docs.microsoft.com/azure/active-directory/hybrid/)。
+若要详细了解如何设置混合标识基础结构，请参阅 [Azure 混合标识文档](https://docs.microsoft.com/azure/active-directory/hybrid/)。

@@ -1,8 +1,8 @@
 ---
-title: 重启、重置或恢复 HoloLens 1
+title: 重新启动、重置或恢复 HoloLens 1
 ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
-description: 如何使用 Windows 设备恢复工具将映像刷刷到 HoloLens 第 1 代。
-keywords: 操作说明、重启、重置、恢复、硬重置、软重置、电源周期、HoloLens、关闭、wdrt、Windows 设备恢复工具
+description: 如何使用 Windows 设备恢复工具将映像闪存到 HoloLens 第一代。
+keywords: 操作方法、重新启动、重置、恢复、硬重置、软重置、电源周期、HoloLens、关机、wdrt、windows 设备恢复工具
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -16,37 +16,37 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397688"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923510"
 ---
-# <a name="restart-reset-or-recover-hololens-1st-gen"></a>重启、重置或恢复 HoloLens (第一代) 
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>重新启动、重置或恢复 HoloLens (第一代) 
 
-如果遇到 HoloLens 问题，可能需要尝试重启或重置，甚至使用设备恢复来重启设备。 本文指导你按序完成建议的恢复步骤。
+如果你在使用 HoloLens 时遇到问题，可能需要尝试重新启动或重置，甚至使用设备恢复刷新设备。 本文将指导你按顺序执行建议的恢复步骤。
 
-若要恢复服务，请参阅HoloLens 2恢复 [HoloLens 2，因为](https://docs.microsoft.com/hololens/hololens-recovery)该过程有所不同。
+如果希望恢复 HoloLens 2，请参阅 [恢复 hololens 2](hololens-recovery.md)，因为该过程有所不同。
 
 > [!NOTE]
-> 本文重点介绍 HoloLens 设备和软件。 如果全息影像看起来不对，请参阅 **[HoloLens](hololens-environment-considerations.md)** 环境注意事项，了解提高全息影像质量的因素。
+> 本文重点介绍 HoloLens 设备和软件。 如果你的全息影像看起来不正确，请参阅 **[HoloLens 环境注意事项](hololens-environment-considerations.md)** ，了解有关改善全息影像质量的因素的信息。
 
 ## <a name="restart"></a>重启
 
-### <a name="do-a-safe-restart-by-using-cortana"></a>使用 Cortana 执行安全重启
+### <a name="do-a-safe-restart-by-using-cortana"></a>使用 Cortana 执行安全重新启动
 
-重启 HoloLens 的最安全方法就是使用 Cortana，这通常是遇到 HoloLens 问题时要尝试的第一件事。
+重新启动 HoloLens 的最安全方法是使用 Cortana，这通常是在你遇到 HoloLens 问题时首先要尝试的操作。
 
 > [!NOTE] 
-> Cortana 并非在所有设备上都可用。
-> - Cortana 在所有 HoloLens (第一代) 设备上可用。 
-> - 在 Windows Holograpic 版本 2004 更新之前HoloLens 2内部版本上的设备上提供 Cortana。
+> Cortana 在所有设备上都不可用。
+> - Cortana 在所有 HoloLens (第一代) 设备上都可用。 
+> - 在 Windows Holograpic 版本2004更新之前，在版本中的版本的设备上提供 Cortana。
 
 1. 打开 HoloLens。
-1. 确保用户已登录，并且设备未等待密码解锁。
-2. 说"你好，Cortana，重启"或"你好，Cortana，重启"。
-3. Cortana 将做出响应并提示你确认。 等待问题后播放声音，然后说"是"。 设备将重启。
+1. 请确保用户已登录，且设备未等待密码来解锁。
+2. 说 "你好 Cortana，reboot" 或 "你好 Cortana，restart"。
+3. Cortana 将做出响应，并提示你进行确认。 等待一段时间后播放声音，然后说 "是"。 设备将重新启动。
 
 ### <a name="use-the-power-button-to-do-a-safe-restart"></a>使用 "电源" 按钮执行安全重新启动
 
@@ -73,27 +73,48 @@ ms.locfileid: "110397688"
 > [!WARNING]
 > 这是潜在的有害方法，只应在以前引用的方法不起作用时使用。
 
-1. 按住电源 **按钮** 至少 10 秒。
-   - 可以按住按钮超过 10 秒。
-   - 可以放心地忽略任何 LED 活动。
-1. 释放按钮并等待 2-3 秒。
-1. 按住 **电源按钮** 1 秒。
-1. 如果仍有问题，请按电源按钮4 秒，直到所有电池指示器消失，屏幕停止显示全息影像。 等待 1 分钟，然后再次按 **电源** 按钮打开设备。
+1. 按住 **电源** 按钮至少10秒。
+   - 可以保持按钮超过10秒。
+   - 忽略任何 LED 活动是安全的。
+1. 释放按钮，等待2-3 秒。
+1. 按住 **电源** 按钮1秒。
+1. 如果仍有问题，请按下 **电源** 按钮4秒钟，直到所有电池指示器都淡出并且屏幕停止显示全息影像。 等待1分钟，然后再次按 **电源** 按钮打开设备。
+
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>返回到以前的版本-HoloLens (第一代) 
+
+在某些情况下，你可能想要返回到以前版本的 HoloLens 软件。 为此，可以使用 Windows 设备恢复工具将 HoloLens 重置为早期版本。
+
+> [!NOTE]
+> 返回到早期版本会删除你的个人文件和设置。
+
+若要返回到以前版本的 HoloLens 1，请执行以下步骤：
+
+1. 请确保没有任何手机或 Windows 设备连接到您的 PC。
+1. 在电脑上，下载 [Windows 设备恢复工具 (WDRT) ](https://support.microsoft.com/help/12379)。
+1. 下载 [HoloLens 周年更新恢复包](https://aka.ms/hololensrecovery)。
+1. 下载完成后，打开 **文件资源管理器**  >  **下载**。 右键单击刚下载的压缩文件夹，然后选择 "**提取所有**  >  **提取**" 将其解压缩。
+1. 使用随附的微 USB 电缆将您的 HoloLens 连接到您的 PC。 即使已使用其他电缆连接 HoloLens，也 (，这种方法的效果最佳。 ) 
+1. WDRT 将自动检测你的 HoloLens。 选择 " **Microsoft HoloLens** " 磁贴。
+1. 在下一个屏幕上，选择 " **手动包选择** "，然后选择在步骤4中解压缩的文件夹中包含的安装文件。  (查找扩展名为 ffu 的文件 ) 
+1. 选择 " **安装软件**"，然后按照说明进行操作。
+
+> [!NOTE]
+> 如果 WDRT 未检测到 HoloLens，请尝试重新启动计算机。 如果这不起作用，请选择 **"未检测到设备**"，选择 " **Microsoft HoloLens**"，然后按照说明进行操作。
 
 ## <a name="reset-to-factory-settings"></a>重置为出厂设置
 
 > [!NOTE]
-> 电池需要至少 40% 的费用进行重置。
+> 电池需要至少40% 的电量才能重置。
 
-如果 HoloLens 仍有问题，请尝试将 HoloLens 重置为工厂状态。 此步骤将保留安装于该版本的 Windows Holographic 软件，将其他所有内容返回到工厂设置。
+如果 HoloLens 仍有问题，请尝试将其重置为出厂状态。 此步骤保留安装在其上的 Windows 全息软件的版本，并将其他所有内容返回到出厂设置。
 
 >[!WARNING]
-> 如果重置设备，将清除所有个人数据、应用和设置，包括 TPM 重置信息。 重置将仅安装最新安装的 Windows Holographic 版本。 必须重新执行所有初始化步骤， (校准、连接到 Wi-Fi、创建用户帐户、下载应用) 。
+> 如果重置设备，将擦除所有个人数据、应用和设置，包括 TPM 重置信息。 重置将仅安装最新安装的 Windows 全息版本。 必须重做所有初始化步骤 (校准、连接到 Wi-fi、创建用户帐户、下载应用，等等) 。
 
-1. 打开"设置"应用，然后选择"**更新恢复**  >  **"。**
-1. 选择" **重置设备"** 选项并阅读确认消息。
-1. 确认重置。 设备将重启并显示一组旋转齿轮和进度栏。
-1. 等待大约 30 分钟，等待此过程完成。 完成后，设备将重启进入"开箱即用"体验。
+1. 打开 "设置" 应用，然后选择 "**更新**  >  **恢复**"。
+1. 选择 " **重置设备** " 选项并阅读确认消息。
+1. 确认重置。 设备将重新启动并显示一组旋转齿轮和一个进度栏。
+1. 等待大约30分钟才能完成此过程。 完成后，设备将重新启动进入 "现成" 体验。
 
 ## <a name="reinstall-the-operating-system"></a>重新安装操作系统
 

@@ -1,7 +1,7 @@
 ---
-title: 具有远程协助的云连接的 HoloLens 2 概述
-description: 了解如何使用 Dynamics 365 远程协助通过云连接的网络注册 HoloLens 2 设备。
-keywords: HoloLens，管理，云连接，远程协助，AAD，Azure AD，MDM，移动设备管理
+title: 云连接云HoloLens 2概述Remote Assist
+description: 了解如何使用云HoloLens 2通过云连接的网络注册Dynamics 365 Remote Assist。
+keywords: HoloLens， 管理， 云连接， Remote Assist， AAD， Azure AD， MDM， 移动设备管理
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,41 +14,56 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43fbcc3a841f6c3f15006f285188e55d22f10599
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a44247b4afea747e4b75c974fcae344380909989
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397648"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923527"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>部署指南–云连接了 HoloLens 2 与远程协助–概述
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>部署指南 - 云HoloLens 2云Remote Assist - 概述
 
-本指南可帮助 IT 专业人员规划和部署 Microsoft HoloLens 2 设备到其组织，其整体目标是将这些设备云连接到你的组织，并使用 Dynamics 365 远程协助来使用。 请记住，这将作为对你的组织进行概念证明部署的模型，涵盖各种 HoloLens 2 用例。
+本指南将帮助 IT 专业人员计划 2 Microsoft HoloLens设备，Remote Assist部署到其组织。 这将充当跨各种用例向组织部署概念证明HoloLens 2模型。 设置类似于方案 [A：部署到云连接设备](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)。 
 
-在本指南中，我们将介绍如何将设备注册到设备管理，根据需要应用许可证，并验证最终用户是否能够在设备设置时立即使用远程协助。 要执行此操作，我们将介绍设置和运行所需的重要基础结构，即利用 HoloLens 2 大规模实现部署。
+在本指南中，我们将介绍如何将设备注册到设备管理中、根据需要应用许可证，以及验证最终用户能否在设备设置Remote Assist立即使用设备。 为此，我们将了解设置和运行所需的重要基础结构部分 - 使用 HoloLens 2。 本指南中不会应用其他设备限制或配置，但是，我们建议在完成后浏览这些选项。
 
-[![云连接方案 ](./images/deployment-guides-revised-scenario-a.png)](./images/deployment-guides-revised-scenario-a.png#lightbox)
-## <a name="in-this-guide"></a>本指南内容
+## <a name="prerequisites"></a>先决条件
 
-本指南具有在你的 HoloLens 设备上设置远程协助的具体目标。 我们将介绍实现该目标所需的必要条件。 为了保持焦点在此目标上，将预先选择某些准备和配置，以便针对此部署进行优化或减少配置所需的项。 系统会通知你这些选择，并可根据你的业务需求自定义你的部署。
+应采用以下基础结构来部署HoloLens 2。 如果没有，本指南中将包含设置 Azure 和 Intune：
 
-这是一种设置，类似于 [方案 a：部署到云连接设备](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)，这对于许多概念证明部署是一个不错的选择，其中包括：
+- Wi-Fi
+    - 网络通常对 Internet 和云服务开放
+- Azure Active Directory (Azure AD) 注册所需的 MDM 自动注册[ (Azure AD P1 订阅) ](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- MDM (Intune) 托管
+    - 一个或多个应用程序是通过 MDM 部署的。
+- 用户使用自己的公司帐户登录 (Azure AD) 
+    - 支持每个设备的一个或多个用户。
 
-- Wi-Fi 网络通常会完全开放到 Internet 和云服务
-- 与 MDM 自动注册 Azure AD 联接--MDM (Intune) 托管
-- 用户用自己的公司帐户登录 (Azure AD) 
-  - 每个设备支持一个或多个用户
-- 根据特定用例（从"完全打开"到"单应用展台"）应用不同级别的设备锁定配置
+:::image type="content" alt-text="云连接方案" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
-
-
-本指南中不会应用其他设备限制或配置，但我们建议在完成后浏览这些选项。
 
 ## <a name="learn-about-remote-assist"></a>了解Remote Assist
 
 Remote Assist协作维护和修复、远程检查以及知识共享和培训。 通过连接不同角色和位置的用户，使用 Remote Assist可以与 Microsoft Teams 上的远程协作者进行连接。 它们可以组合视频、屏幕截图和批注，以实时解决问题，即使它们&#39;位于同一位置。 远程协作者可以插入参考图像、示意图和其他有用的信息，以便技术人员&#39;物理空间，以便他们可以在 HoloLens 上向上和无手工作的同时引用示意图。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist许可和要求
+
+- Azure AD订阅 (分配许可证时所需的帐户) 
+- [Remote Assist订阅](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (或[Remote Assist试用版) ](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+    
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist用户
+
+- Remote Assist许可证
+- 网络连接
+
+#### <a name="microsoft-teams-user"></a>Microsoft Teams 用户
+
+- Microsoft Teams 或 [Teams Freemium](https://products.office.com/microsoft-teams/free)。
+- 网络连接
+
+如果计划实现此跨租户 [方案，](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)可能需要信息屏障许可证。 请参阅 [本文](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) ，确定是否需要信息屏障许可证。
 
 ## <a name="in-this-guide-you-will"></a>本指南中，你将实现以下操作：
 
@@ -60,7 +75,7 @@ Remote Assist协作维护和修复、远程检查以及知识共享和培训。 
 > - [了解标识管理以及如何以最佳方式设置Azure AD帐户。](hololens2-cloud-connected-prepare.md#identity-management)
 > - [详细了解 MDM，如果尚未准备好 MDM，&#39;Intune 进行设置。](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [了解应用程序的网络Remote Assist。](hololens2-cloud-connected-prepare.md#network)
-> - [（可选）：用于连接到组织资源的 VPN](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
+> - [（可选）：用于连接到组织资源的 VPN](hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
 配置：
 
@@ -85,5 +100,5 @@ Remote Assist协作维护和修复、远程检查以及知识共享和培训。 
 ## <a name="next-step"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [云连接部署-准备](hololens2-cloud-connected-prepare.md)
+> [云连接部署 - 准备](hololens2-cloud-connected-prepare.md)
 
