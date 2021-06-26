@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924360"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977236"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
@@ -29,10 +29,14 @@ ms.locfileid: "112924360"
 
 ## <a name="windows-insider-release-notes"></a>Windows 预览体验成员发行说明
 
-我们很高兴再次开始向 Windows 预览体验成员提供新功能。 新内部版本将前往开发和 Beta 通道获取最新更新。 我们将继续更新此页面，因为我们向新的内部版本添加更多功能Windows 预览体验成员更新。 准备好将这些更新混合到现实中， 
+我们很高兴再次开始向 Windows 预览体验成员提供新功能。 新内部版本将前往开发和 Beta 通道获取最新更新。 我们将继续更新此页面，因为我们向新的内部版本添加更多功能Windows 预览体验成员更新。 准备好将这些更新混合到现实中，
+
+| 功能                 | 说明                | 目标用户 | 引入的生成 |
+|-------------------------|----------------------------|--------------|------------------|
+| HoloLens 上的 CSP 更改 | 用于查询数据的新 CSP | IT 管理员    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>HoloLens 上的 CSP 更改
- 
+
 - 在内部Windows 预览体验成员中引入，20348.1403
 
 #### <a name="devdetail-csp"></a>DevDetail 云解决方案提供商
