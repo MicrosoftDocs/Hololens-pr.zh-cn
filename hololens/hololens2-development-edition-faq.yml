@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: HoloLens 2开发版常见问题解答
-  description: 及时了解有关 HoloLens 2 开发版混合现实设备的最常见问题。
+  description: 随时了解有关 HoloLens 2 开发版混合现实设备的最常见问题。
   keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
   author: evmill
   ms.author: v-evmill
@@ -15,159 +15,159 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 97f3bbdfec85e64d2895dfb5482ee9dc692c5e4c
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637259"
+  ms.locfileid: "113639686"
 title: HoloLens 2 开发版常见问题解答
 summary: ''
 sections:
 - name: 一般问题
   questions:
   - question: >
-      HoloLens 2 开发版有哪些功能？
+      使用开发版HoloLens 2什么？
     answer: >
-      HoloLens 2 开发版包含一个 HoloLens 2 $500，其中包含个月、3个月的 Unity Pro 试用版和3个月的 Pixyz 插件试用版。
+      HoloLens 2 Development Edition 包括 HoloLens 2、500 美元的 Azure 额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版。
   - question: >
-      HoloLens 2 和 HoloLens 2 开发版之间有何区别？
+      HoloLens 2 HoloLens 2 版之间有什么区别？
     answer: >
-      您只能使用 HoloLens 2 开发版本来生成和测试内部企业应用程序，以便在生产设置中与 HoloLens 2 (商业版) 一起使用。 在购买开发版的过程中，Microsoft 可能会自行决定是否向您提供在结帐过程中确定的某些权利。 这些权利包括在有限期限内兑换某些 Microsoft 或第三方或第三方服务或工具的特定折扣额度或试用版的权限。 [了解详细信息](hololens2-options-dev-edition.md)
+      只能使用 HoloLens 2 Development Edition 来生成和测试内部企业应用程序，以在生产设置HoloLens 2 (商业版) 内部企业应用程序。 作为购买 Development Edition 的一部分，Microsoft 可以自行提供在结帐过程中确定的某些权利。 这些权利包括兑换某些折扣额度或在有限时段内试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options-dev-edition.md)
   - question: >
-      是否可以使用任何版本的 HoloLens 2 进行开发？
+      可以使用任何版本的 HoloLens 2进行开发？
     answer: >
       是。 任何版本的 HoloLens 2 都可用于开发应用。
   - question: >
-      我如何在 Azure 额度中收到 $500、3个月的统一 Pro 试用版和3个月的 Pixyz 插件试用版？
+      如何接收 500 美元的 Azure 额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版？
     answer: >
-      折扣额度或试用版访问将发送到产品发货的2个工作日内在购买时使用的电子邮件。
+      折扣额度或试用访问权限将在产品发货后 2 个工作日发送到购买时使用的电子邮件。
   - question: >
-      我是否可以将我的 HoloLens 2 仅 (设备) 设备升级到 HoloLens 2 开发版，以获得试用信用额度？
+      能否将设备"升级"HoloLens 2 (设备) 升级到 HoloLens 2 Development Edition 以获得试用额度？
     answer: >
-      不，我们不提供设备传输计划。 不能从任何版本传输到任何其他版本。
+      否，我们不提供设备传输计划。 无法从任何版本转移到任何其他版本。
   - question: >
       什么是 Unity Pro？
     answer: >
-      Unity Pro 是适用于中小型录音室/公司的实时3d 平台。 它适用于混合技术和非技术技能的团队。 [了解详细信息](https://store.unity.com/products/unity-pro)
+      Unity Pro是一个适用于小型/中型工作室/企业实时 3D 平台。 它专为混合了技术和非技术技能的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
   - question: >
       什么是 Pixyz 插件？
     answer: >
-      Pixyz 插件读取和转换几乎任何格式，将其优化并置于 Unity 中，并将其阶段用于为实时应用程序提供随时可用的资产。 [了解详细信息](https://unity.com/products/pixyz)
+      Pixyz 插件读取和转换几乎任何格式，优化并将其置于 Unity 中，并阶段化它，为实时应用程序提供随时可用资产。 [了解详细信息](https://unity.com/products/pixyz)
   - question: >
-      HoloLens 2 开发版是否有融资？
-    answer: "是的， [HoloLens 2 开发版的融资](https://ms.liftforward.com/hololens?product=hololens-development-edition)现在仅在美国中可用。 \n"
+      HoloLens 2版是否可用？
+    answer: "是的[，HoloLens 2开发版](https://ms.liftforward.com/hololens?product=hololens-development-edition)目前仅在 美国。 \n"
   - question: >
-      Who 是否与 HoloLens 2 开发版权利相关问题？
+      Who我与开发版权利HoloLens 2联系吗？
     answer: >
-      如果与权利相关的任何问题，请联系你的销售专家，网址为866-425-4709，周一至周五，早晨到6：6，PST。
-  - question: "公司是否可以购买多个 HoloLens 2 开发版设备？ \n"
-    answer: "此设备用于构建混合现实解决方案的开发人员。 我们限制每个客户交易的购买一次。 如果贵公司想要购买多个开发版设备，则需要单独的事务来代表公司购买 HoloLens 2 开发版设备。 \n"
-  - question: "我能否向客户显示 HoloLens 2 开发版设备？ \n"
+      如果对权利有任何疑问，请通过 866-425-4709、周一到周五、上午 6 点到下午 6 点（PST）联系销售专家。
+  - question: "我的公司能否购买多个 HoloLens 2 Development Edition 设备？ \n"
+    answer: "此设备适用于生成混合现实解决方案的开发人员。 我们限制每个客户交易一次购买。 如果你的公司想要购买多个 Development Edition 设备，则需要单独的交易HoloLens 2代表公司购买 Development Edition 设备。 \n"
+  - question: "我能否向HoloLens 2显示我的开发版设备？ \n"
     answer: >
-      是的，此设备旨在用于设计混合现实解决方案并对其进行测试。
+      是的，此设备旨在用于原型制作和测试混合现实解决方案。
   - question: "在哪里可以购买 HoloLens 2 开发版？ \n"
-    answer: "HoloLens 2开发版仅在 Microsoft Store 上出售。  \n"
-  - question: "能否返回 HoloLens 2 开发版？  \n"
+    answer: "HoloLens 2Development Edition 以独占方式在 Microsoft Store。  \n"
+  - question: "能否返回我的 HoloLens 2 开发版？  \n"
     answer: >
-      所有销售都是最终的，HoloLens 2 开发版上没有退款。
+      所有销售都是最终销售，并且开发版HoloLens 2退款。
   - question: >
-      开发人员版有不同于 HoloLens 2 的不同硬件要求吗？
-    answer: "不能，此设备与硬件要求不同。 开发版允许在开发和/或测试应用程序的商业设置中部署协助。 \n"
+      开发人员版的硬件要求是否不同于HoloLens 2？
+    answer: "否，从硬件要求的角度来看，此设备是相同的。 允许部署 Development Edition，帮助在商业环境中开发和/或测试应用程序。 \n"
   - question: >
-      如何在 HoloLens 2 开发版本中使用混合现实 Toolkit-Unity 进行开发？
+      如何使用 Mixed Reality Toolkit - Unity 在我的 HoloLens 2 开发版上进行开发？
     answer: >
       MRTK-Unity 是由 Microsoft 驱动的项目，它提供了一系列组件和功能来加速 Unity 中的跨平台 MR 应用开发。 [了解详细信息](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
   - question: >
-      如何使用混合现实 Toolkit – Unreal UXT 在我的 HoloLens 2 开发版上进行开发？
+      如何使用混合现实 Toolkit - Unreal UXT 在我的 HoloLens 2 开发版上进行开发？
     answer: >
-      MRTK-Unreal 是要释放的第一个 UX 工具组件，目前仅在 HoloLens 2 上受支持。 组件插件包括代码、蓝图以及用于输入模拟的常见 UX 功能的示例资产、手势交互 Actor、可按按钮组件、操纵器组件和跟踪行为组件。 [了解详细信息](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+      MRTK-Unreal是要发布的第一个 UX Tools 组件，目前仅在 HoloLens 2。 组件插件包括代码、蓝图以及用于输入模拟的常见 UX 功能的示例资产、手势交互 Actor、可按按钮组件、操纵器组件和跟踪行为组件。 [了解详细信息](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
   - question: >
-      HoloLens 2 开发版的操作系统版本是否与 HoloLens 2 相同？
+      HoloLens 2 开发版的 OS 版本是否与HoloLens 2？
     answer: >
       是。
   - question: >
-      能否在 HoloLens 2 开发版设备上运行旁加载发布的 (或存储) 应用程序？
+      我能否在) Development Edition (运行已发布的HoloLens 2或存储应用程序？
     answer: >
-      如果你按 HoloLens 2 开发版的条款和条件遵守，则可以在开发人员版上运行任何发布的应用程序。 我们不限制为此 SKU 使用旁加载或存储的应用程序。
+      如果你正在考虑开发HoloLens 2条款和条件，可以，可以在 Developer Edition 中运行任何已发布的应用程序。 我们不限制对此 SKU 使用旁加载或存储的应用程序。
   - question: >
-      在哪里可以了解 HoloLens 2 开发版的详细信息？
+      在哪里可以了解有关 HoloLens 2 版本？
     answer: >
-      请访问 HoloLens 2 开发版文档页。 [了解详细信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      请访问 HoloLens 2 Development Edition 文档页。 [了解详细信息](hololens2-options.md?tabs=device)
   - question: >
-      在哪里可以了解有关如何开发混合现实解决方案的详细信息？
+      在哪里可以了解有关开发混合现实解决方案的更多信息？
     answer: >
-      请访问混合现实开发文档的简介。 [了解详细信息](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+      访问混合现实开发简介文档。 [了解详细信息](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
-      在哪里可以了解有关设计混合现实解决方案的详细信息？
+      在哪里可以了解有关设计混合现实解决方案的更多信息？
     answer: >
-      请访问混合现实设计文档简介。 [了解详细信息](https://docs.microsoft.com/windows/mixed-reality/design/design)
+      访问混合现实设计简介文档。 [了解详细信息](/windows/mixed-reality/design/design)
   - question: >
-      在哪里可以获得 HoloLens Developer Edition 的支持？
+      在哪里可以获取对 HoloLens 版的支持？
     answer: >
-      [在此处](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)获取支持。
+      在此处获取 [支持。](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)
 - name: Unity
   questions:
   - question: >
-      我的 Unity 试用版中包含哪些内容？
+      我的 Unity 试用版包含哪些内容？
     answer: >
-      使用三个日历月份 Pro 试用版，可访问 unity&#39;s 完整解决方案，使专业人员能够创建、操作和盈利。 相关的 Unity Pro 试用版没有要兑换的截止时间。
+      使用三日历月 Unity Pro试用版可以访问 Unity&#39;，让专业人员能够创建、运营和盈利的完整解决方案。 相关 Unity Pro试用版没有兑换截止时间。
 
 
-      此产品/服务适用于新用户，不适用于已建立的 Unity Pro 订阅。 Unity Pro 试用版可能受其他条款的约束，这些条款将于兑换时提供。 查看适用的 [条款 &amp; 条件](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) 和 [隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
+      此产品/服务适用于新用户，不适用于已建立的 Unity Pro订阅。 Unity Pro可能受兑换时提供的其他条款限制。 查看适用的[ &amp; 条款条件和](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
   - question: >
-      如何兑换 Unity Pro 试用版？
+      如何兑换 Unity Pro试用版？
     answer: >
-      兑换方向
+      兑换说明
 
 
-      1. 访问 id.unity.com
+      1. 请访问 id.unity.com
 
       2. 使用 Unity ID 登录或创建帐户
 
-      3. 选择 &#39;兑换产品代码&#39;
+      3. 选择&#39;兑换产品代码&#39;
 
-      4. 输入产品代码，然后选择 "&#39;兑换产品代码&#39;
+      4. 输入产品代码，然后选择&#39;兑换产品代码&#39;
 
 
-      有关[详细信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)，请访问 HoloLens 2 开发版文档
+      若要了解HoloLens 2，请访问开发[版文档](hololens2-options.md?tabs=device)
   - question: >
-      是否可以生成具有 PRO 许可证之外的 Unity 版本的应用程序？
+      能否使用 PRO 许可证外的其他 Unity 版本生成应用程序？
     answer: >
       是的，可以生成具有所有兼容版本的 Unity 的应用程序。
   - question: >
-      如何实现联系 Unity 支持？
+      如何实现 Unity 支持人员？
     answer: >
-      若要获取有关 Unity ID、帐户、组织 (s) 和订阅 () 的任何问题的帮助，请访问 support.unity3d.com。
+      若要获取有关 Unity ID、帐户、组织 (帐户) 订阅 (的任何问题) ，请访问 support.unity3d.com。
 - name: Pixyz
   questions:
   - question: >
-      我的 Pixyz 插件试用版中包含哪些内容？
+      Pixyz 插件试用版包含哪些内容？
     answer: >
-      这是一个三日历月 Pixyz 插件试用版，可以使用它来创建具有完美分割网格、有限多边形计数和自动 UV 的可用资产。 相关的 Pixyz 插件试用版没有要兑换的截止时间。
+      一个三日历月 Pixyz 插件试用版，允许访问 Pixyz，以创建具有完美切分网格、有限多边形计数和自动 UV 的现成资产。 相关的 Pixyz 插件试用版没有兑换截止时间。
 
 
-      此产品/服务适用于新用户，不会在已建立的 Pixyz 订阅上堆积。 Pixyz 插件可能会受到兑换时的其他条款的约束。 查看适用的 [条款 &amp; 条件](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) 和 [隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
+      此产品/服务适用于新用户，不会堆叠到已建立的 Pixyz 订阅。 Pixyz 插件可能受兑换时将做出的其他条款限制。 查看适用的[ &amp; 条款条件和](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
   - question: >
       如何兑换 Pixyz 插件试用版？
     answer: >
-      兑换方向
+      兑换说明
 
 
-      1. 访问 id.unity.com
+      1. 请访问 id.unity.com
 
       2. 使用 Pixyz 登录或创建帐户
 
-      3. 单击 "&#39;兑换产品代码&#39;
+      3. 单击&#39;兑换产品代码&#39;
 
-      4. 输入产品代码，然后单击 "&#39;兑换产品代码&#39;
+      4. 输入产品代码，然后单击&#39;兑换产品代码&#39;
 
 
-      有关[详细信息](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)，请访问 HoloLens 2 开发版文档
+      若要了解HoloLens 2，请访问开发[版文档](hololens2-options.md?tabs=device)
   - question: >
-      如何实现联系 Pixyz 支持？
+      如何实现联系 Pixyz 支持部门？
     answer: >
-      若要获取有关 Unity ID、帐户、组织 () 和订阅 () 的任何问题的帮助，请访问 support.unity3d.com
+      若要获取有关 Unity ID、帐户、组织帐户和订阅 (和订阅) 的任何问题 () ，请访问 support.unity3d.com
 
 
       有关特定于 Pixyz 的支持 (在兑换试用版后) ，请访问 [Pixyz-software.com/support](http://pixyz-software.com/support)
@@ -190,4 +190,4 @@ sections:
       利用你的 Azure 额度，你可以开始生成 Microsoft&#39;的一组云服务。 HoloLens 2 开发版随附的 Azure 额度使客户能够快速开始在 Azure 上构建和测试混合现实应用程序。 有关在 Azure 上构建的完整详细信息，请访问 [azure 资源](https://azure.microsoft.com/en-us/resources/)
   - question: >
       在哪里可以了解有关 Azure mixed reality 服务的详细信息？
-    answer: Microsoft 提供一组混合现实服务，使开发人员能够生成和测试混合现实解决方案。 [了解详细信息](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+    answer: Microsoft 提供一组混合现实服务，使开发人员能够生成和测试混合现实解决方案。 [了解详细信息](/windows/mixed-reality/develop/mixed-reality-cloud-services)
