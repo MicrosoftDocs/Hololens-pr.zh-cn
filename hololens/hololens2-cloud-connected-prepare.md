@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f747a2893ed3551e91a81bdbf5971deefbf6ce46
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637126"
+ms.locfileid: "113639652"
 ---
 # <a name="prepare---cloud-connected-guide"></a>准备-云连接指南
 
@@ -34,7 +34,7 @@ ms.locfileid: "113637126"
 Azure AD 是一种基于云的目录服务，提供标识和访问管理。 使用 Microsoft Office 365 或 Intune 的组织已使用 Azure AD，其中有三个版本：免费版、高级版 P1 和高级版 P2 (参见[Azure Active Directory 版本](https://azure.microsoft.com/documentation/articles/active-directory-editions)。 ) 所有版本都支持 Azure AD 设备注册，但要启用 MDM 自动注册，需要使用高级版 P1，稍后将使用此指南。
 
 > [!IMPORTANT]
-> 需要 Azure Active Directory，因为 HoloLens 设备不支持本地 AD 联接。 如果&#39;t 已设置 Azure Active Directory，请参阅[在 Azure Active Directory 中创建新租户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)。
+> 需要 Azure Active Directory，因为 HoloLens 设备不支持本地 AD 联接。 如果&#39;t 已设置 Azure Active Directory，请参阅[在 Azure Active Directory 中创建新租户](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)。
 
 ## <a name="identity-management"></a>标识管理
 
