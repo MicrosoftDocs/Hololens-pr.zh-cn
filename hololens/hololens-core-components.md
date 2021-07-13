@@ -12,22 +12,22 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 684059b1ab91860dc6af63cbd6f0927876fefb8c
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 2fb58345f623a0b70c1fda10b9fb550de70f4c6d
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112961386"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635783"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>在商业环境中规划 HoloLens 2 部署
 
 ## <a name="overview"></a>概述
 > [!NOTE]
-> 本概述旨在帮助 IT 专业人员了解在组织中部署和管理 Microsoft HoloLens 2 设备的注意事项。 有关设备最终用户的信息，请参阅入门 [基础知识](hololens2-setup.md) 。
+> 本概述旨在帮助 IT 专业人员了解在组织中部署和管理 Microsoft HoloLens 2 设备的注意事项。 对于设备最终用户，请参阅开始[使用 HoloLens 2](hololens2-setup.md) 。
 
-HoloLens 2 在 Windows 10 全息版上运行，可为组织提供强大灵活的内置移动设备和应用管理技术。 Windows 10 全息版支持端到端设备生命周期管理，使公司可以控制其设备、数据和应用。 使用全面的移动设备管理解决方案，可以轻松地将 HoloLens 2 纳入到标准生命周期实践中，从设备注册、配置和应用程序管理到维护和停用。
+HoloLens 2 在 Windows 10 全息版上运行，后者为组织提供强大、灵活的内置移动设备和应用管理技术。 Windows 10 全息版支持端到端设备生命周期管理，使公司可以控制其设备、数据和应用。 使用全面的移动设备管理解决方案，可以轻松地将 HoloLens 2 纳入到标准生命周期实践，从设备注册、配置和应用程序管理到维护和停用。
 
-以下步骤可帮助指导你完成在你的组织中使用 HoloLens 2 的过程。
+以下步骤和视频可帮助指导你完成组织中的 HoloLens 2 采用过程。
 
 | | |
 |--|--|
@@ -37,19 +37,21 @@ HoloLens 2 在 Windows 10 全息版上运行，可为组织提供强大灵活的
 | ![步骤 4](images/4green.png) | <br/> **[部署](#deploy)**：了解如何部署设备并安全高效地分发应用程序。 |
 | ![步骤 5](images/5green.png) | <br/> **[维护](#maintain)**：查找正确维护 HoloLens 2 设备的状态所需的内容，并确保符合公司策略。 |
 
+> [!VIDEO https://channel9.msdn.com/Shows/IT-Ops-Talk/HoloLens-2-Deployment-Overview/player]
+
 ## <a name="prepare"></a>准备
 
 了解支持整套 HoloLens 2 功能所需的基本基础结构服务。 
 
 | 组件 | 说明 |
 |-----------|------------|
-| [Azure AD](hololens-identity.md) | 提供 HoloLens 2 的标识和访问管理  |
-| [移动设备管理](hololens-mdm-configure.md)| 管理连接到租户的 HoloLens 2 设备  |
+| Azure AD | 提供 HoloLens 2 的标识和访问管理  |
+| [移动设备管理](hololens-mdm-configure.md)| 管理连接到租户 HoloLens 2 设备  |
 | [Wi-fi 网络](hololens-commercial-infrastructure.md)| Wi-Fi 可用并且设备可以连接到 Internet  |
 
 ## <a name="configure"></a>配置
 
-使用 Intune 和 Autopilot 作为低接触解决方案，将 HoloLens 2 注册并配置到组织的 Azure AD 租户和 MDM。
+使用 Intune 和 Autopilot 作为低接触解决方案，将 HoloLens 2 注册和配置到组织的 Azure AD 租户和 MDM。
 
 | 组件 | 说明 |
 |-----------|------------|
@@ -59,19 +61,19 @@ HoloLens 2 在 Windows 10 全息版上运行，可为组织提供强大灵活的
 
 ## <a name="deploy"></a>部署
 
-分发你的 HoloLens 2 设备并验证其配置。 
+分发 HoloLens 2 设备并验证其配置。 
 
 | 组件 | 说明 |
 |-----------|------------|
-| [注册验证](hololens2-corp-connected-deploy.md#enrollment-validation) | 验证设备是否已从设置或 Azure 门户连接 Azure AD |
+| [注册验证](hololens2-corp-connected-deploy.md#enrollment-validation) | 验证设备是否已从设置或 Azure 门户 Azure AD 联接 |
 | [证书验证](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | 检查设置，并验证它们是否已正确分发 |
-| [验证应用安装](hololens2-corp-connected-deploy.md#validate-lob-app-install) | 确认应用是否存在并在 HoloLens 2 上工作 |
+| [验证应用安装](hololens2-corp-connected-deploy.md#validate-lob-app-install) | 确认应用是否存在，并处理 HoloLens 2 |
 
 ## <a name="maintain"></a>维护
 
-将 Windows 更新 for Business 与 MDM 系统或 Microsoft Store 一起使用，以将你的 HoloLens 2 和应用更新到一起。
+将 Windows 更新用于业务与 MDM 系统或 Microsoft Store，以使你的 HoloLens 2 和应用更新。
 
 | 组件 | 说明 |
 |-----------|------------|
-| [更新 HoloLens 2](hololens-updates.md) | 通过适用于企业的 Windows 更新按需配置更新 |
+| [更新 HoloLens 2](hololens-updates.md) | 通过 Windows 业务更新来根据需要配置更新 |
 | [更新应用](app-deploy-overview.md) | 通过 MDM 系统或 Microsoft Store 进行配置

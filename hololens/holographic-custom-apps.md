@@ -1,6 +1,6 @@
 ---
-title: '管理自定义应用，用于 HoloLens (第一代) '
-description: 了解如何使用设备门户和 Visual Studio 在 HoloLens 设备上安装、卸载和端加载自定义全息应用。
+title: " (第一) 代 HoloLens 管理自定义应用"
+description: 了解如何使用设备门户和 Visual Studio 在 HoloLens 设备上安装、卸载和加载自定义全息应用。
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 12/10/2020
 manager: v-miegge
@@ -16,33 +16,34 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 721c169c8ad34acab6914448af8ffc6ceec97a0e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: a179032978e1fc062273a6754e3b0a1ad50a5211
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308373"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635902"
 ---
-# <a name="manage-custom-apps-for-hololens-1st-gen"></a>管理自定义应用，用于 HoloLens (第一代) 
+# <a name="manage-custom-apps-for-hololens-1st-gen"></a> (第一) 代 HoloLens 管理自定义应用
 
-HoloLens 支持 Microsoft Store 中的多个现有应用程序以及专为 HoloLens 构建的新应用程序。 本文重点介绍自定义全息应用程序。  
+HoloLens 支持 Microsoft Store 中的许多现有应用程序以及专门为 HoloLens 构建的新应用程序。 本文重点介绍自定义全息应用程序。  
 
 有关应用商店应用的详细信息，请参阅 [管理应用商店的应用](holographic-store-apps.md)。
 
 > [!IMPORTANT]
-> 以下信息是为 HoloLens (第一代) 创建的，也称为 HoloLens 开发人员版。 作为此类旁加载应用，通过设备门户和通过 Visual Studio 安装应用非常常见。 对于企业部署，我们不建议启用开发人员模式，这两种方法都使用这两种模式。 如果你对安全应用部署方法感兴趣，请查看我们的 [应用管理：概述](app-deploy-overview.md)。
+> 为第一代) HoloLens (创建了以下信息，同时称为 HoloLens 开发人员版。 作为此类旁加载应用，通过设备门户并通过 Visual Studio 安装应用非常常见。 对于企业部署，我们不建议启用开发人员模式，这两种方法都使用这两种模式。 如果你对安全应用部署方法感兴趣，请查看我们的 [应用管理：概述](app-deploy-overview.md)。
 >
-> 如果你正在寻找适用于 HoloLens 2 设备的任何应用程序开发方法，请参阅：
-> - [设备门户：安装应用](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-> - [使用 Visual Studio 部署和调试应用程序](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+> 如果要为 HoloLens 2 设备查找应用程序安装的开发方法，请参阅：
+>
+> - [设备门户：安装应用](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [使用 Visual Studio 部署和调试应用程序](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## <a name="install-custom-apps"></a>安装自定义应用
 
-你可以通过使用设备门户或通过从 Visual Studio 部署应用来在 HoloLens 上安装自己的应用程序。
+你可以通过使用设备门户或通过从 Visual Studio 部署应用，在 HoloLens 上安装自己的应用程序。
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>使用设备门户安装应用程序包
 
-1. 建立从 [设备门户](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) 到目标 HoloLens 的连接。
+1. 建立从[设备门户](/windows/mixed-reality/using-the-windows-device-portal)到目标 HoloLens 的连接。
 
 1. 在左侧导航栏中，导航到 " **应用** " 页。
 
@@ -54,11 +55,11 @@ HoloLens 支持 Microsoft Store 中的多个现有应用程序以及专为 HoloL
 1. 选择“转到”。
 
    > [!div class="mx-imgBorder"]
-   > ![在 Microsoft HoloLens 上的 Windows 设备门户中安装应用表单](images/deviceportal-appmanager.jpg)
+   > ![在 Microsoft HoloLens 上 Windows 设备门户中安装应用窗体](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>从 Microsoft Visual Studio 2015 进行部署
 
-1.  ( .sln 文件) 打开应用的 Visual Studio 解决方案。
+1. ) Visual Studio 打开应用的解决方案 ( .sln 文件。
 
 1. 打开项目的 " **属性**"。
 
@@ -70,9 +71,9 @@ HoloLens 支持 Microsoft Store 中的多个现有应用程序以及专为 HoloL
    
 1. 生成解决方案。
 
-1. 若要将应用从开发 PC 部署到 HoloLens，请选择 " **远程计算机**"。 如果已有一个 HoloLens 现有版本，请选择 **"是"** 以安装此更新版本。  
+1. 若要将应用从开发 PC 部署到 HoloLens，请选择 "**远程计算机**"。 如果 HoloLens 上已有现有的生成，请选择 **"是"** 以安装此更新版本。  
 
-   ![Visual Studio 中适用于应用的远程计算机部署到 Microsoft HoloLens](images/vs2015-remotedeployment.jpg)  
+   ![要在 Visual Studio 中 Microsoft HoloLens 的应用的远程计算机部署](images/vs2015-remotedeployment.jpg)  
    
 1. 应用程序将在你的 HoloLens 上安装和自动启动。
 

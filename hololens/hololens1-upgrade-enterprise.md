@@ -1,6 +1,6 @@
 ---
 title: 解锁 Windows Holographic for Business 功能
-description: 升级到 Windows 全息版时，HoloLens 提供适用于企业的额外功能。
+description: 升级到 Windows Holographic for Business 时，HoloLens 提供专为企业设计的额外功能。
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -12,30 +12,30 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8d42c935e698f156aed894e4fa5012c9f04d8d49
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308416"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635188"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>解锁 Windows Holographic for Business 功能
 
 > [!IMPORTANT]
 > 此页仅适用于 HoloLens 第一代。
 
-Microsoft HoloLens 在 *开发版* 中提供，该版本可运行 windows 全息 (windows 10 版本，该版本是为 HoloLens) 设计的，也是在 [商业套件](hololens-commercial-features.md)中提供的，后者提供了为企业设计的额外功能。
+Microsoft HoloLens 在 *开发版* 中提供，该版本 Windows 全息版 (一版 Windows 10，该版本是为 HoloLens) 设计的版本，也是在 [商业套件](hololens-commercial-features.md)中提供的，后者提供了针对企业设计的额外功能。
 
 购买商业套件时，你会收到可将 Windows 全息版升级为 Windows Holographic for Business 的许可。 你可以使用组织的 [移动设备管理 (MDM) 提供程序](#edition-upgrade-by-using-mdm) 或 [预配包](#edition-upgrade-by-using-a-provisioning-package)将此许可证应用到设备。
 
 > [!TIP]
-> 在 Windows 10 版本1803中，可以通过选择 "**设置**" "系统" 来检查是否已将 HoloLens 升级到 business edition  >  。
+> 在 Windows 10 版本1803中，可以通过选择 "**设置** 系统" 来检查 HoloLens 是否已升级到 business edition  >  。
 
 ## <a name="edition-upgrade-by-using-mdm"></a>使用 MDM 升级版本
 
 可通过支持 [WindowsLicensing 配置服务提供程序 (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904983.aspx) 的任意 MDM 提供程序应用企业许可。 最新版的 Microsoft MDM API 将支持 WindowsLicensing CSP。
 
-有关使用 Microsoft Intune 升级 HoloLens 的分步说明，请参阅 [将运行 Windows 全息的设备升级到 Windows 全息版 For Business](https://docs.microsoft.com/intune/holographic-upgrade)。
+有关使用 Microsoft Intune 升级 HoloLens 的分步说明，请参阅[将运行 Windows 全息的设备升级到 Windows Holographic for Business](/intune/holographic-upgrade)。
 
  在其他 MDM 提供程序中，策略的具体设置和部署步骤可能不同。
 
@@ -77,7 +77,7 @@ Microsoft HoloLens 在 *开发版* 中提供，该版本可运行 windows 全息
 
     还可以选择 " **浏览** " 以更改默认输出位置。
 
-1. 选择“**下一页**”。
+1. 选择“下一步”。
 
 1. 选择 " **生成** " 开始生成包。 "生成" 页显示项目信息，进度栏指示生成状态。
 
@@ -85,14 +85,14 @@ Microsoft HoloLens 在 *开发版* 中提供，该版本可运行 windows 全息
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>将预配包应用于 HoloLens
 
-1. 使用 USB 电缆将设备连接到 PC。 启动该设备，但不要继续在初始设置体验的 " **适合** " 页上 (第一页中) 蓝色框。 在电脑上，HoloLens 作为设备显示在文件资源管理器中。
+1. 使用 USB 电缆将设备连接到 PC。 启动该设备，但不要继续在初始设置体验的 " **适合** " 页上 (第一页中) 蓝色框。 在电脑上，HoloLens 在文件资源管理器中显示为设备。
 
     > [!NOTE]
-    > 如果 HoloLens 设备运行的是 Windows 10 1607 版或更早版本，请在设备上暂时按下并释放 " **音量** " 和 " **电源** " 按钮以打开文件资源管理器。
+    > 如果 HoloLens 设备运行 Windows 10 版本1607或更低版本，则通过在设备上暂时按下并释放 "**音量**" 和 "**电源**" 按钮打开文件资源管理器。
 
 1. 在文件资源管理器中，将预配包 (.ppkg) 拖放到设备存储中。
 
-1. 虽然 HoloLens 仍处于 " **适合** " 页，但请暂时按下并释放 " **音量降低** " 和 " **电源** 按钮"。
+1. 虽然 HoloLens 仍处于 "**合适**" 页上，请暂时按下并释放 "**音量降低**" 和 "**电源**" 按钮。
 
 1. HoloLens 会询问你是否信任包，并想要应用它。 确认你信任程序包。
 
