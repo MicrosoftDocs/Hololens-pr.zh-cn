@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3fd5f6baf05277bcbf2bf4152ba4735ca91e5bd0
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385635"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397488"
 ---
 # <a name="connect-to-cellular-and-5g"></a>连接到手机网络和 5G
 
@@ -38,17 +38,17 @@ HoloLens 2 支持两种方法连接到手机网络和 5G 网络：
 
 ## <a name="usb-c-tethering"></a>USB-C 网络共享
 
-USB-C 网络共享可以为需要它的高级工作负载提供更低的延迟。 例如，[Azure 远程渲染](https://azure.microsoft.com/services/remote-rendering) 就可以从网络共享中获益。 请注意，网络共享需要在手机设备和 HoloLens 之间使用电缆连接，并且支持这一功能的设备数量有限。
+USB-C 网络共享可以为需要它的高级工作负载提供更低的延迟。 例如，[Azure 远程渲染](https://azure.microsoft.com/services/remote-rendering)可以从网络共享中获益。 请注意，网络共享需要在手机设备和 HoloLens 之间使用电缆连接，并且支持这一功能的设备数量有限。
 
 ### <a name="usb-c-compatibility"></a>USB-C 兼容性
 
-将自己显示为以太网适配器的设备可以与 Windows Holographic 版本 2004 及更高版本一起使用。
+将自己显示为以太网适配器的有限数量的设备可以与 Windows Holographic 版本 2004 及更高版本一起使用。
 
-未将自己显示为以太网适配器的设备必须支持通用的 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驱动程序。 有关设备是否支持通用 Microsoft RNDIS 驱动程序的详细信息，请咨询设备制造商。
+未将自己显示为以太网适配器的设备必须支持通用的 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 驱动程序。 但是，仅有有限数量的设备与 HoloLens 2 兼容。 有关设备是否支持通用 Microsoft RNDIS 驱动程序的详细信息，请咨询设备制造商。
 
 不支持非 RNDIS 兼容或需要安装驱动程序或应用程序的设备。
 
-虽然 Microsoft 不维护兼容设备的列表，但 [此处](https://aka.ms/HLCommunityCell) 的主题设有一个社区。
+虽然 Microsoft 不维护兼容设备的列表，但[此处](https://aka.ms/HLCommunityCell)的主题设有一个社区讨论。
 
 ### <a name="connecting-to-a-tethered-device"></a>正在连接到网络共享设备
 
