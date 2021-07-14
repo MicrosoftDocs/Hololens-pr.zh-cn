@@ -13,86 +13,123 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385485"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924173"
 ---
-# <a name="connect-to-bluetooth-and-usb-c-devices"></a><span data-ttu-id="bd45b-103">连接到蓝牙和 USB-C 设备</span><span class="sxs-lookup"><span data-stu-id="bd45b-103">Connect to Bluetooth and USB-C devices</span></span>
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a><span data-ttu-id="284f0-103">连接到蓝牙和 USB-C 设备</span><span class="sxs-lookup"><span data-stu-id="284f0-103">Connect to Bluetooth and USB-C devices</span></span>
+
+## <a name="pair-bluetooth-devices"></a><span data-ttu-id="284f0-104">配对蓝牙设备</span><span class="sxs-lookup"><span data-stu-id="284f0-104">Pair Bluetooth devices</span></span>
+
+<span data-ttu-id="284f0-105">HoloLens 2 支持以下类别的蓝牙设备：</span><span class="sxs-lookup"><span data-stu-id="284f0-105">HoloLens 2 supports the following classes of Bluetooth devices:</span></span>
+
+- <span data-ttu-id="284f0-106">[HID](https://docs.microsoft.com/windows-hardware/drivers/hid/)：</span><span class="sxs-lookup"><span data-stu-id="284f0-106">[HID](https://docs.microsoft.com/windows-hardware/drivers/hid/):</span></span>
+    - <span data-ttu-id="284f0-107">鼠标</span><span class="sxs-lookup"><span data-stu-id="284f0-107">Mouse</span></span>
+    - <span data-ttu-id="284f0-108">Keyboard</span><span class="sxs-lookup"><span data-stu-id="284f0-108">Keyboard</span></span>
+- <span data-ttu-id="284f0-109">音频输出 (A2DP) 设备</span><span class="sxs-lookup"><span data-stu-id="284f0-109">Audio output (A2DP) devices</span></span>
+
+<span data-ttu-id="284f0-110">HoloLens 2 支持以下蓝牙 API：</span><span class="sxs-lookup"><span data-stu-id="284f0-110">HoloLens 2 supports the following Bluetooth APIs:</span></span>
+- <span data-ttu-id="284f0-111">GATT [服务器](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server)和[客户端](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client)</span><span class="sxs-lookup"><span data-stu-id="284f0-111">GATT [Server](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server) and [Client](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client)</span></span>
+- [<span data-ttu-id="284f0-112">RFCOMM</span><span class="sxs-lookup"><span data-stu-id="284f0-112">RFCOMM</span></span>](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+>[!IMPORTANT]
+> <span data-ttu-id="284f0-113">你可能必须从 Microsoft Store 安装相应的伴侣应用才能实际使用 HID 和 GATT 设备。</span><span class="sxs-lookup"><span data-stu-id="284f0-113">You may have to install corresponding companion apps from Microsoft Store to actually use the HID and GATT devices.</span></span>
+
+<span data-ttu-id="284f0-114">HoloLens（第 1 代）支持以下类别的蓝牙设备：</span><span class="sxs-lookup"><span data-stu-id="284f0-114">HoloLens (1st gen) supports the following classes of Bluetooth devices:</span></span>
+
+- <span data-ttu-id="284f0-115">鼠标</span><span class="sxs-lookup"><span data-stu-id="284f0-115">Mouse</span></span>
+- <span data-ttu-id="284f0-116">Keyboard</span><span class="sxs-lookup"><span data-stu-id="284f0-116">Keyboard</span></span>
+- [<span data-ttu-id="284f0-117">HoloLens（第 1 代）点击器</span><span class="sxs-lookup"><span data-stu-id="284f0-117">HoloLens (1st gen) clicker</span></span>](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> <span data-ttu-id="bd45b-104">无法使用外置麦克风。</span><span class="sxs-lookup"><span data-stu-id="bd45b-104">External microphones cannot be used.</span></span> <span data-ttu-id="bd45b-105">HoloLens 2 使用内置 [麦克风阵列](hololens2-hardware.md#audio-and-speech)。</span><span class="sxs-lookup"><span data-stu-id="bd45b-105">HoloLens 2 uses its built-in [microphone array](hololens2-hardware.md#audio-and-speech).</span></span>
+> <span data-ttu-id="284f0-118">其他类型的蓝牙设备（例如，扬声器、耳机、智能手机和游戏板）可能会在 HoloLens 设置中列为可用。</span><span class="sxs-lookup"><span data-stu-id="284f0-118">Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings.</span></span> <span data-ttu-id="284f0-119">但是，HoloLens（第 1 代）上不支持这些设备。</span><span class="sxs-lookup"><span data-stu-id="284f0-119">However, these devices aren't supported on HoloLens (1st gen).</span></span> <span data-ttu-id="284f0-120">有关详细信息，请参阅 [HoloLens 设置将设备列为可用，但设备无法使用](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)。</span><span class="sxs-lookup"><span data-stu-id="284f0-120">For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work).</span></span>
 
-## <a name="pair-bluetooth-devices"></a><span data-ttu-id="bd45b-106">配对蓝牙设备</span><span class="sxs-lookup"><span data-stu-id="bd45b-106">Pair Bluetooth devices</span></span>
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a><span data-ttu-id="284f0-121">配对蓝牙键盘或鼠标</span><span class="sxs-lookup"><span data-stu-id="284f0-121">Pair a Bluetooth keyboard or mouse</span></span>
 
-<span data-ttu-id="bd45b-107">HoloLens 2 支持以下类别的蓝牙设备：</span><span class="sxs-lookup"><span data-stu-id="bd45b-107">HoloLens 2 supports the following classes of Bluetooth devices:</span></span>
+1. <span data-ttu-id="284f0-122">打开键盘或鼠标，使其能够被检测到。</span><span class="sxs-lookup"><span data-stu-id="284f0-122">Turn on your keyboard or mouse, and make it discoverable.</span></span> <span data-ttu-id="284f0-123">若要了解如何使设备可被检测到，请在设备（或其文档）中查找相关信息或访问制造商的网站。</span><span class="sxs-lookup"><span data-stu-id="284f0-123">To learn how to make the device discoverable, look for information on the device (or its documentation) or visit the manufacturer's website.</span></span>
 
-- <span data-ttu-id="bd45b-108">鼠标</span><span class="sxs-lookup"><span data-stu-id="bd45b-108">Mouse</span></span>
-- <span data-ttu-id="bd45b-109">键盘</span><span class="sxs-lookup"><span data-stu-id="bd45b-109">Keyboard</span></span>
-- <span data-ttu-id="bd45b-110">蓝牙音频输出 (A2DP) 设备</span><span class="sxs-lookup"><span data-stu-id="bd45b-110">Bluetooth audio output (A2DP) devices</span></span>
+1. <span data-ttu-id="284f0-124">使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”，然后选择“设置”。</span><span class="sxs-lookup"><span data-stu-id="284f0-124">Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings**.</span></span>
 
-<span data-ttu-id="bd45b-111">HoloLens（第 1 代）支持以下类别的蓝牙设备：</span><span class="sxs-lookup"><span data-stu-id="bd45b-111">HoloLens (1st gen) supports the following classes of Bluetooth devices:</span></span>
+1. <span data-ttu-id="284f0-125">选择“设备”，并确保已启用蓝牙。</span><span class="sxs-lookup"><span data-stu-id="284f0-125">Select **Devices**, and make sure that Bluetooth is on.</span></span>  
 
-- <span data-ttu-id="bd45b-112">鼠标</span><span class="sxs-lookup"><span data-stu-id="bd45b-112">Mouse</span></span>
-- <span data-ttu-id="bd45b-113">键盘</span><span class="sxs-lookup"><span data-stu-id="bd45b-113">Keyboard</span></span>
-- [<span data-ttu-id="bd45b-114">HoloLens（第 1 代）点击器</span><span class="sxs-lookup"><span data-stu-id="bd45b-114">HoloLens (1st gen) clicker</span></span>](https://docs.microsoft.com/hololens/hololens1-clicker)
+1. <span data-ttu-id="284f0-126">看到设备名称后，选择“配对”，然后按照说明操作。</span><span class="sxs-lookup"><span data-stu-id="284f0-126">When you see the device name, select **Pair**, and then follow the instructions.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="bd45b-115">其他类型的蓝牙设备（例如，扬声器、耳机、智能手机和游戏板）可能会在 HoloLens 设置中列为可用。</span><span class="sxs-lookup"><span data-stu-id="bd45b-115">Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may be listed as available in HoloLens settings.</span></span> <span data-ttu-id="bd45b-116">但是，HoloLens（第 1 代）上不支持这些设备。</span><span class="sxs-lookup"><span data-stu-id="bd45b-116">However, these devices aren't supported on HoloLens (1st gen).</span></span> <span data-ttu-id="bd45b-117">有关详细信息，请参阅 [HoloLens 设置将设备列为可用，但设备无法正常工作](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)。</span><span class="sxs-lookup"><span data-stu-id="bd45b-117">For more information, see [HoloLens Settings lists devices as available, but the devices don't work](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).</span></span>
+## <a name="disable-bluetooth"></a><span data-ttu-id="284f0-127">禁用蓝牙</span><span class="sxs-lookup"><span data-stu-id="284f0-127">Disable Bluetooth</span></span>
 
-### <a name="pair-a-bluetooth-keyboard-or-mouse"></a><span data-ttu-id="bd45b-118">配对蓝牙键盘或鼠标</span><span class="sxs-lookup"><span data-stu-id="bd45b-118">Pair a Bluetooth keyboard or mouse</span></span>
+<span data-ttu-id="284f0-128">此程序将关闭蓝牙无线电收发器的 RF 组件，并禁用 Microsoft HoloLens 上的所有蓝牙功能。</span><span class="sxs-lookup"><span data-stu-id="284f0-128">This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.</span></span>
 
-1. <span data-ttu-id="bd45b-119">打开键盘或鼠标，使其能够被检测到。</span><span class="sxs-lookup"><span data-stu-id="bd45b-119">Turn on your keyboard or mouse, and make it discoverable.</span></span> <span data-ttu-id="bd45b-120">若要了解如何使设备可被检测到，请在设备（或其文档）中查找相关信息或访问制造商的网站。</span><span class="sxs-lookup"><span data-stu-id="bd45b-120">To learn how to make the device discoverable, look for information on the device (or its documentation) or visit the manufacturer's website.</span></span>
+1. <span data-ttu-id="284f0-129">使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”，然后选择“设置” > “设备”。</span><span class="sxs-lookup"><span data-stu-id="284f0-129">Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.</span></span>
 
-1. <span data-ttu-id="bd45b-121">使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”\*\*\*\*，然后选择“设置”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="bd45b-121">Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings**.</span></span>
+1. <span data-ttu-id="284f0-130">将“蓝牙”的滑块开关移至“关闭”位置。</span><span class="sxs-lookup"><span data-stu-id="284f0-130">Move the slider switch for **Bluetooth** to the **Off** position.</span></span>
 
-1. <span data-ttu-id="bd45b-122">选择“设备”\*\*\*\*，并确保已启用蓝牙。</span><span class="sxs-lookup"><span data-stu-id="bd45b-122">Select **Devices**, and make sure that Bluetooth is on.</span></span>  
+## <a name="hololens-2-connect-usb-c-devices"></a><span data-ttu-id="284f0-131">HoloLens 2：连接 USB-C 设备</span><span class="sxs-lookup"><span data-stu-id="284f0-131">HoloLens 2: Connect USB-C devices</span></span>
 
-1. <span data-ttu-id="bd45b-123">看到设备名称后，选择“**配对**”，然后按照说明操作。</span><span class="sxs-lookup"><span data-stu-id="bd45b-123">When you see the device name, select **Pair**, and then follow the instructions.</span></span>
+<span data-ttu-id="284f0-132">HoloLens 2 支持以下类别的 USB-C 设备：</span><span class="sxs-lookup"><span data-stu-id="284f0-132">HoloLens 2 supports the following classes of USB-C devices:</span></span>
 
-## <a name="disable-bluetooth"></a><span data-ttu-id="bd45b-124">禁用蓝牙</span><span class="sxs-lookup"><span data-stu-id="bd45b-124">Disable Bluetooth</span></span>
+- <span data-ttu-id="284f0-133">大容量存储设备（如 U 盘）</span><span class="sxs-lookup"><span data-stu-id="284f0-133">Mass storage devices (such as thumb drives)</span></span>
+- <span data-ttu-id="284f0-134">以太网适配器（包括以太网 + 充电）</span><span class="sxs-lookup"><span data-stu-id="284f0-134">Ethernet adapters (including ethernet plus charging)</span></span>
+- <span data-ttu-id="284f0-135">USB-C 转 3.5 毫米数字音频适配器</span><span class="sxs-lookup"><span data-stu-id="284f0-135">USB-C-to-3.5mm digital audio adapters</span></span>
+- <span data-ttu-id="284f0-136">USB-C 数字音频耳机（包括耳机适配器 + 充电）</span><span class="sxs-lookup"><span data-stu-id="284f0-136">USB-C digital audio headsets (including headset adapters plus charging)</span></span>
+- <span data-ttu-id="284f0-137">USB-C 外置麦克风（[Windows 全息版 21H1](hololens-release-notes.md#windows-holographic-version-21h1) 及更高版本）</span><span class="sxs-lookup"><span data-stu-id="284f0-137">USB-C External Microphones ([Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and higher)</span></span>
+- <span data-ttu-id="284f0-138">有线鼠标</span><span class="sxs-lookup"><span data-stu-id="284f0-138">Wired mouse</span></span>
+- <span data-ttu-id="284f0-139">有线键盘</span><span class="sxs-lookup"><span data-stu-id="284f0-139">Wired keyboard</span></span>
+- <span data-ttu-id="284f0-140">组合 PD 集线器（USB A + PD 充电）</span><span class="sxs-lookup"><span data-stu-id="284f0-140">Combination PD hubs (USB A plus PD charging)</span></span>
 
-<span data-ttu-id="bd45b-125">此程序将关闭蓝牙无线电收发器的 RF 组件，并禁用 Microsoft HoloLens 上的所有蓝牙功能。</span><span class="sxs-lookup"><span data-stu-id="bd45b-125">This procedure turns off the RF components of the Bluetooth radio and disables all Bluetooth functionality on Microsoft HoloLens.</span></span>
-
-1. <span data-ttu-id="bd45b-126">使用开花手势（HoloLens [第 1 代]）或开始手势 (HoloLens 2) 转到“开始”\*\*\*\*，然后选择“设置”\*\*\*\* > “设备”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="bd45b-126">Use the bloom gesture (HoloLens (1st gen)) or the start gesture (HoloLens 2) to go to **Start**, and then select **Settings** > **Devices**.</span></span>
-
-1. <span data-ttu-id="bd45b-127">将“蓝牙”\*\*\*\* 的滑块开关移至“关闭”\*\*\*\* 位置。</span><span class="sxs-lookup"><span data-stu-id="bd45b-127">Move the slider switch for **Bluetooth** to the **Off** position.</span></span>
-
-## <a name="hololens-2-connect-usb-c-devices"></a><span data-ttu-id="bd45b-128">HoloLens 2：连接 USB-C 设备</span><span class="sxs-lookup"><span data-stu-id="bd45b-128">HoloLens 2: Connect USB-C devices</span></span>
-
-<span data-ttu-id="bd45b-129">HoloLens 2 支持以下类别的 USB-C 设备：</span><span class="sxs-lookup"><span data-stu-id="bd45b-129">HoloLens 2 supports the following classes of USB-C devices:</span></span>
-
-- <span data-ttu-id="bd45b-130">大容量存储设备（如 U 盘）</span><span class="sxs-lookup"><span data-stu-id="bd45b-130">Mass storage devices (such as thumb drives)</span></span>
-- <span data-ttu-id="bd45b-131">以太网适配器（包括以太网 + 充电）</span><span class="sxs-lookup"><span data-stu-id="bd45b-131">Ethernet adapters (including ethernet plus charging)</span></span>
-- <span data-ttu-id="bd45b-132">USB-C 转 3.5 毫米数字音频适配器</span><span class="sxs-lookup"><span data-stu-id="bd45b-132">USB-C-to-3.5mm digital audio adapters</span></span>
-- <span data-ttu-id="bd45b-133">USB-C 数字音频耳机（包括耳机适配器 + 充电）</span><span class="sxs-lookup"><span data-stu-id="bd45b-133">USB-C digital audio headsets (including headset adapters plus charging)</span></span>
-- <span data-ttu-id="bd45b-134">有线鼠标</span><span class="sxs-lookup"><span data-stu-id="bd45b-134">Wired mouse</span></span>
-- <span data-ttu-id="bd45b-135">有线键盘</span><span class="sxs-lookup"><span data-stu-id="bd45b-135">Wired keyboard</span></span>
-- <span data-ttu-id="bd45b-136">组合 PD 集线器（USB A + PD 充电）</span><span class="sxs-lookup"><span data-stu-id="bd45b-136">Combination PD hubs (USB A plus PD charging)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bd45b-137">为了回应客户的反馈，我们已通过 USB-C 向直接连接到 HoloLens 的手机网络连接提供有限的支持。</span><span class="sxs-lookup"><span data-stu-id="bd45b-137">In response to customer feedback we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C.</span></span> <span data-ttu-id="bd45b-138">有关详细信息，请参阅 [连接到手机网络和 5G](hololens-cellular.md)。</span><span class="sxs-lookup"><span data-stu-id="bd45b-138">See [Connect to Cellular and 5G](hololens-cellular.md) for more information.</span></span>
+> <span data-ttu-id="284f0-141">为了回应客户的反馈，我们已通过 USB-C 向直接连接到 HoloLens 的手机网络连接提供有限的支持。</span><span class="sxs-lookup"><span data-stu-id="284f0-141">In response to customer feedback, we have enabled limited support for cellular connectivity tethered directly to the HoloLens via USB-C.</span></span> <span data-ttu-id="284f0-142">有关详细信息，请参阅[连接到手机网络和 5G](hololens-cellular.md)。</span><span class="sxs-lookup"><span data-stu-id="284f0-142">See [Connect to Cellular and 5G](hololens-cellular.md) for more information.</span></span>
 
-### <a name="usb-c-hubs"></a><span data-ttu-id="bd45b-139">USB-C 集线器</span><span class="sxs-lookup"><span data-stu-id="bd45b-139">USB-C Hubs</span></span>
+### <a name="usb-c-external-microphone-support"></a><span data-ttu-id="284f0-143">USB-C 外置麦克风支持</span><span class="sxs-lookup"><span data-stu-id="284f0-143">USB-C External Microphone Support</span></span>
 
-<span data-ttu-id="bd45b-140">某些用户可能需要一次连接多个设备。</span><span class="sxs-lookup"><span data-stu-id="bd45b-140">Some users may need to connect multiple devices at once.</span></span> <span data-ttu-id="bd45b-141">对于想要预览体验成员功能和与其他已连接设备一起 [使用 USB-C 麦克风](hololens-insider.md#usb-c-external-microphone-support) 的用户，USB-C 集线器可能满足其需求。</span><span class="sxs-lookup"><span data-stu-id="bd45b-141">For users who would like to preview an Insider feature and [use a USB-C microphone](hololens-insider.md#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need.</span></span> <span data-ttu-id="bd45b-142">Microsoft 尚未测试这些设备，我们也不能推荐任何特定品牌。</span><span class="sxs-lookup"><span data-stu-id="bd45b-142">Microsoft has not tested these devices, nor can we recommend any specific brands.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="284f0-144">插入 **USB 麦克风不会自动将其设置为输入设备**。</span><span class="sxs-lookup"><span data-stu-id="284f0-144">Plugging in **a USB mic will not automatically set it as the input device**.</span></span> <span data-ttu-id="284f0-145">当插入一组 USB-C 耳机时，用户会看到耳机音频将自动重定向到耳机，但 HoloLens OS 会将内置麦克风阵列的优先级优于任何其他输入设备。</span><span class="sxs-lookup"><span data-stu-id="284f0-145">When plugging in a set of USB-C headphones, users will observe that the headphone's audio will automatically be redirected to the headphones, but the HoloLens OS prioritizes the internal microphone array above any other input device.</span></span> <span data-ttu-id="284f0-146">若要使用 USB-C 麦克风，请执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="284f0-146">**In order to use a USB-C microphone follow the steps below.**</span></span>
 
-**<span data-ttu-id="bd45b-143">USB-C 集线器和已连接设备的要求：</span><span class="sxs-lookup"><span data-stu-id="bd45b-143">Requirements for USB-C hub and connected devices:</span></span>**
+> [!NOTE]
+> <span data-ttu-id="284f0-147">在 [Windows 全息版 21H1](hololens-release-notes.md#windows-holographic-version-21h1) 及更高版本之前的内部版本中，不能使用外置麦克风。</span><span class="sxs-lookup"><span data-stu-id="284f0-147">External microphones cannot be used in builds prior to [Windows Holographic, version 21H1](hololens-release-notes.md#windows-holographic-version-21h1) and higher.</span></span> 
 
-- <span data-ttu-id="bd45b-144">连接的设备不得要求安装驱动程序。</span><span class="sxs-lookup"><span data-stu-id="bd45b-144">Connected devices must not require a driver to be installed.</span></span>
-- <span data-ttu-id="bd45b-145">所有已连接设备的总功耗必须低于 4.5 瓦。</span><span class="sxs-lookup"><span data-stu-id="bd45b-145">The total power draw of all connected devices must be below 4.5 Watts.</span></span>
+<span data-ttu-id="284f0-148">用户可以使用“声音”设置面板选择 USB-C 连接的外置麦克风。</span><span class="sxs-lookup"><span data-stu-id="284f0-148">Users can select USB-C connected external microphones using the **Sound** settings panel.</span></span> <span data-ttu-id="284f0-149">USB-C 麦克风可用于呼叫、录制等。</span><span class="sxs-lookup"><span data-stu-id="284f0-149">USB-C microphones can be used for calling, recording, etc.</span></span>
 
-## <a name="connect-to-miracast"></a><span data-ttu-id="bd45b-146">连接到 Miracast</span><span class="sxs-lookup"><span data-stu-id="bd45b-146">Connect to Miracast</span></span>
+<span data-ttu-id="284f0-150">打开“设置”应用并选择“系统” > “声音”。</span><span class="sxs-lookup"><span data-stu-id="284f0-150">Open the **Settings** app and select **System** > **Sound**.</span></span>
 
-<span data-ttu-id="bd45b-147">若要使用 Miracast，请按照下列步骤进行操作：</span><span class="sxs-lookup"><span data-stu-id="bd45b-147">To use Miracast, follow these steps:</span></span>
+![声音设置](images/usbc-mic-1.jpg)
 
-1. <span data-ttu-id="bd45b-148">执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="bd45b-148">Do one of the following:</span></span>  
+> [!IMPORTANT]
+> <span data-ttu-id="284f0-152">若要将外置麦克风用于 Remote Assist，用户需要单击“管理声音设备”超链接。</span><span class="sxs-lookup"><span data-stu-id="284f0-152">To use external microphones with **Remote Assist**, users will need to click the “Manage sound devices” hyperlink.</span></span>
+>
+> <span data-ttu-id="284f0-153">然后，使用下拉菜单将外置麦克风设置为“默认值”或“通信默认值”。</span><span class="sxs-lookup"><span data-stu-id="284f0-153">Then use the drop-down to set the external microphone as either **Default** or **Communications Default.**</span></span> <span data-ttu-id="284f0-154">选择“默认值”表示将在任何位置使用外置麦克风。</span><span class="sxs-lookup"><span data-stu-id="284f0-154">Choosing **Default** means that the external microphone will be used everywhere.</span></span>
+>
+> <span data-ttu-id="284f0-155">选择“通信默认值”表示将在 Remote Assist 和其他通信应用中使用外置麦克风，但 HoloLens 麦克风阵列仍可用于其他任务。</span><span class="sxs-lookup"><span data-stu-id="284f0-155">Choosing **Communications Default** means that the external microphone will be used in Remote Assist and other communications apps, but the HoloLens mic array may still be used for other tasks.</span></span>
 
-   - <span data-ttu-id="bd45b-149">打开“开始”\*\*\*\* 菜单，然后选择显示图标。</span><span class="sxs-lookup"><span data-stu-id="bd45b-149">Open the **Start** menu, and select the display icon.</span></span>
-   - <span data-ttu-id="bd45b-150">盯着“开始”\*\*\*\* 菜单说“连接”。</span><span class="sxs-lookup"><span data-stu-id="bd45b-150">Say "Connect" while you gaze at the **Start** menu.</span></span>  
+![管理声音设备](images/usbc-mic-2.png)
 
-1. <span data-ttu-id="bd45b-151">在所显示设备的列表中，选择一个可用的设备。</span><span class="sxs-lookup"><span data-stu-id="bd45b-151">On the list of devices that appears, select an available device.</span></span>
+<br>
 
-1. <span data-ttu-id="bd45b-152">完成配对，开始进行投影。</span><span class="sxs-lookup"><span data-stu-id="bd45b-152">Complete the pairing to begin projecting.</span></span>
+![设置麦克风默认值](images/usbc-mic-3.jpg)
+
+#### <a name="what-about-bluetooth-microphone-support"></a><span data-ttu-id="284f0-158">蓝牙麦克风支持怎么样？</span><span class="sxs-lookup"><span data-stu-id="284f0-158">What about Bluetooth microphone support?</span></span>
+
+<span data-ttu-id="284f0-159">遗憾的是，HoloLens 2 目前仍不支持蓝牙麦克风。</span><span class="sxs-lookup"><span data-stu-id="284f0-159">Unfortunately, Bluetooth microphones are still not currently supported on HoloLens 2.</span></span>
+
+### <a name="usb-c-hubs"></a><span data-ttu-id="284f0-160">USB-C 集线器</span><span class="sxs-lookup"><span data-stu-id="284f0-160">USB-C Hubs</span></span>
+
+<span data-ttu-id="284f0-161">某些用户可能需要一次连接多个设备。</span><span class="sxs-lookup"><span data-stu-id="284f0-161">Some users may need to connect multiple devices at once.</span></span> <span data-ttu-id="284f0-162">对于想要将 [USB-C 麦克风](#usb-c-external-microphone-support)与其他已连接设备一起使用的用户，USB-C 集线器可能满足客户的需求。</span><span class="sxs-lookup"><span data-stu-id="284f0-162">For users who would like to use a [USB-C microphone](#usb-c-external-microphone-support) along with another connected device, USB-C hubs may fit the customer's need.</span></span> <span data-ttu-id="284f0-163">Microsoft 尚未测试这些设备，我们也不能推荐任何特定品牌。</span><span class="sxs-lookup"><span data-stu-id="284f0-163">Microsoft has not tested these devices, nor can we recommend any specific brands.</span></span>
+
+<span data-ttu-id="284f0-164">USB-C 集线器和已连接设备的要求：</span><span class="sxs-lookup"><span data-stu-id="284f0-164">**Requirements for USB-C hub and connected devices:**</span></span>
+
+- <span data-ttu-id="284f0-165">连接的设备不得要求安装驱动程序。</span><span class="sxs-lookup"><span data-stu-id="284f0-165">Connected devices must not require a driver to be installed.</span></span>
+- <span data-ttu-id="284f0-166">所有已连接设备的总功耗必须低于 4.5 瓦。</span><span class="sxs-lookup"><span data-stu-id="284f0-166">The total power draw of all connected devices must be below 4.5 Watts.</span></span>
+
+## <a name="connect-to-miracast"></a><span data-ttu-id="284f0-167">连接到 Miracast</span><span class="sxs-lookup"><span data-stu-id="284f0-167">Connect to Miracast</span></span>
+
+<span data-ttu-id="284f0-168">若要使用 Miracast，请按照下列步骤进行操作：</span><span class="sxs-lookup"><span data-stu-id="284f0-168">To use Miracast, follow these steps:</span></span>
+
+1. <span data-ttu-id="284f0-169">执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="284f0-169">Do one of the following:</span></span>  
+
+   - <span data-ttu-id="284f0-170">打开“开始”菜单，然后选择“显示”图标。</span><span class="sxs-lookup"><span data-stu-id="284f0-170">Open the **Start** menu, and select the **Display** icon.</span></span>
+   - <span data-ttu-id="284f0-171">盯着“开始”菜单说“连接”。</span><span class="sxs-lookup"><span data-stu-id="284f0-171">Say "Connect" while you gaze at the **Start** menu.</span></span>  
+
+1. <span data-ttu-id="284f0-172">在所显示设备的列表中，选择一个可用的设备。</span><span class="sxs-lookup"><span data-stu-id="284f0-172">On the list of devices that appears, select an available device.</span></span>
+
+1. <span data-ttu-id="284f0-173">完成配对，开始进行投影。</span><span class="sxs-lookup"><span data-stu-id="284f0-173">Complete the pairing to begin projecting.</span></span>
