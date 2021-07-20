@@ -2,6 +2,7 @@
 
 # 设备概述
 ## [关于 HoloLens 2](hololens2-hardware.md)
+## [HoloLens 2 有何用途？](hololens-commercial-features.md)
 ## 发现 HoloLens 2 版本
 ### [比较 HoloLens 2 选项](hololens2-options.md)
 ### [仅设备版本](hololens2-options-device-only.md)
@@ -9,7 +10,7 @@
 ### [工业版本](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 工业版常见问题解答](hololens2-industrial-edition-faq.md)
 ### [开发版本](hololens2-options-dev-edition.md)
-#### [HoloLens 2 开发版常见问题解答](hololens2-development-edition-faq.md)
+#### [HoloLens 2 开发版常见问题解答](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 版本](hololens2-options-trimble-xr10-edition.md)
 ### [商业功能](hololens-commercial-features.md)
 
@@ -114,7 +115,7 @@
 ## [HoloLens 2 发行说明](hololens-release-notes.md)
 ## [适用于 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
 ## [支持的语言](hololens2-language-support.md)
-## [通过 Microsoft Mesh（预览版）进行开发](https://docs.microsoft.com/mesh/overview)
+## [通过 Microsoft Mesh（预览版）进行开发](/mesh/overview)
 ## HoloLens（第 1 代）
 ### 首次使用
 #### [关于 HoloLens（第 1 代）](hololens1-hardware.md)
@@ -130,7 +131,7 @@
 #### [解锁 Windows Holographic for Business 功能](hololens1-upgrade-enterprise.md)
 #### [重置 HoloLens（第 1 代）](hololens1-recovery.md)
 ### HoloLens（第 1 代）安全性
-#### [HoloLens 第 1 代安全性常见问题](hololens1-faq-security.md)
+#### [HoloLens 第 1 代安全性常见问题](hololens1-faq-security.yml)
 #### [HoloLens（第 1 代）BitLocker 加密](hololens1-encryption.md)
 ### [HoloLens（第 1 代）的已知问题和解决方法](hololens-known-issues.md)
 ### [HoloLens（第 1 代）发行说明](hololens1-release-notes.md)
