@@ -2,7 +2,7 @@
 title: HoloLens 2 工业版
 description: 了解 HoloLens 2 Industrial Edition，以及获得自己的 HoloLens 2 Industrial Edition 后的后续操作。
 keywords: HoloLens 2 购买选项, HoloLens 选项, Industrial Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df18c64487645ebe5381d853de7e32780c4fccad
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398814"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639567"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 工业版
 
@@ -40,7 +40,7 @@ HoloLens 2 Industrial Edition 已通过使用新的材料与认证得到了增�
 
 ## <a name="cleaning-and-handling-hololens-2"></a>清理和处理 HoloLens 2
 
-HoloLens 2 Industrial Edition 可使用“70%”异丙醇水溶液清理设备的硬质表面，包括面罩、额头板和头带。 有关详细信息，请参阅 [HoloLens 2 清理常见问题解答](https://docs.microsoft.com/hololens/hololens2-maintenance)。
+HoloLens 2 Industrial Edition 可使用“70%”异丙醇水溶液清理设备的硬质表面，包括面罩、额头板和头带。 有关详细信息，请参阅 [HoloLens 2 清理常见问题解答](/hololens/hololens2-maintenance)。
 
 ## <a name="next-steps"></a>后续步骤
 

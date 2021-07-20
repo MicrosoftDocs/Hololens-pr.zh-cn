@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 548f484043f2b1cb62ce0e0cfb6450a956d412b3
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923612"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636922"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 屏幕故障排除
 
@@ -122,8 +122,8 @@ HoloLens 2 会根据用户眼球的位置积极修正图像的颜色。 [眼部�
 
 建议开发人员遵循深色模式设计指南：
 
-* [HoloLens 屏幕的开发人员设计指南](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
-* [推荐的字号](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+* [HoloLens 屏幕的开发人员设计指南](/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [推荐的字号](/windows/mixed-reality/typography#recommended-font-size)
 
 如果全息影像需要白色背景，请保持全息影像的尺寸小于屏幕的完整视野。 此尺寸允许用户将全息影像置于屏幕中央。
 

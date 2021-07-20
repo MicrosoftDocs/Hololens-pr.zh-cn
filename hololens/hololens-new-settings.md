@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398854"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640162"
 ---
 # <a name="new-settings-app"></a>新“设置”应用
 
@@ -47,7 +47,7 @@ ms.locfileid: "110398854"
 
 **已知问题**
 - 将删除之前放置的“设置”窗口（请参见上面的注释）。
-- 无法再使用“设置”应用重命名设备。 IT 管理员可以使用[适用于 HoloLens 2 的 Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot) 设备名称模板或 MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 节点来重命名设备。
+- 无法再使用“设置”应用重命名设备。 IT 管理员可以使用[适用于 HoloLens 2 的 Windows Autopilot](hololens2-autopilot.md) 设备名称模板或 MDM [DevDetail CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 节点来重命名设备。
 - “以太网”页随时显示一个虚拟以太网设备（“UsbNcm”）。
 - 新 Microsoft Edge 的电池使用情况可能不准确，因为它是一个由 UWP 适配器层支持的 Win32 桌面应用程序（预计近期不会有任何修复）。
 

@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924173"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639091"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>连接到蓝牙和 USB-C 设备
 
@@ -26,14 +26,14 @@ ms.locfileid: "112924173"
 
 HoloLens 2 支持以下类别的蓝牙设备：
 
-- [HID](https://docs.microsoft.com/windows-hardware/drivers/hid/)：
+- [HID](/windows-hardware/drivers/hid/)：
     - 鼠标
     - Keyboard
 - 音频输出 (A2DP) 设备
 
 HoloLens 2 支持以下蓝牙 API：
-- GATT [服务器](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server)和[客户端](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client)
-- [RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+- GATT [服务器](/windows/uwp/devices-sensors/gatt-server)和[客户端](/windows/uwp/devices-sensors/gatt-client)
+- [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
 > 你可能必须从 Microsoft Store 安装相应的伴侣应用才能实际使用 HID 和 GATT 设备。
 
@@ -41,7 +41,7 @@ HoloLens（第 1 代）支持以下类别的蓝牙设备：
 
 - 鼠标
 - Keyboard
-- [HoloLens（第 1 代）点击器](https://docs.microsoft.com/hololens/hololens1-clicker)
+- [HoloLens（第 1 代）点击器](hololens1-clicker.md)
 
 > [!NOTE]
 > 其他类型的蓝牙设备（例如，扬声器、耳机、智能手机和游戏板）可能会在 HoloLens 设置中列为可用。 但是，HoloLens（第 1 代）上不支持这些设备。 有关详细信息，请参阅 [HoloLens 设置将设备列为可用，但设备无法使用](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)。

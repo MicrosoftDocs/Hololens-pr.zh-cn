@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: faa6bb2b095d69c3538063b1c042c5ce5e215d33
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 5ec26c64a971b8bfc9f8d1f9044e2e651a218816
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924071"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639992"
 ---
 # <a name="manage-hololens-updates"></a>管理 HoloLens 更新
 
@@ -34,18 +34,18 @@ HoloLens 使用 Windows 更新的方式与其他 Windows 10 设备相同。 当�
 
 ### <a name="managing-updates-by-using-windows-update-for-business"></a>使用适用于企业的 Windows 更新管理更新
 
-Windows Holographic for Business 可以使用[适用于企业的 Windows 更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)管理更新。 所有 HoloLens 2 设备均可使用 Windows Holographic for Business。 确保它们使用 Windows Holographic for Business 内部版本 10.0.18362.1042 或更高内部版本。 如果使用的是 HoloLens（第一代）设备，则必须[将其升级到 Windows Holographic for Business](hololens1-upgrade-enterprise.md) 才能管理其更新。
+Windows Holographic for Business 可以使用[适用于企业的 Windows 更新](/windows/deployment/update/waas-manage-updates-wufb)管理更新。 所有 HoloLens 2 设备均可使用 Windows Holographic for Business。 确保它们使用 Windows Holographic for Business 内部版本 10.0.18362.1042 或更高内部版本。 如果使用的是 HoloLens（第一代）设备，则必须[将其升级到 Windows Holographic for Business](hololens1-upgrade-enterprise.md) 才能管理其更新。
 
 适用于企业的 Windows 更新将 HoloLens 设备直接连接到 Windows 更新服务。 通过使用适用于企业的 Windows 更新，你可以控制更新过程的多个方面&mdash;：具体而言，哪些设备将在什么时候获取哪些更新。 例如，可先将更新部署到设备的某个子集进行测试，随后再对剩余的设备进行更新。 或是为不同类型的更新制定不同的更新计划。
 
 > [!NOTE]  
-> 可以自动管理 HoloLens 设备的功能更新（每年发布两次）和质量更新（每月发布或根据需要发布，包括关键安全更新）。 有关更新类型的详细信息，请参阅[适用于企业的 Windows 更新管理的更新类型](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)。
+> 可以自动管理 HoloLens 设备的功能更新（每年发布两次）和质量更新（每月发布或根据需要发布，包括关键安全更新）。 有关更新类型的详细信息，请参阅[适用于企业的 Windows 更新管理的更新类型](/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)。
 
 可以使用移动设备管理 (MDM) 解决方案中的 Microsoft Intune 等策略为 HoloLens 配置适用于企业的 Windows 更新设置。
 
 ### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>使用 Microsoft Intune 管理适用于企业的 Windows 更新
 
-如需详细了解如何使用 Intune 配置适用于企业的 Windows 更新，请参阅[在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure)。 有关 HoloLens 支持的特定 Intune 功能的详细信息，请参阅 [HoloLens 支持的 Intune 更新管理功能](#intune-update-management-functions-that-hololens-supports)。
+如需详细了解如何使用 Intune 配置适用于企业的 Windows 更新，请参阅[在 Intune 中管理 Windows 10 软件更新](/intune/protect/windows-update-for-business-configure)。 有关 HoloLens 支持的特定 Intune 功能的详细信息，请参阅 [HoloLens 支持的 Intune 更新管理功能](#intune-update-management-functions-that-hololens-supports)。
 
 > [!IMPORTANT]  
 > Intune 提供两种管理更新的策略类型，分别是：Windows 10 更新通道和 Windows 10 功能更新。 Windows 10 功能更新策略目前尚处于公共预览版阶段，暂不支持 HoloLens。
@@ -56,41 +56,41 @@ Windows Holographic for Business 可以使用[适用于企业的 Windows 更新]
 
 本部分介绍用于管理 HoloLens 2 或 HoloLens（第一代）更新的策略。 有关可用于 HoloLens 2 的功能的详细信息，请参阅[规划和配置 HoloLens 2 更新推出](#plan-and-configure-update-rollouts-for-hololens-2)。
 
-[策略 CSP - 更新](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update)定义配置适用于企业的 Windows 更新的策略。
+[策略 CSP - 更新](/windows/client-management/mdm/policy-csp-update)定义配置适用于企业的 Windows 更新的策略。
 
 > [!NOTE]  
-> 有关特定版本的 HoloLens 支持的特定策略配置服务提供程序 (CSP) 的列表，请参阅 [HoloLens 设备支持的策略 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)。
+> 有关特定版本的 HoloLens 支持的特定策略配置服务提供程序 (CSP) 的列表，请参阅 [HoloLens 设备支持的策略 CSP](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)。
 
 #### <a name="configure-automatic-checks-for-updates"></a>配置自动检查更新
 
-可以使用“Update/AllowAutoUpdate”策略管理扫描、下载和安装更新等自动更新行为。 有关此策略的可用设置的详细信息，请参阅 [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)。
+可以使用“Update/AllowAutoUpdate”策略管理扫描、下载和安装更新等自动更新行为。 有关此策略的可用设置的详细信息，请参阅 [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)。
 
 > [!NOTE]  
-> 在 Microsoft Intune 中，可以使用 **自动更新行为** 来更改此策略。 有关详细信息，请参阅[在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/intune/windows-update-for-business-configure)。
+> 在 Microsoft Intune 中，可以使用 **自动更新行为** 来更改此策略。 有关详细信息，请参阅[在 Intune 中管理 Windows 10 软件更新](/intune/windows-update-for-business-configure)。
 
 #### <a name="configure-an-update-schedule"></a>配置更新计划
 
 若要配置应用更新的方式和时间，请使用以下策略：
 
-- [Update/ScheduledInstallDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday)  
+- [Update/ScheduledInstallDay](/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday)  
   - 值的范围：0–7（其中 0 代表每天，1 代表周日，7 代表周六）
   - 默认值：0（每天）
-- [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
+- [Update/ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - 值的范围：0-23（其中 0 代表午夜，23 代表晚上 11 点）
   - 默认值：凌晨 3 点
 
 #### <a name="configure-active-hours"></a>配置使用时段
 从 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 开始，IT 管理员可以指定 HoloLens 2 设备的使用时段范围。
 
-“使用时段”可标识你希望设备正在使用中的时段。 更新后自动重启将在使用时段外发生。 指定的范围将从使用时段开始时间计算。 可以使用 MDM，如[使用 MDM 配置使用时段](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm)中所述。 MDM 使用策略 CSP 中的 Update/ActiveHoursStart 和 Update/ActiveHoursEnd 以及 Update/ActiveHoursMaxRange 设置配置使用时段。
+“使用时段”可标识你希望设备正在使用中的时段。 更新后自动重启将在使用时段外发生。 指定的范围将从使用时段开始时间计算。 可以使用 MDM，如[使用 MDM 配置使用时段](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm)中所述。 MDM 使用策略 CSP 中的 Update/ActiveHoursStart 和 Update/ActiveHoursEnd 以及 Update/ActiveHoursMaxRange 设置配置使用时段。
 
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - 此值设置结束时间。 从开始时间起最长为 12 小时。
+-   [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) - 此值设置结束时间。 从开始时间起最长为 12 小时。
     -   支持的值为 0-23，其中 0 为中午 12 点，1 为凌晨 1 点，依此类推。
     -   默认值为 17（下午 5 点）。
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - 此值设置从开始时间起的最大使用时段。
+-   [Update/ActiveHoursMaxRange](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - 此值设置从开始时间起的最大使用时段。
     -   支持的值为 8-18。
     -   默认值为 18（小时）。
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - 此值设置开始时间。 从结束时间起最长为 12 小时。
+-   [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - 此值设置开始时间。 从结束时间起最长为 12 小时。
     -   支持的值为 0-23，其中 0 为中午 12 点，1 为凌晨 1 点，依此类推。
     -   默认值为 8（早上 8 点）。
 
@@ -98,9 +98,9 @@ Windows Holographic for Business 可以使用[适用于企业的 Windows 更新]
 
 可以使用以下更新策略配置设备从 Windows Server Update Services (WSUS) 而非从 Windows 更新获取更新：
 
-- [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
-- [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
-- [Update/UpdateServiceUrl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+- [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
+- [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
+- [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>规划和配置 HoloLens 2 更新推出
 
@@ -140,7 +140,7 @@ Windows Holographic for Business 可以使用[适用于企业的 Windows 更新]
 如果用户无权访问 MDM，则他们可以在包含内部版本 [Windows 全息版 2004](hololens-release-notes.md#windows-holographic-version-2004) 或更高版本的 HoloLens 2 设备上分别手动暂停更新长达 35 天。 用户可以通过导航至“设置”>“更新和安全”>“高级选项”并滚动至“暂停更新”，选择将暂停更新的结束日期，来实现此设置。 用户达到暂停限制后，设备将需要获取新的更新，然后它们才能再次暂停。 
 
 从 [Windows 全息版 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 开始，可以为 HoloLens 2 设备管理此暂停更新功能。 
-- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)。
+- [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)。
     - 0（默认值）– 已启用
     - 1 – 已禁用
 
@@ -148,7 +148,7 @@ Windows Holographic for Business 可以使用[适用于企业的 Windows 更新]
 
 可使用下列 Intune 更新管理功能来管理 HoloLens 更新。
 
-- 创建和分配：这些功能将 Windows 10 更新通道添加到更新通道列表中。 有关详细信息，请参阅[创建和分配更新通道](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)。
+- 创建和分配：这些功能将 Windows 10 更新通道添加到更新通道列表中。 有关详细信息，请参阅[创建和分配更新通道](/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)。
 
 - 暂停：如果部署功能或质量更新时遇到问题，可暂停更新 35 天（从指定日期开始计算）。 暂停后会阻止其他设备安装更新，直至你解决或缓解该问题。 即使暂停功能更新，仍会向设备提供质量更新以确保它们保持安全。 暂停更新类型后，该通道的“概述”窗格将显示该更新类型恢复之前剩余的天数。 指定时间过后，暂停将自动过期，并继续更新进程。
 
@@ -162,26 +162,26 @@ Windows Holographic for Business 可以使用[适用于企业的 Windows 更新]
 
 ### <a name="delivery-optimization-preview"></a>传递优化预览版
 
-[Windows 全息版 21H1](hololens-release-notes.md#windows-holographic-version-21h1) 已启用传递优化设置的早期预览版，以减少从多个 HoloLens 设备下载的带宽消耗。 此处提供了此功能的更完整说明以及建议的网络配置：[Windows 10 更新的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。
+[Windows 全息版 21H1](hololens-release-notes.md#windows-holographic-version-21h1) 已启用传递优化设置的早期预览版，以减少从多个 HoloLens 设备下载的带宽消耗。 此处提供了此功能的更完整说明以及建议的网络配置：[Windows 10 更新的传递优化](/windows/deployment/update/waas-delivery-optimization)。
 
-以下设置作为管理图面的一部分启用，并且[可以从 Intune 进行配置](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)：
+以下设置作为管理图面的一部分启用，并且[可以从 Intune 进行配置](/mem/intune/configuration/delivery-optimization-settings)：
 
-- [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
-- [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
-- [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
-- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
-- [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
-- [DOMaxBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
-- [DOMaxForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
-- [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
-- [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
-- [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
-- [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
+- [DOCacheHost](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
+- [DOCacheHostSource](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
+- [DODelayCacheServerFallbackBackground](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
+- [DODelayCacheServerFallbackForeground](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
+- [DODownloadMode](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
+- [DOMaxBackgroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
+- [DOMaxForegroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
+- [DOPercentageMaxBackgroundBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+- [DOPercentageMaxForegroundBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+- [DOSetHoursToLimitForegroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+- [DOSetHoursToLimitBackgroundDownloadBandwidth](/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 
 有关此预览版产品/服务的一些注意事项：
 
 - 此预览版中的 HoloLens 支持仅限于 OS 更新。
-- Windows Holographic for Business 仅支持 HTTP 下载模式并从 [Microsoft 联网缓存终结点](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache)进行下载；目前，HoloLens 设备不支持对等下载模式和组分配。
+- Windows Holographic for Business 仅支持 HTTP 下载模式并从 [Microsoft 联网缓存终结点](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache)进行下载；目前，HoloLens 设备不支持对等下载模式和组分配。
 - HoloLens 不支持 Windows Server Update Services 终结点的部署或传递优化。
 - 故障排除将需要对联网缓存服务器进行诊断，或通过“设置” > “更新和安全” >  “故障排除” >  “Windows 更新”在 HoloLens 上收集跟踪。
 
@@ -239,7 +239,7 @@ Windows Holographic for Business 可以使用[适用于企业的 Windows 更新]
 
 ## <a name="related-articles"></a>相关文章
 
-- [HoloLens 2 发行说明](https://docs.microsoft.com/hololens/hololens-release-notes)
-- [什么是适用于企业的 Windows 更新？](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
-- [将设备分配给 Windows 10 更新的服务分支](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
-- [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)
+- [HoloLens 2 发行说明](hololens-release-notes.md)
+- [什么是适用于企业的 Windows 更新？](/windows/deployment/update/waas-manage-updates-wufb)
+- [将设备分配给 Windows 10 更新的服务分支](/windows/deployment/update/waas-servicing-channels-windows-10-updates)
+- [在 Intune 中管理 Windows 10 软件更新](/mem/intune/protect/windows-update-for-business-configure)

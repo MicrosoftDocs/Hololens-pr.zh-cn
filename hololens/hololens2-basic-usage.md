@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924581"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635205"
 ---
 # <a name="getting-around-hololens-2"></a>HoloLens 2 入门
 
@@ -111,7 +111,7 @@ HoloLens 的传感器能够探测到你身体两侧几米远的地方。 用手�
 > 为了让单只手的开始手势发挥作用，请执行以下操作：
 >
 > 1. 必须更新到 2019 年 11 月更新（版本 18363.1039）或更高版本。
-> 1. 必须在设备上校准你的眼睛，使目视跟踪功能正常运行。 如果在注视“开始”图标时未看到其周围的环行点，则表明未在设备上[校准](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2)你的眼睛。
+> 1. 必须在设备上校准你的眼睛，使目视跟踪功能正常运行。 如果在注视“开始”图标时未看到其周围的环行点，则表明未在设备上[校准](/hololens/hololens-calibration#calibrating-your-hololens-2)你的眼睛。
 
 你也可以只用一只手来执行开始手势。 要执行此操作，请伸出一只手，掌心朝向自己，然后注视手腕内侧“开始”图标的。 注视图标时，请将拇指和食指捏在一起。
 

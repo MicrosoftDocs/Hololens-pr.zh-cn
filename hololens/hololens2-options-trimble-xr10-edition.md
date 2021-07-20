@@ -2,7 +2,7 @@
 title: 基于 HoloLens 2 的 Trimble XR10
 description: 了解基于 HoloLens 2 的 Trimble XR10 以及在获取自己的 Trimble XR10 后要执行哪些操作。
 keywords: HoloLens 2 购买选项, HoloLens 选项, Trimble XR10
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b52b675faa81a9d713f035fec8a533093a7a8580
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: cd3b122de155efeb59acb86bfc56264c3da4bd44
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398823"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639448"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>基于 HoloLens 2 的 Trimble XR10
 

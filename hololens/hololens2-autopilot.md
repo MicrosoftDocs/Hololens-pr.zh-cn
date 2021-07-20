@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 10a577cf77a5c6faf0e7e07fa2fd5ad8603ec5ae
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: cc73f5cbb438119f4c626ae76db9c91373e19aff
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923646"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635358"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
 
-从 Windows 全息版 2004 开始，HoloLens 2 支持使用 Microsoft Intune 的 Windows Autopilot [自部署模式](https://docs.microsoft.com/mem/autopilot/self-deploying)（不支持第三方 MDM）。 管理员可在 Microsoft Endpoint Manager 中配置全新体验 (OOBE)，并允许终端用户在几乎没有交互的情况下为业务使用准备设备。 这减少了库存管理开销、动手准备设备的成本以及员工在设置过程中的支持电话。 在 [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) 文档中了解详细信息。
+从 Windows 全息版 2004 开始，HoloLens 2 支持使用 Microsoft Intune 的 Windows Autopilot [自部署模式](/mem/autopilot/self-deploying)（不支持第三方 MDM）。 管理员可在 Microsoft Endpoint Manager 中配置全新体验 (OOBE)，并允许终端用户在几乎没有交互的情况下为业务使用准备设备。 这减少了库存管理开销、动手准备设备的成本以及员工在设置过程中的支持电话。 在 [Windows Autopilot](/mem/autopilot/windows-autopilot) 文档中了解详细信息。
 
-与 Surface 设备一样，我们建议客户与其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)（经销商或分销商）合作，通过合作伙伴中心将设备注册到 Autopilot 服务。 [添加设备](https://docs.microsoft.com/mem/autopilot/add-devices)文档中概述了设备注册的其他方法，不过利用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
+与 Surface 设备一样，我们建议客户与其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)（经销商或分销商）合作，通过合作伙伴中心将设备注册到 Autopilot 服务。 [添加设备](/mem/autopilot/add-devices)文档中概述了设备注册的其他方法，不过利用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
 
 > [!NOTE]
 > 自 2020 年 11 月 20 日起，Microsoft Endpoint Manager 中 HoloLens 的 Autopilot 配置将转换为公共预览。 客户无需再注册私人预览，所有租户都可在 MEM 管理中心中设置 Autopilot。
@@ -63,17 +63,17 @@ ms.locfileid: "112923646"
 
 #### <a name="review-the-following-sections-of-the-windows-autopilot-requirements-article"></a>参阅 Windows Autopilot 要求文章的以下部分：
 
-- [网络要求](https://docs.microsoft.com/mem/autopilot/networking-requirements)  
-- [许可要求](https://docs.microsoft.com/mem/autopilot/licensing-requirements)  
-- [配置要求](https://docs.microsoft.com/mem/autopilot/configuration-requirements)
+- [网络要求](/mem/autopilot/networking-requirements)  
+- [许可要求](/mem/autopilot/licensing-requirements)  
+- [配置要求](/mem/autopilot/configuration-requirements)
 
-查看 Windows Autopilot 自部署模式文章“[要求](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)”部分。 环境必须满足这些要求以及 Windows Autopilot 标准要求。 无需查看文章中的“分步操作”和“验证”部分。 本文后面的过程将提供特定于 HoloLens 的相应步骤。
+查看 Windows Autopilot 自部署模式文章“[要求](/windows/deployment/windows-autopilot/self-deploying#requirements)”部分。 环境必须满足这些要求以及 Windows Autopilot 标准要求。 无需查看文章中的“分步操作”和“验证”部分。 本文后面的过程将提供特定于 HoloLens 的相应步骤。
 
 有关如何注册设备和配置配置文件的信息，请参阅本文中的 [2. 在 Windows Autopilot 中注册设备](#3-register-devices-in-windows-autopilot)和 [4. 创建部署配置文件](#5-create-a-deployment-profile)。 若要配置和管理 Autopilot 自部署模式配置文件，请确保你有权访问 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
 
 #### <a name="review-hololens-os-requirements"></a>查看 HoloLens 操作系统要求：
 
-- 设备必须使用 [Windows 全息版（版本 2004）](hololens-release-notes.md#windows-holographic-version-2004)（内部版本 19041.1103）或更高版本。 若要确认设备上的内部版本或重刷到最新的操作系统，请使用 [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 和我们的[设备重刷说明](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)。 请注意，在 2020 年 9 月底之前交付的设备已预安装 Windows 全息版（版本 1903）。 请与经销商联系，确保向你提供的是预安装了 Autopilot 的设备。
+- 设备必须使用 [Windows 全息版（版本 2004）](hololens-release-notes.md#windows-holographic-version-2004)（内部版本 19041.1103）或更高版本。 若要确认设备上的内部版本或重刷到最新的操作系统，请使用 [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 和我们的[设备重刷说明](/hololens/hololens-recovery#clean-reflash-the-device)。 请注意，在 2020 年 9 月底之前交付的设备已预安装 Windows 全息版（版本 1903）。 请与经销商联系，确保向你提供的是预安装了 Autopilot 的设备。
 
 - Windows 全息版（版本 2004）仅支持通过以太网连接部署 Autopilot。 在打开 HoloLens 之前，使用“USB-C 转以太网”适配器确保其已连接到以太网。 设备启动后，无需用户交互。 如果计划将 Autopilot 部署到多个 HoloLens 设备，我们建议对适配器基础结构进行规划。 我们不建议使用 USB 集线器，因为它们通常需要安装其他第三方驱动程序，而 HoloLens 不支持这些驱动程序。
 
@@ -94,18 +94,18 @@ ms.locfileid: "112923646"
 
 在 [Azure 门户](https://portal.azure.com/#home)中，选择“Azure Active Directory” -> “移动性(MDM 和 MAM)” -> “Microsoft Intune”。 然后配置“MDM 用户范围”，你需要选择“全部”。
 
-请阅读以下关于[启用 MDM 自动注册的简短指南](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal)或[自动注册快速入门指南](https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment)，以获取更多设置信息。
+请阅读以下关于[启用 MDM 自动注册的简短指南](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal)或[自动注册快速入门指南](/mem/intune/enrollment/quickstart-setup-auto-enrollment)，以获取更多设置信息。
 
 ### <a name="3-register-devices-in-windows-autopilot"></a>3. 在 Windows Autopilot 中注册设备
 
-在首次设置之前，设备必须在 Windows Autopilot 中注册。 有关设备注册的 MEM 文档，请参阅[将设备添加到 Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices)。  
+在首次设置之前，设备必须在 Windows Autopilot 中注册。 有关设备注册的 MEM 文档，请参阅[将设备添加到 Autopilot](/mem/autopilot/add-devices)。  
 
 注册 HoloLens 设备有三种主要方法：
 
  - 当你下订单时，经销商可在合作伙伴中心注册设备。
 
    > [!NOTE]  
-   > 这是添加设备到 Autopilot 服务的推荐方法。 [了解详细信息](https://docs.microsoft.com/mem/autopilot/partner-registration)。  
+   > 这是添加设备到 Autopilot 服务的推荐方法。 [了解详细信息](/mem/autopilot/partner-registration)。  
 
  - 你可以直接向 Microsoft [提交支持请求](hololens2-autopilot-registration-support.md)。
  - 检索硬件哈希（也称为硬件 ID）并在 MEM 管理中心手动注册设备。
@@ -197,7 +197,7 @@ ms.locfileid: "112923646"
    > ![配置 OOBE 设置](./images/hololens-ap-profile-oobe.png)
 
 1. 配置设置后，选择“下一步”。
-1. 在“作用域标签”页上，按需添加要应用到此配置文件的作用域标签。 若要详细了解作用域标记，请参阅[将基于角色的访问控制和作用域标记用于分布式 IT](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md)。 完成后，选择“下一步”。
+1. 在“作用域标签”页上，按需添加要应用到此配置文件的作用域标签。 若要详细了解作用域标记，请参阅[将基于角色的访问控制和作用域标记用于分布式 IT](/mem/intune/fundamentals/scope-tags.md)。 完成后，选择“下一步”。
 1. 在“分配”页上，为“分配给”选择“所选组”。
 1. 在“所选组”下，选择“+ 选择要包括的组”。
 1. 在“选择要包括的组”列表中，选择为 Autopilot HoloLens 设备创建的设备组，然后选择“下一步”。  
@@ -262,7 +262,7 @@ ms.locfileid: "112923646"
 
 从 Windows 全息版（版本 20H2）起，HoloLens 2 设备支持 TenantLockdown 云解决方案提供商。 该云解决方案提供商将设备锁定在组织的租户上，即使在设备重置或重刷的情况下，也能将设备保持在该租户上。
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) 云解决方案提供商允许仅使用 Autopilot 将 HoloLens 2 绑定到 MDM 注册。 在 HoloLens 2 上将 TenantLockdown 云解决方案提供商的 RequireNetworkInOOBE 节点设置为 true 或 false（初始设置）值后，即使执行了重刷、操作系统更新等操作，值仍将保留在设备上。
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) 云解决方案提供商允许仅使用 Autopilot 将 HoloLens 2 绑定到 MDM 注册。 在 HoloLens 2 上将 TenantLockdown 云解决方案提供商的 RequireNetworkInOOBE 节点设置为 true 或 false（初始设置）值后，即使执行了重刷、操作系统更新等操作，值仍将保留在设备上。
 
 在 HoloLens 2 上将 TenantLockdown 云解决方案提供商的 RequireNetworkInOOBE 节点设置为 true 后，OOBE 将无限期等待 Autopilot 配置文件在网络连接后成功下载并应用。
 
@@ -308,17 +308,24 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 
 ## <a name="known-issues--limitations"></a>已知问题和限制
 
-- 我们正在研究在 MEM 中配置的基于设备上下文的应用程序安装不适用于 HoloLens 的问题。 [了解有关设备上下文和用户上下文安装的详细信息。](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+- 我们正在研究在 MEM 中配置的基于设备上下文的应用程序安装不适用于 HoloLens 的问题。 [了解有关设备上下文和用户上下文安装的详细信息。](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - 通过 Wi-Fi 设置 Autopilot 时，可能会出现首次建立 Internet 连接时未能下载 Autopilot 配置文件的问题。 在这种情况下，将显示最终用户许可协议 (EULA) ，并且用户可以选择继续执行非 Autopilot 设置体验。 若要重试 Autopilot 设置，请将设备置于睡眠状态，然后重新启动，或者重启设备，然后重试。
 - HoloLens 目前暂不支持“将所有目标设备转换为 Autopilot”的功能。  
 
+### <a name="troubleshooting"></a>疑难解答
+
+以下文章可能是你了解更多信息和解决 Autopilot 问题的有用资源，但请注意，这些文章是基于Windows 10 桌面版的，并非所有信息都适用于 HoloLens：
+
+- [Windows Autopilot - 已知问题](/mem/autopilot/known-issues)
+- [Microsoft Intune 中的 Windows 设备注册问题疑难解答](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot - 策略冲突](/mem/autopilot/policy-conflicts)
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot 反馈与支持
 
 若要提供反馈或报告问题，请使用以下方法之一：
 
 - 有关设备注册方面的支持，请联系你的经销商或分销商。
-- 有关 Windows Autopilot 的常规支持问询或配置文件分配、组创建或 MEM 门户控件等问题，[请联系 Microsoft Endpoint Manager 支持](https://docs.microsoft.com/mem/get-support)  
-- 如果你的设备已注册到 Autopilot 服务，并且配置文件已分配在 MEM 门户上，请联系 HoloLens [支持](https://docs.microsoft.com/hololens/)（参见“支持”卡）。 请开具支持票证，如果适用，请在全新体验 (OOBE) 期间捕获[脱机诊断日志](hololens-diagnostic-logs.md#offline-diagnostics)（包括屏幕截图和日志）。
+- 有关 Windows Autopilot 的常规支持问询或配置文件分配、组创建或 MEM 门户控件等问题，[请联系 Microsoft Endpoint Manager 支持](/mem/get-support)  
+- 如果你的设备已注册到 Autopilot 服务，并且配置文件已分配在 MEM 门户上，请联系 HoloLens [支持](/hololens/)（参见“支持”卡）。 请开具支持票证，如果适用，请在全新体验 (OOBE) 期间捕获[脱机诊断日志](hololens-diagnostic-logs.md#offline-diagnostics)（包括屏幕截图和日志）。
 - 若要从设备上报告问题，请使用 HoloLens 上的反馈中心应用程序。 在反馈中心，选择“企业管理” > “设备”类别。
 - 若要提供有关适用于 HoloLens 的 Autopilot 的常规反馈，可提交此[调查](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)

@@ -2,7 +2,7 @@
 title: HoloLens 2 开发版
 description: 了解 HoloLens 2 Development Edition，以及获得自己的 HoloLens 2 Development Edition 后的后续操作。
 keywords: HoloLens 2 购买选项, HoloLens 选项, 开发人员版
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924462"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639669"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 开发版
 
@@ -61,7 +61,7 @@ HoloLens 2 Development Edition 包括 HoloLens 2、500 美元的 Azure 额度、
 
 ### <a name="azure"></a>Azure
 下面是一些你可能希望要为其兑换 Azure 额度的[适用于混合现实的常见 Azure 产品](https://azure.microsoft.com/topic/mixed-reality/)。
-如何兑换 Azure 额度：若要兑换你的 500 美元 Azure 额度，请兑换你的 Azure Pass 促销代码并激活订阅。 [了解详细信息。](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+如何兑换 Azure 额度：若要兑换你的 500 美元 Azure 额度，请兑换你的 Azure Pass 促销代码并激活订阅。 [了解详细信息。](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [了解 Azure 空间定位标记如何帮助你构建映射、共享和保留 3D 内容的应用](https://azure.microsoft.com/services/spatial-anchors/)
 - [了解 Azure 远程渲染如何呈现高质量的交互式 3D 内容，并将其实时流式处理到设备](https://azure.microsoft.com/services/remote-rendering/)
@@ -72,19 +72,19 @@ HoloLens 2 Development Edition 包括 HoloLens 2、500 美元的 Azure 额度、
 
 |     Checkpoint                              |     业务成效                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [开始设计和原型制作](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     开始探索跨核心概念、交互模型和 UX 元素设计混合现实应用程序。     |
-|     [开始针对混合现实进行开发](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     选择引擎、下载工具、添加核心构建基块，然后立即开始构建。                                  |
-|     [浏览 Azure 云服务](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     使用 Azure 远程渲染和 Azure 空间定位器构建引人注目的沉浸式体验。                                 |
+|     [开始设计和原型制作](/windows/mixed-reality/design/design)         |     开始探索跨核心概念、交互模型和 UX 元素设计混合现实应用程序。     |
+|     [开始针对混合现实进行开发](/windows/mixed-reality/develop/development?tabs=unity)    |     选择引擎、下载工具、添加核心构建基块，然后立即开始构建。                                  |
+|     [浏览 Azure 云服务](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     使用 Azure 远程渲染和 Azure 空间定位器构建引人注目的沉浸式体验。                                 |
 
 ## <a name="developer-edition-additional-resources"></a>开发人员版本其他资源
 
-- [HoloLens 2 Development Edition 常见问题解答](hololens2-development-edition-faq.md)
-- [请务必安装用于 HoloLens 开发的工具。](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [了解如何开发配备 Unity 的 HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
-- [了解如何将 MRTK 与 Unity 合并](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)。
+- [HoloLens 2 Development Edition 常见问题解答](hololens2-development-edition-faq.yml)
+- [请务必安装用于 HoloLens 开发的工具。](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [了解如何开发配备 Unity 的 HoloLens 2](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)。
+- [了解如何将 MRTK 与 Unity 合并](/windows/mixed-reality/develop/unity/mrtk-getting-started)。
 - [了解如何部署已生成的应用](app-deploy-overview.md)。
-- [探索混合现实的所有可能性](https://docs.microsoft.com/windows/mixed-reality/)。
-- [了解如何开发配备 Unreal 的 HoloLens 2。](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [探索混合现实的所有可能性](/windows/mixed-reality/)。
+- [了解如何开发配备 Unreal 的 HoloLens 2。](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [在我们的 HoloDevelopers Slack 频道联系其他开发人员](https://holodevelopersslack.azurewebsites.net/)。
 
 ## <a name="next-steps"></a>后续步骤

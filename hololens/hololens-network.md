@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 8564fb0483226a16722ada345de325577cda77d6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: c2a2fe1a20a4e9baa194b1037ccb6649d324b990
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923595"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640213"
 ---
 # <a name="connect-hololens-to-a-network"></a>将 HoloLens 连接到网络
 
@@ -54,9 +54,9 @@ ms.locfileid: "112923595"
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>将 HoloLens 连接到企业 Wi-Fi 网络
 
-企业 Wi-Fi 配置文件使用可扩展的身份验证协议 (EAP) 对 Wi-Fi 连接进行身份验证。 HoloLens 企业 Wi-Fi 配置文件可以通过使用 [Windows 配置设计器](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)创建的 MDM 或预配程序包进行配置。
+企业 Wi-Fi 配置文件使用可扩展的身份验证协议 (EAP) 对 Wi-Fi 连接进行身份验证。 HoloLens 企业 Wi-Fi 配置文件可以通过使用 [Windows 配置设计器](/windows/configuration/provisioning-packages/provisioning-packages)创建的 MDM 或预配程序包进行配置。
 
-对于 Microsoft Intune 托管的设备，请参阅 [Intune](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) 了解配置说明。
+对于 Microsoft Intune 托管的设备，请参阅 [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) 了解配置说明。
 
 若要在 WCD 中创建 Wi-Fi 预配程序包，需要预配置的 Wi-Fi 配置文件 .xml 文件。 下面是使用 EAP-TLS 身份验证的 WPA2-企业的示例 Wi-Fi 配置文件：
 
@@ -124,8 +124,8 @@ ms.locfileid: "112923595"
 
 其他资源：
 
-- WLANv1Profile 架构：[[MS-GPWL]：无线 LAN 配置文件 v1 架构 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
-- EAP-TLS 架构：[[MS-GPWL]：Microsoft EAP TLS 架构 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+- WLANv1Profile 架构：[[MS-GPWL]：无线 LAN 配置文件 v1 架构 | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
+- EAP-TLS 架构：[[MS-GPWL]：Microsoft EAP TLS 架构 | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 如果在连接到 Wi-Fi 时遇到问题，请查看[故障排除](hololens2-enterprise-troubleshooting.md#)页。
 
@@ -161,8 +161,8 @@ ms.locfileid: "112923595"
           1. 单击“应用”。
         
  2. **MDM** 
-     1. Intune - 使用这些[步骤](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)在 Intune 中配置代理。 需要滚动到此部分底部。
-     1. 其他第三方 MDM 解决方案 - 使用 [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)。
+     1. Intune - 使用这些[步骤](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)在 Intune 中配置代理。 需要滚动到此部分底部。
+     1. 其他第三方 MDM 解决方案 - 使用 [WiFi CSP](/windows/client-management/mdm/wifi-csp)。
 
 3. **PPKG** 
     1. 打开 Windows 配置设计器
@@ -175,12 +175,12 @@ ms.locfileid: "112923595"
     1. 单击“保存并退出”。
     1. 将预配程序包[应用](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)于 HoloLens。
 
-[CSP](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 支持 Microsoft Intune 和非 Microsoft MDM 服务提供商中 Windows 10 的许多管理任务和策略。 还可以使用 [Windows 配置设计器](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-install-icd)来创建[预配程序包](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)，并将其应用于 HoloLens 2。
+[CSP](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) 支持 Microsoft Intune 和非 Microsoft MDM 服务提供商中 Windows 10 的许多管理任务和策略。 还可以使用 [Windows 配置设计器](/windows/configuration/provisioning-packages/provisioning-install-icd)来创建[预配程序包](/windows/configuration/provisioning-packages/provisioning-packages)，并将其应用于 HoloLens 2。
 最可能应用于你的 HoloLens 2 的 CSP 是：
 
-- [WiFi CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp)：每个配置文件 Wi-Fi 代理 
+- [WiFi CSP](/windows/client-management/mdm/wifi-csp)：每个配置文件 Wi-Fi 代理 
 
-[HoloLens 设备支持的其他 CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+[HoloLens 设备支持的其他 CSP](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 
 
@@ -196,9 +196,9 @@ VPN 连接可以帮助提供更安全的连接，并可访问公司网络和 Int
 
 如果使用证书对内置 VPN 客户端进行身份验证，则需要将所需的客户端证书添加到用户证书存储。 要查找第三方 VPN 插件是否支持 HoloLens 2，请前往 Microsoft Store 定位 VPN 应用并检查 HoloLens 是否被列为支持的设备，以及系统要求页面中应用是否支持 ARM 或 ARM64 架构。 HoloLens 只支持第三方 VPN 的通用 Windows 平台应用程序。
 
- MDM 可通过 [Settings/AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) 来管理 VPN，并通过 [Vpnv2-csp 策略](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) 进行设置。
+ MDM 可通过 [Settings/AllowVPN](/windows/client-management/mdm/policy-csp-settings#settings-allowvpn) 来管理 VPN，并通过 [Vpnv2-csp 策略](/windows/client-management/mdm/vpnv2-csp) 进行设置。
 
-通过[这些指南](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide)详细了解[如何配置 VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)。  
+通过[这些指南](/windows/security/identity-protection/vpn/vpn-guide)详细了解[如何配置 VPN](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)。  
 
 ### <a name="vpn-via-ui"></a>VPN（通过 UI）
 
@@ -235,11 +235,11 @@ VPN 默认情况下未启用，但可以通过打开“设置”应用并导航�
 ### <a name="setting-up-vpn-via-intune"></a>通过 Intune 设置 VPN
 只需按照 Intune 文档开始。 按照这些步骤操作时，请记住 HoloLens 设备支持的内置 VPN 协议。 
 
-[在 Intune 中创建 VPN 配置文件以连接到 VPN 服务器](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)。
+[在 Intune 中创建 VPN 配置文件以连接到 VPN 服务器](/mem/intune/configuration/vpn-settings-configure)。
 
-[使用 Intune 添加 VPN 连接的 Windows 10 和 Windows 全息版设备](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-windows-10)。
+[使用 Intune 添加 VPN 连接的 Windows 10 和 Windows 全息版设备](/mem/intune/configuration/vpn-settings-windows-10)。
 
-完成后，请记得[分配配置文件](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)。
+完成后，请记得[分配配置文件](/mem/intune/configuration/device-profile-assign)。
 
 ### <a name="vpn-via-3rd-party-mdm-solutions"></a>通过第三方 MDM 解决方案的 VPN
 第三方 VPN 连接示例：
