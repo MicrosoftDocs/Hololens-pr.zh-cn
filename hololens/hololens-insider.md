@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 12c5586f931487d871d4b6e98992ca0047b2adbf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
+ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659193"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114693711"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
@@ -39,6 +39,7 @@ ms.locfileid: "114659193"
 | [在诊断中查看设置诊断HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上 MDM 诊断日志 | 疑难解答 | 20348.1405 |
 | [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的省/市/服务反馈 | 疑难解答 | 20348.1405 |
 | [仅将专用应用商店应用用于Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 将应用商店应用配置为仅显示来自组织的应用 | IT 管理员 | 20348.1408 |
+| [修复和改进](hololens-insider.md#fixes-and-improvements) | 修复和改进了 HoloLens。 | All | 20348.1408 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 更改报表HoloLens详细信息
 
@@ -125,13 +126,13 @@ DeviceStatus CSP 现在还报告主动Wi-Fi连接的 HoloLens SSID 和 BSSID。 
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>仅将专用应用商店应用用于Microsoft Store
 
-已启用 RequirePrivateStoreOnly 策略HoloLens。 此策略Microsoft Store应用配置为只显示为组织配置的专用存储。 仅限制对已提供的应用的访问。
+已启用 RequirePrivateStoreOnly 策略HoloLens。 此策略Microsoft Store应用配置为只显示为组织配置的专用存储。 仅将访问权限限制为可用的应用。
 
-详细了解 [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+了解有关[ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)的详细信息
 
 ### <a name="fixes-and-improvements"></a>修复和改进：
 
-- 修复 [了在未提示设备门户锁定文件时出现此问题的已知问题。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- 修复了在 [未提示下载锁定文件的情况下设备门户的已知问题。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 修复了 [包含文件上传和下载超时的设备门户的已知问题。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - 解决与 HoloLens 设备报告符合性属性有关的问题;可能需要重新启动才能在内幕生成上触发正确的报告。  
 - 更新了全新闪烁的远程协助的内置版本。
