@@ -12,7 +12,6 @@
 ### [开发版本](hololens2-options-dev-edition.md)
 #### [HoloLens 2 开发版常见问题解答](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 版本](hololens2-options-trimble-xr10-edition.md)
-### [商业功能](hololens-commercial-features.md)
 
 # 使用 HoloLens
 ## 首次使用
@@ -110,6 +109,7 @@
 ## [重置 HoloLens 2](hololens-recovery.md)
 
 # 资源
+## [在何处购买 HoloLens 2](hololens2-purchase.md)
 ## [支持和帮助选项](hololens2-support.md)
 ## [Autopilot 支持请求](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 发行说明](hololens-release-notes.md)

@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635664"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659108"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>参与HoloLens文档
 
@@ -23,7 +23,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 ## <a name="available-repos"></a>可用 repos
 
-| 存储库名称 | 代码 |
+| 存储库名称 | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 | 混合现实 | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
@@ -53,11 +53,16 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 1. 导航到想要在"mixed-reality-docs"文件夹中编辑的文章。
 
-2. 选择右上角 (铅笔) 图标的编辑按钮，该图标会自动从"master"分支可释放分支。
+2. 选择右上方 (铅笔图标) 编辑按钮。
 
    ![编辑文章。](images/editpage.png)
+
+   这将自动从默认分支 master 分支分支可 _释放分支_。
+
+   > [!NOTE]
+   > 本文包含对 _master（Microsoft_ 不再使用的术语）的引用。 在从软件中删除该术语后，我们会将其从本文中删除。
    
-3. 根据 ["Markdown](#markdown-basics)基础知识"编辑文章内容。
+3. 根据 Markdown 基础知识编辑 [文章的内容](#markdown-basics)。
 
 4. 更新每篇文章顶部的元数据：
 
@@ -70,7 +75,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
    
 5. 完成文章编辑后，向下滚动并选择"建议 **文件更改"。**
 
-6. 下一页选择" **创建拉取请求** "，将自动创建的分支合并到"master"中。
+6. 下一页选择" **创建拉取请求** "，将自动创建的分支合并到默认分支 master _中_。
 
 7. 对要编辑的下一篇文章重复上述步骤。
 
@@ -94,7 +99,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 - `redirect_url`是旧文章到新文章的相对公共 URL。 请确保此 URL **不包含** 或 ，因为它引用的是公共 `mixed-reality-docs` `.md` URL，而不是存储库路径。 允许使用 链接到新文章中 `#section` 的节。 如有必要，还可以在此处使用另一个站点的绝对路径。
 
-- `redirect_document_id` 指示是否要保留上一个文件的文档 ID。 默认值为 `false`。 `true`如果要保留重定向项目 `ms.documentid` 中的属性值，请使用 。 如果保留文档 ID，数据（如页面视图和排名）将传输到目标项目。 如果重定向主要是重命名，而不是指向仅涵盖某些相同内容的不同文章的指针，请执行此操作。
+- `redirect_document_id` 指示是否要保留上一个文件的文档 ID。 默认为 `false`。 `true`如果要保留重定向项目 `ms.documentid` 中的属性值，请使用 。 如果保留文档 ID，数据（如页面视图和排名）将传输到目标项目。 如果重定向主要用于重命名，而不是指向仅涵盖一些相同内容的不同项目，则执行此操作。
 
 如果添加重定向，请确保也删除旧文件。
 
@@ -102,9 +107,12 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 使用以下工作流通过 *Web 浏览器中* 的 GitHub在文档存储库创建新文章：
 
-1. 使用右上方的"分支"按钮从 MicrosoftDocs/混合现实"master"分支分支 (创建分支) 。
+1. 使用右上方的"分支"按钮，从 MicrosoftDocs/mixed-reality 的默认分支master 创建分支。
 
-   ![为主分支分叉。](images/forkbranch.png)
+   ![为默认分支创建分支，当前命名为"master"。](images/forkbranch.png)
+
+   > [!NOTE]
+   > 本文包含对 _master（Microsoft_ 不再使用的术语）的引用。 在从软件中删除该术语后，我们会将其从本文中删除。
    
 2. 在"mixed-reality-docs"文件夹中，选择右上方 **的** "创建新文件"。
 
@@ -129,15 +137,15 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
    ---
    ```
 
-5. 按照上述 部分中的说明填写相关的 [元数据字段](#editing-an-existing-article)。
+5. 填写相关元数据字段，如编辑现有文章 [中所述](#editing-an-existing-article)。
 
-6. 使用 [Markdown 基础知识 编写文章内容](#markdown-basics)。
+6. 使用 Markdown 基础知识 [编写文章内容](#markdown-basics)。
 
 7. 在 `## See also` 文章底部添加一个部分，并包含指向其他相关文章的链接。
 
 8. 完成后，选择"**提交新文件"。**
 
-9. 选择 **"新建拉** 取请求"，将分叉的"master"分支合并到 MicrosoftDocs/混合现实"master" (确保箭头指向正确的) 。
+9. 选择 **"新建拉** 取请求"，将分支的主分支合并到 MicrosoftDocs/混合现实主 (确保箭头指向正确的目标) 。
 
    ![创建从分叉到 MicrosoftDocs/mixed-reality 的拉取请求](images/pr-to-master.png)
 
@@ -150,7 +158,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 ### <a name="adding-tables"></a>添加表
 
-由于样式表 docs.microsoft.com，即使尝试内联 CSS，它们也不会具有边框或自定义样式。 它看起来会在短时间内正常工作，但最终平台会从表中去除样式。 因此，请提前规划并简化表。 [下面是一个使 Markdown 表变得简单的站点](https://www.tablesgenerator.com/markdown_tables)。
+由于样式表 docs.microsoft.com，即使尝试内联 CSS，它们也不会具有边框或自定义样式。 它看起来会在短时间内正常工作，但最终平台会从表中去除样式。 因此，请提前规划并简化表。 下面是一个使 Markdown 表变得简单的站点：[表生成器 https://www.tablesgenerator.com/markdown_tables) ]] (。
 
 如果使用文档，Visual Studio Code的[Docs Markdown](/teamblog/docs-extension)扩展还使表生成变得Visual Studio Code ([请参阅](#using-visual-studio-code)) 编辑文档。
 
@@ -164,7 +172,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 >1. 为 MicrosoftDocs/混合现实存储库分叉。
 >2. 编辑了分叉中的文章。
 >3. 将文章中引用的图像上传到分叉中的"mixed-reality-docs/images"文件夹。
->4. 创建了一 **个拉取** 请求，用于将分支合并到 MicrosoftDocs/混合现实"master"分支中。
+>4. 创建了一 **个拉取** 请求，用于将分支合并到 MicrosoftDocs/混合现实 _主_ 分支中。
 >
 >若要了解如何设置自己的分叉存储库，请按照创建新 [文章 的说明操作](#creating-a-new-article)。
 
@@ -175,7 +183,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 >[!NOTE]
 >预览更改review.docs.microsoft.com 仅适用于 Microsoft 员工
 
-Microsoft 员工：将贡献内容合并到"master"分支后，可以在发布内容之前在 </hololens？branch=master>。 使用左侧列中的目录查找文章。
+Microsoft 员工：将贡献合并到默认分支 _master_ 后，可以在内容在 </hololens？branch=master> 上公开之前查看内容。 使用左侧列中的目录查找文章。
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>在浏览器中编辑与使用桌面客户端进行编辑
 
@@ -191,7 +199,7 @@ Microsoft 员工：将贡献内容合并到"master"分支后，可以在发布�
 
 出于 [上述原因，](#editing-in-the-browser-vs-editing-with-a-desktop-client)你可能更喜欢使用桌面客户端来编辑文档，而不是 Web 浏览器。 建议使用[ Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>设置
+### <a name="setup"></a>安装
 
 按照以下步骤配置Visual Studio Code存储库：
 
@@ -216,7 +224,7 @@ Microsoft 员工：将贡献内容合并到"master"分支后，可以在发布�
 
 1. 使用官方存储库确保克隆的分叉是最新的。
 
-   1. 在 Web 浏览器中，创建拉取请求，将 MicrosoftDocs/混合现实"master"中其他参与者的最新更改同步到分叉 (确保箭头指向正确的) 。
+   1. 在 Web 浏览器中，创建拉取请求，将 MicrosoftDocs/mixed-reality 的默认分支中其他参与者的最新更改同步到分支 (确保箭头指向正确的目标) 。
       
       ![将更改从 MicrosoftDocs/mixed-reality 同步到分叉](images/sync-repos.png)
       
@@ -240,7 +248,7 @@ Microsoft 员工：将贡献内容合并到"master"分支后，可以在发布�
       
       ![单击同步按钮](images/sync-back.png)
       
-3. 在 Web 浏览器中，创建拉取请求，将分叉中的新更改同步回 MicrosoftDocs/混合现实"master" (确保箭头指向正确的) 。
+3. 在 Web 浏览器中，创建拉取请求，将分叉中的新更改同步回 MicrosoftDocs/混合现实 _主_ (确保箭头指向正确的目标) 。
 
    ![创建从分叉到 MicrosoftDocs/mixed-reality 的拉取请求](images/pr-to-master.png)
 
