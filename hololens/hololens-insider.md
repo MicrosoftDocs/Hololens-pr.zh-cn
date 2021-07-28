@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
-ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
+ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
+ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/26/2021
-ms.locfileid: "114693711"
+ms.locfileid: "114696324"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
@@ -31,7 +31,7 @@ ms.locfileid: "114693711"
 
 我们很高兴地开始尝试新功能，以再次Windows预览体验成员。 新内部版本将前往开发和 Beta 通道获取最新更新。 在向预览体验成员内部版本添加更多功能和更新时，Windows更新此页面。 准备好将这些更新混合到现实中，
 
-| 功能                 | 说明                | 用户或方案 | 引入的生成 |
+| 功能                 | 描述                | 用户或方案 | 引入的生成 |
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP 更改报表HoloLens详细信息](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 CSP | IT 管理员    | 20348.1403                 |
 | [CSP 控制的自动登录策略](#auto-login-policy-controlled-by-csp) | 用于自动登录帐户 | IT 管理员 | 20348.1405 |
@@ -130,7 +130,7 @@ DeviceStatus CSP 现在还报告主动Wi-Fi连接的 HoloLens SSID 和 BSSID。 
 
 了解有关[ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)的详细信息
 
-### <a name="fixes-and-improvements"></a>修复和改进：
+### <a name="fixes-and-improvements"></a>修复和改进
 
 - 修复了在 [未提示下载锁定文件的情况下设备门户的已知问题。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 修复了 [包含文件上传和下载超时的设备门户的已知问题。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
