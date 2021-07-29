@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640468"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659023"
 ---
 # <a name="compare-hololens-2-options"></a>比较 HoloLens 2 选项
 
@@ -41,23 +41,12 @@ HoloLens 是一种混合现实设备，由 holograms 提供支持，并提供可
 | **快速更换计划 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **商业使用权利**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**担保**](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
-| **设备购买限制**                                |    无    |              无             |              无             |                       无                       |             无             |       每个事务一个      |
+| **设备购买限制**                                |    None    |              None             |              None             |                       None                       |             无             |       每个事务一个      |
 
 - <sup>1</sup> - 包括 500 美元 Azure 额度以及 Unity Pro 和 Pixyz 插件的 3 个月试用期。
 - <sup>2</sup> - 隔夜收到替换设备，或在 Microsoft 收到损坏设备之前，加急发运（以可用选项中较快者为准）。
 - <sup>3</sup> - 有关适用于 HoloLens 2 版本的 Trimble XR10 的质保、支持和认证问题，[联系 Trimble](https://fieldtech.trimble.com/en/contact-support)。
 
-## <a name="countries-where-hololens-2-is-available"></a>HoloLens 2 已可供使用的国家/地区
-
-<br>
-
-| HoloLens 2 版本                  | 支持的市场               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 美国、加拿大、德国、法国、英国、爱尔兰、中国、日本、澳大利亚、意大利、新西兰、荷兰、瑞士、西班牙、奥地利、瑞典、芬兰、挪威、丹麦、比利时、葡萄牙、波兰、新加坡、中国香港、中国台湾和韩国 |
-| 具有 Remote Assist 的 HoloLens 2 | 澳大利亚、日本、加拿大、美国、奥地利、比利时、丹麦、芬兰、法国、德国、意大利、荷兰、挪威、西班牙、瑞典、瑞士、英国和爱尔兰 <sup>1</sup> 
-| HoloLens 2 Industrial Edition（发布时） | 美国、加拿大、德国、法国、英国、爱尔兰、中国、日本、澳大利亚、意大利、新西兰、荷兰、瑞士、西班牙、奥地利、瑞典、芬兰、挪威、丹麦、比利时、葡萄牙、波兰、新加坡、中国香港、中国台湾和韩国 |
-| HoloLens 2 开发版 | 加拿大、德国、法国、英国、爱尔兰、日本、澳大利亚、意大利、瑞士和新西兰 |
-- <sup>1</sup> 此列表是动态列表，请返回更新
 
 ## <a name="options-overview"></a>选项概述
 
