@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924513"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639737"
 ---
 # <a name="about-hololens-2"></a>关于 HoloLens 2
 
@@ -58,22 +58,22 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 ### <a name="display"></a>显示
 
-|   |   |
-| - | - |
-| 光学元件 | 透视全息镜头（波导） |
-| 全息分辨率 | 2k 3:2 光引擎 |
-| 全息密度 | >2.5k 弧度（每弧度光点） |
-| 基于眼睛的渲染 | 针对 3D 眼睛位置的显示优化 |
+|   | &nbsp; |
+|---|---|
+| **光学元件** | 透视全息镜头（波导） |
+| **全息分辨率** | 2k 3:2 光引擎 |
+| **全息密度** | >2.5k 弧度（每弧度光点） |
+| **基于眼睛的渲染** | 针对 3D 眼睛位置的显示优化 |
 
 ### <a name="sensors"></a>传感器
 
-|   |   |
-| - | - |
-| 头部跟踪 | 4 个可见光相机 |
-| 眼动跟踪 | 2 个红外 (IR) 相机 |
-| 深度 | 1-MP 飞行时间深度传感器 |
-| 惯性测量单元 (IMU) | 加速计、陀螺仪、磁力仪 |
-| 照相机 | 8-MP 静止图像、1080p30 视频 |
+|   | &nbsp; |
+|---|---|
+| **头部跟踪** | 4 个可见光相机 |
+| **眼动跟踪** | 2 个红外 (IR) 相机 |
+| **Depth** | 1-MP 飞行时间深度传感器 |
+| **惯性测量单元 (IMU)** | 加速计、陀螺仪、磁力仪 |
+| **摄像头** | 8-MP 静止图像、1080p30 视频 |
 
 ![HoloLens 2 传感器](images/hololens2-front-view.png)
 
@@ -82,77 +82,77 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 ### <a name="audio-and-speech"></a>音频和语音
 
-|   |   |
-| - | - |
-| 麦克风阵列 | 5 个声道 |
-| 扬声器 | 内置空间音效 |
+|   | &nbsp; |
+|---|---|
+| **麦克风阵列** | 5 个声道 |
+| **扬声器** | 内置空间音效 |
 
 ### <a name="compute-and-connectivity"></a>计算和连接性
 
-|   |   |
-| - | - |
-| 片上系统 | Qualcomm Snapdragon 850 计算平台[详细信息](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
-| 全息处理单元 | 第二代自定义构建的全息处理单元 |
-| 内存 | 4-GB LPDDR4x 系统 DRAM |
-| 存储 | 64-GB UFS 2.1 |
-| WiFi | 802.11ac 2x2 |
-| 蓝牙 | 5.0 |
-| USB | USB 类型 C DRP |
+|   | &nbsp; |
+|---|---|
+| **片上系统** | Qualcomm Snapdragon 850 计算平台[详细信息](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
+| **全息处理单元** | 第二代自定义构建的全息处理单元 |
+| **内存** | 4-GB LPDDR4x 系统 DRAM |
+| **存储** | 64-GB UFS 2.1 |
+| **Wi-Fi** | 802.11ac 2x2 |
+| **蓝牙** | 5.0 |
+| **USB** | USB 类型 C DRP |
 
 ### <a name="power"></a>强力
 
-|   |   |
-| - | - |
-| 电池使用时间 | 2-3 小时的有效使用时间。 最多两周待机时间。 |
-| 电池技术 | [锂电池](https://www.microsoft.com/download/details.aspx?id=43388) |
-| 充电行为 | 充电时全部功能可用 |
-| 冷却类型 | 被动冷却（无风扇） |
-| 功耗 | 为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。 |
+|   | &nbsp; |
+|---|---|
+| **电池使用时间** | 2-3 小时的有效使用时间。 最多两周待机时间。 |
+| **电池技术** | [锂电池](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **充电行为** | 充电时全部功能可用 |
+| **冷却类型** | 被动冷却（无风扇） |
+| **功耗** | 为了在设备处于打开状态时保持/提高内部电池充电百分比，至少必须将其连接到 15W 充电器。 |
 
 ### <a name="fit"></a>适合
 
-|   |   |
-| - | - |
-| 调整大小 | 具有可调带的单个大小。  适合眼镜 |
-| 重量 | 566 克 |
+|   | &nbsp; |
+|---|---|
+| **大小调整** | 具有可调带的单个大小。  适合眼镜 |
+| **Weight** | 566 克 |
 
 ## <a name="device-capabilities"></a>设备功能
 
 ### <a name="human-understanding"></a>人类理解力
 
-|   |   |
-| - | - |
-| 手部跟踪 | 双手全关节模型，直接操作 |
-| 眼动跟踪 | 实时跟踪 |
-| 语音 | 基于设备的命令和控制；具有 Internet 连接的 Cortana 自然语言 |
+|   | &nbsp; |
+|---|---|
+| **手部跟踪** | 双手全关节模型，直接操作 |
+| **眼动跟踪** | 实时跟踪 |
+| **语音** | 基于设备的命令和控制；具有 Internet 连接的 Cortana 自然语言 |
 
 ### <a name="environment-understanding"></a>环境理解
 
-|   |   |
-| - | - |
-| 六自由度 (6DoF) 跟踪 | 世界范围的位置跟踪 |
-| 空间映射 | 实时环境网格 |
-| 混合现实捕获 | 混合全息影像和物理环境照片与视频 |
+|   | &nbsp; |
+|---|---|
+| **六自由度 (6DoF) 跟踪** | 世界范围的位置跟踪 |
+| **空间映射** | 实时环境网格 |
+| **混合现实捕获** | 混合全息影像和物理环境照片与视频 |
 
 ## <a name="pre-installed-software"></a>预安装的软件
 
-|   |   |
-| - | - |
-| Windows 全息版操作系统 | 借助 [Windows 全息版 OS](hololens-release-notes.md)，Windows 10 用户可以通过 HoloLens 2 在混合现实环境中使用其部分应用和游戏。
-| 3D 查看器 | 通过 [3D 查看器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)，你可以轻松实时查看 3D 模型和动画。|
-| Cortana | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) 是个人生产力助手，可帮助你随时了解重要事项，并节省查找所需信息的时间。  |
-| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 可帮助员工更快地学习关于 Hololens 设备的新技能。 |
-| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 使技术人员能够使用 Microsoft Teams 或 Dynamics 365 Remote Assist 与远程协作者协作并解决问题。  |
-| 反馈中心 | 通过[反馈中心](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)，可以通过共享建议或问题来提供有关 Windows 和应用的反馈。  |
-| 文件资源管理器 | 文件资源管理器提供用于访问文件系统的图形用户界面。 |
-| 邮件和日历 | 利用[邮件和日历](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)应用，可帮助你了解最新的电子邮件信息、管理计划，并与您的联系人保持联系。 |  
-| Microsoft Edge | Microsoft Edge 为你提供世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 |
-| Microsoft Store | [Microsoft Store](https://www.microsoft.com) 是 HoloLens 应用和游戏的首选来源。|
-| 电影和电视 | [电影和电视](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)在一个简单、快速、美观的应用中提供最新的娱乐内容。 |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) 使你能够在任何地点从所有设备访问和编辑文件。  |
-| 照片| [照片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)允许你查看和编辑照片和视频、制作电影和创建相册。  |
-| 设置 | 设置应用是自定义 Windows Holographic 详细工作的位置。  |
-| 提示 | 使用[提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)，你可以了解在 Windows Holographic 中可以执行的既令人惊叹又少为人知的一些操作。 |
+| &nbsp; | &nbsp; |
+|---|---|
+| **Windows 全息版操作系统** | 借助 [Windows 全息版 OS](hololens-release-notes.md)，Windows 10 用户可以通过 HoloLens 2 在混合现实环境中使用其部分应用和游戏。
+| **3D 查看器** | 通过 [3D 查看器](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)，你可以轻松实时查看 3D 模型和动画。|
+| **Cortana** | [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab) 是个人生产力助手，可帮助你随时了解重要事项，并节省查找所需信息的时间。  |
+| **Dynamics 365 Guides** |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) 可帮助员工更快地学习关于 Hololens 设备的新技能。 |
+| **Dynamics 365 Remote Assist** | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) 使技术人员能够使用 Microsoft Teams 或 Dynamics 365 Remote Assist 与远程协作者协作并解决问题。  |
+| **反馈中心** | 通过[反馈中心](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)，可以通过共享建议或问题来提供有关 Windows 和应用的反馈。  |
+| **文件资源管理器** | 文件资源管理器提供用于访问文件系统的图形用户界面。 |
+| **邮件和日历** | 利用[邮件和日历](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab)应用，可帮助你了解最新的电子邮件信息、管理计划，并与您的联系人保持联系。 |
+| **Microsoft Edge** | Microsoft Edge 为你提供世界一流的性能，在浏览时具有更多的隐私性、更高的工作效率和更多价值。 |
+| **Microsoft Store** | [Microsoft Store](https://www.microsoft.com) 是 HoloLens 应用和游戏的首选来源。|
+| **电影和电视** | [电影和电视](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)在一个简单、快速、美观的应用中提供最新的娱乐内容。 |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) 使你能够在任何地点从所有设备访问和编辑文件。  |
+| **照片** | [照片](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)允许你查看和编辑照片和视频、制作电影和创建相册。  |
+| **设置** | 设置应用是自定义 Windows Holographic 详细工作的位置。  |
+| **提示** | 使用[提示](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)，你可以了解在 Windows Holographic 中可以执行的既令人惊叹又少为人知的一些操作。 |
 
 ## <a name="device-certifications"></a>设备认证
 
@@ -202,7 +202,7 @@ HoloLens 2 设备的序列号打印在面罩下方。
 1. 观察额头垫附近。
 1. 可以在铰链附近找到序列号。
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 也可以通过已连接的电脑找到序列号：
 
@@ -211,7 +211,7 @@ HoloLens 2 设备的序列号打印在面罩下方。
 1. 右键单击并选择 HoloLens 设备的“属性”
 1. 这将显示设备的序列号，如下面的屏幕截图所示。
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## <a name="next-steps"></a>后续步骤
 

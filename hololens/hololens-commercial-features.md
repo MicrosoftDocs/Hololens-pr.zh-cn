@@ -1,9 +1,9 @@
 ---
-title: 商业功能
-description: 了解使企业能够更轻松地管理 HoloLens 设备的 Microsoft HoloLens Commercial Suite 功能。
-author: scooley
-ms.author: scooley
-ms.date: 08/26/2019
+title: HoloLens 2 功能和解决方案
+description: 了解使企业能够更轻松地管理 HoloLens 设备的 Microsoft HoloLens Commercial 功能。
+author: joyjaz
+ms.author: v-jjaswinski
+ms.date: 06/28/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -13,74 +13,69 @@ ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
-manager: jarrettr
+manager: skerewa
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-keywords: HoloLens, 商业, 功能, MDM, 移动设备管理, 展台模式
-ms.openlocfilehash: 3682a2633477d68f61dba8a674846857947a3d15
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+keywords: HoloLens 2, 商业, 功能, mdm, 移动设备管理, 展台模式, 应用程序, 标识, Bitlocker, iris, Windows Hello, Azure 助力, Autopilot, 混合现实, WDAC
+ms.openlocfilehash: 5a68c4199cba20bba9d3aaa5183819975ea7b3f4
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397858"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635801"
 ---
-# <a name="commercial-features"></a>商业功能
+# <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 功能和解决方案
 
-HoloLens 具有使企业能够更轻松地管理 HoloLens 设备的功能。
+## <a name="what-can-hololens-2-do-for-you"></a>HoloLens 2 有何用途？
 
-每个 HoloLens 2 设备都具有商业功能。
+借助 HoloLens 2 上的混合现实应用程序，无界限协作并精确操作，以提高员工的工作效率。 使用内置语音命令、眼动跟踪和外部环境锚定功能更长时间、更舒适地保持抬头、免提状态，持续专注于安全、正确地完成任务。 与远程同事实时联系并在覆盖于物理环境中的大幅全息画布上协同工作，以快速解决工作中的问题。 在 Microsoft 的安全性、可靠性和可缩放性的支持下，可靠的应用程序生态系统可以立即实现投资回报。  
 
-HoloLens（第一代）附带两个许可选项：开发人员许可证和商业许可证。 要解锁 HoloLens 的商业功能，须从开发人员许可证升级到商业许可证。 要购买 Microsoft HoloLens Commercial Suite，请联系当地的 Microsoft 客户经理。
+[!INCLUDE [solutions](includes/hlsolutions.md)]
 
->[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
+## <a name="hololens-2-capabilities"></a>HoloLens 2 功能
 
-## <a name="key-commercial-features"></a>主要商业功能
+什么使 HoloLens 2 如此强大？
 
-- 展台模式。 你可以使用展台模式，在演示或展示体验中使用 HoloLens，从而限制可以运行的应用。
+| 功能 | 说明 |
+|---------|-------------|
+| 外部环境锚定 | 锚定全息图精确落准位置。 HoloLens 2 了解你的工作区。 因此，数字内容会持续存在，锚定在工作的物体或表面上。 |
+| 手部跟踪 | 自然地触摸、抓取和移动全息影像。 HoloLens 2 可适应你的双手，让你在互动中获得前所未有的满足感。 |
+| 眼动跟踪 | 对环境和人的理解已达到新的高度，尽情享受吧。 HoloLens 2 可以准确理解你正在看的位置，因此可以理解你的意图并为你的眼睛实时调整全息图。 |
+| 已启用语音 | 借助内置语音命令，你可以在双手忙于任务时快速导航和操作 HoloLens 2。 |
+| 人体工学 | HoloLens 2 重量轻 (3.28 kg)，其中包含一个拨盘式适配系统以支持扩展使用。 |
+| 大视场 | 使用高分辨率、大视场的显示器展开全息画布。 |
+| 无连接线 | 移动自如，无需电线或外部组件即可工作。 |
+| Azure 助力 | 流式传输高保真 3D 内容，这些内容可以锚定到在使用 Azure 混合现实服务的用户中持续存在的位置和/或对象。
+| 混合现实捕获 | 用照片或视频记录体验，以便与他人实时共享。 |
+| Windows Hello for Business | 基于虹膜的生物识别身份验证可让你快速安全地进入工作流程。 |
+| Windows Autopilot | 为 HoloLens 2 设置和预配服务，以便在分散的工作场所中立即使用。 |
+| 操作系统更新 | 通过每月的服务更新确保安全，并利用一年两次的发布版本中新增的工作效率和可管理性功能。 |
+| 轻松管理设备 | 使用 Microsoft Intune、VMware Workspace One、MobileIron 等解决方案同时管理多个 HoloLens 2 设备。 |
+| 在管控环境中操作 | HoloLens 2 拥有广泛的设备组合，支持高度管制的环境，包括名为 ISO 5.0 类和 UL I 类，第 2 部分的环境。 |
 
-  ![使用展台模式时，HoloLens 会直接启动你选择的应用。](images/201608-kioskmode-400px.png)
 
-- 适用于 HoloLens 的移动设备管理 (MDM)。 你的 IT 部门可以使用 Microsoft Intune 等解决方案来同时管理多个 HoloLens 设备。 你可以管理设置、选择要安装的应用并根据组织需求设置安全配置。
+## <a name="managing-hololens-2-in-your-organization"></a>管理组织中的 HoloLens 2
+HoloLens 2 具有使组织能够更轻松地管理和使用 HoloLens 设备的功能。 部分功能包含在设备中，其他功能则可在 [Windows 配置设计器](app-deploy-provisioning-package.md#setup)中通过 [HoloLens 的移动设备管理 (MDM)](hololens-mdm-configure.md) 或通过[预配包](hololens-provisioning.md)启用。
 
-  ![HoloLens 上的移动设备管理功能可在多个设备上提供企业级设备管理。](images/201608-enterprisemanagement-400px.png)
+| 我想… | 解决方案 | 说明 |  
+|---------| ------------|------------|
+管理最终用户的登录方式 | [**标识**](hololens-identity.md) | HoloLens 2 支持多种用户标识 - Azure Active Directory (AAD)、Microsoft 帐户 (MSA) 和本地帐户。  |
+| 加密用户数据 | [**数据安全**](security-encryption-data-protection.md) | 在 HoloLens 2 上启用 BitLocker 数据加密，从而提供与任何其他 Windows 设备相同的安全保护级别。 | 
+管理组织中的 Hololens 设备 | [**移动设备管理**](hololens-mdm-configure.md) | 从一个中心位置在多个 HoloLens 2 设备上管理设置、选择要安装的应用并根据组织的需要设置安全配置。 | 
+|最大程度地缩减新用户和设备的设置时间 | [**Autopilot**](hololens2-autopilot.md) | 在 Microsoft Endpoint Manager 中配置全新体验 (OOBE)，并允许终端用户在几乎没有交互的情况下为业务使用准备设备。 |  
+| 控制设备的 OS 更新 | [**适用于企业的 Windows 更新**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | 适用于企业的 Windows 更新为设备提供受控的操作系统更新，并支持长期服务渠道。 |  
+| 允许下载特定应用和 LOB 应用 |[**应用程序管理**](app-deploy-overview.md) | 选择如何为选定的 HoloLens 2 用户组分发和控制应用。 | 
+| 显示或隐藏“开始”菜单上的特定应用 |[**展台模式**](hololens-kiosk.md) | 将 HoloLens 2 配置为固定用途设备，用于应用演示或专用业务应用。 
+| 通过锁定应用来保护环境 | [**WDAC**](windows-defender-application-control-wdac.md) | Windows Defender 应用程序控制 (WDAC) 阻止设备用户启动应用和进程。
+| 使用应用规则和进程规则管理设备安全 | [**策略 (CSP)**](hololens-csp-policy-overview.md) | IT 管理员可以使用 HoloLens 2 上支持的策略 CSP 的现有列表来定义和实现策略设置。 |  
+| 管理设备如何连接到 Internet | [**网络和连接性**](hololens-certificates-network.md) | 使用基于证书的身份验证访问 Wi-Fi、VPN 或内部资源。 | 
+| 与多个用户共享设备 | [**自动自定义显示**](hololens-calibration.md#auto-eye-position-support) | HoloLens 2 显示通过自动眼部位置 (AEP) 自动调整，无需在[用户共享](hololens-multiple-users.md)设备时运行手动校准过程。 |
 
-- 适用于企业的 Windows 更新。 适用于企业的 Windows 更新为设备提供受控的操作系统更新，并支持长期服务渠道。
-- 数据安全。 在 HoloLens 上启用 BitLocker 数据加密，从而提供与任何其他 Windows 设备相同的安全保护级别。
-- 工作访问。 组织中的任何员工都可以通过 HoloLens 上的虚拟专用网络 (VPN) 远程连接公司网络。 HoloLens 还可以访问需要凭据的 Wi-Fi 网络。
-- 适用于企业的 Microsoft Store。 你的 IT 部门还可以建立企业专用商店，只供应针对你的特定 HoloLens 用途的公司应用。 安全地将企业软件分发给选定的企业用户组。
+了解上述解决方案的[许可要求](hololens-licenses-requirements.md)。
 
-## <a name="feature-comparison-between-editions"></a>版本之间的功能比较
+## <a name="next-steps"></a>后续步骤
+> [!div class="nextstepaction"]
+> [探索 HoloLens 2 选项](hololens2-options.md)
 
-|功能 |HoloLens（第 1 代）Development Edition |HoloLens（第 1 代）Commercial Suite |HoloLens 2 |
-|---|:---:|:---:|:---:|
-|设备加密 (BitLocker) | |✔️ |✔️ |
-|虚拟专用网络 (VPN) | |✔️ |✔️ |
-|[展台模式](hololens-kiosk.md) | |✔️ |✔️ |
-|管理和部署 | | | |
-|移动设备管理 (MDM) | |✔️ |✔️ |
-|阻止取消注册的功能 | |✔️ |✔️ |
-|基于证书的企业 Wi-Fi 访问 | |✔️ |✔️ |
-|Microsoft Store（消费者） |使用者 |使用 MDM 进行筛选 |使用 MDM 进行筛选 |
-|[企业应用商店门户](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
-|**安全和标识** | | | |
-|使用 Azure Active Directory (Azure AD) 帐户登录 |✔️ |✔️ |✔️ |
-|使用 Microsoft 帐户 (MSA) 登录 |✔️ |✔️ |✔️ |
-|带 PIN 解锁密钥的下一代凭据 |✔️ |✔️ |✔️ |
-|[安全启动](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |
-|**服务和支持** | | | |
-|当更新可用时自动更新系统 |✔️ |✔️ |✔️ |
-|[Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) | |✔️ |✔️ |
-|长期服务频道 (LTSC) | |✔️ |✔️ |
-
-## <a name="enabling-commercial-features"></a>启用商业功能
-
-组织的 IT 管理员可以设置商业功能，如适用于企业的 Microsoft Store、展台模式和企业 Wi-Fi 访问。 [Microsoft HoloLens](index.yml) 文档提供了从适用于企业的 Microsoft Store 注册设备和安装应用的分步说明。
-
-## <a name="see-also"></a>另请参阅
-
-- [Microsoft HoloLens](index.yml)
-- [展台模式](hololens-kiosk.md)
-- [HoloLens 设备支持的 CSP](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
-- [适用于企业的 Microsoft Store 和业务线应用](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
-- [使用业务线应用](/microsoft-store/working-with-line-of-business-apps)
+> [!div class="nextstepaction"]
+>[规划 HoloLens 2 部署](hololens-requirements.md) 

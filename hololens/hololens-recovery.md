@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923629"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635936"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重启、重置或恢复 HoloLens 2
 
@@ -72,6 +72,7 @@ ms.locfileid: "112923629"
 2. 按住“音量减小” + “电源”按钮 15 秒。 设备将自动重启。
 
 4. 将设备连接到主机计算机。
+
 
 5. 打开设备管理器（对于 Windows 10，请按 Windows 键，然后按 X 键，然后选择“设备管理器”）。 确保设备正确枚举为 Microsoft HoloLens，如下图所示：
 
@@ -133,7 +134,13 @@ ms.locfileid: "112923629"
 
 2. 检查设备是否解锁。
 
-3. 如果 ARC 未检测到设备，请确保可以通过电脑上的文件资源管理器连接到设备。 如果不能，
+1. 检查设备是否直接插入主机 PC，而不是中心。
+
+1. 如果设备未在通用串行总线驱动程序下显示为 HoloLens/HoloLens 恢复设备，请检查以下内容：
+    1. 端口，作为 Qualcomm HS-USB 设备
+    1.   其他设备，作为 QUSB_BULK 设备 - 主机 PC 缺少检测 HoloLens 所需的驱动程序。 右键单击并选择更新驱动程序，然后在线搜索驱动程序或[检查 Windows 更新设置中的可选更新](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)。 下载驱动程序后，ARC 应能够检测到它。
+ 
+1. 如果 ARC 未检测到设备，请确保可以通过电脑上的文件资源管理器连接到设备。 如果不能，
 
     1.  那么设备可能具有禁用该连接的 USB 策略。 这样的话，请尝试[手动刷写模式](hololens-recovery.md#manual-procedure)。
     2.  如果没有策略，请尝试使用不同的 USB 电缆。

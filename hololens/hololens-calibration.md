@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 校准, 舒适, 视觉对象, 质量, ipd, HoloLens, Windows Mixed Reality, VR 头戴显示设备
-ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924139"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635970"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善视觉质量和舒适度
 
@@ -109,8 +109,11 @@ HoloLens 2 使用眼球跟踪技术来改善你观看虚拟环境以及与虚拟
 1. 选择“设置” > “系统” > “校准”。
 1. 关闭“新用户使用此 HoloLens 时，自动要求运行眼部校准”。
 
-> [!IMPORTANT]
-> 此设置可能对全息影像呈现质量和舒适度产生不利影响。  关闭此设置时，依赖于眼球跟踪的功能（如文本滚动）在沉浸式应用程序中将不再起作用。
+   > [!IMPORTANT]
+   > 此设置可能对全息影像呈现质量和舒适度产生不利影响。  关闭此设置时，依赖于眼球跟踪的功能（如文本滚动）在沉浸式应用程序中将不再起作用。
+
+> [!NOTE]
+> 自 Windows Holographic 20H2 版本引入[自动眼部位置支持](hololens-release-notes.md#auto-eye-position-support)起，“设置”开关已移除。 仅在未校准的用户使用已启用眼动追踪功能的应用时，校准提示才会自动显示。
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 眼球跟踪技术
 
@@ -140,9 +143,9 @@ HoloLens（第一代）根据[瞳孔间距](https://en.wikipedia.org/wiki/Interp
 1. 要查看所有应用，请选择“+”。
 1. 选择“校准”。
 
-![从 shell 访问“校准”应用](./images/calibration-shell.png)
+   ![从 shell 访问“校准”应用](./images/calibration-shell.png)
 
-![“校准”应用启动后显示为一个活动立方体](./images/calibration-livecube-200px.png)
+   ![“校准”应用启动后显示为一个活动立方体](./images/calibration-livecube-200px.png)
 
 要通过“设置”应用来运行“校准”应用，请按照以下步骤操作：
 
@@ -151,7 +154,7 @@ HoloLens（第一代）根据[瞳孔间距](https://en.wikipedia.org/wiki/Interp
 1. 选择“设置”。
 1. 选择“系统” > “实用工具” > “打开校准”。
 
-![从“设置”应用启动“校准”应用](./images/calibration-settings-500px.jpg)
+   ![从“设置”应用启动“校准”应用](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>沉浸式头戴显示设备
 

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923679"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636515"
 ---
 # <a name="set-up-your-hololens-2"></a>设置 HoloLens 2
 
@@ -42,6 +42,14 @@ HoloLens 附带的可选舒适附件，可帮助你获得最舒适的贴合度�
 首次启动 HoloLens 2 时，第一项任务是设置 Windows 全息版。  启动 HoloLens 时，你会听到音乐并看到 Windows 徽标。
 
 ![首次启动时的第一个屏幕](images/01-magic-moment.png)
+
+你将看到一只飞来飞去的蜂鸟。
+
+![飞翔的蜂鸟](images/hummingbird-1.png)
+
+用手跟着蜂鸟。
+
+![飞翔的蜂鸟关闭](images/hummingbird-2.png)
 
 HoloLens 2 将引导你完成以下步骤：
 
@@ -88,6 +96,7 @@ HoloLens 2 将引导你完成以下步骤：
 
 1. 登录到你的用户帐户。 你将在“我的工作或学校拥有它”和“我拥有它”之间作出选择。
 
+    ![设置用户](images/13-device-owner.png)
     - 选择 **我的工作单位或学校拥有它** 时，使用 Azure AD 帐户登录。 如果你的组织使用 Azure AD Premium 并配置了自动 MDM 注册功能，HoloLens 将自动注册 MDM。 如果你的组织不使用 Azure AD Premium，则自动 MDM 注册功能不可用。 在这种情况下，需要[在设备管理中手动注册 HoloLens。](hololens-enroll-mdm.md#different-ways-to-enroll)
 
         1. 输入你的组织帐户信息。
@@ -100,8 +109,7 @@ HoloLens 2 将引导你完成以下步骤：
         1. 输入你的 Microsoft 帐户信息。
         2. 输入密码。 如果你的 Microsoft 帐户需要进行[双重验证 (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)，请完成验证过程。
 
-    ![设置用户](images/13-device-owner.png)
-
+        
 1. 选择“下一步”设置虹膜登录。 你将经历与眼部校准类似的体验。 扫描完成后，选择“完成”。 还可以选择“跳过”以跳过此步骤。
     
     ![虹膜设置](images/setup-iris.png)![虹膜设置完成](images/iris-setup-complete.png) 

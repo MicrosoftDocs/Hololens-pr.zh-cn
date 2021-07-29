@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 工业版常见问题解答
 description: 关于 HoloLens 2 工业版的常见问题
-keywords: HoloLens 2 购买选项、HoloLens 选项、工业版
+keywords: HoloLens 2 购买选项, HoloLens 选项, Industrial Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 837ce01a459ed0796b23008def9bcb6854a4ff85
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: af116578dbbeec1d364c2c04f2827a4b7df43efe
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406758"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636344"
 ---
-# <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 - 工业版常见问题解答
+# <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 工业版常见问题解答
 
-![在洁净室中使用的工业版](./images/industrial-sku-with-remote-assist.png)
+![在洁净室中使用的 Industrial Edition](./images/industrial-sku-with-remote-assist.png)
 
 ## <a name="hololens-2-industrial-edition-benefits"></a>HoloLens 2 工业版优势
 
@@ -43,7 +43,7 @@ HoloLens 2 工业版支持具有严格要求的管控环境，并且符合 ISO 1
 
 HoloLens 2 工业版经过认证，适用于 UL Class I、Division 2-Groups A、B、C 和 D HAZLOC 环境，其中可能存在可燃气体、蒸汽或液体。
 
-有关详细信息，请阅读 [UL 认证](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search)。
+有关详细信息，请参阅 [UL 认证](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search)。
 
 ### <a name="does-the-hololens-2-industrial-edition-hold-an-atex-certification"></a>HoloLens 2 工业版是否具有 ATEX 认证？
 
@@ -51,17 +51,17 @@ HoloLens 2 工业版经过认证，适用于 UL Class I、Division 2-Groups A、
 
 ### <a name="can-the-device-be-used-in-semiconductor-and-pharmaceutical-environments"></a>设备能否在半导体和医药环境中使用？
 
-可以。 HoloLens 2 工业版在设计时考虑到了这些环境因素，由于满足洁净室认证要求并注意到操作安全，此 HoloLens 2 版本可用于这些环境。
+是的。 HoloLens 2 工业版在设计时考虑到了这些环境因素，由于满足洁净室认证要求并注意到操作安全，此 HoloLens 2 版本可用于这些环境。
 
 ### <a name="what-is-the-hololens-2-industrial-edition-warranty"></a>HoloLens 2 专业版质保期方面有哪些规定？
 
 HoloLens 2 工业版提供 2 年质保和快速更换计划。
 
-访问此页面以查找 [HoloLens 质保信息](https://support.microsoft.com/warranty)。
+若要查找 [HoloLens 质保信息](https://support.microsoft.com/warranty)，请访问此页面。
 
 ### <a name="what39s-the-rapid-replacement-program"></a>什么是快速更换计划？
 
-除了 2 年质保外，HoloLens 2 工业版还包括快速更换计划，使客户能够隔夜接收替换设备，或在 Microsoft 收到缺陷设备之前向客户加急发货（以可用选项中较快者为准）。 若要开始替换，请 [联系支持人员](https://aka.ms/hololenssupport)。
+除了 2 年质保外，HoloLens 2 工业版还包括快速更换计划，使客户能够隔夜接收替换设备，或在 Microsoft 收到缺陷设备之前向客户加急发货（以可用选项中较快者为准）。 若要启动更换，请[联系支持人员](https://aka.ms/hololenssupport)。
 
 > [!NOTE]
 > 支持人员将需要任何缺陷的清楚说明，并确认设备在替换之前无法恢复到工作状态。
@@ -78,11 +78,11 @@ HoloLens 2 工业版不支持替换部件和翻新。 如果发现自己需要�
 
 ### <a name="can-i-use-the-same-cleaning-materials-for-hololens-2-industrial-edition-as-the-other-editions"></a>能否对 HoloLens 2 工业版使用与其他版本相同的清洁材料？
 
-HoloLens 2 工业版可使用 &quot;70%&quot; 异丙醇水溶液清理设备的硬质表面，包括面罩、额头垫和头带。 有关详细信息，请参阅 [HoloLens 2 清理常见问题解答](https://docs.microsoft.com/hololens/hololens2-maintenance)。
+HoloLens 2 工业版可使用 &quot;70%&quot; 异丙醇水溶液清理设备的硬质表面，包括面罩、额头板和头带。 有关详细信息，请参阅 [HoloLens 2 清理常见问题解答](/hololens/hololens2-maintenance)。
 
 ### <a name="how-do-i-clean-hololens-2-industrial-edition"></a>如何清理 HoloLens 2 工业版？
 
-关于清理标准 HoloLens 2 的很多建议都适用于 HoloLens 2 工业版。 查看 [HoloLens 2 清理常见问题解答](https://docs.microsoft.com/hololens/hololens2-maintenance)。
+关于清理标准 HoloLens 2 的很多建议都适用于 HoloLens 2 工业版。 查看 [HoloLens 2 清洁常见问题解答](/hololens/hololens2-maintenance)。
 
 ### <a name="how-should-i-hold-hololens-2-industrial-edition-when-cleaning-it"></a>清理时应当如何固定 HoloLens 2 工业版？
 
@@ -92,11 +92,11 @@ HoloLens 2 工业版可使用 &quot;70%&quot; 异丙醇水溶液清理设备的�
 
 ### <a name="what-operating-system-does-the-hololens-2-industrial-edition-have"></a>HoloLens 2 工业版具有哪些操作系统？
 
-工业版的操作系统与所有其他 HoloLens 2 版本相同。 有关 HoloLens 操作系统更新的详细信息，[请阅读我们的发行说明](hololens-release-notes.md)。
+工业版的操作系统与所有其他 HoloLens 2 版本相同。 有关 HoloLens OS 更新的详细信息，请阅读[发行说明](hololens-release-notes.md)。
 
 ### <a name="what-apps-can-run-on-the-hololens-2-industrial-edition"></a>HoloLens 2 工业版上可以运行哪些应用？
 
-HoloLens 2 工业版支持第 1 方和第 3 方应用，以及一系列开箱即用的企业级应用。 使用几种 [应用部署方法](https://docs.microsoft.com/hololens/app-deploy-overview) 可将系列商业应用部署到设备上。
+HoloLens 2 工业版支持第 1 方和第 3 方应用，以及一系列开箱即用的企业级应用。 可以使用多种[应用部署方法](/hololens/app-deploy-overview)将业务线应用部署到设备。
 
 ### <a name="can-i-upgrade-from-hololens-2-to-hololens-2-industrial-edition"></a>能否从 HoloLens 2 升级到 HoloLens 2 工业版？
 

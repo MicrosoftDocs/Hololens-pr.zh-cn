@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923493"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640468"
 ---
 # <a name="compare-hololens-2-options"></a>比较 HoloLens 2 选项
 
@@ -31,17 +31,17 @@ HoloLens 是一种混合现实设备，由 holograms 提供支持，并提供可
 
 |                                                      | HoloLens 2 | 具有 Remote Assist 的 HoloLens 2 | HoloLens 2 工业版 | 具有 Remote Assist 的 HoloLens 2 Industrial Edition | 基于 HoloLens 2 的 Trimble XR10 | HoloLens 2 开发版 |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 设备（一台设备）                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist（一个席位）                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| ISO 14644-1 5 类洁净室分类           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| UL Class I、Division 2-Groups A、B、C 和 D HAZLOC 环境                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| 已集成硬顶帽（符合超过 40 个国家/地区要求的 PPE） |            |                               |                               |                                                  |               ✔️              |                                |
-| 降噪音频输出                        |            |                               |                               |                                                  |               ✔️              |                                |
-| 开发人员权利 <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| 快速更换计划 <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| 商业使用权利                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [担保](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
-| 设备购买限制                                |    无    |              无             |              无             |                       无                       |             无             |       每个事务一个      |
+| **HoloLens 2 设备（一台设备）**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist（一个席位）**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **ISO 14644-1 5 类洁净室分类**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **UL Class I、Division 2-Groups A、B、C 和 D HAZLOC 环境**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **已集成硬顶帽（符合超过 40 个国家/地区要求的 PPE）** |            |                               |                               |                                                  |               ✔️              |                                |
+| **降噪音频输出**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **开发人员权利 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **快速更换计划 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **商业使用权利**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**担保**](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
+| **设备购买限制**                                |    无    |              无             |              无             |                       无                       |             无             |       每个事务一个      |
 
 - <sup>1</sup> - 包括 500 美元 Azure 额度以及 Unity Pro 和 Pixyz 插件的 3 个月试用期。
 - <sup>2</sup> - 隔夜收到替换设备，或在 Microsoft 收到损坏设备之前，加急发运（以可用选项中较快者为准）。
@@ -82,8 +82,8 @@ HoloLens 是一种混合现实设备，由 holograms 提供支持，并提供可
 | [Dynamics 365 for HoloLens](https://www.microsoft.com//hololens/apps)          | 赋予员工权利并优化操作。                                                        |
 | [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | 使技术人员通过在不同位置协同工作来更有效地协作。 |
 |   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | 提高培训有效性，并了解员工的表现。                          |
-|  [适用于混合现实的 Azure 云服务](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | 了解如何使用 Azure 云服务开发解决方案。                                       |
-|  [开始针对 HoloLens 2 进行开发](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | 构建混合现实解决方案以满足你的需求。                                                 |
+|  [适用于混合现实的 Azure 云服务](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | 了解如何使用 Azure 云服务开发解决方案。                                       |
+|  [开始针对 HoloLens 2 进行开发](/windows/mixed-reality/develop/development?tabs=unity)         | 构建混合现实解决方案以满足你的需求。                                                 |
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ebe1d072f36cdf4ad9b3543882e61fa2ed4a0300
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: e156fc21bfd1541dd8718a7349e7ba82b45576be
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406748"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639363"
 ---
 # <a name="encryption-and-data-protection"></a>加密和数据保护
 
@@ -34,6 +34,6 @@ BDE 是一种数据保护功能，在设备的状态分隔布局中的所有卷�
 
 ## <a name="azure-integration"></a>Azure 集成 
 
-HoloLens 2 使客户能够将其设备与 Azure 服务集成。 HoloLens 2 设备与 Azure 之间的通信使用 TLS（传输层安全性）协议来保护其自身与云服务之间传输的数据，从而提供强大的身份验证、消息隐私和完整性。 所有 Azure 服务完全支持 TLS 1.2，而客户仅使用 TLS 1.2 的任何服务只接受 TLS 1.2 流量。 [Azure 加密概述](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)中详细介绍了 Azure 的传输数据加密标准。 请访问 Azure文 档，以了解有关 [Azure 数据安全性和加密的最佳做法](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)的更多信息。 
+HoloLens 2 使客户能够将其设备与 Azure 服务集成。 HoloLens 2 设备与 Azure 之间的通信使用 TLS（传输层安全性）协议来保护其自身与云服务之间传输的数据，从而提供强大的身份验证、消息隐私和完整性。 所有 Azure 服务完全支持 TLS 1.2，而客户仅使用 TLS 1.2 的任何服务只接受 TLS 1.2 流量。 [Azure 加密概述](/azure/security/fundamentals/encryption-overview)中详细介绍了 Azure 针对传输数据的加密标准。 参阅 Azure 文档，详细了解 [Azure 数据安全和加密的最佳做法](/azure/security/fundamentals/data-encryption-best-practices)。 
 
 OneDrive 是与 HoloLens 2 的云集成示例，它具有自动上传功能，在连接到 Internet 时，你的文件和文档可以自动上传到云。 暂停文件自动同步不能通过策略关闭，但可通过 UX 直接配置。 

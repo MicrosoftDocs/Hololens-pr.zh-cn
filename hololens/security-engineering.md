@@ -13,25 +13,25 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cecc556841033ee394f36915f4cae8839dad08df
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 1c043b721590e8245f694b3e4f6e5b6ce57f1ecf
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009530"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639346"
 ---
-# 安全工程
+# <a name="security-engineering"></a>安全工程
 
 Microsoft 有多个资源和团队致力于优化公司的工程协议、解决合规性问题并确保客户信任。 
 
-  * 若要了解有关 Microsoft 安全工程开发实践的详细信息，请参阅 [安全开发生命周期 (SDL)](https://www.microsoft.com/securityengineering/sdl)。
-  * Microsoft 以及 HoloLens 2 使客户能够选择数据的收集和使用方式和原因，[Microsoft 的隐私政策](https://privacy.microsoft.com/)中对此进行了进一步探讨。 
+  * 若要详细了解 Microsoft 的安全工程开发做法，请参阅[安全开发生命周期 (SDL)](https://www.microsoft.com/securityengineering/sdl)。
+  * Microsoft 以及 HoloLens 2 使客户能够选择数据的收集和使用方式和原因，[Microsoft 的隐私策略](https://privacy.microsoft.com/)中对此进行了进一步探讨。 
   * [Microsoft 安全响应中心 (MSRC)](https://www.microsoft.com/msrc) 是防御者社区的一部分，可提供有效的漏洞报告体验以及对安全 bug 的有效分类和响应。 
 
-## 更新和修补程序
+## <a name="updates-and-patches"></a>更新和修补程序
 
 安全更新和修补程序将在每个月的第二个星期二发布。 若要了解 Microsoft 用于评估已报告漏洞的后续步骤的条件，请参阅 Microsoft 安全响应中心的[“安全服务标准”页面](https://www.microsoft.com/msrc/windows-security-servicing-criteria)。 
 
-有关通过 MDM 管理 HoloLens 2 更新的指导，请参阅[管理 HoloLens 更新](https://docs.microsoft.com/hololens/hololens-updates)。 HoloLens 2 的操作系统更新节奏与 Windows 10 的操作系统更新节奏相匹配；每年有两次更新，一次在春季进行，另一次在秋季进行。 有关在操作系统更新期间如何保护设备的详细信息，请参阅[状态分离和隔离](security-state-separation-isolation.md)。 
+有关通过 MDM 管理 HoloLens 2 更新的指南，请参阅[管理 HoloLens 更新](hololens-updates.md)。 HoloLens 2 的操作系统更新节奏与 Windows 10 的操作系统更新节奏相匹配；每年有两次更新，一次在春季进行，另一次在秋季进行。 有关如何在 OS 更新期间保护设备的详细信息，请参阅[状态分离和隔离](security-state-separation-isolation.md)。 
 
-IT 管理员可以通过[策略 CSP - 更新](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update)了解有关更新策略的详细信息。 
+IT 管理员可以在[策略 CSP - 更新](/windows/client-management/mdm/policy-csp-update)中了解有关更新策略的详细信息。 

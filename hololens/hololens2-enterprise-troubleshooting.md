@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 911e5b9494eae00ace8007ee6a29b30e6aaf98dd
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112961496"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636871"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>实现和托管设备的故障排除 
 
@@ -61,16 +61,87 @@ ms.locfileid: "112961496"
 
 在设备上登录到企业或组织帐户时，如果策略由 IT 管理员配置，也可能应用移动设备管理 (MDM) 策略。
 
+[返回到列表](#list)
+
 ## <a name="network-troubleshooting"></a>网络故障排除
-如果网络问题是在组织中成功部署和使用 HoloLens 2 的障碍，请了解两个著名的网络诊断工具 Fiddler 和 Wireshark 如何帮助你扫描、诊断和识别问题。 请查看此[博客](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458)了解更多详细信息。
+如果网络问题是在组织中成功部署和使用 HoloLens 2 的障碍，请配置 Fiddler 和/或 Wireshark 以捕获和分析 HTTP/HTTPS 流量。 
+
+### <a name="configure-fiddler-to-capture-http-traffic"></a>配置 Fiddler 以捕获 HTTP 流量
+Fiddler 是 Web 调试代理，用于解决 HTTP(S) 问题。 它捕获计算机发出的每个 HTTP 请求并记录与之相关的所有内容。 发现 HTTPS 应用的最终用户身份验证问题可提高目标 HoloLens 2 用例的生产力和效率。 
+
+#### <a name="prerequisites"></a>必备条件
+ 
+- HoloLens 2 设备和 PC 必须位于同一网络
+- 记下 PC 的 IP 地址
+
+#### <a name="install-and-configure-fiddler"></a>安装和配置 Fiddler
+
+1. 在 PC 上 - [安装](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure)并启动 Fiddler。  
+1. 在 PC 上 - 配置 Fiddler 以允许远程计算机连接。
+    1. 转到“Fiddler 设置”->“连接”
+    1. 记下 Fiddler 的监听端口（默认为 8866）
+    1. 勾选“允许远程计算机连接”
+    1. 点击“保存”
+3. 在 HoloLens 2 上 - 将 Fiddler 配置为代理服务器<sup>1</sup>：
+    1. 打开“开始”菜单，然后选择“设置”
+    1. 选择“网络和 Internet”，然后选择左侧菜单上的“代理”
+    1. 向下滚动到“手动代理设置”，并将“使用代理服务器”切换到“打开”
+    1. 输入安装了 Fiddler 的 PC 的 IP 地址
+    1. 输入先前记下的端口号（默认为 8866）
+    1. 点击“保存”
+
+<sup>1</sup> 对于内部版本 20279.1006+（预览体验成员和即将发布的版本），请按照以下步骤配置代理：
+1. 打开“开始”菜单并转到 Wi-Fi 网络的“属性”页 
+1. 向下滚动到“代理”
+1. 更改为“手动设置”
+1. 输入安装了 Fiddler 的 PC 的 IP 地址
+1. 输入先前记下的端口号。 （默认为 8866）
+1. 单击“应用”
+    
+#### <a name="decrypt-https-traffic-from-hololens-2"></a>解密来自 HoloLens 2 的 HTTPS 流量
+
+1. 在 PC 上 - 导出 Fiddler 证书。
+    1. 转到“Fiddler 设置”->“HTTPS”，并展开“高级设置”
+    2. 单击“导出 Fiddler 证书”。 它将保存到桌面
+    3. 将证书移至 HoloLens 2 上的 Downloads 文件夹
+
+2.  在 HoloLens 2 上 - 导入 Fiddler 证书。
+    1. 转到“设置”->“更新和安全”->“证书”
+    2. 单击“安装证书”，浏览 Downloads 文件夹并选择 Fiddler 证书
+    3. 将“存储位置”更改为“本地计算机”
+    4. 将“证书存储”更改为“根文件夹”
+    5. 选择“安装”
+    6. 确认证书是否显示在证书列表中。 如果否，重复上述步骤
+
+#### <a name="inspect-https-sessions"></a>检查 HTTP (S) 会话
+
+在 PC 上，Fiddler 将显示 HoloLens 2 的实时 HTTP(S) 会话。 Fiddler 中的“检查者”面板可以在不同的视图中显示 HTTP(S) 请求/响应 - 例如，“原始”视图以纯文本形式显示原始请求或响应。 
+
+### <a name="configure-wireshark-to-capture-network-traffic"></a>配置 Wireshark 以捕获网络流量
+Wireshark 是网络协议分析器，用于检查进出 HoloLens 2 设备的 TCP/UDP 流量。 这样即可轻松识别经网络流向 HoloLens 2 的流量、流量多少、频率，以及某些跃点之间的延迟等。
+
+#### <a name="prerequisites"></a>先决条件：
+- PC 必须可以访问 Internet 并支持通过 Wi-Fi 在 Internet 中进行共享
+
+#### <a name="install-and-configure-wireshark"></a>安装和配置 Wireshark
+1. 在 PC 上 - 安装 [Wireshark](https://www.wireshark.org/#download) 
+1. 在 PC 上 - 启用移动热点通过 Wi-Fi 共享 Internet 连接。
+1. 在 PC 上 - 启动 Wireshark 并从移动热点界面捕获流量。 
+1. 在 HoloLens 2 上 - 将其 Wi-Fi 网络更改为 PC 的移动热点。 HoloLens 2 IP 流量将显示在 Wireshark 中。
+
+#### <a name="analyze-wireshark-logs"></a>分析 Wireshark 日志
+Wireshark 筛选器可帮助筛选出感兴趣的数据包。 
+
+查看原始[博客](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458)。
 
 [返回到列表](#list)
 
 ## <a name="cant-sign-in-to-a-previously-setup-hololens-device"></a>无法登录到以前安装的 HoloLens 设备
 
-如果你的设备以前是为其他人设置的，无论是针对客户端还是以前的员工，你都没有密码来解锁设备，你可以使用 Intune 远程[擦除](https://docs.microsoft.com/intune/remote-actions/devices-wipe)设备。 然后，设备本身会重新刷写。  
+如果你的设备以前是为其他人设置的，无论是针对客户端还是以前的员工，你都没有密码来解锁设备，你可以使用 Intune 远程[擦除](/intune/remote-actions/devices-wipe)设备。 然后，设备本身会重新刷写。  
 > [!IMPORTANT]
 > 擦除设备时，请确保取消选中“保留注册状态和用户帐户”。
+
 [返回到列表](#list)
 
 ## <a name="cant-login-after-updating-to-windows-holographic-21h1"></a>更新为 Windows Holographic 21H1 后无法登录
@@ -84,20 +155,24 @@ ms.locfileid: "112961496"
 受影响的设备可能已从 Azure AD 租户中删除。 例如，发生这种情况可能是因为：
 
 - 管理员或用户在 Azure 门户中或使用 PowerShell 删除设备。
-- 由于不活动，已从 Azure AD 租户中删除设备。 对于有效托管的环境，我们通常建议 IT 管理员[从其 Azure AD 租户中删除过时的非活动设备](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices)。
+- 由于不活动，已从 Azure AD 租户中删除设备。 对于有效托管的环境，我们通常建议 IT 管理员[从其 Azure AD 租户中删除过时的非活动设备](/azure/active-directory/devices/manage-stale-devices)。
 
 当受影响的设备在被删除后尝试再次联系 Azure AD 租户后，将无法使用 Azure AD 进行身份验证。 此效果对于设备用户通常不可见，因为通过 PIN 缓存的登录将继续允许用户登录。
 
 ### <a name="mitigation"></a>缓解措施
 目前没有办法将删除的 HoloLens 设备添加回 Azure AD。 受影响的设备需要按照[刷写其设备](hololens-recovery.md#clean-reflash-the-device)上的说明重新刷写干净。
 
+[返回到列表](#list)
+
 ## <a name="autopilot-troubleshooting"></a>Autopilot 故障排除
 
 以下文章可能是你了解更多信息和解决 Autopilot 问题的有用资源，但请注意，这些文章是基于Windows 10 桌面版的，并非所有信息都适用于 HoloLens：
 
-- [Windows Autopilot - 已知问题](https://docs.microsoft.com/mem/autopilot/known-issues)
-- [Microsoft Intune 中的 Windows 设备注册问题疑难解答](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
-- [Windows Autopilot - 策略冲突](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+- [Windows Autopilot - 已知问题](/mem/autopilot/known-issues)
+- [Microsoft Intune 中的 Windows 设备注册问题疑难解答](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot - 策略冲突](/mem/autopilot/policy-conflicts)
+
+[返回到列表](#list)
 
 ## <a name="managed-hololens-devices-faqs"></a>托管 HoloLens 设备常见问题解答
 
@@ -131,6 +206,6 @@ ms.locfileid: "112961496"
 ## <a name="questions-about-securing-hololens-devices"></a>有关保护 HoloLens 设备的问题
 
 请参阅[我们的 HoloLens 2 安全信息](security-overview.md)。
-对于 HoloLens 第 1 代设备，请查看[此常见问题解答](hololens1-faq-security.md)。
+对于 HoloLens 第 1 代设备，请查看[此常见问题解答](hololens1-faq-security.yml)。
 
 [返回到列表](#list)
