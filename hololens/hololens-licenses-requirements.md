@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640266"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114661706"
 ---
 # <a name="license-requirements"></a>许可要求
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2 设备（托管）
+## <a name="overview"></a>概述
+本页提供在组织中部署托管和非托管 HoloLens 2 设备所需的许可证和帐户的概述。 它还包括 Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) 和 [Guides](#dynamics-365-guides) 的许可的信息。
 
-[Azure AD 帐户](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 的许可证和帐户要求
+
+ 
+|       &nbsp;      | 托管的 HoloLens | 非托管的 HoloLens |
+|-------------------|-----------------|---------------------|
+| **业务用例** | | |
+| [部署到连接到云的设备 - 概念验证/试点部署](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [在组织网络内部署 - 大规模部署](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [在安全的脱机环境中进行部署](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **许可证** | | |
+| Azure Active Directory | ✔️ | |
+| MDM（Intune<sup>1</sup> 或 <sup>2</sup>） | ✔️  | |
+| **帐户** |  | |
+| Azure AD 管理员帐户 | ✔️ |  |
+| Azure AD 用户帐户 | ✔️ | |
+| [Microsoft 帐户 (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [本地帐户](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1</sup>在初始设备设置期间[自动注册](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)，这会注册和联接 Azure Active Directory 并使设备能通过 Intune 进行管理。
+- <sup>2</sup> [适用于 HoloLens 2 的 Windows Autopilot ](hololens2-autopilot.md) 简化了 IT 管理员和最终用户的预配体验。 IT 管理员可以预配 HoloLens 2 策略，并且首次启动时，设备将部署为无最终用户交互的业务就绪状态。
+- <sup>3</sup> 必须使用 Windows 配置设计器 (WCD) 提前[预配](hololens-provisioning.md#provisioning-package-hololens-wizard)此帐户。
 
 > [!IMPORTANT]
 > Active Directory (AD) 不能用于管理 HoloLens 设备。
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 或其他 MDM。
-- [适用于 HoloLens 2 的 Windows Autopilot](hololens2-autopilot.md) - 简化了 IT 管理员和最终用户的预配体验。 IT 管理员可以预配 HoloLens 2 策略，并且首次启动时，设备将部署为无最终用户交互的业务就绪状态。 
-
-  > [!NOTE]
-  > Windows Autopilot 需先为低接触 Autopilot 流程和设备部署配置 [Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) 和[自动注册](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。 
-
-### <a name="business-use-case"></a>业务用例： 
-
-- [部署方案 A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - 概念验证或试点部署。
-
-- [部署方案 B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - 大规模部署。
-
-## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 仅限设备（非托管）
-
-使用 Microsoft 帐户 (MSA) 或本地帐户时，这些帐户不需要额外的许可证。
-
-[本地帐户](/windows/security/identity-protection/access-control/local-accounts)
-
-- 必须使用 Windows 配置设计器 (WCD) 提前[预配](hololens-provisioning.md#provisioning-package-hololens-wizard)此帐户。
-
-[Microsoft 帐户 (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> 使用这些帐户之一的设备不支持多个用户。
-
-### <a name="business-use-case"></a>业务用例： 
-
-- [部署方案 C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - 脱机或安全部署。
  
+> [!WARNING]
+> 使用 MSA 或本地帐户的设备不支持多个用户。
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365 许可和要求
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
@@ -82,7 +76,7 @@ ms.locfileid: "113640266"
 
 - Azure AD 帐户
 
-- Microsoft Teams 或 [Teams 免费增值](https://products.office.com/microsoft-teams/free)。
+- Microsoft Teams 或 [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - 网络连接
 
@@ -92,8 +86,8 @@ ms.locfileid: "113640266"
 
 #### <a name="admin"></a>管理员
 
-- Azure AD 帐户（购买订阅和分配许可证时需要）
-- Dynamics 365 [Guides 订阅或免费试用版](/dynamics365/mixed-reality/guides/setup-step-one)
+1. Azure AD 帐户（购买订阅和分配许可证时需要）
+2. Dynamics 365 [Guides 订阅或免费试用版](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### <a name="guides-author"></a>Guides 作者
 
