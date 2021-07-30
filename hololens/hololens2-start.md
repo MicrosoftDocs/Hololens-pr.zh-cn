@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636515"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659228"
 ---
 # <a name="set-up-your-hololens-2"></a>设置 HoloLens 2
 
@@ -39,41 +39,44 @@ HoloLens 附带的可选舒适附件，可帮助你获得最舒适的贴合度�
 
 ## <a name="set-up-windows"></a>设置 Windows
 
-首次启动 HoloLens 2 时，第一项任务是设置 Windows 全息版。  启动 HoloLens 时，你会听到音乐并看到 Windows 徽标。
+首次启动 HoloLens 2 时，第一项任务是设置 Windows 全息版。  启动 HoloLens 时，你会听到音乐并看到 Microsoft 徽标。
 
-![首次启动时的第一个屏幕](images/01-magic-moment.png)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
+<br/>
+<img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 你将看到一只飞来飞去的蜂鸟。
 
-![飞翔的蜂鸟](images/hummingbird-1.png)
+<img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-用手跟着蜂鸟。
+它会随你的手势而动。
 
-![飞翔的蜂鸟关闭](images/hummingbird-2.png)
+<img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-HoloLens 2 将引导你完成以下步骤：
+带有 Microsoft 徽标的按钮将显示。 按此按钮，HoloLens 2 将引导你完成以下步骤：
 
 1. 选择语言。
 
-    ![选择语言](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. 选择你的区域。
 
-    ![选择区域](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. 根据你的眼睛校准 HoloLens。  如果选择跳过校准，下次登录时将提示你。 
 
     1. 首先，调整面罩。
     
-        ![校准选择屏幕](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. 要进行校准，请注视一组目标（称为“宝石”）。 校准期间，眨眼或闭眼都可以，但是尽量不要盯着房间或物理空间中的其他物体。 HoloLens 利用此过程来获取你的眼球位置，以便更好地向你呈现全息世界。 
 
-        ![根据眼睛进行调整](images/07-adjust-eyes.png)
+        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
         校准后，会正确显示全息图，即使面罩在你的头上移动时也是如此。 校准信息存储在本地设备上，与任何帐户信息无关。 有关详细信息，请参阅[校准数据和安全性](hololens-calibration.md#calibration-data-and-security)。
 
-        ![校准完成](images/calibration-complete.png)
+        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. 连接到 Internet（选择 Wi-Fi 或以太网连接）。
 
@@ -112,7 +115,10 @@ HoloLens 2 将引导你完成以下步骤：
         
 1. 选择“下一步”设置虹膜登录。 你将经历与眼部校准类似的体验。 扫描完成后，选择“完成”。 还可以选择“跳过”以跳过此步骤。
     
-    ![虹膜设置](images/setup-iris.png)![虹膜设置完成](images/iris-setup-complete.png) 
+    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
      
   
 1. 你将设置一个 PIN 以登录到设备。 此 PIN 特定于设备。 
@@ -122,26 +128,30 @@ HoloLens 2 将引导你完成以下步骤：
     ![设置 Windows Hello PIN](images/windows-hello-pin.png)
 
     ![Windows Hello 设置成功](images/windows-hello-successful.png) 
+
     
 1. 选择是否在 HoloLens 2 上启用语音。
 
-    ![启用 Cortana](images/22-do-more-with-voice.png)
+    <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
 1. 选择是否在 HoloLens 2 上启用位置。
     
-    ![启用本地服务](images/setup-location-services.png)
+    <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
 1. 选择遥测级别。 如果可以，请启用可选遥测。 此信息能为 HoloLens 工程团队提供切实帮助。
 
-     ![遥测级别](images/24-telemetry.png)
+    <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
 
 1. 了解如何在 HoloLens 2 上使用开始手势。
 
-     ![了解如何使用开始手势，图像 1](images/26-01-startmenu-learning.png)
+    <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
-     ![了解如何使用开始手势，图像 2](images/26-02-startmenu-learning.png)
-
-恭喜！  设置完成，现在可以使用 HoloLens 了！
+    <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
+    
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+    
+    恭喜！  设置完成，现在可以使用 HoloLens 了！
 
 ## <a name="next-steps"></a>后续步骤
 
