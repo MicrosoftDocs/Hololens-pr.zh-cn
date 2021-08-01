@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
-ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
+ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114696324"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009334"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
@@ -31,15 +31,16 @@ ms.locfileid: "114696324"
 
 我们很高兴地开始尝试新功能，以再次Windows预览体验成员。 新内部版本将前往开发和 Beta 通道获取最新更新。 在向预览体验成员内部版本添加更多功能和更新时，Windows更新此页面。 准备好将这些更新混合到现实中，
 
-| 功能                 | 描述                | 用户或方案 | 引入的生成 |
+| 功能                 | 说明                | 用户或方案 | 引入的生成 |
 |-------------------------|----------------------------|--------------|------------------|
 | [CSP 更改报表HoloLens详细信息](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 CSP | IT 管理员    | 20348.1403                 |
 | [CSP 控制的自动登录策略](#auto-login-policy-controlled-by-csp) | 用于自动登录帐户 | IT 管理员 | 20348.1405 |
 | [证书管理器的 PFX 文件支持](#pfx-file-support-for-certificate-manager) | 通过自定义 UI 添加 PFX 设置证书 | 最终用户 | 20348.1405 |
-| [在诊断中查看设置诊断HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上 MDM 诊断日志 | 疑难解答 | 20348.1405 |
-| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的省/市/服务反馈 | 疑难解答 | 20348.1405 |
+| [在诊断中查看设置诊断HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上 MDM 诊断日志 | 故障排除 | 20348.1405 |
+| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的省/市/服务反馈 | 故障排除 | 20348.1405 |
 | [仅将专用应用商店应用用于Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 将应用商店应用配置为仅显示来自组织的应用 | IT 管理员 | 20348.1408 |
-| [修复和改进](hololens-insider.md#fixes-and-improvements) | 修复和改进了 HoloLens。 | All | 20348.1408 |
+| [低存储日志收集改进](#low-storage-log-collection-improvements) | 改进了低存储情况下的日志收集方案。 | IT 管理员 | 20348.1412 |
+| [修复和改进](hololens-insider.md#fixes-and-improvements) | 修复和改进了 HoloLens。 | 全部 | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 更改报表HoloLens详细信息
 
@@ -122,13 +123,17 @@ DeviceStatus CSP 现在还报告主动Wi-Fi连接的 HoloLens SSID 和 BSSID。 
 
 此新功能将在设备更新时启用，无需启用或管理。 如果无法显示或听到此新反馈，仍将生成脱机诊断。
 
-我们希望通过这种新添加的 feedback 反馈，可以更轻松地收集诊断数据，并更快排查问题。
+我们希望这种新的视听反馈增加，更易于收集诊断数据，并能更快地解决问题。
 
-### <a name="use-only-private-store-apps-for-microsoft-store"></a>仅将专用应用商店应用用于Microsoft Store
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>仅对 Microsoft Store 使用专用应用商店应用
 
-已启用 RequirePrivateStoreOnly 策略HoloLens。 此策略Microsoft Store应用配置为只显示为组织配置的专用存储。 仅将访问权限限制为可用的应用。
+已为 HoloLens 启用 RequirePrivateStoreOnly 策略。 此策略允许将 Microsoft Store 应用配置为仅显示为组织配置的专用存储。 仅将访问权限限制为可用的应用。
 
 了解有关[ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)的详细信息
+
+### <a name="low-storage-log-collection-improvements"></a>低存储日志收集改进
+
+如果收集诊断日志时，设备的磁盘空间似乎不足，则将创建一个名为 **StorageDiagnostics.zip** 的附加报表。 Windows[存储感知](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)会自动确定低存储的阈值。
 
 ### <a name="fixes-and-improvements"></a>修复和改进
 
@@ -136,7 +141,6 @@ DeviceStatus CSP 现在还报告主动Wi-Fi连接的 HoloLens SSID 和 BSSID。 
 - 修复了 [包含文件上传和下载超时的设备门户的已知问题。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - 解决与 HoloLens 设备报告符合性属性有关的问题;可能需要重新启动才能在内幕生成上触发正确的报告。  
 - 更新了全新闪烁的远程协助的内置版本。
-
 
 ## <a name="start-receiving-insider-builds"></a>开始接收 Insider 内部版本
 
