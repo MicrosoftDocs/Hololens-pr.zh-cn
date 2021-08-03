@@ -13,21 +13,23 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: cc73f5cbb438119f4c626ae76db9c91373e19aff
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635358"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009351"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
+
+> [!NOTE]
+> Microsoft Endpoint Manager 中 HoloLens 的 Autopilot 配置将从“公共预览”转换为“正式发布” 。 所有租户都可在 MEM 管理中心设置 Autopilot。
 
 从 Windows 全息版 2004 开始，HoloLens 2 支持使用 Microsoft Intune 的 Windows Autopilot [自部署模式](/mem/autopilot/self-deploying)（不支持第三方 MDM）。 管理员可在 Microsoft Endpoint Manager 中配置全新体验 (OOBE)，并允许终端用户在几乎没有交互的情况下为业务使用准备设备。 这减少了库存管理开销、动手准备设备的成本以及员工在设置过程中的支持电话。 在 [Windows Autopilot](/mem/autopilot/windows-autopilot) 文档中了解详细信息。
 
 与 Surface 设备一样，我们建议客户与其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)（经销商或分销商）合作，通过合作伙伴中心将设备注册到 Autopilot 服务。 [添加设备](/mem/autopilot/add-devices)文档中概述了设备注册的其他方法，不过利用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
 
-> [!NOTE]
-> 自 2020 年 11 月 20 日起，Microsoft Endpoint Manager 中 HoloLens 的 Autopilot 配置将转换为公共预览。 客户无需再注册私人预览，所有租户都可在 MEM 管理中心中设置 Autopilot。
+
 
 当用户启动 Autopilot 自部署过程时，Autopilot 会完成以下步骤：
 
@@ -329,3 +331,7 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 - 如果你的设备已注册到 Autopilot 服务，并且配置文件已分配在 MEM 门户上，请联系 HoloLens [支持](/hololens/)（参见“支持”卡）。 请开具支持票证，如果适用，请在全新体验 (OOBE) 期间捕获[脱机诊断日志](hololens-diagnostic-logs.md#offline-diagnostics)（包括屏幕截图和日志）。
 - 若要从设备上报告问题，请使用 HoloLens 上的反馈中心应用程序。 在反馈中心，选择“企业管理” > “设备”类别。
 - 若要提供有关适用于 HoloLens 的 Autopilot 的常规反馈，可提交此[调查](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)
+
+## <a name="delete-autopilot-devices"></a>删除 Autopilot 设备
+
+你可能希望不再使用 Autopilot 设备，或者希望将你的设备注册到其他租户。 如果要执行此操作，请参阅[删除 Autopilot 设备。](/mem/autopilot/add-devices#delete-autopilot-devices)
