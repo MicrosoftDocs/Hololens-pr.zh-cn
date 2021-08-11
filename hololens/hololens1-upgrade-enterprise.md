@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661883"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>解锁 Windows Holographic for Business 功能
 
@@ -55,7 +55,7 @@ Microsoft HoloLens 在 *开发版* 中提供，该版本 Windows 全息版 (一�
     > [!NOTE]
     > 你可以配置[预配包中的其他设置](hololens-provisioning.md)。
 
-1. 在“文件”菜单中，选择“保存”。 
+1. 在“文件”菜单上，选择“保存” 。 
 
 1. 阅读警告：项目文件可能包含敏感信息，然后单击 **"确定"**。
 
@@ -77,7 +77,7 @@ Microsoft HoloLens 在 *开发版* 中提供，该版本 Windows 全息版 (一�
 
     还可以选择 " **浏览** " 以更改默认输出位置。
 
-1. 选择“下一步”。
+1. 选择“下一步”  。
 
 1. 选择 " **生成** " 开始生成包。 "生成" 页显示项目信息，进度栏指示生成状态。
 

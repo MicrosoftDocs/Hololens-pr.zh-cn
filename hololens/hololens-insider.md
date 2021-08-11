@@ -1,6 +1,6 @@
 ---
 title: 适用于 Microsoft HoloLens 的 Insider Preview
-description: 了解如何开始使用预览体验内部版本，并为我们的下一次主要操作系统更新提供有价值的HoloLens。
+description: 了解如何开始体验内部版本，并为 HoloLens 的下一个主要操作系统更新提供有价值的反馈。
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,52 +16,52 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664113"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
-欢迎使用最新的 Insider Preview 内部版本HoloLens！ 只需开始操作[，](hololens-insider.md#start-receiving-insider-builds)并为下一次主要操作系统更新提供有价值的反馈，HoloLens。
+欢迎使用 HoloLens 的最新 Insider preview 版本！ 这是一种非常简单的[入门](hololens-insider.md#start-receiving-insider-builds)方法，为 HoloLens 的下一个主要操作系统更新提供有价值的反馈。
 
-## <a name="windows-insider-release-notes"></a>Windows预览体验成员发行说明
+## <a name="windows-insider-release-notes"></a>Windows内幕发行说明
 
-我们很高兴地开始尝试新功能，以再次Windows预览体验成员。 新内部版本将前往开发和 Beta 通道获取最新更新。 在向预览体验成员内部版本添加更多功能和更新时，Windows更新此页面。 准备好将这些更新混合到现实中，
+我们非常高兴地开始试验新功能，以便 Windows 的预览体验。 新版本将会试验到适用于最新更新的开发和测试渠道。 我们将继续更新此页面，因为我们将更多的功能和更新添加到 Windows 有问必答版本。 令人兴奋并准备好将这些更新混合到您的现实中。
 
 | 功能                 | 说明                | 用户或方案 | 引入的生成 |
 |-------------------------|----------------------------|--------------|------------------|
-| [CSP 更改报表HoloLens详细信息](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 CSP | IT 管理员    | 20348.1403                 |
-| [CSP 控制的自动登录策略](#auto-login-policy-controlled-by-csp) | 用于自动登录帐户 | IT 管理员 | 20348.1405 |
-| [证书管理器的 PFX 文件支持](#pfx-file-support-for-certificate-manager) | 通过自定义 UI 添加 PFX 设置证书 | 最终用户 | 20348.1405 |
-| [在诊断中查看设置诊断HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上 MDM 诊断日志 | 故障排除 | 20348.1405 |
-| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的省/市/服务反馈 | 故障排除 | 20348.1405 |
-| [仅将专用应用商店应用用于Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 将应用商店应用配置为仅显示来自组织的应用 | IT 管理员 | 20348.1408 |
-| [低存储日志收集改进](#low-storage-log-collection-improvements) | 改进了低存储情况下的日志收集方案。 | IT 管理员 | 20348.1412 |
-| [修复和改进](hololens-insider.md#fixes-and-improvements) | 修复和改进了 HoloLens。 | 全部 | 20348.1411 |
+| [reporting HoloLens 详细信息的 CSP 更改](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 Csp | IT 管理员    | 20348.1403                 |
+| [由 CSP 控制的自动登录策略](#auto-login-policy-controlled-by-csp) | 用于自动登录帐户 | IT 管理员 | 20348.1405 |
+| [证书管理器的 PFX 文件支持](#pfx-file-support-for-certificate-manager) | 通过设置 UI 添加 PFX 证书 | 最终用户 | 20348.1405 |
+| [查看 HoloLens 上设置的高级诊断报告](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上的 MDM 诊断日志 | 疑难解答 | 20348.1405 |
+| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的视听反馈 | 疑难解答 | 20348.1405 |
+| [仅将专用应用商店应用用于 Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 将应用商店应用配置为仅显示组织中的应用 | IT 管理员 | 20348.1408 |
+| [低存储日志收集改进](#low-storage-log-collection-improvements) | 在低存储环境中对日志收集方案的改进。 | IT 管理员 | 20348.1412 |
+| [修复和改进](hololens-insider.md#fixes-and-improvements) | HoloLens 的修复和改进。 | 全部 | 20348.1411 |
 
-### <a name="csp-changes-for-reporting-hololens-details"></a>CSP 更改报表HoloLens详细信息
+### <a name="csp-changes-for-reporting-hololens-details"></a>reporting HoloLens 详细信息的 CSP 更改
 
-- 预览体验Windows内部版本 20348.1403 中引入
+- 在 Windows 有问必答版本20348.1403 中引入
 
-以下 CSP 已更新为以新方式从设备HoloLens信息。
+下面的 csp 已经用新方法进行了更新，以从 HoloLens 设备报告信息。
 
-#### <a name="devdetail-csp---free-storage"></a>DevDetail CSP - 免费存储
+#### <a name="devdetail-csp---free-storage"></a>DevDetail CSP-免费存储
 
-DevDetail CSP 现在还报告设备上HoloLens存储空间。 这大约应该与应用设置页中显示的存储匹配。 下面是包含此信息的特定节点。
+DevDetail CSP 现在还报告 HoloLens 设备上的可用存储空间。 这应该与设置应用的存储页面中显示的值大致匹配。 下面是包含此信息的特定节点。
 
-- ./DevDetail/Ext/Microsoft/FreeStorage (GET) 
+- /DevDetail/Ext/Microsoft/FreeStorage (仅获取操作) 
 
-#### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus CSP - SSID 和 BSSID
+#### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus CSP-SSID 和 BSSID
 
-DeviceStatus CSP 现在还报告主动Wi-Fi连接的 HoloLens SSID 和 BSSID。 下面是包含此信息的特定节点。
+DeviceStatus CSP 现在还会报告与 HoloLens 主动连接 Wi-Fi 网络的 SSID 和 BSSID。 下面是包含此信息的特定节点。
 
-- 适配器 /SSID 的 ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac* Wi-Fi /SSID
-- 适配器 /BSSID 的 ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac* 地址Wi-Fi /BSSID
+- /Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
+- /Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
 
-用于 MDM 供应商的 syncml blob (示例) 用于查询 NetworkIdentifiers
+适用于 MDM 供应商的 syncml blob (的示例) 查询 NetworkIdentifiers
 
 ```xml
 <SyncML>
@@ -81,47 +81,47 @@ DeviceStatus CSP 现在还报告主动Wi-Fi连接的 HoloLens SSID 和 BSSID。 
 </SyncML>
 ```
 
-### <a name="auto-login-policy-controlled-by-csp"></a>CSP 控制的自动登录策略
+### <a name="auto-login-policy-controlled-by-csp"></a>由 CSP 控制的自动登录策略
 
-此新的 AutoLogonUser 策略控制用户是否将自动登录。 某些客户想要设置与标识绑定的设备，但不希望任何登录体验。 Imagine设备并立即使用远程协助。 或者，能够快速分发HoloLens，并使它们的最终用户能够加快登录。
+这个新的 AutoLogonUser 策略控制用户是否将自动登录。 某些客户需要设置绑定到标识的设备，但不需要任何登录体验。 Imagine 立即提取设备并使用远程协助。 或者有一个好处，即能够快速分发 HoloLens 设备，并使最终用户能够快速登录。
 
-当策略设置为非空值时，它指定自动登录用户的电子邮件地址。 指定的用户必须至少登录到设备一次才能启用自动登录。
+如果策略设置为非空值，则它指定自动登录用户的电子邮件地址。 指定的用户必须至少登录到设备一次，才能启用自动登录。
 
-新策略字符串值的 OMA-URI `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+新策略 `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser` 字符串值的 oma-uri
 
-- 同一电子邮件地址的用户将启用自动登录。
+- 具有相同电子邮件地址的用户将启用自动登录。
 
-在配置了此策略的设备上，策略中指定的用户至少需要登录一次。 第一次登录后设备的后续重启会自动登录指定的用户。 仅支持单个自动登录用户。 启用后，自动登录的用户将无法手动注销。 若要以其他用户登录，必须先禁用策略。
+在配置了此策略的设备上，策略中指定的用户至少需要登录一次。 第一次登录后，随后的设备重新启动将使指定的用户自动登录。 仅支持单个自动登录用户。 启用后，自动登录的用户将不能手动注销。 若要以其他用户身份登录，必须先禁用策略。
 
 > [!NOTE]
-> - 某些事件（例如主要 OS 更新）可能需要指定用户再次登录到设备，以恢复自动登录行为。 
+> - 某些事件（例如，主要 OS 更新）可能需要指定的用户重新登录到设备，才能恢复自动登录行为。 
 > - 仅 MSA 和 AAD 用户支持自动登录。
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>证书管理器的 PFX 文件支持
 
-预览体验Windows内部版本 20348.1405 中引入。 我们已向证书管理器添加了 [支持](certificate-manager.md) ，现在使用 .pfx 证书。 当用户导航到 **"设置**  >  **更新&安全** 证书"，然后选择"安装证书"  >  时，UI 现在支持 .pfx 证书文件。 
-用户可以使用私钥将 .pfx 证书导入用户存储或计算机存储。
+在 Windows 有问必答版本20348.1405 中引入。 我们已向 [证书管理器添加了对证书管理器](certificate-manager.md) 的支持，以便现在使用 .pfx 证书。 当用户导航到 **设置**  >  **更新 & 安全**  >  **证书**，并选择 "**安装证书**" 时，UI 现在支持 .pfx 证书文件。
+用户可以将包含私钥的 .pfx 证书导入到用户存储或计算机存储。
 
-### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在诊断中查看设置诊断HoloLens
+### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>查看 HoloLens 上设置的高级诊断报告
 
-对于排查行为问题时的托管设备，确认应用了预期的策略配置是一个重要步骤。 以前，若要使用这项新功能，在导出通过 **设置** 帐户访问工作或学校收集的 MDM 诊断日志后，必须将其通过 MDM 或设备附近完成，然后选择"导出管理日志"，并查看附近的  ->    >  电脑。
+对于托管设备，在对行为进行故障排除时，确认应用了预期的策略配置是一个重要的步骤。 之前，此新功能必须通过 mdm 或附近的设备完成，然后再导出通过 **设置**  ->  **帐户**  >  **访问工作或学校** 收集的 mdm 诊断日志，并选择 "**导出管理日志** 并在附近的 PC 上查看"。
 
-现在，可以使用 Edge 浏览器在设备上查看 MDM 诊断。 若要更轻松地查看 MDM 诊断报告，请导航到"访问工作或学校"页，然后选择"**查看高级诊断报告"。** 这会在新的 Edge 窗口中生成并打开报表。
+现在可以使用 Edge 浏览器在设备上查看 MDM 诊断。 若要更轻松地查看 MDM 诊断报告，请导航到 "访问" 工作或学校页面，然后选择 " **查看高级诊断报告**"。 这会在新的边缘窗口中生成并打开报表。
 
-![在应用内查看设置报告。](./images/view-advanced-diagnostic-report.jpg)
+![在设置应用中查看高级诊断报告。](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>脱机诊断通知
 
-这是对名为"脱机诊断" [的现有功能的更新](hololens-diagnostic-logs.md#offline-diagnostics)。 以前，没有向用户明确指示他们已触发诊断收集或已完成。
-现在，Windows预览体验内部版本中添加，有两种形式的脱机诊断反馈。 第一种是，在收集开始和完成时为两者显示 toast 通知。 当用户登录且具有视觉对象时，将显示这些对象。
+此更新适用于称为 [脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics)的现有功能。 以前，用户已触发诊断收集或已完成，没有明确的指示器。
+现已添加到 Windows 内部版本中，对于脱机诊断，有两种形式的视听反馈。 当收集开始和完成时，将显示第一个 toast 通知。 当用户登录并具有视觉对象时，将显示这些用户。
 
 ![用于收集日志的 Toast。](./images/logcollection1.jpg)
 
-![日志收集完成后的 Toast。](./images/logcollection2.jpg)
+![记录收集完成时 Toast。](./images/logcollection2.jpg)
  
-由于用户通常使用脱机诊断作为回退日志收集机制，用于当用户无法访问显示器、无法登录或仍在 OOBE 中时，收集日志时也会播放音频提示。 除了 toast 通知之外，还将播放此声音。
+由于用户经常会使用脱机诊断作为回退日志收集机制来访问显示器、无法登录或仍处于 OOBE 状态，因此在收集日志时也会播放音频提示。 除了 toast 通知外，还会播放此声音。
 
-此新功能将在设备更新时启用，无需启用或管理。 如果无法显示或听到此新反馈，仍将生成脱机诊断。
+这项新功能将在设备更新时启用，不需要启用或管理。 如果无法显示或听不到此新反馈，则仍将生成脱机诊断。
 
 我们希望这种新的视听反馈增加，更易于收集诊断数据，并能更快地解决问题。
 

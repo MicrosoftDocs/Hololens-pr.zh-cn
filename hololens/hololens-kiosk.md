@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e7f1efa99cc16b1003bd7063817451013ed2ec2661dbdf02edcd89c7984d0980
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659584"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663994"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>将 HoloLens 设置为网亭
 
@@ -72,7 +72,7 @@ ms.locfileid: "114659584"
 | &nbsp; |“开始”菜单 |快速操作菜单 |照相机和视频 |Miracast |Cortana |内置语音命令 |
 | --- | --- | --- | --- | --- | --- | --- | 
 |单应用展台 |已禁用 |已禁用 |已禁用 |已禁用   |已禁用 |已启用<sup>1</sup> |
-|多应用展台 |Enabled |已启用<sup>2</sup> |可用<sup>2</sup> |可用<sup>2</sup> |可用<sup>2、3</sup>  |已启用<sup>1</sup> |
+|多应用展台 |启用 |已启用<sup>2</sup> |可用<sup>2</sup> |可用<sup>2</sup> |可用<sup>2、3</sup>  |已启用<sup>1</sup> |
 
 > <sup>1</sup> 与禁用功能相关的语音命令不起作用。  
 > <sup>2</sup> 有关如何配置这些功能的详细信息，请参阅 [选择展台应用](#plan-kiosk-apps)。  
@@ -118,7 +118,7 @@ ms.locfileid: "114659584"
 |Dynamics 365 Guides |Dynamics365 \_ 8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |MicrosoftRemoteAssist \_ 8Wekyb3d8bbwe \! RemoteAssist |
 |反馈 &nbsp; 中心 |WindowsFeedbackHub \_ 8wekyb3d8bbwe \! 应用 |
-|文件资源管理器 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
+|文件资源浏览器 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe！ windowslive |
 |旧 Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |新 Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe！MSEDGE |
@@ -179,145 +179,145 @@ ms.locfileid: "114659584"
 |部署多应用展台    | 否            | 是                  | 是  |
 |仅部署到本地设备 | 是           | 是                  | 否   |
 |使用开发人员模式进行部署 |必需       | 不是必需            | 不是必需   |
-|使用部署Azure Active Directory (Azure AD)   | 不是必需            | 不是必需                   | 必须  |
+|使用 Azure Active Directory (Azure AD 进行部署)   | 不是必需            | 不是必需                   | 必需  |
 |自动部署      | 否            | 否                   | 是  |
 |部署速度            | 快速       | 快                 | 慢 |
 |大规模部署 | 不推荐    | 建议        | 建议 |
 
-## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>使用Microsoft Intune或其他 MDM 设置单应用或多应用展台
+## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>使用 Microsoft Intune 或其他 MDM 设置单个应用程序或多应用程序亭
 
-若要使用设备或其他 MDM Microsoft Intune设置展台模式，请执行以下步骤。
+若要使用 Microsoft Intune 或其他 MDM 系统设置展台模式，请执行以下步骤。
 
 1. [准备注册设备](#mdmenroll)。
 1. [创建展台配置文件](#mdmprofile)。
 1. 配置展台。
    - [配置单应用展台的设置](#mdmconfigsingle)。
    - [配置多应用展台的设置](#mdmconfigmulti)。
-1. [将展台配置文件分配给组](#mdmassign)。
+1. [将 kiosk 配置文件分配给组](#mdmassign)。
 1. 部署设备。
    - [部署单应用展台](#mdmsingledeploy)。
    - [部署多应用展台](#mdmmultideploy)。
 
 ### <a name="mdm-step-1-ndash-prepare-to-enroll-the-devices"></a><a id="mdmenroll"></a>MDM，步骤 1 &ndash; 准备注册设备
 
-可以将 MDM 系统配置为在HoloLens登录时自动注册设备，或让用户手动注册设备。 设备还必须加入到你的Azure AD域，并分配到相应的组。
+你可以将 MDM 系统配置为在用户首次登录时自动注册 HoloLens 设备，或者让用户手动注册设备。 设备还必须加入到 Azure AD 域，并分配给相应的组。
 
-若要详细了解如何注册设备，请参阅在 MDM 中注册 HoloLens[和](hololens-enroll-mdm.md)Intune 注册方法[Windows设备](/mem/intune/enrollment/windows-enrollment-methods)。
+有关如何注册设备的详细信息，请参阅[在 MDM 中注册 HoloLens](hololens-enroll-mdm.md)和[Windows 设备的 Intune 注册方法](/mem/intune/enrollment/windows-enrollment-methods)。
 
 ### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MDM，步骤 2 &ndash; 创建展台配置文件
 
-1. 打开 [Azure](https://portal.azure.com/) 门户并登录到Intune 管理员帐户。
-1. 选择 **"Microsoft Intune**  >  **配置 - 配置文件**  >  **""创建配置文件"。**
+1. 打开 [Azure](https://portal.azure.com/) 门户并登录到你的 Intune 管理员帐户。
+1. 选择 **Microsoft Intune**  >  **设备配置-配置** 文件 ""  >  **创建配置文件**"。
 1. 输入配置文件名称。
-1. 选择  >  **"Windows 10及更高版本**"，然后选择"**配置文件类型**  > **设备限制"。**
-1. 选择 **"**  >  **配置展** 台"，然后选择以下选项之一：
-   - 若要创建单应用展台，请选择 **"展台模式**  >  **单应用展台"。**
-   - 若要创建多应用展台，请选择 **"展台模式**  >  **多应用展台"。**
-1. 若要开始配置展台，请选择"添加 **"。**
+1. 选择 "**平台**  >  **Windows 10 和更高版本**，然后选择"**配置文件类型**""  > **设备限制**"。
+1. 选择 "**配置**  >  **展台**"，然后选择下列各项之一：
+   - 若要创建单应用展台，请选择 **展台模式**  >  **单应用展台**。
+   - 若要创建多应用展台，请选择 **展台模式**  >  **多应用展台**。
+1. 若要开始配置展台，请选择 " **添加**"。
 
-你的下一步根据你可能需要的展台类型而不同。 有关详细信息，请选择以下选项之一：  
+后续步骤会有所不同，具体取决于所需的展台类型。 有关详细信息，请选择下列选项之一：  
 
 - [单应用展台](#mdmconfigsingle)
 - [多应用展台](#mdmconfigmulti)
 
-若要详细了解如何创建展台配置文件，请参阅使用 Intune Windows 10 Windows Holographic for Business作为专用展台运行的设备和[设备设置](/intune/configuration/kiosk-settings)。
+有关如何创建展台配置文件的详细信息，请参阅[使用 Intune 作为专用展台运行 Windows 10 和 Windows Holographic for Business 设备设置](/intune/configuration/kiosk-settings)。
 
 ### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM，步骤 3 (单应用) &ndash;  配置单应用展台的设置
 
 本部分总结了单应用展台所需的设置。 有关更多详细信息，请参阅以下文章：
 
-- 若要了解如何在 Intune 中配置展台配置文件，请参阅[How to Configure Kiosk Mode Using Microsoft Intune。](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)
-- 有关 Intune 中单应用展台的可用设置详细信息，请参阅 [单一全屏应用展台](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
-- 对于其他 MDM 服务，请查看提供商的文档，了解相关说明。 如果必须使用自定义 XML 配置在 MDM 服务中设置展台，请创建定义展台配置的 [XML 文件](#ppkioskconfig)。
+- 有关如何在 Intune 中配置展台配置文件的信息，请参阅[如何使用 Microsoft Intune 配置展台模式](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)。
+- 有关 Intune 中的单应用展台可用设置的详细信息，请参阅 [单一全屏应用网亭](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- 对于其他 MDM 服务，请参阅提供商文档中的说明。 如果必须使用自定义 XML 配置在 MDM 服务中设置展台，请 [创建一个定义 kiosk 配置的 XML 文件](#ppkioskconfig)。
 
-1. 选择 **"用户登录类型** 本地用户帐户"，然后输入可登录到展台的本地 (设备) 帐户或 Microsoft 帐户  >   (MSA) 的用户名。
+1. 选择 "**用户登录类型**"  >  "**本地用户帐户**"，然后输入可以登录到展台的本地 (设备) 帐户或 Microsoft 帐户)  (的用户名。
    > [!NOTE]  
    > Windows Holographic for Business 不支持“自动登录”用户帐户类型。
-1. 选择 **"应用程序**  >  **类型""** 应用商店应用"，然后从列表中选择一个应用。
+1. 选择 "**应用程序类型**  >  **存储应用**"，然后从列表中选择一个应用。
 
-下一步是 [将配置文件](#mdmassign) 分配给组。
+下一步是将配置文件 [分配](#mdmassign) 给组。
 
-### <a name="mdm-step-3-multi-app-ndash-configure-the-settings-for-a-multi-app-kiosk"></a><a id="mdmconfigmulti"></a>MDM，步骤 3 (多应用) &ndash; 配置多应用展台的设置
+### <a name="mdm-step-3-multi-app-ndash-configure-the-settings-for-a-multi-app-kiosk"></a><a id="mdmconfigmulti"></a>MDM，步骤 3 (多应用程序) &ndash; 配置多应用展台的设置
 
 本部分总结了多应用展台所需的设置。 有关更详细信息，请参阅以下文章：
 
-- 若要了解如何在 Intune 中配置展台配置文件，请参阅[How to Configure Kiosk Mode Using Microsoft Intune。](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)
-- 有关 Intune 中多应用展台的可用设置详细信息，请参阅 [多应用展台](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
-- 对于其他 MDM 服务，请查看提供商的文档，了解相关说明。 如果需要使用自定义 XML 配置在 MDM 服务中设置展台，请创建 [定义](#ppkioskconfig)展台配置的 XML 文件。 如果使用 XML 文件，请确保包含"开始 ["布局](#start-layout-for-hololens)。  
-- 可以选择将自定义的"开始"布局与 Intune 或其他 MDM 服务一同使用。 有关详细信息，请参阅启动[Intune 和 Intune (MDM 的布局) 。 ](#start-layout-file-for-mdm-intune-and-others)
+- 有关如何在 Intune 中配置展台配置文件的信息，请参阅[如何使用 Microsoft Intune 配置展台模式](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)。
+- 有关 Intune 中多应用展台可用设置的详细信息，请参阅 [多应用展台](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
+- 对于其他 MDM 服务，请参阅提供商文档中的说明。 如果需要使用自定义 XML 配置在 MDM 服务中设置展台，请 [创建一个定义 kiosk 配置的 XML 文件](#ppkioskconfig)。 如果使用 XML 文件，请确保包含 [开始布局](#start-layout-for-hololens)。  
+- 你可以选择将自定义开始布局与 Intune 或其他 MDM 服务一起使用。 有关详细信息，请参阅 [启动 MDM (Intune 的布局文件和其他) ](#start-layout-file-for-mdm-intune-and-others)。
 
-1. 选择 **"Windows 10 S 模式设备""目标设备**  >  **否"。**  
+1. 选择 **"在 S 模式设备中 Windows 10 目标"**  >    
 >[!NOTE]  
 > Windows Holographic for Business 上不支持 S 模式。
 
-1. 选择 **"用户登录类型Azure AD** 组或用户登录类型HoloLens访问者 ，然后添加一个或多个  >    >  用户组或帐户。  
+1. 选择 "**用户登录类型**  >  "**Azure AD 用户或组** 或 **用户登录类型**  >  **HoloLens 访问者**"，然后添加一个或多个用户组或帐户。  
 
-   只有属于你在用户登录类型中指定的组或帐户 **的用户** 才能使用展台体验。
+   只有属于你在 " **用户登录类型** " 中指定的组或帐户的用户才能使用展台体验。
 
-1. 使用下列选项选择一个或多个应用：
-   - 若要添加已上传的业务线应用，请选择" **添加应用商店应用** "，然后选择想要的应用。
-   - 若要通过指定应用的 AUMID 来添加应用，请选择"按 **AUMID** 添加"，然后输入应用的 AUMID。 [查看可用 AUMID 的列表](#aumids)
+1. 使用以下选项选择一个或多个应用：
+   - 若要添加上传的业务线应用，请选择 " **添加应用商店应用** "，然后选择所需的应用。
+   - 若要通过指定应用程序的 AUMID 添加应用程序，请选择 " **添加" AUMID** ，然后输入应用的 AUMID。 [查看可用的 AUMIDs 列表](#aumids)
 
-下一步是 [将配置文件](#mdmassign) 分配给组。
+下一步是将配置文件 [分配](#mdmassign) 给组。
 
 ### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MDM，步骤 4 &ndash; 将展台配置文件分配给组
 
-使用 **展** 台配置文件的"分配"页可设置展台配置的部署位置。 在最简单的情况下，将展台配置文件分配给一个组，该组将包含设备在 MDM HoloLens设备。
+使用展台配置文件的 " **分配** " 页，设置要将展台配置部署到的位置。 最简单的情况是，在设备在 MDM 中注册时，将展台配置文件分配给将包含 HoloLens 设备的组。
 
 ### <a name="mdm-step-5-single-app-ndash-deploy-a-single-app-kiosk"></a><a id="mdmsingledeploy"></a>MDM，步骤 5 (单应用) &ndash; 部署单应用展台
 
-使用 MDM 系统时，可以在 OOBE 期间在 MDM 中注册设备。 OOBE 完成后，可以轻松登录设备。
+使用 MDM 系统时，可以在 OOBE 期间在 MDM 中注册设备。 在 OOBE 完成后，登录到设备很简单。
 
 在 OOBE 期间，请执行以下步骤：
 
 1. 使用在展台配置文件中指定的帐户登录。
-1. 注册该设备。 确保将设备添加到展台配置文件分配到的组。
-1. 等待 OOBE 完成，等待应用商店应用下载和安装，并应用策略。 然后重启设备。
+1. 注册该设备。 请确保设备已添加到展台配置文件分配到的组。
+1. 等待 OOBE 完成，针对要下载并安装的应用商店应用，以及要应用的策略。 然后重新启动设备。
 
-下次登录到设备时，展台应用应会自动启动。
-
-如果此时看不到展台配置， [请检查分配状态](/intune/configuration/device-profile-monitor)。
-
-### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM，步骤 5 (多应用) &ndash; 部署多应用展台
-
-使用 MDM 系统时，可以将设备加入 Azure AD租户，在 OOBE 期间在 MDM 中注册设备。 如果适用，请为用户提供注册信息，以便他们在 OOBE 过程中可用。
-
-> [!NOTE]  
-> 如果已将展台配置文件分配给包含用户的组，请确保其中一个用户帐户是登录到设备的第一个帐户。
-
-在 OOBE 期间，请执行以下步骤：
-
-1. 使用属于"用户登录类型" **组的帐户登录** 。
-1. 注册该设备。
-1. 等待属于展台配置文件的任何应用下载并安装。 另外，请等待策略应用。  
-1. 在 OOBE 完成后，可以通过 Microsoft 应用商店或旁加载来安装其他应用。 设备所属的组[所需的应用](/mem/intune/apps/apps-deploy#assign-an-app)将自动安装。
-1. 安装完成后，重新启动设备。
-
-下次使用属于 **用户登录类型** 的帐户登录到设备时，kiosk 应用应会自动启动。
+下次登录到设备时，kiosk 应用应自动启动。
 
 如果此时未看到展台配置，请 [检查分配状态](/intune/configuration/device-profile-monitor)。
 
-## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>使用预配包设置单个应用程序或多应用展台
+### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM，步骤 5 (多应用程序) &ndash; 部署多应用展台
+
+使用 MDM 系统时，可以将设备加入到 Azure AD 租户，并在 OOBE 期间在 MDM 中注册设备。 如果需要，请向用户提供注册信息，使其在 OOBE 过程中可用。
+
+> [!NOTE]  
+> 如果已将 kiosk 配置文件分配到包含用户的组，请确保其中一个用户帐户是登录到该设备的第一个帐户。
+
+在 OOBE 期间，请执行以下步骤：
+
+1. 使用属于 **用户登录类型** 组的帐户登录。
+1. 注册该设备。
+1. 等待要下载和安装的展台配置文件中的任何应用。 此外，请等待应用策略。  
+1. OOBE 完成后，可以从 Microsoft 应用商店或旁加载安装其他应用。 [设备](/mem/intune/apps/apps-deploy#assign-an-app) 所属的组的必需应用会自动安装。
+1. 安装完成后，重启设备。
+
+下次使用属于用户登录类型的帐户登录到设备时，展台应用应会自动启动。
+
+如果此时看不到展台配置， [请检查分配状态](/intune/configuration/device-profile-monitor)。
+
+## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>使用预配包设置单应用或多应用展台
 
 若要使用预配包设置展台模式，请执行以下步骤。
 
-1. [创建定义 kiosk 配置的 XML 文件](#ppkioskconfig)，包括 [开始布局](#start-layout-for-hololens)。
+1. [创建定义展台配置的 XML 文件。，](#ppkioskconfig)包括"开始 ["布局](#start-layout-for-hololens)。
 2. [将 XML 文件添加到预配包。](#ppconfigadd)
-3. [将预配包应用到 HoloLens。](#ppapply)
+3. [将预配包应用于HoloLens。](#ppapply)
 
 ### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>预配包，步骤 1 &ndash; 创建展台配置 XML 文件
 
-按照[常规说明为 Windows 桌面创建展台配置 XML 文件](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)，但以下情况除外：
+按照[一般说明为桌面](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)创建展台配置 XML Windows，但以下项除外：
 
-- 不要将经典 Windows 应用程序 (Win32) 包括在内。 HoloLens 不支持这些应用程序。
-- 使用[占位符开始布局 XML](#start-layout-for-hololens) HoloLens。
+- 不要将经典Windows应用程序 (Win32) 。 HoloLens不支持这些应用程序。
+- 使用占位符[Start layout XML](#start-layout-for-hololens) for HoloLens。
 - 可选：向展台配置添加来宾访问权限
 
 #### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>可选：向展台配置添加来宾访问权限
 
-在 XML 文件的 "配置" [ 部分](/windows/configuration/lock-down-windows-10-to-specific-apps#configs)中，可以配置名为 "**访问者**" 的特殊组，以允许来宾使用展台。 当展台配置为支持 **访问者** 特殊组时，会将 "**来宾**" 选项添加到登录页。 **Guest** 帐户不需要密码，当帐户注销时，将删除与该帐户关联的任何数据。
+在 [XML **文件的"配置**](/windows/configuration/lock-down-windows-10-to-specific-apps#configs)"部分中，可以配置名为 **Visitor** 的特殊组，以允许来宾使用展台。 当展台配置为支持"访问者 **"特殊组** 时，登录页中会添加"来宾"选项。 **来宾** 帐户不需要密码，当帐户退出时，与帐户关联的任何数据都将被删除。
 
-若要启用 **来宾** 帐户，请将以下代码片段添加到展台配置 XML：
+若要启用 **来宾帐户** ，请向展台配置 XML 添加以下代码片段：
 
 ```xml
 <Configs>
@@ -329,41 +329,41 @@ ms.locfileid: "114659584"
 ```
 #### <a name="enable-visitor-autologon"></a>启用访问者自动登录
 
-[Windows 全息版、版本 21H1](hololens-release-notes.md#windows-holographic-version-21h1)和更高版本：
-- AAD 和非添加配置都支持为展台模式启用自动登录的访问者帐户。
+在[Holographic Windows版本 21H1 及之后](hololens-release-notes.md#windows-holographic-version-21h1)的版本上：
+- AAD 和非 ADD 配置都支持为展台模式启用自动登录的访问者帐户。
 
 ##### <a name="non-aad-configuration"></a>非 AAD 配置
 
-1. 创建一个预配包，其中：
-    1. 将运行时设置 AssignedAccess 配置为允许访问者帐户。
-    1. （可选）在 MDM (运行时设置/工作区/注册) 中注册设备，以便以后可以对其进行管理。
+1. 创建一个预配包，该包：
+    1. 配置运行时设置/AssignedAccess 以允许访问者帐户。
+    1. （可选）将设备注册到 MDM (运行时设置/工作区/注册) 以便以后可以管理它。
     1. 不创建本地帐户
-2. [应用设置包](hololens-provisioning.md)。
+2. [应用预配包](hololens-provisioning.md)。
 
 ##### <a name="aad-configuration"></a>AAD 配置
 
-为展台模式配置的 AAD 加入设备可以通过在登录屏幕上点击一次按钮，登录访问者帐户。 登录到访问者帐户后，在从 "开始" 菜单中显式注销访问者或重新启动设备之前，该设备将不会提示登录。
+为展台模式配置的已加入 AAD 的设备可以通过登录屏幕中的单个按钮点击来登录访问者帐户。 登录到访问者帐户后，在从开始菜单显式注销访问者或重启设备之前，设备不会再次提示登录。
 
-可以通过 [自定义 OMA URI 策略](/mem/intune/configuration/custom-settings-windows-10)来管理访问者自动登录：
+可以通过自定义 [OMA-URI](/mem/intune/configuration/custom-settings-windows-10)策略管理访问者自动登录：
 
 - URI 值：./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
 
 | 策略 |描述 |配置 
 | --------------------------- | ------------- | -------------------- |
-| MixedReality/VisitorAutoLogon | 允许访问者自动登录到展台。 | 1 (是) ，0 (否，默认值为 )  |
+| MixedReality/VisitorAutoLogon | 允许访问者自动登录到展台。 | 1 (是) ，0 (否，默认值.)  |
 
-#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>HoloLens 的占位符开始布局
+#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>占位符的"开始"布局HoloLens
 
-如果使用 [预配包](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 配置多应用展台，此过程需要开始布局。 Windows Holographic for Business 中不支持开始布局自定义。 因此，您必须使用占位符开始布局。
-
-> [!NOTE]  
-> 由于单应用展台会在用户登录时启动展台应用，因此它不会使用 "开始"菜单，并且无需具有开始布局。
+如果使用预配包 [来](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 配置多应用展台，该过程需要"启动"布局。 启动布局自定义不受支持Windows Holographic for Business。 因此，你必须使用占位符"开始"布局。
 
 > [!NOTE]  
-> 如果使用 [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 设置多应用展台，则可以选择使用 "开始布局"。 有关详细信息，请参阅 [MDM (Intune 的占位符启动布局文件和其他) ](#start-layout-file-for-mdm-intune-and-others)。
+> 由于单应用展台在用户登录时启动展台应用，因此它"开始"菜单并且无需具有"开始"布局。
 
-对于 "开始" 布局，请将以下 " **StartLayout** " 部分添加到展台预配 XML 文件：
+> [!NOTE]  
+> 如果使用 [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 设置多应用展台，可以选择使用"启动"布局。 有关详细信息，请参阅 Intune 中 MDM ([的占位符" ](#start-layout-file-for-mdm-intune-and-others)开始"布局文件) 。
+
+对于"开始"布局，将以下 **StartLayout** 部分添加到展台预配 XML 文件：
 
 ```xml
 <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
@@ -385,12 +385,12 @@ ms.locfileid: "114659584"
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>MDM (Intune 和其他人的占位符开始布局文件) 
+#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>Intune 和其他设备中 MDM (的占位符"开始") 
 
-将以下示例另存为 XML 文件。 在 Microsoft Intune (或另一个提供展台配置文件) 的 MDM 服务中配置多应用展台时，可以使用此文件。
+将以下示例另存为 XML 文件。 在 Microsoft Intune (或提供展台配置文件的另一个 MDM 服务中配置多应用展台时，可以使用) 。
 
 > [!NOTE]
-> 如果需要使用自定义设置和完整的 XML 配置在 MDM 服务中设置展台，请使用 [预配包的启动布局说明](#start-layout-for-hololens)。
+> 如果必须使用自定义设置和完整的 XML 配置在 MDM 服务中设置展台，请使用预配包 的"启动布局 ["说明](#start-layout-for-hololens)。
 
 ```xml
 <LayoutModificationTemplate
@@ -408,50 +408,50 @@ ms.locfileid: "114659584"
  </LayoutModificationTemplate>
 ```
 
-### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. 包，步骤 2 &ndash; 将展台配置 XML 文件添加到预配包
+### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>箴。 包，步骤 2 &ndash; 将展台配置 XML 文件添加到预配包
 
-1. 打开[Windows 配置设计器](https://www.microsoft.com/store/apps/9nblggh4tx22)。
-1. 选择 " **高级设置**"，输入项目的名称，然后选择 " **下一步**"。
-1. 选择 **Windows 10 全息版**，然后选择 "**下一步**"。
+1. 打开[Windows设计器 。](https://www.microsoft.com/store/apps/9nblggh4tx22)
+1. 选择 **"高级预配"，** 输入项目的名称，然后选择"下一 **步"。**
+1. 选择 **Windows 10 全息版，** 然后选择"下一 **步"。**
 1. 选择“完成”  。 此时将打开你的程序包的工作区。
-1. 选择 "**运行时设置**"  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**。
-1. 在中心窗格中，选择 " **浏览** " 以查找并选择已创建的展台配置 XML 文件。
+1. 选择 **"运行时设置**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings"。**
+1. 在中心窗格中，选择 **"浏览** "以找到并选择创建的展台配置 XML 文件。
 
    ![Windows 配置设计器中的 MultiAppAssignedAccessSettings 字段的屏幕截图](./images/multiappassignedaccesssettings.png)
 
-1. 可选。  (如果要在设备的初始设置后应用预配包，并且展台设备上已有管理员用户，请跳过此步骤。 ) 选择 " **运行时设置** &gt; **帐户** &gt; " " **用户**"，然后创建用户帐户。 提供 "用户名" 和 "密码"，然后选择 " **UserGroup**  >  **Administrators**"。  
+1. 可选。  (如果要在设备初始设置后应用预配包，并且展台设备上已有管理员用户，请跳过此步骤。) 选择运行时设置"帐户用户"，然后创建 &gt;  &gt; 用户帐户。 提供用户名和密码，然后选择"**用户组管理员**  >  **"。**  
   
-     通过使用此帐户，你可以查看预配状态和日志。  
-1. 可选。  (如果你已在展台设备上拥有非管理员帐户，请跳过此步骤。 ) 选择 " **运行时设置** &gt; **帐户** &gt; **用户**"，然后创建一个本地用户帐户。 确保用户名与你在配置 XML 中指定的帐户相同。 选择 **UserGroup**  >  **Standard Users**。
+     使用此帐户可以查看预配状态和日志。  
+1. 可选。  (如果展台设备上已有非管理员帐户，请跳过此步骤。) 选择运行时设置"帐户用户"， &gt;  &gt; 然后创建本地用户帐户。 请确保用户名与在配置 XML 中指定的帐户相同。 选择 **"UserGroup**  >  **标准用户"。**
 1. 选择“文件” > “保存”。
-1. 选择 "**导出**  >  **设置包**"，然后选择 "**所有者**  >  **IT 管理员**"。这会将此预配包的优先级设置为高于从其他源应用于此设备的预配包。
-1. 选择“**下一步**”。
-1. 在 " **设置包安全性** " 页上，选择一个安全选项。
+1. 选择 **"**  >  **导出预配包"，** 然后选择"**所有者**  >  **IT 管理员"。** 这会设置此预配包的优先级，高于从其他源应用到此设备的预配包。
+1. 选择“下一步”  。
+1. 在" **预配包安全性"页上** ，选择一个安全选项。
    > [!IMPORTANT]  
-   > 如果选择 " **启用包签名**"，则还必须选择用于对包进行签名的有效证书。 为此，请选择 " **浏览** "，然后选择要用于对包进行签名的证书。
+   > 如果选择" **启用包签名**"，则还必须选择用于对包进行签名的有效证书。 为此，请选择" **浏览** "，然后选择要用于对包进行签名的证书。
    
    > [!CAUTION]  
-   > 不要选择 " **启用包加密**"。 在 HoloLens 设备上，此设置会导致预配失败。
-1. 选择“**下一步**”。
-1. 指定生成时要在其中进行预配包的输出位置。 默认情况下，Windows 配置设计器使用项目文件夹作为输出位置。 如果要更改输出位置，请选择 " **浏览**"。 完成后，选择“下一步”。
-1. 选择 " **生成** " 开始生成包。 无需花费太长时间即可构建设置包。 "生成" 页显示项目信息，进度栏指示生成状态。
+   > 不要选择"**启用包加密"。** 在HoloLens设备上，此设置会导致预配失败。
+1. 选择“下一步”  。
+1. 指定生成预配包时要转到的输出位置。 默认情况下，Windows 配置设计器使用项目文件夹作为输出位置。 如果要更改输出位置，请选择"浏览 **"。** 完成后，选择“下一步”。
+1. 选择 **"生成** "以开始生成包。 无需花费太长时间即可构建设置包。 生成页显示项目信息，进度栏指示生成状态。
 
-### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>预配包，步骤 3 &ndash; 将预配包应用到 HoloLens
+### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>预配包，步骤 3 &ndash; 将预配包应用于HoloLens
 
-"使用预配包配置 HoloLens" 一文提供了在以下情况下应用预配包的详细说明：
+"使用HoloLens包配置预配包"一文提供了有关在下列情况下应用预配包的详细说明：
 
-- 最初可以在[安装过程中将预配包应用到 HoloLens](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
+- 在安装 期间[，可以最初将预配包HoloLens应用程序](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)。
 
-- 你还可以在[安装后将预配包应用到 HoloLens](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)。
+- 还可以在[安装 后将预配包HoloLens应用。](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup)
 
-## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>使用 Windows 设备门户设置单应用展台
+## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>使用Windows 设备门户设置单应用展台
 
-若要使用 Windows 设备门户设置展台模式，请执行以下步骤。
+若要使用设备设置展台Windows 设备门户，请执行以下步骤。
 
-1. [设置 HoloLens 设备以使用 Windows 设备门户](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)。 Device Portal 是 HoloLens 上的 Web 服务器，你可以从电脑上的 Web 浏览器连接到它。
+1. [将 HoloLens 设置为使用 Windows 设备门户。](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal) Device Portal 是 HoloLens 上的 Web 服务器，你可以从电脑上的 Web 浏览器连接到它。
 
     > [!CAUTION]
-    > 将 HoloLens 设置为使用设备门户时，必须在设备上启用开发人员模式。 在具有 Windows Holographic for Business 的设备上，开发人员模式使你能够进行面加载应用。 但是，此设置会创建一个风险，用户可在其中安装尚未由 Microsoft Store 认证的应用。 管理员可以通过使用 [策略 CSP](/windows/client-management/mdm/policy-configuration-service-provider)中的 **ApplicationManagement/AllowDeveloper 解锁** 设置来阻止启用开发人员模式的功能。 [了解有关开发人员模式的详细信息。](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > 将 HoloLens设置为使用 设备门户时，必须启用设备上开发人员模式。 使用设备上具有Windows Holographic for Business模式，可以旁加载应用。 但是，此设置会创建一个风险，即用户可能会安装尚未通过 Microsoft Store。 管理员可以使用策略 CSP 中的 **ApplicationManagement/AllowDeveloper Unlock** 设置阻止启用开发人员 [模式](/windows/client-management/mdm/policy-configuration-service-provider)。 [了解有关开发人员模式的详细信息。](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
 1. 在计算机上，使用[Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) HoloLens USB 连接到[计算机](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)。
 

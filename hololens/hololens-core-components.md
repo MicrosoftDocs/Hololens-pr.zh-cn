@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43162389eae82bc09135c62acd40d71048d14db1
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664331"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>在商业环境中规划 HoloLens 2 部署
 
@@ -48,7 +48,7 @@ HoloLens 2运行Windows 10 全息版为组织提供可靠、灵活、内置的�
 
 | 组件 | 说明 |
 |-----------|------------|
-| Azure AD | 为用户提供标识和访问HoloLens 2  |
+| [Azure AD](hololens-identity.md) | 为用户提供标识和访问HoloLens 2  |
 | [移动设备管理](hololens-mdm-configure.md)| 管理HoloLens 2租户的设备  |
 | [Wi-Fi 网络](hololens-commercial-infrastructure.md)| Wi-Fi可用且设备可以连接到 Internet  |
 

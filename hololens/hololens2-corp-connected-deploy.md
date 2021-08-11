@@ -1,7 +1,7 @@
 ---
-title: 部署指南–企业连接 HoloLens 2 与 Dynamics 365 Guides 部署
-description: 了解如何通过 Dynamics 365 Guides 在公司连接的网络上设置 HoloLens 2 设备的部署。
-keywords: HoloLens，管理，公司连接，Dynamics 365 Guides，AAD，Azure AD，MDM，移动设备管理
+title: 部署指南 - 使用 HoloLens 2 企业Dynamics 365 Guides - 部署
+description: 了解如何使用 HoloLens 2 企业联网网络设置设备部署Dynamics 365 Guides。
+keywords: HoloLens、管理、企业连接、Dynamics 365 Guides、AAD、Azure AD、MDM、移动设备管理
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,104 +14,104 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660199"
 ---
-# <a name="deploy---corporate-connected-guide"></a>部署-企业连接指南
+# <a name="deploy---corporate-connected-guide"></a>部署 - 企业连接指南
 
-每个部署的一个重要部分是确保在测试部署之前正确设置部署，以确保对最终用户的流畅体验。
+每个部署的一个重要部分是确保在自己测试部署之前正确设置部署，以确保最终用户获得顺畅的体验。
 
-由于我们要通过 MDM 部署 Wi-Fi 证书，因此，我们需要在打开的 Wi-Fi 网络或不需要该证书的网络上设置 HoloLens 并注册设备。 在 HoloLens 完成 OOBE 并注册后，设备将接收先前配置的网络证书和 LOB，同时我们能够验证设备是否已收到这两者。
+由于我们要通过 MDM 部署 Wi-Fi 证书，因此首先需要设置 HoloLens，并注册开放 Wi-Fi 网络或不需要证书的网络上的设备。 完成HoloLens OOBE 和注册后，设备将收到之前配置的网络证书和 LOB，并且我们可以验证设备是否收到这两者。
 
-之后，你将可以确认是否可以编写和运行测试指南。
+然后，你将能够确认可以创作和操作测试指南。
 
 ## <a name="enrollment-validation"></a>注册验证
 
-现在，所有内容都已正确配置 Azure AD 和 MDM 注册，接下来应该是一个快照。 需要 Wi-Fi 连接和 HoloLens 设备，以及以前配置的 Azure AD 用户帐户之一。
+现在，所有内容都正确配置了Azure AD注册和 MDM 注册，其余部分现在应该是一个快照。 需要一个Wi-Fi连接HoloLens设备，以及以前配置Azure AD用户帐户之一。
 
-如果设备当前处于出厂设置状态，现在就可以 [刷新设备](/hololens/hololens-recovery#clean-reflash-the-device)了。
+如果设备当前未处于出厂设置状态，那么现在是重新 [运行设备的不错时间](/hololens/hololens-recovery#clean-reflash-the-device)。
 
-1. 设备进入 OOBE 后，将需要开始交互并按照提示进行操作。
+1. 设备进入 OOBE 后，需要开始交互并遵循提示。
 
-2. 连接开放 Wi-Fi 网络，无需证书即可加入 Wi-fi。 这将允许设备下载初始设置后在组织的 Wi-Fi 上使用的证书。
+2. 连接连接到Wi-Fi加入 Wi-Fi 的开放网络。 这将允许设备下载证书，以在初始设置后Wi-Fi组织证书。
 
-3. 当系统询问 **Who 拥有此 HoloLens** 时，将会出现严重提示？ 选择 **"我的工作" 或 "学校拥有"** ，然后输入 Azure AD 帐户凭据。
+3. 当系统要求你拥有此Who时，关键 **提示HoloLens？** 选择 **"我的工作或学校拥有它"，Azure AD** 帐户凭据。
 
-4. 注册成功后，系统将提示你设置 PIN。 此 PIN 对于此用户是唯一的。 系统还会提示你输入 Iris 扫描、语音数据和遥测设置，最后，你将能够了解如何打开 "开始" 菜单并完成 OOBE。
+4. 注册成功后，系统会提示你设置 PIN。 对于此用户，此 PIN 对于此设备是唯一的。 系统还会提示你输入 Iris 扫描、语音数据和遥测设置，最后，你将了解如何打开开始菜单并完成 OOBE。
 
-5. 在混合现实家里，使用刚刚学习的 **开始手势** 打开 "开始"菜单。
+5. 进入混合现实主页后，使用刚"开始"菜单的"开始"手势 **打开** 该应用。
 
-6. 选择 **设置** 应用，并选择 "**系统**"。 你将看到的第一条信息是你的设备名称，你的 HoloLens 2 设备将为 &quot; HoloLens， &quot; 后跟六个字符串。
+6. 选择 **"设置** 应用"，然后选择"系统 **"。** 你将看到的第一条信息是设备名称，对于设备HoloLens 2为 &quot; HOLOLENS- 后跟 &quot; 一个六个字符字符串。
 
 7. 记下此名称。
 
     ![HoloLens 2 设置屏幕](./images/hololens2-settings-about.jpg)
 
-8. 验证设备是否已成功加入到 Azure AD。 有两种方法：
+8. 验证设备是否成功加入 Azure AD。 有两种方法：
 
-    1.  设置应用。 从 **设置** 选择 "**帐户**" "  ->  **访问工作或学校**"。 在此屏幕中，可以通过查看 &quot; 连接到 nameofAAD&#39;s Azure AD 来验证是否已成功注册。 通过连接 *yourusername@nameofAAD.onmicrosoft.com* 。 这将验证是否已将你的设备加入到你的组织&#39;Azure AD。
+    1.  设置应用。 从 **设置选择"****帐户**  ->  **访问工作或学校"。** 在此屏幕中，可以通过看到"连接到 &quot; nameofAAD"&#39;成功Azure AD。 通过 连接 *yourusername@nameofAAD.onmicrosoft.com* 。 这将验证设备是否已加入组织&#39;Azure AD。
 
-    1. [Azure 门户](https://portal.azure.com/#home)。 中转到 **Azure Active Directory**  ->  **设备**""  ->  **所有设备**"，然后搜索设备名称。 在 "联接类型" 下，它将显示为 "Azure AD 联接"。
-        ![验证 Azure AD 中的联接类型](./images/hololens2-devices-all-devices.png)
+    1. [Azure 门户](https://portal.azure.com/#home)。 转到  ->  **Azure Active Directory"所有**  ->  **设备"，** 并搜索设备名称。 在"联接类型"下，它将显示为"Azure AD联接"。
+        ![验证联接类型Azure AD](./images/hololens2-devices-all-devices.png)
 
-9. 验证你的设备是否已注册 MDM。 有两种方法：
+9. 验证设备是否注册了 MDM。 有两种方法：
 
-    1. 在 **设置** 中，选择 "**帐户**" "  ->  **访问工作或学校**"。 在此屏幕中，可以通过查看 &quot; 连接到 nameofAAD&#39;s Azure AD 来验证是否已成功注册。 通过连接 *yourusername@nameofAAD.onmicrosoft.com* 。 通过选择 " &quot; 连接到 nameofAAD&#39;s Azure AD，从该访问工作或学校帐户。 连接方式 yourusername@nameofAAD.onmicrosoft.com &quot; 并选择 "**信息**" 按钮。
+    1. 从 **设置，** 选择"**帐户**  ->  **访问工作或学校"。** 在此屏幕中，可以通过看到"连接到 &quot; nameofAAD"&#39;成功Azure AD。 通过 连接 *yourusername@nameofAAD.onmicrosoft.com* 。 在此"访问工作或学校帐户"中，选择"连接到 &quot; 名称""AAD"&#39;Azure AD。 通过 连接 yourusername@nameofAAD.onmicrosoft.com &quot; 并选择"信息 **"** 按钮。
 
-    1. [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com/#home)。 登录并选择 "  **设备**  "，然后选择 "  **所有设备**"。 可从此处搜索 HoloLens 设备&#39;的名称。 你应该能够看到你在 Intune 上列出的 HoloLens。
+    1. [Microsoft Endpoint Manager管理中心](https://endpoint.microsoft.com/#home)。 登录并选择"**设备"，然后选择**"**所有设备"。** 可在此处搜索设备HoloLens&#39;名称。 你应该能够看到 Intune 上HoloLens列表。
 
-        ![验证 Azure AD 中的 Intune 管理](./images/hololens2-devices-all-devices2.png)
+        ![验证由 Intune 在 Azure AD](./images/hololens2-devices-all-devices2.png)
 
 
-## <a name="wi-fi-certificate-validation"></a>Wi-Fi 证书验证
+## <a name="wi-fi-certificate-validation"></a>Wi-Fi证书验证
 
-现在，设备应收到 Wi-Fi 证书。 可以执行的最简单验证是尝试连接到&#39;为其收到证书的 Wi-Fi 连接。 打开 **设置** 应用并导航到 "**网络 &amp; Internet**  ->  **wi-fi** "，并选择 "wi-fi 连接"。 连接后，请打开 Microsoft Edge 应用并确认你可以导航到网站。
+现在，设备应已收到证书Wi-Fi证书。 最简单的验证是尝试连接到已Wi-Fi证书&#39;的连接。 打开 设置 **应用，** 导航到 **"网络 &amp; Internet**  ->  **Wi-Fi"** 并选择 Wi-fi 连接。 连接后，打开Microsoft Edge应用并确认可以导航到网站。
 
-若要确认是否已在设备上收到证书，可以使用 [证书管理器](/hololens/certificate-manager)。
+若要确认你已收到设备上证书，可以使用证书 [管理器](/hololens/certificate-manager)。
 
 ## <a name="validate-lob-app-install"></a>验证 LOB 应用安装
 
-若要查看托管应用的安装进度，你可以查看应用是否已安装或检查设置。 通过将 LOB 应用配置为组所需的安装，在向分配的组中的用户注册 HoloLens 后，应用将自动下载到 HoloLens 中。
+若要查看托管应用的安装进度，请查看该应用是否已安装或检查设置。 将 LOB 应用配置为组所需的安装后，向分配HoloLens中的用户注册该 LOB 应用后，该应用将自动下载到 HoloLens。
 
-打开 "开始"菜单，并选择 "**所有应用**"。 你可能需要使用 **page up** 或 **page down** 按钮，具体取决于你所拥有的应用数。
+打开""开始"菜单并选择"**所有应用"。** 根据拥有的应用数，可能需要使用"向上"或"**下一页"** 按钮。 
 
-若要在设备上验证应用的安装，你可以通过 **设置**  ->  **帐户**  ->  **访问工作或学校** 进行操作; 选择帐户，然后选择 "**信息**" 按钮，然后向下滚动查看从 MDM 应用到设备的不同配置和应用。
+若要验证设备上应用的安装，可以通过 **"设置** 帐户访问工作或学校"来验证安装;选择帐户，然后选择"信息"按钮，然后向下滚动以查看从  ->    ->  MDM应用到设备的不同配置和应用。
 
-若要从 Intune 验证安装，请导航到 "[内存门户](https://endpoint.microsoft.com/#home)  ->  **应用**-> 所有 **应用**"  -> *TheNameOfYourApp*"  ->  **设备安装状态**" 页。
+若要从 Intune 验证安装，请导航到 [MEM](https://endpoint.microsoft.com/#home)门户"应用  ->  "->"所有应用  -> *""NameOfYourApp*  ->  **设备安装状态"** 页。
 
-查看详细信息： [Intune 应用部署 HoloLens](/hololens/app-deploy-intune)
+有关详细信息，请参阅[Intune 应用部署HoloLens](/hololens/app-deploy-intune)
 
-## <a name="validate-dynamics-365-guides"></a>验证 Dynamics 365 Guides
+## <a name="validate-dynamics-365-guides"></a>验证Dynamics 365 Guides
 
-HoloLens、创作和操作的指南应用模式有多种。 在操作之前，需要完成编写指南。
+在应用、创作和操作HoloLens指南应用有一些模式。 在操作指南之前，需要完成创作指南。
 
 ### <a name="authoring-the-guide"></a>创作指南
 
-对于此快速验证，我们不需要这么做。 只需选择你在电脑上准备的指南即可。 你需要 [定位指南](/dynamics365/mixed-reality/guides/hololens-app-anchor)，以便快速验证你可以使用全息锚。 之后，应 [放置步骤和模型](/dynamics365/mixed-reality/guides/hololens-app-orientation)。
+对于此快速验证，我们不需要执行太多操作。 只需选择电脑上准备的指南。 需要锚定指南 [，](/dynamics365/mixed-reality/guides/hololens-app-anchor)以便快速验证，可以使用全息定位点。 然后，应 [放置步骤和模型](/dynamics365/mixed-reality/guides/hololens-app-orientation)。
 
 >[!NOTE]
-> 你将需要 **创作** 角色才能登录到电脑和 HoloLens 上的作者。 操作员角色为只读，不能访问电脑应用。
+> 需要"**创作"** 角色才能登录到电脑，并创作HoloLens。 操作员角色是只读的，无法访问电脑应用。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/poE7s7_zWDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="operating-the-guide"></a>操作指南
 
-全息影像准备就绪后，即可测试操作指南。 
-- 选择 **操作员模式**
-- 单击指导的步骤。
+全息影像就位后，可以测试操作指南。 
+- 选择 **运算符模式**
+- 单击指南的步骤。
 
-若要深入了解如何操作指南，请查看以下资源：
+有关如何操作指南的更深入的指导，请查看以下资源：
 
-[Dynamics 365 Guides 中的指南操作概述](/dynamics365/mixed-reality/guides/operator-overview)
+[有关在 Dynamics 365 Guides 中操作指南的概述](/dynamics365/mixed-reality/guides/operator-overview)
 
-[在 Dynamics 365 Guides 中，使用步骤卡作为操作员](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
+[在中以操作员的"单步执行"卡Dynamics 365 Guides](/dynamics365/mixed-reality/guides/operator-step-card-orientation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9s41BKGHVL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="next-step"></a>下一步 
 > [!div class="nextstepaction"]
-> [企业连接部署-维护](hololens2-corp-connected-maintain.md)
+> [企业连接部署 - 维护](hololens2-corp-connected-maintain.md)

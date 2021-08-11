@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665618"
 ---
 # <a name="page-settings-visibility"></a>页面设置可见性
 
@@ -43,7 +43,7 @@ HoloLens 设备的可管理功能之一是使用[设置/PageVisibilityList 策�
 这些是将提供给 Intune 的配置值：
 
 - **名称：** 管理员首选的配置文件显示名称。
-- **OMA-URI：** “设置”页面的完全限定 URI，包括其[作用域](/windows/client-management/mdm/policy-configuration-service-provider)。 本页面上的示例使用 `./Device` 作用域。
+- **OMA-URI：** “设置”页面的完全限定 URI，包括其 [作用域](/windows/client-management/mdm/policy-configuration-service-provider)。 本页面上的示例使用 `./Device` 作用域。
 - **值：** 字符串值，指示是隐藏还是仅显示指定页面。 可能值为 `hide:<pagename>` 和 `showonly:<pagename>`。 
  
 可以通过使用分号分隔多个页面来对其进行指定，以下是常用页面的列表。

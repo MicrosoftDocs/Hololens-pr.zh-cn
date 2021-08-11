@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7f712c571df1170badf3bfc832e43881278eec90
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663707"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>使用预配包配置 HoloLens
 
@@ -106,7 +106,7 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
 1. 在 Windows 配置设计器起始页上，选择 **高级预配**。
 2. 在 **输入项目详细信息** 窗口中，指定项目的名称和项目的位置。 （可选）输入简要描述以描述你的项目。
 
-3. 选择“下一步”。
+3. 选择“下一步”  。
 
 4. 在 "**选择要查看和配置的设置**" 窗口中，选择 " **Windows 10 全息版**"，然后选择 "**下一步**"。
 
@@ -126,7 +126,7 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
     
 9. 选择 "**导出**  >  **设置包**"。
 
-10. 将 **所有者** 更改为 **IT 管理员**。这会将此预配包的优先级设置为高于从其他源应用于此设备的预配包。 选择“下一步”。
+10. 将 **所有者** 更改为 **IT 管理员**。这会将此预配包的优先级设置为高于从其他源应用于此设备的预配包。 选择“下一步”  。
 
 11. 为“程序包版本”设置一个值。
 
@@ -142,7 +142,7 @@ HoloLens 向导可帮助你在预配包中配置以下设置：
 
     还可以选择 " **浏览** " 以更改默认输出位置。
 
-14. 选择“下一步”。
+14. 选择“下一步”  。
 
 15. 选择 " **生成** " 开始生成包。 项目信息会显示在构建页面中，并且进度栏会指示构建状态。
 
@@ -239,7 +239,7 @@ Windows 全息版、版本2004或版本[19041.1103](hololens-release-notes.md#wi
 
 | 设置 | 说明 |
 | --- | --- |
-| **证书** | 将证书部署到 HoloLens。  |
+| **Certificates** | 将证书部署到 HoloLens。  |
 | **ConnectivityProfiles** | 将 WLAN 配置文件部署到 HoloLens。   |
 | **EditionUpgrade** | [升级到 Windows Holographic for Business。](hololens1-upgrade-enterprise.md)  |
 | **策略** | 允许或阻止 HoloLens 中的开发人员模式。 [Windows Holographic for Business 支持的策略](/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |

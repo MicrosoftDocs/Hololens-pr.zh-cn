@@ -2,10 +2,10 @@
 title: 在何处购买 HoloLens 2
 description: 可用的全球 ADR 联系人和国家/地区列表。
 keywords: HoloLens 2 购买选项, 国际购买, 国际经销商, ADR
-author: joyjaz
-ms.author: v-jjaswinski
+author: qianw211
+ms.author: v-qianwen
 ms.reviewer: skerawala
-ms.date: 7/08/2021
+ms.date: 8/03/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 10ba56d68b0272378d958b5a7cd1fd18f581ac33
-ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
+ms.openlocfilehash: b94172ebbfeea55964a055f62707fe0b6d94a97c53eee717e7ec4da7281bad0e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114661723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658828"
 ---
 # <a name="where-to-buy-hololens-2"></a>在何处购买 HoloLens 2
 
@@ -30,11 +30,12 @@ HoloLens 2 是最舒适的沉浸式混合现实体验，其行业领先的解决
 
 | HoloLens 2 版本| 支持的市场 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 美国、加拿大、德国、法国、英国、爱尔兰、中国、日本、澳大利亚、意大利、新西兰、荷兰、瑞士、西班牙、奥地利、瑞典、芬兰、挪威、丹麦、比利时、葡萄牙、波兰、新加坡、中国香港、中国台湾、泰国、越南、马来西亚和韩国 |
-| 具有 Remote Assist 的 HoloLens 2 | 澳大利亚、日本、加拿大、美国、奥地利、比利时、丹麦、芬兰、法国、德国、意大利、荷兰、挪威、西班牙、瑞典、瑞士、英国和爱尔兰 <sup>1</sup> 
-| HoloLens 2 Industrial Edition（发布时） | 美国、加拿大、德国、法国、英国、爱尔兰、中国、日本、澳大利亚、意大利、新西兰、荷兰、瑞士、西班牙、奥地利、瑞典、芬兰、挪威、丹麦、比利时、葡萄牙、波兰、新加坡、中国香港、中国台湾、泰国、越南、马来西亚和韩国 |
-| HoloLens 2 开发版 | 加拿大、德国、法国、英国、爱尔兰、日本、澳大利亚、意大利、瑞士和新西兰 |
-- <sup>1</sup> 此列表是动态列表，请返回更新
+| HoloLens 2 | 澳大利亚、奥地利、比利时、加拿大、中国、丹麦、芬兰、法国、德国、香港特别行政区、爱尔兰、意大利、日本、马来西亚、荷兰、新西兰、挪威、波兰、葡萄牙、新加坡、韩国、西班牙、瑞典、瑞士、台湾、泰国、英国、美国和越南  |
+| 具有 Remote Assist 的 HoloLens 2 | 澳大利亚、奥地利、比利时、加拿大、中国、丹麦、芬兰、法国、德国、香港特别行政区、爱尔兰、意大利、日本、韩国、马来西亚、荷兰、新西兰、挪威、新加坡、西班牙、瑞典、瑞士、台湾、泰国、英国、美国和越南<sup>1</sup> 
+| HoloLens 2 Industrial Edition（发布时） | 澳大利亚、奥地利、比利时、加拿大、中国、丹麦、芬兰、法国、德国、香港特别行政区、爱尔兰、意大利、日本、马来西亚、荷兰、新西兰、挪威、波兰、葡萄牙、新加坡、韩国、西班牙、瑞典、瑞士、台湾、泰国、英国、美国和越南  |
+| HoloLens 2 开发版 | 澳大利亚、加拿大、法国、德国、爱尔兰、意大利、日本、新西兰、瑞士和英国 |
+
+&nbsp;&nbsp;&nbsp;<sup>1</sup> 此列表是动态列表，请回来查看更新
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>查找 HoloLens 2 授权经销商
 请参阅下表，了解按区域列出的 HoloLens 2 可用性和购买选项。

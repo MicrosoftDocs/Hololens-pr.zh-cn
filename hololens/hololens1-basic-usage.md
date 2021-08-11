@@ -1,11 +1,11 @@
 ---
-title: '围绕 HoloLens (第一代) '
+title: 开始使用 HoloLens（第 1 代）
 description: 开始简要了解 HoloLens (第一代) 界面、手动跟踪功能以及使用全息应用程序。
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
 ms.date: 9/16/2019
 ms.reviewer: jarrettr
 manager: jarrettr
-keywords: hololens
+keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
 author: v-miegge
@@ -14,40 +14,40 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a1ed1b900f255da9f8db66577f1e88f6bd6881e8
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108308424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662801"
 ---
-# <a name="getting-around-hololens-1st-gen"></a>围绕 HoloLens (第一代) 
+# <a name="getting-around-hololens-1st-gen"></a>开始使用 HoloLens（第 1 代）
 
 可以单步执行全息影像世界了吗？ 下面是一些入门信息。
 
-本指南提供混合现实的简介、与全息影像交互的手势以及 Windows 全息版的简介。
+本指南提供混合现实的简介、与全息影像交互的手势，以及 Windows 全息版的简介。
 
-## <a name="discover-mixed-reality"></a>发现混合现实
+## <a name="discover-mixed-reality"></a>了解混合现实
 
 在 HoloLens 上，全息影像与物理环境混合，看起来像是世界的一部分。 即使是在整个全息影像，你仍可查看你的环境，自由移动，并与其他人和对象进行交互。 我们称之为 "mixed reality"。
 
-全息帧可将您眼睛最敏感的全息影像定位到详细信息，并可通过查看重用功能区离开您的外围设备视觉 unobscured。 使用空间音效，你可以找出一个全息图，即使它位于你后面。 因为 HoloLens 了解并了解你的环境，你可以在真实对象上放置全息影像，因此你的应用程序和游戏也可以。 因此游戏中的一个字符可能会坐在沙发上，或者 [空间机器人可能会必须](https://www.microsoft.com/store/apps/9nblggh5fv3j)。
+全息帧可将您眼睛最敏感的全息影像定位到详细信息，并可通过查看重用功能区离开您的外围设备视觉 unobscured。 使用空间音效，你可以找出一个全息图，即使它位于你后面。 由于 HoloLens 了解并了解你的环境，因此你可以在真实对象上放置全息影像，因此你的应用程序和游戏也可以。 因此游戏中的一个字符可能会坐在沙发上，或者 [空间机器人可能会必须](https://www.microsoft.com/store/apps/9nblggh5fv3j)。
 
-## <a name="use-hololens-with-your-hands"></a>使用 HoloLens
+## <a name="use-hololens-with-your-hands"></a>使用手 HoloLens
 
-在使用智能手机时，大约需要使用 HoloLens。 你可以使用手操作全息窗口、菜单和按钮。  不是指向、单击或点击，而是使用注视、 [语音](hololens-cortana.md)和手势来选择应用和全息影像，并绕过 HoloLens。
+使用 HoloLens 就像使用智能电话。 你可以使用手操作全息窗口、菜单和按钮。  您将使用您的注视、[语音](hololens-cortana.md)和手势来选择应用程序和全息影像并 HoloLens，而不是指向、单击或点击。
 
-当你知道这些基本交互时，将会有一个快照。
+当你知道这些基本交互时，HoloLens 将会是一个快照。
 
 第一次使用 HoloLens 时，我们将引导你完成基本操作。 你还可以在 " **开始** " 菜单中找到手势教程，查找 "学习手势" 应用。
 
-### <a name="the-hand-tracking-frame"></a>手写跟踪框架
+### <a name="the-hand-tracking-frame"></a>手部跟踪框
 
-HoloLens 具有传感器，可以看到您的任意一侧的几英尺。 当你使用手时，需要将它们保留在该帧内，否则，HoloLens 将看不到它们。 当你四处移动时，框架会随你一起移动。  
+HoloLens 的传感器能够探测到你身体两侧几米远的地方。 用手进行操作时，你需要将其始终放在该框架内，否则 HoloLens 将无法探测到它们。 当你四处移动时，框架会随你一起移动。  
 
-![显示 HoloLens 手写跟踪框架的图像](./images/hololens-2-gesture-frame.png)
+![显示 HoloLens 手部跟踪框架的图像](./images/hololens-2-gesture-frame.png)
 
-### <a name="open-the-start-menu-with-bloom"></a>用布隆打开 "开始" 菜单
+### <a name="open-the-start-menu-with-bloom"></a>用布隆打开 "开始"菜单
 
 若要打开 " **开始** " 菜单：
 
@@ -60,9 +60,9 @@ HoloLens 具有传感器，可以看到您的任意一侧的几英尺。 当你�
 若要选择某个应用或其他全息图，请在直接查看所选全息影像时单击它。 要实现这一点，请执行下列操作：
 
 1. 注视要选择的全息影像。
-1. 将索引指向上限。
+1. 将你的食指竖直向上指向天花板。
 1. 分流：降低手指，然后迅速提起。
-   ![空气分流动画](./images/hololens-air-tap.gif)
+   ![隔空敲击手势动画](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>使用语音选择全息影像
 
@@ -74,20 +74,20 @@ HoloLens 具有传感器，可以看到您的任意一侧的几英尺。 当你�
 
 现在可以将手势放入测试！
 
-你将在 " [开始" 菜单](holographic-home.md) 中找到已安装的应用，并且在 Microsoft Store 中有更多适用于 HoloLens (第一代) 的应用。
+你会在["开始"菜单](holographic-home.md)中找到已安装的应用程序，其中有更多适用于 HoloLens (第一代) 在 Microsoft Store 中的应用。
 
 打开 " **开始** " 菜单并选择一个应用！
 
-使用 HoloLens 上的应用与电脑上的应用稍有不同：某些应用使用2D 视图，看起来像其他 Windows 应用程序。  (沉浸式应用的其他应用) 使用三维视图，当你启动它们时，它们会成为你所看到的唯一应用。
+在 HoloLens 上使用应用与电脑上的应用稍有不同：某些应用使用2d 视图，看起来像其他 Windows 应用程序。  (沉浸式应用的其他应用) 使用三维视图，当你启动它们时，它们会成为你所看到的唯一应用。
 
 当你放置应用程序窗口或应用程序启动器时，它将一直保留，直到你将其删除。 你随时可以在混合现实中移动或调整其大小。
 
 ## <a name="move-resize-and-rotate-apps"></a>移动、调整大小和旋转应用
 
-在 HoloLens 上移动和调整应用程序的大小与在 PC 上的运行方式略有不同。 不要拖动应用，而是将其与 [手势](https://support.microsoft.com/help/12644/hololens-use-gestures) 或 [clicker](hololens1-clicker.md)一起使用。 还可在三维空间中旋转应用窗口。
+在 HoloLens 上移动应用和调整其大小与在 PC 上的工作方式稍有不同。 不要拖动应用，而是将其与 [手势](https://support.microsoft.com/help/12644/hololens-use-gestures) 或 [clicker](hololens1-clicker.md)一起使用。 还可在三维空间中旋转应用窗口。
 
 > [!TIP]
-> 使用你的声音来重新安排应用程序，并显示 "面部"、"大" 或 "更小"。 或者让 Cortana 为你移动应用程序：说 "你好 Cortana，请 \* 在此移动 *应用程序名称 \** "。
+> 使用你的声音来重新安排应用程序，并显示 "面部"、"大" 或 "更小"。 或者让 Cortana 移动应用程序：说 "你好 Cortana，请 \* 在此移动 *应用 \* 名称*。"
 
 ### <a name="move-an-app"></a>移动应用
 
@@ -119,25 +119,25 @@ HoloLens 具有传感器，可以看到您的任意一侧的几英尺。 当你�
 
 注视应用程序窗口的内容。 点击并按住鼠标，并稍微向上或向下移动，滚动内容。
 
-## <a name="meet-the-hololens-1st-gen-clicker"></a>满足 HoloLens (第一代) Clicker
+## <a name="meet-the-hololens-1st-gen-clicker"></a>满足第一代) Clicker (HoloLens
 
-[HoloLens (第一代) clicker](hololens1-clicker.md)为你提供了另一种与全息影像交互的方法。 将其与你的 HoloLens[配对](hololens-connect-devices.md)，然后将其与你的注视一起用于选择、滚动等。
+[HoloLens 第一代) clicker (](hololens1-clicker.md)提供了另一种与全息影像交互的方法。 将其与你的 HoloLens[配对](hololens-connect-devices.md)，然后将其与你的注视一起用于选择、滚动等。
 
 ## <a name="next-steps"></a>后续步骤
 
-祝贺！ 你已准备好使用 HoloLens (第一代) 。
+祝贺你！ 你已准备好使用 (第一代) HoloLens。
 
-现在，你可以配置 HoloLens (第一代) ，以满足你的特定需求。
+现在，你可以配置 HoloLens (一代) ，以满足你的特定需求。
 
-[连接蓝牙设备，例如鼠标和键盘](hololens-connect-devices.md)
+[连接 bluetooth 设备，例如鼠标和键盘](hololens-connect-devices.md)
 
 [了解有关语音和 Cortana 的详细信息](hololens-cortana.md)
 
 ### <a name="help-i-dont-see-my-holograms"></a>帮助！ 我看不到我的全息影像
 
-如果看不到在使用 HoloLens 时放置的全息影像，可以尝试以下操作：
+如果看不到在使用 HoloLens 时所放置的全息影像，请尝试以下操作：
 
 - 请确保在正确的区域中 &mdash; 记住，全息影像会停留在其位置。
 - 请确保你处于良好的空间，而不会产生大量直接阳光。
-- 再. 当 HoloLens 在识别空间时遇到问题时，以前放置的全息影像可能需要长达一分钟的时间才能重新出现。
-- 如果问题仍然存在，你可能需要清除 **设置** 系统全息影像中的全息影像存储数据  >    >  ，然后再将全息影像置于混合现实中。
+- 再. 如果HoloLens识别空间时，以前放置的全息影像可能需要一分钟才能重新显示。
+- 如果问题仍然存在，你可能想要清除 全息影像 System  >  **全息影像** 设置 中的 全息影像 存储数据，然后将全息影像混合现实主页  >  中。

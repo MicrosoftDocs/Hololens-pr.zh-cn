@@ -10,12 +10,12 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
 keywords: 全息帧, 视野, fov, 校准, 空间, 环境, 操作方法, HoloLens, 混合现实, 混合现实头戴显示设备
-ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: bf70641958d6f29735512182fdf33ae48f40b956f3335643faeb5edb8a26f79f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924343"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664155"
 ---
 # <a name="hololens-environment-considerations"></a>HoloLens 环境注意事项
 

@@ -3,7 +3,7 @@ title: 使用语音运行 HoloLens
 description: 了解 Cortana 如何帮助你在 HoloLens 混合现实设备上执行所有类型的操作，包括语音命令、听写和全息影像交互。
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 03/10/2020
-keywords: Hololens
+keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 2fe7727fb05f983f56f329a6e7f7c25a627a914a1956fc65a9fc047653aae977
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393866"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661079"
 ---
 # <a name="use-your-voice-to-operate-hololens"></a>使用语音运行 HoloLens
 
@@ -29,25 +29,25 @@ ms.locfileid: "11393866"
 本文将告诉你如何通过语音和 Cortana 来控制 HoloLens 和你的全息世界。
 
 > [!NOTE]
-> 语音功能仅支持[某些语言](hololens2-language-support.md)。 语音语言基于 Windows 显示语言，而非键盘语言。  
+> 只有[某些语言](hololens2-language-support.md)支持语音。 语音语言基于 Windows 显示语言，而非键盘语言。  
 >  
-> 你可以通过选择**设置** > **时间和语言** > **语言**来验证 Windows 显示语言。
+> 可以通过选择“设置” > “时间和语言” > “语言”来验证 Windows 显示语言。
 
 ## <a name="built-in-voice-commands"></a>内置语音命令
 
-使用以下基本命令可以更快地操作 HoloLens。 要使用这些命令，需要在首次运行设备时启用语音，或在 **“设置”** > **“隐私”** > **“语音”** 中启用语音。 你可以通过查看“开始”菜单顶部的状态，随时检查是否启用了语音功能。 为了获得最佳语音识别效果，HoloLens 2 使用基于 Microsoft 云的服务。 但是，你可以使用“设置”来禁用此功能。 若要执行此操作，请在“设置”中关闭**在线语音识别**。 更改此设置后，HoloLens 2 将仅在本地处理语音数据以识别命令和听写，并且 Cortana 将不可用。
+使用以下基本命令可以更快地操作 HoloLens。 若要使用这些功能，需要在第一次运行设备时或在“设置” > “隐私” > “语音”中启用语音。 你可以通过查看“开始”菜单顶部的状态，随时检查是否启用了语音功能。 为了获得最佳语音识别效果，HoloLens 2 使用基于 Microsoft 云的服务。 但是，你可以使用“设置”来禁用此功能。 为此，请在“设置”中关闭“在线语音识别”。 更改此设置后，HoloLens 2 将仅在本地处理语音数据以识别命令和听写，并且 Cortana 将不可用。
 
 ### <a name="general-speech-commands"></a>常规语音命令
 
 在整个 Windows Mixed Reality 中使用这些命令，以便更快地进行访问。 某些命令使用凝视光标，说出“选择”即可调出该光标。
 
 > [!NOTE]
-> HoloLens（第一代）不支持手控光线。
+> HoloLens（第一代）不支持手部射线。
 
-| 说出语音指令 | 实际执行操作 |
+| 说出的内容 | 要执行此操作 |
 | - | - |
-| “选择” | 说出“选择”以调出凝视光标。 然后，转动头部，将光标放在你想要选择的内容上，然后再次说 “选择”。 |
-| “去开始菜单” |  打开“开始”菜单 |
+| “选择” | 说出“选择”以调出凝视光标。 然后，转动头部，将光标放在你想要选择的内容上，然后再次说“选择”。 |
+| 转到“开始”菜单 |  打开“开始”菜单 |
 | “关闭”  | 关闭“开始”菜单 |
 | 说出“去开始菜单”以调出快速操作菜单，然后说出“混合现实主页”。  | 离开沉浸式应用 |
 | “隐藏手部射线”/“显示手部射线” | 隐藏和显示手部射线 |
@@ -55,7 +55,7 @@ ms.locfileid: "11393866"
 
 自 HoloLens 2 版本 19041.x 起，还可以使用下面这些命令：
 
-| 说出语音指令 | 具体方法为 |
+| 说出的内容 | 要执行此操作 |
 | - | - |
 | “重启设备” | 打开对话框，以确认你要重启设备。 若要重启，可以说“是”。 |
 | “关闭设备” | 打开对话框，以确认你要关闭设备。 若要确认，可以说“是”。 |
@@ -70,18 +70,18 @@ ms.locfileid: "11393866"
 
 要使用这些命令，请凝视 3D 对象、全息影像或应用窗口。
 
-| 说出语音指令 | 实际执行操作 |
+| 说出的内容 | 要执行此操作 |
 | - | - |
 | “放大” | 将其放大 |
 | “缩小” | 将其缩小 |
 | “正面朝我” | 调转目标，使其正面朝向自己 |
 | “移动此项” | 移动目标（跟随你的凝视点而移动） |
-| “关闭” | 将其关闭 |
+| “关闭” | 关闭它 |
 | “跟我走”/“停下来” | 使其跟随你移动 |
 
-### <a name="see-it-say-it"></a>看到什么，就说什么
+### <a name="see-it-say-it"></a>看到它，说出来
 
-HoloLens 中的许多按钮和其他元素也会响应你的语音 - 例如，应用栏上的**跟我走**、**关闭**或 Edge 中的**后退**按钮。 如果要了解一个按钮是否启用语音功能，请将**凝视光标**、**触摸光标**或一条**手部射线**停留在该按钮上一会儿。 如果该按钮已启用语音功能，你将看到语音提示。
+HoloLens 中的许多按钮和其他元素也会响应你的语音 - 例如，应用栏上的“跟我走”和“关闭”、或 Edge 中的“返回”按钮。   若要确定按钮是否已启用语音，请将凝视光标、触摸光标或手部射线暂时停留在其上。   如果该按钮已启用语音功能，你将看到语音提示。
 
 ### <a name="dictation-mode"></a>听写模式
 
@@ -90,7 +90,7 @@ HoloLens 中的许多按钮和其他元素也会响应你的语音 - 例如，�
 > [!NOTE]
 > 若要使用听写模式，你必须具有 Internet 连接。
 
-HoloLens 听写使用明确的标点符号，也就是说，你需要说出要使用的标点符号的名称。 例如，可以说“你好**逗号**你在忙什么呢**问号**”。
+HoloLens 听写使用明确的标点符号，也就是说，你需要说出要使用的标点符号的名称。 例如，你可能会说“你好，逗号，你想做什么，问号”。 
 
 下面是你可以使用的标点关键字：
 
@@ -101,38 +101,38 @@ HoloLens 听写使用明确的标点符号，也就是说，你需要说出要�
 - 井号标签、微笑/笑脸、悲伤、眨眼
 - 美元、百分比
 
-有时，拼写出像电子邮件地址之类的内容很有用。 例如，若要对 example@outlook.com 进行听写，可以说“E X A M P L E at outlook dot com”。
+有时，拼写出像电子邮件地址之类的内容很有用。 例如，若要口述 example@outlook.com，应该说“E X A M P L E at outlook dot com”。
 
 ## <a name="do-more-with-cortana"></a>通过 Cortana 执行更多操作
 
-Cortana 有助于在 HoloLens 上执行各种操作，但具体功能可能因所使用的 Windows Holographic 版本而有所不同。 可在此处了解更多有关最新版本 Cortana 更新功能的信息：即 [Cortana 在即将发布的 Windows 10 版本中：通过增强安全性和隐私性来专注于生产力](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)。 
+Cortana 有助于在 HoloLens 上执行各种操作，但具体功能可能因所使用的 Windows Holographic 版本而有所不同。 你可以在此处了解 Cortana 最新版本的更新功能：[即将发布的 Windows 10 版本中的 Cortana：享受增强的安全和隐私，专注提升你的工作效率](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)。 
 
 ![你好小娜！](images/cortana-on-hololens.png)
 
 你可以尝试使用以下语音操作（请记住首先说“你好小娜”）。
 
-**你好小娜**...
+你好小娜…
 
 - 我可以说什么？
-- 启动 <*应用名称*>。
+- 启动 <应用名称>。
 - 几点了？
 - 显示最新 NBA 比分。
 - 给我讲个笑话。
 
-如果使用的是*版本 18362.x 或更低版本*，还可以使用下面这些命令：
+如果使用版本 18362.x 或更旧的版本，还可以使用以下命令：
 
-**你好小娜**...
+你好小娜…
 
-- 提高音量。
+- 增大音量。
 - 降低亮度。
-- 关闭。
+- “关机”。
 - 重启。
 - 进入睡眠状态。
 - 静音。
-- 将 <*应用名称*> 移动到此处（凝视你希望应用移动到的位置）。
-- 去开始菜单。
+- 将 <应用名称> 移动到此处（凝视你希望应用移动到的位置）。
+- 转到“开始”。
 - 拍摄照片。
-- 开始录制。 （开始录制视频。）
+- 开始记录。 （开始录制视频。）
 - 停止录制。 （停止录制视频。）
 - 我还剩多少电量？
 
@@ -140,6 +140,6 @@ Cortana 有助于在 HoloLens 上执行各种操作，但具体功能可能因�
 
 ### <a name="turn-cortana-off"></a>关闭 Cortana
 
-如果启用了语音功能，则第一次使用 HoloLens 时就会开启 Cortana。 你可以在 Cortana 的设置中将其关闭。 在**所有应用**列表中，选择 **Cortana** > **设置**。 然后关闭“Cortana 可以为你提供建议、想法、提醒、通知等”。
+如果启用了语音功能，则第一次使用 HoloLens 时就会开启 Cortana。 你可以在 Cortana 的设置中将其关闭。 在“所有应用”列表中，选择“Cortana”  > “设置”。 然后关闭 Cortana 能够为你提供建议、意见、提醒、警告等。
 
-如果 Cortana 未对“你好小娜”作出响应，请检查是否已启用语音功能，并转到 Cortana 的设置进行检查，确保其处于打开状态。
+如果 Cortana 不响应“你好小娜”，请在“开始”处检查是否打开了语音，并转到 Cortana 设置并检查以确保已打开她。

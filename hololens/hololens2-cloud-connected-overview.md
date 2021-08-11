@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639754"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660303"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>部署指南–云连接 HoloLens 2 与远程协助–概述
 
@@ -49,20 +49,20 @@ ms.locfileid: "113639754"
 
 ### <a name="remote-assist-licensing-and-requirements"></a>远程协助许可和要求
 
-- 需要 Azure AD 帐户 (购买订阅和分配许可证) 
-- [远程协助订阅](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (或 [远程协助试验](/dynamics365/mixed-reality/remote-assist/try-remote-assist)) 
+- Azure AD 帐户（购买订阅和分配许可证时需要）
+- [Remote Assist 订阅](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)（或 [Remote Assist 试用版](/dynamics365/mixed-reality/remote-assist/try-remote-assist)）
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist 用户
 
-- 远程协助许可证
+- Remote Assist 许可证
 - 网络连接
 
 #### <a name="microsoft-teams-user"></a>Microsoft Teams 用户
 
-- Microsoft Teams 或[Teams 免费增值](https://products.office.com/microsoft-teams/free)。
+- Microsoft Teams 或 [Teams 免费增值](https://products.office.com/microsoft-teams/free)。
 - 网络连接
 
-如果你计划实施此 [跨租户方案](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)，你可能需要一个信息障碍许可证。 若要确定是否需要信息障碍许可证，请参阅[供应商和客户使用完全 Dynamics 365 Remote Assist 的功能](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)。
+如果你计划实施此[跨租户方案](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)，你可能需要一个信息障碍许可证。 若要确定是否需要信息障碍许可证，请参阅[供应商和客户使用完全 Dynamics 365 Remote Assist 的功能](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)。
 
 ## <a name="in-this-guide-you-will"></a>本指南中，你将实现以下操作：
 

@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 商业, 功能, mdm, 移动设备管理, 展台模式, 应用程序, 标识, Bitlocker, iris, Windows Hello, Azure 助力, Autopilot, 混合现实, WDAC
-ms.openlocfilehash: 5a68c4199cba20bba9d3aaa5183819975ea7b3f4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 88a75224909fd64e387cfb5677056e2ae5d62e4b3518aa758f22ec66a86a8355
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665330"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 功能和解决方案
 

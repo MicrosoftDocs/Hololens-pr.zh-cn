@@ -6,21 +6,21 @@ ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
-keywords: 安全性、hololens、hololens 2、hololens2 安全性、安全性概述
+keywords: 安全性, hololens, hololens 2, hololens2 安全性, 安全性概述
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 5e65cd542cc1090a7744c0041d57f1e13d3ca0c67b15f81a515f8e3040438aca
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665634"
 ---
-# 安全性概述
+# <a name="security-overview"></a>安全概述
 
 为了应对现代威胁形势及其相关风险的挑战，HoloLens 2 安全体系结构经过了全面的重新设计，可提供先进的创新性端到端安全和隐私保护。
 
