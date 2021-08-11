@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 4ba759dfa491725011977c39d6e51ed583a21919ea271f0c3d6482c0847938fb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659023"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658920"
 ---
 # <a name="compare-hololens-2-options"></a>比较 HoloLens 2 选项
 
@@ -41,7 +41,7 @@ HoloLens 是一种混合现实设备，由 holograms 提供支持，并提供可
 | **快速更换计划 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **商业使用权利**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**担保**](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
-| **设备购买限制**                                |    None    |              None             |              None             |                       None                       |             无             |       每个事务一个      |
+| **设备购买限制**                                |    无    |              无             |              无             |                       无                       |             无             |       每个事务一个      |
 
 - <sup>1</sup> - 包括 500 美元 Azure 额度以及 Unity Pro 和 Pixyz 插件的 3 个月试用期。
 - <sup>2</sup> - 隔夜收到替换设备，或在 Microsoft 收到损坏设备之前，加急发运（以可用选项中较快者为准）。

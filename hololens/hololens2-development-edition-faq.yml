@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639686"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115659761"
 title: HoloLens 2 开发版常见问题解答
 summary: ''
 sections:
@@ -37,7 +37,7 @@ sections:
   - question: >
       可以使用任何版本的 HoloLens 2进行开发？
     answer: >
-      是。 任何版本的 HoloLens 2 都可用于开发应用。
+      是的。 任何版本的 HoloLens 2 都可用于开发应用。
   - question: >
       如何接收 500 美元的 Azure 额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版？
     answer: >
@@ -73,7 +73,7 @@ sections:
       所有销售都是最终销售，并且开发版HoloLens 2退款。
   - question: >
       开发人员版的硬件要求是否不同于HoloLens 2？
-    answer: "否，从硬件要求的角度来看，此设备是相同的。 允许部署 Development Edition，帮助在商业环境中开发和/或测试应用程序。 \n"
+    answer: "否，从硬件要求的角度来看，此设备是相同的。 允许在商业环境中辅助开发和/或测试应用程序的情况下部署 Development Edition。 \n"
   - question: >
       如何使用 Mixed Reality Toolkit - Unity 在我的 HoloLens 2 开发版上进行开发？
     answer: >
@@ -85,7 +85,7 @@ sections:
   - question: >
       HoloLens 2 开发版的 OS 版本是否与HoloLens 2？
     answer: >
-      是。
+      是的。
   - question: >
       我能否在) Development Edition (运行已发布的HoloLens 2或存储应用程序？
     answer: >
@@ -121,7 +121,7 @@ sections:
       兑换说明
 
 
-      1. 请访问 id.unity.com
+      1. 访问 id.unity.com
 
       2. 使用 Unity ID 登录或创建帐户
 
@@ -154,7 +154,7 @@ sections:
       兑换说明
 
 
-      1. 请访问 id.unity.com
+      1. 访问 id.unity.com
 
       2. 使用 Pixyz 登录或创建帐户
 
@@ -170,24 +170,24 @@ sections:
       若要获取有关 Unity ID、帐户、组织帐户和订阅 (和订阅) 的任何问题 () ，请访问 support.unity3d.com
 
 
-      有关特定于 Pixyz 的支持 (在兑换试用版后) ，请访问 [Pixyz-software.com/support](http://pixyz-software.com/support)
+      有关兑换试用帐户 (Pixyz 特定的) ，[请访问](http://pixyz-software.com/support)Pixyz-software.com/support
 - name: Azure
   questions:
   - question: >
-      如何兑换 $500 Azure 信用额度？
+      如何兑换 500 美元的 Azure 额度？
     answer: >
-      若要兑换 $500 Azure 信用额度，请兑换 Azure Pass 促销代码，并激活订阅。 [了解详细信息](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      若要兑换 500 美元的 Azure 额度，请兑换Azure Pass促销代码并激活订阅。 [了解详细信息](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      查看 Azure Pass [订阅协议](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) ，并 [提供详细信息](https://azure.microsoft.com/en-us/offers/azure-pass/)。
+      查看Azure Pass [协议](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) 和 [套餐详细信息](https://azure.microsoft.com/en-us/offers/azure-pass/)。
   - question: >
-      $500 Azure 信用额度何时过期？
+      500 美元的 Azure 额度何时到期？
     answer: >
-      $500 Azure 信用额度将在激活 Azure 密钥代码后90天后过期。
+      500 美元的 Azure 额度将在激活 Azure 密钥代码 90 天后过期。
   - question: >
-      我可以对我的 Azure 信用额度做些什么？
+      可以使用 Azure 额度执行哪些操作？
     answer: >
-      利用你的 Azure 额度，你可以开始生成 Microsoft&#39;的一组云服务。 HoloLens 2 开发版随附的 Azure 额度使客户能够快速开始在 Azure 上构建和测试混合现实应用程序。 有关在 Azure 上构建的完整详细信息，请访问 [azure 资源](https://azure.microsoft.com/en-us/resources/)
+      借助 Azure 额度，可以开始使用 Microsoft&#39;不断扩展的云服务集进行构建。 开发版中包含的 Azure 额度HoloLens 2使客户能够快速开始在 Azure 上构建和测试混合现实应用程序。 有关在 Azure 上生成的完整详细信息，请访问 [Azure 资源](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      在哪里可以了解有关 Azure mixed reality 服务的详细信息？
-    answer: Microsoft 提供一组混合现实服务，使开发人员能够生成和测试混合现实解决方案。 [了解详细信息](/windows/mixed-reality/develop/mixed-reality-cloud-services)
+      在哪里可以了解有关 Azure 混合现实服务的信息？
+    answer: Microsoft 提供了一组混合现实服务，使开发人员能够生成和测试混合现实解决方案。 [了解详细信息](/windows/mixed-reality/develop/mixed-reality-cloud-services)
