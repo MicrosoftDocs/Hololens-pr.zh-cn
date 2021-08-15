@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364279"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
@@ -36,11 +36,12 @@ ms.locfileid: "115664113"
 | [reporting HoloLens 详细信息的 CSP 更改](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 Csp | IT 管理员    | 20348.1403                 |
 | [由 CSP 控制的自动登录策略](#auto-login-policy-controlled-by-csp) | 用于自动登录帐户 | IT 管理员 | 20348.1405 |
 | [证书管理器的 PFX 文件支持](#pfx-file-support-for-certificate-manager) | 通过设置 UI 添加 PFX 证书 | 最终用户 | 20348.1405 |
-| [查看 HoloLens 上设置的高级诊断报告](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上的 MDM 诊断日志 | 疑难解答 | 20348.1405 |
-| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的视听反馈 | 疑难解答 | 20348.1405 |
+| [查看 HoloLens 上设置的高级诊断报告](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上的 MDM 诊断日志 | 故障排除 | 20348.1405 |
+| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的视听反馈 | 故障排除 | 20348.1405 |
 | [仅将专用应用商店应用用于 Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 将应用商店应用配置为仅显示组织中的应用 | IT 管理员 | 20348.1408 |
 | [低存储日志收集改进](#low-storage-log-collection-improvements) | 在低存储环境中对日志收集方案的改进。 | IT 管理员 | 20348.1412 |
-| [修复和改进](hololens-insider.md#fixes-and-improvements) | HoloLens 的修复和改进。 | 全部 | 20348.1411 |
+| [移动平台模式](#moving-platform-mode) | 引入了移动平台模式 beta，在配置后，可以在遇到低动态运动的大型海军船舶上使用 HoloLens 2。 | 全部 | 20348.1411 |
+| [修复和改进](#fixes-and-improvements) | HoloLens 的修复和改进。 | 全部 | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>reporting HoloLens 详细信息的 CSP 更改
 
@@ -135,11 +136,18 @@ DeviceStatus CSP 现在还会报告与 HoloLens 主动连接 Wi-Fi 网络的 SSI
 
 如果收集诊断日志时，设备的磁盘空间似乎不足，则将创建一个名为 **StorageDiagnostics.zip** 的附加报表。 Windows[存储感知](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)会自动确定低存储的阈值。
 
+### <a name="moving-platform-mode"></a>移动平台模式
+
+在 **内部版本 20348.1411** 中，我们添加了针对 HoloLens 2 上的低动态移动平台跟踪的测试支持。 安装生成并启用移动平台模式后，你将能够在以前无法访问的环境（如大型发货和大型海军船舶）中使用你的 HoloLens 2。 目前，此功能仅针对启用这些特定移动平台。 尽管不能防止您尝试在其他环境中使用该功能，但该功能的重点是首先添加对这些环境的支持。
+
+若要详细了解受支持的功能以及如何启用这项新功能，请 [访问移动平台页。](hololens2-moving-platform.md)
+
 ### <a name="fixes-and-improvements"></a>修复和改进
 
 - 修复了在 [未提示下载锁定文件的情况下设备门户的已知问题。](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - 修复了 [包含文件上传和下载超时的设备门户的已知问题。](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - 解决与 HoloLens 设备报告符合性属性有关的问题;可能需要重新启动才能在内幕生成上触发正确的报告。  
+- 已启用[分配的访问 API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) ，以便应用现在可以确定 HoloLens 是否在展台模式下为登录到 HoloLens 的用户运行。
 - 更新了全新闪烁的远程协助的内置版本。
 
 ## <a name="start-receiving-insider-builds"></a>开始接收 Insider 内部版本
