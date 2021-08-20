@@ -53,7 +53,7 @@
 #### [配置](hololens2-cloud-connected-configure.md)
 #### [部署](hololens2-cloud-connected-deploy.md)
 #### [维护](hololens2-cloud-connected-maintain.md)
-#### [连接到云的环境（外部客户端）部署指南](hololens2-deployment-guide.md)
+#### [外部客户端](hololens2-deployment-guide.md)
 ### 企业网络部署指南
 #### [概述](hololens2-corp-connected-overview.md)
 #### [准备](hololens2-corp-connected-prepare.md)
