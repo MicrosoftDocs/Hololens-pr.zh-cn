@@ -15,47 +15,47 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
+  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115659761"
+  ms.lasthandoff: 08/20/2021
+  ms.locfileid: "122610244"
 title: HoloLens 2 开发版常见问题解答
 summary: ''
 sections:
 - name: 一般问题
   questions:
   - question: >
-      使用开发版HoloLens 2什么？
+      使用 HoloLens 2 版可以获取哪些内容？
     answer: >
       HoloLens 2 Development Edition 包括 HoloLens 2、500 美元的 Azure 额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版。
   - question: >
       HoloLens 2 HoloLens 2 版之间有什么区别？
     answer: >
-      只能使用 HoloLens 2 Development Edition 来生成和测试内部企业应用程序，以在生产设置HoloLens 2 (商业版) 内部企业应用程序。 作为购买 Development Edition 的一部分，Microsoft 可以自行提供在结帐过程中确定的某些权利。 这些权利包括兑换某些折扣额度或在有限时段内试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options-dev-edition.md)
+      只能使用 HoloLens 2 Development Edition 来生成和测试内部企业应用程序，以与生产HoloLens 2 (商业版) 一起使用。 作为购买 Development Edition 的一部分，Microsoft 可以自行提供在结帐过程中确定的某些权利。 这些权利包括兑换某些折扣额度或在有限时段内试用某些 Microsoft 或第三方服务或工具的权利。 [了解详细信息](hololens2-options-dev-edition.md)
   - question: >
       可以使用任何版本的 HoloLens 2进行开发？
     answer: >
       是的。 任何版本的 HoloLens 2 都可用于开发应用。
   - question: >
-      如何接收 500 美元的 Azure 额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版？
+      如何以及是否会收到 500 美元的 Azure 额度、3 个月的 Unity Pro 试用版和 3 个月的 Pixyz 插件试用版？
     answer: >
-      折扣额度或试用访问权限将在产品发货后 2 个工作日发送到购买时使用的电子邮件。
+      折扣额度或试用访问权限将包含在 HoloLens 2 Edition 中。
   - question: >
-      能否将设备"升级"HoloLens 2 (设备) 升级到 HoloLens 2 Development Edition 以获得试用额度？
+      是否只能将HoloLens 2 (设备) 升级到 HoloLens 2 Development Edition 才能获取试用额度？
     answer: >
       否，我们不提供设备传输计划。 无法从任何版本转移到任何其他版本。
   - question: >
       什么是 Unity Pro？
     answer: >
-      Unity Pro是一个适用于小型/中型工作室/企业实时 3D 平台。 它专为混合了技术和非技术技能的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
+      Unity Pro是一个适用于小型/中型工作室/企业实时 3D 平台。 它专为技术和非技术技能组合的团队设计。 [了解详细信息](https://store.unity.com/products/unity-pro)
   - question: >
       什么是 Pixyz 插件？
     answer: >
       Pixyz 插件读取和转换几乎任何格式，优化并将其置于 Unity 中，并阶段化它，为实时应用程序提供随时可用资产。 [了解详细信息](https://unity.com/products/pixyz)
   - question: >
-      HoloLens 2版是否可用？
+      是否提供 HoloLens 2 开发版？
     answer: "是的[，HoloLens 2开发版](https://ms.liftforward.com/hololens?product=hololens-development-edition)目前仅在 美国。 \n"
   - question: >
       Who我与开发版权利HoloLens 2联系吗？
@@ -70,12 +70,12 @@ sections:
     answer: "HoloLens 2Development Edition 以独占方式在 Microsoft Store。  \n"
   - question: "能否返回我的 HoloLens 2 开发版？  \n"
     answer: >
-      所有销售都是最终销售，并且开发版HoloLens 2退款。
+      所有销售都是最终销售，开发版HoloLens 2退款。
   - question: >
-      开发人员版的硬件要求是否不同于HoloLens 2？
+      Developer Edition 的硬件要求是否不同于HoloLens 2？
     answer: "否，从硬件要求的角度来看，此设备是相同的。 允许在商业环境中辅助开发和/或测试应用程序的情况下部署 Development Edition。 \n"
   - question: >
-      如何使用 Mixed Reality Toolkit - Unity 在我的 HoloLens 2 开发版上进行开发？
+      如何使用混合现实 Toolkit - Unity 在我的 HoloLens 2 开发版上进行开发？
     answer: >
       MRTK-Unity 是由 Microsoft 驱动的项目，它提供了一系列组件和功能来加速 Unity 中的跨平台 MR 应用开发。 [了解详细信息](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
   - question: >
@@ -87,13 +87,13 @@ sections:
     answer: >
       是的。
   - question: >
-      我能否在) Development Edition (运行已发布的HoloLens 2或存储应用程序？
+      能否在 HoloLens 2 Development Edition (旁加载或) 应用程序？
     answer: >
       如果你正在考虑开发HoloLens 2条款和条件，可以，可以在 Developer Edition 中运行任何已发布的应用程序。 我们不限制对此 SKU 使用旁加载或存储的应用程序。
   - question: >
-      在哪里可以了解有关 HoloLens 2 版本？
+      在哪里可以了解有关 HoloLens 2 开发版？
     answer: >
-      请访问 HoloLens 2 Development Edition 文档页。 [了解详细信息](hololens2-options.md?tabs=device)
+      请访问 HoloLens 2 开发版文档页。 [了解详细信息](hololens2-options.md?tabs=device)
   - question: >
       在哪里可以了解有关开发混合现实解决方案的更多信息？
     answer: >
@@ -114,7 +114,7 @@ sections:
       使用三日历月 Unity Pro试用版可以访问 Unity&#39;，让专业人员能够创建、运营和盈利的完整解决方案。 相关 Unity Pro试用版没有兑换截止时间。
 
 
-      此产品/服务适用于新用户，不适用于已建立的 Unity Pro订阅。 Unity Pro可能受兑换时提供的其他条款限制。 查看适用的[ &amp; 条款条件和](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
+      此产品/服务适用于新用户，不适用于已建立的 Unity Pro订阅。 Unity Pro试用版可能受兑换时提供的其他条款限制。 查看适用的[ &amp; 条款条件和](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)[隐私策略](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)。
   - question: >
       如何兑换 Unity Pro试用版？
     answer: >
@@ -130,7 +130,7 @@ sections:
       4. 输入产品代码，然后选择&#39;兑换产品代码&#39;
 
 
-      若要了解HoloLens 2，请访问开发[版文档](hololens2-options.md?tabs=device)
+      有关详细信息，HoloLens 2 Development Edition[文档](hololens2-options.md?tabs=device)
   - question: >
       能否使用 PRO 许可证外的其他 Unity 版本生成应用程序？
     answer: >
@@ -138,7 +138,7 @@ sections:
   - question: >
       如何实现 Unity 支持人员？
     answer: >
-      若要获取有关 Unity ID、帐户、组织 (帐户) 订阅 (的任何问题) ，请访问 support.unity3d.com。
+      若要获取有关 Unity ID、帐户、组织 (和订阅) 的任何问题 () ，请访问 support.unity3d.com。
 - name: Pixyz
   questions:
   - question: >
@@ -163,11 +163,11 @@ sections:
       4. 输入产品代码，然后单击&#39;兑换产品代码&#39;
 
 
-      若要了解HoloLens 2，请访问开发[版文档](hololens2-options.md?tabs=device)
+      有关详细信息，HoloLens 2 Development Edition[文档](hololens2-options.md?tabs=device)
   - question: >
-      如何实现联系 Pixyz 支持部门？
+      如何实现 Pixyz 支持部门？
     answer: >
-      若要获取有关 Unity ID、帐户、组织帐户和订阅 (和订阅) 的任何问题 () ，请访问 support.unity3d.com
+      若要获取有关 Unity ID、帐户、组织帐户和订阅 (和订阅) 的 (帮助) ，请访问 support.unity3d.com
 
 
       有关兑换试用帐户 (Pixyz 特定的) ，[请访问](http://pixyz-software.com/support)Pixyz-software.com/support
@@ -179,9 +179,9 @@ sections:
       若要兑换 500 美元的 Azure 额度，请兑换Azure Pass促销代码并激活订阅。 [了解详细信息](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      查看Azure Pass [协议](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) 和 [套餐详细信息](https://azure.microsoft.com/en-us/offers/azure-pass/)。
+      查看Azure Pass[协议和](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US)[套餐详细信息](https://azure.microsoft.com/en-us/offers/azure-pass/)。
   - question: >
-      500 美元的 Azure 额度何时到期？
+      500 美元的 Azure 额度何时过期？
     answer: >
       500 美元的 Azure 额度将在激活 Azure 密钥代码 90 天后过期。
   - question: >
