@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 7438b147a31ff38233412a4213a568286fb2e3b8982bc4fd6af3f9dde842fd1a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
+ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662465"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122620805"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
 
@@ -250,7 +250,12 @@ ms.locfileid: "115662465"
        >
        > 对于使用以太网适配器的设备，必须在全新体验 (OOBE) 启动之前将设备连接到网络。 设备在第一个 OOBE 屏幕上确定是否将其预配为 Autopilot 设备。 如果设备无法连接到网络，或者如果选择不将设备预配为 Autopilot 设备，则以后无法更改为 Autopilot 预配。 相反，必须重新开始此过程，才能将设备预配为 Autopilot 设备。
 
-1. 设备应自动启动 OOBE。 不要与 OOBE 交互。 坐下来放松一下！ 让 HoloLens 2 检测网络连接并允许它自动完成 OOBE。 设备可能会在 OOBE 过程中重启。 OOBE 屏幕应类似于以下内容。
+1. 设备应自动启动 OOBE。 不要与 OOBE 交互。
+
+    > [!IMPORTANT]
+    > 在 Autopilot 部署期间，请勿与 OOBE 交互或按下电源按钮使系统进入待机/关闭状态。 这可能会导致 Autopilot 流无法完成。
+
+   让 HoloLens 2 检测网络连接并允许它自动完成 OOBE。 设备可能会在 OOBE 过程中重启。 OOBE 屏幕应类似于以下内容。
 
    ![OOBE 步骤 1](./images/autopilot-welcome.jpg)
    ![OOBE 步骤 2](./images/autopilot-step-complete.jpg)
