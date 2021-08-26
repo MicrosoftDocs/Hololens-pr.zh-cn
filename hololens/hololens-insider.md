@@ -16,35 +16,36 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
-ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
+ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122277148"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859011"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>适用于 Microsoft HoloLens 的 Insider Preview
 
-欢迎使用最新的 Insider Preview 内部版本HoloLens！ 只需开始操作[，](hololens-insider.md#start-receiving-insider-builds)并为下一次主要操作系统更新提供有价值的反馈，HoloLens。
+欢迎使用最新的 Insider Preview 内部版本HoloLens！ 可以很轻松开始[，](hololens-insider.md#start-receiving-insider-builds)并为下一次主要操作系统更新提供有价值的反馈，HoloLens。
 
 ## <a name="windows-insider-release-notes"></a>Windows预览体验成员发行说明
 
 我们很高兴地开始尝试新功能，以再次Windows预览体验成员。 新内部版本将前往开发和 Beta 通道获取最新更新。 在向预览体验成员内部版本添加更多功能和更新时，Windows更新此页面。 准备好将这些更新混合到现实中，
 
-本文介绍改进的故障排除和设备报告、展台模式下的一些修复 bug 和证书查看器、扩展的可管理性图面以及更新可靠性的提升。 即将发布此功能更新的一项新功能HoloLens移动平台模式。 查看所有新的出色的功能，HoloLens 2！
+本文介绍改进的故障排除和设备报告、展台模式下的一些修复 bug 和证书查看器、扩展的可管理性图面以及更新可靠性的提升。 即将发布此功能更新的一项新功能HoloLens移动平台模式。 查看所有适用于你的新HoloLens 2！
 
 | 功能                 | 说明                | 用户或方案 | 引入的生成 |
 |-------------------------|----------------------------|--------------|------------------|
-| [移动平台模式](#moving-platform-mode) | 引入了移动平台模式 beta 版本，在配置后，HoloLens 2遇到低动态运动的大型水陆上使用移动平台模式。 | 全部 | 20348.1411 |
-| [证书管理器的 PFX 文件支持](#pfx-file-support-for-certificate-manager) | 通过 UI 添加 PFX 设置证书 | 最终用户 | 20348.1405 |
-| [在诊断中查看设置诊断HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上 MDM 诊断日志 | 故障排除 | 20348.1405 |
-| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的省/市/服务反馈 | 故障排除 | 20348.1405 |
-| [低存储日志收集改进](#low-storage-log-collection-improvements) | 改进了低存储情况下的日志收集方案。 | 故障排除 | 20348.1412 |
-| [CSP 更改报表HoloLens详细信息](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 CSP | IT 管理员    | 20348.1403                 |
+| [移动平台模式](#moving-platform-mode) | 引入了移动平台模式 beta 版本，该版本在配置后HoloLens 2遇到低动态运动的大型水陆船上使用移动平台模式。 | 全部 | 20348.1411 |
+| [证书管理器的 PFX 文件支持](#pfx-file-support-for-certificate-manager) | 通过自定义 UI 添加 PFX 设置证书 | 最终用户 | 20348.1405 |
+| [在诊断中查看设置诊断HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | 查看设备上 MDM 诊断日志 | 疑难解答 | 20348.1405 |
+| [脱机诊断通知](#offline-diagnostics-notifications) | 日志收集的省/市/服务反馈 | 疑难解答 | 20348.1405 |
+| [低存储日志收集改进](#low-storage-log-collection-improvements) | 改进了低存储情况下的日志收集方案。 | 疑难解答 | 20348.1412 |
+| [针对报表和详细信息的 CSP HoloLens更改](#csp-changes-for-reporting-hololens-details) | 用于查询数据的新 CSP | IT 管理员    | 20348.1403                 |
 | [CSP 控制的自动登录策略](#auto-login-policy-controlled-by-csp) | 用于自动登录帐户 | IT 管理员 | 20348.1405 |
-| [改进了更新重启检测和通知](#improved-update-restart-detection-and-notifications) | 新的已启用策略和更新的 UX。 | IT 管理员 | 20348.1405 |
+| [改进了更新重启检测和通知](#improved-update-restart-detection-and-notifications) | 新的已启用策略和用于更新的 UX。 | IT 管理员 | 20348.1405 |
 | [应用更新的智能重试](#smart-retry-for-app-updates) | 允许 IT 管理员计划重试以更新应用。 | IT 管理员 | 20348.1405 |
 | [仅将专用应用商店应用用于Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 将应用商店应用配置为仅显示来自组织的应用 | IT 管理员 | 20348.1408 |
+| [使用 WDAC 和 LOB 应用](#use-wdac-and-lob-apps) | 允许 IT 管理员使用自己的应用，但仍使用 WDAC 阻止其他应用。 | IT 管理员 | 20348.1405 |
 | [修复和改进](#fixes-and-improvements) | 修复和改进了 HoloLens。 | 全部 | 20348.1411 |
 
 ### <a name="it-admin-insider-feature-checklist"></a>IT 管理员预览体验成员功能清单
@@ -52,23 +53,24 @@ ms.locfileid: "122277148"
 ✔️如果要将单个帐户设置为Azure AD登录，请 [配置此新 CSP。](#auto-login-policy-controlled-by-csp) <br>
 ✔️如果要将应用配置为在更新失败后自动尝试更新，请设置此 [新的 CSP 进行智能重试。](#smart-retry-for-app-updates) <br>
 ✔️若要对 OS 更新进行更多控制，请查看这些新 [启用的更新策略。](#improved-update-restart-detection-and-notifications) <br>
-✔️ 如果需要通过 Microsoft Store 使组织的应用在公司应用商店中可用，但只想允许访问组织的应用，而不允许访问整个应用商店，请设置[此策略。](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️若要了解设备可用存储空间、SSID 或 BSSID HoloLens请查看这些报表[IP。](#csp-changes-for-reporting-hololens-details)
+✔️如果需要通过 Microsoft Store 使组织的应用在公司应用商店中可用，但只想允许访问组织的应用而不是整个应用商店，请设置[此策略。](#use-only-private-store-apps-for-microsoft-store) <br>
+✔️若要了解设备可用存储空间、SSID 或 BSSID HoloLens请查看这些报表[IP。](#csp-changes-for-reporting-hololens-details) <br>
+✔️如果要使用 WDAC 阻止应用或进程启动，但还需要使用自己的一系列模糊应用，现在可以在 WDAC 策略 中允许[LOB。](#use-wdac-and-lob-apps)
 
 ### <a name="moving-platform-mode"></a>移动平台模式
 
-自 **Insider 内部版本 20348.1411** 起，我们添加了 beta 版本支持，用于跟踪 HoloLens 2 上的低动态运动移动平台。 安装生成并启用移动平台模式后，你将能够使用以前无法访问HoloLens 2环境（如大型飞船和大型水陆船）中的设备。 目前，该功能仅针对启用这些特定的移动平台。 虽然没有任何功能会阻止你尝试在其他环境中使用该功能，但该功能侧重于首先添加对这些环境的支持。
+自 **Insider 内部版本 20348.1411** 起，我们添加了 beta 版本支持，用于跟踪 HoloLens 2 上的低动态运动移动平台。 安装生成并启用移动平台模式后，你将能够使用以前无法访问HoloLens 2环境（如大型飞船和大型水陆船）中的设备。 目前，该功能的目标是仅启用这些特定的移动平台。 虽然你可以随意地尝试在其他环境中使用该功能，但该功能首先侧重于增加对这些环境的支持。
 
 若要详细了解支持的功能以及如何启用此新功能， [请访问移动平台页。](hololens2-moving-platform.md)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>证书管理器的 PFX 文件支持
 
-预览体验Windows内部版本 20348.1405 中引入。 我们已向证书管理器添加了 [支持](certificate-manager.md) ，现在使用 .pfx 证书。 当用户导航到 **"设置**  >  **更新&证书**  >  **"，** 然后选择"安装证书"时，UI 现在支持 .pfx 证书文件。 
+预览体验Windows内部版本 20348.1405 中引入。 我们已向证书管理器添加了 [支持](certificate-manager.md) ，现在使用 .pfx 证书。 当用户导航到 **"设置**  >  **更新&证书**  >  **"，** 然后选择"安装证书"时，UI现在支持 .pfx 证书文件。
 用户可以使用私钥将 .pfx 证书导入用户存储或计算机存储。
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>在诊断中查看设置诊断HoloLens
 
-对于排查行为问题时的托管设备，确认应用了预期的策略配置是一个重要步骤。 以前，若要使用这项新功能，在导出通过 **设置** 帐户访问工作或学校收集的 MDM 诊断日志后，必须通过 MDM 在设备外或附近完成此操作，然后选择"导出管理日志"，并查看附近的  ->    >  电脑。
+对于排查行为问题时的托管设备，确认应用了预期的策略配置是一个重要步骤。 以前，对于此新功能，在导出通过 **设置** 帐户访问工作或学校收集的 MDM 诊断日志后，必须通过 MDM 或附近的设备查看此信息，然后选择"导出管理日志"，并查看附近的  ->    >  电脑。
 
 现在，可以使用 Edge 浏览器在设备上查看 MDM 诊断。 若要更轻松地查看 MDM 诊断报告，请导航到"访问工作或学校"页，然后选择"**查看高级诊断报告"。** 这会在新的 Edge 窗口中生成并打开报表。
 
@@ -85,13 +87,13 @@ ms.locfileid: "122277148"
 
 由于用户通常使用脱机诊断作为回退日志收集机制，用于当用户无法访问显示器、无法登录或仍在 OOBE 中时，收集日志时也会播放音频提示。 除了 toast 通知之外，还将播放此声音。
 
-此新功能将在设备更新时启用，无需启用或管理。 如果无法显示或听到此新反馈，仍将生成脱机诊断。
+这项新功能将在设备更新时启用，不需要启用或管理。 如果无法显示或听不到此新反馈，则仍将生成脱机诊断。
 
-我们希望通过这种新添加的 feedback 反馈，可以更轻松地收集诊断数据，并更快排查问题。
+我们希望这种新的视听反馈增加，更易于收集诊断数据，并能更快地解决问题。
 
 ### <a name="low-storage-log-collection-improvements"></a>低存储日志收集改进
 
-在收集诊断日志时，设备似乎磁盘空间不足的情况下，将创建名为 **StorageDiagnostics.zip报表。** Windows[存储感知](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)会自动确定低存储的阈值。
+如果收集诊断日志时，设备的磁盘空间似乎不足，则将创建一个名为 **StorageDiagnostics.zip** 的附加报表。 Windows[存储感知](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)会自动确定低存储的阈值。
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>reporting HoloLens 详细信息的 CSP 更改
 
@@ -167,13 +169,17 @@ DeviceStatus CSP 现在还会报告与 HoloLens 主动连接 Wi-Fi 网络的 SSI
 
 ### <a name="smart-retry-for-app-updates"></a>应用更新的智能重试
 
-现在为 HoloLens 启用了新策略，该策略允许 IT 管理员设置定期或一次性日期，以重新启动由于正在使用的应用程序允许应用更新而导致更新失败的应用。 可以基于几个不同的触发器（如计划时间或登录）来设置这些设置。 若要了解有关如何使用此策略的详细信息，请参阅 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
+现在为 HoloLens 启用了新策略，该策略允许 IT 管理员设置定期或一次性日期，以重新启动由于正在使用的应用程序允许应用更新而导致更新失败的应用。 可以基于几个不同的触发器（如计划时间或登录）来设置这些设置。 若要了解有关如何使用此策略视图的详细信息，请参阅 [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)。
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>仅对 Microsoft Store 使用专用应用商店应用
 
 已为 HoloLens 启用 RequirePrivateStoreOnly 策略。 此策略允许将 Microsoft Store 应用配置为仅显示为组织配置的专用存储。 仅将访问权限限制为可用的应用。
 
 了解有关[ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)的详细信息
+
+### <a name="use-wdac-and-lob-apps"></a>使用 WDAC 和 LOB 应用
+
+你现在可以使用 WDAC 阻止应用或进程启动并继续使用你自己的 bushiness 应用程序。 你现在可以在 WDAC 策略中允许它们。 使用此策略时，需要在创建 WDAC 策略时在 PowerShell 中运行额外的代码行。 [查看此处的步骤。](/mem/intune/configuration/custom-profile-hololens)
 
 ### <a name="fixes-and-improvements"></a>修复和改进
 
@@ -226,33 +232,33 @@ Windows 有问必答现在正在移至频道。 **快速** 环将成为 **开发
 1. 在 PC 上：
     1. 从下载 ffu [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 。
 
-    1. 从 Microsoft Store 安装 ARC (高级恢复随附) ： [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 。
+    1. 从 (安装 ARC) 高级恢复助手 [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) Microsoft Store：。
 
-1. 在 HoloLens 航班解锁：打开 **设置**  >  **更新 & 安全**  >  **Windows 预览体验计划**，然后注册，重新启动设备。
+1. 在HoloLens - 航班解锁 **：打开** 设置  >  **Update & Security**  >  **Windows 会员计划，** 然后注册、重启设备。
 
-1. Flash FFU-现在可以使用 ARC 来刷新已签名的飞行 FFU。
+1. Flash FFU - 现在可以使用 ARC 刷出航班签名的 FFU。
 
-### <a name="provide-feedback-and-report-issues"></a>提供反馈和报告问题
+### <a name="provide-feedback-and-report-issues"></a>提供反馈并报告问题
 
-请使用 HoloLens 上[的反馈中心应用](hololens-feedback.md)提供反馈和报告问题。 使用反馈中心可确保包括所有必要的诊断信息，以帮助我们的工程师快速调试和解决问题。  HoloLens 中文版和日语版的问题应以相同的方式进行报告。
+请使用[反馈中心应用](hololens-feedback.md)HoloLens反馈并报告问题。 使用反馈中心可确保包含所有必要的诊断信息，以帮助工程师快速调试和解决问题。  应该以相同的方式报告HoloLens日文版本的问题。
 
 > [!NOTE]
-> 请确保接受提示，询问你是否想要反馈中心访问文档文件夹 (在出现) 提示时选择 **"是"** 。
+> 请务必接受提示，询问你是否希望反馈中心 Documents 文件夹， (系统提示时选择"是) 。 
 
-## <a name="note-for-developers"></a>开发人员注意事项
+## <a name="note-for-developers"></a>开发人员说明
 
-欢迎并鼓励你尝试使用 HoloLens 的内部版本来开发应用程序。  请查看开发人员[HoloLens文档](https://developer.microsoft.com/windows/mixed-reality/development)开始。 这些相同的说明与预览体验成员内部版本HoloLens。  可以使用已用于开发Visual Studio Unity 和 HoloLens版本。
+欢迎并鼓励你尝试使用预览体验成员内部版本开发HoloLens。  若要开始[HoloLens请参阅开发人员](https://developer.microsoft.com/windows/mixed-reality/development)文档。 这些相同的说明与预览体验成员内部版本HoloLens。  可以使用已用于开发Visual Studio Unity 和 HoloLens版本。
 
 ## <a name="stop-receiving-insider-builds"></a>停止接收预览体验内部版本
 
-如果不再想要接收 Windows Holographic 的预览体验内部版本，可以在 HoloLens 运行生产内部版本时选择退出，或者可以使用高级恢复助手将设备恢复到[](hololens-recovery.md)Windows Holographic 的非 Insider 版本。
+如果不再想要接收 Windows Holographic 的预览体验内部版本，可以在 HoloLens 运行生产内部版本时选择退出，或者可以使用高级恢复助手恢复设备[](hololens-recovery.md)，将设备恢复到 Windows Holographic 的非 Insider 版本。
 
 > [!CAUTION]
 > 存在一个已知问题：在手动重新安装新的预览版本后，从 Insider Preview 中取消注册的用户将遇到蓝屏。 之后，他们必须手动恢复其设备。 有关是否受到影响的完整详细信息，请查看有关此已知 [问题的详细信息](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)。
 
-若要验证HoloLens是否正在运行生产生成：
+若要验证HoloLens是否正在运行生产内部版本：
 
-1. 转到 **"设置 >系统>关于**"，并找到生成号。
+1. 转到 **"设置 >系统>关于"，** 并找到生成号。
 
 1. [有关生产内部版本号，请参阅发行说明](hololens-release-notes.md)。
 
