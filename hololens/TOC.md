@@ -93,7 +93,7 @@
 ### [使用预配程序包配置 HoloLens](hololens-provisioning.md)
 ### [通用设备限制](hololens-common-device-restrictions.md)
 ### [将 HoloLens 设置为网亭](hololens-kiosk.md)
-### [全局分配的访问 - 网亭](hololens-global-assigned-access-kiosk.md)
+### [HoloLens 展台参考信息](hololens-kiosk-reference.md)
 ### [Windows Defender 应用程序控制 - WDAC](windows-defender-application-control-wdac.md)
 ### [适用于 HoloLens 的页面设置 CSP 和 URI](settings-uri-list.md)
 ## 网络和连接性
