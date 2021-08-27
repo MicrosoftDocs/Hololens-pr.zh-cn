@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daab30a8ea5200ca145b6b0234b8bd060b8cec5f
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859067"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979366"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>将 HoloLens 设置为网亭
 
@@ -44,12 +44,12 @@ ms.locfileid: "122859067"
 |单应用展台 |已禁用 |已禁用 |已禁用 |已禁用   |已禁用 |已启用* |
 |多应用展台 |已启用 |已启用*  |可用*  |可用* |可用*   |已启用*  |
 
-若要详细了解如何启用已禁用的功能，或者语音命令如何与禁用的功能和Cortana交互，请参阅HoloLens [AUMIDs。](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
+\*若要详细了解如何启用已禁用的功能，或者语音命令如何与禁用的功能和Cortana交互，请参阅HoloLens [AUMIDs。](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>配置展台模式之前的主要一般注意事项
 
-1. 确定在环境中登录 Hololens 的用户帐户类型 - HoloLens 支持 Azure Active Directory (AAD) 帐户、Microsoft 帐户 (MSA) 和本地帐户。 此外，仅 AAD 联接设备支持临时创建的帐户（ (来宾/访问者) 。 有关详细信息，请通过管理用户标识[和登录HoloLens。](hololens-identity.md)
-2. 确定展台模式体验的目标 - 无论是每个人、单个用户、特定用户还是 AAD 组 (用户) 等等。
+1. 确定在环境中登录 HoloLens 的用户帐户类型 - HoloLens 支持 Azure Active Directory (AAD) 帐户、Microsoft 帐户 (MSA) 和本地帐户。 此外，仅 AAD 联接设备 (来宾/访问者临时创建的帐户) 。 有关详细信息，请通过管理用户标识[和登录HoloLens。](hololens-identity.md)
+2. 确定展台模式体验的目标 - 无论是每个人、单个用户、特定用户还是 AAD 组成员的用户 (用户) 等等。
 3. 对于多个应用展台模式，确定 (菜单) 显示的应用程序。 对于每个应用程序，都需要其应用程序[用户模型 ID (AUMID) AUMID。](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
 4. 确定是否将展台模式应用于HoloLens运行时预配包或移动设备管理 (MDM) 服务器。
 
@@ -58,18 +58,20 @@ ms.locfileid: "122859067"
 展台模式不应被视为安全方法，而应作为控制用户登录启动体验的一种方法。 如果有特定的安全相关需求，可以结合使用展台模式体验和下面提到的选项：
 
 - 如果设置配置为在展台模式下显示，并且想要控制应用中显示的页面设置，请参阅页面设置[可见性](settings-uri-list.md)
-- 若要控制对某些硬件功能（例如相机、蓝牙 等）的访问，请参阅 HoloLens 2 支持的策略 CSP 中的策略 - Windows[客户端管理](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)。 你可以查看我们的 [常见设备限制，了解](hololens-common-device-restrictions.md) 想法。
-- 展台模式不会阻止配置为 (展台体验一部分的应用) 启动其他应用。 若要完全阻止在 HoloLens 上启动某些应用/进程，请参阅在 Windows Defender 中的 HoloLens 2 设备上使用 Microsoft Intune[应用程序控制 - Azure](/mem/intune/configuration/custom-profile-hololens)
+- 若要控制对某些硬件功能（例如相机、蓝牙 等）的访问，请参阅 HoloLens 2 - Windows 客户端管理支持的策略[CSP](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)中的策略。 你可以查看我们的 [常见设备限制，了解](hololens-common-device-restrictions.md) 想法。
+- 展台模式不会阻止配置为 (展台体验一部分的应用) 启动其他应用。 若要完全阻止在 HoloLens Windows Defender 上启动某些应用/进程，请参阅在 HoloLens 2 中的 HoloLens 2 设备上使用 Microsoft Intune[应用程序控制 - Azure](/mem/intune/configuration/custom-profile-hololens)
 
 ## <a name="key-technical-considerations-for-kiosk-mode-for-hololens"></a>展台模式的主要技术注意事项HoloLens
 
 仅在计划使用运行时预配包或手动创建展台配置时适用。 展台模式配置使用基于 XML 的层次结构：
 
 - 分配的访问配置文件定义在展台模式下的"开始"菜单中显示的应用程序。 可以在同一 XML 结构中定义多个配置文件，稍后可引用。
-- 分配的访问权限配置引用配置文件和目标 (配置文件) 用户，例如特定用户、AAD 组或访问者等。可以在同一 XML 结构中定义多个配置，具体取决于使用方案的复杂性 (请参阅下面的支持方案) 。
+- 分配的访问权限配置引用配置文件和目标 (配置文件) ，例如特定用户、AAD 组或访问者等。可以在同一 XML 结构中定义多个配置，具体取决于使用方案的复杂性 (请参阅下面的支持方案) 。
 - 若要了解详情，请参阅 [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp)。
 
 ## <a name="supported-scenarios-for-kiosk-mode-based-on-identity-type"></a>基于标识类型的展台模式支持的方案
+
+请参阅 [参考链接](hololens-kiosk-reference.md#kiosk-xml-code-samples) ，了解基于方案的示例，并根据需要在复制粘贴之前进行更新。
 
 > [!NOTE]
 > 仅在不使用 Intune 的 UI 创建展台配置时，才使用 XML。
@@ -88,8 +90,8 @@ ms.locfileid: "122859067"
 | 登录的每个用户都会获得展台体验。 | [配置多个应用全局分配的访问权限配置文件](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 多应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全局分配的访问权限需要 [20H2 及更高版本](hololens-release-notes.md#windows-holographic-version-20h2) |
 | 登录的每个用户都会获得展台体验，但某些用户除外。 | [配置多个应用全局分配的访问权限配置文件 ](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners)，将某些用户 (必须是设备所有者的用户) 。 | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 多应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全局分配的访问权限需要 [20H2 及更高版本](hololens-release-notes.md#windows-holographic-version-20h2) |
 | 每个 AAD 用户都有特定于该用户的单独展台体验。 | [为指定其 AAD 帐户名称的每个用户配置分配的访问配置。](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 多应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| 不同 AAD 组的用户体验的展台模式仅适用于其组。 | [为每个所需的 AAD 组配置分配的访问配置。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 多应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • 当用户登录并HoloLens Internet 连接时，如果发现该用户是展台配置存在的 AAD 组的成员，则用户将体验该 AAD 组的展台。 <br> •[如果用户登录时没有可用的 Internet，则用户将遇到HoloLens模式行为。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • 如果用户登录时不保证 Internet 可用性，并且需要使用基于 AAD 组的展台，请考虑 [使用 AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)。 |
-| 出于临时目的需要HoloLens用户会获得展台体验。 | [为访问者配置分配的访问配置](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 单个应用](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • 临时用户帐户在登录时HoloLens创建，在临时用户注销时删除。 <br> • 考虑启用 [访问者自动登录策略](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience)。 |
+| 不同 AAD 组的用户体验的展台模式仅适用于其组。 | [为每个所需的 AAD 组配置分配的访问配置。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 多应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • 当用户登录并HoloLens Internet 连接时，如果发现该用户是展台配置存在的 AAD 组的成员，则用户将体验该 AAD 组的展台。 <br> •[如果用户登录时没有可用的 Internet，则用户HoloLens模式行为。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> • 如果用户登录时不保证 Internet 可用性，并且需要使用基于 AAD 组的展台，请考虑 [使用 AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)。 |
+| 出于临时目的需要HoloLens用户会获得展台体验。 | [为访问者配置分配的访问配置](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配 - 单个应用](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • 临时用户帐户在登录时HoloLens创建，在临时用户注销时删除。 <br> • 考虑启用 [访问者自动登录策略](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)。 |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>为用户配置展台模式HoloLens
 
@@ -110,7 +112,7 @@ ms.locfileid: "122859067"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-### <a name="how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience"></a>访问者帐户如何自动登录到展台体验？
+### <a name="how-can-visitor-accounts-automatically-logon-to-kiosk-experience"></a>访问者帐户如何自动登录到展台体验？
 
 在[Holographic Windows版本 21H1 及之后](hololens-release-notes.md#windows-holographic-version-21h1)的版本上：
 
@@ -118,7 +120,7 @@ ms.locfileid: "122859067"
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>Hololens 第一代 (是否支持展台) ？
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>第一代HoloLens (是否支持展台) ？
 
 展台模式仅在设备已打开时Windows Holographic for Business。 所有HoloLens 2设备都随 Windows Holographic for Business一起提供，并且没有其他版本。 每个HoloLens 2设备都能开箱即用地运行展台模式。
 
@@ -135,7 +137,7 @@ HoloLens (第一代) 需要同时升级 OS 内部版本和 OS 版本。 下面�
 
 ## <a name="troubleshooting"></a>疑难解答
 
-### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>问题 - 展台模式下的"开始"菜单中未显示任何应用？
+### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>问题 - 展台模式下的"开始"菜单中未显示任何应用
 
 **现象**
 
