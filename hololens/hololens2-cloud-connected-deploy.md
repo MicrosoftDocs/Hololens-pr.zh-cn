@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 593dc65ab97eaae65591a5239cd0a978750eac9fa538364ba6bbc7ef0a2a08a4
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 519770badab9f260316fe4cfff4bf453a7c971a7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660512"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189743"
 ---
 # <a name="deploy---cloud-connected-guide"></a>部署-云连接指南
 
@@ -38,7 +38,7 @@ ms.locfileid: "115660512"
 1. 选择 **设置** 应用，并选择 "**系统"。** 你&#39;的第一条信息是你的设备名称，HoloLens 2 设备的名称将为 HoloLens， &quot; &quot; 后跟六个字符串。
 1. 记下此名称。
 
-![HoloLens 2 设置-关于](./images/hololens2-settings-about.jpg)
+![HoloLens 2 设置-关于。](./images/hololens2-settings-about.jpg)
 
 7. 可以验证设备是否已成功注册到设置应用内的 Azure AD 中。 从 **设置** 选择 "**帐户**" "  ->  **访问工作或学校**"。 在此屏幕上，可以通过查看 &quot; 连接到 _nameofAAD_&#39;s Azure AD 来验证是否已成功注册。 通过 _yourusername_ @ _nameofAAD_. onmicrosoft.com 连接 &quot; 。
 
@@ -46,11 +46,11 @@ ms.locfileid: "115660512"
 若要验证设备是否已 Azure AD 联接，我们可以从[Azure 门户](https://portal.azure.com/#home)Azure Active Directory 设备 "" 所有设备 "中检查 Azure Active Directory  ->    ->    ->  ，并搜索设备名称。 &#39;可以看到该设备是 Azure Active Directory 的一部分。
 
 
-![Azure Active Directory-设备](./images/aad-enrollment.png)
+![Azure Active Directory-设备。](./images/aad-enrollment.png)
 
 接下来&#39;需要登录到[Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com/#home)。 登录并选择 " **设备** "，然后选择 " **所有设备**"。 可从此处搜索 HoloLens 设备&#39;的名称。 你应该能够看到你在 Intune 上列出的 HoloLens。
 
-![Intune-设备](./images/endpoint-all-devices-enrolled.png)
+![Intune-设备。](./images/endpoint-all-devices-enrolled.png)
 
 ## <a name="remote-assist-call-validation"></a>远程协助呼叫验证
 
@@ -73,7 +73,7 @@ ms.locfileid: "115660512"
 - [在混合现实中共享文件和视图](/dynamics365/mixed-reality/remote-assist/display-save-files)
 - [在另一个 HoloLens 应用中获取帮助](/dynamics365/mixed-reality/remote-assist/get-help-hololens-app-hololens)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 > [!div class="nextstepaction"]
 > [云连接部署-维护](hololens2-cloud-connected-maintain.md)

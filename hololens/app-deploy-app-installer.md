@@ -1,5 +1,5 @@
 ---
-title: 如何旁加载并安装应用HoloLens 2 应用安装程序
+title: 如何旁加载和安装应用HoloLens 2 应用安装程序
 description: 了解如何使用应用安装程序安装和排查应用问题，以及如何通过 UI 旁加载和安装应用。
 keywords: 应用管理， 应用， hololens， 应用安装程序
 author: evmill
@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0b0de9039ce4d0c1eeab968b0f7c2f5eee8cdc34739391b6022b409325955350
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665261"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188910"
 ---
-# <a name="install-apps-on-hololens-2-via-app-installer"></a>通过 应用安装程序 在 HoloLens 2 安装应用
+# <a name="install-apps-on-hololens-2-via-app-installer"></a>通过 HoloLens 2 在 应用安装程序
 
 > [!NOTE]
 > 此功能在 Holographic 版本[20H2 Windows 2020 年 12](hololens-release-notes.md)月更新中提供。 确保设备 [已更新为](hololens-update-hololens.md) 使用此功能。
 
-我们 **添加了新功能 (应用安装程序) ，** 让你能够更无缝地在 HoloLens 2 设备上安装应用程序。 对于非 **托管设备，此功能默认为打开状态**。 为了防止企业中断，应用安装程序 **目前不适用于托管** 设备。  
+我们 **添加了一项新功能 (应用安装程序) ，** 让你能够更无缝地在 HoloLens 2 设备上安装应用程序。 对于非 **托管设备，此功能默认为打开状态**。 为了防止企业中断，应用安装程序 **目前不适用于托管** 设备。  
 
 如果以下任一情况 **成立，则** 设备被视为"托管"设备：
 
@@ -34,7 +34,7 @@ ms.locfileid: "115665261"
 - 配置了 [预配包](hololens-provisioning.md)
 - 用户 [标识](hololens-identity.md) Azure AD
 
-现在可以安装应用，而无需启用开发人员模式或设备门户。  通过 USB Microsoft Edge) Appx 捆绑包将 (下载到设备，然后导航到 文件资源管理器 中的 Appx 捆绑包，以提示你启动安装。  或者， [从网页 启动安装](/windows/msix/app-installer/installing-windows10-apps-web)。 与从 Microsoft Store 安装的应用或使用 MDM 的 LOB 应用部署功能旁加载的应用一样，应用需要使用签名工具进行数字签名[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)，并且用于签名[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)的证书必须受 HoloLens 设备信任，然后才能部署应用。
+现在可以安装应用，而无需启用开发人员模式或设备门户。  通过 (USB Microsoft Edge) Appx 捆绑包Microsoft Edge) 下载应用包，并导航到 文件资源管理器 中的 Appx 捆绑包，以提示你启动安装。  或者， [从网页 启动安装](/windows/msix/app-installer/installing-windows10-apps-web)。 就像使用 MDM 的 LOB 应用部署功能从 Microsoft Store 安装的应用或旁加载一样，应用需要使用签名工具进行数字签名，[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)并且用于签名的[](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations)证书必须受 HoloLens 设备信任，然后才能部署应用。
 
 ## <a name="requirements"></a>要求
 
@@ -73,7 +73,7 @@ ms.locfileid: "115665261"
 
 安装完成后，已安装的应用将自动启动。
 
-![通过 应用安装程序 安装 MRTK 示例](images/hololens-app-installer-picture.jpg)
+![通过 应用安装程序 安装 MRTK 示例。](images/hololens-app-installer-picture.jpg)
 
 ### <a name="troubleshooting-installs"></a>安装疑难解答
 
@@ -107,6 +107,6 @@ ms.locfileid: "115665261"
 
 ## <a name="sample-apps"></a>示例应用
 
-尝试使用应用安装程序示例应用之一来试用该示例。 
+尝试使用应用安装程序示例应用之一进行试用。 
 > [!div class="nextstepaction"]
 > [示例应用](/windows/mixed-reality/develop/features-and-samples)

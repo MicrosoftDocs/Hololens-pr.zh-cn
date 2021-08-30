@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660065"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190202"
 ---
 # <a name="prepare---corporate-connected-guide"></a>准备-企业连接指南
 ## <a name="infrastructure-essentials"></a>基础结构概要
@@ -69,11 +69,11 @@ Dynamics 365 Guides 是一种基于云的应用程序。 如果网络管理员�
 
 - [证书颁发机构](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj125375(v=ws.11))
 - [NDES 服务器角色](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
-- [Microsoft Intune 连接器](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
+- [Microsoft IntuneConnector](/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
 还必须使用 [Azure AD 应用程序代理或 Web 访问 proxy](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application)将 NDES URL 发布到公司网络。 也可以使用所选的其他反向代理。
 
-![SCEP 数据流](./images/hololens2-scep-info-flow.png)
+![SCEP 数据流。](./images/hololens2-scep-info-flow.png)
 
 如果你的网络尚不支持 SCEP，或者你不确定是否已为 SCEP 和 Intune 正确设置了网络，则参考  [配置基础结构以支持通过 intune 的 scep](/mem/intune/protect/certificates-scep-configure)。
 
@@ -82,7 +82,7 @@ Dynamics 365 Guides 是一种基于云的应用程序。 如果网络管理员�
 ## <a name="pkcs"></a>PKCS
 Intune 还支持对 (PKCS) 证书使用私钥和公钥对。 有关详细信息，[请参阅在 Microsoft Intune 中使用私钥和公钥证书](/mem/intune/protect/certificates-pfx-configure)。
 
-## <a name="proxy"></a>Proxy (代理)
+## <a name="proxy"></a>代理
 大多数公司 intranet 网络都利用代理来管理外部流量。 使用 HoloLens 2 可以为以太网、Wi-Fi 和 VPN 连接配置代理服务器。
 
 有几种不同类型的代理和配置代理的方式。 出于本指南的目的，我们将选择 **"wi-fi 代理"、"通过 PAC URL 设置"，并通过 MDM 部署**。 这就是通过 MDM 自动部署的优点，能够更新 PAC 文件而不是使用服务器：端口配置，最后使用 Wi-Fi proxy 将代理配置为仅应用于单个 Wi-Fi 连接，这样，即使在其他位置连接，仍可使用设备。
@@ -104,6 +104,6 @@ Intune 还支持对 (PKCS) 证书使用私钥和公钥对。 有关详细信息�
 ## <a name="guides-playbook"></a>向导手册手册
 指南使用 Microsoft Dataverse 环境作为指导应用的数据存储。 务必了解 Dataverse 环境如何与指南应用和租户进行交互的更大的图片。 在本指南中，我们不会介绍如何管理 dataverse，但请查看[有关部署 Dynamics 365 Guides-Dynamics 365 混合现实的基本概念](/dynamics365/mixed-reality/guides/admin-deployment-playbook)。
 
-## <a name="next-step"></a>下一步 
+## <a name="next-step"></a>后续步骤 
 > [!div class="nextstepaction"]
 > [企业连接部署-配置](hololens2-corp-connected-configure.md)

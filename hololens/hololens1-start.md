@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661859"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189862"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>设置 HoloLens（第 1 代）
 
@@ -67,11 +67,11 @@ HoloLens (的第一代) 使用瞳孔 (IPD 或[interpupillary 距离](https://en.
 
 校准期间，HoloLens 要求您将手指与每个眼睛的六个目标的一系列对齐。 HoloLens 使用此过程为眼睛设置正确的 IPD。 如果需要更新或调整新用户的校准，则新用户可以在安装程序外运行校准应用。
 
-![第二步中的 IPD 手指对齐屏幕](./images/ipd-finger-alignment-300px.jpg)
+![第二步，IPD finger 对齐屏幕。](./images/ipd-finger-alignment-300px.jpg)
 
 *第二步中的 IPD 手指对齐屏幕*
 
-恭喜！ 安装程序已完成，可以开始使用 HoloLens。
+祝贺你！ 安装程序已完成，可以开始使用 HoloLens。
 
 ## <a name="next-steps"></a>后续步骤
 

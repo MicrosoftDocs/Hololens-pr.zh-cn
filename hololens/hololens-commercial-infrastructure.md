@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664477"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122858994"
 ---
 # <a name="configure-your-network-for-hololens"></a>为 HoloLens 配置网络
 
@@ -180,7 +180,7 @@ Intune 包含名为“更新通道”的功能，适用于 Windows 10 设备，�
 
 ![此图显示 Intune 中的展台模式配置](images/aad-kioskmode.png)
 
-对于其他 MDM 服务，请参阅提供商文档中的说明。 如果需要使用自定义设置和完整 XML 配置在 MDM 服务中设置展台，请参阅 [HoloLens 展台](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)说明。
+对于其他 MDM 服务，请参阅提供商文档中的说明。 如果需要使用自定义设置和完整 XML 配置在 MDM 服务中设置展台，请参阅 [HoloLens 展台](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)说明。
 
 ## <a name="certificates-and-authentication"></a>证书和身份验证
 

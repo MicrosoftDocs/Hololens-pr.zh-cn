@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662213"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189250"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>准备好使用你的 HoloLens（第 1 代）
 
@@ -27,7 +27,7 @@ ms.locfileid: "115662213"
 
 若要对 HoloLens 进行计费，请使用随附的微 USB 电缆将电源连接到充电端口。 然后，将电源插入电源插座。 设备充电时，电池指示器将以波形模式亮起。
 
-![显示如何将微 USB 电缆连接到 HoloLens 的图像](./images/hololens-charging.png)
+![此图像显示了如何将微 USB 电缆连接到 HoloLens。](./images/hololens-charging.png)
 
 当 HoloLens 处于打开时，电池指示器会按增量显示电池电量水平。 当五盏灯中只有一盏亮起时，表示电池剩余电量低于 20%。 如果在电池剩余电量严重不足时你尝试打开设备，则一盏灯将会短暂闪烁，然后熄灭。
 
@@ -44,17 +44,17 @@ ms.locfileid: "115662213"
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. 将 headband 向上旋转约20-30 度。|![第一步，旋转 headband](./images/FitGuideStep1.png)|
-|2. 将 headband 推送回来。 不要将其拉回，或操作枢轴后面的频带，因为这可能会破坏带的时间。|![步骤2，推送 headband](./images/FitGuideStep2.png)|
-|3. 将调整轮旋转，使其 headband。 |![步骤3，使用调整轮扩展 headband](./images/FitGuideStep3.png)|
-|4. 通过设备臂抓住设备，并将其放在你的头上。 请确保 headband 位于 forehead 的顶部，然后拧紧调整滚轮。|![步骤4，放入设备并调整 headband](./images/FitGuideStep4.png)|
-|5. 向后滑动面板，然后检查设备是否合适。 Headband 应位于 forehead 的顶部，看看你的耳上方的扬声器。 重用功能区应在您的眼睛上居中。|![步骤5，滑回面板，并选中 "适合"](./images/FitGuideSetep5.png)|
+|1. 将 headband 向上旋转约20-30 度。|![单步执行，旋转 headband。](./images/FitGuideStep1.png)|
+|2. 将 headband 推送回来。 不要将其拉回，或操作枢轴后面的频带，因为这可能会破坏带的时间。|![步骤2，将 headband 推送回来。](./images/FitGuideStep2.png)|
+|3. 将调整轮旋转，使其 headband。 |![步骤3：使用调整轮来扩展 headband。](./images/FitGuideStep3.png)|
+|4. 通过设备臂抓住设备，并将其放在你的头上。 请确保 headband 位于 forehead 的顶部，然后拧紧调整滚轮。|![步骤4：将设备放在设备上，并调整 headband。](./images/FitGuideStep4.png)|
+|5. 向后滑动面板，然后检查设备是否合适。 Headband 应位于 forehead 的顶部，看看你的耳上方的扬声器。 重用功能区应在您的眼睛上居中。|![第五步：向后滑动面板并检查合适的大小。](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>开启 HoloLens
 
 使用 "电源" 按钮打开和关闭 HoloLens 或者将其置于备用模式。
 
-![显示 HoloLens 电源按钮的图像](./images/hololens-power.png)
+![显示 HoloLens 电源按钮的图像。](./images/hololens-power.png)
 
 如果设备未响应或无法启动，请参阅[重新启动、重置或恢复 HoloLens](hololens-restart-recover.md)。
 
@@ -79,11 +79,11 @@ ms.locfileid: "115662213"
 
 "亮度" 和 "音量" 按钮位于 "设备" 扶手上， &mdash; 从右侧和亮度到左侧。
 
-![显示 "HoloLens" 按钮的图像](./images/hololens-buttons.jpg)
+![显示 "HoloLens" 按钮的图像。](./images/hololens-buttons.jpg)
 
 ## <a name="hololens-indicator-lights"></a>HoloLens 指示器光源
 
-![显示 HoloLens 指示器光源的图像](./images/hololens-lights.png)
+![显示 HoloLens 指示器光源的图像。](./images/hololens-lights.png)
 
 不确定 HoloLens 上的指示灯表示什么？ 下面是一些帮助。
 

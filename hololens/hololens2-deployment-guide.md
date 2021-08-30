@@ -1,6 +1,6 @@
 ---
-title: 将云连接HoloLens 2外部客户端
-description: '使用远程HoloLens 2为外部客户端 (部署指南作为示例) '
+title: 将云连接HoloLens 2部署到外部客户端
+description: '使用远程辅助HoloLens 2外部客户端 (部署指南作为示例) '
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
@@ -13,22 +13,22 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401127"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190321"
 ---
-# <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>将云连接HoloLens 2外部客户端
+# <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>将云连接HoloLens 2部署到外部客户端
 
-本指南是对云连接部署指南 [的补充](hololens2-cloud-connected-overview.md)。 它用于组织希望将设备HoloLens 2外部客户端设施供短期或长期使用的情况。 外部客户端将使用组织HoloLens 2凭据登录到 Remote Assist 设备，并联系专家。 [](/dynamics365/mixed-reality/remote-assist/ra-overview) 本指南提供了[一HoloLens 2](#general-deployment-recommendations)部署建议，这些建议适用于大多数HoloLens 2部署方案，以及客户在部署外部Remote Assist时常见的问题。 [](#common-external-client-deployment-concerns) 
+本指南是对云连接部署指南 [的补充](hololens2-cloud-connected-overview.md)。 它用于组织希望将设备HoloLens 2外部客户端设施供短期或长期使用的情况。 外部客户端将使用组织HoloLens 2凭据登录到 Remote Assist 设备，并联系专家。 [](/dynamics365/mixed-reality/remote-assist/ra-overview) 本指南提供了[一HoloLens 2](#general-deployment-recommendations)部署建议，这些建议适用于大多数外部部署HoloLens 2以及客户在部署外部使用的 Remote Assist时常见的问题。 [](#common-external-client-deployment-concerns) 
 
 ## <a name="prerequisites"></a>先决条件
 
-应按照云连接部署指南部署以下基础结构[，](hololens2-cloud-connected-overview.md)以在HoloLens 2部署。
+应按照云连接部署指南部署以下基础结构[](hololens2-cloud-connected-overview.md)，以在HoloLens 2部署。
 
-- Azure AD MDM 自动注册 - MDM 托管 (Intune) 
+- Azure AD MDM 自动注册加入 - MDM 托管 (Intune) 
 - 用户使用自己的公司帐户登录 (Azure AD) 
     - 支持每个设备的一个或多个用户。
 
@@ -51,7 +51,7 @@ ms.locfileid: "122401127"
 
 ## <a name="general-deployment-recommendations"></a>常规部署建议
 
-对于外部部署，建议HoloLens 2步骤：
+建议为外部部署部署HoloLens 2步骤：
 
 1. 使用[最新的 HoloLens OS 版本](https://aka.ms/hololens2download)作为基线版本。
 1. 按照以下步骤分配基于用户或基于设备的许可证：
@@ -70,13 +70,13 @@ ms.locfileid: "122401127"
 
 1. 禁用以下 (可选) 功能：
     1. 能够在此处将设备置于开发人员 [模式](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)。
-    1. 能够将 HoloLens连接到电脑以复制日期禁用[USB。](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+    1. 能够将HoloLens连接到电脑以复制日期禁用[USB。](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
        > [!NOTE]
         > 如果不想禁用 USB，但希望能够使用 USB 将预配包应用到设备，请按照有关如何允许预配包安装 [的说明进行操作](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)。
 
-1. 使用[Windows Defender 应用程序控制 (WDAC) ](/hololens/windows-defender-application-control-wdac)允许或阻止设备上HoloLens 2应用。
+1. 使用[Windows Defender 应用程序控制 (WDAC) ，](/hololens/windows-defender-application-control-wdac)以允许或阻止设备上HoloLens 2应用。
 1. 在Remote Assist更新到最新版本。 请考虑以下两个选项：
-    1. 转到"Windows Microsoft Store **--> Remote Assist --> 更新应用"。**
+    1. 转到"Windows Microsoft Store **--> Remote Assist --> 和更新应用"**。
     1. [ApplicationManagement/AllowAppStoreAutoUpdate（](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 允许自动应用更新）默认启用。 让设备保持插入状态以接收更新。
 1. [禁用除网络设置](/hololens/settings-uri-list) 之外的所有设置页，以允许用户连接到客户端站点中的来宾网络。
 1. [管理 HoloLens 更新](/hololens/hololens-updates)
@@ -98,7 +98,7 @@ ms.locfileid: "122401127"
 Remote Assist HoloLens HoloLens调用。 客户端可以搜索，但不能相互通信。 [客户端中的信息Microsoft 365](/microsoft-365/compliance/information-barriers)可以进一步限制客户端可以搜索和调用谁。 另一个选项是使用[Microsoft Teams范围的目录搜索](/MicrosoftTeams/teams-scoped-directory-search)。
 
  > [!NOTE]
-> 由于已启用单一登录，因此使用 WDAC Windows Defender 应用程序控制 (禁用[) 。 ](/hololens/windows-defender-application-control-wdac) 如果外部客户端打开浏览器并使用 web 版本的 Teams，则客户端将有权访问聊天历史记录。
+> 由于已启用单一登录，因此在使用 WDAC Windows Defender应用程序控制 (禁用[) 。 ](/hololens/windows-defender-application-control-wdac) 如果外部客户端打开浏览器并使用 web 版本的 Teams，则客户端将有权访问聊天历史记录。
 
 ### <a name="ensure-that-clients-wont-have-access-to-company-resources"></a>确保客户端无法访问公司资源
 
@@ -114,11 +114,11 @@ Remote Assist HoloLens HoloLens调用。 客户端可以搜索，但不能相互
 
 **图像 1.1**
 
-![服务租户映像](./images/hololens-service-tenant-image.png)
+![服务租户映像。](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>隐藏或受限应用
 
-[展台模式](/hololens/hololens-kiosk)和/或[Windows Defender应用程序 (WDAC) ](/hololens/windows-efender-application-control-wdac)是隐藏和/或限制应用程序的选项。
+[展台模式](/hololens/hololens-kiosk)和/或[Windows Defender应用程序控制 (WDAC) ](/hololens/windows-efender-application-control-wdac)是隐藏和/或限制应用程序的选项。
 
 ### <a name="password-management-for-your-clients"></a>客户端的密码管理
 
@@ -132,4 +132,4 @@ Remote Assist HoloLens HoloLens调用。 客户端可以搜索，但不能相互
 Remote Assist会话后清除聊天历史记录。 但是，聊天历史记录将可供Microsoft Teams用户使用。
 
 > [!NOTE]
-> 由于已启用单一登录，因此使用 WDAC Windows Defender 应用程序控制 (禁用[) 。 ](/hololens/windows-defender-application-control-wdac)  如果外部客户端打开浏览器并使用 web 版本的 Teams，则客户端将有权访问呼叫/聊天历史记录。
+> 由于已启用单一登录，因此在使用 WDAC Windows Defender应用程序控制 (禁用[) 。 ](/hololens/windows-defender-application-control-wdac)  如果外部客户端打开浏览器并使用 web 版本的 Teams，则客户端将有权访问呼叫/聊天历史记录。

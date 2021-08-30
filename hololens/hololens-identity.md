@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 11a5680ea2b27a277bc4eb5b1dc0e62a2c602312
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: e4c68ad6535293f916cc92c42204954110edc4fe
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858448"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189539"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>管理 HoloLens 的用户标识和登录
 
@@ -88,11 +88,11 @@ HoloLens 支持来自同一 Azure AD 租户的多个用户。 若要使用此功
 
 在 "其他用户" 菜单中，"其他用户" 按钮将显示最后一个登录到设备的用户。 选择此按钮可返回到此用户的登录屏幕。
 
-![登录屏幕默认值](./images/multiusers1.jpg)
+![登录屏幕默认值。](./images/multiusers1.jpg)
 
 <br>
 
-![其他用户登录屏幕](./images/multiusers2.jpg)
+![其他用户的登录屏幕。](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>删除用户
 
@@ -118,11 +118,11 @@ HoloLens 支持来自同一 Azure AD 租户的多个用户。 若要使用此功
 
 ### <a name="is-windows-hello-for-business-supported-on-hololens-1st-gen"></a>第 1 代Windows Hello是否支持 HoloLens (for Business) ？
 
-Windows Hello第一代 (支持使用 PIN) HoloLens (企业) 。 若要Windows Hello企业 PIN 登录，请HoloLens：
+Windows Hello企业 (第一代) 支持使用 PIN HoloLens (登录) 。 若要Windows Hello企业 PIN 登录，请HoloLens：
 
 1. 设备HoloLens必须由[MDM 管理](hololens-enroll-mdm.md)。
-1. 必须为设备Windows Hello企业应用。  ([请参阅有关Microsoft Intune) ](/intune/windows-hello)
-1. 在HoloLens，用户可以使用"设置选项  >  **""** 添加  >  **PIN"** 来设置 PIN。
+1. 必须为设备Windows Hello企业应用。  ([请参阅有关 Microsoft Intune) 的说明。](/intune/windows-hello)
+1. 在HoloLens，用户可以使用"登录  >  **设置""** 添加  >  **PIN"** 来设置 PIN。
 
 > [!NOTE]
 > 使用密码登录的用户Microsoft 帐户登录选项添加 PIN **设置**  >  **设置**  >  **PIN。** 此 PIN 与[Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello)相关联，而不是[Windows Hello企业 。](/windows/security/identity-protection/hello-for-business/hello-overview)
@@ -135,24 +135,24 @@ HoloLens 2 Iris 身份验证。 Iris 基于Windows Hello技术，并且支持由
 
 ### <a name="where-is-iris-biometric-information-stored"></a>Iris 生物识别信息存储在何处？
 
-Iris 生物识别信息根据每个HoloLens本地Windows Hello[存储](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored)。 它未共享，受两层加密保护。 其他用户（甚至是管理员）无法访问它，因为应用程序上没有管理员HoloLens。
+Iris 生物识别信息根据每个HoloLens本地Windows Hello[存储](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored)。 它未共享，受两层加密保护。 其他用户（甚至是管理员）都无法访问它，因为应用程序上没有管理员HoloLens。
 
 ### <a name="do-i-have-to-use-iris-authentication"></a>是否必须使用 Iris 身份验证？
 否，可以在安装过程中跳过此步骤。 
 
-![设置 Iris](./images/setup-iris.png)
+![设置 Iris。](./images/setup-iris.png)
 
 HoloLens 2提供了许多不同的身份验证选项，包括 FIDO2 安全密钥。
 
 ### <a name="can-iris-information-be-removed-from-the-hololens"></a>Iris 信息能否从HoloLens？
-是的，可以在"设置"中手动设置。
+是的，可以在 设置 中手动将其删除。
 
 
 ### <a name="how-does-the-type-of-account-affect-sign-in-behavior"></a>帐户类型如何影响登录行为？
 
 如果应用登录策略，则会始终遵循该策略。 如果未应用登录策略，则每个帐户类型的默认行为为：
 
-- **Azure AD：** 默认要求进行身份验证，设置 **配置为不再** 请求身份验证。
+- **Azure AD：** 默认要求进行身份验证，设置 **配置为不再** 要求进行身份验证。
 - **Microsoft 帐户：** 锁定行为不同，允许自动解锁，但在重新启动时仍然需要登录身份验证。
 - **本地帐户**：始终以密码形式要求进行身份验证，在密码中不可 **设置**
 

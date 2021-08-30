@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662724"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189930"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens（第 1 代）BitLocker 加密
 
@@ -51,7 +51,7 @@ HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，
 1. [为 HoloLens 创建预配包。](hololens-provisioning.md)
 1. 请参阅 **运行时设置**  >  **策略**  >  **安全性**，然后选择 **RequireDeviceEncryption**。
 
-    ![“要求设备加密”设置配置为“是”](images/device-encryption.png)
+    ![要求设备加密设置配置为 "是"。](images/device-encryption.png)
 
 1. 找到购买商用套件时提供的 XML 许可证文件。
 
@@ -78,7 +78,7 @@ HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，
 
     或者，你还可以单击“浏览”更改默认输出位置。
 
-1. 单击“下一步” 。
+1. 单击“下一步”。
 1. 单击“构建”开始构建程序包。 项目信息会显示在构建页面中，并且进度栏会指示构建状态。
 1. 构建完成后，单击 **完成**。
 
@@ -101,4 +101,4 @@ HoloLens (第一代) 和 HoloLens 2 都支持使用 BitLocker 的设备加密，
 
 - 在 HoloLens 上，请参阅有关的 **设置**  >  **系统**  >  。 如果设备已加密，则 **启用** **BitLocker** 。 
 
-    ![显示启用了 BitLocker 的屏幕](images/about-encryption.png)
+    !["关于" 屏幕显示启用了 BitLocker。](images/about-encryption.png)
