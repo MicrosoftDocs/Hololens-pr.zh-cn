@@ -13,21 +13,21 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
-ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
+ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
+ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122620805"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122782801"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
 
 > [!NOTE]
 > Microsoft Endpoint Manager 中 HoloLens 的 Autopilot 配置将从“公共预览”转换为“正式发布” 。 所有租户都可在 MEM 管理中心设置 Autopilot。
 
-从 Windows 全息版 2004 开始，HoloLens 2 支持使用 Microsoft Intune 的 Windows Autopilot [自部署模式](/mem/autopilot/self-deploying)（不支持第三方 MDM）。 管理员可在 Microsoft Endpoint Manager 中配置全新体验 (OOBE)，并允许终端用户在几乎没有交互的情况下为业务使用准备设备。 这减少了库存管理开销、动手准备设备的成本以及员工在设置过程中的支持电话。 在 [Windows Autopilot](/mem/autopilot/windows-autopilot) 文档中了解详细信息。
+从 Windows 全息版 2004 开始，HoloLens 2 支持使用 Microsoft Intune 的 Windows Autopilot [自部署模式](/mem/autopilot/self-deploying)（不支持第三方 MDM）。 管理员可在 Microsoft Endpoint Manager 中配置全新体验 (OOBE)，并允许终端用户在几乎没有交互的情况下为业务使用准备设备。 这样配置减少了库存管理开销、动手准备设备的成本以及员工在设置过程中的支持电话。 在 [Windows Autopilot](/mem/autopilot/windows-autopilot) 文档中了解详细信息。
 
-与 Surface 设备一样，我们建议客户与其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)（经销商或分销商）合作，通过合作伙伴中心将设备注册到 Autopilot 服务。 [添加设备](/mem/autopilot/add-devices)文档中概述了设备注册的其他方法，不过利用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
+与 Surface 设备一样，我们建议客户与其 Microsoft [云解决方案提供商](https://partner.microsoft.com/cloud-solution-provider)（经销商或分销商）合作，通过合作伙伴中心将设备注册到 Autopilot 服务。 [添加设备](/mem/autopilot/add-devices)文档中概述了设备注册的其他方法，不过使用 Microsoft 的渠道合作伙伴可确保最有效的端到端路径。
 
 
 
@@ -51,15 +51,17 @@ ms.locfileid: "122620805"
 
 1. [启用自动 MDM 注册](#2-enable-automatic-mdm-enrollment)
 
-1. [在 Windows Autopilot 中注册设备。](#3-register-devices-in-windows-autopilot)
+1. （仅针对 Intune）[请确保未阻止 Windows 设备进行 MDM 注册。](/mem/intune/enrollment/enrollment-restrictions-set)
 
-1. [创建设备组。](#4-create-a-device-group)
+1. [在 Windows Autopilot 中注册设备。](#4-register-devices-in-windows-autopilot)
 
-1. [创建部署配置文件。](#5-create-a-deployment-profile)
+1. [创建设备组。](#5-create-a-device-group)
 
-1. [验证注册状态页 (ESP) 配置。](#6-verify-the-esp-configuration)
+1. [创建部署配置文件。](#6-create-a-deployment-profile)
 
-1. [验证 HoloLens 设备的配置文件状态。](#7-verify-the-profile-status-of-the-hololens-devices)
+1. [验证注册状态页 (ESP) 配置。](#7-verify-the-esp-configuration)
+
+1. [验证 HoloLens 设备的配置文件状态。](#8-verify-the-profile-status-of-the-hololens-devices)
 
 ### <a name="1-review-requirements-for-windows-autopilot-for-hololens-2"></a>1. 查看适用于 HoloLens 2 的 Windows Autopilot 要求
 
@@ -71,7 +73,7 @@ ms.locfileid: "122620805"
 
 查看 Windows Autopilot 自部署模式文章“[要求](/windows/deployment/windows-autopilot/self-deploying#requirements)”部分。 环境必须满足这些要求以及 Windows Autopilot 标准要求。 无需查看文章中的“分步操作”和“验证”部分。 本文后面的过程将提供特定于 HoloLens 的相应步骤。
 
-有关如何注册设备和配置配置文件的信息，请参阅本文中的 [2. 在 Windows Autopilot 中注册设备](#3-register-devices-in-windows-autopilot)和 [4. 创建部署配置文件](#5-create-a-deployment-profile)。 若要配置和管理 Autopilot 自部署模式配置文件，请确保你有权访问 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
+有关如何注册设备和配置配置文件的信息，请参阅本文中的 [4. 在 Windows Autopilot 中注册设备](#4-register-devices-in-windows-autopilot)和 [6. 创建部署配置文件](#6-create-a-deployment-profile)。 若要配置和管理 Autopilot 自部署模式配置文件，请确保你有权访问 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
 
 #### <a name="review-hololens-os-requirements"></a>查看 HoloLens 操作系统要求：
 
@@ -98,7 +100,11 @@ ms.locfileid: "122620805"
 
 请阅读以下关于[启用 MDM 自动注册的简短指南](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal)或[自动注册快速入门指南](/mem/intune/enrollment/quickstart-setup-auto-enrollment)，以获取更多设置信息。
 
-### <a name="3-register-devices-in-windows-autopilot"></a>3. 在 Windows Autopilot 中注册设备
+### <a name="3-ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>3. 确保未阻止 Windows 设备进行 MDM 注册。
+
+为使 Autopilot 成功，需要确保 HoloLens 设备能够注册。 由于 HoloLens 被认为是 Windows 设备，因此需要杜绝可能阻止部署的任何注册限制。 [查看此限制列表](/mem/intune/enrollment/enrollment-restrictions-set)，确保能够注册设备。
+
+### <a name="4-register-devices-in-windows-autopilot"></a>4. 在 Windows Autopilot 中注册设备
 
 在首次设置之前，设备必须在 Windows Autopilot 中注册。 有关设备注册的 MEM 文档，请参阅[将设备添加到 Autopilot](/mem/autopilot/add-devices)。  
 
@@ -123,7 +129,7 @@ ms.locfileid: "122620805"
 
     1. 在设备上，同时按下“电源”和“调低音量”按钮，然后释放这两个按钮 。 设备将收集诊断日志和硬件哈希，并将它们存储在一组 .zip 文件中。
 
-   1. 有关如何执行此操作的完整详细信息和指导视频，请阅读有关[脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics)。
+   1. 有关如何执行此操作的完整详细信息和指导视频，请了解[脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics)。
 
     1. 使用 USB-C 电缆将设备连接到计算机。
 
@@ -156,7 +162,7 @@ ms.locfileid: "122620805"
    > [!div class="mx-imgBorder"]
    > ![使用“同步”和“刷新”命令查看设备列表。](./images/hololens-ap-devices-sync.png)  
 
-### <a name="4-create-a-device-group"></a>4. 创建设备组
+### <a name="5-create-a-device-group"></a>5. 创建设备组
 
 1. 在 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)中，选择“组” > “新建组”。
 
@@ -176,7 +182,7 @@ ms.locfileid: "122620805"
      > 这些规则针对 Autopilot 设备独有的属性。
 1. 依次选择“保存”和“创建”。
 
-### <a name="5-create-a-deployment-profile"></a>5. 创建部署配置文件
+### <a name="6-create-a-deployment-profile"></a>6. 创建部署配置文件
 
 1. 在 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)中，依次选择选择“设备” > “Windows” > “Windows 注册” > “Windows Autopilot 部署配置文件” > “创建配置文件” > “HoloLens”。
    ![“创建配置文件”下拉菜单包括一个 HoloLens 项。](./images/hololens-ap-enrollment-profiles.png)
@@ -214,14 +220,14 @@ ms.locfileid: "122620805"
    > [!div class="mx-imgBorder"]
    > ![审阅 + 创建](./images/hololens-ap-profile-summ.png)
 
-### <a name="6-verify-the-esp-configuration"></a>6. 验证 ESP 配置
+### <a name="7-verify-the-esp-configuration"></a>7. 验证 ESP 配置
 
 注册状态页面 (ESP) 显示完整的设备配置过程的状态，此过程在 MDM 托管用户首次登录设备时运行。 请确保你的 ESP 配置类似于以下内容，并验证分配是否正确。  
 
 > [!div class="mx-imgBorder"]
 > ![ESP 配置](./images/hololens-ap-profile-settings.png)
 
-### <a name="7-verify-the-profile-status-of-the-hololens-devices"></a>7. 验证 HoloLens 设备的配置文件状态
+### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. 验证 HoloLens 设备的配置文件状态
 
 1. 在 Microsoft Endpoint Manager 管理中心中，依次选择“设备” > “Windows” > “Windows 注册” > “设备”。
 
@@ -243,7 +249,7 @@ ms.locfileid: "122620805"
 
     - 使用“USB-C 转以太网”适配器将设备与以太网连接，以实现有线 Internet 连接，并让 HoloLens 2 自动完成 Autopilot 体验。
 
-    - 通过“USB-C 转 Wifi”适配器连接设备以实现无线 Internet 连接，并让 HoloLens 2 自动完成 Autopilot 体验。
+    - 通过“USB-C 转 Wi-Fi”适配器连接设备以实现无线 Internet 连接，并让 HoloLens 2 自动完成 Autopilot 体验。
 
         > [!IMPORTANT]  
        > 尝试在 OOBE 过程中使用 Wi-Fi 网络完成 Autopilot 体验的设备必须使用 [Windows 全息版（版本 20H2）](hololens-release-notes.md#windows-holographic-version-20h2)。
