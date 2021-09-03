@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f717a0323d1b141423fab52e49a38407ba617d02
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
+ms.sourcegitcommit: 37611ac0a4efaf69816a734e16b763c810655f1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189335"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123411338"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>将 HoloLens 设置为网亭
 
@@ -78,16 +78,6 @@ ms.locfileid: "123189335"
 
 ### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>对于以本地帐户或 MSA 身份登录的用户
 
-### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. 包，步骤 2 &ndash; 将展台配置 XML 文件添加到预配包
-
-1. 打开[Windows 配置设计器](https://www.microsoft.com/store/apps/9nblggh4tx22)。
-1. 选择 " **高级设置**"，输入项目的名称，然后选择 " **下一步**"。
-1. 选择 **Windows 10 全息版**，然后选择 "**下一步**"。
-1. 选择“完成”。 此时将打开你的程序包的工作区。
-1. 选择 "**运行时设置**"  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**。
-1. 在中心窗格中，选择 " **浏览** " 以查找并选择已创建的展台配置 XML 文件。
-
-   ![Windows 配置设计器中的 MultiAppAssignedAccessSettings 字段的屏幕截图。](./images/multiappassignedaccesssettings.png)
 | **Desired 展台体验** | **推荐的展台配置** | **配置方式**  | **备注** |
 | --- | --- | --- | --- |
 | 每个登录用户都会获得展台体验。 | [配置多个应用全局分配的访问配置文件](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-多个应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全局分配的访问权限需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |
@@ -100,7 +90,7 @@ ms.locfileid: "123189335"
 | 每个登录用户都会获得展台体验。 | [配置多个应用全局分配的访问配置文件](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-多个应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全局分配的访问权限需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |
 | 登录的每个用户都可以获得展台体验，某些用户除外。 | [配置多个应用全局分配的访问配置文件，方法是将必须是设备所有者) 的某些用户排除 (](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners)。 | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-多个应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | 全局分配的访问权限需要 [20H2 和更新版本](hololens-release-notes.md#windows-holographic-version-20h2) |
 | 每个 AAD 用户获取特定于该用户的单独展台体验。 | [为每个指定其 AAD 帐户名称的用户配置分配的访问配置。](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-多个应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| 不同 AAD 组中的用户体验到仅适用于其组的展台模式。 | [为每个所需的 AAD 组配置分配的访问配置。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-多个应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | •当用户登录并且 HoloLens 与 Internet 连接时，如果发现该用户是其 kiosk 配置所在的 AAD 组的成员，则用户将获得该 aad 组的体验展台。 <br> •当[用户登录时，如果没有可用的 internet，用户将会遇到 HoloLens 失败模式行为。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> •如果需要使用用户登录和基于 AAD 组的展台时不保证 internet 可用性，请 [考虑使用 AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)。 |
+| 不同 AAD 组中的用户体验到仅适用于其组的展台模式。 | [为每个所需的 AAD 组配置分配的访问配置。](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-多个应用](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | •当用户登录并且 HoloLens 与 Internet 连接时，如果发现该用户是其 kiosk 配置所在的 AAD 组的成员，则用户将获得该 aad 组的体验展台。 <br> •当[用户登录时，如果没有可用的 internet，用户将会遇到 HoloLens 失败模式行为。](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) <br> •如果需要使用用户登录和基于 AAD 组的展台时不保证 internet 可用性，请 [考虑使用 AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)。 <br> •若要在登录时使用 AAD 组获得最佳体验，建议使用 [AADGroupMembershipCacheValidityInDayspolicy](/hololens/hololens-release-notes#cache-azure-ad-group-membership-for-offline-kiosk) |
 | 需要使用 HoloLens 的用户可以获得展台体验。 | [为访问者配置分配的访问配置](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune 自定义模板](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [运行时预配-单个应用](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | •临时用户帐户是在登录时通过 HoloLens 自动创建的，在临时用户注销时删除。 <br> •考虑启用 [访问者自动登录策略](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience)。 |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>为 HoloLens 配置展台模式的步骤
@@ -145,7 +135,7 @@ HoloLens (第一代) 设备需要在操作系统版本和操作系统版本中�
 
 通过 ( 使用 "kioskModeEnabled" 值为 "true" 或 "false ) " 的/api/holographic/kioskmode/settings 和一个可选参数 ( "startupApp"，其中的值为包名称) ，可以通过设备门户的 REST API 设置展台模式。 请记住，设备门户仅适用于开发人员，不应在非开发人员设备上启用。 在将来的更新/发布中，REST API 可能会更改。
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 ### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>问题-无应用显示在展台模式下的 "开始" 菜单中
 
