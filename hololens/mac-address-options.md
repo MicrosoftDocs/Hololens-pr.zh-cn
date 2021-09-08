@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665569"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189522"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>MAC 地址中 HoloLens 设备的企业注册限制 Wi-Fi 环境
 
@@ -126,7 +126,7 @@ ms.locfileid: "115665569"
 
 6. Wi-Fi MAC 地址将在 Intune 门户内显示。
 
-   ![通过 Intune 检索 MAC 地址](images/mac-address-intune.jpg)
+   ![通过 Intune 获取 MAC 地址。](images/mac-address-intune.jpg)
 
 7. 技术人员将此 MAC 地址添加为允许的设备。
 
@@ -155,7 +155,7 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 这将返回过去 30 天内已注册的任何 HoloLens 设备的名称和 MAC 地址。
 
-![通过 PowerShell 的 MAC 地址](images/mac-address-powershell.jpg)
+![通过 PowerShell 获取 MAC 地址。](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>进程
 

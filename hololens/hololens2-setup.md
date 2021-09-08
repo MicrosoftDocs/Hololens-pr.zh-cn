@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658969"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190406"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>准备 HoloLens 2 以供使用
 
@@ -42,7 +42,7 @@ ms.locfileid: "115658969"
 
 如有必要，请转动调节轮来展开头带，然后松开顶部固定带。
 
-![HoloLens 2 舒适佩戴和调整](images/hololens2-fit.png)
+![HoloLens 2 舒适佩戴和调整。](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>连接和断开顶部固定带
 
@@ -52,7 +52,7 @@ ms.locfileid: "115658969"
 
 要断开顶部固定带的背面，请按每个连接标签下方的按钮并轻轻拉一下。 要重新连接，请将连接标签推回到插槽中，直到听见咔哒声。
 
-![连接或取下 HoloLens 2 头带](images/hololens2-headstrap.png)
+![连接或取下 HoloLens 2 头带。](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>打开 HoloLens 2
 

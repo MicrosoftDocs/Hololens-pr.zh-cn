@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658899"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190338"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 开发版
 
@@ -38,7 +38,7 @@ HoloLens 2 Development Edition 包括 HoloLens 2、500 美元的 Azure 额度、
 |  [适用于 Unity 的 Pixyz 插件](https://www.pixyz-software.com/plugin/) | 连接工程 &amp; CAD 世界与开发世界的桥梁。   |
 | [用于 Azure 服务的 500 美元 Azure 额度](https://azure.microsoft.com/resources/) | HoloLens 2 Development Edition 中包含的 Azure 额度可快速开始在 Azure 上生成和测试混合现实应用程序。 |
 
-![HoloLens 2 开发版](./images/hololens-2-dev-ed.png)
+![HoloLens 2 Development Edition。](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>兑换你的额度
 

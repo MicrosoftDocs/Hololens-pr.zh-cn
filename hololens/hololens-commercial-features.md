@@ -1,9 +1,9 @@
 ---
 title: HoloLens 2 功能和解决方案
-description: 了解使企业能够更轻松地管理 HoloLens 设备的 Microsoft HoloLens Commercial 功能。
-author: joyjaz
-ms.author: v-jjaswinski
-ms.date: 06/28/2021
+description: 了解使企业能够管理 HoloLens 设备的 Microsoft HoloLens 商业功能。
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/1/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -17,20 +17,22 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 商业, 功能, mdm, 移动设备管理, 展台模式, 应用程序, 标识, Bitlocker, iris, Windows Hello, Azure 助力, Autopilot, 混合现实, WDAC
-ms.openlocfilehash: 88a75224909fd64e387cfb5677056e2ae5d62e4b3518aa758f22ec66a86a8355
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
+ms.sourcegitcommit: 58b124ba1722b2dff31d93723dd269df0f8319c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665330"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "123483178"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 功能和解决方案
 
-## <a name="what-can-hololens-2-do-for-you"></a>HoloLens 2 有何用途？
+## <a name="why-hololens"></a>为什么选择 HoloLens？
 
-借助 HoloLens 2 上的混合现实应用程序，无界限协作并精确操作，以提高员工的工作效率。 使用内置语音命令、眼动跟踪和外部环境锚定功能更长时间、更舒适地保持抬头、免提状态，持续专注于安全、正确地完成任务。 与远程同事实时联系并在覆盖于物理环境中的大幅全息画布上协同工作，以快速解决工作中的问题。 在 Microsoft 的安全性、可靠性和可缩放性的支持下，可靠的应用程序生态系统可以立即实现投资回报。  
+借助 HoloLens 2 和混合现实应用程序，当今工作人员可以无限制地进行协作、精确操作并提高工作效率。
 
-[!INCLUDE [solutions](includes/hlsolutions.md)]
+借助 HoloLens 2 上的混合现实应用程序，无界限协作并精确操作，以提高员工的工作效率。 使用内置语音命令、眼动跟踪和外部环境锚定功能更长时间、更舒适地保持抬头、免提状态，持续专注于安全、正确地完成任务。 与远程同事实时联系并在覆盖于物理环境中的大幅全息画布上协同工作，以快速解决工作中的问题。 借助由 Microsoft 的安全性、可靠性和可伸缩性提供支持的强大应用程序生态系统，可立即实现投资回报 (ROI)。  
+
+我们希望本文能够促使你思考混合现实 (MR) 可以为自己的企业带来哪些好处。
 
 ## <a name="hololens-2-capabilities"></a>HoloLens 2 功能
 
@@ -53,8 +55,73 @@ ms.locfileid: "115665330"
 | 轻松管理设备 | 使用 Microsoft Intune、VMware Workspace One、MobileIron 等解决方案同时管理多个 HoloLens 2 设备。 |
 | 在管控环境中操作 | HoloLens 2 拥有广泛的设备组合，支持高度管制的环境，包括名为 ISO 5.0 类和 UL I 类，第 2 部分的环境。 |
 
+[!INCLUDE [solutions](includes/hlsolutions.md)]
+
+## <a name="how-hololens-2-is-transforming-industries"></a>HoloLens 2 如何帮助实现企业转型
+
+:::row:::
+    :::column:::
+        [<img src="images/eaton.png" alt="Eaton Vehicle Group" width=350px>](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="eatons-vehicle-group-uses-dynamics-365-mixed-reality-to-drive-savings-efficiencies"></a>[Eaton’s Vehicle Group 使用 Dynamics 365 混合现实节约了成本，提高了效率。](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+        “假设我们说不同的语言，并且你正上报某个问题。 当你解释该问题时，另一方可能无法准确理解发生了什么，但是如果你使用 HoloLens 实时展示该问题时，人们就很容易理解。” <br> - Alexandre M. Moraes，Eaton 工厂经理。
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/sheba.png" alt="Sheba Medical Center" width=350px>](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center 使用 Microsoft 的 HoloLens 进行呼吸机训练。](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+        HoloLens 在危难时期为医疗训练服务。
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/zf-group.jpg" alt="ZF Group" width=350px>](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="zf-builds-agile-facility-at-gray-court-with-microsoft-365-improves-operational-equipment-efficiency"></a>[ZF 使用 Microsoft 365 在 Gray Court 构建敏捷设施，提高了运营设备的效率。](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+        Microsoft 365 帮助 ZF Group 的员工实时共享知识、排除故障和沟通。 
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/tokyu.png" alt="Tokyu Construction" width=350px>](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="tokyu-construction-improves-engineering-precision-and-increases-productivity-with-azure-remote-rendering-on-hololens-2"></a>[Tokyu Construction 通过 HoloLens 2 上的 Azure 远程渲染功能提高了工程精度和工作效率。](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+        除非是经验丰富的建筑工程师，否则通过 2D 蓝图想象出建筑物的 3D 效果可能具有挑战性。 
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/mda-hl2.jpg" alt="MDA" width=350px>](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="mda-takes-mixed-reality-into-orbit-with-hololens-2"></a>[MDA 使用 HoloLens 2 将混合现实带入轨道。](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+        MDA 使用沉浸式混合现实体验来帮助工程师想象出设计效果、加速诊断问题以及训练宇航员和地面控制员。
+    :::column-end:::
+:::row-end:::
+<br>
+
+---
 
 ## <a name="managing-hololens-2-in-your-organization"></a>管理组织中的 HoloLens 2
+
 HoloLens 2 具有使组织能够更轻松地管理和使用 HoloLens 设备的功能。 部分功能包含在设备中，其他功能则可在 [Windows 配置设计器](app-deploy-provisioning-package.md#setup)中通过 [HoloLens 的移动设备管理 (MDM)](hololens-mdm-configure.md) 或通过[预配包](hololens-provisioning.md)启用。
 
 | 我想… | 解决方案 | 说明 |  

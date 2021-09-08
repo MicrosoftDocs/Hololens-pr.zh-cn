@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bcde697b5887573826a3a1a61e8c3707b4d0337a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663056"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189658"
 ---
 # <a name="new-settings-app"></a>新“设置”应用
 
@@ -23,7 +23,7 @@ ms.locfileid: "115663056"
 > [!NOTE]
 > 由于新的“设置”应用不同于旧版“设置”应用，因此，此前围绕环境放置的任何“设置”窗口都将在更新时删除。
 
-![新“设置”应用主页](images/new-settings-app.png)
+![新“设置”应用主页。](images/new-settings-app.png)
 
 **新功能和设置**
 - 设置搜索：使用关键字或设置名称搜索“设置”主页中的设置。

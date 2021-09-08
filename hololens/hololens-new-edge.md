@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663222"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189692"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>新版 Microsoft Edge 简介
 
-![旧版 Microsoft Edge 徽标动画升级为新版 Microsoft Edge 徽标动画](images/new-edge.gif)
+![旧版 Microsoft Edge 徽标动画升级为新版 Microsoft Edge 徽标动画。](images/new-edge.gif)
 
 新版 Microsoft Edge [采用 Chromium 开源项目](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)，为客户提供更好的兼容性，同时为 Web 开发人员减少 Web 碎片。
 
@@ -27,11 +27,11 @@ ms.locfileid: "115663222"
 > [!IMPORTANT]
 > 新版 Microsoft Edge 会自动替换旧版 Microsoft Edge，新版本中[不再支持](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/)旧版 Microsoft Edge。
 
-![新版 Microsoft Edge 屏幕截图](images/new-edge-ui.png)
+![新版 Microsoft Edge 屏幕截图。](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>启动新版 Microsoft Edge
 
-新的 Microsoft Edge ![新版 Microsoft Edge 图标](images/new_edge_logo.png) （由蓝绿色漩涡图标表示）固定在“开始”菜单上，并将在你激活 Web 链接时自动启动。
+新的 Microsoft Edge ![新版 Microsoft Edge 图标。](images/new_edge_logo.png) （由蓝绿色漩涡图标表示）固定在“开始”菜单上，并将在你激活 Web 链接时自动启动。
 
 > [!NOTE]
 > 首次在 HoloLens 2 上启动新版 Microsoft Edge 时，系统将从旧版 Microsoft Edge 导入你的设置和数据。
@@ -139,7 +139,7 @@ Microsoft Edge 团队为 Edge Insider 社区提供了三个预览渠道：Beta�
 1. 导航到支持 WebXR 的网站。
 1. 选择网站上的“进入 VR”。 此按钮的位置和视觉表现形式可能因网站而异，但其外观可能类似于：
 
-    ![“进入 VR”按钮示例](images/75px-enter-vr.png)
+    ![“进入 VR”按钮示例。](images/75px-enter-vr.png)
 
 1. 首次尝试在特定域上启动 WebXR 体验时，浏览器将询问你是否同意进入沉浸式视图，选择“允许”。
 1. 使用 [HoloLens 2 手势](hololens2-basic-usage.md#the-hand-tracking-frame)来操作体验。
@@ -156,7 +156,7 @@ Microsoft Edge 团队为 Edge Insider 社区提供了三个预览渠道：Beta�
 1. 在 YouTube 上导航到 360 度视频。
 1. 在视频帧中，选择“混合现实头戴显示设备”按钮：
 
-    ![激活 360 Viewer 的按钮](images/enter-360-viewer.jpg)
+    ![激活 360 Viewer 的按钮。](images/enter-360-viewer.jpg)
 
 1. 首次尝试在特定域上启动 360 Viewer 时，浏览器将询问你是否同意进入沉浸式视图。 选择“允许”。
 1. [隔空敲击](hololens2-basic-usage.md#select-using-air-tap)以打开播放控件。 使用[手部射线和隔空敲击](hololens2-basic-usage.md#select-using-air-tap)来播放/暂停、快进/后退、打开/关闭字幕或停止体验（该操作会退出沉浸式视图）。 播放控件将在保持几秒的非活动状态后消失。

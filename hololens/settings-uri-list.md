@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665618"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190423"
 ---
 # <a name="page-settings-visibility"></a>页面设置可见性
 
@@ -74,7 +74,7 @@ HoloLens 设备的可管理功能之一是使用[设置/PageVisibilityList 策�
 
 无论选择哪种方法，你的设备现在都应接收更改，并且将向用户显示以下“设置”应用。
 
-![在“设置”应用中修改的使用时段的屏幕截图](images/hololens-page-visibility-list.jpg)
+![在“设置”应用中修改活动时段的屏幕截图。](images/hololens-page-visibility-list.jpg)
 
 若要配置“设置”应用页面以显示或隐藏自己选择的页面，请查看 HoloLens 上可用的“设置 URI”。
 

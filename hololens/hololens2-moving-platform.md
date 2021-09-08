@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
-ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
+ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989188"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190389"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>低动态运动移动平台上的移动平台模式
 
@@ -75,19 +75,19 @@ HoloLens 需要能够以[六自由度](https://en.wikipedia.org/wiki/Six_degrees
 
 1. 选择左侧菜单中的“系统”可折叠面板
 
-   ![第一张图像](.\images\moving-platform-1w.png)
+   ![第一张图像。](.\images\moving-platform-1w.png)
 
 2. 选择“移动平台模式”页，并选中“移动平台模式”复选框 
 
-    ![第二张图像](.\images\moving-platform-2z.png)
+    ![第二张图像。](.\images\moving-platform-2z.png)
 
 3. 出现警告提示时，选择“确定”
 
-   ![第三张图像](.\images\moving-platform-3w.png)
+   ![第三张图像。](.\images\moving-platform-3w.png)
 
 4. 重启设备（这可通过设备门户右上角的“电源”菜单完成，也可以通过发出以下语音命令&quot;重启设备&quot;来完成），然后选择&quot;是&quot;。
 
-   ![第四张图像](.\images\moving-platform-4z.png)
+   ![第四张图像。](.\images\moving-platform-4z.png)
 
 如果在设备门户中看不到“移动平台模式”选项，则很可能意味着你尚未使用正确的版本。 请参阅[先决条件](#prerequisites)部分。
 

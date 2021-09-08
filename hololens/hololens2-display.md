@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659935"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190355"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 屏幕故障排除
 
@@ -46,7 +46,7 @@ HoloLens 2 屏幕是波导和光投影仪的结合。 用户佩戴头戴显示�
     > 如果你在环境中看不清昏暗的场景，可以使用设备左侧的亮度按钮手动调整 HoloLens 2 的亮度级别。
 1. 选择按钮 1-6 可立即尝试每个颜色配置文件，并找到最适合你的眼睛的颜色配置文件（这通常意味着可帮助最中性地显示场景的配置文件，并且灰度模式和肤色符合预期。）
 
-    ![显示颜色校准场景](images/color-cal-ui.png)
+    ![显示颜色校准场景。](images/color-cal-ui.png)
     
 6. 当你对所选配置文件感到满意，选择“保存和退出”按钮
 1. 如果你不想进行更改，请选择“取消并退出”按钮，更改将恢复
@@ -79,7 +79,7 @@ HoloLens 2 屏幕是波导和光投影仪的结合。 用户佩戴头戴显示�
 
 HoloLens 2 会偶尔在屏幕的左下角和右下角显示不同的模式。 如以下示例所示（动态 GIF）。 该图案是 HoloLens 2 设备正常操作的一部分，用于校准屏幕以获得最佳体验。
 
-![双相模式](./images/DAT-Biphase-Fiducial.gif) ![GEO 模式](./images/DAT-GEO-Fiducial.gif)
+![双相模式。](./images/DAT-Biphase-Fiducial.gif) ![GEO 模式](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>为什么我的 HoloLens 2 屏幕无法准确拍摄照片？
 

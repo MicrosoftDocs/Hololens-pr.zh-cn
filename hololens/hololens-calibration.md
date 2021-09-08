@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 校准, 舒适, 视觉对象, 质量, ipd, HoloLens, Windows Mixed Reality, VR 头戴显示设备
-ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664641"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189199"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善视觉质量和舒适度
 
@@ -64,7 +64,7 @@ HoloLens 2 使用眼球跟踪技术来改善你观看虚拟环境以及与虚拟
 1. 如果设置应用未固定到“开始”，请选择“所有应用”。
 1. 选择“设置”，然后选择“系统” > “校准” > “眼部校准” > “运行眼部校准”。
 
-   ![“设置”应用，显示“运行眼部校准”选项](./images/C-Settings.Calibration.png)
+   ![“设置”应用，显示“运行眼部校准”选项。](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>自动眼部位置支持
 
@@ -131,7 +131,7 @@ HoloLens（第一代）根据[瞳孔间距](https://en.wikipedia.org/wiki/Interp
 
 在校准过程中，HoloLens 会要求你将手指与每只眼睛注视的六个目标对齐。 HoloLens 使用此过程为眼睛正确设置 IPD。
 
-![第二步中的 IPD 手指对齐屏幕](./images/ipd-finger-alignment-300px.jpg)
+![第二步中的 IPD 手指对齐屏幕。](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>手动启动校准过程
 
@@ -143,9 +143,9 @@ HoloLens（第一代）根据[瞳孔间距](https://en.wikipedia.org/wiki/Interp
 1. 要查看所有应用，请选择“+”。
 1. 选择“校准”。
 
-   ![从 shell 访问“校准”应用](./images/calibration-shell.png)
+   ![从 shell 访问“校准”应用。](./images/calibration-shell.png)
 
-   ![“校准”应用启动后显示为一个活动立方体](./images/calibration-livecube-200px.png)
+   ![“校准”应用启动后显示为一个活动立方体。](./images/calibration-livecube-200px.png)
 
 要通过“设置”应用来运行“校准”应用，请按照以下步骤操作：
 
@@ -154,7 +154,7 @@ HoloLens（第一代）根据[瞳孔间距](https://en.wikipedia.org/wiki/Interp
 1. 选择“设置”。
 1. 选择“系统” > “实用工具” > “打开校准”。
 
-   ![从“设置”应用启动“校准”应用](./images/calibration-settings-500px.jpg)
+   ![从“设置”应用启动“校准”应用。](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>沉浸式头戴显示设备
 

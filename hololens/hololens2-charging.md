@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b117542704968150639a47956a8142d7232fcc66d696feb61ec4fffdaa49df59
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660581"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189794"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 电池和充电
 
@@ -41,7 +41,7 @@ ms.locfileid: "115660581"
     - 如果在电池剩余电量严重不足时你尝试打开设备，则一盏灯将会短暂闪烁，然后熄灭。
 - 在主机上，打开“文件资源管理器”，然后在左侧的“这台电脑”下查找 HoloLens 2 设备。 右键单击该设备，并选择“属性”。 对话框将显示电池电量。
 
-   ![HoloLens 2 属性屏幕显示电量变化情况](images/ResetRecovery2.png)
+   ![HoloLens 2 属性屏幕显示电量变化情况。](images/ResetRecovery2.png)
 
 ## <a name="alternative-charging-specifications"></a>备选充电规范
 

@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664307"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189080"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>连接到蓝牙和 USB-C 设备
 
@@ -93,7 +93,7 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 
 打开“设置”应用并选择“系统” > “声音”。
 
-![声音设置](images/usbc-mic-1.jpg)
+![声音设置。](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > 若要将外置麦克风用于 Remote Assist，用户需要单击“管理声音设备”超链接。
@@ -102,11 +102,11 @@ HoloLens 2 支持以下类别的 USB-C 设备：
 >
 > 选择“通信默认值”表示将在 Remote Assist 和其他通信应用中使用外置麦克风，但 HoloLens 麦克风阵列仍可用于其他任务。
 
-![管理声音设备](images/usbc-mic-2.png)
+![管理声音设备。](images/usbc-mic-2.png)
 
 <br>
 
-![设置麦克风默认值](images/usbc-mic-3.jpg)
+![设置麦克风默认值。](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>蓝牙麦克风支持怎么样？
 

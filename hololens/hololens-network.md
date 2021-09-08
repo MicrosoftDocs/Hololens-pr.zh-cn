@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663140"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189097"
 ---
 # <a name="connect-hololens-to-a-network"></a>将 HoloLens 连接到网络
 
@@ -39,7 +39,7 @@ ms.locfileid: "115663140"
 1. 选择一个网络，然后选择“连接”。
 1. 如果系统提示你输入网络密码，请键入密码，然后选择“下一步”。
 
-![HoloLens Wi-Fi 设置](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi 设置。](./images/hololens-2-wifi-settings.jpg)
 
 如果要确认已连接至 Wi-Fi 网络，请在“开始”菜单中检查 Wi-Fi 状态：
 
@@ -211,7 +211,7 @@ VPN 默认情况下未启用，但可以通过打开“设置”应用并导航�
 1. （可选）添加用户名和密码。
 1. 应用 VPN 设置。 
 
-![HoloLens VPN 设置](./images/vpn-settings-ui.jpg)
+![HoloLens VPN 设置。](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>通过预配程序包进行 VPN 设置
 
@@ -354,7 +354,7 @@ VPN 默认情况下未启用，但可以通过打开“设置”应用并导航�
 1. 选择“网络和 Internet”。
 1. 向下滚动到可用 Wi-Fi 网络列表下方，选择“硬件属性”。
 
-    ![Wi-Fi 设置中的硬件属性](./images/wifi-hololens-hwdetails.jpg)
+    ![Wi-Fi 设置中的硬件属性。](./images/wifi-hololens-hwdetails.jpg)
 
    IP 地址显示在“IPv4 地址”旁。
 

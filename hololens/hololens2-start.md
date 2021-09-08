@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659281"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189760"
 ---
 # <a name="set-up-your-hololens-2"></a>设置 HoloLens 2
 
@@ -82,7 +82,7 @@ HoloLens 附带的可选舒适附件，可帮助你获得最舒适的贴合度�
 
      HoloLens 根据从 Wi-Fi 网络获得的信息自动设置你的时区。 设置完成后，你可以使用“设置”应用更改时区。
 
-    ![连接到 Wi-Fi](images/11-network.png)
+    ![连接到 Wi-Fi。](images/11-network.png)
 
     > [!NOTE] 
     > 如果执行了 Wi-Fi 步骤，但后来仍需要在设置过程中切换到其他网络，则在运行 2019 年 10 月或更高版本的操作系统的情况下，可以同时按“关闭音量”和“电源”按钮返回到此步骤。 对于较早版本，可能需要[重置设备](hololens-recovery.md)，或在 Wi-Fi 网络不可用的地方重启设备，以防止其自动连接。
@@ -91,15 +91,15 @@ HoloLens 附带的可选舒适附件，可帮助你获得最舒适的贴合度�
 
 1. HoloLens 2 将搜索并应用 Autopilot 配置文件（如果存在）。 此屏幕上无需任何操作。
  
-    ![Autopilot 配置文件搜索](images/autopilot-profile-search.png) 
+    ![Autopilot 配置文件搜索。](images/autopilot-profile-search.png) 
 
 1. 在许可屏幕上单击“接受”。
 
-    ![Windows 许可协议](images/windows-license-agreement.png)
+    ![Windows 许可协议。](images/windows-license-agreement.png)
 
 1. 登录到你的用户帐户。 你将在“我的工作或学校拥有它”和“我拥有它”之间作出选择。
 
-    ![设置用户](images/13-device-owner.png)
+    ![设置用户。](images/13-device-owner.png)
     - 选择 **我的工作单位或学校拥有它** 时，使用 Azure AD 帐户登录。 如果你的组织使用 Azure AD Premium 并配置了自动 MDM 注册功能，HoloLens 将自动注册 MDM。 如果你的组织不使用 Azure AD Premium，则自动 MDM 注册功能不可用。 在这种情况下，需要[在设备管理中手动注册 HoloLens。](hololens-enroll-mdm.md#different-ways-to-enroll)
 
         1. 输入你的组织帐户信息。
@@ -123,11 +123,11 @@ HoloLens 附带的可选舒适附件，可帮助你获得最舒适的贴合度�
   
 1. 你将设置一个 PIN 以登录到设备。 此 PIN 特定于设备。 
 
-    ![设置 Windows Hello](images/setup-windows-hello.png)
+    ![设置 Windows Hello。](images/setup-windows-hello.png)
 
-    ![设置 Windows Hello PIN](images/windows-hello-pin.png)
+    ![设置 Windows Hello PIN。](images/windows-hello-pin.png)
 
-    ![Windows Hello 设置成功](images/windows-hello-successful.png) 
+    ![Windows Hello 设置成功。](images/windows-hello-successful.png) 
 
     
 1. 选择是否在 HoloLens 2 上启用语音。

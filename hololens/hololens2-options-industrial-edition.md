@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d9af1fb7d2c87b13cee926c3172ed2ce5411d9da73ab4b880efb1bd837ca3e5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 51306755da5500d22829f359d2bf1467980892ea
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659022"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188859"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 工业版
 
@@ -34,7 +34,7 @@ HoloLens 2 Industrial Edition 已通过使用新的材料与认证得到了增�
 
 除了升级设备以外，HoloLens 2 Industrial Edition 还提供 2 年质保和快速更换计划。
 
-![在洁净室中使用的 Industrial Edition](./images/ie-small-pic.png)
+![在洁净室中使用的 Industrial Edition。](./images/ie-small-pic.png)
 
 查看 [HoloLens 2 Industrial Edition 常见问题解答](hololens2-industrial-edition-faq.md)。
 
