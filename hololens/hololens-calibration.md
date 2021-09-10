@@ -15,11 +15,11 @@ appliesto:
 - HoloLens 2
 keywords: 校准, 舒适, 视觉对象, 质量, ipd, HoloLens, Windows Mixed Reality, VR 头戴显示设备
 ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189199"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428624"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善视觉质量和舒适度
 
