@@ -18,11 +18,11 @@ appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 商业, 功能, mdm, 移动设备管理, 展台模式, 应用程序, 标识, Bitlocker, iris, Windows Hello, Azure 助力, Autopilot, 混合现实, WDAC
 ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 58b124ba1722b2dff31d93723dd269df0f8319c4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "123483178"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428499"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 功能和解决方案
 
