@@ -7,11 +7,11 @@ ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188978"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126031976"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>参与HoloLens文档
 
@@ -29,23 +29,23 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 | 混合现实 | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
 | VR 友元指南 | [MicrosoftDocs/mixed-reality/用户指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
-## <a name="before-you-start"></a>开始之前
+## <a name="before-you-start"></a>准备工作
 
-如果还没有帐户 ，则需要创建一个GitHub[帐户](https://github.com/join)。
+如果还没有帐户，则需要创建一个GitHub[帐户](https://github.com/join)。
 
 >[!NOTE]
->如果你是 Microsoft 员工，请GitHub Microsoft 开放源代码门户 上的[Microsoft 别名](https://repos.opensource.microsoft.com/)。 加入 **"Microsoft"和****"MicrosoftDocs"** 组织。
+>如果你是 Microsoft 员工，请GitHub Microsoft 开源门户 上的[Microsoft 别名](https://repos.opensource.microsoft.com/)。 加入 **"Microsoft"和****"MicrosoftDocs"** 组织。
 
-设置安全GitHub时，我们还建议采取以下安全预防措施：
+在设置GitHub帐户时，我们还建议采取以下安全预防措施：
 - 为[帐户 创建GitHub密码](https://github.com/settings/admin)。
 - 启用 [双因素身份验证](https://github.com/settings/two_factor_authentication/configure)。
 - 将 [恢复代码保存在](https://github.com/settings/auth/recovery-codes) 安全的位置。
 - 更新 [公共配置文件设置](https://github.com/settings/profile)。
    - 设置你的姓名，并考虑将 *"公共电子邮件*"设置为 *"不显示我的电子邮件地址"。*
    - 建议上传个人资料图片，因为缩略图显示在你参与的文档页面上。
-- 如果计划使用命令行，请考虑为 凭据管理器 设置[Git Windows。](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) 这样，就不需要每次贡献时都输入密码。
+- 如果打算使用命令行，请考虑为 凭据管理器 Git [Windows。](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) 这样，就不需要每次贡献时都输入密码。
 
-发布系统与 GitHub关联，因此这些步骤非常重要。 你将使用自己的别名作为每篇文章的作者或参与者GitHub列表。
+发布系统与 GitHub关联，因此这些步骤非常重要。 你将使用你的别名作为每篇文章的作者GitHub参与者。
 
 ## <a name="editing-an-existing-article"></a>编辑现有文章
 
@@ -53,7 +53,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 1. 导航到想要在"mixed-reality-docs"文件夹中编辑的文章。
 
-2. 选择右上方 (图标) 编辑按钮。
+2. 选择右上方 (铅笔图标) 编辑按钮。
 
    ![编辑文章。](images/editpage.png)
 
@@ -66,10 +66,10 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 4. 更新每篇文章顶部的元数据：
 
-   * **title：** 查看文章时显示在浏览器选项卡中的页标题。 页面标题用于 SEO 和索引编制，因此除非有必要更改标题， (不过在文档公开之前) 。
+   * **title：** 查看文章时显示在浏览器选项卡中的页标题。 页面标题用于 SEO 和索引编制，因此除非有必要更改标题， (不过在文档公开公开之前) 。
    * **description：** 编写文章内容的简要说明，这将提升 SEO 和发现。
    * **author：** 如果你是页面的主要所有者，请在此处GitHub别名。
-   * **ms.author：** 如果你是页面的主要所有者，请在此处添加 Microsoft 别名 (不需要 ，只需 @microsoft.com 将别名) 。
+   * **ms.author：** 如果你是页面的主要所有者，请在此处添加 Microsoft 别名 (不需要 ，只需将别名 @microsoft.com) 。
    * **ms.date：** 如果要将主要内容添加到页面，请更新日期，但不能更新说明、格式设置、语法或拼写等修复。
    * **关键字**：关键字有助于 SEO (搜索引擎优化) 。 添加关键字，以逗号和空格分隔，这些关键字特定于你的文章，但在列表中的最后一个关键字后面没有标点符号。 无需添加适用于所有文章的全局关键字，因为这些关键字在其他地方进行管理。 
    
@@ -81,9 +81,9 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>重命名或删除现有项目
 
-如果更改将重命名或删除现有项目，请务必添加重定向。 这样一来，任何链接到现有文章的人仍然会最终处于正确的位置。 重定向由存储库根.openpublishing.redirection.js的 on 文件托管。
+如果更改将重命名或删除现有项目，请务必添加重定向。 这样一来，任何链接到现有文章的人仍然会最终处于正确的位置。 重定向由存储库根目录的 .openpublishing.redirection.json 文件管理。
 
-若要将重定向添加到.openpublishing.redirection.js，请向 数组添加 `redirections` 一个条目：
+若要向 .openpublishing.redirection.json 添加重定向，请向 数组添加 `redirections` 一个条目：
 
 ```json
 {
@@ -99,7 +99,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 - `redirect_url`是旧文章到新文章的相对公共 URL。 请确保此 URL **不包含** 或 ，因为它引用的是公共 `mixed-reality-docs` `.md` URL，而不是存储库路径。 允许使用 链接到新文章中 `#section` 的节。 如有必要，还可以在此处使用另一个站点的绝对路径。
 
-- `redirect_document_id` 指示是否要保留上一个文件的文档 ID。 默认为 `false`。 `true`如果要保留重定向项目 `ms.documentid` 中的属性值，请使用 。 如果保留文档 ID，数据（如页面视图和排名）将传输到目标项目。 如果重定向主要用于重命名，而不是指向仅涵盖一些相同内容的不同项目，则执行此操作。
+- `redirect_document_id` 指示是否要保留上一个文件的文档 ID。 默认值为 `false`。 `true`如果要保留重定向项目 `ms.documentid` 中的属性值，请使用 。 如果保留文档 ID，数据（如页面视图和排名）将传输到目标项目。 如果重定向主要用于重命名，而不是指向仅涵盖一些相同内容的不同项目，则执行此操作。
 
 如果添加重定向，请确保也删除旧文件。
 
@@ -116,7 +116,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
    
 2. 在"mixed-reality-docs"文件夹中，选择右上方 **的** "创建新文件"。
 
-3. 为文章创建页名称 (连字符而不是空格，并且不使用标点符号或撇号) 并追加".md"
+3. 为文章创建页名称， (连字符而不是空格，并且不使用标点符号或撇号) 并追加".md"
 
    ![将新页面命名。](images/newpagetitle.png)
    
@@ -145,7 +145,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 
 8. 完成后，选择"**提交新文件"。**
 
-9. 选择 **"新建拉** 取请求"，将分支的主分支合并到 MicrosoftDocs/混合现实主分支 (确保箭头指向正确的目标) 。
+9. 选择 **"新建拉** 取请求"，将分叉的主分支合并到 MicrosoftDocs/混合现实主 (确保箭头指向正确的目标) 。
 
    ![创建从分叉到 MicrosoftDocs/mixed-reality 的拉取请求。](images/pr-to-master.png)
 
@@ -154,13 +154,13 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 以下资源将帮助你了解如何使用 Markdown 语言编辑文档：
 
 - [Markdown 基本信息](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [编写 Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
+- [用于编写 Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>添加表
 
-由于样式表 docs.microsoft.com，即使尝试内联 CSS，它们也不会具有边框或自定义样式。 它看起来会在短时间内正常工作，但最终平台会从表中去除样式。 因此，请提前规划并简化表。 下面是一个使 Markdown 表变得简单的站点：[表生成器 https://www.tablesgenerator.com/markdown_tables) ]] (。
+由于样式 docs.microsoft.com，即使尝试内联 CSS，它们也不会具有边框或自定义样式。 它看起来会在短时间内正常工作，但最终平台会从表中去除样式。 因此，请提前规划并简化表。 下面是一个使 Markdown 表变得简单的站点：[表生成器 https://www.tablesgenerator.com/markdown_tables) ]] (。
 
-如果使用文档，Visual Studio Code的[Docs Markdown](/teamblog/docs-extension)扩展也使表生成变得Visual Studio Code ([请参阅](#using-visual-studio-code)) 编辑文档。
+如果使用[Visual Studio Code，Docs Markdown Extension for](/teamblog/docs-extension) Visual Studio Code 还可轻松生成表，Visual Studio Code (以下) 编辑文档。 [](#using-visual-studio-code)
 
 ### <a name="adding-images"></a>添加图像
 
@@ -181,7 +181,7 @@ HoloLens文档显示在 docs.microsoft.com 平台上，该平台将GitHub Markdo
 通过 web 浏览器进行 GitHub 编辑时，可以选择页面顶部附近的 "**预览**" 选项卡来预览你的工作，然后再提交。 
 
 >[!NOTE]
->review.docs.microsoft.com 上预览所做的更改仅适用于 Microsoft 员工
+>在 review.docs.microsoft.com 上预览所做的更改仅适用于 Microsoft 员工
 
 Microsoft 员工：如果你的贡献已合并到默认分支 _master_，你可以在 </hololens？分支 = master> 之前查看内容。 使用左栏中的目录查找文章。
 

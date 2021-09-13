@@ -1,6 +1,6 @@
 ---
 title: 常见设备限制
-description: 随时更新混合现实设备的常见设备HoloLens设置。
+description: 随时跟进混合现实设备的常见设备HoloLens设置。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6a09766a06fff912aae20dc07974b723d812bd370562a33297552dc0d2f7f12c
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 769cacc1803af9d9e9bf1079f8cd5671f194c3bc
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032074"
 ---
 # <a name="common-device-restrictions"></a>常见设备限制 
 
@@ -30,7 +30,7 @@ ms.locfileid: "115664279"
 -   [允许手动 WiFi 配置：](/windows/client-management/mdm/policy-csp-wifi#wifi-allowmanualwificonfiguration) 允许用户在 MDM Wi-Fi网络外部建立连接
 -   [允许手动 MDM 取消注册](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment) 是否允许用户删除工作区帐户 (即从 MDM 系统帐户取消注册) 
 
-在[Holographic Windows 20H2](hololens-release-notes.md#windows-holographic-version-20h2)版中为HoloLens 2添加：
+在 Windows [Holographic 版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)中添加HoloLens 2设备：
 - [允许添加预配包：](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage) 切换用户能否添加新的预配包，覆盖新值。
 - [允许删除预配包：](/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 切换用户能否删除预配包，从而切换以前锁定的设置。
 
@@ -44,8 +44,8 @@ Windows 10 全息版设备使用最先进的技术，其中包括常用硬件功
 > 其中一些硬件限制会影响连接性，有助于数据保护。
 
 -   [允许 Wi-Fi：](/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) 用户是否可以在设备上启用和使用 WiFi 无线电。
--   [允许 USB 连接：](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 是否启用 USB (不会影响 USB 充电。) 
--   [允许蓝牙：](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth)用户是否可以在设备上启用蓝牙无线无线广播。
+-   [允许 USB 连接：](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 是否启用 USB 连接 (不会影响 USB 充电。) 
+-   [允许蓝牙：](/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth)用户是否可以在设备上启用蓝牙无线广播。
 -   [限制相机：](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesscamera)指定Windows应用是否可以访问相机。
 -   [限制麦克风：](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone)指定Windows是否可以访问麦克风。
 

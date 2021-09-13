@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: e332794baf20fbab8278a138ceeafb651c6fa2a06f3f41a66038e544f7a6e46b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032128"
 ---
 # <a name="hololens-1st-gen-release-notes"></a>HoloLens 第一 (版本) 发行说明
 
@@ -30,7 +30,7 @@ ms.locfileid: "115661832"
 
 > **适用于：** HoloLens (1 代) 
 
-| 功能 | 详细信息 |
+| Feature | 详细信息 |
 |---|---|
 | **快速操作菜单** | 当你在应用程序中时，布隆手势现在将打开一个 "快速操作" 菜单，可让你快速访问常用的系统功能，而无需离开应用。 <br> 有关展台模式下 "快速操作" 菜单的信息，请参阅[在展台模式下设置 HoloLens](hololens-kiosk.md) 。<br><br> |
 | **从 "开始" 或 "快速操作" 菜单停止视频捕获** | 如果从 ""开始"菜单" 或 "快速操作" 菜单启动视频捕获，则可以从同一位置停止录制。  (别忘了，您也可以通过语音命令来执行此操作。 )  |
@@ -44,14 +44,14 @@ ms.locfileid: "115661832"
 
 #### <a name="for-international-customers"></a>对于国际客户
 
-| 功能 | 详细信息 |
+| Feature | 详细信息 |
 | --- | --- |
 | 本地化中文和日语版 | 将 HoloLens 与本地化的用户界面结合使用，以用于简体中文或日语，包括本地化拼音键盘、听写和语音命令。<br>[了解如何安装 HoloLens 的中文版和日语版。](hololens1-install-localized.md) |
 | ) 的语音合成 ( | 语音合成功能现在支持中文、日语和英语。 |
 
 #### <a name="for-administrators"></a>面向管理员
 
-| 功能 |  详细信息  |
+| Feature |  详细信息  |
 |---|----|
 | [启用安装后设置](hololens-provisioning.md) | 你现在可以使用 **设置** 随时应用运行时预配包。 |
 | 使用 Azure AD 组分配访问权限 | 你现在可以使用 Azure AD 组配置 Windows 分配访问权限，以设置单个或多个应用展台配置。 |

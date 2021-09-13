@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: f480d3cc8d549fa356e05df6ce15e9517f5b978a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "123610983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032062"
 ---
 # <a name="provisioning-package"></a>预配程序包
 
@@ -46,7 +46,7 @@ ms.locfileid: "123610983"
 
 2. 导航到 **UniversalAppInstall**  >  **UserContextApp，** 输入 **PackageFamilyName**。 请参阅 [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall)。
 
-   可以在设备门户设备上使用应用。 访问"应用"页，查看 PackageRelativeID 行，"！" **PackageFamilyName**。
+   可以在已安装设备门户设备上使用应用。 访问"应用"页，查看 PackageRelativeID 行，"！" **PackageFamilyName**。
 
 3. 然后，你将看到有一个新部分 **ApplicationFile**。 使用此区域上传 appx 捆绑包。
 

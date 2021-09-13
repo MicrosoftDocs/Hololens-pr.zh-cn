@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122979349"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126031972"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中注册 HoloLens
 
@@ -68,4 +68,4 @@ Azure AD 联接设备时，可能会影响被认为是 [设备所有者](securit
 
 ## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>确保 Windows 设备不阻止 MDM 注册
 
-为了成功注册，需要确保 HoloLens 设备可以注册。 由于 HoloLens 被视为 Windows 设备，因此将需要不会阻止部署的注册限制。 [查看此限制列表](/mem/intune/enrollment/enrollment-restrictions-set) ，并确保能够注册设备。
+为了成功注册，需要确保 HoloLens 设备可以注册。 由于 HoloLens 被认为是 Windows 设备，因此需要杜绝可能阻止部署的任何注册限制。 [查看此限制列表](/mem/intune/enrollment/enrollment-restrictions-set)，确保能够注册设备。

@@ -1,6 +1,6 @@
 ---
 title: 常见部署方案
-description: 详细了解如何部署和管理企业HoloLens环境，包括基础结构、Azure Active Directory和移动设备管理。
+description: 详细了解在企业环境中部署和管理HoloLens，包括基础结构、Azure Active Directory和移动设备管理。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -13,11 +13,11 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032149"
 ---
 # <a name="common-deployment-scenarios"></a>常见部署方案
 
@@ -25,7 +25,7 @@ ms.locfileid: "123189233"
 
 第一次尝试时，如何部署新设备可能很难。 在这里，我们分享了部署和管理Microsoft HoloLens 2 台设备的不同方式。
 
-需要解决方案 - 大规模部署。 我们希望你到达此地。 让我们首先讨论部署设备（因此全息影像）以实现目标混合现实方案的价值的步骤，无论是使用 D365 Remote Assist、Guides 还是创建的已启用 Azure 混合现实服务的应用程序。
+需要解决方案 - 大规模部署。 我们希望你到达此地。 让我们首先讨论部署设备（因此使用全息影像）以实现目标混合现实方案价值的步骤，无论是使用 D365 Remote Assist、Guides 还是创建的已启用 Azure 混合现实服务的应用程序。
 
 你可能是业务决策者、IT 专业人员或创新团队，想要在HoloLens采用解决方案。 从概念证明到缩放部署进行构建时，我们的部署指南HoloLens IT 基础结构内部部署， 无论大小如何。 以下部署方案是最常见的：
 
@@ -33,11 +33,11 @@ ms.locfileid: "123189233"
 |---------|---------|---------|
 | [方案 A：云连接的设备](hololens2-cloud-connected-overview.md) | 首次开始部署时，你可以从小型开始，并部署连接到云的单个设备，只是为了查看基本过程。 | 设备将连接到云服务和公共 Internet。 这最适合客户用例、现场服务和概念证明。|
 | [方案 B：组织的网络](hololens2-corp-connected-overview.md) | 大规模部署到生产环境时，可能需要与自己的组织网络集成。 | 设备将连接到"公司"wi-fi 网络。 这最适合内部用户，或在企业环境中使用。|
-| [方案 C：脱机安全环境](hololens-common-scenarios-offline-secure.md) | 某些任务关键型流程或某些公司策略可能要求使用脱机环境。 | 设备将连接到严格限制的网络，或仅仅是脱机设备。 这最适用于高度安全的环境或远程区域中的 Internet 连接限制。 |
+| [方案 C：脱机安全环境](hololens-common-scenarios-offline-secure.md) | 某些任务关键型流程或某些公司策略可能要求使用脱机环境。 | 设备将连接到严格限制的网络，或者将完全脱机设备。 这最适用于高度安全的环境或远程区域中的 Internet 连接限制。 |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>方案 A：部署到已连接云的设备
 
-此方案相当于在公司内部署托管移动设备。 HoloLens 2主要在企业网络外部的环境中使用。 不访问公司资源，或者可能会通过 VPN 限制公司资源。
+此方案相当于在公司内部署托管移动设备。 HoloLens 2部署 ，主要在企业网络外部的环境中使用。 不访问公司资源，或者可能会通过 VPN 限制公司资源。
 
 [![方案关系图。](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
@@ -73,7 +73,7 @@ ms.locfileid: "123189233"
 
 ## <a name="scenario-b-deploy-inside-your-organizations-network"></a>方案 B：在组织的网络中部署
 
-此方案与大多数电脑的经典部署Windows 10相同。 HoloLens 2部署，主要在有权访问内部公司资源的公司网络上使用。 Internet 和云服务可能会受到限制。 
+此方案与大多数电脑的经典部署Windows 10相同。 HoloLens 2部署 ，主要在有权访问内部公司资源的公司网络上使用。 Internet 和云服务可能会受到限制。 
 
 [![方案 B1 示意图。](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
@@ -88,7 +88,7 @@ ms.locfileid: "123189233"
 
 ### <a name="basic-common-configurations"></a>基本常见配置
 
-* Wi-Fi网络是一个内部企业网络，可以访问内部资源，并且对 Internet 或云服务的访问有限。
+* Wi-Fi网络是内部企业网络，可以访问内部资源，对 Internet 或云服务的访问有限。
 * Azure AD MDM 自动注册加入
 * MDM (Intune) 托管
 * 用户使用自己的公司帐户登录 (Azure AD) 
@@ -98,7 +98,7 @@ ms.locfileid: "123189233"
 
 ### <a name="common-challenges"></a>常见挑战
 
-* HoloLens 2不支持本地 AD 联接或 SYSTEM CENTER CONFIGURATION MANAGER (SCCM) 。 仅Azure AD MDM 联接。 目前，许多公司仍在此方案中将 Windows 10 电脑部署为本地 AD 联接设备，由 SCCM 管理，并且可能未部署/配置基础结构，以通过基于云的 MDM 解决方案管理内部 Windows 10 设备。
+* HoloLens 2不支持本地 AD 联接或 SYSTEM CENTER CONFIGURATION MANAGER (SCCM) 。 仅Azure AD MDM 联接。 如今，许多公司仍在此方案中将 Windows 10 台 PC 部署为本地 AD 联接设备，由 SCCM 管理，并且可能未部署/配置基础结构以通过基于云的 MDM 解决方案管理内部 Windows 10 设备。
 * 由于HoloLens 2云第一设备，因此它严重依赖于 Internet 和云连接服务进行用户身份验证、OS 更新、MDM 管理等。 连接到公司网络时，很可能需要调整代理/防火墙规则，以启用对 HoloLens 2 及其运行的应用程序的访问。
 * 企业Wi-Fi连接通常需要证书来向网络验证设备或用户身份。 通过 MDM 将证书部署到 Windows 10所需的基础结构或设置可能难以配置。
 
@@ -109,7 +109,7 @@ ms.locfileid: "123189233"
 
 ## <a name="scenario-c-deploy-in-secure-offline-environment"></a>方案 C：在安全的脱机环境中部署
 
-这是高度安全或机密位置的典型部署。 HoloLens 2部署，主要以脱机方式使用，无需网络或 Internet 访问。
+这是高度安全或机密位置的典型部署。 HoloLens 2部署 ，主要以脱机方式使用，无需网络或 Internet 访问。
 
 [![脱机安全关系图 1。](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 

@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: 常见问题解答
-  description: 随时了解有关混合现实设备的常见问题和HoloLens解答。
+  title: 常见问题
+  description: 及时了解有关 HoloLens 混合现实设备的最新安全问题和答案。
   ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
   author: pawinfie
   ms.author: pawinfie
@@ -16,116 +16,116 @@ metadata:
   - CI 111456
   - CSSTroubleshooting
   manager: bradke
-  ms.openlocfilehash: b09670ee24139c129629d061edae4d5bb43b2d766c90df152aeddb202cc1fe55
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: 108f2e4c0aa9af251ecb6bc5185c7803ae51b5f7
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115662642"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032134"
 title: HoloLens 第 1 代安全性常见问题
 summary: ''
 sections:
 - name: 忽略
   questions:
   - question: >
-      第 1 层提供HoloLens级别的数据保护？
+      哪一级别的数据保护 HoloLens 1 提供？
     answer: >
-      * 请参阅[HoloLens (第一代) BitLocker 加密](hololens1-encryption.md)
+      * 请参阅[HoloLens 第一代 () BitLocker 加密](hololens1-encryption.md)
   - question: >
       使用哪种类型的无线？
     answer: >
-      * 802.11ac 和 蓝牙 4.1 LE
+      * 802.11 ac 和蓝牙 4.1 LE
   - question: >
-      合并了哪种类型的体系结构？  例如：指向点、网格或其他内容？
+      合并了哪些类型的体系结构？  例如：指向点、网格或其他内容？
     answer: >
-      * Wi-Fi基础结构模式，以与其他无线接入点通信。
+      * Wi-Fi 可以在基础结构模式下用于与其他无线访问点通信。
 
-      * 蓝牙客户的应用程序支持对等互连HoloLens客户应用程序支持对等互连，或与其他 蓝牙设备通信。
+      * 如果客户的应用程序支持或其他蓝牙设备，则可以使用蓝牙在多个 HoloLens 之间交谈对等方。
   - question: >
-      什么是FCC ID？
+      什么是 FCC ID？
     answer: >
       * C3K1688
   - question: >
-      设备在哪些频率范围和通道上运行，并且可配置？
+      设备运行时所用的频率范围和通道是什么？
     answer: >
-      * Wi-Fi：频率范围不可由用户配置，具体取决于使用国家/地区。 在美国Wi-Fi 2.4 GHz (1-11) 通道和 5 GHz (36-64、100-165) 通道。
+      * Wi-fi：频率范围不是用户可配置的，具体取决于所使用的国家/地区。 在美国 Wi-Fi 同时使用 2.4 GHz (1-11) 通道和 5 GHz (36-64，100-165) 通道。
 
       * 蓝牙：蓝牙使用标准 2.4-2.48 GHz 范围。
   - question: >
-      设备是否允许或阻止特定频率？
+      设备是否可以允许或阻止特定的频率？
     answer: >
-      * 用户/设备无法控制这一点。
+      * 这不能由用户/设备控制。
   - question: >
-      传输和接收的功率级别是什么？ 是否可调整？ 操作范围是什么？
+      传输和接收的电源级别是什么？ 是否可对其进行调整？ 操作范围是多少？
     answer: >
-      * 可在此处找到我们的尾气测试 [标准](https://fccid.io/C3K1688)。 操作范围高度依赖于接入点和环境 ，但大致等效于其他高质量的手机、平板电脑或电脑。
+      * 可在 [此处](https://fccid.io/C3K1688)找到辐射测试标准。 操作范围很大程度上取决于访问点和环境-但大致相当于其他高质量的手机、平板电脑或电脑。
   - question: >
-      正常操作的职责周期/生存期是什么？
+      正常操作的工作周期/生存期是什么？
     answer: >
-      * 活动使用 2-3 小时，最多两周待机时间
+      * 2-3 小时的活动使用，最多两周的待机时间
 
-      * 电池生存期不可用。
+      * 电池寿命不可用。
   - question: >
-      当工具不在范围内时，什么是传输和接收行为？
+      当工具不在范围内时，传输和接收行为是什么？
     answer: >
-      * HoloLens/接收遵循标准 Wi-Fi/蓝牙模式。 在其范围的边缘，你可能会注意到输入在完全断开连接之前变得不稳定，但在重新进入范围后，它应快速重新连接。
+      * HoloLens 传输/接收遵循标准 wi-fi/蓝牙模式。 在其范围内，你可能会注意到输入不连贯，直到它完全断开连接，但在返回范围之后，它应该会快速重新连接。
   - question: >
-      什么是每平方英尺的部署密度？
+      每平方英尺的部署密度是多少？
     answer: >
-      * 这取决于网络基础结构。
+      * 这取决于你的网络基础结构。
   - question: >
-      设备能否将基础结构用作客户端？
-    answer: >
-      * 是
-  - question: >
-      使用什么协议？
-    answer: >
-      * HoloLens不使用任何专有协议
-  - question: >
-      OS 更新频率 - HL 的 OS 更新频率如何？  是否有已设置的计划？  Microsoft 是否根据需要发布安全修补程序等。
-    answer: >
-      * Microsoft 为操作系统提供 OS HoloLens与为应用程序提供 OS 更新Windows 10。 通常每年有两个主要更新，一个在春季更新，一个在五月更新。 由于HoloLens设备Windows，因此更新概念与任何其他设备Windows相同。 Microsoft 根据需要发布安全修补程序，并遵循与任何其他设备上相同的Windows概念。
-  - question: >
-      OS 强化 - 哪些选项可以强化 OS？  我们能否删除或关闭不必要的应用或服务？
-    answer: >
-      * HoloLens行为类似于智能手机。 它相当于其他新式Windows设备。 HoloLens MobileIron、Airwatch 或 Soti Microsoft Intune或其他新式 设备管理 解决方案管理。 可以在这些管理系统中设置策略，将安全策略置于设备上，并强化设备。 如果需要，还可以删除任何不必要的应用程序。
-  - question: >
-      如何管理和更新软件应用程序？ 对于 Microsoft 应用商店中的应用，我们需要通过什么控制来定义加载的应用和应用更新过程？
-    answer: >
-      * HoloLens仅通过应用商店获取Windows应用程序。 只能安装 Appx 应用程序包，这是为使用 HoloLens。 可以在应用程序旁边Microsoft Store一个小徽标在应用程序中看到此HoloLens设备。 对 Store 应用程序的管理拥有的任何控制也适用于HoloLens。 可以使用官方商店或适用于业务的商店的概念。 应用可以旁加载 (手动过程在 Windows 设备上加载应用) ，也可以通过 MDM 进行管理，以便根据需要自动从应用商店拉取应用。
-  - question: >
-      应用商店中应用更新的频率如何HoloLens？
-    answer: >
-      * 由于我们遵循相同的应用Microsoft Store拉取应用，更新周期由应用程序的开发人员决定。 控制存储中的更新机制的所有管理选项也适用于HoloLens应用。
-  - question: >
-      安全启动功能是否适用于HoloLens？
+      设备是否可以使用基础结构作为客户端？
     answer: >
       * 是
   - question: >
-      能否禁用或断开设备的外围设备支持？
+      使用哪种协议？
+    answer: >
+      * HoloLens 不使用任何专用协议
+  - question: >
+      OS 更新频率– HL OS 更新的频率是多少？  是否有设置的计划？  Microsoft 是否根据需要发布安全修补程序等。
+    answer: >
+      * Microsoft 提供的操作系统更新与 Windows 10 HoloLens 完全相同。 通常，每年有两个主要更新，一个在春季，一个在秋季。 由于 HoloLens 是 Windows 设备，因此更新概念与任何其他 Windows 设备相同。 Microsoft 根据需要发布安全修补程序，并遵循与任何其他 Windows 设备相同的概念。
+  - question: >
+      操作系统强化–有哪些选项可用于强化操作系统？  我们可以删除还是关闭不必要的应用程序或服务？
+    answer: >
+      * HoloLens 的行为类似于智能手机。 它相当于其他新式 Windows 设备。 HoloLens 可通过 Microsoft Intune 或其他新式设备管理解决方案（如 MobileIron、Airwatch 或 Soti）进行管理。 你可以在这些管理系统中设置策略，以将安全策略放在设备上，并强制实施设备。 如果需要，还可以选择删除所有不必要的应用程序。
+  - question: >
+      软件应用程序将如何管理和更新？ 对于生活在 Microsoft store 中的应用，我们必须使用哪些控制来定义加载哪些应用和应用更新流程？
+    answer: >
+      * HoloLens 仅通过 Windows 存储获取软件应用程序。 只能安装 Appx 应用程序包，这是为使用 HoloLens 而开发的。 你可以在 Microsoft Store 中看到此项，其中包含用于显示 HoloLens 设备的应用程序旁边的小徽标。 你对应用商店应用程序的管理的任何控制也适用于 HoloLens。 你可以使用官方应用商店或适用于企业的应用程序的概念。 应用可以 (手动过程进行加载，以将应用加载到 Windows 设备上) ，也可以通过 MDM 进行管理，以便在需要时自动从存储中请求应用。
+  - question: >
+      HoloLens 应用商店中的应用的更新频率是多少？
+    answer: >
+      * 由于我们遵循 Microsoft Store 的相同概念，并从该处请求应用，因此更新周期由应用程序的开发人员确定。 你必须控制应用商店中的更新机制的所有管理选项也适用于 HoloLens。
+  - question: >
+      HoloLens 是否有安全启动功能？
     answer: >
       * 是
   - question: >
-      能否控制或禁用设备上端口的使用？
+      是否有能力禁用或断开设备的外围设备支持？
     answer: >
-      * 该HoloLens只包含两个端口 (一个端口用于耳机，另一个端口用于为电脑) 。 由于功能和恢复原因，无法禁用端口。
+      * 是
   - question: >
-      防病毒、终结点检测、IPS、应用控制允许列表 - 运行防病毒、终结点检测、IPS、应用控制允许列表等的任何功能。
+      是否有能力控制或禁用设备上的端口？
     answer: >
-      * Windows Holographic for Business (商业套件) 支持Windows Defender Smart Screen。 如果防病毒公司要创建应用并发布到通用 Windows 平台，可以在 HoloLens。 目前，没有任何公司为此HoloLens。
+      * HoloLens 仅包含两个端口 (一个用于耳机，另一个用于充电或连接到 pc) 。 由于功能和恢复原因，无法禁用该端口。
+  - question: >
+      防病毒，终结点检测，IPS，应用控制允许列表-任何运行防病毒、终结点检测、IP、应用控制允许列表等功能。
+    answer: >
+      * Windows Holographic for Business (商用套件) 支持 Windows Defender 智能屏幕。 如果防病毒公司创建应用并将其发布到通用 Windows 平台，则可以 HoloLens 下载。 目前，没有任何公司对 HoloLens 执行此操作。
 
-      * 可以使用 Microsoft Enterprise Store 允许应用，其中只能选择可下载的特定应用。 此外，通过 MDM，可以锁定可在设备上运行甚至看到的特定应用。
+      * 可以通过使用 Microsoft Enterprise Store 来允许应用，你可以在其中仅选择可下载的特定应用。 此外，通过 MDM，你可以锁定可以运行的特定应用程序，甚至还可以在设备上查看。
   - question: >
-      如果设备长时间处于脱机状态，我们能否将设备隔离到产品网络，直到更新设备？  示例： 设备一直位于抽屉中，在六个月内未 (，) 未收到任何更新、修补程序等。 当它尝试进入网络时，我们能否标记它，并说你必须在另一个网络上更新，然后才能被投诉加入网络。
+      如果设备在长时间内处于脱机状态，我们是否可以将设备从生产网络中隔离？  例如： 设备坐在抽屉未通电 (六个月) 并且尚未收到任何更新、修补程序等。 当它试图进入网络时，我们可以标记该网络，并且说在投诉加入网络之前，必须在另一个网络上进行更新。
     answer: >
-      * 这是可在基础结构级别由 MDM 或内部服务器管理的功能。 如果设备不满足指定的更新版本，则该设备可标记为不符合。
+      * 这是一种可通过 MDM 或本地服务器在基础结构级别管理的内容。 如果设备未满足指定的更新版本，则可以将其标记为不合规。
   - question: >
-      Microsoft 是否包括任何后门或允许 Microsoft 连接到设备以随时进行屏幕共享或远程支持的服务？
+      Microsoft 是否包括任何后门或对允许 Microsoft 连接到设备以进行屏幕共享或远程支持的服务？
     answer: >
       * 否
   - question: >
-      当为受信任的通信生成 PKI 证书时，我们希望在设备上生成证书，以便我们知道它仅在该设备上，且该设备是唯一的，并且无法导出或用于模拟设备。 在上一次是否HoloLens？ 如果没有，是否有潜在的缓解措施？
+      为受信任的通信生成 PKI 证书时，我们希望在设备上生成证书，以便我们知道该证书仅在该设备上、对该设备是唯一的，不能被导出或用于模拟设备。 HoloLens 上是否如此？ 如果不存在，是否有潜在的缓解措施？
     answer: >-
-      * SCEP 的 CSR 是在设备本身上生成的。 Intune 和本地 SCEP 连接器通过添加和验证发送到客户端的质询字符串来帮助保护请求本身。
+      * SCEP 的 CSR 是在设备本身上生成的。 Intune 和本地 SCEP 连接器通过添加和验证发送到客户端的质询字符串来帮助保护请求。
 
-      * 由于HoloLens (第一代和第二代) 具有 TPM 模块，因此这些证书将存储在 TPM 模块中，并且无法提取。 此外，即使可以提取质询字符串，也不能在不同的设备上验证质询字符串，使证书/密钥在不同的设备上不可用。
+      * 由于 HoloLens (第一代和第2代) 具有 TPM 模块，因此这些证书将存储在 tpm 模块中，无法提取。 此外，即使可以提取质询字符串，也无法在不同的设备上对其进行验证，从而使证书/密钥在不同设备上不可用。

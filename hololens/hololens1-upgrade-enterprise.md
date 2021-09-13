@@ -13,23 +13,23 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032126"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>解锁 Windows Holographic for Business 功能
 
 > [!IMPORTANT]
-> 此页仅适用于第HoloLens代。
+> 此页面仅适用于第一代HoloLens。
 
-Microsoft HoloLens在 Development *Edition* 中提供，它运行 Windows Holographic (是专为 HoloLens) 设计的 Windows 10 版本，商业套件提供专为业务设计的额外功能。 [](hololens-commercial-features.md)
+Microsoft HoloLens开发版 （运行 Windows Holographic (一个 Windows 10 版本，专为 HoloLens) 设计）以及商业套件（提供专为业务设计的额外功能）中提供。 [](hololens-commercial-features.md)
 
 购买商业套件时，你会收到可将 Windows 全息版升级为 Windows Holographic for Business 的许可。 可以使用组织的移动设备管理提供程序或预配包 将 (许可证[) ](#edition-upgrade-by-using-mdm)[设备](#edition-upgrade-by-using-a-provisioning-package)。
 
 > [!TIP]
-> 在 Windows 10版本 1803 中，可以通过选择"HoloLens系统"来检查设置  >  **版本**。
+> 在 Windows 10版本 1803 中，可以通过选择"HoloLens 系统"来检查设置  >  **版本**。
 
 ## <a name="edition-upgrade-by-using-mdm"></a>使用 MDM 进行版本升级
 
@@ -55,7 +55,7 @@ Microsoft HoloLens在 Development *Edition* 中提供，它运行 Windows Hologr
     > [!NOTE]
     > 你可以配置[预配包中的其他设置](hololens-provisioning.md)。
 
-1. 在“文件”菜单上，选择“保存” 。 
+1. 在“文件”菜单中，选择“保存”。 
 
 1. 阅读项目文件可能包含敏感信息的警告，然后单击"确定 **"。**
 
@@ -77,7 +77,7 @@ Microsoft HoloLens在 Development *Edition* 中提供，它运行 Windows Hologr
 
     （可选）可以选择" **浏览"** 以更改默认输出位置。
 
-1. 选择“**下一页**”。
+1. 选择“下一步”。
 
 1. 选择 **"生成** "以开始生成包。 生成页显示项目信息，进度栏指示生成状态。
 
@@ -85,10 +85,10 @@ Microsoft HoloLens在 Development *Edition* 中提供，它运行 Windows Hologr
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>将预配包应用于 HoloLens
 
-1. 使用 USB 电缆将设备连接到电脑。 启动设备，但不要继续通过第一页中初始设置体验的 (安装体验页面，) 。 在电脑上，HoloLens设备会显示为文件资源管理器。
+1. 使用 USB 电缆将设备连接到电脑。 启动设备，但不要继续通过第一页中初始安装体验的 (安装体验页面，) 。 在电脑上，HoloLens设备会显示为文件资源管理器。
 
     > [!NOTE]
-    > 如果HoloLens设备Windows 10版本 1607 或更早版本，请文件资源管理器在设备上同时按下并松开"关闭音量"和"电源"按钮，打开文件资源管理器。 
+    > 如果HoloLens运行 Windows 10 版本 1607 或更早版本，请通过短暂按下并同时在设备上释放"音量降低"和"电源"按钮打开 文件资源管理器。 
 
 1. 在文件资源管理器中，将预配包 (.ppkg) 拖放到设备存储中。
 

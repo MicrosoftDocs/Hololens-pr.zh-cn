@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Endpoint Manager Intune 管理HoloLens设备
-description: 了解如何使用 MDM 通过 Intune 大规模HoloLens CSP、策略和管理混合现实设备。
+description: 了解如何使用 MDM 通过 Intune 大规模配置 CSP、HoloLens和管理混合现实设备。
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663267"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032076"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>使用 Microsoft Endpoint Manager Intune 管理HoloLens设备
 
@@ -27,7 +27,7 @@ ms.locfileid: "115663267"
 ## <a name="how-to-manage-via-intune"></a>如何通过 Intune 进行管理
 
 ### <a name="device-categories-and-groups"></a>设备类别和组
-使用 Intune，可以创建设备类别，以便根据创建的类别（例如工程、医疗、开发人员等）自动将设备添加到组。 其目的是让管理运行 Windows Holographic for Business 的设备变得更轻松。
+使用 Intune，可以创建设备类别，以根据创建的类别（例如工程、医疗、开发人员等）自动将设备添加到组。 其目的是让管理运行 Windows Holographic for Business 的设备变得更轻松。
 阅读更多： [将设备分类为组](/mem/intune/enrollment/device-group-mapping)
 
 ### <a name="device-configuration-profiles"></a>设备配置文件
@@ -44,18 +44,18 @@ Intune 提供可在组织内的不同设备上启用或禁用的设置和功能�
 详细了解如何[为用户配置HoloLens](hololens-commercial-infrastructure.md)
 
 ### <a name="certificates"></a>证书
-证书通过提供帐户身份验证、Wi-Fi身份验证、VPN 加密和 Web 内容的 SSL 加密来帮助提高安全性。 尽管管理员可以通过预配包手动管理设备上证书，但最佳做法是使用 MDM 系统在整个生命周期（从注册到续订和吊销）管理这些证书。 只要 MDM 系统支持 简单证书注册协议 (SCEP) 或公钥加密标准 #12 (PKCS #12) ) ，MDM 系统就可以在注册设备 (后自动将这些证书部署到设备的证书存储。 MDM 还可以查询和删除已注册的客户端证书，或在当前证书过期之前触发新的注册请求。 
+证书通过提供帐户身份验证、Wi-Fi身份验证、VPN 加密和 Web 内容的 SSL 加密来帮助提高安全性。 虽然管理员可以通过预配包手动管理设备上证书，但最佳做法是使用 MDM 系统在整个生命周期（从注册到续订和吊销）管理这些证书。 只要 MDM 系统支持 简单证书注册协议 (SCEP) 或公钥加密标准 #12 (PKCS #12) ) ，MDM 系统就可以在注册设备 (后自动将这些证书部署到设备的证书存储。 MDM 还可以查询和删除已注册的客户端证书，或在当前证书过期之前触发新的注册请求。 
 
-### <a name="proxy"></a>Proxy (代理)
+### <a name="proxy"></a>代理
 大多数企业 Intranet 网络都利用代理来管理内部流量。 使用 HoloLens 2，可以配置用于以太网和 Wi-Fi 连接的代理服务器。 这些设置不适用于 VPN 连接。 有关客户端代理设置的更多详细信息，Windows 10 [NetworkProxy CSP](/windows/client-management/mdm/networkproxy-csp)。
 
 ### <a name="vpn"></a>VPN
-组织通常使用 VPN 来控制对其公司 Intranet 上的应用和资源的访问权限。 HoloLens 2 SSL VPN 连接，这些连接需要可从 Microsoft Store 下载插件，并且特定于你选择的 VPN 供应商。 
-- 详细了解 vpn [on HoloLens。](hololens-network.md#vpn)
+组织通常使用 VPN 来控制对其公司 Intranet 上的应用和资源的访问权限。 HoloLens 2 SSL VPN 连接，这些连接需要一个可从 Microsoft Store 下载的插件，并且特定于你选择的 VPN 供应商。 
+- 阅读有关 vpn [on HoloLens。](hololens-network.md#vpn)
 - 有关 VPN 配置文件的更多详细信息，请参阅 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)。
 
 ### <a name="deploy-and-manage-apps"></a>部署和管理应用
-使用 Intune 可以向运行 Windows Holographic for Business 的设备添加应用。 MDM 解决方案使 IT 决策者和管理员能够以私密方式自动安装 (推送) 其内部应用、业务线应用，或者通过应用商店为一组用户购买应用。 有多种部署应用的方法，包括：
+使用 Intune 可以向运行 Windows Holographic for Business 的设备添加应用。 MDM 解决方案使 IT 决策者和管理员能够以私密方式自动安装 (推送) 推送其内部应用、业务线应用，或者通过应用商店为一组用户购买应用。 有多种部署应用的方法，包括：
 -   [Intune 和 公司门户]( app-deploy-intune.md)
 -   [适用于企业的 Microsoft Store]( app-deploy-store-business.md)
 

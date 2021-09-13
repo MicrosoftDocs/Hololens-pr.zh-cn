@@ -14,16 +14,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 019700c7e35f31c234c9fe69870cae54b3364b631253c37a17d8eaa0fe3053bd
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665227"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032060"
 ---
 # <a name="app-management-overview"></a>应用管理：概述
 
-可以在四个不同的路径上部署应用：移动 **设备管理 (MDM**) 、适用于企业的 Microsoft Store、Microsoft Store，或通过预配 来 **安装它们**。 
+可以在四个不同的路径上部署应用：移动 **设备管理 (MDM**) 、适用于企业的 Microsoft Store、Microsoft Store，或通过预配 安装 **它们**。 
 
 ## <a name="mobile-device-management-mdm"></a>移动设备管理 (MDM)
 
@@ -42,7 +42,7 @@ MDM 解决方案使 IT 决策者和管理员能够以私密方式自动安装 (�
 
 ## <a name="microsoft-store-for-business"></a>适用于企业的 Microsoft Store
 
-该[适用于企业的 Microsoft Store](app-deploy-store-business.md)为企业中的 IT 决策者和管理员提供查找、获取、管理和分发免费和付费应用。 IT 管理员可以管理Microsoft Store一个清单中的应用和专用业务线应用，并根据需要分配和重复使用许可证。 有关详细信息，请访问使用[适用于企业的 Microsoft Store](/microsoft-store/prerequisites-microsoft-store-for-business)的先决条件。
+该[适用于企业的 Microsoft Store](app-deploy-store-business.md)为企业中的 IT 决策者和管理员提供查找、获取、管理和分发免费和付费应用。 IT 管理员可以管理Microsoft Store一个清单中的应用和专用业务线应用，并根据需要分配和重复使用许可证。 有关详细信息，请访问使用[适用于企业的 Microsoft Store 的先决条件](/microsoft-store/prerequisites-microsoft-store-for-business)。
 
 此适用于企业的 Microsoft Store适用于：
 
@@ -65,18 +65,18 @@ MDM 解决方案使 IT 决策者和管理员能够以私密方式自动安装 (�
 
 ## <a name="install-via-provisioning-packages"></a>通过预配包安装
 
-[预配包](app-deploy-provisioning-package.md) 允许安装自定义应用或业务线应用，使 IT 专业人员和管理员可以通过 USB 将应用 (本地) 设备。 无需 Internet 连接和任何标识类型即可完成此安装。
+[预配包](app-deploy-provisioning-package.md) 允许你安装自定义应用或业务线应用，使 IT 专业人员和管理员可以通过 USB 将应用 (本地) 设备。 无需 Internet 连接和任何标识类型即可完成此安装。
 
 通过预配包进行安装适用于：
 
-* 业务线/自 (非公共) 应用
-* 如果脱机 (安装程序可用，则公共应用) 
+* 业务线/自行开发 (非公共) 应用
+* 公共应用 (脱机安装程序可用时) 
 * 仅 USB 旁加载
 * 无需自动更新 (通过预配包包进行手动) 
 
-## <a name="install-apps-on-hololens-2-via-app-installer"></a>通过 应用安装程序 在 HoloLens 2 安装应用
+## <a name="install-apps-on-hololens-2-via-app-installer"></a>通过 HoloLens 2 在 应用安装程序
 
-使用[应用安装程序，](app-deploy-app-installer.md)用户可以获得一种简单的体验，即在本地设备上安装应用，或者与不熟悉其他应用安装方法的用户共享应用HoloLens。 无需启用开发人员模式或使用开发人员模式即可设备门户。 这是分发完全生成应用的简单方法。 无论你只是希望将应用演示给其他用户HoloLens，还是想要部署应用，此方法都很容易。
+使用[应用安装程序，](app-deploy-app-installer.md)用户可以获得一种简单的体验，即在本地设备上安装应用，或者与不熟悉其他应用安装方法的用户共享应用HoloLens。 无需启用开发人员模式或使用开发人员模式，即可设备门户。 这是分发完全生成应用的简单方法。 无论你只是希望将应用演示给其他用户HoloLens，还是想要部署应用，此方法都很容易。
 
 通过 应用安装程序 适用于：
 

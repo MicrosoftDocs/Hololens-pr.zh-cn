@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032087"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>创建混合现实照片和视频
 
@@ -147,29 +147,29 @@ HoloLens 为用户提供了与数字世界混合现实世界的经验。  混合
 
 在捕获混合现实照片或视频后[Windows 全息版本 21H1](hololens-release-notes.md#windows-holographic-version-21h1)之前，会显示预览。 选择预览上方的 **共享** 图标以打开共享助手。 你可以从此处选择要共享该照片或视频的终结点。
 
-在捕获混合现实照片或视频后，使用 Windows 全息版21H1，将显示预览。 选择预览上方的 **共享** 图标以打开共享助手。 在该处，你可以选择要将该照片或视频共享到 )  (Mail、OneDrive 等的终点。 还可通过访问 "HoloLens "-设置""共享体验"，>**设备与>共享**。 有关详细信息，请阅读 在 中[与附近的设备共享Windows 10。](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)
+在捕获混合现实照片或视频后，使用 Windows 全息版21H1，将显示预览。 选择预览上方的 **共享** 图标以打开共享助手。 在该处，你可以选择要将该照片或视频共享到 )  (Mail、OneDrive 等的终点。 你还可以通过转到 **设置 > 系统 > 共享体验** 来使你的 HoloLens 与附近的设备共享。 有关更多详细信息，请阅读[在 Windows 10 中与附近设备共享内容](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9)。
 
 > [!TIP] 
-> 还可通过自动上传混合现实照片OneDrive共享混合现实照片和视频。 打开 OneDrive 应用HoloLens，然后使用个人Microsoft 帐户登录（如果尚未登录 **）。 [](https://account.microsoft.com)** 选择 **"设置** 图标，然后选择"**相机上传"。** 打开"相机上传"。 现在，每次在 OneDrive 上启动应用时，混合现实照片和视频都将上传到HoloLens。
+> 你还可以通过自动上传混合现实照片和视频，从 OneDrive 共享混合现实照片和视频。 打开 HoloLens 上的 OneDrive 应用，并使用 **个人 [Microsoft 帐户](https://account.microsoft.com)** 登录（如果尚未登录）。 选择 **设置** 图标，然后选择 "**相机上传**"。 打开相机上传。 当你在 HoloLens 上启动应用时，你的混合现实照片和视频现在将上传到 OneDrive。
 
 > [!NOTE]
-> 如果已使用个人OneDrive登录到 OneDrive，Microsoft 帐户。 如果使用工作HoloLens帐户设置帐户，可以在 Microsoft 帐户 应用中添加OneDrive个人帐户以启用此功能。
+> 仅当使用个人 Microsoft 帐户登录到 OneDrive 时，才能在 OneDrive 中启用相机上传。 如果使用工作或学校帐户设置 HoloLens，则可以在 OneDrive 应用中添加个人 Microsoft 帐户以启用此功能。
 
 ## <a name="limitations-of-mixed-reality-capture"></a>混合现实捕获的限制
 
-- 使用混合现实捕获时，HoloLens帧速率将缩小到 30 Hz。
-- 如果另一个应用程序已在使用照片/视频相机、实时流式处理或系统资源不足，则照片和视频的分辨率可能会降低。
+- 使用混合现实捕获时，HoloLens 的帧速率将减半到 30 Hz。
+- 如果照片/视频相机已被其他应用程序使用、实时流式处理或系统资源不足，则可能会降低照片和视频的分辨率。
 
-### <a name="maximum-recording-length"></a>最大录制长度
+### <a name="maximum-recording-length"></a>最大记录长度
 
-在 HoloLens 2 Holographic 版本 20H2 之前Windows设备上，设备上录制的视频的最大长度限制为 5 分钟。
+在 Windows 全息版20H2 之前 HoloLens 2 设备上，在设备上录制的视频的最大长度限制为五分钟。
 
-根据客户反馈，我们增加了混合现实捕获 [的录制长度](holographic-photos-and-videos.md)。 默认情况下，混合现实捕获将不再限制为 5 分钟，而是根据可用磁盘空间计算最大录制长度。 设备将基于可用磁盘空间估计最大视频录制持续时间，最多占总磁盘空间的 80%。
+由于客户反馈，我们已增加 [混合现实捕获](holographic-photos-and-videos.md)的记录长度。 默认情况下，混合现实捕获将不再限制为5分钟，但会根据可用磁盘空间来计算最大记录长度。 该设备将根据可用磁盘空间（最大为总磁盘空间的80%）估算最大视频录制持续时间。
 
 > [!NOTE]
-> 如果HoloLens以下情况之一， (视频录制长度) 5 分钟：
-> - 估计的最大录制持续时间小于默认的 5 分钟。
-> - 可用磁盘空间小于总磁盘空间的 20%。
+> 如果发生以下情况之一，HoloLens 将使用默认视频录制长度 (5 分钟) ：
+> - 预计的最大记录持续时间小于默认的5分钟。
+> - 可用磁盘空间小于总磁盘空间的20%。
 
 ## <a name="default-file-format-and-resolution"></a>默认文件格式和分辨率
 
@@ -177,8 +177,8 @@ HoloLens 为用户提供了与数字世界混合现实世界的经验。  混合
 
 |  设备  |  格式  |  分机  |  解决方法  |
 |----------|----------|----------|----------|
-| HoloLens 2 | [Jpeg](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
-| HoloLens（第 1 代） | [Jpeg](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
+| HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
+| HoloLens（第 1 代） | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### <a name="recorded-video-format-and-resolution"></a>录制的视频格式和分辨率
 

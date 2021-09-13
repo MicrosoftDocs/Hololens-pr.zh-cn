@@ -1,5 +1,5 @@
 ---
-title: Windows Defender 应用程序控制 - WDAC
+title: Windows Defender 应用程序控制 (WDAC)
 description: 概述 Windows Defender 应用程序控件的定义，以及如何使用它来管理 HoloLens 混合现实设备。
 ms.prod: hololens
 ms.sitesec: library
@@ -7,26 +7,28 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032162"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender 应用程序控制 - WDAC
 
-WDAC 允许 IT 管理员配置其设备，以阻止在设备上启动应用。 这不同于设备限制方法，例如展台模式，其中向用户提供了一个用户界面，用于隐藏设备上的应用，但仍可以启动这些应用。 实现 WDAC 后，应用仍会显示在 "所有应用" 列表中，但 WDAC 会阻止设备用户启动这些应用和进程。
+## <a name="overview"></a>概述
 
-可以为设备分配多个 WDAC 策略。 如果在系统上设置了多个 WDAC 策略，则最严格的策略会生效。 
+通过 WDAC，你可以配置 HoloLens 以阻止应用程序启动。 这不同于展台模式，UI 在此模式下隐藏了应用，但仍可以启动这些应用。 借助 WDAC，可以看到这些应用，但无法启动。
 
 > [!NOTE]
-> 当最终用户尝试启动由 WDAC 阻止的应用时，HoloLens 它们将不会收到关于无法启动该应用的通知。
+> 当最终用户尝试启动 HoloLens 上的 WDAC 阻止的应用时，不能通知他们无法启动该应用。
+
+可以为设备分配多个 WDAC 策略。 如果在系统上设置了多个 WDAC 策略，则最严格的策略会生效。 
 
 下面是一个指导，让用户了解如何[使用 WDAC 和 Windows PowerShell 来允许或阻止 Microsoft Intune 上的 HoloLens 2 设备上的应用](/mem/intune/configuration/custom-profile-hololens)。
 
@@ -38,7 +40,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 如果你不知道包的完整名称，则可能需要多次运行 "Add-appxpackage-name \* YourBestGuess \* " 才能找到它。 一旦名称运行 "$package 1 = Get-AppxPackage PackageName"
 
-例如，为 Microsoft Edge 运行以下项将返回多个结果，但从该列表中，可以确定所需的完整名称为 MicrosoftEdge。
+例如，为 Microsoft Edge 运行以下代码将返回多个结果，但从该列表中，可以确定所需的完整名称为 MicrosoftEdge。
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -60,7 +62,7 @@ Get-AppxPackage -name *edge*
 | Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe         |
 | Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
 | 反馈中心               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
-| 文件资源浏览器              | c5e2524a-ea46-4f67-6a9465d9d515_cw5n1h2txyewy 841f |
+| 文件资源管理器              | c5e2524a-ea46-4f67-6a9465d9d515_cw5n1h2txyewy 841f |
 | Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | 电影和电视                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
@@ -81,6 +83,5 @@ Get-AppxPackage -name *edge*
 1. 连接设备门户后，请导航到 " **视图** "，然后导航到 " **应用**"。 
 1. 在 "已安装的应用" 面板中，使用下拉列表选择已安装的应用。 
 1. 找到 PackageRelativeID。 
-1. 在！之前复制应用字符，这些字符将是你的 PackageFamilyName。
-
+1. 在之前复制应用字符 `!` ，这些字符将是你的 PackageFamilyName。
 

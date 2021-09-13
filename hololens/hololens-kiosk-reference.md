@@ -14,21 +14,21 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122863931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032078"
 ---
-# <a name="hololens-kiosk-reference-information"></a>HoloLens展台参考信息
+# <a name="hololens-kiosk-reference-information"></a>HoloLens 展台参考信息
 
 此页面包含有关设置设备展台HoloLens的有用信息。 此参考包括收件箱应用和定位的 AUMID，以及展台模式的几个 XML 示例，这些示例只需进行一些编辑即可用于多个不同的方案。 有关设置展台的信息，请阅读 [设置展台页。](hololens-kiosk.md)
 
 ## <a name="hololens-application-user-model-ids-aumids"></a>HoloLens应用程序用户模型 ID (AUMID)   
 
-有关如何选择展台应用的一般信息，请参阅有关在展台模式下选择分配 ([应用) 。 ](/windows/configuration/guidelines-for-assigned-access-app)
+有关如何选择展台应用的一般信息，请参阅有关在展台模式下选择分配 ([应用的准则) 。 ](/windows/configuration/guidelines-for-assigned-access-app)
 
-如果使用 Mobile 设备管理 (MDM) 系统或预配包来配置展台模式，请使用 [AssignedAccess 配置 ](/windows/client-management/mdm/assignedaccess-csp) 服务提供程序 (CSP) 来指定应用程序。 CSP 使用 [AUMID (应用程序用户) 标识 ](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 应用程序。 下表列出了可在多应用展台中使用的一些已装箱应用程序的 AUMID。
+如果使用 Mobile 设备管理 (MDM) 系统或预配包来配置展台模式，请使用 [AssignedAccess 配置 ](/windows/client-management/mdm/assignedaccess-csp) 服务提供程序 (CSP) 来指定应用程序。 CSP 使用 [AUMID 的应用程序用户 (ID) ](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 标识应用程序。 下表列出了可在多应用展台中使用的一些已装箱应用程序的 AUMID。
 
 <a id="aumids"></a>
 
@@ -43,7 +43,7 @@ ms.locfileid: "122863931"
 |Dynamics 365 Guides |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft.RemoteAssist |
 |反馈 &nbsp; 中心 |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! 应用 |
-|文件资源浏览器 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
+|文件资源管理器 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe！microsoft.windowslive.mail |
 |旧Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |新的 Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe！MSEDGE |
@@ -61,7 +61,7 @@ ms.locfileid: "122863931"
 > - "快速操作"菜单包括"照片和视频"按钮。
 > - 还应启用应用 (，例如照片、邮件或OneDrive) 或检索图片的应用。  
 >  
-> <sup>3</sup>即使未启用Cortana应用，内置语音命令也已启用。 但是，与已禁用功能相关的命令不起作用。  
+> <sup>3</sup>即使未启用Cortana应用，内置语音命令也已启用。 但是，与已禁用的功能相关的命令不起作用。  
 > <sup>4</sup>不能直接Miracast启用。 若要启用Miracast展台应用，请启用相机应用和设备选取器应用。
 
 此外，混合现实主页无法设置为展台应用。

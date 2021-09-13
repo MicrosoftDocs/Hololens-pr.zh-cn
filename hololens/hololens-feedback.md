@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032085"
 ---
 # <a name="feedback-for-hololens"></a>HoloLens 反馈
 
@@ -57,7 +57,7 @@ ms.locfileid: "123189420"
    > [!NOTE]  
    > **商业客户**：要报告与 MDM、预配或任何其他设备管理方面相关的 bug，请选择 **Enterprise 管理** 类别和 **设备** 子类别。
 
-   |类别 |说明 |
+   |Category |说明 |
    | --- | --- |
    |眼动跟踪 |有关目视跟踪、iris 登录或校准的反馈。 |
    |全息影像准确性、稳定性和可靠性 |有关全息影像如何出现在空间中的反馈。 |

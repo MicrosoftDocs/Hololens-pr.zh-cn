@@ -16,49 +16,49 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ad210c9d31d8d7c226345618b6dfabf8457ee2398882935920d7b3217259a644
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032075"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>在 HoloLens 上查找、打开和保存文件
 
 在设备上创建HoloLens文件（包括照片和视频）将直接保存到HoloLens设备。 查看和管理这些文件的方式与管理文件存储Windows 10：
 
-- 使用文件资源管理器访问本地文件夹。
+- 使用 文件资源管理器 访问本地文件夹。
 - 在应用的存储中。
-- 在特殊文件夹中 (例如视频或音乐库) 。
+- 在特殊文件夹中 (，例如视频或音乐库) 。
 - 使用包含应用和文件选取器的存储服务 (例如OneDrive) 。
-- 使用通过 USB 电缆连接到HoloLens电脑，使用 MTP (媒体传输协议) 支持。
+- 使用通过 USB 电缆连接到 HoloLens 台台式电脑，使用 MTP (媒体传输协议) 支持。
 
 ## <a name="view-files-on-hololens-using-file-explorer"></a>使用 HoloLens 查看文件资源管理器
 
-> 适用于自 HoloLens) HoloLens 2 [2018](/windows/mixed-reality/release-notes-april-2018)年 4 月 Windows 10 日更新 (RS4) 起的所有 HoloLens (设备和第一代 HoloLens。
+> 适用于自 HoloLens HoloLens 2 [2018](/windows/mixed-reality/release-notes-april-2018)年 4 月 Windows 10 日更新 (RS4) 起的所有 HoloLens (第一代) 。
 
-在文件资源管理器上HoloLens查看和管理设备上的文件，包括 3D 对象、文档和图片。 转到"   >  **开始所有应用**   >  **文件资源管理器** 开始。
+使用 文件资源管理器 HoloLens查看和管理设备上的文件，包括 3D 对象、文档和图片。 转到"   >  **开始所有应用**   >  **文件资源管理器** 开始。
 
 > [!TIP]
-> 如果未列出任何文件，文件资源管理器左上方 **窗格中选择"** 此设备"。
+> 如果未列出任何文件，请选择 **文件资源管理器窗格中的** "此设备"。
 
-如果未在左侧窗格中看到任何文件，文件资源管理器"最近"筛选器可能处于活动状态， (左窗格中突出显示时钟) 。 若要解决此问题，请选择左窗格中的"此设备"文档 (位于时钟图标下方，) 菜单并选择"**此设备"。**
+如果未在左侧窗格中看到任何文件，文件资源管理器"最近"筛选器可能处于活动状态， (左窗格中突出显示时钟) 。 若要解决此问题，请选择左侧窗格中的"此设备"文档 (位于时钟图标下方，) 菜单并选择"**此设备"。**
 
 ## <a name="find-and-view-your-photos-and-videos"></a>查找和查看你的照片和视频
 
-[通过混合现实](holographic-photos-and-videos.md)捕获，可以在 HoloLens 上拍摄混合现实HoloLens。  这些照片和视频将保存到设备的 Camera Roll 文件夹中。
+[通过混合现实](holographic-photos-and-videos.md)捕获，可以在视频中拍摄混合现实HoloLens。  这些照片和视频将保存到设备的 Camera Roll 文件夹中。
 
 可以通过访问使用设备拍摄的照片HoloLens：
 
 - 直接通过照片应用 访问[相机滚动。](holographic-photos-and-videos.md)
-- 将照片和视频同步到云存储，将OneDrive。
+- 将照片和视频同步到云存储OneDrive。
 - 使用 混合现实捕获 的 Windows 设备门户[页](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture)。
 
 ### <a name="photos-app"></a>“照片”应用
 
 照片应用是"开始"菜单上的默认应用之一，内置有HoloLens。 详细了解使用 [照片应用查看内容](holographic-photos-and-videos.md)。
 
-还可以从设备[OneDrive应用](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3)，Microsoft Store照片同步到其他设备。
+还可以从设备[OneDrive应用](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3)，Microsoft Store将照片同步到其他设备。
 
 ### <a name="onedrive-app"></a>OneDrive 应用
 
@@ -80,19 +80,19 @@ ms.locfileid: "115664870"
 
 ### <a name="known-folders"></a>已知文件夹
 
-HoloLens支持应用可以请求[访问权限](/windows/mixed-reality/app-model#known-folders)的多种已知文件夹。
+HoloLens支持应用可以请求[访问权限](/windows/mixed-reality/app-model#known-folders)的一些已知文件夹。
 
 ## <a name="view-hololens-files-on-your-pc"></a>查看HoloLens电脑上的文件
 
-与其他移动设备类似，HoloLens MTP (媒体传输协议) 连接到台式电脑，在电脑上打开 文件资源管理器 以访问 HoloLens 库，方便传输。
+与其他移动设备类似，HoloLens MTP (媒体传输协议) 连接到台式电脑，并打开电脑上的 文件资源管理器 以访问 HoloLens 库以轻松传输。
 
-若要在电脑上HoloLens查看文件资源管理器文件，请运行：
+若要在电脑上HoloLens文件资源管理器文件，请运行：
 
-1. 登录到 HoloLens，然后使用设备随设备一起连接的 USB 电缆将其插入电脑HoloLens。
+1. 登录到 HoloLens，然后使用设备随设备一起使用的 USB 电缆将其插入电脑HoloLens。
 
 1. 选择 **"打开设备"以查看** 文件资源管理器，或在电脑上打开文件资源管理器并导航到设备。
 
-若要查看有关HoloLens的信息，请右键单击电脑上文件资源管理器中的设备名称，然后选择"属性 **"。**
+若要查看有关设备HoloLens，请右键单击电脑上文件资源管理器中的设备名称，然后选择"属性 **"。**
 
 > [!NOTE]
 > HoloLens (第一代) 不支持连接到外部硬盘驱动器或 SD 卡。

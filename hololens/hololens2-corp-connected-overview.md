@@ -1,6 +1,6 @@
 ---
 title: 部署指南 - 使用 HoloLens 2 连接Dynamics 365 Guides - 概述
-description: 了解如何通过企业HoloLens 2注册Dynamics 365 Guides设备。
+description: 了解如何通过企业HoloLens 2网络Dynamics 365 Guides设备注册设备。
 keywords: HoloLens、管理、企业连接、Dynamics 365 Guides、AAD、Azure AD、MDM、移动设备管理
 author: joyjaz
 ms.author: v-jjaswinski
@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032104"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>部署指南 - 企业连接HoloLens 2与 Dynamics 365 Guides - 概述
 
-本指南将帮助 IT 专业人员使用 Dynamics 365 Guides (指南Microsoft HoloLens 2 台设备的计划) 部署到其组织。 本指南适用于试点和生产部署，类似于方案 [B：在组织的网络内部署指南](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) 。 测试概念证明后，使用本指南继续将HoloLens集成到组织中。
+本指南将帮助 IT 专业人员使用 Dynamics 365 Guides (指南将 Microsoft HoloLens 2 台设备的计划) 部署到其组织。 本指南适用于试点和生产部署，类似于方案 [B：在组织的网络内部署指南](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) 。 测试概念证明后，使用本指南继续将HoloLens集成到组织中。
 
 在本指南中，我们将介绍如何在设置设备后将设备注册到现有设备管理中、根据需要应用许可证，并验证最终用户是否能够操作 Dynamics 365 指南以及使用自定义业务线应用。 
 
@@ -73,7 +73,7 @@ ms.locfileid: "123190168"
 >- [如何创建用户和组。](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [如何设置自动注册。](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
 >- [如何为企业Wi-Fi连接设置Wi-Fi证书和配置文件。](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [Upload LOB 包 (业务线) 分配。](hololens2-corp-connected-configure.md#app-deployment)
+>- [Upload和分配业务线 (LOB) 应用包。](hololens2-corp-connected-configure.md#app-deployment)
 >- [安装程序Dynamics 365 Guides。](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [如何配置展台模式 (可选) 。](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [如何配置 WDAC (可选) 。](hololens2-corp-connected-configure.md#optional-wdac)

@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189896"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032131"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens（第 1 代）硬件
 
@@ -164,7 +164,7 @@ HoloLens测试后发现符合 ANSI Z87.1、CSA Z94.3 和 EN 166 的基本影响�
 
 若要清理视口，请用一只头毛笔刷或灯泡样式的镜头光头笔来清除任何脏物。 使用少量提取的水来微fiber 中微fiber，然后使用它以循环运动擦除视线孔。
 
-若要清理设备的其余部分（包括头带和设备手部），请使用一个含子和水的无 lint。 在再次HoloLens之前，请让设备完全干。
+若要清理设备的其余部分（包括头带和设备手部），请使用一个含子和水的无 lint。 请让HoloLens完全干，然后再再次使用它。
 
 ![显示如何清理视区的图像。](images/hololens-cleaning-visor.png)
 
