@@ -13,11 +13,11 @@ manager: evmill
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034043"
 ---
 # <a name="connect-to-cellular-and-5g"></a>连接到手机网络和 5G
 
