@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 商业, 功能, mdm, 移动设备管理, 展台模式, 应用程序, 标识, Bitlocker, iris, Windows Hello, Azure 助力, Autopilot, 混合现实, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034041"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 功能和解决方案
 
@@ -77,7 +77,7 @@ ms.locfileid: "124428499"
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center 使用 Microsoft 的 HoloLens 进行呼吸机训练。](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        HoloLens 在危难时期为医疗训练服务。
+        Sheba Medical Center 的员工使用 HoloLens 对护士和其他支持人员进行了呼吸机使用培训，在新冠肺炎大流行期间，部署了数百台呼吸机。
     :::column-end:::
 :::row-end:::
 
