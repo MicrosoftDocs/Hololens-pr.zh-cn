@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 校准, 舒适, 视觉对象, 质量, ipd, HoloLens, Windows Mixed Reality, VR 头戴显示设备
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034036"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833550"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>改善视觉质量和舒适度
 
@@ -38,7 +38,6 @@ HoloLens 2 使用眼球跟踪技术来改善你观看虚拟环境以及与虚拟
 - 用户上次使用设备时校准过程不成功
 - 用户已删除其校准配置文件
 - 设备将被关闭并重新打开，且上述任何情况都适用 
-
 
 ![调整到眼部的校准提示。](./images/07-et-adjust-for-your-eyes.png)
 
@@ -87,7 +86,7 @@ HoloLens 2 使用眼球跟踪技术来改善你观看虚拟环境以及与虚拟
 
 #### <a name="deferred-calibration-prompt"></a>延期校准提示
 
-使用自动眼部位置，眼球跟踪校准提示对话框将被推迟，直到应用程序请求眼睛凝视数据。 这样可以确保当活动应用程序不需要凝视时，不会向用户提示。 如果应用程序确实需要凝视数据，而当前用户没有校准，则会向用户显示校准提示。 这种行为可以用来在合适的时间显示眼球跟踪校准提示，有利于体验。 出于以下原因，建议使用此方法
+使用自动眼部位置，眼球跟踪校准提示对话框将被推迟，直到应用程序请求眼睛凝视数据。 这样可以确保当活动应用程序不需要凝视时，不会向用户提示。 如果应用程序确实需要凝视数据，而当前用户没有校准，则会向用户显示校准提示。 这种行为可以用来在合适的时间显示目视跟踪校准提示，有利于体验。 出于以下原因，建议使用此方法：
 
 1.  “眼球跟踪校准提示”对话框向用户提供了有关为什么需要眼球跟踪的详细信息。
 2.  为用户提供了一种拒绝眼部校准的方法。
@@ -104,16 +103,23 @@ HoloLens 2 使用眼球跟踪技术来改善你观看虚拟环境以及与虚拟
 
 ### <a name="disable-calibration"></a>禁用校准
 
-还可以执行以下步骤来禁用校准提示：
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>HoloLens 2 内部版本 20H2 和更高版本上的目视校准行为
+
+自 Windows Holographic 20H2 版本引入[自动眼部位置支持](hololens-release-notes.md#auto-eye-position-support)起，便无需禁用校准。 仅当你使用支持目视追踪的应用时，校准提示才会自动显示。
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>在较早的 HoloLens 2 内部版本上禁用目视校准
+
+可以在头戴显示设备上切换“设置”开关来禁用校准，但开关状态可能不容易确定。 它已被删除，并已替换为[自动眼部位置支持](hololens-release-notes.md#auto-eye-position-support)，该支持在提供颜色更正和全息影像定位的同时推迟校准。
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>在 HoloLens 2（第一代）上禁用目视校准
+
+对于 [HoloLens（第一代）校准](#calibrating-your-hololens-1st-gen)，可以按照以下步骤禁用目视校准提示：
 
 1. 选择“设置” > “系统” > “校准”。
 1. 关闭“新用户使用此 HoloLens 时，自动要求运行眼部校准”。
 
    > [!IMPORTANT]
    > 此设置可能对全息影像呈现质量和舒适度产生不利影响。  关闭此设置时，依赖于眼球跟踪的功能（如文本滚动）在沉浸式应用程序中将不再起作用。
-
-> [!NOTE]
-> 自 Windows Holographic 20H2 版本引入[自动眼部位置支持](hololens-release-notes.md#auto-eye-position-support)起，“设置”开关已移除。 仅在未校准的用户使用已启用眼动追踪功能的应用时，校准提示才会自动显示。
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 眼球跟踪技术
 
