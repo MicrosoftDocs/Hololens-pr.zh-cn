@@ -7,17 +7,17 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/3/2021
+ms.date: 9/21/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: efdc57b5e045c1669587ffc46dbe2132b6de6600
+ms.sourcegitcommit: 52ed453cace3851fbec0cfcc228fa2a79f1a2fec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032162"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "128075379"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender 应用程序控制 - WDAC
 
@@ -28,7 +28,7 @@ ms.locfileid: "126032162"
 > [!NOTE]
 > 当最终用户尝试启动 HoloLens 上的 WDAC 阻止的应用时，不能通知他们无法启动该应用。
 
-可以为设备分配多个 WDAC 策略。 如果在系统上设置了多个 WDAC 策略，则最严格的策略会生效。 
+可以为设备分配多个 WDAC 策略。 如果在系统上设置了多个 WDAC 策略，则最严格的策略会生效。
 
 下面是一个指导，让用户了解如何[使用 WDAC 和 Windows PowerShell 来允许或阻止 Microsoft Intune 上的 HoloLens 2 设备上的应用](/mem/intune/configuration/custom-profile-hololens)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "126032162"
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
-``` 
+```
 
 如果你不知道包的完整名称，则可能需要多次运行 "Add-appxpackage-name \* YourBestGuess \* " 才能找到它。 一旦名称运行 "$package 1 = Get-AppxPackage PackageName"
 
@@ -44,7 +44,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 ```powershell
 Get-AppxPackage -name *edge*
-``` 
+```
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>HoloLens 上的应用包的包系列名称
 
@@ -54,34 +54,47 @@ Get-AppxPackage -name *edge*
 
 | 应用名称                   | 包系列名称                                |
 |----------------------------|----------------------------------------------------|
-| 3D 查看器                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
-| 应用安装程序              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup>1</sup>         |
-| 日历                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
-| 照相机                     | HoloCamera_cw5n1h2txyewy                           |
-| Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe              |
-| Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe         |
-| Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
-| 反馈中心               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
-| 文件资源管理器              | c5e2524a-ea46-4f67-6a9465d9d515_cw5n1h2txyewy 841f |
-| Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
-| Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
-| 电影和电视                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
-| OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| 照片                     | 微软.Windows。Photos_8wekyb3d8bbwe             |
-| 设置                   | HolographicSystemSettings_cw5n1h2txyewy            |
-| 提示                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
+| 3D 查看器                  | `Microsoft.Microsoft3DViewer_8wekyb3d8bbwe`          |
+| 应用安装程序              | `Microsoft.DesktopAppInstaller_8wekyb3d8bbwe` <sup>1</sup>         |
+| 日历                   | `microsoft.windowscommunicationsapps_8wekyb3d8bbwe`  |
+| 照相机                     | `HoloCamera_cw5n1h2txyewy`                          |
+| Cortana                    | `Microsoft.549981C3F5F10_8wekyb3d8bbwe`              |
+| Dynamics 365 Guides        | `Microsoft.Dynamics365.Guides_8wekyb3d8bbwe`         |
+| Dynamics 365 Remote Assist | `Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe`      |
+| 反馈中心               | `Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe`         |
+| 文件资源管理器              | `c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy` |
+| Mail                       | `microsoft.windowscommunicationsapps_8wekyb3d8bbwe`  |
+| Microsoft Store            | `Microsoft.WindowsStore_8wekyb3d8bbwe`               |
+| 电影和电视                | `Microsoft.ZuneVideo_8wekyb3d8bbwe`                  |
+| OneDrive                   | `microsoft.microsoftskydrive_8wekyb3d8bbwe`          |
+| 照片                     | `Microsoft.Windows.Photos_8wekyb3d8bbwe`             |
+| 设置                   | `HolographicSystemSettings_cw5n1h2txyewy`            |
+| 提示                       | `Microsoft.HoloLensTips_8wekyb3d8bbwe`               |
 
 - 1-阻止应用程序安装程序将仅阻止应用程序安装程序应用程序，而不会阻止从其他源（例如 Microsoft Store 或 MDM 解决方案）安装的应用程序。
+
+### <a name="using-wdac-to-block-new-microsoft-edge"></a>使用 WDAC 阻止新版 Microsoft Edge
+
+对于希望更新其[WDAC 策略](windows-defender-application-control-wdac.md)以阻止[新的 Microsoft Edge 应用](hololens-new-edge.md)的 IT 管理员，需要将以下项添加到策略中。
+
+```xml
+<Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" />
+```
 
 ### <a name="how-to-find-a-package-family-name"></a>如何查找包系列名称
 
 如果应用不在此列表中，则用户可以使用设备门户连接到已安装了希望被阻止的应用的 HoloLens 2，以确定 PackageRelativeID，并从那里获取 PackageFamilyName。
 
-1. 在 HoloLens 2 设备上安装应用。 
-1. 为开发人员打开设置 > 更新 & 安全 >，并启用 **开发人员模式** 和 **设备门户**。 
-    1. 更多详细信息说明详细了解如何 [设置和使用设备门户](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
-1. 连接设备门户后，请导航到 " **视图** "，然后导航到 " **应用**"。 
-1. 在 "已安装的应用" 面板中，使用下拉列表选择已安装的应用。 
-1. 找到 PackageRelativeID。 
-1. 在之前复制应用字符 `!` ，这些字符将是你的 PackageFamilyName。
+1. 在 HoloLens 2 设备上安装应用。
 
+1. 为开发人员打开设置 > 更新 & 安全 >，并启用 **开发人员模式** 和 **设备门户**。
+
+   有关更多详细信息和说明，请参阅 [此处的设置和使用设备门户](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)。
+
+1. 连接设备门户后，请导航到 " **视图** "，然后导航到 " **应用**"。
+
+1. 在 "已安装的应用" 面板中，使用下拉列表选择已安装的应用。
+
+1. 找到 PackageRelativeID。
+
+1. 在之前复制应用字符 `!` ，这些字符将是你的 PackageFamilyName。
