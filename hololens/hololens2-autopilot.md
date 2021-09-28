@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833567"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346768"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
 
@@ -26,7 +26,7 @@ ms.locfileid: "127833567"
 
 若要大规模部署，我们建议开始使用 Windows Autopilot。 它被认为是“低接触”的，因为它大大简化了 IT 和最终用户的 HoloLens 设置。 
 
-在较高级别，IT 管理员通常会创建业务就绪配置并在 MDM 门户上注册 HoloLens 2 设备。 当 HoloLens 2 设备通过全新体验 (OOBE) 启动并连接到 Internet 时，会自动下载并应用已注册的 HoloLens 2 设备的业务就绪配置，使设备无需用户干预即可实现业务就绪。
+在较高级别，IT 管理员通常会创建业务就绪配置并在 MDM 门户上注册 HoloLens 2 设备。 当 HoloLens 2 设备通过全新安装体验 (OOBE) 启动并连接到 Internet 时，会自动下载并应用已注册的 HoloLens 2 设备的业务就绪配置，使设备无需用户干预即可实现业务就绪。
 
 有关详细信息，请参阅 [Windows Autopilot 概述 | Microsoft Docs](/mem/autopilot/windows-autopilot) 一问。
 
@@ -244,7 +244,7 @@ ms.locfileid: "127833567"
 
 1. Autopilot 体验需要访问 Internet。 请使用以下选项之一提供 Internet 访问：
 
-    - 在 OOBE 期间，将设备连接到 Wi-Fi 网络，然后让它自动检测 Autopilot 体验。 这是唯一需要你与 OOBE 交互的地方，直到 Autopilot 体验自行完成。 默认情况下，HoloLens 2 在检测到 Internet 后会等待 10 秒以检测 Autopilot。 如果在 10 秒内未检测到 autopilot 配置文件，OOBE 将显示 EULA。 如果遇到这种情况，请重新启动你的设备，以便再次尝试检测 Autopilot。 另请注意，只有在设备上设置了 TenantLockdown 策略时，OOBE 才会无限期地等待 Autopilot。
+    - 在 OOBE 期间，将设备连接到 Wi-Fi 网络，然后让它自动检测 Autopilot 体验。 这是唯一需要你与 OOBE 交互的地方，直到 Autopilot 体验自行完成。
 
     - 使用“USB-C 转以太网”适配器将设备与以太网连接，以实现有线 Internet 连接，并让 HoloLens 2 自动完成 Autopilot 体验。
 
@@ -268,7 +268,7 @@ ms.locfileid: "127833567"
 
 1. OOBE 结束时，你可以使用用户名和密码登录到设备。
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>租户锁定云解决方案提供商和 Autopilot
 
@@ -318,7 +318,13 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 
 ![在设备上实施策略时的设备内视图。](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>已知问题和限制
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>为什么即使在 Intune 中分配了 Autopilot 配置文件也看不到 Autopilot 体验？
+
+默认情况下，HoloLens 2 在检测到 Internet 后会等待 15 秒再检测 Autopilot。 如果在 15 秒后未检测到 Autopilot 配置文件，则表示未正确发现 Autopilot，你将看到 EULA 页面。
+
+请重启设备并重试。 有关详细信息，请参阅[已知问题和限制](hololens2-autopilot.md#known-issues-and-limitations)或[故障排除](hololens2-autopilot.md#troubleshooting)。
+
+## <a name="known-issues-and-limitations"></a>已知问题和限制
 
 - 我们正在研究在 MEM 中配置的基于设备上下文的应用程序安装不适用于 HoloLens 的问题。 [了解有关设备上下文和用户上下文安装的详细信息。](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - 通过 Wi-Fi 设置 Autopilot 时，可能会出现首次建立 Internet 连接时未能下载 Autopilot 配置文件的问题。 在这种情况下，将显示最终用户许可协议 (EULA) ，并且用户可以选择继续执行非 Autopilot 设置体验。 若要重试 Autopilot 设置，请将设备置于睡眠状态，然后重新启动，或者重启设备，然后重试。
