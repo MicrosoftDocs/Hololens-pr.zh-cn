@@ -1,8 +1,8 @@
 ---
 title: HoloLens 2 实现和托管设备故障排除
 description: 企业环境中 HoloLens 2 设备的故障排除
-author: JoyJaz
-ms.author: v-jjaswinski
+author: beelia
+ms.author: v-beehanson
 ms.date: 6/22/2021
 ms.topic: article
 keywords: 故障排除
@@ -12,14 +12,14 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2e997514be5d067ce5e9bd7f3611b464d19a6fad
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034160"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364591"
 ---
-# <a name="troubleshooting-implementation-and-managed-devices"></a>实现和托管设备的故障排除 
+# <a name="troubleshooting-implementation-and-managed-devices"></a>实现和托管设备的故障排除
 
 本文介绍如何解决与 HoloLens 2 的实现和管理有关的几个问题或回答问题。
 
@@ -37,10 +37,10 @@ ms.locfileid: "126034160"
 - [托管 HoloLens 设备常见问题解答](#managed-hololens-devices-faqs)
 
 ## <a name="eap-troubleshooting"></a>EAP 故障排除
-1. 仔细检查 Wi-Fi 配置文件具有适当的设置：
-    - EAP 类型配置正确，常见 EAP 类型：EAP-TLS (13)、EAP-TTLS (21) 和 PEAP (25)。
-    - Wi-Fi SSID 名称是正确的，并且与十六进制字符串匹配。
-    - 对于 EAP-TLS，TrustedRootCA 包含服务器的受信任根 CA 证书的 SHA-1 哈希。 在 Windows 电脑上，“certutil.exe -dump cert_file_name”命令将显示证书的 SHA-1 哈希字符串。
+1. 验证 Wi-Fi 配置文件的设置是否正确：
+    - 正确配置 EAP 类型。 常见 EAP 类型有 EAP-TLS (13)、EAP-TTLS (21) 和 PEAP (25)。
+    - 检查 Wi-Fi SSID 名称，查看其是否与十六进制字符串匹配。
+    - 确保对于 EAP-TLS，TrustedRootCA 包含服务器的受信任根 CA 证书的 SHA-1 哈希。 在 Windows 电脑上，“certutil.exe -dump cert_file_name”命令将显示证书的 SHA-1 哈希字符串。
 2. 在接入点或控制器或 AAA 服务器日志上收集网络数据包捕获，了解 EAP 会话失败的位置。
     - 如果 HoloLens 提供的 EAP 标识不是预期的，请检查该标识是否已通过 Wi-Fi 配置文件或客户端证书正确预配。
     - 如果服务器拒绝 HoloLens 客户端证书，请检查是否已在设备上预配了所需的客户端证书。
@@ -54,10 +54,10 @@ ms.locfileid: "126034160"
 
 如果无法将 HoloLens 连接到 Wi-Fi 网络，请尝试以下操作：
 
-1. 确保 Wi-Fi 已打开。 若要进行检查，请使用“开始手势”，然后选择“设置”>“网络和 Internet”>“Wi-Fi”。 如果 Wi-Fi 处于打开状态，请尝试将其关闭，然后重新打开。
+1. 确保 WLAN 已打开。 进行验证，方法是使用“开始手势”，然后选择“设置”>“网络和 Internet”>“Wi-Fi”。 如果 Wi-Fi 处于打开状态，请尝试将其关闭，然后重新打开。
 2. 移动以靠近路由器或接入点。
 3. 重启 Wi-Fi 路由器，然后重启 HoloLens。 请再次尝试连接。
-4. 如果这些操作都不起作用，请进行检查以确保路由器使用的是最新固件。 你可以在制造商网站上找到此信息。
+4. 如果这些操作都不起作用，请验证确认路由器使用的是最新固件。 可以在制造商网站上找到此信息。
 
 在设备上登录到企业或组织帐户时，如果策略由 IT 管理员配置，也可能应用移动设备管理 (MDM) 策略。
 
@@ -78,53 +78,53 @@ Fiddler 是 Web 调试代理，用于解决 HTTP(S) 问题。 它捕获计算机
 
 1. 在 PC 上 - [安装](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure)并启动 Fiddler。  
 1. 在 PC 上 - 配置 Fiddler 以允许远程计算机连接。
-    1. 转到“Fiddler 设置”->“连接”
-    1. 记下 Fiddler 的监听端口（默认为 8866）
-    1. 勾选“允许远程计算机连接”
-    1. 点击“保存”
+    1. 转到“Fiddler 设置”->“连接”。
+    1. 记下 Fiddler 的监听端口（默认为 8866）。
+    1. 勾选“允许远程计算机连接”。
+    1. 单击“保存”。
 3. 在 HoloLens 2 上 - 将 Fiddler 配置为代理服务器<sup>1</sup>：
-    1. 打开“开始”菜单，然后选择“设置”
-    1. 选择“网络和 Internet”，然后选择左侧菜单上的“代理”
-    1. 向下滚动到“手动代理设置”，并将“使用代理服务器”切换到“打开”
-    1. 输入安装了 Fiddler 的 PC 的 IP 地址
-    1. 输入先前记下的端口号（默认为 8866）
-    1. 点击“保存”
+    1. 打开“开始”菜单，然后选择设置。
+    1. 选择“网络和 Internet”，然后选择左侧菜单上的“代理”。
+    1. 向下滚动到“手动代理设置”，并将“使用代理服务器”切换到“打开”。
+    1. 输入安装了 Fiddler 的 PC 的 IP 地址。
+    1. 输入先前记下的端口号（默认为 8866）。
+    1. 单击“保存”。
 
 <sup>1</sup> 对于内部版本 20279.1006+（预览体验成员和即将发布的版本），请按照以下步骤配置代理：
-1. 打开“开始”菜单并转到 Wi-Fi 网络的“属性”页 
-1. 向下滚动到“代理”
-1. 更改为“手动设置”
-1. 输入安装了 Fiddler 的 PC 的 IP 地址
-1. 输入先前记下的端口号。 （默认为 8866）
-1. 单击“应用”
+1. 打开“开始”菜单并转到 Wi-Fi 网络的“属性”页。 
+1. 向下滚动到“代理”。
+1. 更改为“手动设置”。
+1. 输入安装了 Fiddler 的 PC 的 IP 地址。
+1. 输入先前记下的端口号（默认为 8866）。
+1. 单击“应用”。
     
 #### <a name="decrypt-https-traffic-from-hololens-2"></a>解密来自 HoloLens 2 的 HTTPS 流量
 
 1. 在 PC 上 - 导出 Fiddler 证书。
-    1. 转到“Fiddler 设置”->“HTTPS”，并展开“高级设置”
-    2. 单击“导出 Fiddler 证书”。 它将保存到桌面
-    3. 将证书移至 HoloLens 2 上的 Downloads 文件夹
+    1. 转到“Fiddler 设置”->“HTTPS”，并展开“高级设置”。
+    2. 单击“导出 Fiddler 证书”。 它将保存到桌面。
+    3. 将证书移至 HoloLens 2 上的 Downloads 文件夹。
 
 2.  在 HoloLens 2 上 - 导入 Fiddler 证书。
-    1. 转到“设置”->“更新和安全”->“证书”
-    2. 单击“安装证书”，浏览 Downloads 文件夹并选择 Fiddler 证书
-    3. 将“存储位置”更改为“本地计算机”
-    4. 将“证书存储”更改为“根文件夹”
-    5. 选择“安装”
-    6. 确认证书是否显示在证书列表中。 如果否，重复上述步骤
+    1. 转到“设置”->“更新和安全”->“证书”。
+    2. 单击“安装证书”，浏览 Downloads 文件夹并选择 Fiddler 证书。
+    3. 将“存储位置”更改为“本地计算机”。
+    4. 将“证书存储”更改为“根文件夹”。
+    5. 选择“安装”。
+    6. 确认证书是否显示在证书列表中。 如果否，重复上述步骤。
 
 #### <a name="inspect-https-sessions"></a>检查 HTTP (S) 会话
 
-在 PC 上，Fiddler 将显示 HoloLens 2 的实时 HTTP(S) 会话。 Fiddler 中的“检查者”面板可以在不同的视图中显示 HTTP(S) 请求/响应 - 例如，“原始”视图以纯文本形式显示原始请求或响应。 
+在 PC 上，Fiddler 将显示 HoloLens 2 的实时 HTTP(S) 会话。 Fiddler 中的“检查器”面板可以使用不同的视图来显示 HTTP(S) 请求/响应。 例如，“原始”视图以纯文本显示原始请求或响应。 
 
 ### <a name="configure-wireshark-to-capture-network-traffic"></a>配置 Wireshark 以捕获网络流量
-Wireshark 是网络协议分析器，用于检查进出 HoloLens 2 设备的 TCP/UDP 流量。 这样即可轻松识别经网络流向 HoloLens 2 的流量、流量多少、频率，以及某些跃点之间的延迟等。
+Wireshark 是网络协议分析器，用于检查进出 HoloLens 2 设备的 TCP/UDP 流量。 借助该工具可轻松识别经网络流向 HoloLens 2 的流量、流量大小、流量频率，以及某些跃点之间的延迟等。
 
 #### <a name="prerequisites"></a>先决条件：
-- PC 必须可以访问 Internet 并支持通过 Wi-Fi 在 Internet 中进行共享
+- PC 必须可以访问 Internet 并支持通过 Wi-Fi 在 Internet 中进行共享。
 
 #### <a name="install-and-configure-wireshark"></a>安装和配置 Wireshark
-1. 在 PC 上 - 安装 [Wireshark](https://www.wireshark.org/#download) 
+1. 在 PC 上 - 安装 [Wireshark](https://www.wireshark.org/#download)。
 1. 在 PC 上 - 启用移动热点通过 Wi-Fi 共享 Internet 连接。
 1. 在 PC 上 - 启动 Wireshark 并从移动热点界面捕获流量。 
 1. 在 HoloLens 2 上 - 将其 Wi-Fi 网络更改为 PC 的移动热点。 HoloLens 2 IP 流量将显示在 Wireshark 中。
@@ -166,7 +166,7 @@ Wireshark 筛选器可帮助筛选出感兴趣的数据包。
 
 ## <a name="autopilot-troubleshooting"></a>Autopilot 故障排除
 
-以下文章可能是你了解更多信息和解决 Autopilot 问题的有用资源，但请注意，这些文章是基于Windows 10 桌面版的，并非所有信息都适用于 HoloLens：
+以下文章也许有助于你了解更多信息和解决 Autopilot 问题。 但是，这些文章基于 Windows 10 Desktop，并非所有信息都适用于 HoloLens：
 
 - [Windows Autopilot - 已知问题](/mem/autopilot/known-issues)
 - [Microsoft Intune 中的 Windows 设备注册问题疑难解答](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
@@ -194,7 +194,7 @@ Wireshark 筛选器可帮助筛选出感兴趣的数据包。
 
 ### <a name="does-hololens-support-branding"></a>HoloLens 是否支持品牌？
 
-否。 但是，你可以使用以下方法之一来解决此问题：
+否。 但可以使用以下方法之一来解决此问题：
 
 - 创建一个自定义应用，然后[启用展台模式](hololens-kiosk.md)。 自定义应用可以具有品牌，还可以启动其他应用（如 Remote Assist）。  
 - 将 Azure AD 中的所有用户配置文件图片更改为你的公司徽标。 但是，这可能并不适合所有方案。

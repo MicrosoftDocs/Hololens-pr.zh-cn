@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f646e70c61bda17fb315670e94a6fbada010e1d5
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034155"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163992"
 ---
 # <a name="about-hololens-2"></a>关于 HoloLens 2
 
@@ -48,7 +48,7 @@ Microsoft HoloLens 2 是完全不受束缚的全息计算机。  它可以改进
 
 ### <a name="power-supply-details"></a>电源详细信息
 
-设备附带的电源和 USB 线缆是支持的最佳充电装置。 电源是一个 18W 充电器。  它可以在 2A 条件下提供 9V 电压。
+设备附带的电源和 USB 线缆是支持的最佳充电装置。 电源是一个 18W 充电器。  它在 2A 条件下提供 9V 电压。
 
 充电率和速度可能因设备运行环境而异。
 
