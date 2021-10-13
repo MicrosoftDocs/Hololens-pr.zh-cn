@@ -3,7 +3,7 @@ title: 收集和使用来自 HoloLens 设备的诊断信息
 description: 了解如何从 HoloLens 设备收集、使用和保留诊断信息。
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 10/15/2020
+ms.date: 9/12/2021
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 4f62a70430d78087157b3adcdf76af53183db708
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833516"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924407"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>收集和使用来自 HoloLens 设备的诊断信息
 
@@ -78,7 +78,7 @@ HoloLens 用户可以使用 Microsoft 反馈中心桌面应用将诊断信息发
 
 ## <a name="settings-troubleshooter"></a>设置$
 
-HoloLens 用户可以使用设备上的 **设置** 应用来解决问题和收集诊断信息。 要实现这一点，请执行下列操作：
+HoloLens 用户可以使用设备上的 **设置** 应用来解决问题和收集诊断信息。 为此，请按照下列步骤进行操作：
 
 1. 打开设置应用并选择 "**更新 & 安全**  >  **故障排除**" 页。
 1. 选择相应的区域，然后选择 " **启动**"。
@@ -113,68 +113,101 @@ HoloLens 用户可以使用设备上的 **设置** 应用来解决问题和收�
 
 ### <a name="view-diagnostic-report"></a>查看诊断报告
 
-若要查看"MDM 诊断"，HoloLens 2 WiFi 图标，然后导航到"设置访问工作或学校帐户"，然后选择  ->    >  "**导出管理日志"。** HoloLens日志文件发送到帐户，并显示它们在你的台式电脑上的位置。
+若要在 HoloLens 2 上查看 MDM 诊断，请选择你的 WiFi 图标，然后导航到 "**设置**  ->  **帐户**" "  >  **访问工作或学校**" 并选择 "**导出管理日志**"。 HoloLens 将日志文件发送到你的帐户，并在台式计算机上显示其位置。
 
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog 云解决方案提供商
 
-在 Mobile 设备管理 (MDM) 环境中，IT 管理员可以使用[DiagnosticLog](/windows/client-management/mdm/diagnosticlog-csp)配置服务提供程序 (CSP) 在已注册的 HOLOLENS 设备上配置诊断设置。 IT 管理员可以将这些设置配置为从已注册的设备收集日志。
+在移动设备管理 (MDM) 环境中，IT 管理员可以使用[DiagnosticLog 配置服务提供程序 (CSP) ](/windows/client-management/mdm/diagnosticlog-csp)来配置注册 HoloLens 设备上的诊断设置。 IT 管理员可以将这些设置配置为从注册的设备收集日志。
 
-查看更多：
+查看详细信息：
 - [从 Windows 设备收集诊断信息](/mem/intune/remote-actions/collect-diagnostics)
-- [Intune 公共预览版 - Windows 10设备诊断](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+- [Intune 公共预览版-Windows 10 设备诊断](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
 ### <a name="prerequisites"></a>先决条件
 
 - 设备已连接到网络。
 - 设备在支持 DiagnosticLog CSP 的 MDM 环境中注册。
 
-### <a name="data-locations-access-and-retention"></a>数据位置、访问权限和保留期
+### <a name="data-locations-access-and-retention"></a>数据位置、访问和保留
 
 由于设备是托管环境的一部分，因此用户隐式同意对诊断信息的管理访问权限。
 
-IT 管理员使用 DiagnosticLog CSP 配置数据存储、保留和访问策略，包括控制以下各项的策略：
+IT 管理员使用 DiagnosticLog CSP 来配置数据存储、保留和访问策略，包括控制以下各项的策略：
 
 - 存储诊断信息的云基础结构。
-- 诊断信息的保留期。
-- 控制对诊断信息的访问的权限。
+- 诊断信息的保持期。
+- 控制诊断信息访问的权限。
 
 ## <a name="offline-diagnostics"></a>脱机诊断
 
-如果设备无法通过诊断程序或故障排除反馈中心收集设置，可以手动收集诊断信息。 需要这样做的一种情况是设备无法连接到 Wi-Fi或者无法访问上述其他方法。 诊断从设备收集故障转储和日志，以帮助 Microsoft 支持工程师隔离问题。
+如果设备无法通过反馈中心或设置疑难解答收集诊断信息，则可以手动收集诊断信息。 这是必需的一种情况是：设备无法连接到 Wi-Fi 或无法访问上面提到的其他方法。 诊断从设备收集崩溃转储和日志，帮助 Microsoft 支持工程师隔离问题。
 
-当设备通过 USB 电缆连接到电脑文件资源管理器设备显示在电脑中时，此操作有效。
+当设备通过 USB 电缆连接到电脑后，在文件资源管理器中显示时，这会起作用。
 
 > [!NOTE]
-> 脱机诊断的生成和管理根据 OS 版本以不同方式进行控制。 以前，它由遥测设置控制，但现在通过 MDM 策略直接控制。 如果通过设置或 MDM 策略禁用，则不能使用此机制收集诊断日志。
+> 脱机诊断生成和管理的控制方式不同，具体取决于你的操作系统版本。 以前，它受遥测设置的控制，但现在通过 MDM 策略直接控制。 如果是通过设置或 MDM 策略禁用的，则无法使用此机制收集诊断日志。
 
-Holographic 版本[20H2 Windows之前的行为](hololens-release-notes.md#windows-holographic-version-20h2)：
- - 只有在用户通过 OOBE 或[System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)策略值设置为 Full (Basic 是 HoloLens) 时，才启用脱机诊断。 
-- 若要禁用脱机诊断，请转到"设置 **应用>隐私**"页，然后选择"**诊断数据"** 中的"**基本"。** 在脱机诊断依赖于遥测设置的生成中，它仅影响是否收集任何日志。 它不会影响收集哪些文件。
-- 如果设备已锁定，则不显示日志。
+[Windows 全息版之前的行为 20H2](hololens-release-notes.md#windows-holographic-version-20h2)：
+ - 仅当用户通过 OOBE 或[System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)策略值设置为 Full 时，才会启用脱机诊断。 HoloLens) 上的 (Basic 为默认值。 
+- 若要禁用脱机诊断，请在 "**诊断数据**" 页中转到 **设置 > 应用**，并选择 "**基本**"。 在离线诊断依赖于遥测设置的生成上，它只会影响是否收集任何日志。 它不会影响收集的文件。
+- 如果设备被锁定，则不会出现日志。
 
-在[Holographic Windows版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)及之后的版本上：
-- 启用回退诊断时，由特定 MDM 策略控制，并相应地设置 [MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
-- 如果设备已锁定，则不显示日志。
+[Windows 全息版、版本 20H2](hololens-release-notes.md#windows-holographic-version-20h2)和更高版本：
+- 启用后备诊断后，将使用相应的设置[MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)将特定 MDM 策略控制
+- 如果设备被锁定，则不会出现日志。
 
 观看此视频，了解详细信息。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-请按照以下步骤收集诊断信息：
+请按照以下步骤收集诊断：
 
-1.  连接 USB 电缆将设备连接到电脑。
+1.  使用 USB 电缆将设备连接到 PC。
 
-2.  在文件资源管理器，导航到 **"此电脑 \<hololens-device> \内部存储"。**
+2.  在电脑上的文件资源管理器中，导航到 **"这台电脑 \<hololens-device> \Internal 存储"**。
 
-3.  如果 **"存储"** 文件夹未显示，则设备正在等待用户登录。 通过按住 POWER 按钮 10 秒来登录或关闭设备电源。
+3.  如果未显示 **内部存储** 文件夹，则表示设备正在等待用户登录。 登录或重启设备，方法是：按住电源按钮10秒。
 
-4.  同时按下并立即释放 **"电源 + 音量降低** "按钮。
+4.  按下并立即释放 **电源 + 向下移动** 按钮。
 
-5.  等待一分钟，让设备准备 zip 存档。  (生成 zip 存档时，名为 HololensDiagnostics.temp 的临时文件可能会变得可见。 请勿访问或保存该文件。 该过程完成后，它将替换为 zip archives.) 
+5.  等待一分钟让设备准备 zip 存档。  (在设备生成 zip 存档时，名为 HololensDiagnostics 的临时文件可能会变得可见。 不要访问或保存该文件。 当进程完成时，它将替换为 zip 存档。 ) 
 
-6.  刷新文件资源管理器，并导航到 **"\Documents"** 文件夹。
+6.  刷新文件资源管理器，然后导航到 **"\Documents"** 文件夹。
 
-7.  复制诊断 ZIP 文件，并与 Microsoft 支持团队共享这些文件。
+7.  复制诊断 ZIP 文件并将其与 Microsoft 支持团队共享。
 
-    > [!NOTE]
-    > 某些诊断 ZIP 文件可能包含 PII。
+> [!NOTE]
+> 某些诊断 ZIP 文件可能包含 PII。
+
+### <a name="offline-diagnostics-notifications"></a>脱机诊断通知
+
+- 在[Windows 全息版 21H2](hololens-release-notes.md#windows-holographic-version-21h2)中引入。
+
+此更新适用于称为 [脱机诊断](hololens-diagnostic-logs.md#offline-diagnostics)的现有功能。 以前，用户已触发诊断收集或已完成，没有明确的指示器。
+现已添加到 Windows 内部版本中，对于脱机诊断，有两种形式的视听反馈。 当收集开始和完成时，将显示第一个 toast 通知。 当用户登录并具有视觉对象时，将显示这些用户。
+
+![用于收集日志的 Toast。](./images/logcollection1.jpg)
+
+![记录收集完成时 Toast。](./images/logcollection2.jpg)
+
+由于用户经常会使用脱机诊断作为回退日志收集机制来访问显示器、无法登录或仍处于 OOBE 状态，因此在收集日志时也会播放音频提示。 除了 toast 通知外，还会播放此声音。
+
+这项新功能将在设备更新时启用，不需要启用或管理。 如果无法显示或听不到此新反馈，则仍将生成脱机诊断。
+
+我们希望这种新的视听反馈增加，更易于收集诊断数据，并能更快地解决问题。
+
+### <a name="low-storage-log-collection-improvements"></a>低存储日志收集改进
+
+- 在[Windows 全息版 21H2](hololens-release-notes.md#windows-holographic-version-21h2)中引入。
+
+如果收集诊断日志时，设备的磁盘空间似乎不足，则将创建一个名为 **StorageDiagnostics.zip** 的附加报表。 Windows[存储感知](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)会自动确定低存储的阈值。
+
+## <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>查看 HoloLens 上设置的高级诊断报告
+
+- 在[Windows 全息版 21H2](hololens-release-notes.md#windows-holographic-version-21h2)中引入。
+
+对于托管设备，在对行为进行故障排除时，确认应用了预期的策略配置是一个重要的步骤。 之前，此新功能必须通过 mdm 或附近的设备完成，然后再导出通过 **设置**  ->  **帐户**  >  **访问工作或学校** 收集的 mdm 诊断日志，并选择 "**导出管理日志** 并在附近的 PC 上查看"。
+
+现在可以使用 Edge 浏览器在设备上查看 MDM 诊断。 若要更轻松地查看 MDM 诊断报告，请导航到 "访问" 工作或学校页面，然后选择 " **查看高级诊断报告**"。 这会在新的边缘窗口中生成并打开报表。
+
+![在设置应用中查看高级诊断报告。](./images/view-advanced-diagnostic-report.jpg)
