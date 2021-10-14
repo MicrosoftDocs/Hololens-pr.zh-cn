@@ -1,9 +1,9 @@
 ---
 title: HoloLens设备故障排除
-description: 随时了解最新的解决方法 HoloLens 设备问题和故障排除方法。
+description: 随时了解最常见的解决方案，HoloLens设备问题和故障排除技术。
 author: evmill
 ms.author: v-evmill
-ms.date: 10/7/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -12,17 +12,17 @@ manager: ranjibb
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-keywords: 问题、错误、故障排除、修复、帮助、支持、HoloLens、模拟器
-ms.openlocfilehash: afbbc1ab0e018f668381137849738ec7d274fe37
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+keywords: 问题， bug， 故障排除， 修复， 帮助， 支持， HoloLens， 模拟器
+ms.openlocfilehash: 247cf9d34da723e587f6796178ad9a917b93ac08
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924382"
+ms.locfileid: "129964558"
 ---
 # <a name="device-troubleshooting"></a>设备故障排除
 
-本文介绍如何解决几个常见的 HoloLens 问题。
+本文介绍如何解决几个常见的HoloLens问题。
 
 >[!IMPORTANT]
 > 在开始任何故障排除过程之前，请确保将设备充电至电池容量的 20 % 至 40%（如可能）。 通过位于电源按钮下的[电池指示灯](hololens2-setup.md#lights-that-indicate-the-battery-level)可以快速验证电池容量（无需登录到设备）。
@@ -30,44 +30,46 @@ ms.locfileid: "129924382"
 <a id="list"></a>
 
 **已知问题**
-- [每次功率下降到18% 时，设备会突然自动关闭](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
-- [OneDriveUWP 应用不适用于 Azure AD 用户](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
-- [为什么在 Autopilot 期间看到出现代码0x80180014？](#why-do-i-see-0x80180014-during-autopilot)
-- [远程协助视频在20分钟后冻结](#remote-assist-video-freezes-after-20-minutes)
-- [自动登录请求登录](#auto-login-asks-for-log-in)
-- [无法启动 Microsoft Edge](#microsoft-edge-fails-to-launch)
-- [键盘无法切换为特殊字符](#keyboard-doesnt-switch-to-special-characters)
-- [下载锁定的文件不显示错误](#downloading-locked-files-doesnt-error)
-- [设备门户文件上传/下载超时](#device-portal-file-uploaddownload-times-out)
-- [取消注册在使用 Insider 内部版本闪存的设备上预览有问必答后的蓝屏](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
-- [OneDrive 不会自动上载图片](#onedrive-doesnt-automatically-upload-pictures)
+- [每次电源达到 18% 时，设备就会突然自动关闭](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [OneDriveUWP 应用对用户Azure AD不起作用](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
+- [为什么在 Autopilot 0x80180014看到问题？](#why-do-i-see-0x80180014-during-autopilot)
+- [Microsoft Store错误代码0x80131500](#microsoft-store-error-code-0x80131500)
+- [Microsoft Edge无法启动麦克风](#microsoft-edge-fails-to-start-the-microphone)
+- [**已** 修复 - Remote Assist 20 分钟后视频冻结](#remote-assist-video-freezes-after-20-minutes)
+- [自动登录要求登录](#auto-login-asks-for-log-in)
+- [Microsoft Edge启动失败](#microsoft-edge-fails-to-launch)
+- [键盘不切换到特殊字符](#keyboard-doesnt-switch-to-special-characters)
+- [**已** 修复 - 下载锁定的文件不会显示错误](#downloading-locked-files-doesnt-error)
+- [**已** 修复 - 设备门户文件上传/下载时间过长](#device-portal-file-uploaddownload-times-out)
+- [从预览体验成员预览版取消注册后，在设备上以预览体验成员版本刷出蓝屏](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+- [OneDrive不会自动上传图片](#onedrive-doesnt-automatically-upload-pictures)
 
 **常规**
-- [HoloLens 无响应或不启动](#hololens-is-unresponsive-or-wont-start)
-- ["磁盘空间不足" 错误](#low-disk-space-error)
+- [HoloLens无响应或无法启动](#hololens-is-unresponsive-or-wont-start)
+- ["磁盘空间不足"错误](#low-disk-space-error)
 - [校准失败](#calibration-fails)
-- [无法登录，因为以前为其他人设置了我的 HoloLens](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
-- [Unity 不起作用](#unity-isnt-working)
-- [Windows设备门户工作不正常](#windows-device-portal-isnt-working-correctly)
-- [HoloLens Emulator 不起作用](#the-hololens-emulator-isnt-working)
+- [无法登录，因为之前为HoloLens设置了我的帐户](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [Unity 不工作](#unity-isnt-working)
+- [Windows设备门户无法正常工作](#windows-device-portal-isnt-working-correctly)
+- [HoloLens Emulator运行](#the-hololens-emulator-isnt-working)
 
 **输入**
-- [语音命令不起作用](#voice-commands-arent-working)
-- [手写输入不起作用](#hand-input-isnt-working)
+- [语音命令无法工作](#voice-commands-arent-working)
+- [手动输入不工作](#hand-input-isnt-working)
 
 **连接**
-- [无法连接到 Wi-fi](#cant-connect-to-wi-fi)
+- [无法连接到 Wi-Fi](#cant-connect-to-wi-fi)
 
 **外部设备** 
-- [蓝牙设备不配对](#bluetooth-devices-arent-pairing)
+- [蓝牙设备未配对](#bluetooth-devices-arent-pairing)
 - [USB-C 麦克风不工作](#usb-c-microphone-isnt-working)
-- [列为设置的设备不起作用](#devices-listed-as-available-in-settings-dont-work)
+- [在 设置中列为可用的设备不起作用](#devices-listed-as-available-in-settings-dont-work)
 
-## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>每次功率下降到18% 时，设备会突然自动关闭
+## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>每次电源达到 18% 时，设备就会突然自动关闭
 
-存在已知的已知问题：当设备达到18% 电池时，将会意外关闭。 这是一种软件问题，而不是硬件或电池问题，因此，请不要交换设备来实现此目的。 如果你不确定问题是否与此 bug 匹配，请执行以下操作：
+存在一个已知问题：当设备达到 18% 的电池电量时，它会意外关闭。 这是一个软件问题，而不是硬件或电池问题，因此请不要为此交换设备。 如果不确定问题是否与此 bug 匹配，请：
 
-1. 确保在你的设备上启用了可选诊断 (s) 
+1. 确保在设备上启用可选诊断 () 
 1. 重现问题
 1. 提交 [反馈中心](hololens-feedback.md) 问题
 1. 共享反馈问题 URL
@@ -75,50 +77,76 @@ ms.locfileid: "129924382"
 
 [返回到列表](#list)
 
-## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDriveUWP 应用不适用于 Azure AD 用户
+## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDriveUWP 应用对用户Azure AD不起作用
 
-如果你使用 Azure AD 帐户使用 OneDrive For Business，则在登录收件箱 OneDrive 应用时可能遇到错误。 无法登录到 OneDrive 的应用不会影响相机应用捕获的图像和视频的自动上传。 你的文件仍可通过 OneDrive for Business 云存储进行保存和访问。 OneDrive 和 HoloLens 团队正在处理此问题。
+如果使用 Azure AD 帐户使用 OneDrive For Business，则登录到收件箱或应用时OneDrive错误。 无法登录到 OneDrive不会影响相机应用捕获的图像和视频的自动上传。 仍可从云存储中保存和访问OneDrive for Business文件。 OneDrive团队HoloLens团队正在解决此问题。
 
 ### <a name="workarounds"></a>解决方法
 
-先决条件：客户可以使用 Microsoft Edge 和设备 OS 更新为 Windows 全息版、21H1 版本或更高版本。
+先决条件：客户可以使用 Microsoft Edge OS 更新到 holographic、Windows 21H1 内部版本或更高版本。
 
-如果遇到此问题，请尝试以下操作之一：
+如果遇到此问题，请尝试以下方法之一：
 
-- 用户可以从 Microsoft Edge 中直接访问 OneDrive 的业务，并与其浏览器的文件交互。
-- 用户可以通过从 Microsoft Edge 下载 OneDrive PWA 应用程序来 HoloLens 安装该应用程序。 这样，用户就可以再次查看和管理设备上的文件。 阅读并按照这些[说明在 HoloLens 上安装 OneDrive PWA 应用。](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
+- 用户可以从 OneDrive 直接访问 Microsoft Edge For Business，并可通过浏览器与其文件进行交互。
+- 用户可以通过从OneDrive PWA下载HoloLens应用来安装Microsoft Edge。 这将允许用户再次查看和管理设备上的文件。 阅读并按照[这些说明在 OneDrive PWA 应用HoloLens。](holographic-store-apps.md#install-microsoft-onedrive-pwa-app)
 
 [返回到列表](#list)
 
-## <a name="why-do-i-see-0x80180014-during-autopilot"></a>为什么在 Autopilot 期间看到出现代码0x80180014？
+## <a name="why-do-i-see-0x80180014-during-autopilot"></a>为什么在 Autopilot 0x80180014看到问题？
 
-此错误通常在设备重置过程中出现，并重复使用 HoloLens 设备已通过 Autopilot 至少一次的流。 若要解决此问题，请[从 Microsoft Intune 中删除该设备](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)，然后再次将其重置以完成 Autopilot 流。
+在设备重置和重新使用流期间，通常会HoloLens设备至少通过 Autopilot 一次。 若要解决此问题，请从设备中删除Microsoft Intune[](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)重置它以完成 Autopilot 流。
 
 有关详细信息，请参阅 [autopilot 页上的故障排除步骤。](hololens2-autopilot.md#why-do-i-see-0x80180014-during-autopilot)
 
-## <a name="remote-assist-video-freezes-after-20-minutes"></a>远程协助视频在20分钟后冻结
+## <a name="microsoft-store-error-code-0x80131500"></a>Microsoft Store错误代码0x80131500
+
+某些用户可能会遇到Microsoft Store运行错误，并看到错误代码0x80131500。 此问题是由上设置的区域HoloLens在 HoloLens 上的 Microsoft Store 应用HoloLens。 如果遇到错误代码0x80131500，若要解决此问题，请：
+
+1. 将设置 >"&">">"或"区域"设置为以下项之一：
+    - 美国、日本、中国、德国、加拿大、英国、爱尔兰、法国、澳大利亚、新西兰。
+1. 重启 Store 应用。
+1. 若要使整个设备反映更改，需要重启设备。
+
+HoloLens团队正在努力为更多区域添加支持。
+
+请参阅此处[，了解国家/地区HoloLens 2。](hololens2-purchase.md)
+
+## <a name="microsoft-edge-fails-to-start-the-microphone"></a>Microsoft Edge无法启动麦克风
+
+当用户使用 Microsoft Edge麦克风可能无法启动，因此无法与 HoloLens 中的 Edge 交互。 此已知问题与 Microsoft Edge 版本相关，请不要将设备重新升级为早期版本，因为无法解决此问题。
+
+### <a name="who-is-affected"></a>Who受到影响？
+
+具有版本 93 Microsoft Edge 94 或 95 的用户。
+可以使用 Microsoft Edge 应用检查你拥有的版本Microsoft Store，然后选择由 表示的"查看更多"按钮 **，** 然后选择"下载和更新 **"。**
+
+### <a name="work-around"></a>变通方法
+
+当前修补程序为版本 96，该版本适用于在预览体验成员Microsoft Edge用户。 这不同于将设备注册为预览Windows预览体验计划。 阅读这些说明， [详细了解如何注册 Edge 的预览体验计划。](hololens-new-edge.md#microsoft-edge-insider-channels)
+
+## <a name="remote-assist-video-freezes-after-20-minutes"></a>Remote Assist视频在 20 分钟后冻结
 
 > [!NOTE]
-> 有一个较新版本的远程协助，此问题可以解决此问题。 请将 [远程协助更新](holographic-store-apps.md#update-apps) 到最新版本，以避免此问题。
+> 有较新版本的 Remote Assist修复了此问题。 请将 [Remote Assist](holographic-store-apps.md#update-apps) 更新到最新版本，以避免此问题。
 
 > [!NOTE]
-> 由于此已知问题的严重性，我们暂时暂停 Windows 全息版21H1 的可用性。 现在可再次使用21H1 生成，因此设备可能会再次更新为最新的21H1 版本。
+> 由于此已知问题的严重性，我们暂时暂停了 Holographic 版本 21H1 Windows的可用性。 21H1 版本现已再次可用，因此设备可能会再次更新到最新的 21H1 内部版本。
 
-在最新版本的[Windows 全息版 21H1](hololens-release-notes.md#windows-holographic-version-21h1)上，某些远程协助用户在20分钟调用期间经历了视频冻结。 这是一个 **已知问题**。
+在[Holographic Windows版本 21H1](hololens-release-notes.md#windows-holographic-version-21h1)的最新版本中，Remote Assist用户在通话期间遇到视频冻结超过 20 分钟。 这是一个 **已知问题**。
 
 ### <a name="workarounds"></a>解决方法
 
-如果无法将远程协助更新到较新的版本，请尝试以下解决方法。
+如果无法将更新Remote Assist更新版本，请尝试以下方法。
 
-#### <a name="restart-in-between-calls"></a>在两次调用之间重启
+#### <a name="restart-in-between-calls"></a>在调用之间重启
 
-如果调用的持续时间超过20分钟并且遇到此问题，请尝试重新启动设备。 在远程协助调用之间重启设备会刷新设备，并将其恢复到正常状态。
+如果通话时长超过 20 分钟，并且遇到此问题，请尝试重启设备。 在两次Remote Assist重启设备会刷新设备，并恢复为良好状态。
 
-若要在 [Windows 全息版](hololens-release-notes.md#windows-holographic-version-21h1)上快速重启设备，请打开 "开始" 菜单，选择 "用户" 图标，然后选择 "**重新启动**"。
+若要快速重启 [Holographic Windows版本 21H1](hololens-release-notes.md#windows-holographic-version-21h1)上的设备，请打开"开始"菜单，选择用户图标，然后选择"重启 **"。**
 
 [返回到列表](#list)
 
-## <a name="auto-login-asks-for-log-in"></a>自动登录请求登录
+## <a name="auto-login-asks-for-log-in"></a>自动登录要求登录
 
 可以将 HoloLens 2 设备配置为通过 **设置**  ->  **帐户**  ->  **登录选项** 自动登录->，在 "**必需**" 下，将值设置为 "**从不**"。 当更新设备时，某些用户可能需要再次登录到该设备，如功能更新。 这是一个 **已知问题**。
 
@@ -279,69 +307,69 @@ HoloLens 的 OneDrive 应用不支持工作或学校帐户的自动照相机上�
 
 如果你遵循了所有准则，并且校准仍失败，则可以在设置中禁用校准提示。 还可以通过在 [反馈中心](hololens-feedback.md)中归档反馈来告知我们。
 
-另请参阅图像颜色 [或亮度故障排除的相关信息。](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+另请参阅[图像颜色或亮度疑难解答](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)的相关信息。
 
-设置 IPD 不适用于HoloLens 2，因为眼睛位置由系统计算。 
-
-[返回到列表](#list)
-
-## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>无法登录，因为之前为HoloLens设置了我的帐户
-
-可以将 [设备置于 **刷用模式，** 并使用高级恢复](hololens-recovery.md#clean-reflash-the-device) 助手来恢复设备。
+设置 IPD 不适用于 HoloLens 2，因为目视位置由系统计算。 
 
 [返回到列表](#list)
 
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>无法登录，因为以前为其他人设置了我的 HoloLens
 
-## <a name="unity-isnt-working"></a>Unity 不工作
-
-- 请参阅[安装工具](/windows/mixed-reality/install-the-tools)，了解建议用于开发最新版本的 Unity HoloLens版本。
-- Unity HoloLens Technical Preview 的已知问题记录在[HoloLens Unity 论坛中](https://forum.unity3d.com/threads/known-issues.394627/)。
+可以 [将设备置于 **闪烁模式** ，并使用高级恢复助理](hololens-recovery.md#clean-reflash-the-device) 来恢复设备。
 
 [返回到列表](#list)
 
-## <a name="windows-device-portal-isnt-working-correctly"></a>Windows设备门户无法正常工作
+
+## <a name="unity-isnt-working"></a>Unity 不起作用
+
+- 请参阅安装适用于 HoloLens 开发的最新 Unity 版本[工具](/windows/mixed-reality/install-the-tools)。
+- [HoloLens unity 论坛](https://forum.unity3d.com/threads/known-issues.394627/)中介绍了 unity HoloLens Technical Preview 的已知问题。
+
+[返回到列表](#list)
+
+## <a name="windows-device-portal-isnt-working-correctly"></a>Windows设备门户工作不正常
 
 - 混合现实捕获中的实时预览功能可能会出现几秒钟的延迟。
 
-- 在"虚拟输入"页上，"虚拟手势"部分下的"手势"和"滚动"控件不起作用。 使用它们将不起作用。 虚拟输入页上的虚拟键盘正常工作。
+- 在 "虚拟输入" 页上，"虚拟手势" 部分下的手势和滚动控件不起作用。 使用它们将不起作用。 虚拟输入页上的虚拟键盘工作正常。
 
-- 在 设置 中启用开发人员模式后，可能需要几秒钟时间，开关才能启用设备门户模式。
-
-[返回到列表](#list)
-
-## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator运行
-
-有关 HoloLens 模拟器的信息，请参阅我们的开发人员文档。  详细了解如何[排查 HoloLens 模拟器。](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
-
-
-- 并非所有应用Microsoft Store模拟器兼容。 例如，Young Conker 和 Fragments 在仿真器上不可播放。
-- 不能在设备中使用电脑网络Emulator。
-- Windows 设备门户的 Live Preview 功能不能与模拟器一起使用。 你仍然可以捕获混合现实视频和图像。
+- 在设置中启用 "开发人员模式" 后，可能需要几秒钟才能打开设备门户。
 
 [返回到列表](#list)
 
-## <a name="voice-commands-arent-working"></a>语音命令无法工作
+## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator 不起作用
 
-如果Cortana语音命令未响应，请确保Cortana语音命令。 在"所有应用"列表中 **，Cortana**  >    >  **菜单笔记本**  >  **设置** 进行更改。 若要详细了解可以说出的话，请参阅将语音与[HoloLens。](hololens-cortana.md)
+有关 HoloLens 模拟器的信息位于开发人员文档中。  阅读有关[排查 HoloLens 模拟器问题的](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)详细信息。
 
-在HoloLens (第一代) ，内置语音识别不可配置。 它始终打开。 在HoloLens 2，可以选择是否在设备设置期间同时Cortana语音识别和语音。
 
-如果HoloLens 2语音未响应，请确保已打开语音识别。 转到"**开始**  >  **设置**  >    >  **语音"并** 打开 **语音识别**。
+- 并非 Microsoft Store 中的所有应用都与模拟器兼容。 例如，不能在模拟器上播放年轻人 Conker 和片段。
+- 无法在 Emulator 中使用 PC 网络摄像机。
+- Windows 设备门户的实时预览功能不适用于模拟器。 你仍可以捕获混合现实视频和图像。
 
 [返回到列表](#list)
 
-## <a name="hand-input-isnt-working"></a>手动输入不工作
+## <a name="voice-commands-arent-working"></a>语音命令不起作用
 
-若要确保HoloLens看到手，需要将它们放在手势框架中。  混合现实主页提供反馈，让你了解何时跟踪手部。  不同版本的服务的反馈HoloLens：
+如果 Cortana 没有响应语音命令，请确保 Cortana 已打开。 在 "所有应用" 列表中，选择 **Cortana**  >  **菜单**  >  **笔记本**  >  **设置** 进行更改。 若要详细了解你可以说的内容，请参阅[将语音与 HoloLens 一起使用](hololens-cortana.md)。
 
-- 在HoloLens (第一代) 上，凝视光标从点变为环
-- 在HoloLens 2，当手接近平板电脑时，会出现一个手指光标，当板离得远时，会出现手部射线
+在 HoloLens (1 代) ，内置语音识别不可配置。 始终打开。 在 HoloLens 2 上，你可以选择是否在设备安装期间打开语音识别和 Cortana。
 
-许多沉浸式应用遵循类似于混合现实主页的输入模式。  详细了解如何使用第一代 HoloLens ([上的](hololens1-basic-usage.md#use-hololens-with-your-hands)手动) HoloLens 2。 [](hololens2-basic-usage.md#the-hand-tracking-frame)
+如果您的 HoloLens 2 没有响应您的语音，请确保已启用语音识别。 转到 **开始**  >  **设置**  >  **隐私**  >  **语音** 并打开 **语音识别**。
 
-如果你正在戴眼镜，请注意，某些类型的手部手部跟踪不起作用。  一个常见示例是黑色保护套，它往往能吸收光线，并且不会由深度相机拾取。  如果你的工作涉及橡皮套，我们建议尝试较浅的颜色，如蓝色或灰色。  另一个示例是大包袋套，它往往遮盖手的形状。 我们建议使用尽可能适合窗体的外套，以获得最佳结果。
+[返回到列表](#list)
 
-如果视器具有指纹或指纹，请使用设备中HoloLens清理视器。
+## <a name="hand-input-isnt-working"></a>手写输入不起作用
+
+若要确保 HoloLens 可以看到您的手，需要将它们保留在手势帧中。  混合现实主页提供反馈，让你知道何时跟踪你的手。  不同版本的 HoloLens 的反馈有所不同：
+
+- 在 HoloLens 第一代)  (，注视光标会从点变为圆圈
+- 在 HoloLens 2 上，当手接近某个石板时，将出现一个手指光标，而当清单进一步离开时，将显示一只手
+
+许多沉浸式应用都遵循类似于混合现实主页的输入模式。  详细了解如何使用[HoloLens (第一代) ](hololens1-basic-usage.md#use-hololens-with-your-hands)和[HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)上的手动输入。
+
+如果戴上手套，请注意，某些类型的手套不适用于手动跟踪。  常见的例子是黑色橡胶手套，这通常会吸收红外线，而不是由深度相机选取。  如果你的工作涉及橡胶手套，我们建议尝试使用较浅的颜色，如蓝色或灰色。  另一个示例是大型 baggy 手套，这种情况通常会使手不会遮盖。 为了获得最佳效果，我们建议使用以窗体为形式的手套。
+
+如果面板具有指纹或无污迹，请使用 HoloLens 附带的 microfiber 清洁抹布来轻轻地清理面板。
 
 [返回到列表](#list)
 
@@ -349,43 +377,43 @@ HoloLens 的 OneDrive 应用不支持工作或学校帐户的自动照相机上�
 
 如果无法将 HoloLens 连接到 Wi-Fi 网络，请尝试以下操作：
 
-- 确保 Wi-Fi 已打开。 若要检查，请使用"开始"手势，然后选择设置  >  **网络 &amp; Internet**  >  **Wi-Fi"。** 如果 Wi-Fi 处于打开状态，请尝试将其关闭，然后重新打开。
+- 确保 Wi-Fi 已打开。 若要进行检查，请使用开始手势，然后选择 **设置**  >  **网络 &amp; Internet**  >  **wi-fi**"。 如果 Wi-Fi 处于打开状态，请尝试将其关闭，然后重新打开。
 - 移动以靠近路由器或接入点。
-- 重启Wi-Fi路由器，[然后重启HoloLens。](hololens-recovery.md) 请再次尝试连接。
+- 重新启动 Wi-Fi 路由器，然后[重启 HoloLens](hololens-recovery.md)。 请再次尝试连接。
 - 如果这些操作都不起作用，请进行检查以确保路由器使用的是最新固件。 你可以在制造商网站上找到此信息。
 
 [返回到列表](#list)
 
-## <a name="bluetooth-devices-arent-pairing"></a>蓝牙设备未配对
+## <a name="bluetooth-devices-arent-pairing"></a>蓝牙设备不配对
 
-如果在将设备与设备[蓝牙时遇到问题，](hololens-connect-devices.md)请尝试以下操作：
+如果在[配对蓝牙设备](hololens-connect-devices.md)时遇到问题，请尝试以下操作：
 
-- 转到 **设置**  >  **"设备**"，并确保蓝牙设备" 。 如果是，请将其关闭并再次打开。
-- 请确保设备已蓝牙或具有新电池。
-- 如果仍然无法连接，请[重启HoloLens。](hololens-recovery.md)
+- 转到 **设置**  >  **设备**，并确保蓝牙已打开。 如果是，请将其关闭，然后重新打开。
+- 请确保蓝牙设备已完全充电或具有新电池。
+- 如果仍然无法连接，请[重新启动 HoloLens](hololens-recovery.md)。
 
 [返回到列表](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C 麦克风不工作
 
-请注意，某些 USB-C 麦克风错误地将自身报告为 *麦克风和扬声器* 。 这是麦克风的问题，而不是麦克风HoloLens。 将其中一个麦克风插入 HoloLens时，可能会丢失声音。 幸运的是，有一个简单的修复方法。  
+请注意，某些 USB-C 麦克风会错误地将自身报告为麦克风 *和* 扬声器。 这是麦克风问题，而不是 HoloLens。 将其中一个麦克风插入 HoloLens 时，可能会丢失声音。 幸运的是，有一个简单的修补程序。  
 
-在 **设置** System Sound 中，将"模拟功能音频驱动程序" (将内置扬声器)  ->    ->  设置为 **"默认设备"。**  HoloLens应记住此设置，即使稍后删除了麦克风并重新连接。
+在 **设置**  ->  **系统**  ->  **声音**"中，将内置扬声器 **(模拟功能音频驱动程序")** 为 **默认设备**。 即使稍后会删除并重新连接麦克风，HoloLens 也应记住此设置。
 
-![USB-C 麦克风疑难解答。](images/usbc-mic-4.png)
+![USB-C 麦克风故障排除。](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>在 设置 中列为可用的设备不起作用
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>列为设置的设备不起作用
 
-HoloLens (第一代) 不支持蓝牙配置文件。 蓝牙音频设备（如扬声器和头戴显示设备）在HoloLens中显示为可用，但不受支持。
+HoloLens 第一代 () 不支持蓝牙音频配置文件。 蓝牙音频设备（如扬声器和耳机）在 HoloLens 设置中可能显示为可用，但不受支持。
 
-HoloLens 2支持蓝牙立体声播放的 A2DP 音频配置文件。 支持蓝牙麦克风捕获的无手配置文件蓝牙不支持从外设捕获麦克风HoloLens 2。
+HoloLens 2 支持用于立体声播放的蓝牙 A2DP 音频配置文件。 HoloLens 2 不支持从蓝牙外设启用麦克风捕获的蓝牙免提免费配置文件。
 
-如果在使用设备蓝牙时遇到问题，请确保它是受支持的设备。 支持的设备包括：
+如果使用蓝牙设备时遇到问题，请确保它是受支持的设备。 支持的设备包括：
 
-- 英语 QWERTY 蓝牙键盘 (，可以在使用全息键盘或键盘的任何位置) 。
+- 使用简体中文蓝牙键盘 (可以在任何使用全息键盘) 的地方使用。
 - 蓝牙鼠标。
-- 单击[HoloLens器](hololens1-clicker.md)。
+- [HoloLens clicker](hololens1-clicker.md)。
 
-可以将其他 蓝牙 HID 和 GATT 设备与 HoloLens。 但是，可能需要从设备安装相应的Microsoft Store应用，以实际使用设备。
+你可以将其他蓝牙 HID 和 GATT 设备与你的 HoloLens 配对。 但是，你可能需要从 Microsoft Store 安装相应的随附应用才能实际使用设备。
 
 [返回到列表](#list)
