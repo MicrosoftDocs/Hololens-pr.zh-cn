@@ -5,21 +5,21 @@ keywords: 操作说明，更新，回滚，HoloLens，检查生成，生成号
 ms.prod: hololens
 ms.sitesec: library
 author: qianw211
-ms.author: v-qianwen
+ms.author: v-beehanson
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/3/2021
+ms.date: 10/11/2021
 audience: ITPro
 ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f39fc2c6c0aaf16f304f38216a424c3811eb439d
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032148"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034257"
 ---
 # <a name="update-hololens-2"></a>更新 HoloLens 2
 
@@ -35,7 +35,7 @@ ms.locfileid: "126032148"
 
 ## <a name="types-of-updates"></a>更新类型
 
-对于 HoloLens，你可以自动管理两种类型的更新。 
+对于 HoloLens，你可以自动管理两种类型的更新。
 
 - 功能更新：每年发布两次。
 - 质量更新：包括关键安全更新。 它们按月或按需发布。
@@ -46,9 +46,9 @@ ms.locfileid: "126032148"
 
 你还可以设置更新计划。 它可以在特定日期或每天的特定时间进行。 例如，在下午5点或在活动时间之外。
 
-最后是关于规划更新策略的几个词。 我们支持更新延迟。 因此，你可以决定在 Microsoft 发布更新后要等待多长时间才能在设备上安装该更新。
+最后是关于规划更新策略的几个词。 我们支持更新延迟，以便你可以决定在 Microsoft 发布更新后要等待多长时间才能在设备上安装该更新。
 
-有时候，公司喜欢首先尝试所有新功能以确保一切正常，并熟悉新的更新，使其支持团队做好准备。 一旦他们确认一切都好，就会将更新推广到整个公司。 通过将设备的子集与不同的延迟策略（称为更新环）相关联，可以协调组织的更新推出策略。
+有时候，公司喜欢首先尝试所有新功能，以确保一切正常，并熟悉新的更新，使其支持团队做好准备。 一旦他们确认一切都好，就会将更新推广到整个公司。 通过将设备的子集与不同的延迟策略（称为更新环）相关联，可以协调组织的更新推出策略。
 
 ## <a name="hololens-update-tools"></a>HoloLens 更新工具
 
@@ -83,21 +83,10 @@ HoloLens 一次应用一个更新。  如果 HoloLens 的版本超过了最新�
 
 1. 请联系支持人员以查看他们能否解决你的问题。
     1. 确保启用了 **可选** 的或 **完整** 的遥测-这会使你的 bug 更具可操作性，并使工程师能够更轻松地进行诊断。
-    1. [文件反馈](hololens-feedback.md) 尽可能地说明。 记下标题或使用共享功能，以便可以与支持人员共享 bug。
+    1. 在 [文件反馈](hololens-feedback.md) 中尽可能地说明。 记下标题，或使用 "共享" 功能，以便可以与支持人员共享 bug。
     1. 联系 [支持人员](https://aka.ms/hlsupport)。 如果你的问题是需要通过返回到以前的版本来解决的问题，则可以提供 FFU 来闪存设备。
 
-1. 如果这不起作用，请[使用高级恢复助理来重置或刷新 HoloLens 2](hololens-recovery.md)。
-    1. 在电脑上，从 Microsoft Store 下载[高级恢复助理](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab)。
-    1. 请确保没有任何手机或 Windows 设备连接到 PC。
-    1. 选择要刷新到的版本：
-        1. 您可以下载[最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
-        1. 可以使用 ARC 宿主的默认生成。  (如果选择此选项，则跳过下一步。 ) 
-        1. 你可以使用提供的生成支持。
-    1. 完成这些下载后，打开 **文件资源管理器**  >  **下载**。 右键单击已下载的压缩文件夹，然后选择 "**提取所有**  >  **提取**" 将其解压缩。
-    1. 使用 usb-a 到 usb 电缆将你的 HoloLens 连接到你的电脑。 即使已使用其他电缆来连接 HoloLens， (也是如此。 ) 
-    1. 高级恢复助理会自动检测 HoloLens。 选择“Microsoft HoloLens”磁贴。
-    1. 在下一个屏幕上，选择 " **手动包选择** "，然后选择在步骤4中解压缩的文件夹中包含的安装文件。  (查找扩展名为的文件 `.ffu` ) 
-    1. 选择 " **安装软件**"，然后按照说明进行操作。
+1. 如果这不起作用，请[使用高级恢复助理刷新你的 HoloLens 2](hololens-recovery.md#clean-reflash-the-device)。
 
 > [!NOTE]
 > 返回到早期版本会删除你的个人文件和设置。
