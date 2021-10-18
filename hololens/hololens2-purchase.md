@@ -3,9 +3,9 @@ title: 在何处购买 HoloLens 2
 description: 可用的全球 ADR 联系人和国家/地区列表。
 keywords: HoloLens 2 购买选项, 国际购买, 国际经销商, ADR
 author: qianw211
-ms.author: v-qianwen
+ms.author: v-beehanson
 ms.reviewer: skerawala
-ms.date: 8/03/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a8585d2cf00d08f1c877e5f62e864ffd21b6c8f8
-ms.sourcegitcommit: 89f47c105ae4d46ed578343e4e1449c7d2c3f821
+ms.openlocfilehash: 0ee90e8aa89c4121053ff6319ec46f83f01a4a3f
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "128036856"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949031"
 ---
 # <a name="where-to-buy-hololens-2"></a>在何处购买 HoloLens 2
 
@@ -47,8 +47,7 @@ HoloLens 2 是最舒适的沉浸式混合现实体验，其行业领先的解决
 | **澳大利亚** | Insight Enterprises Australia Pty Ltd | Jenny Southon [jenny.southon@insight.com](mailto:%3Cjenny.southon@insight.com)<br>Costa Aligianis [costa.aligianis@insight.com](mailto:Costa.Aligianis@insight.com) | [购买 HoloLens 2 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) | [购买 HoloLens 2 工业版 - Insight Enterprises Australia Pty Ltd](https://au.insight.com/en_AU/shop/partner/microsoft/surface/hololens.html) |
 | | Telstra Purple | Joanna Bari [joanna.kandias@team.telstra.com](mailto:Joanna.kandias@team.telstra.com) Oliver Ashworth [oliver.ashworth@purple.telstra.com](mailto:Oliver.Ashworth@purple.telstra.com) |  |  |
 | **中国** | 翰林汇信息产业股份有限公司 | 周峰<br>[zhouf@tcl.com](mailto:zhouf@tcl.com) | [购买 HoloLens 2 - 翰林汇信息产业股份有限公司](http://www.ehighly.com.cn/productList.html?key=hololens) | [购买 HoloLens 2 工业版 - 翰林汇信息产业股份有限公司](https://isite.baidu.com/site/highly.com.cn/849172be-8d31-46c3-b704-a09c8614ec7b?fid=nHD1nWckPjDYnjb3PWbdnH6srHPxnHfvnNtk&amp;ch=4&amp;bd_vid=11025645443434810125) |
-| | 四川长虹佳华信息产品有限责任公司 | 程钱伟 [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [购买 HoloLens 2 工业版 - 四川长虹佳华信息产品有限责任公司](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [购买 HoloLens 2 工业版 - 四川长虹佳华信息产品有限责任公司](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  |
-| | 黑龙江拓盟科技有限公司，中国哈尔滨 |lidan lidan@hljtmkj.com | http://hljtmkj.com/buy.html | http://47.92.113.150:8080/sjtbtm/a/sjtb | 
+| | 四川长虹佳华信息产品有限责任公司 | 程钱伟 [qianwch@changhongit.com](mailto:qianwch@changhongit.com)  | [购买 HoloLens 2 工业版 - 四川长虹佳华信息产品有限责任公司](https://isite.baidu.com/site/wjzw72ux/97379685-b8b5-4abd-8bbf-84c376542b72) | [购买 HoloLens 2 工业版 - 四川长虹佳华信息产品有限责任公司](https://isite.baidu.com/site/wjzw72ux/43c6ba2e-d6f7-4a6c-9f2c-1bdf4bbb5bbd?title=%E4%BA%A7%E5%93%81&uniqId=32b077d6eeab4f3baf6d88a25696f5a5)  
 | | 英施艾特（上海）软件贸易有限公司 | Julian Kung  julian.kung@insight.com<br>Zac Zhang<br> zac.zhang@insight.com | [购买 HoloLens 2 - 英施艾特（上海）软件贸易有限公司](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) | [购买 HoloLens 2 工业版 - 英施艾特（上海）软件贸易有限公司](https://cn.insight.com/zh_CN/shop/partner/microsoft/surface/hololens.html) |
 | **中国香港特别行政区** | GO VR Immersive Ltd. (UFO) | Howard Tian <howard.tian@govrimmersive.com> | [购买 HoloLens 2 - GO VR Immersive Ltd.](https://www.govrimmersive.com/hololens2) | [购买 HoloLens 2 工业版 - GO VR Immersive Ltd](https://www.govrimmersive.com/hololens-2-industrial-edition) |  
 | | Insight Enterprises Hong Kong | Jenny Southon<br><jenny.southon@insight.com><br>Eddie Tsui<br><eddie.tsui@insight.com> | [购买 HoloLens 2 - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) | [购买 HoloLens 2 工业版 - INSIGHT ENTERPRISES HONG KONG](https://hk.insight.com/en_HK/shop/product/ONEIT_HL2/MICROSOFT/ONEIT_HL2/MICROSOFT-%20HOLOLENS-2/) |
