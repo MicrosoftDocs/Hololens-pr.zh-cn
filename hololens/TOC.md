@@ -117,7 +117,7 @@
 ## [HoloLens 2 发行说明](hololens-release-notes.md)
 ## [适用于 Microsoft HoloLens 的 Insider Preview](hololens-insider.md)
 ## [支持的语言](hololens2-language-support.md)
-## [通过 Microsoft Mesh（预览版）进行开发](/mesh/overview)
+## [了解 Microsoft Mesh（预览版）](/mesh/overview)
 ## HoloLens（第 1 代）
 ### 首次使用
 #### [关于 HoloLens（第 1 代）](hololens1-hardware.md)
