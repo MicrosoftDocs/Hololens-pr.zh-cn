@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034257"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151688"
 ---
 # <a name="update-hololens-2"></a>更新 HoloLens 2
 
@@ -86,7 +86,11 @@ HoloLens 一次应用一个更新。  如果 HoloLens 的版本超过了最新�
     1. 在 [文件反馈](hololens-feedback.md) 中尽可能地说明。 记下标题，或使用 "共享" 功能，以便可以与支持人员共享 bug。
     1. 联系 [支持人员](https://aka.ms/hlsupport)。 如果你的问题是需要通过返回到以前的版本来解决的问题，则可以提供 FFU 来闪存设备。
 
-1. 如果这不起作用，请[使用高级恢复助理刷新你的 HoloLens 2](hololens-recovery.md#clean-reflash-the-device)。
+1. 或者，你可以[通过高级恢复助理刷新你的 HoloLens 2](hololens-recovery.md#clean-reflash-the-device)。
+    1.  选择要刷新到的版本： 
+        1.  您可以下载[最新的 HoloLens 2 版本](https://aka.ms/hololens2download)。
+        1.  可以使用 ARC 宿主的默认生成。
+        1.  你可以使用提供的生成支持。
 
 > [!NOTE]
 > 返回到早期版本会删除你的个人文件和设置。
