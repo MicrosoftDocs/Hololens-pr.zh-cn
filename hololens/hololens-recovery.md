@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034186"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034210"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重启、重置或恢复 HoloLens 2
 
@@ -45,13 +45,19 @@ ms.locfileid: "126034186"
 
    ![HoloLens 2 属性屏幕显示电量变化情况。](images/ResetRecovery2.png)
 
-如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后按照[疑难解答指南](hololens-troubleshooting.md)。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下预先执行[硬重置程序](hololens-recovery.md#hard-reset-procedure)。 等待至少一小时，让设备充电。
+如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后按照[疑难解答指南](hololens-troubleshooting.md)。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下预先执行[硬重置程序](hololens-recovery.md#hard-restart-procedure)。 等待至少一小时，让设备充电。
 
-## <a name="reset-the-device"></a>重置设备
+> [!NOTE]
+> 首先，我们来定义术语。\
+> “重启”只是表示关闭后再打开设备。\
+> “重置”表示通过设置 UI 将设备还原为默认值，以重新安装当前映像。\
+> “重新刷写”表示设备已连接到 PC，并且要安装新映像（可选不同的映像）。
 
-在某些情况下，可能需要在不使用软件 UI 的情况下手动重置设备。
+## <a name="restart-the-device"></a>重启设备
 
-### <a name="standard-procedure"></a>标准程序
+在某些情况下，可能需要在不使用软件 UI 的情况下手动重启设备。 这可以帮助你解决遇到的问题，让你无需重置/重新刷写设备。
+
+### <a name="standard-restart-procedure"></a>标准重启过程
 
 1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
@@ -63,7 +69,7 @@ ms.locfileid: "126034186"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 设备管理器。](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>硬重置程序
+### <a name="hard-restart-procedure"></a>硬重启过程
 
 如果标准重置程序不起作用，可使用硬重置程序：
 
@@ -92,13 +98,13 @@ ms.locfileid: "126034186"
 >[!WARNING]
 >如果刷写设备，则将擦除所有个人数据、应用和设置，包括 TPM 重置。
 
-默认情况下，Advanced Recovery Companion 设置为下载最新的功能版本；要了解最新的功能版本，请参阅 [HoloLens 2 发行说明](hololens-release-notes.md)。 要获取最新的 HoloLens 2 Full Flash Update (FFU) 包以通过 Advanced Recovery Companion 重刷你的设备，请下载最新的每月 HoloLens 2 映像：[https://aka.ms/hololens2download](https://aka.ms/hololens2download)。 此版本是最新的通用版本。
+默认情况下，Advanced Recovery Companion 设置为下载最新的功能版本。 若要了解最新的功能版本，请参阅 [HoloLens 2 发行说明](hololens-release-notes.md)。 要获取最新的 HoloLens 2 Full Flash Update (FFU) 包以通过 Advanced Recovery Companion 重刷你的设备，请下载最新的每月 HoloLens 2 映像：[https://aka.ms/hololens2download](https://aka.ms/hololens2download)。 此版本是最新的通用版本。
 
 开始刷写程序前，请确保已在 Windows 10 电脑上安装并运行该应用，并已准备好检测设备。 此外，请确保你的 HoloLens 的最低费用为40%。
 
 ![HoloLens 2 干净重刷屏幕截图。](images/ARC1.png)
 
-### <a name="normal-procedure"></a>正常程序
+### <a name="normal-flashing-procedure"></a>标准刷写过程
 
 1. 在 HoloLens 设备运行期间，将其连接到你先前打开了 Advanced Recovery Companion 应用的 Windows 10 电脑。
 
@@ -108,7 +114,7 @@ ms.locfileid: "126034186"
 
 1. 在 Advanced Recovery Companion 应用 UI 中选择 HoloLens 2 设备，然后按照说明完成刷写。
 
-### <a name="manual-procedure"></a>手动程序
+### <a name="manual-flashing-mode-procedure"></a>手动刷写模式过程
 
 在以下情况下，可能需要将设备置于恢复模式：
 
@@ -146,7 +152,7 @@ ms.locfileid: "126034186"
 
 1. 如果 ARC 未检测到设备，请确保可以通过电脑上的文件资源管理器连接到设备。 如果不能，
 
-    1. 那么设备可能具有禁用该连接的 USB 策略。 这样的话，请尝试[手动刷写模式](hololens-recovery.md#manual-procedure)。
+    1. 那么设备可能具有禁用该连接的 USB 策略。 这样的话，请尝试[手动刷写模式](hololens-recovery.md#manual-flashing-mode-procedure)。
     2. 如果没有策略，请尝试使用不同的 USB 电缆。
 
 1. 检查设备未显示[1-3-5-LED 模式](hololens2-setup.md#lights-to-indicate-problems)。

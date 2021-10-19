@@ -3,7 +3,7 @@ title: 适用于 HoloLens 2 的 Windows Autopilot
 description: 了解如何在 HoloLens 2 设备上对 Autopilot 进行设置、配置和故障排除。
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/8/2021
+ms.date: 10/11/2021
 ms.prod: hololens
 ms.topic: article
 ms.custom:
@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
-ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
+ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128346768"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129964575"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
 
@@ -79,13 +79,13 @@ ms.locfileid: "128346768"
 
 查看 Windows Autopilot 自部署模式文章“[要求](/windows/deployment/windows-autopilot/self-deploying#requirements)”部分。 环境必须满足这些要求以及 Windows Autopilot 标准要求。 无需查看文章中的“分步操作”和“验证”部分。 本文后面的过程将提供特定于 HoloLens 的相应步骤。
 
-确保设备尚未成为 Azure AD 的成员，并且未在 Intune（或其他 MDM 系统）中注册。 Autopilot 自部署过程完成这些步骤。 若要确保所有设备相关信息都已得到清理，请检查 Azure AD 和 Intune 门户中的“设备”页面。 HoloLens 目前暂不支持“将所有目标设备转换为 Autopilot”的功能。 
+确保设备尚未成为 Azure AD 的成员，并且未在 Intune（或其他 MDM 系统）中注册。 Autopilot 自部署过程完成这些步骤。 若要确保所有设备相关信息都已得到清理，请检查 Azure AD 和 Intune 门户中的“设备”页面。 HoloLens 目前暂不支持“将所有目标设备转换为 Autopilot”的功能。
 
 #### <a name="review-hololens-os-requirements"></a>查看 HoloLens 操作系统要求：
 
 若要确认设备上的内部版本或重刷到最新的操作系统，请使用 [Advanced Recovery Companion (ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) 和我们的[设备重刷说明](hololens-recovery.md)。 在 2020 年 9 月底之前交付的设备已预安装 Windows 全息版（版本 1903）。 请与经销商联系，确保向你提供的是预安装了 Autopilot 的设备。
 
- 最低操作系统版本 | 受支持的功能 | 注解 
+ 最低操作系统版本 | 受支持的功能 | 注解
  ------ | ------ | ------  
  [Windows 全息版（版本 2004）](hololens-release-notes.md#windows-holographic-version-2004)（内部版本 19041.1103）或更高版本 | 1. HoloLens 2 上 Autopilot 的自部署场景。 | 仅支持通过以太网下载 Autopilot 配置文件。 在打开 HoloLens 之前，使用“USB-C 转以太网”适配器确保其已连接到以太网。  如果计划将 Autopilot 部署到多个 HoloLens 设备，我们建议对适配器基础结构进行规划。 我们不建议使用 USB 集线器，因为它们通常需要安装第三方驱动程序，而 HoloLens 不支持这些驱动程序。
  [Windows 全息版（版本 20H2）](hololens-release-notes.md#windows-holographic-version-20h2)（内部版本 19041.1128）或更高版本 | 1. 通过 Wi-Fi 下载 autopilot 配置文件。 <br> 2. [租户锁定 CSP 和 Autopilot](#tenant-lockdown-csp-and-autopilot) 用于锁定具有 Autopilot 指定租户的设备。 | 如果需要，仍可以使用以太网适配器。 对于通过 Wi-Fi 连接的设备，用户必须仅： <ul> <li> 转到 hummingbird 场景。 </li> <li> 选择语言和区域设置。 </li> <li> 运行目视校准。 </li> <li> 成功连接到所需的 WiFi 网络。 </li> </ul>
@@ -102,7 +102,7 @@ ms.locfileid: "128346768"
 
 ### <a name="4-register-devices-in-windows-autopilot"></a>4. 在 Windows Autopilot 中注册设备
 
-在首次设置之前，设备必须在 Windows Autopilot 中注册。 
+在首次设置之前，设备必须在 Windows Autopilot 中注册。
 
 注册 HoloLens 设备有三种主要方法：
 
@@ -119,7 +119,7 @@ ms.locfileid: "128346768"
 可以从设备检索硬件哈希。 设备在进行 OOBE 过程时，或之后当设备所有者启动诊断日志收集过程时（在以下过程中描述），设备将其硬件哈希记录在 CSV 文件中。 通常情况下，设备所有者是第一个登录到设备的用户。
 
 > [!WARNING]
-> 在 20H2 之前的内部版本中，如果已进行 OOBE 过程，并且遥测设置为“必需”，则无法通过此方法收集 Autopilot 的硬件哈希。 为了通过此方法收集硬件哈希，请通过“设置应用”将遥测选项设置为“完全”，并选择“隐私” > “诊断” 。
+> 在 20H2 之前的内部版本中，如果已进行 OOBE 过程，并且遥测设置为“必需”，则无法通过此方法收集 Autopilot 的硬件哈希。 为了通过此方法收集硬件哈希，请通过设置应用将遥测选项设置为“完全”，然后选择“隐私” > “诊断” 。
 
 1. 启动 HoloLens 2 设备。
 
@@ -133,7 +133,7 @@ ms.locfileid: "128346768"
 
    > [!NOTE]  
    > .zip 文件可能不会立即可用。 如果文件尚未准备好，可能会在“文档”文件夹中看到一个 HoloLensDiagnostics.temp文件。 若要更新文件列表，请刷新窗口。
-    
+
 1. 提取 AutopilotDiagnostics.zip 文件的内容。
 
 1. 在提取的文件中，找到文件名前缀为 “DeviceHash”的 CSV 文件。 将该文件复制到计算机的驱动器中，方便以后在此处访问该文件。  
@@ -280,11 +280,12 @@ ms.locfileid: "128346768"
 
 在 HoloLens 2 上将 TenantLockdown 云解决方案提供商的 RequireNetworkInOOBE 节点设置为 true 后，OOBE 中将不允许执行以下操作：
 
-- 使用运行时预配创建本地用户 
-- 通过运行时预配执行 Azure AD 加入操作 
-- 选择 OOBE 体验中的设备所有者 
+- 使用运行时预配创建本地用户
+- 通过运行时预配执行 Azure AD 加入操作
+- 选择 OOBE 体验中的设备所有者
 
-#### <a name="how-to-set-this-using-intune"></a>如何使用 Intune 对此进行设置？ 
+#### <a name="how-to-set-this-using-intune"></a>如何使用 Intune 对此进行设置？
+
 1. 创建自定义 OMA URI 设备配置文件，并为 RequireNetworkInOOBE 节点指定 true，如下所示。
 OMA-URI 值应为 ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
@@ -307,13 +308,14 @@ OMA-URI 值应为 ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
    > [!div class="mx-imgBorder"]
    > ![在 Intune 中通过 OMA URI 将 RequireNetworkInOOBE 设置为 false 的屏幕截图。](images/hololens-tenant-lockdown-false.png)
 
-1. 创建组并将设备配置文件分配给该设备组。 
+1. 创建组并将设备配置文件分配给该设备组。
 
 1. 使 HoloLens 2 设备成为在上一步中创建的组的成员并触发同步。
 
 在 Intune 门户中验证设备配置是否已成功应用。 此设备配置成功应用于 HoloLens 2 设备后，TenantLockdown 的影响将处于非活动状态。
 
-#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>将 TenantLockdown 设置为 true 后，如果在 HoloLens 上取消分配 Autopilot 配置文件，在 OOBE 期间会发生什么情况？ 
+#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>将 TenantLockdown 设置为 true 后，如果在 HoloLens 上取消分配 Autopilot 配置文件，在 OOBE 期间会发生什么情况？
+
 OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话框。 为了删除 TenantLockdown 的影响，必须首先仅使用 Autopilot 将设备注册到其原始租户，并且必须按照上一步中的说明取消设置 RequireNetworkInOOBE，然后才能删除 TenantLockdown 云解决方案提供商引入的限制。
 
 ![在设备上实施策略时的设备内视图。](images/hololens-autopilot-lockdown.png)
@@ -326,8 +328,25 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 
 ## <a name="known-issues-and-limitations"></a>已知问题和限制
 
-- 我们正在研究在 MEM 中配置的基于设备上下文的应用程序安装不适用于 HoloLens 的问题。 [了解有关设备上下文和用户上下文安装的详细信息。](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
-- 通过 Wi-Fi 设置 Autopilot 时，可能会出现首次建立 Internet 连接时未能下载 Autopilot 配置文件的问题。 在这种情况下，将显示最终用户许可协议 (EULA) ，并且用户可以选择继续执行非 Autopilot 设置体验。 若要重试 Autopilot 设置，请将设备置于睡眠状态，然后重新启动，或者重启设备，然后重试。
+### <a name="why-do-i-see-0x80180014-during-autopilot"></a>为什么在 Autopilot 中看到 0x80180014？
+
+当在设备上执行 Autopilot 过程时，会显示此错误。 仅在 HoloLens 设备执行完以下操作时才会显示此问题：
+
+1. 已至少执行完一次 Autopilot。
+1. 现在正在重置并再次用于 Autopilot。
+
+体验是 Autopilot 失败并出现特定错误。
+
+![HoloLens Autopilot 失败错误代码](images/autopilot-0x80180014-failure.jpg)
+
+若要解决此错误，需要执行哪些步骤？
+
+1. 按照 [Autopilot 设备导入和注册疑难解答](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)中的步骤从 Intune 中移除设备。 （你的 Intune 管理员将需要执行此任务）
+1. 步骤 1 完成后，重启设备并登录。
+1. 导航到“设置” -> “更新和安全” -> “重置和恢复”，然后选择“开始使用”   。
+    1. 如果步骤 2 和步骤 3 出现问题，请参阅[重置/重新刷写 HoloLens](hololens-recovery.md) 中重置设备的替代方法。
+
+然后，AutoPilot 应该会成功注册。
 
 ### <a name="troubleshooting"></a>疑难解答
 

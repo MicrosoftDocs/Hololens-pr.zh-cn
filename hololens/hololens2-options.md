@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034123"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949014"
 ---
 # <a name="compare-hololens-2-options"></a>比较 HoloLens 2 选项
 
@@ -39,6 +39,7 @@ HoloLens 是一种混合现实设备，由 holograms 提供支持，并提供可
 | **降噪音频输出**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **开发人员权利 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **快速更换计划 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **异物防护等级（IP50 防尘）**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **商业使用权利**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**担保**](hololens2-hardware.md#warranty-information)                                             |   1 年   |             1 年            |             2 年            |                      2 年                      |            1 年 <sup>3</sup>            |             1 年             |
 | **设备购买限制**                                |    无    |              无             |              无             |                       无                       |             无             |       每个事务一个      |

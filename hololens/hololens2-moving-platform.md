@@ -5,7 +5,7 @@ keywords: 移动平台, 动态运动, hololens, 移动平台模式
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 8/10/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,19 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 7c636cd97e31c74d4976e71ec3f41ac5afe5bdcc
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034135"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924422"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>低动态运动移动平台上的移动平台模式
 
-在预览体验版本 20348.1411 中，我们在 HoloLens 2 上增加了对在低动态运动移动平台上进行跟踪的 beta 版支持。 安装该版本并启用移动平台模式后，你能够在以前无法访问的环境（如大型船只和大型海船）中使用 HoloLens 2。 目前，该功能的目标是仅启用这些特定的移动平台。 虽然你可以随意地尝试在其他环境中使用该功能，但该功能首先侧重于增加对这些环境的支持。
-
-> [!NOTE]
-> 此功能目前仅通过 [Windows 预览体验成员](hololens-insider.md)提供。
+在 [Windows Holographic 21H2 版](hololens-release-notes.md#windows-holographic-version-21h2)中，我们在 HoloLens 2 上增加了对在低动态运动移动平台上进行跟踪的 beta 版支持。 安装该版本并启用移动平台模式后，你能够在以前无法访问的环境（如大型船只和大型海船）中使用 HoloLens 2。 目前，该功能的目标是仅启用这些特定的移动平台。 虽然你可以随意地尝试在其他环境中使用该功能，但该功能首先侧重于增加对这些环境的支持。
 
 ![移动平台示例。](./images/mpm-compare.gif)
 
@@ -39,8 +36,8 @@ ms.locfileid: "126034135"
 
 HoloLens 需要能够以[六自由度](https://en.wikipedia.org/wiki/Six_degrees_of_freedom)（X、Y、Z、平移和翻滚、俯仰、偏航旋转）跟踪你的头部位置，以便显示稳定的全息影像。 为此，HoloLens 跟踪来自两个不同源的两条相似的信息：
 
-1. 可见光相机 - 用于跟踪环境，例如在其中使用 HoloLens 的物理房间
-1. 惯性测量单元 (IMU) - 由加速度计、陀螺仪和磁力计组成，用于跟踪头部相对于地球的运动和方向
+1. **可见光相机。** 这些相机用于跟踪环境，例如在其中使用 HoloLens 的物理房间
+1. **惯性测量单元 (IMU)。** IMU 由加速度计、陀螺仪和磁力计组成，用于跟踪头部相对于地球的运动和方向
 
 来自这两个源的信息被合成，以低延迟和足够高的频率跟踪你的头部位置，从而呈现平滑的全息影像。
 
@@ -62,10 +59,7 @@ HoloLens 需要能够以[六自由度](https://en.wikipedia.org/wiki/Six_degrees
 
 对移动平台模式的 Beta 版支持仅需几个先决条件：
 
-1. 安装版本 20348.1411 或更高版本，方法是[通过 ARC 刷新最新的预览体验版本](hololens-insider.md#ffu-download-and-flash-directions)，或者[注册并更新设备](hololens-insider.md#start-receiving-insider-builds)。
-
-   > [!NOTE]
-   > 此版本当前仅在[预览体验成员开发频道](hololens-insider.md#start-receiving-insider-builds)上提供。
+1. [通过 ARC](hololens-recovery.md#clean-reflash-the-device) 更新或刷写[最新版本](https://aka.ms/hololens2download)来安装 [Windows Holographic 21H2](hololens-release-notes.md#windows-holographic-version-21h2) 或更高版本。
 
 2. 启用[开发人员模式和设备门户](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 
@@ -93,7 +87,7 @@ HoloLens 需要能够以[六自由度](https://en.wikipedia.org/wiki/Six_degrees
 
 ## <a name="reporting-issues"></a>报告问题
 
-如上所述，此功能处于 beta 阶段，仅在开发人员模式下可用，这意味着你可能会遇到问题。 如果遇到问题，请通过以下方式帮助我们调查和改进产品
+如上所述，此功能处于 beta 阶段，仅在开发人员模式下可用，这意味着你可能会遇到问题。 如果发生这种情况，我们可以调查和改进产品：
 
 1. 通过[反馈中心](hololens-feedback.md)在“全息影像准确性、稳定性和可靠性”类别下报告问题，包括：
     1. 问题的描述，包括预期的行为和出现的行为
