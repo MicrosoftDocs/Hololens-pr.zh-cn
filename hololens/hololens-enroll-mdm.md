@@ -1,6 +1,6 @@
 ---
 title: 在 MDM 中注册 HoloLens
-description: 了解如何在移动设备管理中注册 HoloLens (MDM) ，以便更轻松地管理多个设备。
+description: 了解如何在移动设备管理HoloLens MDM (注册) ，以便更轻松地管理多个设备。
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
@@ -14,64 +14,72 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f466abe45a1a9ad676f8dd6a94244473c084be7
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034172"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202873"
 ---
 # <a name="enroll-hololens-in-mdm"></a>在 MDM 中注册 HoloLens
 
-你可以使用[Microsoft Intune](/intune/windows-holographic-for-business)等解决方案同时管理多个 Microsoft HoloLens 设备。 你将能够管理设置，选择要安装的应用，并设置根据你的组织需要定制的安全配置。 请参阅[使用 Microsoft Intune 管理运行 Windows Holographic 的设备](/intune/windows-holographic-for-business)、[Windows Holographic 中支持的配置服务提供程序(CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens) 和 [Windows Holographic for Business 支持的策略](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)。
+可以使用 Microsoft Intune 等解决方案同时管理Microsoft HoloLens[设备](/intune/windows-holographic-for-business)。 你将能够管理设置，选择要安装的应用，并设置根据你的组织需要定制的安全配置。 请参阅[使用 Microsoft Intune 管理运行 Windows Holographic 的设备](/intune/windows-holographic-for-business)、[Windows Holographic 中支持的配置服务提供程序(CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens) 和 [Windows Holographic for Business 支持的策略](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)。
 
 > [!NOTE]
 > 移动设备管理 (MDM)（包括 VPN、Bitlocker 和展台模式功能）仅在[升级到 Windows Holographic for Business](hololens1-upgrade-enterprise.md) 时才可用。
 
 ## <a name="requirements"></a>要求
 
- 你的组织需要 (MDM) 设置移动设备管理，以便管理 HoloLens 设备。 你的 MDM 提供程序可以是 Microsoft Intune 或使用 Microsoft MDM API 的第三方提供程序。
+ 组织需要设置 Mobile 设备管理 (MDM) 才能管理HoloLens设备。 你的 MDM 提供程序可以是 Microsoft Intune 或使用 Microsoft MDM API 的第三方提供程序。
 
 ## <a name="different-ways-to-enroll"></a>注册的不同方法
 
-根据在 OOBE 或 post 登录期间选择的 [标识](hololens-identity.md) 类型，有不同的注册方法。
+根据在 OOBE 或登录后选择的标识类型，有不同的注册方法。 [](hololens-identity.md)
 
-- 如果 Azure AD，则在 OOBE 期间或 **设置应用**  ->  **访问工作或学校**  ->  **连接**"按钮。
-    - 对于 Azure AD，仅当 Azure AD 配置了注册 url 时才会进行[自动 MDM 注册](hololens-enroll-mdm.md#auto-enrollment-in-mdm)。
+- 如果标识Azure AD，则 OOBE 或 设置 **应用** 访问  ->  **工作或学校连接**  ->  按钮。
+    - 例如[Azure AD，只有在](hololens-enroll-mdm.md#auto-enrollment-in-mdm)已使用注册 URL Azure AD时，才进行自动 MDM 注册。
 
-- 如果标识是 Azure AD 的，并且设备已预先向分配了特定配置文件的 Intune MDM 服务器注册，则 Azure AD-Join 和[自动 MDM 注册](hololens-enroll-mdm.md#auto-enrollment-in-mdm)将在 OOBE 期间进行。
-    - 也称为[19041.1103 + build](hololens-release-notes.md#windows-holographic-version-2004)中的[Autopilot 流](hololens2-autopilot.md)。
+- 如果标识Azure AD且设备已预先注册到分配有特定配置文件的 Intune MDM 服务器，则 Azure AD-Join 和自动[MDM](hololens-enroll-mdm.md#auto-enrollment-in-mdm)注册将在 OOBE 期间进行。
+    - 也称为 [Autopilot 流](hololens2-autopilot.md) 在 [19041.1103+ 内部版本中可用](hololens-release-notes.md#windows-holographic-version-2004)。
 
 
-- 如果身份为 MSA，则使用 **设置应用**  ->  **访问工作或学校**  ->  **连接**"按钮。
-    - 也称为添加工作帐户 (AWS) flow。
-- 如果身份为本地用户，则使用 **设置应用**  ->  **访问工作或**  ->  **仅在设备管理链接中注册**。
+- 如果"标识"为 MSA，则使用 **"设置**  ->  **访问工作或学校"连接**  ->  按钮。
+    - 也称为将工作帐户 (AWA) 流。
+- 如果"标识"是本地用户，**则设置"** 应用访问  ->  **工作或学校** 注册  ->  **"链接**。
     - 也称为纯 MDM 注册流。
 
-在将设备注册到 MDM 服务器后，设置应用将立即反映设备是否已注册到设备管理中。
+向 MDM 服务器注册设备后，设置应用将反映设备已注册到设备管理中。
 
 ## <a name="auto-enrollment-in-mdm"></a>在 MDM 中自动注册
 
-如果你的组织有[Azure 高级版订阅](https://azure.microsoft.com/overview/)，则使用 Azure Active Directory 的 (Azure AD) ，以及接受 Azure AD 令牌以进行身份验证的 MDM 解决方案 (当前仅在 Microsoft Intune 和 AirWatch) 中受支持，你的 IT 管理员可以配置Azure AD 在用户通过其 Azure AD 帐户登录后自动允许 MDM 注册。 [了解如何配置 Azure AD 注册。](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+如果组织有[Azure 高级版](https://azure.microsoft.com/overview/)订阅 ，则 使用 Azure Active Directory (Azure AD) 和 MDM 解决方案，该解决方案接受 Azure AD 令牌进行身份验证 (，目前仅在 Microsoft Intune 和 AirWatch) 中受支持，则 IT 管理员可以配置Azure AD使用其帐户登录后自动允许 MDM Azure AD注册。 [了解如何配置注册Azure AD](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) [Azure Active Directory 与 MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)集成，获取详细的背景信息。
 
-启用自动注册后，无需进行额外的手动注册。 当用户使用 Azure AD 帐户登录时，设备在完成首次运行体验后在 MDM 中注册。
+启用自动注册后，无需额外的手动注册。 当用户使用 Azure AD 帐户登录时，设备在完成首次运行体验后在 MDM 中注册。
 
-Azure AD 联接设备时，可能会影响被认为是[设备所有者](security-adminless-os.md#device-owner)的用户。
+当设备已Azure AD加入时，可能会影响将设备所有者[视为的所有者](security-adminless-os.md#device-owner)。
 
-## <a name="unenroll-hololens-from-intune"></a>从 Intune 取消注册 HoloLens
+## <a name="unenroll-hololens-from-intune"></a>从 Intune HoloLens注册
 
 根据注册方法，取消注册设备可能不可用。
 
-如果设备已使用 Azure AD 帐户或 Autopilot 注册，则无法从 Intune 取消注册。 如果希望将 HoloLens 从 Azure AD 中脱离或重新加入到 Azure AD 租户以外的其他用户，则必须[重置/刷新](hololens-recovery.md#restart-the-device)设备。
+如果设备已注册到 Azure AD或 Autopilot，则不能从 Intune 取消注册。 如果要从 HoloLens取消Azure AD或重新加入其他租户Azure AD，则必须[重置/重新运行](hololens-recovery.md#restart-the-device)设备。
 
-如果设备是从添加了工作帐户的 MSA 帐户或从仅在设备管理中注册的本地帐户注册的，则可以取消注册设备。 打开 "开始"菜单，然后选择 **设置应用**  ->  **访问工作或学校**  ->  *YourAccount*  ->  **断开连接**"按钮。
+如果设备从添加了工作帐户的 MSA 帐户注册，或者从仅在设备管理中注册的本地帐户注册，则你可以取消注册该设备。 打开"开始"菜单，然后选择 **"设置工作**  ->  **或学校**  ->  *YourAccount*  ->  **断开连接"** 按钮。
 
-## <a name="enrollment-troubleshooting"></a>注册疑难解答
+## <a name="enrollment-troubleshooting"></a>注册故障排除
 
-### <a name="ensure-valid-license-is-assigned-to-the-user"></a>确保为用户分配了有效的许可证
+### <a name="ensure-device-is-successfully-connected-to-internet-before-attempting-enrollment-post-oobe"></a>在尝试注册 OOBE 后，请确保设备已成功连接到 Internet
 
-请参阅[Windows 设备注册问题的疑难解答 Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors)具体如下部分所述，如[检查设备类型限制](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions)并[向用户分配有效的许可证。](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
+用户登录后，通过浏览到设备上任何面向 Internet 的网站来确保 Internet 连接。
 
-### <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>确保 Windows 设备不阻止 MDM 注册
+### <a name="ensure-that-azure-active-directory-aad-join-is-not-disabled-in-your-aad-tenant"></a>确保Azure Active Directory (AAD) 租户中未禁用AAD联接
 
-为了成功注册，需要确保 HoloLens 设备可以注册。 由于 HoloLens 被认为是 Windows 设备，因此需要杜绝可能阻止部署的任何注册限制。 [查看此限制列表](/mem/intune/enrollment/enrollment-restrictions-set)，确保能够注册设备。
+有关 [设备中可用选项的信息](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) ，请参阅配置设备Azure 门户。
+
+### <a name="ensure-valid-license-is-assigned-to-the-user"></a>确保向用户分配有效的许可证
+
+请参阅[以下Windows排](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors)查设备注册问题Microsoft Intune，即检查设备类型限制和向用户分配[](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions)[有效许可证。](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
+
+### <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>确保未阻止对设备进行 MDM Windows注册
+
+若要成功注册，需要确保设备HoloLens注册。 由于 HoloLens 被认为是 Windows 设备，因此需要杜绝可能阻止部署的任何注册限制。 [查看此限制列表](/mem/intune/enrollment/enrollment-restrictions-set)，确保能够注册设备。
