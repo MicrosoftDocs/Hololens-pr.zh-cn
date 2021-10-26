@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034042"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151671"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>为 HoloLens 2 准备证书和网络配置文件
 
@@ -27,7 +27,7 @@ ms.locfileid: "126034042"
 由于 HoloLens 2 设备通常已加入 Azure Active Directory (Azure AD) 并且由 Intune 或其他 MDM 提供程序进行管理，因此你将需要使用简单证书注册协议 (SCEP) 或与你的 MDM 解决方案集成的公钥加密标准 (PKCS) 证书来部署此类证书。 
 
 >[!NOTE]
-> 如果没有 MDM 提供程序，仍可以通过在 [Windows 配置设计器](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)中[预配包](hololens-provisioning.md#steps-for-creating-provisioning-packages)或在[证书管理器](certificate-manager.md)中转到“设置”>“更新和安全”>“证书管理器”来部署证书。
+> 如果没有 MDM 提供程序，仍可以通过在 [Windows 配置设计器](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)中[预配包](hololens-provisioning.md#create-the-provisioning-package)或在[证书管理器](certificate-manager.md)中转到“设置”>“更新和安全”>“证书管理器”来部署证书。
 
 ## <a name="certificate-requirements"></a>证书要求
 需要根证书才能通过 SCEP 或 PKCS 基础结构部署证书。 你的组织中的其他应用程序和服务可能还需要将根证书部署到 HoloLens 2 设备上。 

@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: sekerawa
-ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964575"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202907"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>适用于 HoloLens 2 的 Windows Autopilot
 
@@ -320,12 +320,6 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 
 ![在设备上实施策略时的设备内视图。](images/hololens-autopilot-lockdown.png)
 
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>为什么即使在 Intune 中分配了 Autopilot 配置文件也看不到 Autopilot 体验？
-
-默认情况下，HoloLens 2 在检测到 Internet 后会等待 15 秒再检测 Autopilot。 如果在 15 秒后未检测到 Autopilot 配置文件，则表示未正确发现 Autopilot，你将看到 EULA 页面。
-
-请重启设备并重试。 有关详细信息，请参阅[已知问题和限制](hololens2-autopilot.md#known-issues-and-limitations)或[故障排除](hololens2-autopilot.md#troubleshooting)。
-
 ## <a name="known-issues-and-limitations"></a>已知问题和限制
 
 ### <a name="why-do-i-see-0x80180014-during-autopilot"></a>为什么在 Autopilot 中看到 0x80180014？
@@ -355,6 +349,12 @@ OOBE 将无限期等待 Autopilot 配置文件下载，并将显示以下对话�
 - [Windows Autopilot - 已知问题](/mem/autopilot/known-issues)
 - [Microsoft Intune 中的 Windows 设备注册问题疑难解答](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - 策略冲突](/mem/autopilot/policy-conflicts)
+
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>为什么即使在 Intune 中分配了 Autopilot 配置文件也看不到 Autopilot 体验？
+
+默认情况下，HoloLens 2 在检测到 Internet 后会等待 15 秒再检测 Autopilot。 如果在 15 秒后未检测到 Autopilot 配置文件，则表示未正确发现 Autopilot，你将看到 EULA 页面。
+
+请重启设备并重试。 有关详细信息，请参阅[已知问题和限制](hololens2-autopilot.md#known-issues-and-limitations)。
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot 反馈与支持
 

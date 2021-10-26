@@ -1,13 +1,13 @@
 ---
-title: 重启、重置或恢复 HoloLens
+title: 重启、重置或恢复 HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: 如何使用 Advanced Recovery Companion 将映像刷写到 HoloLens 2。
 keywords: 操作方法, 重启, 重置, 恢复, 硬重置, 软重置, 电源周期, HoloLens, 关机, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034210"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151647"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>重启、重置或恢复 HoloLens 2
 
@@ -45,7 +45,7 @@ ms.locfileid: "130034210"
 
    ![HoloLens 2 属性屏幕显示电量变化情况。](images/ResetRecovery2.png)
 
-如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后按照[疑难解答指南](hololens-troubleshooting.md)。 如果设备的状态与疑难解答指南中列出的任何状态都不匹配，请在设备连接到电源而不是主机的情况下预先执行[硬重置程序](hololens-recovery.md#hard-restart-procedure)。 等待至少一小时，让设备充电。
+如果设备无法引导到启动菜单，请注意主机计算机上的 LED 外观和设备枚举。 然后按照[疑难解答指南](hololens-troubleshooting.md)。 如果设备的状态与疑难解答指南中列出的任何状态都不一致，请在设备连接到电源而不是主机的情况下执行[硬重启程序](hololens-recovery.md#hard-restart-procedure)。 等待至少一小时，让设备充电。
 
 > [!NOTE]
 > 首先，我们来定义术语。\
@@ -71,7 +71,7 @@ ms.locfileid: "130034210"
 
 ### <a name="hard-restart-procedure"></a>硬重启过程
 
-如果标准重置程序不起作用，可使用硬重置程序：
+如果标准重置程序不起作用，可使用硬重启程序：
 
 1. 拔下 Type-C 电缆，以断开设备与电源或主机计算机的连接。
 
@@ -82,6 +82,14 @@ ms.locfileid: "130034210"
 1. 打开设备管理器（对于 Windows 10，请按 Windows 键，然后按 X 键，然后选择“设备管理器”）。 确保设备正确枚举为 Microsoft HoloLens，如下图所示：
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 设备管理器 2。](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>重置设备
+
+可以直接从头戴显示设备重置设备。 选择“设置”，然后选择“更新和安全”>“重置和恢复”>“重置此设备”。
+
+   ![HoloLens 头戴显示设备重置。](images/headset-reset-recovery.png)
+
+使用此方式重置时，将删除所有用户帐户，并清除所有数据。
 
 ## <a name="clean-reflash-the-device"></a>对设备进行干净重刷
 
